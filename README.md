@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lone Tree
 
-## Getting Started
+A field guide to big tech internship recruiting for Stanford GSB MBA1s. It covers what the posted titles actually mean,
+how the companies differ, when applications tend to open, and which prep is worth your time.
 
-First, run the development server:
+It's a single static page (Next.js static export) with no backend. Everything on it comes from the JSON files in
+[`src/data/`](src/data), and every factual claim links to a source.
+
+## Run it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
+npm test           # data health checks + unit tests
+npm run build      # runs the tests, then exports static HTML to out/
+npm start          # serve out/ locally
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How the data works
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| File | What it holds |
+|---|---|
+| `companies.json` | Market value, revenue growth, headcount, consumer/business splits, office policy. Each metric has `value`, an optional `low`–`high` range, `asOf`, and `sources`. |
+| `hiring.json` | Per company: when MBA internship postings went live in each cycle (a date *range* plus evidence strength), and what's posted right now. |
+| `roles.json` | The role dictionary, every posted title we've seen (with sources), and the keyword weights the title search uses. |
+| `interviews.json` | Interview stages, only where a company (high confidence) or its general hiring page (medium) describes them. |
+| `calendar.json` | GSB recruiting calendar: the AAP, blackouts, OCI interview weeks, offer deadline. |
+| `prep.json` | Prep resources by role × skill. Scores (0–3) are editorial judgments; module names and links are checked. |
+| `sources.json` | Every source: URL, publisher, dates, and a short verbatim quote where one supports the claim. |
+| `meta.json` | The current cycle, the date the data was last checked end to end, and the corrections link. |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The rules:
 
-## Learn More
+- **Nothing on the page is typed by hand if it can be computed.** "Usually opens", steady vs moves around, open/closing/closed status,
+  the "right now" strip, counts, and as-of dates are all derived from the data. "Today" comes from the reader's clock,
+  so the page stays honest after the build date. Statuses are worded as facts up to the last check and as predictions after it.
+- **Uncertainty is shown, not hidden.** Application dates are ranges, faded by evidence strength. Estimated metrics carry
+  ranges, drawn as bars on the chart.
+- **No placeholders.** If something can't be sourced, it's left out. For example, interview stages for Apple, Nvidia, Airbnb
+  and Meta's MBA role aren't shown, and there's no "time mix" chart because no source gives those numbers.
+- **`npm test` enforces it** ([`src/data/data.test.ts`](src/data/data.test.ts)). Every cited source must exist and every source must be
+  cited. Every metric and window must be sourced, ranges must be ordered, dates must sit inside their season, and the prep
+  matrix must be complete. The build fails if any check fails.
 
-To learn more about Next.js, take a look at the following resources:
+### Refreshing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Revenue growth, straight from SEC XBRL filings (SEC requires a contact User-Agent):
+SEC_USER_AGENT="Your Name you@example.com" npm run refresh:sec            # dry run: compare
+SEC_USER_AGENT="Your Name you@example.com" npm run refresh:sec -- --write # update companies.json
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Link and quote health: flags dead links, and quotes that no longer appear on their page.
+npm run check:sources                       # report only
+npm run check:sources -- --strict           # drop every quote that can't be verified (live page or Wayback copy)
+npm run check:sources -- --mark-gone        # stamp expired postings "since removed" instead of failing
+```
 
-## Deploy on Vercel
+Pages that render with JavaScript (Workday, SmartRecruiters, most careers sites) can't be verified by the script. Check
+those quotes in a browser and mark them `"quoteCheck": "browser YYYY-MM-DD"` in `sources.json`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Market values and postings still need a person to check them. Market data has no free, reliable, keyless API, and posting
+dates need judgment about evidence. When you update them, bump `asOf` / `checked`, cite a source, and bump
+`meta.researched`. The page warns readers when that date is more than 10 days old.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Evidence strength (application windows)
+
+- **strong**: a primary source states the date (a posting's own date, or an official page), or archived snapshots pin it within about a week.
+- **medium**: a credible secondary source (a school career page, a dated recruiter post, news), or snapshots within about four weeks.
+- **weak**: inference (neighboring job IDs, forum posts). Weak cycles are drawn faded and ignored when estimating "usually opens" if better evidence exists.
+
+## Deploy
+
+```bash
+npm run deploy     # build (runs the tests) and publish out/ to here.now via scripts/publish.py
+```
+
+Without `HERENOW_API_KEY`, here.now sites are anonymous and expire after 24 hours. To keep one, claim it from the
+`claimUrl` in `.herenow/state.json` (gitignored, since it holds the claim token). Any static host works: it's just `out/`.

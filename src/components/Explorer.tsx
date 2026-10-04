@@ -1,138 +1,212 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
-import * as d3 from "d3";
-import { companies, type Company, waveLabel } from "@/data/companies";
+import { useMemo, useState } from "react";
+import { scaleLinear, scaleLog, scaleSqrt } from "d3-scale";
+import { forceCollide, forceSimulation, forceX, forceY, type SimulationNodeDatum } from "d3-force";
+import { format } from "d3-format";
+import { companies, hiring, meta, type Company } from "@/data";
+import { SEASON_MONTHS, SEASON_WEEKS, monthStartWeek, typicalOpen, waveLabel, waveOf, type Wave } from "@/lib/season";
+import { fmtCap, fmtCount, latest } from "@/lib/format";
+import { useWidth } from "@/lib/useWidth";
+import { useGuide } from "./Guide";
 import CompanyPanel from "./CompanyPanel";
-import { SEASON_WEEKS, monthOf, typicalOpen } from "@/data/season";
 
-type AxisKey = "appOpen" | "b2bUser" | "b2bPayer" | "growthPct" | "marketCapB" | "headcount" | "rtoDays";
-
-const AXES: Record<AxisKey, { label: string; short: string; scale: () => d3.ScaleContinuousNumeric<number, number>; fmt: (v: number) => string; get: (c: Company) => number }> = {
-  appOpen: { label: "When applications usually open", short: "Applications open", scale: () => d3.scaleLinear().domain([0, SEASON_WEEKS]), fmt: (v) => (v >= SEASON_WEEKS - 1 ? "no program" : monthOf(v).replace(/^(early|mid|late) /, "")), get: (c) => typicalOpen(c) ?? SEASON_WEEKS - 1 },
-  b2bUser: { label: "Who uses it: consumers → businesses", short: "Who uses it", scale: () => d3.scaleLinear().domain([0, 100]), fmt: (v) => `${v}%`, get: (c) => c.b2bUser },
-  b2bPayer: { label: "Who pays: consumers → businesses", short: "Who pays", scale: () => d3.scaleLinear().domain([0, 100]), fmt: (v) => `${v}%`, get: (c) => c.b2bPayer },
-  growthPct: { label: "Revenue growth, year over year", short: "Revenue growth", scale: () => d3.scaleLog().domain([4, 320]).clamp(true), fmt: (v) => `${v}%`, get: (c) => c.growthPct },
-  marketCapB: { label: "Market cap", short: "Market cap", scale: () => d3.scaleLog().domain([50, 9000]), fmt: fmtCap, get: (c) => c.marketCapB },
-  headcount: { label: "Employees", short: "Employees", scale: () => d3.scaleLog().domain([3000, 2.5e6]), fmt: (v) => d3.format(".2~s")(v), get: (c) => c.headcount },
-  rtoDays: { label: "Required days in office", short: "Days in office", scale: () => d3.scaleLinear().domain([0, 5]), fmt: (v) => `${v}`, get: (c) => c.rtoDays ?? 0 },
-};
-
-function fmtCap(v: number) {
-  return v >= 1000 ? `$${d3.format(".1~f")(v / 1000)}T` : `$${d3.format(".0f")(v)}B`;
+type AxisKey = "appOpen" | "b2bUser" | "b2bPayer" | "growth" | "marketCap" | "headcount" | "office";
+interface Point { v: number; lo?: number; hi?: number }
+interface Axis {
+  label: string;
+  short: string;
+  log?: boolean;
+  get: (c: Company) => Point;
+  fmt: (v: number) => string;
+  ticks?: (domain: [number, number]) => number[];
 }
 
-const WAVE_FILL = { early: "#5e1010", fall: "var(--cardinal)", winter: "var(--cardinal-3)", none: "transparent" } as const;
-const W = 720, H = 540, M = { l: 56, r: 24, t: 28, b: 52 };
+const cycle = meta.currentCycle;
+const NO_PROGRAM = SEASON_WEEKS - 2;
+// Office policy as an ordered scale: remote-first, then office-based with no minimum, then required days.
+const OFFICE_REMOTE = -1.6, OFFICE_FLEX = -0.6;
+const range = (m: { value: number; low?: number; high?: number }): Point => ({ v: m.value, lo: m.low, hi: m.high });
+const logTicks = ([a, b]: [number, number]) =>
+  [1, 2.5, 5].flatMap((k) => [0, 1, 2, 3, 4, 5, 6].map((e) => k * 10 ** e)).filter((t) => t >= a && t <= b).sort((x, y) => x - y);
+
+const AXES: Record<AxisKey, Axis> = {
+  appOpen: {
+    label: "When applications usually open", short: "Applications open",
+    get: (c) => {
+      const t = hiring[c.id].hasProgram ? typicalOpen(hiring[c.id], cycle) : null;
+      return t ? { v: t.week, lo: t.min, hi: t.max } : { v: NO_PROGRAM };
+    },
+    fmt: (v) => (v >= NO_PROGRAM - 0.5 ? "none" : SEASON_MONTHS[[...SEASON_MONTHS.keys()].findLast((i) => monthStartWeek(i, cycle) <= v + 0.5) ?? 0]),
+    ticks: () => [1, 3, 5, 7, 9].map((i) => monthStartWeek(i, cycle)).concat(NO_PROGRAM),
+  },
+  b2bUser: { label: "Who uses it: consumers → businesses", short: "Who uses it", get: (c) => range(c.b2bUser), fmt: (v) => `${v}%`, ticks: () => [0, 25, 50, 75, 100] },
+  b2bPayer: { label: "Who pays: consumers → businesses", short: "Who pays", get: (c) => range(c.b2bPayer), fmt: (v) => `${v}%`, ticks: () => [0, 25, 50, 75, 100] },
+  growth: { label: "Revenue growth, year over year", short: "Revenue growth", log: true, get: (c) => range(c.growth), fmt: (v) => `${v}%`, ticks: logTicks },
+  marketCap: { label: "Market value ($)", short: "Market value", log: true, get: (c) => range(c.marketCap), fmt: fmtCap, ticks: (d) => logTicks(d).filter((t) => String(t)[0] !== "5") },
+  headcount: { label: "Employees", short: "Employees", log: true, get: (c) => range(c.headcount), fmt: fmtCount, ticks: (d) => logTicks(d).filter((t) => String(t)[0] === "1") },
+  office: {
+    label: "Days a week in the office", short: "Office days",
+    get: ({ office: o }) =>
+      o.category === "remote" ? { v: OFFICE_REMOTE } : o.category === "flexible" ? { v: OFFICE_FLEX } : { v: o.days ?? ((o.low ?? 0) + (o.high ?? 0)) / 2, lo: o.low, hi: o.high },
+    fmt: (v) => (v === OFFICE_REMOTE ? "remote" : v === OFFICE_FLEX ? "no rule" : format("~g")(v)),
+    ticks: () => [OFFICE_REMOTE, OFFICE_FLEX, 1, 2, 3, 4, 5],
+  },
+};
+
+function domainFor(k: AxisKey): [number, number] {
+  const a = AXES[k];
+  if (k === "appOpen") return [0, SEASON_WEEKS];
+  if (k === "office") return [-2.2, 5.4];
+  if (!a.log) return [0, 100];
+  const vals = companies.flatMap((c) => { const p = a.get(c); return [p.v, p.lo ?? p.v, p.hi ?? p.v]; }).filter((v) => v > 0);
+  return [Math.min(...vals) / 1.5, Math.max(...vals) * 1.5];
+}
+
+export const WAVE_FILL: Record<Wave, string> = { summer: "var(--cardinal-dark)", fall: "var(--cardinal)", winter: "var(--cardinal-3)", none: "transparent" };
+type Node = SimulationNodeDatum & { c: Company; tx: number; ty: number; r: number; x: number; y: number };
 
 export default function Explorer() {
-  const svgRef = useRef<SVGSVGElement>(null);
+  const { selected, select } = useGuide();
   const [x, setX] = useState<AxisKey>("b2bUser");
-  const [y, setY] = useState<AxisKey>("growthPct");
-  const [selected, setSelected] = useState<Company>(companies[0]);
-  const r = useMemo(() => d3.scaleSqrt([0, 6000], [0, 32]), []);
-  const radius = (c: Company) => Math.max(11, r(c.marketCapB));
+  const [y, setY] = useState<AxisKey>("growth");
+  const [wrapRef, W] = useWidth<HTMLDivElement>(720);
+  // Animate only when the reader changes an axis, not when the chart first measures itself or resizes.
+  const [animateAt, setAnimateAt] = useState<number | null>(null);
+  const narrow = W < 560;
+  const H = Math.round(Math.min(560, narrow ? W * 1.1 : W * 0.74));
+  const M = { l: narrow ? 46 : 58, r: 14, t: 30, b: 44 };
+  const waves = useMemo(() => Object.fromEntries(companies.map((c) => [c.id, waveOf(hiring[c.id], cycle)])) as Record<string, Wave>, []);
 
-  useEffect(() => {
-    const svg = d3.select(svgRef.current!);
-    const ax = AXES[x], ay = AXES[y];
-    const sx = ax.scale().range([M.l + 24, W - M.r - 24]);
-    const sy = ay.scale().range([H - M.b - 24, M.t + 24]);
-
-    // Resolve overlaps so every bubble stays clickable.
-    const nodes = companies.map((c) => ({ c, tx: sx(ax.get(c)), ty: sy(ay.get(c)), x: sx(ax.get(c)), y: sy(ay.get(c)) }));
-    const sim = d3.forceSimulation(nodes as d3.SimulationNodeDatum[] & typeof nodes)
-      .force("x", d3.forceX<(typeof nodes)[number]>((d) => d.tx).strength(0.6))
-      .force("y", d3.forceY<(typeof nodes)[number]>((d) => d.ty).strength(0.6))
-      .force("collide", d3.forceCollide<(typeof nodes)[number]>((d) => radius(d.c) + (radius(d.c) >= 22 ? 4 : 10)))
+  const { sx, sy, nodes } = useMemo(() => {
+    const scale = (k: AxisKey) => (AXES[k].log ? scaleLog() : scaleLinear()).domain(domainFor(k)).clamp(true);
+    const sx = scale(x).range([M.l + 18, W - M.r - 18]);
+    const sy = scale(y).range([H - M.b - 18, M.t + 18]);
+    const r = scaleSqrt([0, Math.max(...companies.map((c) => c.marketCap.value))], [0, narrow ? 24 : 34]);
+    const nodes: Node[] = companies.map((c) => {
+      const tx = sx(AXES[x].get(c).v), ty = sy(AXES[y].get(c).v);
+      return { c, tx, ty, x: tx, y: ty, r: Math.max(narrow ? 8 : 11, r(c.marketCap.value)) };
+    });
+    // Nudge overlapping bubbles apart so every one stays clickable; whiskers move with their bubble.
+    const sim = forceSimulation(nodes)
+      .force("x", forceX<Node>((d) => d.tx).strength(0.6))
+      .force("y", forceY<Node>((d) => d.ty).strength(0.6))
+      // Small bubbles carry their label underneath, so they also reserve room for its width.
+      .force("collide", forceCollide<Node>((d) => (d.r >= 22 ? d.r + 3 : Math.max(d.r + (narrow ? 9 : 12), d.c.name.length * (narrow ? 3.4 : 3.8)))).iterations(3))
       .stop();
-    for (let i = 0; i < 240; i++) sim.tick();
-
-    const t = svg.transition().duration(900).ease(d3.easeCubicInOut);
-    const ticksFor = (s: d3.ScaleContinuousNumeric<number, number>, k: AxisKey) =>
-      k === "marketCapB" ? [100, 300, 1000, 3000] : k === "headcount" ? [1e4, 1e5, 1e6] : k === "growthPct" ? [5, 10, 25, 50, 100, 250] : k === "appOpen" ? [13.3, 21.9, 30.6, 39.4, 47] : s.ticks(5);
-
-    svg.select<SVGGElement>(".gx").attr("transform", `translate(0,${H - M.b})`).transition(t as never)
-      .call(d3.axisBottom(sx).tickValues(ticksFor(sx, x)).tickFormat((v) => ax.fmt(+v)).tickSize(-(H - M.t - M.b)).tickPadding(10));
-    svg.select<SVGGElement>(".gy").attr("transform", `translate(${M.l},0)`).transition(t as never)
-      .call(d3.axisLeft(sy).tickValues(ticksFor(sy, y)).tickFormat((v) => ay.fmt(+v)).tickSize(-(W - M.l - M.r)).tickPadding(10));
-    svg.selectAll(".domain").remove();
-    svg.selectAll(".tick line").attr("stroke", "var(--rule)").attr("stroke-width", 0.5);
-    svg.selectAll(".tick text").attr("fill", "var(--ink-3)").style("font-family", "var(--mono)").style("font-size", "11px");
-
-    const g = svg.select<SVGGElement>(".nodes");
-    const sel = g.selectAll<SVGGElement, (typeof nodes)[number]>("g.node").data(nodes, (d) => d.c.id);
-    const enter = sel.enter().append("g").attr("class", "node").style("cursor", "pointer")
-      .attr("transform", (d) => `translate(${d.x},${d.y})`)
-      .on("click", (_, d) => setSelected(d.c));
-    enter.append("circle").attr("r", (d) => radius(d.c)).attr("fill", (d) => WAVE_FILL[d.c.wave]).attr("fill-opacity", 0.88)
-      .attr("stroke", (d) => (d.c.wave === "none" ? "var(--ink-3)" : "var(--paper)")).attr("stroke-width", 1.5).attr("stroke-dasharray", (d) => (d.c.wave === "none" ? "3 2" : null));
-    // Big bubbles carry their label inside; small ones get it underneath.
-    enter.append("text").attr("text-anchor", "middle")
-      .attr("dy", (d) => (radius(d.c) >= 22 ? 4 : radius(d.c) + 14))
-      .style("font-size", "12px").style("pointer-events", "none")
-      .attr("fill", (d) => (radius(d.c) >= 22 && (d.c.wave === "fall" || d.c.wave === "early") ? "var(--paper)" : "var(--ink)")).text((d) => d.c.name);
-    enter.append("title").text((d) => `${d.c.name} — ${waveLabel[d.c.wave]}`);
-    enter.merge(sel).transition(t as never).attr("transform", (d) => `translate(${d.x},${d.y})`);
-
-    // Quadrant names and margin notes only make sense on the default view.
-    const q = svg.select(".quads");
-    q.selectAll("*").remove();
-    if (x === "b2bUser" && y === "growthPct") {
-      const quads: [string, number, number, "start" | "end"][] = [
-        ["Consumer rockets", M.l + 14, M.t + 18, "start"], ["Enterprise rockets", W - M.r - 8, M.t + 18, "end"],
-        ["Consumer giants", M.l + 14, H - M.b - 12, "start"], ["Enterprise incumbents", W - M.r - 8, H - M.b - 12, "end"],
-      ];
-      quads.forEach(([s, qx, qy, a]) => q.append("text").text(s).attr("x", qx).attr("y", qy).attr("text-anchor", a)
-        .style("font-family", "var(--serif)").style("font-style", "italic").style("font-size", "16px").attr("fill", "var(--ink-3)"));
-      const oa = nodes.find((n) => n.c.id === "openai")!;
-      const nv = nodes.find((n) => n.c.id === "nvidia")!;
-      const note = (n: typeof oa, text: string[], dx: number, dy: number) => {
-        q.append("path").attr("d", `M${n.x + dx * 0.25},${n.y + dy * 0.6} Q${n.x + dx * 0.9},${n.y + dy * 0.3} ${n.x + dx},${n.y + dy}`)
-          .attr("fill", "none").attr("stroke", "var(--cardinal)").attr("stroke-width", 0.75);
-        text.forEach((l, i) => q.append("text").text(l).attr("x", n.x + dx + (dx < 0 ? -4 : 4)).attr("y", n.y + dy + 4 + i * 16)
-          .attr("text-anchor", dx < 0 ? "end" : "start").attr("class", "note").style("font-size", "14px").attr("fill", "var(--cardinal)"));
-      };
-      note(oa, ["Hollow: no MBA internship.", "Growth is annualized, not YoY."], -70, 30);
-      note(nv, ["Growing 83% on a", "$5.6T base."], -50, 52);
+    const half = (d: Node) => (d.r >= 22 ? d.r : Math.max(d.r, d.c.name.length * (narrow ? 3.4 : 3.8)));
+    for (let i = 0; i < 240; i++) {
+      sim.tick();
+      // Keep every bubble and its label inside the plot.
+      for (const d of nodes) d.x = Math.min(W - M.r - half(d), Math.max(M.l + half(d), d.x));
     }
+    return { sx, sy, nodes };
+  }, [x, y, W, H, narrow, M.l, M.r, M.t, M.b]);
 
-    svg.selectAll<SVGGElement, (typeof nodes)[number]>("g.node").select("circle")
-      .attr("stroke", (d) => (d.c.id === selected.id ? "var(--ink)" : d.c.wave === "none" ? "var(--ink-3)" : "var(--paper)"))
-      .attr("stroke-width", (d) => (d.c.id === selected.id ? 2.5 : 1.5));
-  }, [x, y, selected, r]);
+  const ax = AXES[x], ay = AXES[y];
+  const xt = ax.ticks?.(sx.domain() as [number, number]) ?? sx.ticks(5);
+  const yt = ay.ticks?.(sy.domain() as [number, number]) ?? sy.ticks(5);
+  const isDefault = x === "b2bUser" && y === "growth";
+  const growthMid = useMemo(() => { const g = companies.map((c) => c.growth.value).sort((a, b) => a - b); return g[Math.floor(g.length / 2)]; }, []);
+  const capAsOf = latest(companies.filter((c) => c.marketCap.kind === "market cap").map((c) => c.marketCap.asOf));
+  const sel = companies.find((c) => c.id === selected)!;
+  const fs = narrow ? 11 : 12;
+
+  const axisSelect = (value: AxisKey, set: (k: AxisKey) => void, label: string) => (
+    <select className="select" value={value} onChange={(e) => { setAnimateAt(W); set(e.target.value as AxisKey); }} aria-label={label}>
+      {(Object.keys(AXES) as AxisKey[]).map((k) => <option key={k} value={k}>{AXES[k].short}</option>)}
+    </select>
+  );
 
   return (
     <div className="explorer">
       <div>
         <div className="controls">
-          <span>Across</span>
-          <select className="select" value={x} onChange={(e) => setX(e.target.value as AxisKey)} aria-label="Horizontal axis">
-            {Object.entries(AXES).map(([k, a]) => <option key={k} value={k}>{a.short}</option>)}
-          </select>
-          <span>Up</span>
-          <select className="select" value={y} onChange={(e) => setY(e.target.value as AxisKey)} aria-label="Vertical axis">
-            {Object.entries(AXES).map(([k, a]) => <option key={k} value={k}>{a.short}</option>)}
-          </select>
-          <span className="label" style={{ marginLeft: "auto" }}>bubble size = market cap</span>
+          <span className="pair">Across {axisSelect(x, setX, "Horizontal axis")}</span>
+          <span className="pair">Up {axisSelect(y, setY, "Vertical axis")}</span>
+          <span className="label push">size = market value · bars = uncertainty</span>
         </div>
-        <svg ref={svgRef} viewBox={`0 0 ${W} ${H}`} width="100%" className="chart" role="img"
-          aria-label={`Bubble chart of 12 tech companies: ${AXES[x].label} versus ${AXES[y].label}`}>
-          <g className="gx" /><g className="gy" /><g className="quads" /><g className="nodes" />
-          <text x={W - M.r} y={H - 10} textAnchor="end" fill="var(--ink-2)" style={{ fontSize: 12 }}>{AXES[x].label} →</text>
-          <text x={M.l} y={14} fill="var(--ink-2)" style={{ fontSize: 12 }}>↑ {AXES[y].label}</text>
-        </svg>
+        <div ref={wrapRef}>
+          <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} className={`chart${animateAt === W ? " animate" : ""}`} role="group" aria-label={`${companies.length} companies plotted by ${ax.label} and ${ay.label}. Use the buttons below the chart, or tab to a bubble, to open its field notes.`}>
+            {xt.map((t) => (
+              <g key={`x${t}`}>
+                <line x1={sx(t)} x2={sx(t)} y1={M.t} y2={H - M.b} className="grid" />
+                <text x={sx(t)} y={H - M.b + 16} textAnchor="middle" className="tick" style={{ fontSize: fs - 1 }}>{ax.fmt(t)}</text>
+              </g>
+            ))}
+            {yt.map((t) => (
+              <g key={`y${t}`}>
+                <line x1={M.l} x2={W - M.r} y1={sy(t)} y2={sy(t)} className="grid" />
+                <text x={M.l - 8} y={sy(t) + 4} textAnchor="end" className="tick" style={{ fontSize: fs - 1 }}>{ay.fmt(t)}</text>
+              </g>
+            ))}
+            {isDefault && (
+              <g className="quads" style={{ fontSize: narrow ? 13 : 16 }}>
+                <line x1={sx(50)} x2={sx(50)} y1={M.t} y2={H - M.b} className="divider" />
+                <line x1={M.l} x2={W - M.r} y1={sy(growthMid)} y2={sy(growthMid)} className="divider" />
+                <text x={M.l + 8} y={M.t + 14}>Consumer, fast</text>
+                <text x={W - M.r - 6} y={M.t + 14} textAnchor="end">Business, fast</text>
+                <text x={M.l + 8} y={H - M.b - 8}>Consumer, steady</text>
+                <text x={W - M.r - 6} y={H - M.b - 8} textAnchor="end">Business, steady</text>
+              </g>
+            )}
+            <g className="whiskers">
+              {nodes.map((d) => {
+                const px = ax.get(d.c), py = ay.get(d.c), dx = d.x - d.tx, dy = d.y - d.ty;
+                return (
+                  <g key={d.c.id} className="nodepos" style={{ transform: `translate(${dx}px, ${dy}px)` }}>
+                    {px.lo !== undefined && px.hi !== undefined && px.hi > px.lo && <Whisker x1={sx(px.lo)} x2={sx(px.hi)} y1={d.ty} y2={d.ty} />}
+                    {py.lo !== undefined && py.hi !== undefined && py.hi > py.lo && <Whisker x1={d.tx} x2={d.tx} y1={sy(py.lo)} y2={sy(py.hi)} />}
+                  </g>
+                );
+              })}
+            </g>
+            {nodes.map((d) => {
+              const w = waves[d.c.id], on = d.c.id === selected, inside = d.r >= 22;
+              return (
+                <g key={d.c.id} className="node nodepos" style={{ transform: `translate(${d.x}px, ${d.y}px)` }} role="button" tabIndex={0}
+                  aria-pressed={on} aria-label={`${d.c.name}: ${ax.short} ${ax.fmt(ax.get(d.c).v)}, ${ay.short} ${ay.fmt(ay.get(d.c).v)}`}
+                  onClick={() => select(d.c.id)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(d.c.id); } }}>
+                  <circle r={d.r} fill={WAVE_FILL[w]} fillOpacity={0.9} stroke={on ? "var(--ink)" : w === "none" ? "var(--ink-3)" : "var(--paper)"}
+                    strokeWidth={on ? 2.5 : 1.5} strokeDasharray={w === "none" ? "3 2" : undefined} />
+                  <text textAnchor="middle" dy={inside ? 4 : d.r + fs + 2} style={{ fontSize: fs }}
+                    fill={inside && w !== "winter" && w !== "none" ? "var(--paper)" : "var(--ink)"}>{d.c.name}</text>
+                </g>
+              );
+            })}
+            <text x={W - M.r} y={H - 8} textAnchor="end" className="axis-title" style={{ fontSize: fs }}>{ax.label} →</text>
+            <text x={M.l} y={14} className="axis-title" style={{ fontSize: fs }}>↑ {ay.label}</text>
+          </svg>
+        </div>
         <div className="legend">
-          <span><i style={{ background: "#5e1010" }} />Opens by August</span>
-          <span><i style={{ background: "var(--cardinal)" }} />Opens Sep–Oct</span>
-          <span><i style={{ background: "var(--cardinal-3)" }} />Opens Dec–Jan</span>
-          <span><i style={{ border: "1px dashed var(--ink-3)" }} />No MBA internship</span>
+          {(["summer", "fall", "winter", "none"] as Wave[]).map((w) => (
+            <span key={w}><i style={w === "none" ? { border: "1px dashed var(--ink-3)" } : { background: WAVE_FILL[w] }} />{waveLabel[w]}</span>
+          ))}
+        </div>
+        <div className="picker" role="group" aria-label="Choose a company">
+          {companies.map((c) => (
+            <button key={c.id} className="chip" aria-pressed={c.id === selected} onClick={() => select(c.id)}>{c.name}</button>
+          ))}
         </div>
         <div className="caveat">
-          Market caps as of Oct 2, 2026. Growth is trailing-twelve-month revenue. Consumer/business splits are our estimates from segment reporting; companies don&apos;t disclose them.
+          Market values as of {capAsOf}{companies.some((c) => c.marketCap.kind === "private valuation") ? " (private companies: latest reported valuation)" : ""}.
+          Growth is trailing-twelve-month revenue vs the year before. Consumer/business splits are our estimates from segment
+          reporting, since no company reports them; the bars show the plausible range. On &ldquo;applications open&rdquo;, bars span past cycles.
         </div>
       </div>
-      <CompanyPanel company={selected} />
+      <CompanyPanel company={sel} />
+      <div className="sr-only" aria-live="polite">Showing field notes for {sel.name}</div>
     </div>
+  );
+}
+
+function Whisker({ x1, x2, y1, y2 }: { x1: number; x2: number; y1: number; y2: number }) {
+  const v = x1 === x2;
+  return (
+    <g className="whisker">
+      <line x1={x1} x2={x2} y1={y1} y2={y2} />
+      <line x1={v ? x1 - 3 : x1} x2={v ? x1 + 3 : x1} y1={v ? y1 : y1 - 3} y2={v ? y1 : y1 + 3} />
+      <line x1={v ? x2 - 3 : x2} x2={v ? x2 + 3 : x2} y1={v ? y2 : y2 - 3} y2={v ? y2 : y2 + 3} />
+    </g>
   );
 }

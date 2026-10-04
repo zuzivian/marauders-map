@@ -1,0 +1,1362 @@
+[
+  {
+    "id": "apple",
+    "name": "Apple",
+    "ticker": "AAPL",
+    "cik": "0000320193",
+    "hq": "Cupertino",
+    "model": "Hardware and chips",
+    "ai": "Applies AI in products",
+    "marketCap": {
+      "value": 4870,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "cmc-home"
+      ]
+    },
+    "growth": {
+      "value": 14.2,
+      "basis": "twelve months to 2026-06-27 vs the twelve months before",
+      "sources": [
+        "apple-xbrl"
+      ],
+      "asOf": "2026-06-27"
+    },
+    "headcount": {
+      "value": 166000,
+      "asOf": "2025-09-27",
+      "note": "Full-time equivalent employees.",
+      "sources": [
+        "apple-10k"
+      ]
+    },
+    "b2bPayer": {
+      "value": 18,
+      "low": 13,
+      "high": 25,
+      "reasoning": "Services (~26%) include business-paid items (default-search licensing payments, App Store search ads, Apple Pay issuer fees) alongside consumer-paid App Store/iCloud/AppleCare; perhaps 25-35% of Services is business-paid. Hardware (~74%) is mostly consumer-bought; enterprise/education fleets maybe 10-20%. Combined ~13-25%.",
+      "sources": [
+        "apple-xbrl",
+        "apple-10k"
+      ]
+    },
+    "b2bUser": {
+      "value": 11,
+      "low": 8,
+      "high": 15,
+      "reasoning": "Day-to-day users are overwhelmingly consumers. Business-used share is mainly enterprise/education Macs, iPads and corporate iPhones (est. 10-15% of hardware) plus negligible business services.",
+      "sources": [
+        "apple-xbrl",
+        "apple-10k"
+      ]
+    },
+    "office": {
+      "category": "fixed",
+      "days": 3,
+      "summary": "3 days a week (Tue, Thu + a team-chosen day) since Sep 2022",
+      "effective": "2022-09",
+      "confidence": "high",
+      "sources": [
+        "fortune-apple-2022",
+        "bloomberg-apple-2022",
+        "archie-rto-tracker-2026"
+      ]
+    }
+  },
+  {
+    "id": "amazon",
+    "name": "Amazon",
+    "ticker": "AMZN",
+    "cik": "0001018724",
+    "hq": "Seattle",
+    "model": "Commerce",
+    "ai": "Builds AI infrastructure",
+    "marketCap": {
+      "value": 2710,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "cmc-home"
+      ]
+    },
+    "growth": {
+      "value": 15.8,
+      "basis": "twelve months to 2026-06-30 vs the twelve months before",
+      "sources": [
+        "amazon-xbrl"
+      ],
+      "asOf": "2026-06-30"
+    },
+    "headcount": {
+      "value": 1576000,
+      "asOf": "2025-12-31",
+      "note": "Full-time and part-time employees; includes fulfillment/warehouse and logistics workers, so not comparable to corporate-only headcount.",
+      "sources": [
+        "amazon-10k"
+      ]
+    },
+    "b2bPayer": {
+      "value": 53,
+      "low": 47,
+      "high": 58,
+      "reasoning": "Business-paid: third-party seller fees (24%), advertising (9.6%), AWS (18%), Other (0.8%) = ~52%; plus some Amazon Business purchases within Online stores. Lower bound reflects that seller fees are partly passed through to shoppers.",
+      "sources": [
+        "amazon-xbrl",
+        "amazon-10k"
+      ]
+    },
+    "b2bUser": {
+      "value": 20,
+      "low": 17,
+      "high": 32,
+      "reasoning": "AWS (18%) is clearly business-used. Seller services are used daily by merchants (fulfillment, seller tools) but the marketplace experience is consumer; counting part of them widens the upper bound.",
+      "sources": [
+        "amazon-xbrl",
+        "amazon-10k"
+      ]
+    },
+    "office": {
+      "category": "fixed",
+      "days": 5,
+      "summary": "5 days a week since Jan 2025",
+      "effective": "2025-01",
+      "interns": "Undated Amazon page says interns 'schedule a mix of in-office and work-from-home days'. It likely predates the 5-day rule, so don't rely on it.",
+      "confidence": "high",
+      "sources": [
+        "amazon-jassy-memo-2024",
+        "cnbc-amazon-2024",
+        "cnbc-amazon-delay-2024",
+        "amazon-intern-page"
+      ]
+    }
+  },
+  {
+    "id": "intuit",
+    "name": "Intuit",
+    "ticker": "INTU",
+    "cik": "0000896878",
+    "hq": "Mountain View",
+    "model": "Enterprise software",
+    "ai": "Applies AI in products",
+    "marketCap": {
+      "value": 75.1,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "sa-intuit",
+        "cmc-intuit"
+      ]
+    },
+    "growth": {
+      "value": 13.9,
+      "basis": "twelve months to 2026-07-31 vs the twelve months before",
+      "sources": [
+        "intuit-xbrl",
+        "intuit-10k"
+      ],
+      "asOf": "2026-07-31"
+    },
+    "headcount": {
+      "value": 18600,
+      "asOf": "2026-07-31",
+      "note": "Excludes ~12,300 seasonal employees (average, Jan-Apr) who support tax season.",
+      "sources": [
+        "intuit-10k"
+      ]
+    },
+    "b2bPayer": {
+      "value": 75,
+      "low": 70,
+      "high": 78,
+      "reasoning": "Business-paid: Global Business Solutions (QuickBooks, Mailchimp, payments, payroll; 60%), ProTax paid by accounting firms (3%), Credit Karma paid by lender/card partners (12%) = ~75%. Lower bound: some QuickBooks users are sole proprietors close to consumers.",
+      "sources": [
+        "intuit-xbrl",
+        "intuit-10k",
+        "intuit-10k"
+      ]
+    },
+    "b2bUser": {
+      "value": 63,
+      "low": 58,
+      "high": 66,
+      "reasoning": "Business-used: Global Business Solutions (60%) + ProTax (3%) = 63%. TurboTax and Credit Karma users are consumers (Credit Karma is consumer-used, business-paid).",
+      "sources": [
+        "intuit-xbrl",
+        "intuit-10k",
+        "intuit-10k"
+      ]
+    },
+    "office": {
+      "category": "fixed",
+      "days": 3,
+      "summary": "3 days a week on site",
+      "confidence": "medium",
+      "sources": [
+        "intuit-hybrid-careers",
+        "hubble-rto-list-2026"
+      ]
+    }
+  },
+  {
+    "id": "adobe",
+    "name": "Adobe",
+    "ticker": "ADBE",
+    "cik": "0000796343",
+    "hq": "San Jose",
+    "model": "Enterprise software",
+    "ai": "Applies AI in products",
+    "marketCap": {
+      "value": 92.5,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "sa-adobe",
+        "cmc-adobe"
+      ]
+    },
+    "growth": {
+      "value": 12,
+      "basis": "twelve months to 2026-08-28 vs the twelve months before",
+      "sources": [
+        "adobe-xbrl"
+      ],
+      "asOf": "2026-08-28"
+    },
+    "headcount": {
+      "value": 31360,
+      "asOf": "2025-11-28",
+      "note": "50% U.S., 50% international.",
+      "sources": [
+        "adobe-10k"
+      ]
+    },
+    "b2bPayer": {
+      "value": 72,
+      "low": 62,
+      "high": 82,
+      "reasoning": "Digital Experience and Publishing (26%) are enterprise-paid. Digital Media (74%) mixes enterprise/team licenses with individual Creative Cloud and Acrobat subscribers. Wide range because freelancers paying for themselves are arguably businesses.",
+      "sources": [
+        "adobe-xbrl",
+        "adobe-10k"
+      ]
+    },
+    "b2bUser": {
+      "value": 78,
+      "low": 70,
+      "high": 88,
+      "reasoning": "FY2025 subscription revenue by customer group: Creative & Marketing Professionals $16.3B vs Business Professionals & Consumers $6.5B. The first group plus part of the second (business Acrobat users) is professional use. Students, hobbyists and consumers keep it below ~88%.",
+      "sources": [
+        "adobe-xbrl",
+        "adobe-10k"
+      ]
+    },
+    "office": {
+      "category": "team",
+      "low": 2,
+      "high": 3,
+      "summary": "Hybrid, about half the week; teams set the cadence",
+      "effective": "2021-06",
+      "confidence": "low",
+      "sources": [
+        "adobe-future-of-work-2021",
+        "techrepublic-adobe-hybrid",
+        "hubble-rto-list-2026",
+        "blind-adobe-2025"
+      ],
+      "days": null
+    }
+  },
+  {
+    "id": "microsoft",
+    "name": "Microsoft",
+    "ticker": "MSFT",
+    "cik": "0000789019",
+    "hq": "Redmond",
+    "model": "Enterprise software",
+    "ai": "Builds AI infrastructure",
+    "marketCap": {
+      "value": 3840,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "cmc-home"
+      ]
+    },
+    "growth": {
+      "value": 17.8,
+      "basis": "twelve months to 2026-06-30 vs the twelve months before",
+      "sources": [
+        "microsoft-xbrl",
+        "microsoft-10k"
+      ],
+      "asOf": "2026-06-30"
+    },
+    "headcount": {
+      "value": 223000,
+      "asOf": "2026-06-30",
+      "note": "Full-time employees; 121,000 in the U.S.",
+      "sources": [
+        "microsoft-10k"
+      ]
+    },
+    "b2bPayer": {
+      "value": 88,
+      "low": 84,
+      "high": 91,
+      "reasoning": "FY2026 product lines: server/cloud $129.4B, M365 Commercial $102.0B, Dynamics $9.0B, Enterprise & partner services $8.3B and search ads $15.2B are business-paid (~79%). Most of LinkedIn ($19.8B) and Windows OEM/commercial ($17.1B) are business-paid too. Xbox ($21.8B) and M365 Consumer ($9.2B) are consumer-paid.",
+      "sources": [
+        "microsoft-xbrl",
+        "microsoft-10k",
+        "microsoft-10k"
+      ]
+    },
+    "b2bUser": {
+      "value": 82,
+      "low": 78,
+      "high": 86,
+      "reasoning": "Business-used: server/cloud, M365 Commercial, Dynamics, enterprise services (~75%), plus most of LinkedIn (professional network) and commercial Windows. Consumer-used: Xbox, M365 Consumer, Bing/search ads, consumer Windows and Surface.",
+      "sources": [
+        "microsoft-xbrl",
+        "microsoft-10k",
+        "microsoft-10k"
+      ]
+    },
+    "office": {
+      "category": "fixed",
+      "days": 3,
+      "summary": "3 days a week for staff within 50 miles of an office; Seattle area since Feb 2026, other US offices phasing in",
+      "effective": "2026-02",
+      "confidence": "high",
+      "sources": [
+        "microsoft-flexible-work-2025",
+        "geekwire-msft-2026",
+        "entrepreneur-msft-ai-4day",
+        "archie-rto-tracker-2026"
+      ]
+    }
+  },
+  {
+    "id": "salesforce",
+    "name": "Salesforce",
+    "ticker": "CRM",
+    "cik": "0001108524",
+    "hq": "San Francisco",
+    "model": "Enterprise software",
+    "ai": "Applies AI in products",
+    "marketCap": {
+      "value": 193.2,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "cmc-home"
+      ]
+    },
+    "growth": {
+      "value": 11.2,
+      "basis": "twelve months to 2026-07-31 vs the twelve months before",
+      "sources": [
+        "salesforce-xbrl"
+      ],
+      "asOf": "2026-07-31"
+    },
+    "headcount": {
+      "value": 83334,
+      "asOf": "2026-01-31",
+      "sources": [
+        "salesforce-10k"
+      ]
+    },
+    "b2bPayer": {
+      "value": 100,
+      "low": 99,
+      "high": 100,
+      "reasoning": "All revenue is enterprise software subscriptions and professional services sold to organizations.",
+      "sources": [
+        "salesforce-xbrl",
+        "salesforce-10k"
+      ]
+    },
+    "b2bUser": {
+      "value": 100,
+      "low": 99,
+      "high": 100,
+      "reasoning": "Users are employees of customer organizations. Consumer-facing Commerce/Service experiences are still operated by businesses.",
+      "sources": [
+        "salesforce-xbrl",
+        "salesforce-10k"
+      ]
+    },
+    "office": {
+      "category": "team",
+      "low": 3,
+      "high": 5,
+      "summary": "3-5 days by role since Oct 2024 (sales 4-5, most others 3; many engineers 10 days a quarter)",
+      "effective": "2024-10",
+      "interns": "Reported (Extern guide, secondary) as 4-5 days a week in person at US hubs. Not confirmed on Salesforce's own pages.",
+      "confidence": "medium",
+      "sources": [
+        "sfstandard-salesforce-2024",
+        "salesforce-hybrid-guidelines",
+        "extern-salesforce-interns",
+        "archie-rto-tracker-2026"
+      ],
+      "days": null
+    }
+  },
+  {
+    "id": "google",
+    "name": "Google",
+    "ticker": "GOOGL",
+    "cik": "0001652044",
+    "hq": "Mountain View",
+    "model": "Ads",
+    "ai": "Builds frontier models",
+    "marketCap": {
+      "value": 4200,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "note": "Alphabet",
+      "sources": [
+        "sa-google",
+        "cmc-home"
+      ]
+    },
+    "growth": {
+      "value": 20.1,
+      "basis": "twelve months to 2026-06-30 vs the twelve months before",
+      "note": "Includes hedging gains/losses (small).",
+      "sources": [
+        "google-xbrl"
+      ],
+      "asOf": "2026-06-30"
+    },
+    "headcount": {
+      "value": 190820,
+      "asOf": "2025-12-31",
+      "sources": [
+        "google-10k"
+      ]
+    },
+    "b2bPayer": {
+      "value": 88,
+      "low": 85,
+      "high": 90,
+      "reasoning": "Advertising (73%) and Google Cloud incl. Workspace (15%) are business-paid = ~88%. Subscriptions/platforms/devices (12%: YouTube Premium/TV, Google One, Play, Pixel) are mostly consumer-paid.",
+      "sources": [
+        "google-xbrl",
+        "google-10k"
+      ]
+    },
+    "b2bUser": {
+      "value": 15,
+      "low": 13,
+      "high": 18,
+      "reasoning": "Only Google Cloud (GCP + Workspace, 14.6%) is mainly business-used. Search, YouTube and Network ads are consumer-used. Small uplift for business use of Play and devices.",
+      "sources": [
+        "google-xbrl",
+        "google-10k"
+      ]
+    },
+    "office": {
+      "category": "fixed",
+      "days": 3,
+      "summary": "3 days a week; tightened for remote staff near offices since Apr 2025",
+      "confidence": "high",
+      "sources": [
+        "fortune-google-remote-2025",
+        "fortune-google-wfa-2025",
+        "archie-rto-tracker-2026"
+      ]
+    }
+  },
+  {
+    "id": "nvidia",
+    "name": "Nvidia",
+    "ticker": "NVDA",
+    "cik": "0001045810",
+    "hq": "Santa Clara",
+    "model": "Hardware and chips",
+    "ai": "Builds AI infrastructure",
+    "marketCap": {
+      "value": 5650,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "sa-nvidia",
+        "cmc-home"
+      ]
+    },
+    "growth": {
+      "value": 83.4,
+      "basis": "twelve months to 2026-07-26 vs the twelve months before",
+      "sources": [
+        "nvidia-xbrl"
+      ],
+      "asOf": "2026-07-26"
+    },
+    "headcount": {
+      "value": 42000,
+      "asOf": "2026-01-25",
+      "note": "31,000 in R&D, 11,000 in sales, marketing, operations and admin.",
+      "sources": [
+        "nvidia-10k"
+      ]
+    },
+    "b2bPayer": {
+      "value": 93,
+      "low": 92,
+      "high": 100,
+      "reasoning": "Nvidia's direct customers are almost all businesses (cloud providers, OEMs, add-in-board partners, distributors). If Gaming GPUs (7.4%) count as consumer-funded, the business share is ~93%. Counting the direct payer gives ~100%.",
+      "sources": [
+        "nvidia-xbrl",
+        "nvidia-10k"
+      ]
+    },
+    "b2bUser": {
+      "value": 93,
+      "low": 91,
+      "high": 95,
+      "reasoning": "Data Center, ProViz, Automotive and OEM = $199.8B / $215.9B = 92.6%. Gaming GPUs are consumer-used (some go to creators and AI hobbyists).",
+      "sources": [
+        "nvidia-xbrl",
+        "nvidia-10k"
+      ]
+    },
+    "office": {
+      "category": "flexible",
+      "summary": "No company-wide office requirement; managers and teams set expectations, from fully remote to most days in office",
+      "interns": "Nvidia's intern benefits page says interns can work from home, in the office or a mix. It covers remote-work costs, plus housing and travel if placed at an office more than 50 miles from campus.",
+      "confidence": "high",
+      "sources": [
+        "nvidia-intern-benefits",
+        "fortune-nvidia-2023",
+        "fortune-flexible-employers-2025",
+        "wfa-nvidia-2025",
+        "blind-nvidia-2024",
+        "blind-nvidia-2026",
+        "hubble-rto-list-2026"
+      ],
+      "days": null
+    }
+  },
+  {
+    "id": "meta",
+    "name": "Meta",
+    "ticker": "META",
+    "cik": "0001326801",
+    "hq": "Menlo Park",
+    "model": "Ads",
+    "ai": "Builds frontier models",
+    "marketCap": {
+      "value": 1850,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "sa-meta",
+        "cmc-home"
+      ]
+    },
+    "growth": {
+      "value": 27.7,
+      "basis": "twelve months to 2026-06-30 vs the twelve months before",
+      "sources": [
+        "meta-xbrl"
+      ],
+      "asOf": "2026-06-30"
+    },
+    "headcount": {
+      "value": 78865,
+      "asOf": "2025-12-31",
+      "sources": [
+        "meta-10k"
+      ]
+    },
+    "b2bPayer": {
+      "value": 98,
+      "low": 97,
+      "high": 99,
+      "reasoning": "Advertising is 97.6% of revenue. FoA Other (WhatsApp Business messaging, Meta Verified) is partly business-paid. Reality Labs hardware is consumer-paid.",
+      "sources": [
+        "meta-xbrl",
+        "meta-10k"
+      ]
+    },
+    "b2bUser": {
+      "value": 1,
+      "low": 0,
+      "high": 3,
+      "reasoning": "Ads count as consumer-used. Only WhatsApp Business messaging and part of Meta Verified (a slice of the 1.3% 'Other') are business-used.",
+      "sources": [
+        "meta-xbrl",
+        "meta-10k"
+      ]
+    },
+    "office": {
+      "category": "fixed",
+      "days": 3,
+      "summary": "3 days a week since Sep 2023; Instagram US 5 days since Feb 2026",
+      "effective": "2023-09",
+      "confidence": "high",
+      "sources": [
+        "fortune-instagram-2025",
+        "cnbc-instagram-2025",
+        "fortune-meta-2023",
+        "archie-rto-tracker-2026"
+      ]
+    }
+  },
+  {
+    "id": "airbnb",
+    "name": "Airbnb",
+    "ticker": "ABNB",
+    "cik": "0001559720",
+    "hq": "San Francisco",
+    "model": "Commerce",
+    "ai": "Applies AI in products",
+    "marketCap": {
+      "value": 95.8,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "sa-airbnb",
+        "cmc-airbnb"
+      ]
+    },
+    "growth": {
+      "value": 13.6,
+      "basis": "twelve months to 2026-06-30 vs the twelve months before",
+      "sources": [
+        "airbnb-xbrl"
+      ],
+      "asOf": "2026-06-30"
+    },
+    "headcount": {
+      "value": 8200,
+      "asOf": "2025-12-31",
+      "sources": [
+        "airbnb-10k"
+      ]
+    },
+    "b2bPayer": {
+      "value": 15,
+      "low": 8,
+      "high": 30,
+      "reasoning": "Revenue is service fees. Guest fees (consumer-paid) dominate. Host fees are paid by hosts, a growing share of whom are professional property managers on host-only fee pricing; some trips are employer-paid business travel. Wide range because host fee share is not disclosed.",
+      "sources": [
+        "airbnb-xbrl",
+        "airbnb-10k"
+      ]
+    },
+    "b2bUser": {
+      "value": 5,
+      "low": 3,
+      "high": 12,
+      "reasoning": "Guests are mostly leisure consumers; business travel is a minority. Hosts use the platform but are counted as the supply side, not end users.",
+      "sources": [
+        "airbnb-xbrl",
+        "airbnb-10k"
+      ]
+    },
+    "office": {
+      "category": "remote",
+      "summary": "Live and work anywhere (since Apr 2022); periodic in-person gatherings",
+      "effective": "2022-04",
+      "confidence": "high",
+      "sources": [
+        "airbnb-live-work-anywhere-2022",
+        "entrepreneur-airbnb-2025",
+        "hubble-rto-list-2026"
+      ],
+      "days": null
+    }
+  },
+  {
+    "id": "uber",
+    "name": "Uber",
+    "ticker": "UBER",
+    "cik": "0001543151",
+    "hq": "San Francisco",
+    "model": "Commerce",
+    "ai": "Applies AI in products",
+    "marketCap": {
+      "value": 139.1,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "sa-uber",
+        "cmc-uber"
+      ]
+    },
+    "growth": {
+      "value": 16.7,
+      "basis": "twelve months to 2026-06-30 vs the twelve months before",
+      "sources": [
+        "uber-xbrl"
+      ],
+      "asOf": "2026-06-30"
+    },
+    "headcount": {
+      "value": 34000,
+      "asOf": "2025-12-31",
+      "note": "Excludes drivers and couriers (independent contractors). ~20,300 employees are outside the U.S.",
+      "sources": [
+        "uber-10k"
+      ]
+    },
+    "b2bPayer": {
+      "value": 25,
+      "low": 15,
+      "high": 35,
+      "reasoning": "Freight (9.8%) is shipper-paid. Advertising (>$2B run rate, mostly in Delivery) is brand/merchant-paid. Uber for Business rides are employer-paid. Restaurant/merchant commissions make up a large but undisclosed part of Delivery net revenue. Riders and eaters pay the rest. Wide range because Uber does not split Delivery revenue by payer.",
+      "sources": [
+        "uber-xbrl",
+        "uber-10k"
+      ]
+    },
+    "b2bUser": {
+      "value": 13,
+      "low": 10,
+      "high": 17,
+      "reasoning": "Freight (9.8%) is business-used, plus Uber for Business rides and merchant-facing tools. Riders and eaters are consumers.",
+      "sources": [
+        "uber-xbrl",
+        "uber-10k"
+      ]
+    },
+    "office": {
+      "category": "fixed",
+      "days": 3,
+      "summary": "3 days a week (Tue-Thu) since Jun 2025; enforcement tightened Sep 2026, remote roles capped at ~1%",
+      "effective": "2025-06",
+      "confidence": "high",
+      "sources": [
+        "foxbusiness-uber-2025",
+        "thefederal-uber-2026",
+        "sfchronicle-uber-2026",
+        "archie-rto-tracker-2026"
+      ]
+    }
+  },
+  {
+    "id": "openai",
+    "name": "OpenAI",
+    "hq": "San Francisco",
+    "model": "AI models",
+    "ai": "Builds frontier models",
+    "marketCap": {
+      "value": 852,
+      "asOf": "2026-03-31",
+      "kind": "private valuation",
+      "sources": [
+        "openai-sacra",
+        "openai-dealroom-tender",
+        "openai-cnbc-tender"
+      ]
+    },
+    "growth": {
+      "value": 200,
+      "low": 150,
+      "high": 300,
+      "basis": "calendar 2025 revenue vs 2024, cross-checked against 2026 quarterly reports",
+      "note": "Private company: figures are press reports of revenue OpenAI hasn't published, so the range is wide. Annualized run-rate jumps (often quoted) overstate year-over-year growth.",
+      "sources": [
+        "openai-quartz-70b",
+        "openai-axios-70b",
+        "openai-bloomberg-40b",
+        "openai-info-h1-2025",
+        "openai-latka-2024"
+      ]
+    },
+    "headcount": {
+      "value": 6000,
+      "low": 4500,
+      "high": 8000,
+      "asOf": "2026-10-04",
+      "note": "FT (via Engadget, Mar 21 2026): ~4,500 employees, targeting ~8,000 by end-2026. No verified Oct 2026 figure; 6,000 is an interpolated estimate. Revelio Labs (LinkedIn-based) shows higher counts but uses a different method.",
+      "sources": [
+        "openai-engadget-headcount",
+        "openai-revelio"
+      ]
+    },
+    "b2bPayer": {
+      "value": 57,
+      "low": 50,
+      "high": 65,
+      "reasoning": "Company said enterprise exceeded 40% of revenue (Apr 2026). CFO reportedly told investors in Aug 2026 that enterprise now exceeds consumer. Enterprise (ChatGPT Enterprise/Team/Edu + API) more than doubled since July (Axios). Ads (~$1B run rate, Aug 2026) are also business-paid. Consumer ChatGPT subscriptions remain large; Q3 consumer revenue exceeded all of 2025's.",
+      "sources": [
+        "openai-quartz-70b",
+        "openai-axios-70b",
+        "openai-bloomberg-40b",
+        "openai-info-h1-2025",
+        "openai-latka-2024"
+      ]
+    },
+    "b2bUser": {
+      "value": 50,
+      "low": 40,
+      "high": 60,
+      "reasoning": "Enterprise seats are business-used. API revenue is paid by developers, but many API-powered apps serve consumers, so business-used share sits a bit below business-paid. ChatGPT Plus/Pro and ad-supported free usage are consumer.",
+      "sources": [
+        "openai-quartz-70b",
+        "openai-axios-70b",
+        "openai-bloomberg-40b",
+        "openai-info-h1-2025",
+        "openai-latka-2024"
+      ]
+    },
+    "office": {
+      "category": "fixed",
+      "days": 3,
+      "summary": "3 days a week in office (typically Mon-Wed)",
+      "confidence": "medium",
+      "sources": [
+        "openai-careers-posting",
+        "jobsbyculture-openai-2026",
+        "fortune-altman-2023"
+      ]
+    }
+  },
+  {
+    "id": "cisco",
+    "name": "Cisco",
+    "ticker": "CSCO",
+    "cik": "0000858877",
+    "hq": "San Jose",
+    "model": "Hardware and chips",
+    "ai": "Builds AI infrastructure",
+    "marketCap": {
+      "value": 442.36,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "cisco-mcap-sa",
+        "cisco-mcap-cmc"
+      ]
+    },
+    "growth": {
+      "value": 11.8,
+      "basis": "twelve months to 2026-07-25 vs the twelve months before",
+      "note": "Product revenue +16% (Networking +22%, driven by AI infrastructure); services flat.",
+      "sources": [
+        "cisco-xbrl",
+        "cisco-10k-fy26"
+      ],
+      "asOf": "2026-07-25"
+    },
+    "headcount": {
+      "value": 82400,
+      "asOf": "2026-07-25",
+      "note": "approximate, total employees",
+      "sources": [
+        "cisco-10k-fy26"
+      ]
+    },
+    "b2bPayer": {
+      "value": 99,
+      "low": 98,
+      "high": 100,
+      "reasoning": "Cisco sells to businesses, public institutions, governments and service providers, mostly through channel partners. It has no meaningful consumer product line, so nearly all revenue is paid by organizations.",
+      "sources": [
+        "cisco-10k-customers",
+        "cisco-10k-fy26"
+      ]
+    },
+    "b2bUser": {
+      "value": 99,
+      "low": 97,
+      "high": 100,
+      "reasoning": "Networking gear, security, observability and services are run by IT and network professionals; Webex is used at work. Any consumer-style use (e.g. home users of Webex) is negligible in revenue terms.",
+      "sources": [
+        "cisco-10k-customers",
+        "cisco-10k-fy26"
+      ]
+    },
+    "office": {
+      "category": "flexible",
+      "summary": "Hybrid with no company-wide office minimum; employees and managers decide (policy since 2021)",
+      "effective": "2021-07",
+      "confidence": "medium",
+      "sources": [
+        "cisco-sdx-2021",
+        "cisco-fortune-2023",
+        "cisco-10k-hybrid",
+        "cisco-hrexec-2025"
+      ],
+      "days": null
+    }
+  },
+  {
+    "id": "dell",
+    "name": "Dell",
+    "ticker": "DELL",
+    "cik": "0001571996",
+    "hq": "Round Rock",
+    "model": "Hardware and chips",
+    "ai": "Builds AI infrastructure",
+    "marketCap": {
+      "value": 357.66,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "dell-mcap-sa",
+        "dell-mcap-cmc"
+      ]
+    },
+    "growth": {
+      "value": 49,
+      "basis": "twelve months to 2026-07-31 vs the twelve months before",
+      "note": "Driven by AI servers. Quarterly revenue went from $29.8B (Q2 FY26) to $47.0B (Q2 FY27). In FY2026, ISG servers and networking grew 63%.",
+      "sources": [
+        "dell-xbrl",
+        "dell-10q-q2fy27",
+        "dell-10k-fy26"
+      ],
+      "asOf": "2026-07-31"
+    },
+    "headcount": {
+      "value": 97000,
+      "asOf": "2026-01-30",
+      "note": "approximate, total employees",
+      "sources": [
+        "dell-10k-fy26"
+      ]
+    },
+    "b2bPayer": {
+      "value": 94,
+      "low": 92,
+      "high": 95,
+      "reasoning": "Of $113.5B in FY2026 revenue, only CSG Consumer ($6.9B, about 6%) is sold to consumers. ISG, commercial PCs and the VMware-resale remnant are bought by businesses, governments and schools. The range allows for some 'commercial' sales to sole proprietors.",
+      "sources": [
+        "dell-10k-fy26",
+        "dell-10k-other"
+      ]
+    },
+    "b2bUser": {
+      "value": 93,
+      "low": 90,
+      "high": 95,
+      "reasoning": "Servers, storage and networking are run by IT teams, and commercial PCs are used by employees at work. Consumer PCs (about 6%) plus a sliver of commercial laptops used personally are the consumer-used part.",
+      "sources": [
+        "dell-10k-fy26"
+      ]
+    },
+    "office": {
+      "category": "fixed",
+      "days": 5,
+      "summary": "5 days a week since Mar 3, 2025 for anyone within about an hour of a Dell office; staff farther away can stay remote. Enforcement tightened in Dec 2025.",
+      "effective": "2025-03",
+      "interns": "Dell's summer 2027 graduate intern postings list workplace type 'On-site'.",
+      "confidence": "high",
+      "sources": [
+        "dell-fortune-rto-2025",
+        "dell-statesman-rto-2025",
+        "dell-techco-rto-2025",
+        "dell-storyboard18-2025",
+        "dell-hrgrapevine-2026",
+        "dell-req-298518"
+      ]
+    }
+  },
+  {
+    "id": "ibm",
+    "name": "IBM",
+    "ticker": "IBM",
+    "cik": "0000051143",
+    "hq": "Armonk, NY",
+    "model": "Enterprise software",
+    "ai": "Builds AI infrastructure",
+    "marketCap": {
+      "value": 209.76,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "ibm-stockanalysis-mcap"
+      ]
+    },
+    "growth": {
+      "value": 7.9,
+      "basis": "twelve months to 2026-06-30 vs the twelve months before",
+      "note": "TTM = FY2025 $67.535B - H1 2025 $31.519B + H1 2026 $33.079B; prior = FY2024 $62.753B - H1 2024 $30.231B + H1 2025 $31.519B (us-gaap:Revenues). Q3 2026 not yet reported.",
+      "sources": [
+        "ibm-xbrl-companyfacts",
+        "ibm-10q-2026q2"
+      ],
+      "asOf": "2026-06-30"
+    },
+    "headcount": {
+      "value": 264300,
+      "asOf": "2025-12-31",
+      "note": "IBM and wholly owned subsidiaries (264.3k); excludes 8.7k at less-than-wholly owned subsidiaries and 13.8k complementary (temporary/contract) workforce",
+      "sources": [
+        "ibm-ar-2025"
+      ]
+    },
+    "b2bPayer": {
+      "value": 99,
+      "low": 98,
+      "high": 100,
+      "reasoning": "All four segments (software, consulting, infrastructure hardware, financing) sell to enterprises and governments; IBM has no meaningful consumer business.",
+      "sources": [
+        "ibm-ar-2025"
+      ]
+    },
+    "b2bUser": {
+      "value": 99,
+      "low": 97,
+      "high": 100,
+      "reasoning": "Day-to-day users are enterprise IT, developers, and business staff (Red Hat, watsonx, automation, mainframes, consulting deliverables). No meaningful consumer products.",
+      "sources": [
+        "ibm-ar-2025"
+      ]
+    },
+    "office": {
+      "category": "fixed",
+      "days": 3,
+      "summary": "3 days a week in office (or at a client site) for staff near an IBM office; reiterated in 2023 and again for US sales and cloud staff in 2025",
+      "effective": "2025-07",
+      "interns": "2026-cycle MBA intern postings list work arrangement as Hybrid (NY, Armonk, Cambridge)",
+      "confidence": "medium",
+      "sources": [
+        "ibm-rto-computerworld-2023",
+        "ibm-rto-techradar-2025",
+        "ibm-posting-130063"
+      ]
+    }
+  },
+  {
+    "id": "paypal",
+    "name": "PayPal",
+    "ticker": "PYPL",
+    "cik": "0001633917",
+    "hq": "San Jose",
+    "model": "Payments",
+    "ai": "Applies AI in products",
+    "marketCap": {
+      "value": 45.17,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "paypal-stockanalysis-mcap"
+      ]
+    },
+    "growth": {
+      "value": 5.8,
+      "basis": "twelve months to 2026-03-31 vs the twelve months before",
+      "note": "TTM = FY2025 $33.172B - H1 2025 $16.079B + H1 2026 $17.035B; prior = FY2024 $31.797B - H1 2024 $15.584B + H1 2025 $16.079B (us-gaap:Revenues).",
+      "sources": [
+        "paypal-xbrl",
+        "paypal-10q-2026q2",
+        "paypal-10k-2025"
+      ],
+      "asOf": "2026-03-31"
+    },
+    "headcount": {
+      "value": 23800,
+      "asOf": "2025-12-31",
+      "note": "Approximate global employees; 'predominantly full-time'; ~9,600 in the U.S.",
+      "sources": [
+        "paypal-10k-2025"
+      ]
+    },
+    "b2bPayer": {
+      "value": 80,
+      "low": 70,
+      "high": 88,
+      "reasoning": "PayPal reports one segment. Most transaction revenue is fees charged to merchants (branded checkout, Braintree/unbranded processing, BNPL, POS, payouts). Consumers pay some fees directly: instant transfers, currency conversion, cross-border/Xoom, crypto, plus interest on consumer credit. PayPal does not split payer type, so this is an estimate.",
+      "sources": [
+        "paypal-10k-2025"
+      ]
+    },
+    "b2bUser": {
+      "value": 25,
+      "low": 15,
+      "high": 35,
+      "reasoning": "Branded PayPal/Venmo checkout and P2P are used day to day by consumers. Revenue from merchant-facing products (Braintree unbranded processing, POS, payouts/Hyperwallet, business financing, risk tools) counts as business-used. PayPal does not disclose Braintree revenue, so this is a rough estimate.",
+      "sources": [
+        "paypal-10k-2025"
+      ]
+    },
+    "office": {
+      "category": "fixed",
+      "days": 3,
+      "summary": "3 days a week in the office for most employees ('balanced hybrid'), per current job postings",
+      "interns": "MBA intern postings carry the same 3-day hybrid language, and Built In tagged them 'In-Office'. PayPal's US university page says interns must relocate to the role's office for the summer. An older Intern Hub page mentions a 'Virtual Flex model' for interns and looks out of date.",
+      "confidence": "medium",
+      "sources": [
+        "paypal-workday-corpstrategy-posting",
+        "paypal-builtin-ventures-ops-2025",
+        "paypal-careers-na-university",
+        "paypal-careers-intern-hub"
+      ]
+    }
+  },
+  {
+    "id": "servicenow",
+    "name": "ServiceNow",
+    "ticker": "NOW",
+    "cik": "0001373715",
+    "hq": "Santa Clara",
+    "model": "Enterprise software",
+    "ai": "Applies AI in products",
+    "marketCap": {
+      "value": 138.93,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "servicenow-sa-mcap"
+      ]
+    },
+    "growth": {
+      "value": 22.2,
+      "basis": "twelve months to 2026-06-30 vs the twelve months before",
+      "note": "Computed from SEC XBRL RevenueFromContractWithCustomerExcludingAssessedTax: FY2025 $13.278B - H1 2025 $6.303B + H1 2026 $7.757B, vs FY2024 $10.984B - H1 2024 $5.230B + H1 2025 $6.303B. Reported growth; not adjusted for revenue from acquisitions.",
+      "sources": [
+        "servicenow-xbrl",
+        "servicenow-10q-2026q2",
+        "servicenow-10k-2025"
+      ],
+      "asOf": "2026-06-30"
+    },
+    "headcount": {
+      "value": 29187,
+      "asOf": "2025-12-31",
+      "note": "Full-time employees (14,601 in the US)",
+      "sources": [
+        "servicenow-10k-2025"
+      ]
+    },
+    "b2bPayer": {
+      "value": 100,
+      "low": 99,
+      "high": 100,
+      "reasoning": "ServiceNow sells subscriptions to enterprises and government agencies. It has no consumer revenue line. One US federal channel partner alone accounted for 11% of FY2025 revenue.",
+      "sources": [
+        "servicenow-10k-2025"
+      ]
+    },
+    "b2bUser": {
+      "value": 98,
+      "low": 95,
+      "high": 100,
+      "reasoning": "The day-to-day users are IT, HR, customer-service and security staff, plus employees using service portals at work. The only consumer-facing use is end customers on CSM portals or chat, and it is small.",
+      "sources": [
+        "servicenow-10k-2025"
+      ]
+    },
+    "office": {
+      "category": "fixed",
+      "days": 2,
+      "summary": "Most staff are on the 'flexible' work persona: in the office 2+ days a week. Some roles are fully in-office, and staff living more than 30 miles from an office may be remote.",
+      "interns": "The MBA Corporate Strategy intern posting says candidates must be able to work hybrid in the Santa Clara office. Jobright listed the Summer 2026 MBA PM roles as Hybrid.",
+      "confidence": "medium",
+      "sources": [
+        "servicenow-life-at",
+        "servicenow-builtin-workplace",
+        "servicenow-sr-corpstrategy-2026"
+      ]
+    }
+  },
+  {
+    "id": "visa",
+    "name": "Visa",
+    "ticker": "V",
+    "cik": "0001403161",
+    "hq": "San Francisco",
+    "model": "Payments",
+    "ai": "Applies AI in products",
+    "marketCap": {
+      "value": 662.24,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "visa-stockanalysis-mcap"
+      ]
+    },
+    "growth": {
+      "value": 14.4,
+      "basis": "twelve months to 2026-03-31 vs the twelve months before",
+      "note": "Fiscal year ends Sep 30. TTM = FY2025 $40.000B - 9M FY2025 $29.276B + 9M FY2026 $33.764B; prior = FY2024 $35.926B - 9M FY2024 $26.309B + 9M FY2025 $29.276B (us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax). Q3 FY2026 net revenue $11.633B, +14%.",
+      "sources": [
+        "visa-xbrl",
+        "visa-10q-2026q3",
+        "visa-10k-fy2025"
+      ],
+      "asOf": "2026-03-31"
+    },
+    "headcount": {
+      "value": 34100,
+      "asOf": "2025-09-30",
+      "note": "Approximate total workforce at fiscal 2025 year-end, up 8% from about 31,600.",
+      "sources": [
+        "visa-10k-fy2025"
+      ]
+    },
+    "b2bPayer": {
+      "value": 99,
+      "low": 97,
+      "high": 100,
+      "reasoning": "Visa has one reportable segment and is paid by its clients, issuers and acquirers (financial institutions), plus merchants and others for value-added services. Cardholders don't pay Visa directly.",
+      "sources": [
+        "visa-10k-fy2025"
+      ]
+    },
+    "b2bUser": {
+      "value": 35,
+      "low": 25,
+      "high": 45,
+      "reasoning": "Most network revenue comes from consumer cardholders' spending, so the end users are consumers. Value-added services (issuing processing, risk and identity, acceptance, advisory) were $10.9B in FY2025, about 27% of net revenue, and are used by banks and merchants. Commercial cards and B2B money movement add a bit more. Visa doesn't split the core network by commercial vs consumer, so this is an estimate.",
+      "sources": [
+        "visa-10k-fy2025"
+      ]
+    },
+    "office": {
+      "category": "fixed",
+      "days": 3,
+      "summary": "At least 3 days a week in the office, per current (Sep–Oct 2026) US job postings",
+      "interns": "Current US intern postings (Sep 2026) also say at least 3 days. Summer 2026 MBA intern postings said days in office would be confirmed by the hiring manager. Summer 2025 postings described 2–3 set days a week, about 50%+ in office.",
+      "confidence": "medium",
+      "sources": [
+        "visa-workday-intern-posting-2026",
+        "visa-linkedin-vca-ashburn-2025",
+        "visa-linkedin-pm-2024"
+      ]
+    }
+  },
+  {
+    "id": "waymo",
+    "name": "Waymo",
+    "hq": "Mountain View",
+    "model": "Commerce",
+    "ai": "Applies AI in products",
+    "marketCap": {
+      "value": 126,
+      "asOf": "2026-02-02",
+      "kind": "private valuation",
+      "sources": [
+        "waymo-blog-16b-round",
+        "waymo-cnbc-16b-round"
+      ]
+    },
+    "growth": {
+      "value": 117,
+      "low": 117,
+      "high": 127,
+      "basis": "Annualized revenue run-rate, end-2025 vs end-2024 (Sacra estimate; Waymo does not disclose revenue)",
+      "note": "These are third-party estimates, not audited filings. Sacra gives 116.8% y/y growth for 2025 (low). Its run-rate figures ($125M at end-2024, $284M at end-2025) imply about 127% (high). Waymo's only official volume figure: 2025 ride volume 'more than tripled' to 15M rides. Alphabet reports Waymo inside 'Other Bets' with Verily and others. Other Bets revenue fell from $1.648B (2024) to $1.537B (2025), so it is not a usable Waymo proxy. ttmB/priorTtmB here are run-rates, not true TTM.",
+      "sources": [
+        "waymo-sacra-revenue",
+        "waymo-blog-16b-round",
+        "waymo-alphabet-10k-2025"
+      ]
+    },
+    "headcount": {
+      "value": 2762,
+      "asOf": "2026-03-31",
+      "note": "Third-party estimate (Revelio Labs, 'as of March 2026'; exact day not given, month-end used). Waymo does not publish headcount, and other data vendors seen in search results range up to ~4,800 (Sep 2026). Treat as a rough lower-bound range of ~2,800-4,800.",
+      "sources": [
+        "waymo-revelio-headcount"
+      ]
+    },
+    "b2bPayer": {
+      "value": 10,
+      "low": 5,
+      "high": 25,
+      "reasoning": "Nearly all revenue is robotaxi fares paid by consumer riders in the Waymo app. In Austin and Atlanta, rides are sold only through Uber, so Uber is the business counterparty paying Waymo. Small extras (partnerships, business accounts) push this up only slightly. The high end allows for an Uber channel larger than public data shows.",
+      "sources": [
+        "waymo-blog-16b-round",
+        "waymo-on-uber"
+      ]
+    },
+    "b2bUser": {
+      "value": 5,
+      "low": 0,
+      "high": 10,
+      "reasoning": "The day-to-day end users are individual riders, including riders who book through Uber. Only a small sliver of business/fleet use exists, such as corporate travel.",
+      "sources": [
+        "waymo-blog-16b-round",
+        "waymo-on-uber"
+      ]
+    },
+    "office": {
+      "category": "flexible",
+      "summary": "Hybrid, varies by role and team; one tracker lists 2 days a week, unverified",
+      "interns": "Interns are hosted onsite at a Waymo location in a hybrid modality. All 2027 MBA postings say 'hybrid onsite internship position'.",
+      "confidence": "low",
+      "sources": [
+        "waymo-working-at-waymo",
+        "waymo-early-careers",
+        "waymo-flexindex",
+        "waymo-gh-ops-planning-2027"
+      ],
+      "days": null
+    }
+  },
+  {
+    "id": "workday",
+    "name": "Workday",
+    "ticker": "WDAY",
+    "cik": "0001327811",
+    "hq": "Pleasanton",
+    "model": "Enterprise software",
+    "ai": "Applies AI in products",
+    "marketCap": {
+      "value": 44.86,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "workday-sa-mcap"
+      ]
+    },
+    "growth": {
+      "value": 13.3,
+      "basis": "twelve months to 2026-07-31 vs the twelve months before",
+      "note": "Computed from SEC XBRL RevenueFromContractWithCustomerExcludingAssessedTax: FY2026 (ended 2026-01-31) $9.552B - H1 FY26 $4.588B + H1 FY27 $5.191B, vs FY2025 $8.446B - H1 FY25 $4.075B + H1 FY26 $4.588B. Fiscal year ends Jan 31.",
+      "sources": [
+        "workday-xbrl",
+        "workday-10q-2026q2",
+        "workday-10k-fy2026"
+      ],
+      "asOf": "2026-07-31"
+    },
+    "headcount": {
+      "value": 21000,
+      "asOf": "2026-01-31",
+      "note": "The 10-K says 'over 21,000 employees' (about 58% in the US). It gives no exact figure.",
+      "sources": [
+        "workday-10k-fy2026"
+      ]
+    },
+    "b2bPayer": {
+      "value": 100,
+      "low": 99,
+      "high": 100,
+      "reasoning": "All revenue comes from enterprise, mid-market and public-sector customers buying HCM, finance, spend and planning subscriptions plus implementation services. There is no consumer revenue.",
+      "sources": [
+        "workday-10k-fy2026"
+      ]
+    },
+    "b2bUser": {
+      "value": 97,
+      "low": 93,
+      "high": 100,
+      "reasoning": "Daily users are HR, finance and payroll staff, plus customers' employees doing HR and expense tasks at work. Job applicants using Workday-powered career sites are a small consumer-like slice.",
+      "sources": [
+        "workday-10k-fy2026"
+      ]
+    },
+    "office": {
+      "category": "fixed",
+      "low": 2,
+      "high": 3,
+      "summary": "'Flex Work': at least 50% of time each quarter in the office or with customers. No set weekly days; this works out to roughly 2-3 days a week.",
+      "interns": "The Summer 2026 Financial Analyst MBA Intern posting asked for a full-time, in-person 12-week internship. Jobright listed the Enterprise Planning MBA role as Hybrid.",
+      "confidence": "high",
+      "sources": [
+        "workday-careers-faq",
+        "workday-jobright-fa-mba"
+      ],
+      "days": 2.5
+    }
+  }
+]

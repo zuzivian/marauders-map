@@ -1,0 +1,3748 @@
+{
+  "aced-google-pm": {
+    "url": "https://www.aced.io/guides/google-pm-interview",
+    "title": "Google PM Interview Guide",
+    "publisher": "Aced (formerly Exponent)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "aced-intuit-pm": {
+    "url": "https://www.aced.io/guides/intuit-pm-interview",
+    "title": "Intuit PM Interview Guide",
+    "publisher": "Aced (formerly Exponent)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "aced-microsoft-pm-intern": {
+    "url": "https://www.aced.io/guides/microsoft-product-manager-intern-interview",
+    "title": "Microsoft Product Manager Intern Interview Guide",
+    "publisher": "Aced (formerly Exponent)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "aced-rebrand-blog": {
+    "url": "https://www.aced.io/blog/exponent-is-becoming-aced",
+    "title": "Exponent is becoming Aced",
+    "publisher": "Aced (formerly Exponent)",
+    "published": "2026-08-17",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Exponent is now Aced."
+  },
+  "aced-upgrade": {
+    "url": "https://www.aced.io/upgrade",
+    "title": "Membership and Pricing - Aced (formerly Exponent)",
+    "publisher": "Aced (formerly Exponent)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Get a taste of Aced — no credit card required",
+    "quoteCheck": "browser 2026-10-04"
+  },
+  "adobe-10k": {
+    "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+    "title": "Adobe Inc. Form 10-K (adbe-20251128.htm)",
+    "publisher": "SEC EDGAR",
+    "published": "2026-01-15",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "we employed 31,360 people"
+  },
+  "adobe-2023-pm-wayback": {
+    "url": "https://web.archive.org/web/20230924095521/https://careers.adobe.com/us/en/job/R139832/2024-MBA-Intern-Product-Management",
+    "title": "2024 MBA Intern - Product Management (R139832), postedDate 2023-09-11",
+    "publisher": "Adobe Careers via Internet Archive",
+    "published": "2023-09-11",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "2024 MBA Intern - Product Management"
+  },
+  "adobe-2024-pm-wayback": {
+    "url": "https://web.archive.org/web/20241010010637/https://careers.adobe.com/us/en/job/R149420/2025-MBA-Intern-Product-Management-Digital-Media",
+    "title": "2025 MBA Intern - Product Management, Digital Media (R149420), postedDate 2024-09-17",
+    "publisher": "Adobe Careers via Internet Archive",
+    "published": "2024-09-17",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "2025 MBA Intern - Product Management, Digital Media"
+  },
+  "adobe-2025-dsa-wayback": {
+    "url": "https://web.archive.org/web/20251014063738/https://careers.adobe.com/us/en/job/R160012/2026-MBA-Intern-Digital-Strategy-Associate",
+    "title": "2026 MBA Intern - Digital Strategy Associate (R160012), postedDate 2025-09-10",
+    "publisher": "Adobe Careers via Internet Archive",
+    "published": "2025-09-10",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "2026 MBA Intern - Digital Strategy Associate"
+  },
+  "adobe-2025-pm-wayback": {
+    "url": "https://web.archive.org/web/20251014064040/https://careers.adobe.com/us/en/job/R160316/2026-MBA-Intern-Product-Manager",
+    "title": "2026 MBA Intern - Product Manager (R160316), postedDate 2025-09-23",
+    "publisher": "Adobe Careers via Internet Archive",
+    "published": "2025-09-23",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "2026 MBA Intern - Product Manager"
+  },
+  "adobe-2025-pmm-wayback": {
+    "url": "https://web.archive.org/web/20251005150137/https://careers.adobe.com/us/en/job/R160318/2026-MBA-Intern-Product-Marketing-Manager",
+    "title": "2026 MBA Intern - Product Marketing Manager (R160318), postedDate 2025-09-23",
+    "publisher": "Adobe Careers via Internet Archive",
+    "published": "2025-09-23",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "2026 MBA Intern - Product Marketing Manager"
+  },
+  "adobe-R172261": {
+    "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/XMLNAME-2027-MBA-Intern---Product-Manager_R172261",
+    "title": "2027 MBA Intern – Product Manager (R172261)",
+    "publisher": "Adobe Workday",
+    "published": "2026-09-30",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Currently enrolled in a full-time MBA program, graduating between December 2027 and June 2028.",
+    "quoteCheck": "browser 2026-10-04"
+  },
+  "adobe-R172262": {
+    "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/XMLNAME-2027-MBA-Intern---Product-Marketing-Manager_R172262",
+    "title": "2027 MBA Intern – Product Marketing Manager (R172262)",
+    "publisher": "Adobe Workday",
+    "published": "2026-09-30",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "There is no deadline to apply to this job posting",
+    "quoteCheck": "browser 2026-10-04"
+  },
+  "adobe-careers-cdx": {
+    "url": "https://web.archive.org/cdx/search/cdx?url=careers.adobe.com/us/en/job/&matchType=prefix",
+    "title": "Wayback CDX index of careers.adobe.com job URLs (all 2024/2025/2026 MBA Intern titles and first captures)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "adobe-future-of-work-2021": {
+    "url": "https://blog.adobe.com/en/publish/2021/06/24/future-of-work-adobe",
+    "title": "The Future of work at Adobe",
+    "publisher": "Adobe Blog",
+    "published": "2021-06-24",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "empowering individuals and teams to figure out the working cadences"
+  },
+  "adobe-hiring-process": {
+    "url": "https://careers.adobe.com/us/en/hiring-process",
+    "title": "How We Hire | Adobe",
+    "publisher": "Adobe",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "You'll have an in-depth conversation about your background and career goals."
+  },
+  "adobe-mba-pm-posting": {
+    "url": "https://careers.adobe.com/us/en/job/R172261/2027-MBA-Intern-Product-Manager",
+    "title": "2027 MBA Intern – Product Manager",
+    "publisher": "Adobe",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "adobe-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000796343.json",
+    "title": "Adobe Inc. XBRL company facts (10-Q/10-K revenue, dei shares outstanding)",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "airbnb-10k": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000004/abnb-20251231.htm",
+    "title": "Airbnb, Inc. Form 10-K (abnb-20251231.htm)",
+    "publisher": "SEC EDGAR",
+    "published": "2026-02-12",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "As of December 31, 2025, we had approximately 8,200 employees."
+  },
+  "airbnb-live-work-anywhere-2022": {
+    "url": "https://news.airbnb.com/airbnbs-design-to-live-and-work-anywhere",
+    "title": "Airbnb's design for employees to live and work anywhere",
+    "publisher": "Airbnb Newsroom",
+    "published": "2022-04-28",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "You can work from home or the office"
+  },
+  "airbnb-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001559720.json",
+    "title": "Airbnb, Inc. XBRL company facts (10-Q/10-K revenue, dei shares outstanding)",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "amazon-10491075": {
+    "url": "https://www.amazon.jobs/en/jobs/10491075",
+    "title": "Pathways Operations Manager Intern – Summer 2027 (Nationwide Opportunities)",
+    "publisher": "Amazon.jobs",
+    "published": "2026-08-03",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Candidates should be currently enrolled in an MBA or Master's program"
+  },
+  "amazon-10491574": {
+    "url": "https://www.amazon.jobs/en/jobs/10491574",
+    "title": "Summer 2027 AWS Human Resources Leadership Development Program Internship, AWS",
+    "publisher": "Amazon.jobs",
+    "published": "2026-08-04",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "MBA or Masters' Degree conferral date between December 1, 2027 and September 30, 2028"
+  },
+  "amazon-10491603": {
+    "url": "https://www.amazon.jobs/en/jobs/10491603/2027-mba-leadership-development-program-mldp-intern",
+    "title": "2027 MBA Leadership Development Program (MLDP) Intern",
+    "publisher": "Amazon.jobs",
+    "published": "2026-08-04",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Cohort 1: May 24, 2027"
+  },
+  "amazon-10491935": {
+    "url": "https://www.amazon.jobs/en/jobs/10491935/2027-amazon-leadership-accelerator-ala-product-manager-internship",
+    "title": "2027 Amazon Leadership Accelerator (ALA) Product Manager Internship",
+    "publisher": "Amazon.jobs",
+    "published": "2026-08-04",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "ALA is our selective MBA leadership development program"
+  },
+  "amazon-10492198": {
+    "url": "https://www.amazon.jobs/en/jobs/10492198/2027-mba-finance-leadership-development-program-fldp-internship",
+    "title": "2027 MBA Finance Leadership Development Program (FLDP) Internship",
+    "publisher": "Amazon.jobs",
+    "published": "2026-08-04",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Are you a MBA candidate ready to transform the world of finance?"
+  },
+  "amazon-10493144": {
+    "url": "https://www.amazon.jobs/en/jobs/10493144",
+    "title": "2027 MBA Marketing Manager (MM) Internship",
+    "publisher": "Amazon.jobs",
+    "published": "2026-08-05",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Internship start dates will be between May–June 2027"
+  },
+  "amazon-10509639": {
+    "url": "https://www.amazon.jobs/en/jobs/10509639",
+    "title": "Product Manager Technical (PMT) Intern - Summer 2027",
+    "publisher": "Amazon.jobs",
+    "published": "2026-08-20",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Currently enrolled in MBA program with expected graduation conferral date"
+  },
+  "amazon-10k": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+    "title": "Amazon.com, Inc. Form 10-K (amzn-20251231.htm)",
+    "publisher": "SEC EDGAR",
+    "published": "2026-02-06",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "we employed approximately 1,576,000 full-time and part-time employees"
+  },
+  "amazon-2023-cdx": {
+    "url": "https://web.archive.org/cdx/search/cdx?url=amazon.jobs/en/jobs/245&matchType=prefix",
+    "title": "Wayback CDX index of amazon.jobs IDs 245xxxx: 2024 FLDP internship 2459964 and 2024 MBA Sr PgM intern 2459990 first captured 2023-10-11",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "amazon-2024-cdx": {
+    "url": "https://web.archive.org/cdx/search/cdx?url=amazon.jobs/en/jobs/279&matchType=prefix",
+    "title": "Wayback CDX index of amazon.jobs IDs 279xxxx (2025 MBA PMT 2792425, PM 2792538, Sr PgM 2792557)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "amazon-2024-pm-wayback": {
+    "url": "https://web.archive.org/web/20250114225045/https://www.amazon.jobs/en/jobs/2792538/2025-mba-master-s-level-opportunity-product-manager-non-technical-pm-intern-united-states",
+    "title": "2025 MBA/Master's Level Opportunity - Product Manager, Non-Technical (PM) Intern (United States), Job ID 2792538",
+    "publisher": "Amazon.jobs via Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "2025 MBA/Master's Level Opportunity - Product Manager, Non-Technical (PM) Intern"
+  },
+  "amazon-2025-cdx": {
+    "url": "https://web.archive.org/cdx/search/cdx?url=amazon.jobs/en/jobs/3109&matchType=prefix",
+    "title": "Wayback CDX index of amazon.jobs job IDs 3107xxx-3110xxx (2026 MBA ALA 3109663, FLDP 3109651, PGM 3109822, MM 3110725, MLDP Sr Vendor Manager 3110756)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "amazon-2025-pathways-wayback": {
+    "url": "https://web.archive.org/web/20251204134250/https://amazon.jobs/en/jobs/3108447/2026-mba-pathways-operations-manager-internship-nationwide-opportunities",
+    "title": "2026 MBA Pathways Operations Manager Internship (Nationwide Opportunities), Job ID 3108447",
+    "publisher": "Amazon.jobs via Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "Interviews will start in January 2026."
+  },
+  "amazon-fldp-2026-wayback": {
+    "url": "https://web.archive.org/web/20251202224246/https://amazon.jobs/en/jobs/3109651/2026-mba-finance-leadership-development-program-fldp-internship",
+    "title": "2026 MBA Finance Leadership Development Program (FLDP) Internship",
+    "publisher": "Amazon.jobs via Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "graduation conferral date between December 1, 2026 and June 30, 2027"
+  },
+  "amazon-id-calibration": {
+    "url": "https://web.archive.org/cdx/search/cdx?url=amazon.jobs/en/search.json&matchType=prefix",
+    "title": "Archived amazon.jobs search.json responses (2023-2025) used to map job IDs to posted_date",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "amazon-intern-page": {
+    "url": "https://www.aboutamazon.com/news/workplace/what-an-amazon-internship-looks-like",
+    "title": "What an Amazon internship looks like",
+    "publisher": "Amazon",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "schedule a mix of in-office and work-from-home days"
+  },
+  "amazon-interview-loop": {
+    "url": "https://amazon.jobs/content/en/how-we-hire/interview-loop",
+    "title": "Interview Loop",
+    "publisher": "Amazon (amazon.jobs)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "you'll meet individually with current employees in what we call the 'interview loop.'",
+    "quoteCheck": "browser 2026-10-04"
+  },
+  "amazon-interview-process-news": {
+    "url": "https://www.aboutamazon.com/news/workplace/amazon-interview-process-phone-screens-loops",
+    "title": "Amazon interview process: From phone screens to interview loops",
+    "publisher": "Amazon (aboutamazon.com)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "the inclusion of a “bar raiser,” a specially trained interviewer",
+    "quoteCheck": "browser 2026-10-04"
+  },
+  "amazon-jassy-memo-2024": {
+    "url": "https://www.aboutamazon.com/news/company-news/ceo-andy-jassy-latest-update-on-amazon-return-to-office-manager-team-ratio",
+    "title": "Update from Amazon CEO Andy Jassy on return-to-office plans and manager team ratio",
+    "publisher": "Amazon",
+    "published": "2024-09-16",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "we're going to make this new expectation active on January 2, 2025"
+  },
+  "amazon-mba-programs": {
+    "url": "https://www.amazon.jobs/content/en/career-programs/university/mba",
+    "title": "MBA",
+    "publisher": "Amazon (amazon.jobs)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Amazon interviews focus on past experiences to assess your potential performance."
+  },
+  "amazon-mm-2026-search": {
+    "url": "https://amazon.jobs/en/jobs/3110725/2026-mba-marketing-manager-mm-internship",
+    "title": "2026 MBA Marketing Manager (MM) Internship - Job ID: 3110725",
+    "publisher": "Amazon.jobs (title seen in search results)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null,
+    "gone": "2026-10-04"
+  },
+  "amazon-pgm-2026-search": {
+    "url": "https://amazon.jobs/en/jobs/3109822/2026-mba-program-management-pgm-internship",
+    "title": "2026 MBA Program Management (PGM) Internship - Job ID: 3109822",
+    "publisher": "Amazon.jobs (title seen in search results)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null,
+    "gone": "2026-10-04"
+  },
+  "amazon-pm-prep": {
+    "url": "https://amazon.jobs/content/en/how-we-hire/product-manager-interview-prep",
+    "title": "Product Manager Interview Prep",
+    "publisher": "Amazon (amazon.jobs)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Your loop will include five 55-minute interviews"
+  },
+  "amazon-search-api-2026": {
+    "url": "https://www.amazon.jobs/en/search.json?base_query=summer%202027&result_limit=100&sort=recent&normalized_country_code%5B%5D=USA",
+    "title": "amazon.jobs public search API (US, sorted recent) - posted_date per job",
+    "publisher": "Amazon.jobs",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "amazon-srpm-mba-2026-search": {
+    "url": "https://amazon.jobs/en/jobs/3147828/senior-product-manager-mba-intern-amazon-university-talent-acquisition",
+    "title": "Senior Product Manager MBA Intern, Amazon University Talent Acquisition - Job ID: 3147828",
+    "publisher": "Amazon.jobs (title seen in search results)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null,
+    "gone": "2026-10-04"
+  },
+  "amazon-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
+    "title": "Amazon.com, Inc. XBRL company facts (10-Q/10-K revenue, dei shares outstanding)",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "apple-10k": {
+    "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+    "title": "Apple Inc. Form 10-K (aapl-20250927.htm)",
+    "publisher": "SEC EDGAR",
+    "published": "2025-10-31",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "the Company had approximately 166,000 full-time equivalent employees"
+  },
+  "apple-2023-wayback": {
+    "url": "https://web.archive.org/web/20231201154132/https://jobs.apple.com/en-us/details/200484220/mba-internships-summer-2024?team=STDNT",
+    "title": "MBA Internships - Summer 2024 (role 200484220), Wayback snapshot 2023-12-01",
+    "publisher": "Apple Careers via Internet Archive",
+    "published": "2023-07-28",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "Jul 28, 2023"
+  },
+  "apple-2024-wayback": {
+    "url": "https://web.archive.org/web/20240711010605/https://jobs.apple.com/en-us/details/200554355/mba-internships-summer-2025",
+    "title": "MBA Internships - Summer 2025 (role 200554355), Wayback snapshot 2024-07-11",
+    "publisher": "Apple Careers via Internet Archive",
+    "published": "2024-06-07",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "MBA Internships - Summer 2025"
+  },
+  "apple-2025-wayback": {
+    "url": "https://web.archive.org/web/20250530173828/https://jobs.apple.com/en-us/details/200606799/mba-internships-summer-2026",
+    "title": "MBA Internships - Summer 2026 (role 200606799), Wayback snapshot 2025-05-30",
+    "publisher": "Apple Careers via Internet Archive",
+    "published": "2025-05-29",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "MBA Internships - Summer 2026"
+  },
+  "apple-2026-mba-internships": {
+    "url": "https://jobs.apple.com/en-us/details/200676091-3810/mba-internships",
+    "title": "MBA Internships (role 200676091-3810)",
+    "publisher": "Apple Careers",
+    "published": "2026-08-05",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "apple-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+    "title": "Apple Inc. XBRL company facts (10-Q/10-K revenue, dei shares outstanding)",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "archie-rto-tracker-2026": {
+    "url": "https://archieapp.co/blog/rto-companies-tracker/",
+    "title": "Companies Returning to Office: RTO Tracker [October 2026]",
+    "publisher": "Archie",
+    "published": "2026-10-01",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "arizona-google-mba-intern-2024-us": {
+    "url": "https://career.arizona.edu/jobs/google-inc-mba-intern-summer-2024-united-states/",
+    "title": "MBA Intern, Summer 2024 – United States (U. Arizona career board; seen in search, now 404)",
+    "publisher": "University of Arizona",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null,
+    "gone": "2026-10-04"
+  },
+  "blind-adobe-2025": {
+    "url": "https://www.teamblind.com/post/adobe-in-office-requirements-uyy2jhfn",
+    "title": "Adobe In Office Requirements",
+    "publisher": "Blind",
+    "published": "2025-05-23",
+    "accessed": "2026-10-04",
+    "kind": "forum",
+    "quote": "Adobe has half-time WFH and some people are fully remote"
+  },
+  "blind-nvidia-2024": {
+    "url": "https://www.teamblind.com/post/nvidia-hybrid-or-100-onsite-6i7mqdc8",
+    "title": "Nvidia - Hybrid or 100% onsite",
+    "publisher": "Blind",
+    "published": "2024-10-09",
+    "accessed": "2026-10-04",
+    "kind": "forum",
+    "quote": "some of my colleagues are hybrid or some even 4-5 days a week"
+  },
+  "blind-nvidia-2026": {
+    "url": "https://www.teamblind.com/post/nvidia-office-policy-byfexbyb",
+    "title": "Nvidia office policy",
+    "publisher": "Blind",
+    "published": "2026-02-04",
+    "accessed": "2026-10-04",
+    "kind": "forum",
+    "quote": "Show face in office every 1 or 2 week is a good idea"
+  },
+  "bloomberg-apple-2022": {
+    "url": "https://www.bloomberg.com/news/articles/2022-08-15/apple-sets-return-to-office-deadline-of-sept-5-after-delays",
+    "title": "Apple (AAPL) Sets Return-to-Office Deadline of Sept. 5 After Covid Delays",
+    "publisher": "Bloomberg",
+    "published": "2022-08-15",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "builtin-airbnb-bgi-2025": {
+    "url": "https://builtin.com/job/business-growth-intern-experiences-mba/3991716",
+    "title": "Business Growth Intern, Experiences (MBA) - Airbnb | Built In (seen in search: 2025 Summer Intern Program, removed Feb 25, 2025)",
+    "publisher": "Built In",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null,
+    "gone": "2026-10-04"
+  },
+  "builtin-airbnb-sfa-2026": {
+    "url": "https://www.builtinsf.com/job/strategic-finance-analytics-intern-mba/8042721",
+    "title": "Strategic Finance & Analytics Intern (MBA/MS) - Airbnb | Built In (removed Feb 23, 2026)",
+    "publisher": "Built In",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "first-year MBA students (graduating Spring 2027)"
+  },
+  "builtin-nvidia-corpdev-2026": {
+    "url": "https://www.builtinsf.com/job/corporate-development-mba-intern-summer-2026/7468385",
+    "title": "Corporate Development MBA Intern - Summer 2026 - NVIDIA | Built In San Francisco",
+    "publisher": "Built In",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Applications for this job will be accepted at least until October 27, 2025."
+  },
+  "builtin-nvidia-treasury-2026": {
+    "url": "https://www.builtinsf.com/job/treasury-analyst-mba-intern-summer-2026/7519457",
+    "title": "Treasury Analyst MBA Intern – Summer 2026 - NVIDIA | Built In San Francisco",
+    "publisher": "Built In",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Applications for this job will be accepted at least until November 2, 2025"
+  },
+  "builtinnyc-airbnb-aa-2026": {
+    "url": "https://www.builtinnyc.com/job/advanced-analytics-intern/8279170",
+    "title": "Advanced Analytics Intern (MS/MBA) - Airbnb | Built In NYC (JSON-LD datePosted 2026-02-17)",
+    "publisher": "Built In",
+    "published": "2026-02-17",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "cisco-10k-customers": {
+    "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm",
+    "title": "Cisco Systems Form 10-K FY2026, Business overview",
+    "publisher": "Cisco Systems / SEC EDGAR",
+    "published": "2026-09-02",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Our customers include businesses of all sizes, public institutions, governments, and service providers"
+  },
+  "cisco-10k-fy26": {
+    "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm",
+    "title": "Cisco Systems Form 10-K for fiscal year ended July 25, 2026",
+    "publisher": "Cisco Systems / SEC EDGAR",
+    "published": "2026-09-02",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "As of July 25, 2026, we had approximately 82,400 employees"
+  },
+  "cisco-10k-hybrid": {
+    "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm",
+    "title": "Cisco Systems Form 10-K FY2026, Human capital",
+    "publisher": "Cisco Systems / SEC EDGAR",
+    "published": "2026-09-02",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "We employ a hybrid work model in certain countries"
+  },
+  "cisco-careers-reqid-calibration": {
+    "url": "https://careers.cisco.com/global/en/search-results",
+    "title": "Cisco Careers full job list (1,319 jobs) used to map new Workday req IDs to creation dates (e.g. 2007564 created 2026-01-29, 2009327 created 2026-02-17)",
+    "publisher": "Cisco",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "cisco-careers-search-2026": {
+    "url": "https://careers.cisco.com/global/en/search-results?keywords=MBA",
+    "title": "Cisco Careers search results for 'MBA' (queried via the site's search API; 42 hits, none an MBA internship)",
+    "publisher": "Cisco",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "cisco-epm-specialist-ii-2026": {
+    "url": "https://careers.cisco.com/global/en/job/2026801",
+    "title": "Engineering Product Management Specialist II (Intern) – United States",
+    "publisher": "Cisco",
+    "published": "2026-09-24",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "A Master’s degree program with 0 years of work experience",
+    "quoteCheck": "browser 2026-10-04"
+  },
+  "cisco-extern-guide": {
+    "url": "https://www.extern.com/post/cisco-internship-guide",
+    "title": "Cisco Internship 2027–2028: Deadlines & How to Apply",
+    "publisher": "Extern",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "summer 2026 postings opened in early August 2025"
+  },
+  "cisco-fortune-2023": {
+    "url": "https://fortune.com/2023/05/05/cisco-ceo-chuck-robbins-rebranding-office-collaboration-center-slashing-private-workspaces-coax-employees-back/",
+    "title": "Cisco CEO is rebranding the office as a 'collaboration center' to coax workers back",
+    "publisher": "Fortune",
+    "published": "2023-05-05",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "not going to come five days a week"
+  },
+  "cisco-how-we-hire": {
+    "url": "https://careers.cisco.com/global/en/how-we-hire",
+    "title": "How We Hire - Cisco Careers",
+    "publisher": "Cisco",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Our interview process varies by team and role"
+  },
+  "cisco-hrexec-2025": {
+    "url": "https://hrexecutive.com/amid-rto-push-orgs-like-cisco-are-instead-focusing-on-workplace-experience/",
+    "title": "Amid RTO push, orgs like Cisco are instead focusing on 'workplace experience'",
+    "publisher": "HR Executive",
+    "published": "2025-12-02",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "cisco-li-pm-mba": {
+    "url": "https://www.linkedin.com/jobs/view/product-manager-mba-intern-united-states-at-cisco-4140309737",
+    "title": "Product Manager MBA (Intern) United States - Cisco (LinkedIn, closed)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "cisco-mcap-cmc": {
+    "url": "https://companiesmarketcap.com/cisco/marketcap/",
+    "title": "Cisco market capitalization",
+    "publisher": "CompaniesMarketCap",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "cisco-mcap-sa": {
+    "url": "https://stockanalysis.com/stocks/csco/market-cap/",
+    "title": "Cisco Systems (CSCO) Market Cap",
+    "publisher": "StockAnalysis",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "market cap or net worth of $442.36 billion as of October 2, 2026"
+  },
+  "cisco-meraki-2025": {
+    "url": "https://jobs.cisco.com/jobs/ProjectDetail/Product-Management-Intern-MBA-Summer-2025-Internship-Meraki/1430733",
+    "title": "Product Management Intern (MBA) - Summer 2025 Internship (Meraki) (req 1430733)",
+    "publisher": "Cisco (search result only)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "cisco-req-1405091": {
+    "url": "https://jobs.cisco.com/jobs/Register?projectId=1405091",
+    "title": "FY24 Business Strategy Manager MBA (Intern) United States (req 1405091)",
+    "publisher": "Cisco (search result only)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "cisco-req-1405262": {
+    "url": "https://jobs.cisco.com/jobs/Register?projectId=1405262",
+    "title": "FY24 Strategy and Planning Manager MBA (Intern) United States (req 1405262)",
+    "publisher": "Cisco (search result only)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "cisco-req-1426356": {
+    "url": "https://jobs.cisco.com/jobs/ApplicationMethods?projectId=1426356",
+    "title": "Strategy and Planning Manager MBA (Intern) United States - Cisco Jobs (req 1426356, titled 'FY25' in one listing; snippet gives created 23-Jul-2024)",
+    "publisher": "Cisco (via search-engine snippet)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "cisco-req-1426404": {
+    "url": "https://jobs.cisco.com/jobsfr/ProjectDetail/Corporate-Strategy-Manager-MBA-Intern-United-States/1426404",
+    "title": "Corporate Strategy Manager MBA (Intern) United States (req 1426404; snippet gives created 24-Jul-2024)",
+    "publisher": "Cisco (via search-engine snippet)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "cisco-req-1426880": {
+    "url": "https://jobs.cisco.com/jobs/ApplicationMethods?projectId=1426880",
+    "title": "Product Manager MBA (Intern) United States - Cisco Jobs (req 1426880; search-result snippet gives creation date Aug 1, 2024; page now redirects)",
+    "publisher": "Cisco (via search-engine snippet)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "cisco-req-1450904": {
+    "url": "https://jobs.cisco.com/jobs/ApplicationMethods?projectId=1450904",
+    "title": "Sustainability Analyst MBA (Intern) United States - Cisco Jobs (req 1450904; snippet gives created Sep 23, 2025)",
+    "publisher": "Cisco (via search-engine snippet)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "cisco-sdx-2021": {
+    "url": "https://www.sdxcentral.com/news/cisco-goes-all-hybrid-with-no-return-to-office-policy/",
+    "title": "Cisco Goes All Hybrid With 'No Return to Office' Policy",
+    "publisher": "SDxCentral",
+    "published": "2021-07-29",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "lets individual employees and their managers decide how and where each staffer will work"
+  },
+  "cisco-technata-pmm-mba": {
+    "url": "https://jobs.discovertechnata.com/companies/cisco-2-59c957ab-1b0d-4f83-8da6-97644c7792b9/jobs/68386553-product-marketing-manager-mba-intern-united-states",
+    "title": "Product Marketing Manager MBA (Intern) - United States @ Cisco (Discover Technata job board; postedAt 2026-02-21)",
+    "publisher": "Discover Technata",
+    "published": "2026-02-21",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Posted 6+ months ago"
+  },
+  "cisco-wayup-finance-mba": {
+    "url": "https://www.wayup.com/i-Computer-Networking-j-Financial-Analyst-MBA-Intern-United-States-Cisco-478524417990946/",
+    "title": "Cisco: Financial Analyst MBA (Intern) United States (WayUp; datePosted 2025-03-13; asks for 2026 graduation)",
+    "publisher": "WayUp",
+    "published": "2025-03-13",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "cisco-wayup-sustainability": {
+    "url": "https://www.wayup.com/i-Computer-Networking-j-Sustainability-Analyst-MBA-Intern-United-States-Cisco-34802783052154/",
+    "title": "Cisco: Sustainability Analyst MBA (Intern) United States (WayUp; JSON-LD datePosted 2025-09-24)",
+    "publisher": "WayUp",
+    "published": "2025-09-24",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Applications are accepted until further notice."
+  },
+  "cisco-wd-ops-strategy-mba": {
+    "url": "https://cisco.wd5.myworkdayjobs.com/cisco_careers/job/San-Jose-California-US/Operations-Strategy-and-Planning-Manager-MBA--Intern--United-States_2007571",
+    "title": "Operations Strategy and Planning Manager MBA (Intern) United States (Workday req 2007571; now closed)",
+    "publisher": "Cisco (search result; page now returns closed)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "cisco-wd-pmm-mba": {
+    "url": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/San-Francisco-California-US/Product-Marketing-Manager-MBA--Intern----United-States_2009883/apply",
+    "title": "Product Marketing Manager MBA (Intern) - United States (Workday req 2009883)",
+    "publisher": "Cisco (search result only)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "cisco-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000858877.json",
+    "title": "Cisco XBRL company facts (RevenueFromContractWithCustomerExcludingAssessedTax)",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "clemson-uber-srpm-sp": {
+    "url": "https://career.clemson.edu/jobs/uber-sr-program-manager-strategy-planning-mba-intern-united-states/",
+    "title": "Sr Program Manager | Strategy & Planning MBA Intern , United States (Clemson career board; seen in search, now 410)",
+    "publisher": "Clemson University",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null,
+    "gone": "2026-10-04"
+  },
+  "cmc-adobe": {
+    "url": "https://companiesmarketcap.com/adobe/marketcap/",
+    "title": "Adobe Inc. market cap",
+    "publisher": "CompaniesMarketCap",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "cmc-airbnb": {
+    "url": "https://companiesmarketcap.com/airbnb/marketcap/",
+    "title": "Airbnb, Inc. market cap",
+    "publisher": "CompaniesMarketCap",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "cmc-home": {
+    "url": "https://companiesmarketcap.com/",
+    "title": "Largest companies by market capitalization",
+    "publisher": "CompaniesMarketCap",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "cmc-intuit": {
+    "url": "https://companiesmarketcap.com/intuit/marketcap/",
+    "title": "Intuit Inc. market cap",
+    "publisher": "CompaniesMarketCap",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "cmc-uber": {
+    "url": "https://companiesmarketcap.com/uber/marketcap/",
+    "title": "Uber Technologies, Inc. market cap",
+    "publisher": "CompaniesMarketCap",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "cnbc-amazon-2024": {
+    "url": "https://www.cnbc.com/2024/09/16/amazon-jassy-tells-employees-to-return-to-office-five-days-a-week.html",
+    "title": "Amazon tells employees to return to office five days a week",
+    "publisher": "CNBC",
+    "published": "2024-09-16",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "cnbc-amazon-delay-2024": {
+    "url": "https://www.cnbc.com/2024/12/18/amazon-delays-5-day-rto-for-some-workers-because-its-offices-arent-all-ready.html",
+    "title": "Amazon delays 5-day RTO for some workers because its offices aren't all ready",
+    "publisher": "CNBC",
+    "published": "2024-12-18",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "cnbc-instagram-2025": {
+    "url": "https://www.cnbc.com/2025/12/01/meta-instagram-rto-return-to-office.html",
+    "title": "Meta's Instagram orders employees back to the office 5 days a week",
+    "publisher": "CNBC",
+    "published": "2025-12-01",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "dell-10k-fy26": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000008/dell-20260130.htm",
+    "title": "Dell Technologies Form 10-K for fiscal year ended January 30, 2026",
+    "publisher": "Dell Technologies / SEC EDGAR",
+    "published": "2026-03-16",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "As of January 30, 2026, we had approximately 97,000 employees."
+  },
+  "dell-10k-other": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000008/dell-20260130.htm",
+    "title": "Dell Technologies Form 10-K FY2026, segment note",
+    "publisher": "Dell Technologies / SEC EDGAR",
+    "published": "2026-03-16",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Corporate and other consists of results of divested businesses or non-reportable segments"
+  },
+  "dell-10q-q2fy27": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000046/dell-20260731.htm",
+    "title": "Dell Technologies Form 10-Q for quarter ended July 31, 2026",
+    "publisher": "Dell Technologies / SEC EDGAR",
+    "published": "2026-09-08",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "dell-careers-api-mba-2026": {
+    "url": "https://enterpriseplatform.dell.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&finder=findReqs;siteNumber=CX_1001,keyword=%22MBA%22,sortBy=POSTING_DATES_DESC",
+    "title": "Dell Careers (Oracle) job search for 'MBA' and 'intern' (16 and 134 hits; no MBA internship)",
+    "publisher": "Dell Technologies",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "dell-extern-guide": {
+    "url": "https://www.extern.com/post/dell-technologies-internship-guide",
+    "title": "Dell Internship 2027–2028: Deadlines & How to Apply",
+    "publisher": "Extern",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "most postings end October 31"
+  },
+  "dell-faq": {
+    "url": "https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/careers/pages/faqs",
+    "title": "FAQ - Dell Careers",
+    "publisher": "Dell Technologies",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "dell-fortune-rto-2025": {
+    "url": "https://fortune.com/2025/01/31/dell-ceo-hybrid-work-return-to-office/",
+    "title": "Dell CEO says he's 'retiring' hybrid work",
+    "publisher": "Fortune",
+    "published": "2025-01-31",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "starting March 3rd for all employees that live near the office"
+  },
+  "dell-how-we-hire": {
+    "url": "https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/careers/pages/how-we-hire",
+    "title": "How We Hire - Dell Careers",
+    "publisher": "Dell Technologies",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "dell-hrgrapevine-2026": {
+    "url": "https://www.hrgrapevine.com/us/content/article/2026-01-07-dells-five-day-in-office-return-push-exposes-growing-workplace-tension",
+    "title": "Dell's five-day in-office push exposes growing workplace tension",
+    "publisher": "HR Grapevine",
+    "published": "2026-01-07",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "dell-li-pm-mba-2025": {
+    "url": "https://www.linkedin.com/jobs/view/product-management-mba-internship-at-dell-technologies-4373210751",
+    "title": "Product Management MBA Internship - Dell Technologies (LinkedIn, closed; shown as posted '7 months ago' on 2026-10-04)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "dell-li-pmm-grad-2025": {
+    "url": "https://www.linkedin.com/jobs/view/dell-technologies-product-marketing-graduate-intern-at-dell-technologies-4298149911",
+    "title": "Dell Technologies Product Marketing Graduate Intern (LinkedIn, closed; shown as posted '1 year ago' on 2026-10-04)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "dell-mcap-cmc": {
+    "url": "https://companiesmarketcap.com/dell/marketcap/",
+    "title": "Dell market capitalization",
+    "publisher": "CompaniesMarketCap",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "dell-mcap-sa": {
+    "url": "https://stockanalysis.com/stocks/dell/market-cap/",
+    "title": "Dell Technologies (DELL) Market Cap",
+    "publisher": "StockAnalysis",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "market cap or net worth of $357.66 billion as of October 2, 2026"
+  },
+  "dell-req-298518": {
+    "url": "https://enterpriseplatform.dell.com/hcmRestApi/resources/latest/recruitingCEJobRequisitionDetails?expand=all&onlyData=true&finder=ById;Id=%22298518%22,siteNumber=CX_1001",
+    "title": "Global Operations Supply Chain Graduate Intern (req 298518; posted 2026-09-09, end date 2026-10-31, On-site)",
+    "publisher": "Dell Technologies",
+    "published": "2026-09-09",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Pursuit of Graduate degree or higher in Supply Chain Management"
+  },
+  "dell-statesman-rto-2025": {
+    "url": "https://www.statesman.com/story/business/technology/2025/02/04/dell-technologies-ends-remote-hybrid-work-rto/78210664007/",
+    "title": "Dell Technologies ending remote, hybrid work; employees return to office five days a week",
+    "publisher": "Austin American-Statesman",
+    "published": "2025-02-04",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "The mandate begins March 3"
+  },
+  "dell-storyboard18-2025": {
+    "url": "https://www.storyboard18.com/digital/dell-enforces-full-time-office-attendance-for-north-america-sales-staff-86418.htm",
+    "title": "Dell enforces full-time office attendance for North America sales staff",
+    "publisher": "Storyboard18",
+    "published": "2025-12-23",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "five days a week for a minimum of eight hours per day"
+  },
+  "dell-techco-rto-2025": {
+    "url": "https://tech.co/news/dell-rto-ends-hybrid-remote",
+    "title": "Dell 'Retiring' Hybrid Working as Return To Office Push Continues",
+    "publisher": "Tech.co",
+    "published": "2025-02-04",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "they must now return to the office five days per week"
+  },
+  "dell-wayup-genbiz-mba-2024": {
+    "url": "https://www.wayup.com/i-Information-Technology-and-Services-j-General-Business-Internship-MBA-Dell-Technologies-794143812579173/",
+    "title": "Dell Technologies: General Business Internship MBA (WayUp; datePosted 2024-09-12)",
+    "publisher": "WayUp",
+    "published": "2024-09-12",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "dell-wayup-mba-pm-2024": {
+    "url": "https://www.wayup.com/i-Information-Technology-and-Services-j-MBA-Product-Management-Internship-Dell-Technologies-112942384136146/",
+    "title": "Dell Technologies: MBA Product Management Internship (WayUp; datePosted 2024-12-16)",
+    "publisher": "WayUp",
+    "published": "2024-12-16",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "dell-wayup-pm-mba-2023": {
+    "url": "https://www.wayup.com/i-Information-Technology-and-Services-j-Product-Management-MBA-Intern-Dell-Technologies-526004941000791/",
+    "title": "Dell Technologies: Product Management MBA Intern (WayUp; datePosted 2023-08-30)",
+    "publisher": "WayUp",
+    "published": "2023-08-30",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "dell-wayup-pm-mba-2023b": {
+    "url": "https://www.wayup.com/i-Information-Technology-and-Services-j-Product-Management-MBA-Internship-Dell-Technologies-855260079882642/",
+    "title": "Dell Technologies: Product Management MBA Internship (WayUp; datePosted 2023-08-30)",
+    "publisher": "WayUp",
+    "published": "2023-08-30",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "dell-wayup-pmm-grad-2024": {
+    "url": "https://www.wayup.com/i-Information-Technology-and-Services-j-Dell-Technologies-Product-Marketing-Graduate-Intern-Dell-Technologies-776172706675714/",
+    "title": "Dell Technologies: Dell Technologies Product Marketing Graduate Intern (WayUp; datePosted 2024-09-25)",
+    "publisher": "WayUp",
+    "published": "2024-09-25",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "dell-wayup-pmm-mba-2023": {
+    "url": "https://www.wayup.com/i-Information-Technology-and-Services-j-Product-Marketing-MBA-Internship-Dell-Technologies-312181219395980/",
+    "title": "Dell Technologies: Product Marketing MBA Internship (WayUp; datePosted 2023-08-30)",
+    "publisher": "WayUp",
+    "published": "2023-08-30",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "dell-wayup-strategy-mba-2024": {
+    "url": "https://www.wayup.com/i-Information-Technology-and-Services-j-Strategy-MBA-Intern-Dell-Technologies-763939108191374/",
+    "title": "Dell Technologies: Strategy MBA Intern (WayUp; datePosted 2024-10-10)",
+    "publisher": "WayUp",
+    "published": "2024-10-10",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "dell-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001571996.json",
+    "title": "Dell Technologies XBRL company facts (us-gaap:Revenues)",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "employbl-airbnb-sourcing-2026": {
+    "url": "https://www.employbl.com/jobs/sourcing-operations-innovation-intern-mb-airbnb-1475550",
+    "title": "Sourcing Operations & Innovation Intern (MBA) - Airbnb (seen in search; 2026 Summer Intern Program)",
+    "publisher": "Employbl",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "entrepreneur-airbnb-2025": {
+    "url": "https://www.entrepreneur.com/business-news/airbnb-ceo-brian-cheskys-one-rule-for-remote-hybrid-work/486878",
+    "title": "Airbnb CEO Brian Chesky's One Rule for Remote, Hybrid Work",
+    "publisher": "Entrepreneur",
+    "published": "2025-02-10",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "we basically ask people to come to San Francisco one week a month"
+  },
+  "entrepreneur-msft-ai-4day": {
+    "url": "https://www.entrepreneur.com/business-news/microsofts-ai-ceo-has-a-strict-in-person-work-policy/499594",
+    "title": "Microsoft's AI CEO Has a Strict In-Person Work Policy",
+    "publisher": "Entrepreneur",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "extern-intuit-guide": {
+    "url": "https://www.extern.com/post/intuit-internship-guide",
+    "title": "Intuit Internship 2027–2028: Deadlines & How to Apply",
+    "publisher": "Extern",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Summer 2027 postings went live on jobs.intuit.com in mid-September 2026"
+  },
+  "extern-salesforce-interns": {
+    "url": "https://www.extern.com/post/salesforce-internship-guide",
+    "title": "Salesforce Internship 2027-2028: Deadlines & How to Apply",
+    "publisher": "Extern",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "4 to 5 days per week"
+  },
+  "fortune-altman-2023": {
+    "url": "https://fortune.com/2023/05/05/openai-ceo-sam-altman-remote-work-mistake-return-to-office/",
+    "title": "OpenAI CEO Sam Altman says the remote work 'experiment' was a mistake—and 'it's over'",
+    "publisher": "Fortune",
+    "published": "2023-05-05",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "fortune-apple-2022": {
+    "url": "https://fortune.com/2022/08/15/apple-return-to-office-policy-remote-hybrid-work/",
+    "title": "Apple tries to return workers to the office with 3-days-per-week policy",
+    "publisher": "Fortune",
+    "published": "2022-08-15",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Tuesdays, Thursdays and a regular third day that will be determined by individual teams"
+  },
+  "fortune-flexible-employers-2025": {
+    "url": "https://fortune.com/2025/03/06/companies-with-remote-hybrid-work-options-spotify-nvidia-zillow-pintrest-microsoft/",
+    "title": "Companies like Spotify and Nvidia are standing by remote and hybrid work despite the latest RTO wave",
+    "publisher": "Fortune",
+    "published": "2025-03-06",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "allows employees to work remotely, in the office, or in a hybrid arrangement"
+  },
+  "fortune-google-remote-2025": {
+    "url": "https://fortune.com/article/google-remote-worker-risk-jobs-return-to-office-three-days-a-week/",
+    "title": "Google is demanding some remote workers move within 50 miles of an office and show up three days a week or risk losing their jobs",
+    "publisher": "Fortune",
+    "published": "2025-04-24",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "In-person collaboration is an important part of how we innovate and solve complex problems"
+  },
+  "fortune-google-wfa-2025": {
+    "url": "https://fortune.com/2025/10/09/google-is-tightening-its-work-from-anywhere-policy-now-a-single-day-will-count-as-a-full-week/",
+    "title": "Google is tightening its 'Work from Anywhere' policy: Now a single day will count as a full week",
+    "publisher": "Fortune",
+    "published": "2025-10-09",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "fortune-instagram-2025": {
+    "url": "https://fortune.com/2025/12/02/instagram-ceo-adam-mosseri-return-to-office-five-days-a-week/",
+    "title": "Instagram CEO calls staff back to the office 5 days a week to build a 'winning culture'",
+    "publisher": "Fortune",
+    "published": "2025-12-02",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "starting Feb. 2, U.S. employees will need to return to the office full-time"
+  },
+  "fortune-meta-2023": {
+    "url": "https://fortune.com/2023/08/21/mark-zuckerberg-meta-return-to-office-three-days-week-fired-performance-review-termination/",
+    "title": "Meta's new 'in-person time policy' will crack down on remote work rebels",
+    "publisher": "Fortune",
+    "published": "2023-08-21",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "fortune-nvidia-2023": {
+    "url": "https://fortune.com/2023/10/14/nvidia-skips-return-to-office-sticks-to-remote-work-among-hottest-tech-companies/",
+    "title": "Nvidia, a $1 trillion AI powerhouse, is fine with remote work—and is ignoring the return-to-office trend",
+    "publisher": "Fortune",
+    "published": "2023-10-14",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "There's no question we're going to do this"
+  },
+  "foxbusiness-uber-2025": {
+    "url": "https://www.foxbusiness.com/lifestyle/uber-ceo-steps-up-return-to-office-mandate-it-what-is",
+    "title": "Uber's return-to-office policy set to change next month despite objections",
+    "publisher": "Fox Business",
+    "published": "2025-05-08",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "being in person more frequently is better for collaboration, innovation and company culture"
+  },
+  "geekwire-msft-2026": {
+    "url": "https://www.geekwire.com/2026/microsofts-new-rto-policy-starts-feb-23-bringing-seattle-area-workers-back-3-days-a-week/",
+    "title": "Microsoft's new RTO policy starts Feb. 23, bringing Seattle-area workers back 3 days a week",
+    "publisher": "GeekWire",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "getro-anitab-nvidia-2025-mba-pm": {
+    "url": "https://jobs.anitab.org/companies/nvidia/jobs/41445722-nvidia-2025-internships-mba-product-management",
+    "title": "NVIDIA 2025 Internships: MBA Product Management (AnitaB.org/Getro; postedAt 2024-10-15T19:14Z)",
+    "publisher": "AnitaB.org (Getro)",
+    "published": "2024-10-15",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "getro-anitab-nvidia-adas-2026": {
+    "url": "https://jobs.anitab.org/companies/nvidia/jobs/62629502-product-management-mba-intern-autonomous-vehicles-adas-summer-2026",
+    "title": "Product Management MBA Intern, Autonomous Vehicles ADAS - Summer 2026 (Getro postedAt 2025-11-25)",
+    "publisher": "AnitaB.org (Getro)",
+    "published": "2025-11-25",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "getro-anitab-nvidia-av-sim-2025": {
+    "url": "https://jobs.anitab.org/companies/nvidia/jobs/47044850-product-management-mba-intern-av-simulation-summer-2025",
+    "title": "Product Management MBA Intern, AV Simulation - Summer 2025 (Getro postedAt 2025-03-09)",
+    "publisher": "AnitaB.org (Getro)",
+    "published": "2025-03-09",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "getro-anitab-nvidia-dataproc-2026": {
+    "url": "https://jobs.anitab.org/companies/nvidia/jobs/63343992-product-marketing-mba-intern-data-processing-summer-2026",
+    "title": "Product Marketing MBA Intern, Data Processing - Summer 2026 (Getro postedAt 2025-12-09)",
+    "publisher": "AnitaB.org (Getro)",
+    "published": "2025-12-09",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "getro-anitab-nvidia-fpa-hw-2026": {
+    "url": "https://jobs.anitab.org/companies/nvidia/jobs/63931881-financial-analyst-mba-intern-hardware-engineering-summer-2026",
+    "title": "Financial Analyst MBA Intern, Hardware Engineering FP&A - Summer 2026 (Getro postedAt 2025-12-20)",
+    "publisher": "AnitaB.org (Getro)",
+    "published": "2025-12-20",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "getro-anitab-nvidia-realestate-2026": {
+    "url": "https://jobs.anitab.org/companies/nvidia/jobs/63802464-real-estate-financial-analyst-mba-intern-summer-2026",
+    "title": "Real Estate Financial Analyst MBA Intern - Summer 2026 (Getro postedAt 2025-12-18)",
+    "publisher": "AnitaB.org (Getro)",
+    "published": "2025-12-18",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "getro-meta-pmm-mba-2025": {
+    "url": "https://careers.morestartshere.com/companies/facebook-2-07d2eb1b-d3ad-4084-93df-74a124ac9233/jobs/44669745-product-marketing-manager-intern-mba",
+    "title": "Product Marketing Manager Intern, MBA @ Facebook (Getro board; postedAt 2025-01-12T12:56Z; status deactivated)",
+    "publisher": "Claremore Economic Development Job Board (Getro)",
+    "published": "2025-01-12",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "github-fable-tracker-4031": {
+    "url": "https://github.com/VictorJimenez3/fable-job-search/issues/4031",
+    "title": "Internship NVIDIA — Product Management MBA Intern, Data Center GPU - Summer 2027 (auto-tracker issue)",
+    "publisher": "GitHub",
+    "published": "2026-09-16",
+    "accessed": "2026-10-04",
+    "kind": "forum",
+    "quote": null
+  },
+  "glassdoor-amazon-mba": {
+    "url": "https://www.glassdoor.com/Interview/Amazon-MBA-Interview-Questions-EI_IE6036.0,6_KO7,10.htm",
+    "title": "Amazon MBA Interview Questions",
+    "publisher": "Glassdoor",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "forum",
+    "quote": null
+  },
+  "google-10k": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm",
+    "title": "Alphabet Inc. Form 10-K (goog-20251231.htm)",
+    "publisher": "SEC EDGAR",
+    "published": "2026-02-05",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "As of December 31, 2025, Alphabet had 190,820 employees."
+  },
+  "google-business-internships": {
+    "url": "https://www.google.com/about/careers/applications/students/business-internships/",
+    "title": "Business internships - Google Careers",
+    "publisher": "Google",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "google-business-internships-page": {
+    "url": "https://www.google.com/about/careers/applications/students/business-internships/",
+    "title": "Business internships - Google Careers (MBA internship card)",
+    "publisher": "Google",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "google-business-internships-wb-20240918": {
+    "url": "https://web.archive.org/web/20240918195828/https://www.google.com/about/careers/applications/students/business-internships/",
+    "title": "Wayback capture 2024-09-18 of Google business internships page (no MBA card in HTML)",
+    "publisher": "Internet Archive",
+    "published": "2024-09-18",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "google-business-internships-wb-20241104": {
+    "url": "https://web.archive.org/web/20241104051713/https://www.google.com/about/careers/applications/students/business-internships/",
+    "title": "Wayback capture 2024-11-04 of Google business internships page (MBA card present)",
+    "publisher": "Internet Archive",
+    "published": "2024-11-04",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "google-emea-ba-mba-2027": {
+    "url": "https://www.google.com/about/careers/applications/jobs/results/82600333812867782-business-analyst-mba-intern-2027",
+    "title": "Business Analyst MBA Intern, 2027 (Dublin)",
+    "publisher": "Google",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Applications will open on Monday 5th October 2026."
+  },
+  "google-emea-finance-mba-2027": {
+    "url": "https://www.google.com/about/careers/applications/jobs/results/93402210922046150-finance-mba-intern-2027",
+    "title": "Finance MBA Intern, 2027 (Dublin)",
+    "publisher": "Google",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Please complete your application before November 13, 2026"
+  },
+  "google-emea-so-mba-2027": {
+    "url": "https://www.google.com/about/careers/applications/jobs/results/99770582270124742-strategy-and-operations-mba-intern-2027",
+    "title": "Strategy and Operations MBA Intern, 2027 (London)",
+    "publisher": "Google",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Applications for this role will open on October 5, 2026"
+  },
+  "google-finance-mba-intern-2026": {
+    "url": "https://www.google.com/about/careers/applications/jobs/results/75983023241077446-finance-mba-intern-2026",
+    "title": "Finance MBA Intern, 2026 - now 'Job not found'; search snippets list SF, Boulder, Atlanta",
+    "publisher": "Google",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "google-how-we-hire": {
+    "url": "https://www.google.com/about/careers/applications/how-we-hire/",
+    "title": "Our hiring process - Google Careers",
+    "publisher": "Google",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "google-mba-intern-2026-china-wb": {
+    "url": "https://web.archive.org/web/20251221075728/https://www.google.com/about/careers/applications/jobs/results/111504347728093894-mba-intern/",
+    "title": "Wayback capture 2025-12-21: MBA Intern, 2026 (China locations)",
+    "publisher": "Internet Archive",
+    "published": "2025-12-21",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "Please complete your application before December 31, 2025 ."
+  },
+  "google-mba-intern-80967716-wb": {
+    "url": "https://web.archive.org/web/20231101193820/https://www.google.com/about/careers/applications/jobs/results/80967716124402374-mba-intern/",
+    "title": "Wayback capture 2023-11-01 of Google 'mba-intern' posting (Indeed-syndicated; region unknown) showing taken down",
+    "publisher": "Internet Archive",
+    "published": "2023-11-01",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "Job not found. This job may have been taken down."
+  },
+  "google-mba-intern-posting": {
+    "url": "https://www.google.com/about/careers/applications/jobs/results/121416951455982278-mba-intern/",
+    "title": "MBA Intern, Summer 2026 — Google Careers",
+    "publisher": "Google",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "google-mba-intern-summer-2024-india-wb": {
+    "url": "https://web.archive.org/web/20231025024607/https://www.google.com/about/careers/applications/jobs/results/116179970067178182-mba-intern-summer-2024",
+    "title": "Wayback capture 2023-10-25: MBA Intern, Summer 2024 (India locations)",
+    "publisher": "Internet Archive",
+    "published": "2023-10-25",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "Please complete your application before October 25, 2023."
+  },
+  "google-mba-intern-summer-2025-wb": {
+    "url": "https://web.archive.org/web/20241104133823/https://www.google.com/about/careers/applications/jobs/results/137039132051284678-mba-intern-summer-2025",
+    "title": "Wayback capture 2024-11-04: MBA Intern, Summer 2025 (US, 9 locations)",
+    "publisher": "Internet Archive",
+    "published": "2024-11-04",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "Please complete your application by November 18, 2024 ."
+  },
+  "google-mba-intern-summer-2026-cdx": {
+    "url": "https://web.archive.org/cdx/search/cdx?url=google.com/about/careers/applications/jobs/results/121416951455982278*&fl=timestamp,original,statuscode",
+    "title": "Wayback CDX: first capture of MBA Intern, Summer 2026 posting 2025-10-30",
+    "publisher": "Internet Archive",
+    "published": "2025-10-30",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "google-mba-intern-summer-2026-posting": {
+    "url": "https://www.google.com/about/careers/applications/jobs/results/121416951455982278-mba-intern-summer-2026",
+    "title": "MBA Intern, Summer 2026 (US) - now 'Job not found'; details via search-result snippets (deadline Oct 31, 2025)",
+    "publisher": "Google",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "google-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
+    "title": "Alphabet Inc. XBRL company facts (10-Q/10-K revenue, dei shares outstanding)",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "gsb-libguide-interview": {
+    "url": "https://libguides.stanford.edu/c.php?g=370194&p=2501250",
+    "title": "Prepare for an Interview - Career Research Guide (last updated Jul 9, 2026)",
+    "publisher": "Stanford Graduate School of Business Library",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "The CMC has many interview prep resources available in"
+  },
+  "gsb-recruiting-calendar": {
+    "url": "https://www.gsb.stanford.edu/calendar",
+    "title": "Recruiting Calendar | Stanford Graduate School of Business (2026-27 Academic Year)",
+    "publisher": "Stanford GSB Career Management Center",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "AAP Ends at noon"
+  },
+  "gsb-recruiting-policies": {
+    "url": "https://www.gsb.stanford.edu/organizations/recruit/strategies-resources/policies",
+    "title": "Recruiting Policies | Stanford Graduate School of Business",
+    "publisher": "Stanford GSB Career Management Center",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Recruiting organizations are precluded from cold outreach to first-year students during the AAP."
+  },
+  "hubble-rto-list-2026": {
+    "url": "https://hubblehq.com/blog/famous-companies-workplace-strategies",
+    "title": "The Official List of Every Company's Back-to-Office Strategy",
+    "publisher": "Hubble",
+    "published": "2026-09-22",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Adobe requires employees to work in the office 2-3 days a week."
+  },
+  "huzzle-uber-implementation-2025": {
+    "url": "https://www.huzzle.com/internships/2025-mba-intern-implementation-consultant-us-644184",
+    "title": "2025 MBA Intern - Implementation Consultant, US | Uber (Huzzle; posted_at 2025-02-27)",
+    "publisher": "Huzzle",
+    "published": "2025-02-27",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "huzzle-uber-perfstrat-2025": {
+    "url": "https://www.huzzle.com/internships/2025-performance-strategy-mba-intern-us-567306",
+    "title": "2025 Performance Strategy, MBA Intern, US | Uber (Huzzle; posted_at 2025-02-26)",
+    "publisher": "Huzzle",
+    "published": "2025-02-26",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "huzzle-uber-productops-2025": {
+    "url": "https://www.huzzle.com/internships/2025-product-operations-mba-intern-us-781861",
+    "title": "2025 Product Operations MBA Intern, US | Uber (Huzzle; posted_at 2025-02-17)",
+    "publisher": "Huzzle",
+    "published": "2025-02-17",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "huzzle-uber-sp-2024": {
+    "url": "https://www.huzzle.com/internships/2024-strategy-planning-mba-intern-us-550772",
+    "title": "2024 Strategy & Planning MBA Intern, US | Uber (Huzzle; posted_at 2024-01-07)",
+    "publisher": "Huzzle",
+    "published": "2024-01-07",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Jan 7, 2024"
+  },
+  "huzzle-uber-sp-2025": {
+    "url": "https://www.huzzle.com/internships/2025-strategy-planning-mba-intern-us-956833",
+    "title": "2025 Strategy & Planning MBA Intern, US | Uber (Huzzle; JSON-LD datePosted 2025-01-23T22:36:49Z)",
+    "publisher": "Huzzle",
+    "published": "2025-01-23",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "ibm-10q-2026q2": {
+    "url": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000078/ibm-20260630.htm",
+    "title": "IBM Form 10-Q for quarter ended June 30, 2026",
+    "publisher": "SEC EDGAR",
+    "published": "2026-07-23",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "ibm-application-process": {
+    "url": "https://www.ibm.com/careers/application-process",
+    "title": "Application Steps & Tips | IBM Careers",
+    "publisher": "IBM",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "we use what we call structured or behavioral interviews"
+  },
+  "ibm-ar-2025": {
+    "url": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm",
+    "title": "IBM 2025 Annual Report financials (10-K Exhibit 13)",
+    "publisher": "SEC EDGAR",
+    "published": "2026-02-24",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "the company's employees and related workforce at December 31, 2025"
+  },
+  "ibm-careers-search": {
+    "url": "https://www.ibm.com/careers/search?field_keyword_18[0]=Internship&field_keyword_05[0]=United%20States",
+    "title": "Search jobs | IBM Careers (US internships, 253 results)",
+    "publisher": "IBM",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "ibm-corpstrat-2026-search": {
+    "url": "https://ibmglobal.avature.net/en_US/careers/JobDetail/Corporate-Strategy-Summer-Consultant-2026-Internship/57337",
+    "title": "Corporate Strategy Summer Consultant – 2026 Internship - 57337 - IBM",
+    "publisher": "IBM",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "ibm-posting-128929": {
+    "url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=128929",
+    "title": "2027 FLDP Summer Intern - 128929",
+    "publisher": "IBM",
+    "published": "2026-08-17",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Currently enrolled in an MBA degree program at an Accredited College",
+    "quoteCheck": "browser 2026-10-04"
+  },
+  "ibm-posting-130031": {
+    "url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=130031",
+    "title": "Software Strategy and M&A Summer Intern - 130031",
+    "publisher": "IBM",
+    "published": "2026-09-09",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Currently enrolled in an MBA program at a top school, graduating in May 2027",
+    "quoteCheck": "browser 2026-10-04"
+  },
+  "ibm-posting-130063": {
+    "url": "https://careers.ibm.com/en_US/careers/JobDetail/Corporate-Strategy-Summer-Consultant-Internship/130063",
+    "title": "Corporate Strategy Summer Consultant – Internship - 130063",
+    "publisher": "IBM",
+    "published": "2026-09-09",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Pursuing Master of Business Administration",
+    "quoteCheck": "browser 2026-10-04"
+  },
+  "ibm-posting-133909": {
+    "url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=133909",
+    "title": "AI-First Transformation – Strategy Consultant Intern - 133909",
+    "publisher": "IBM",
+    "published": "2026-09-23",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "You are pursuing an MBA or similar graduate degree",
+    "quoteCheck": "browser 2026-10-04"
+  },
+  "ibm-rto-computerworld-2023": {
+    "url": "https://www.computerworld.com/article/1635061/ibms-software-unit-issues-global-return-to-office-mandate.html",
+    "title": "IBM's software unit issues global return to office mandate",
+    "publisher": "Computerworld",
+    "published": "2023-09-11",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "ibm-rto-techradar-2025": {
+    "url": "https://finance.yahoo.com/news/ibm-orders-workers-back-office-134200791.html",
+    "title": "IBM orders workers back to the office, or face the consequences",
+    "publisher": "TechRadar via Yahoo Finance",
+    "published": "2025-04-18",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "ibm-simplify-swstrat": {
+    "url": "https://simplify.jobs/p/4925ba4f-a5fe-400f-8b7a-bba5ef1323cb/Software-Strategy-and-Ma-Summer-Intern",
+    "title": "Software Strategy and M&A Summer Intern @ IBM",
+    "publisher": "Simplify",
+    "published": "2025-03-01",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "ibm-stockanalysis-mcap": {
+    "url": "https://stockanalysis.com/stocks/ibm/market-cap/",
+    "title": "IBM Market Cap",
+    "publisher": "StockAnalysis",
+    "published": "2026-10-02",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "market cap or net worth of $209.76 billion as of October 2, 2026"
+  },
+  "ibm-wayback-56065": {
+    "url": "https://web.archive.org/web/20250916163953/https://ibmglobal.avature.net/en_US/careers/JobDetail/Product-Manager-Intern-2026/56065",
+    "title": "Product Manager Intern 2026 - 56065 (Wayback 2025-09-16)",
+    "publisher": "Internet Archive",
+    "published": "2025-09-05",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "ibm-wayback-57618": {
+    "url": "https://web.archive.org/web/20250912220355/https://ibmglobal.avature.net/en_US/careers/JobDetail/Financial-Analyst-Summer-Intern-2026/57618",
+    "title": "Financial Analyst Summer Intern 2026 - 57618 (Wayback 2025-09-12)",
+    "publisher": "Internet Archive",
+    "published": "2025-09-08",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "ibm-wayback-fldp-2026": {
+    "url": "https://web.archive.org/web/20260101122342/https://ibmglobal.avature.net/en_US/careers/JobDetail/Finance-Leadership-Development-Program-FLDP-Summer-Intern-2026/73043",
+    "title": "Finance Leadership Development Program (FLDP) Summer Intern 2026 - 73043 (Wayback 2026-01-01)",
+    "publisher": "Internet Archive",
+    "published": "2025-12-31",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "Currently enrolled in an MBA degree program at an Accredited College"
+  },
+  "ibm-xbrl-companyfacts": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000051143.json",
+    "title": "IBM XBRL company facts (us-gaap:Revenues)",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "igotanoffer-uber-so": {
+    "url": "https://igotanoffer.com/en/advice/uber-strategy-and-operations-interview",
+    "title": "Uber Strategy and Operations Manager Interview",
+    "publisher": "IGotAnOffer",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "intuit-10k": {
+    "url": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000037/intu-20260731.htm",
+    "title": "Intuit Inc. Form 10-K (intu-20260731.htm)",
+    "publisher": "SEC EDGAR",
+    "published": "2026-09-09",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "we had approximately 18,600 employees in seven countries"
+  },
+  "intuit-2025-cg-wayback": {
+    "url": "https://web.archive.org/web/20260306143830/https://jobs.intuit.com/job/san-diego/mba-strategic-finance-intern-cg/27595/91707176432",
+    "title": "MBA Strategic Finance Intern, CG (datePosted 2025-11-24)",
+    "publisher": "Intuit Careers via Internet Archive",
+    "published": "2025-11-24",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "intuit-2025-finstrat-wayback": {
+    "url": "https://web.archive.org/web/20251122063439/https://jobs.intuit.com/job/mountain-view/mba-finance-strategy-intern/27595/87833295536",
+    "title": "MBA Finance Strategy Intern (datePosted 2025-10-28), Wayback 2025-11-22",
+    "publisher": "Intuit Careers via Internet Archive",
+    "published": "2025-10-28",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "intuit-2025-fpa-wayback": {
+    "url": "https://web.archive.org/web/20260116062745/https://jobs.intuit.com/job/mountain-view/mba-strategic-finance-intern-corporate-fp-and-a/27595/90180174016",
+    "title": "MBA Strategic Finance Intern, Corporate FP&A (datePosted 2025-11-24)",
+    "publisher": "Intuit Careers via Internet Archive",
+    "published": "2025-11-24",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "intuit-2025-pm-wayback": {
+    "url": "https://web.archive.org/web/20251124095753/https://jobs.intuit.com/job/mountain-view/summer-2026-product-manager-intern/27595/88653400736",
+    "title": "Summer 2026 Product Manager Intern (datePosted 2025-11-18), Wayback 2025-11-24",
+    "publisher": "Intuit Careers via Internet Archive",
+    "published": "2025-11-18",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "intuit-2025-search-titles": {
+    "url": "https://jobs.intuit.com/job/mountain-view/mba-corporate-strategy-and-development-intern/27595/89548564576",
+    "title": "MBA Corporate Strategy & Development Intern (2025-cycle posting; title seen in search results, page now removed)",
+    "publisher": "Intuit Careers",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null,
+    "gone": "2026-10-04"
+  },
+  "intuit-2025-techeco-search": {
+    "url": "https://jobs.intuit.com/job/mountain-view/mba-strategic-finance-intern-tech-eco/27595/87833295568",
+    "title": "MBA Strategic Finance Intern, Tech Eco (title seen in search results)",
+    "publisher": "Intuit Careers",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null,
+    "gone": "2026-10-04"
+  },
+  "intuit-2027-pmm-search": {
+    "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-product-marketing-intern/27595/100620927728",
+    "title": "Summer 2027: MBA Product Marketing Intern (title seen in search results; page now removed)",
+    "publisher": "Intuit Careers",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null,
+    "gone": "2026-10-04"
+  },
+  "intuit-cdx": {
+    "url": "https://web.archive.org/cdx/search/cdx?url=jobs.intuit.com/job/&matchType=prefix",
+    "title": "Wayback CDX index of jobs.intuit.com job URLs",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "intuit-corpstrat-2027": {
+    "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-corporate-strategy-and-development-intern/27595/101313096080",
+    "title": "Summer 2027: MBA Corporate Strategy & Development Intern",
+    "publisher": "Intuit Careers",
+    "published": "2026-08-17",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Must be enrolled in an MBA program graduating in May/June 2028"
+  },
+  "intuit-hiring-process": {
+    "url": "https://www.intuit.com/careers/hiring-process",
+    "title": "Hiring Process | Intuit Careers",
+    "publisher": "Intuit",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "The case study is designed for you to demonstrate the skills you have"
+  },
+  "intuit-hybrid-careers": {
+    "url": "https://www.intuit.com/careers/hybrid-work/",
+    "title": "Hybrid work at Intuit | Intuit Careers",
+    "publisher": "Intuit",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "teams are expected to work onsite three days per week"
+  },
+  "intuit-pm-2027": {
+    "url": "https://jobs.intuit.com/job/multiple-locations/summer-2027-product-manager-intern/27595/100620927632",
+    "title": "Summer 2027: Product Manager Intern (Job ID 24123)",
+    "publisher": "Intuit Careers",
+    "published": "2026-09-11",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Relevant programs include bachelor's, master’s, MBA, and PhD students"
+  },
+  "intuit-sando-2027-wayback": {
+    "url": "https://web.archive.org/web/20260914220545/https://jobs.intuit.com/job/mountain-view/summer-2027-mba-strategy-and-operations-intern/27595/100620927760",
+    "title": "Summer 2027: MBA Strategy & Operations Intern (datePosted 2026-9-11), Wayback 2026-09-14",
+    "publisher": "Intuit Careers via Internet Archive",
+    "published": "2026-09-11",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "intuit-search-2026": {
+    "url": "https://jobs.intuit.com/search-jobs/MBA/27595/1",
+    "title": "Intuit jobs search: MBA (Summer 2027 postings; each job page carries JSON-LD datePosted)",
+    "publisher": "Intuit Careers",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "intuit-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000896878.json",
+    "title": "Intuit Inc. XBRL company facts (10-Q/10-K revenue, dei shares outstanding)",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "jobright-airbnb-aa-2026": {
+    "url": "https://jobright.ai/jobs/info/698559790f6f7e7a2ce00baf",
+    "title": "Advanced Analytics Intern (MS/MBA) @ Airbnb | Jobright.ai (record id timestamp 2026-02-06)",
+    "publisher": "Jobright.ai",
+    "published": "2026-02-06",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "jobright-airbnb-sfa-2026": {
+    "url": "https://jobright.ai/jobs/info/69460077d1953b5d11bf1602",
+    "title": "Strategic Finance & Analytics Intern (MBA/MS) @ Airbnb | Jobright.ai (record id timestamp 2025-12-20T01:48Z)",
+    "publisher": "Jobright.ai",
+    "published": "2025-12-20",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "jobright-ala-2026": {
+    "url": "https://jobright.ai/jobs/info/68f061cb2e327452a0a4c9fc",
+    "title": "2026 Amazon Leadership Accelerator (ALA) Product Manager Internship @ Amazon | Jobright.ai",
+    "publisher": "Jobright.ai",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "jobsbyculture-openai-2026": {
+    "url": "https://jobsbyculture.com/blog/openai-remote-work-policy-2026",
+    "title": "OpenAI Remote Work 2026: We Checked 681 Roles — Only 28 Are Remote",
+    "publisher": "JobsByCulture",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "three in-office days per week (Mon–Wed)",
+    "quoteCheck": "browser 2026-10-04"
+  },
+  "linkedin-airbnb-sfa-3784061828": {
+    "url": "https://www.linkedin.com/jobs/view/strategic-finance-analytics-intern-mba-at-airbnb-3784061828",
+    "title": "Airbnb hiring Strategic Finance & Analytics Intern (MBA) (LinkedIn; seen in search)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "linkedin-airbnb-sfa-4136512155": {
+    "url": "https://www.linkedin.com/jobs/view/strategic-finance-analytics-intern-mba-at-airbnb-4136512155",
+    "title": "Strategic Finance & Analytics Intern (MBA) - Airbnb (LinkedIn; seen in search)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "linkedin-ehis-google-mba-2026": {
+    "url": "https://www.linkedin.com/posts/ehis1_applications-are-now-open-for-googles-mba-activity-7383845287347519488--HCe",
+    "title": "LinkedIn post: Applications are now open for Google's MBA Internship (Summer 2026)",
+    "publisher": "LinkedIn (Ehis Akhetuamhen)",
+    "published": "2025-10-14",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Applications are now open for Google's MBA Internship (Summer 2026)."
+  },
+  "linkedin-jobid-calibration": {
+    "url": "https://www.linkedin.com/jobs/view/product-management-mba-intern-data-center-gpu-summer-2027-at-nvidia-ai-4466645853",
+    "title": "Inference aid: LinkedIn job IDs rise roughly linearly; anchors e.g. NVIDIA 3745781009 (~2023-10-20), Meta 4120827303 (~2025-01-12), NVIDIA 4334403423 (~2025-11-06), OpenAI 4396081233 (~2026-04-03), NVIDIA 4466645853 (~2026-09-11)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "linkedin-meta-pmm-3783015842": {
+    "url": "https://www.linkedin.com/jobs/view/product-marketing-manager-intern-mba-at-meta-3783015842",
+    "title": "Meta hiring Product Marketing Manager Intern, MBA in Menlo Park, CA (LinkedIn; '2 years ago', closed)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "linkedin-meta-pmm-4062928334": {
+    "url": "https://www.linkedin.com/jobs/view/product-marketing-manager-intern-mba-at-meta-4062928334",
+    "title": "Product Marketing Manager Intern, MBA - Meta (LinkedIn, San Francisco; '1 year ago', closed)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "linkedin-meta-pmm-4120827303": {
+    "url": "https://www.linkedin.com/jobs/view/product-marketing-manager-intern-mba-at-meta-4120827303",
+    "title": "Product Marketing Manager Intern, MBA (LinkedIn; seen in search)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null,
+    "gone": "2026-10-04"
+  },
+  "linkedin-nvidia-mba-2024": {
+    "url": "https://www.linkedin.com/jobs/view/mba-2024-internships-product-management-marketing-finance-and-operations-at-nvidia-3745781009",
+    "title": "NVIDIA hiring MBA 2024 Internships: Product Management, Marketing, Finance and Operations (LinkedIn, seen in search)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "linkedin-uber-rp-2026": {
+    "url": "https://www.linkedin.com/jobs/view/2026-risk-and-payments-support-mba-intern-united-states-at-uber-4366257375",
+    "title": "2026 Risk and Payments Support MBA Intern, United States (LinkedIn; seen in search)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "meta-10k": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
+    "title": "Meta Platforms, Inc. Form 10-K (meta-20251231.htm)",
+    "publisher": "SEC EDGAR",
+    "published": "2026-01-29",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "We had a global workforce of 78,865 employees as of December 31, 2025"
+  },
+  "meta-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json",
+    "title": "Meta Platforms, Inc. XBRL company facts (10-Q/10-K revenue, dei shares outstanding)",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "microsoft-10k": {
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+    "title": "Microsoft Corporation Form 10-K (msft-20260630.htm)",
+    "publisher": "SEC EDGAR",
+    "published": "2026-07-29",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "we employed approximately 223,000 people on a full-time basis"
+  },
+  "microsoft-flexible-work-2025": {
+    "url": "https://blogs.microsoft.com/blog/2025/09/09/flexible-work-update/",
+    "title": "Flexible work update",
+    "publisher": "The Official Microsoft Blog",
+    "published": "2025-09-09",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "you'll be expected to work onsite three days a week"
+  },
+  "microsoft-how-we-hire": {
+    "url": "https://careers.microsoft.com/v2/global/en/hiring-tips.html",
+    "title": "How we hire | Microsoft Careers",
+    "publisher": "Microsoft",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Most interviews include 2-4 conversations with potential teammates and cross-functional colleagues"
+  },
+  "microsoft-student-interviewing": {
+    "url": "https://careers.microsoft.com/v2/global/en/hiring-tips/student-interviewing",
+    "title": "Student interviewing | Microsoft Careers",
+    "publisher": "Microsoft",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "You'll have an initial interview and, if selected, a second final interview."
+  },
+  "microsoft-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+    "title": "Microsoft Corporation XBRL company facts (10-Q/10-K revenue, dei shares outstanding)",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "mit-cdo-amazon-pmt-2027": {
+    "url": "https://cdo.mit.edu/jobs/amazon-product-manager-technical-pmt-intern-summer-2027/",
+    "title": "Product Manager Technical (PMT) Intern (Summer 2027)",
+    "publisher": "MIT Sloan Career Development Office",
+    "published": "2026-08-21",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Recruitment began on August 21, 2026"
+  },
+  "ms-200055972": {
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393556999301",
+    "title": "Finance Manager: MBA Internship Opportunities (200055972)",
+    "publisher": "Microsoft Careers",
+    "published": "2026-09-21",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "ms-200055974": {
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393556999320",
+    "title": "Treasury Finance Manager: MBA Internship Opportunities (200055974)",
+    "publisher": "Microsoft Careers",
+    "published": "2026-09-21",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "ms-200058904": {
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557019360",
+    "title": "Business Program Management INTERN (200058904)",
+    "publisher": "Microsoft Careers",
+    "published": "2026-09-30",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "ms-2023-finance-archive": {
+    "url": "https://web.archive.org/web/20230904025911/https://gcsservices.careers.microsoft.com/search/api/v1/search?lc=United%20States&l=en_us&pg=1&pgSz=20&o=Relevance&flt=true",
+    "title": "Archived Microsoft search API (US): Finance: MBA Internship Opportunities (1593736), postingDate 2023-09-01",
+    "publisher": "Microsoft Careers via Internet Archive",
+    "published": "2023-09-01",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "ms-2025-deal-archive": {
+    "url": "https://web.archive.org/web/20251004124209/https://gcsservices.careers.microsoft.com/search/api/v1/search?q=Deal%20Analytics%20MBA%20Internship%20Opportunity%20-%20Xbox&lc=Redmond%2C%20Washington%2C%20United%20States&d=Business%20Development&l=en_us&pg=1&pgSz=18&o=Relevance&flt=true",
+    "title": "Archived Microsoft search API: Deal Analytics: MBA Internship Opportunity - Xbox (1885858), postingDate 2025-10-01",
+    "publisher": "Microsoft Careers via Internet Archive",
+    "published": "2025-10-01",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "ms-2025-finance-archive": {
+    "url": "https://web.archive.org/web/20250908065700/https://gcsservices.careers.microsoft.com/search/api/v1/search?q=Finance%20Manager%20MBA%20Internship%20Opportunities&lc=Redmond%2C%20Washington%2C%20United%20States&d=Financial%20Analysis&l=en_us&pg=1&pgSz=18&o=Relevance&flt=true",
+    "title": "Archived Microsoft search API: Finance Manager: MBA Internship Opportunities (1862433), postingDate 2025-09-01",
+    "publisher": "Microsoft Careers via Internet Archive",
+    "published": "2025-09-01",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "ms-2025-hr-archive": {
+    "url": "https://web.archive.org/web/20250731201459/https://gcsservices.careers.microsoft.com/search/api/v1/search?q=Human%20Resources%20Master%27s%20%26%20MBA%20Internship%20Opportunities&lc=Redmond%2C%20Washington%2C%20United%20States&d=HR%20Generalist&l=en_us&pg=1&pgSz=18&o=Relevance&flt=true",
+    "title": "Archived Microsoft search API: Human Resources: Master's & MBA Internship Opportunities (1851549), postingDate 2025-07-28",
+    "publisher": "Microsoft Careers via Internet Archive",
+    "published": "2025-07-28",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "ms-2025-marketing-archive": {
+    "url": "https://web.archive.org/web/20250907214111/https://gcsservices.careers.microsoft.com/search/api/v1/search?q=Marketing%20MBA%20Internship%20Opportunities&lc=Redmond%2C%20Washington%2C%20United%20States&d=Product%20Marketing&l=en_us&pg=1&pgSz=18&o=Relevance&flt=true",
+    "title": "Archived Microsoft search API: Marketing: MBA Internship Opportunities (1863265), postingDate 2025-09-01",
+    "publisher": "Microsoft Careers via Internet Archive",
+    "published": "2025-09-01",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "ms-2025-pm-archive": {
+    "url": "https://web.archive.org/web/20250921060656/https://gcsservices.careers.microsoft.com/search/api/v1/search?q=Product%20Manager%20MBA%20Internship%20Opportunities&lc=Redmond%2C%20Washington%2C%20United%20States&d=Product%20Management&l=en_us&pg=1&pgSz=18&o=Relevance&flt=true",
+    "title": "Archived Microsoft search API: Product Manager: MBA Internship Opportunities (1877916), postingDate 2025-09-15",
+    "publisher": "Microsoft Careers via Internet Archive",
+    "published": "2025-09-15",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "ms-jobpages-cdx": {
+    "url": "https://web.archive.org/cdx/search/cdx?url=jobs.careers.microsoft.com/global/en/job/&matchType=prefix",
+    "title": "Wayback CDX index of jobs.careers.microsoft.com job URLs (MBA titles and IDs, first-capture dates)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "ms-search-api-2026": {
+    "url": "https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=MBA&location=United%20States&sort_by=timestamp",
+    "title": "Microsoft careers public search API (postedTs per job)",
+    "publisher": "Microsoft Careers",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "muse-uber-sp-2026": {
+    "url": "https://www.themuse.com/jobs/uber/2026-strategy-and-planning-mba-intern-global-support-operations-united-states/",
+    "title": "2026 Strategy and Planning MBA Intern | Global Support Operations, United States at Uber | The Muse (seen in search; now 404)",
+    "publisher": "The Muse",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null,
+    "gone": "2026-10-04"
+  },
+  "nvidia-10k": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+    "title": "NVIDIA Corporation Form 10-K (nvda-20260125.htm)",
+    "publisher": "SEC EDGAR",
+    "published": "2026-02-25",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "we had approximately 42,000 employees in 38 countries"
+  },
+  "nvidia-eightfold-jr2025670": {
+    "url": "https://jobs.nvidia.com/api/apply/v2/jobs/893397711858?domain=nvidia.com",
+    "title": "NVIDIA careers (Eightfold) record: Product Management MBA Intern, Data Center GPU - Summer 2027 (JR2025670), t_create 2026-09-11",
+    "publisher": "NVIDIA",
+    "published": "2026-09-11",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "MBA in a relevant field or equivalent program (graduating in winter or summer 2028)"
+  },
+  "nvidia-eightfold-procurement-2026": {
+    "url": "https://jobs.nvidia.com/api/apply/v2/jobs/893392990719?domain=nvidia.com",
+    "title": "NVIDIA careers record: Indirect Procurement MBA Intern - Summer 2026 (JR2012416), t_create 2026-01-28",
+    "publisher": "NVIDIA",
+    "published": "2026-01-28",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "nvidia-eightfold-vc-2026": {
+    "url": "https://jobs.nvidia.com/api/apply/v2/jobs/893392538320?domain=nvidia.com",
+    "title": "NVIDIA careers record: Venture Associate MBA Intern - Summer 2026 (JR2010306), t_create 2025-12-17",
+    "publisher": "NVIDIA",
+    "published": "2025-12-17",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "nvidia-intern-benefits": {
+    "url": "https://www.nvidia.com/en-us/benefits/interns/",
+    "title": "Learn about Benefits for Interns at NVIDIA",
+    "publisher": "NVIDIA",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "whether it's from home, in the office, or a combination of the two"
+  },
+  "nvidia-workday-2025-mba-pm": {
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/NVIDIA-2025-Internships--MBA-Product-Management_JR1987644-1",
+    "title": "NVIDIA 2025 Internships: MBA Product Management (Workday URL, seen in search)",
+    "publisher": "NVIDIA",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "nvidia-workday-2025-mba-pmm": {
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/NVIDIA-2025-Internships--MBA-Product-Marketing-Management_JR1987646",
+    "title": "NVIDIA 2025 Internships: MBA Product Marketing Management (Workday URL, seen in search)",
+    "publisher": "NVIDIA",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "nvidia-workday-agentic-2025": {
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Product-Management-MBA-Intern--Agentic-AI---Summer-2025_JR1995201",
+    "title": "Product Management MBA Intern, Agentic AI - Summer 2025 (Workday URL, seen in search)",
+    "publisher": "NVIDIA",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "nvidia-workday-api-20261004": {
+    "url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+    "title": "NVIDIA Workday job-search API queried 2026-10-04 for 'MBA', 'MBA intern', 'intern', 'JR2025670' - no MBA intern postings returned",
+    "publisher": "NVIDIA",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null,
+    "gone": "2026-10-04"
+  },
+  "nvidia-workday-fpa-dc-2026": {
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/nvidiaexternalcareersite/job/Financial-Analyst-MBA-Intern--Data-Center-FP-A-Compute---Summer-2026_JR2010483-1/apply/applyManually",
+    "title": "Financial Analyst MBA Intern, Data Center FP&A Compute - Summer 2026 (Workday URL, seen in search)",
+    "publisher": "NVIDIA",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "nvidia-workday-jr2025670": {
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Product-Management-MBA-Intern--Data-Center-GPU---Summer-2027_JR2025670-1",
+    "title": "Workday posting URL for JR2025670 (seen in search; no longer returned by Workday search API)",
+    "publisher": "NVIDIA",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "nvidia-workday-robotics-pmm-2026": {
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Robotics-Product-Marketing-MBA-Intern---Summer-2026_JR2009851",
+    "title": "Robotics Product Marketing MBA Intern - Summer 2026 (Workday URL, seen in search)",
+    "publisher": "NVIDIA",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "nvidia-workday-treasury-2026": {
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Treasury-Analyst-MBA-Intern---Summer-2026_JR2006582",
+    "title": "Treasury Analyst MBA Intern – Summer 2026 (Workday URL JR2006582, seen in search)",
+    "publisher": "NVIDIA",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "nvidia-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
+    "title": "NVIDIA Corporation XBRL company facts (10-Q/10-K revenue, dei shares outstanding)",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "ofy-ala-2026": {
+    "url": "https://opportunitiesforyouth.org/2025/10/23/amazon-launches-2026-leadership-accelerator-for-mba-interns-building-tomorrows-visionary-product-leaders/",
+    "title": "Amazon Launches 2026 Leadership Accelerator for MBA Interns",
+    "publisher": "Opportunities for Youth",
+    "published": "2025-10-23",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "openai-axios-70b": {
+    "url": "https://www.axios.com/2026/09/29/scoop-openais-annual-recurring-revenue-nears-70b",
+    "title": "Scoop: OpenAI's annual recurring revenue nears $70B",
+    "publisher": "Axios",
+    "published": "2026-09-29",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "openai-bloomberg-40b": {
+    "url": "https://www.bloomberg.com/news/articles/2026-08-13/openai-s-revenue-run-rate-tops-40-billion-ahead-of-ipo",
+    "title": "OpenAI's Revenue Run Rate Tops $40 Billion Ahead of IPO",
+    "publisher": "Bloomberg",
+    "published": "2026-08-13",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "openai-careers-posting": {
+    "url": "https://openai.com/careers/forward-deployed-software-engineer-nyc-new-york-city/",
+    "title": "Forward Deployed Software Engineer - NYC | OpenAI",
+    "publisher": "OpenAI",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "openai-cnbc-tender": {
+    "url": "https://www.cnbc.com/2026/08/10/openai-wraps-7-billion-share-sale-ahead-of-potential-ipo-.html",
+    "title": "OpenAI wraps $7 billion share sale ahead of potential IPO",
+    "publisher": "CNBC",
+    "published": "2026-08-10",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "openai-dealroom-tender": {
+    "url": "https://dealroom.co/news/144253-openai-closes-7b-share-sale-at-852b-valuation-ahead-of-ipo",
+    "title": "OpenAI closes $7B share sale at $852B valuation ahead of IPO",
+    "publisher": "Dealroom.co",
+    "published": "2026-08-11",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "openai-engadget-headcount": {
+    "url": "https://www.engadget.com/ai/openai-reportedly-plans-to-double-its-workforce-to-8000-employees-161028377.html",
+    "title": "OpenAI reportedly plans to double its workforce to 8,000 employees",
+    "publisher": "Engadget (citing Financial Times)",
+    "published": "2026-03-21",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "openai-info-h1-2025": {
+    "url": "https://www.theinformation.com/articles/openais-first-half-results-4-3-billion-sales-2-5-billion-cash-burn",
+    "title": "OpenAI's First Half Results: $4.3 Billion in Sales, $2.5 Billion Cash Burn",
+    "publisher": "The Information",
+    "published": "2025-09-29",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "openai-latka-2024": {
+    "url": "https://getlatka.com/blog/openai-revenue",
+    "title": "OpenAI Revenue: $3.7B in 2024 to a $40B+ Run Rate",
+    "publisher": "Latka",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "openai-quartz-70b": {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/openai-q3-2026-revenue-run-171727199.html",
+    "title": "OpenAI Q3 2026 revenue run rate nears $70 billion",
+    "publisher": "Quartz via Yahoo Finance",
+    "published": "2026-09-29",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "openai-revelio": {
+    "url": "https://www.reveliolabs.com/companies/openai-foundation/employees",
+    "title": "OpenAI Foundation Number of Employees",
+    "publisher": "Revelio Labs",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "openai-sacra": {
+    "url": "https://sacra.com/c/openai/",
+    "title": "OpenAI revenue, valuation & funding",
+    "publisher": "Sacra",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "opportunitiescorners-google-mba-2025": {
+    "url": "https://opportunitiescorners.com/google-mba-summer-internship/",
+    "title": "Google MBA Summer Internship 2025 in USA (PAID Internship)",
+    "publisher": "Opportunities Corners",
+    "published": "2024-10-27",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "opportunitiesradar-google-mba-2025": {
+    "url": "https://opportunitiesradar.com/google-mba-internship-summer/",
+    "title": "Google MBA Internship Summer 2025 | (12 Weeks) Paid Internship",
+    "publisher": "Opportunities Radar",
+    "published": "2024-10-26",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "paypal-10k-2025": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1633917/000163391726000024/pypl-20251231.htm",
+    "title": "PayPal Holdings Form 10-K for FY2025",
+    "publisher": "SEC EDGAR",
+    "published": "2026-02-03",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "As of December 31, 2025, we employed approximately 23,800 people globally"
+  },
+  "paypal-10q-2026q2": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1633917/000163391726000082/pypl-20260630.htm",
+    "title": "PayPal Holdings Form 10-Q for quarter ended 2026-06-30",
+    "publisher": "SEC EDGAR",
+    "published": "2026-07-28",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "paypal-builtin-bizops-2025": {
+    "url": "https://www.builtinchicago.org/job/mba-business-operations-intern/7406279",
+    "title": "MBA - Business Operations Intern - PayPal (removed Oct 22, 2025)",
+    "publisher": "Built In Chicago",
+    "published": "2025-10-15",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "paypal-builtin-corpdev-2025": {
+    "url": "https://www.builtinsf.com/job/mba-corporate-development-intern/7594895",
+    "title": "MBA - Corporate Development Intern - PayPal (removed Nov 11, 2025)",
+    "publisher": "Built In San Francisco",
+    "published": "2025-11-04",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "paypal-builtin-product-growth-2025": {
+    "url": "https://builtin.com/job/product-growth-mba-intern/8203701",
+    "title": "Product Growth MBA Intern - PayPal (removed Jan 18, 2026)",
+    "publisher": "Built In",
+    "published": "2026-01-14",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "paypal-builtin-venmo-growth-2025": {
+    "url": "https://www.builtinsf.com/job/venmo-product-growth-intern-mba/7722390",
+    "title": "Venmo Product Growth Intern - MBA - PayPal (removed Nov 25, 2025)",
+    "publisher": "Built In San Francisco",
+    "published": "2025-11-17",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "paypal-builtin-ventures-ops-2025": {
+    "url": "https://www.builtinnyc.com/job/mba-ventures-operations-intern/7111368",
+    "title": "MBA - Ventures Operations Intern - PayPal (removed Sep 15, 2025)",
+    "publisher": "Built In NYC",
+    "published": "2025-09-11",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "paypal-careercom-pm-2023": {
+    "url": "https://www.career.com/job/paypal/product-manager-mba-intern/j202312081959169303530",
+    "title": "Product Manager MBA Intern job opening at PayPal",
+    "publisher": "Career.com",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "paypal-careers-intern-hub": {
+    "url": "https://careers.pypl.com/university-hiring/intern-hub/",
+    "title": "PayPal Careers - University Hiring - Intern Hub",
+    "publisher": "PayPal",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "paypal-careers-interviewing": {
+    "url": "https://careers.pypl.com/how-we-recruit/Interviewing/default.aspx",
+    "title": "PayPal Careers - How We Recruit - Interviewing",
+    "publisher": "PayPal",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "If you're a good match, we'll set up interviews with team members."
+  },
+  "paypal-careers-na-university": {
+    "url": "https://careers.pypl.com/university-hiring/north-america-latin-america/default.aspx",
+    "title": "PayPal Careers - University Hiring - North America and Latin America",
+    "publisher": "PayPal",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "The US and Canada recruitment season suns from August to March each year."
+  },
+  "paypal-linkedin-b2bgtm-2023": {
+    "url": "https://www.linkedin.com/jobs/view/b2b-product-go-to-market-mba-intern-at-paypal-3838166847",
+    "title": "PayPal hiring B2B Product Go To Market MBA Intern in New York, NY",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "paypal-linkedin-bizops-2026repost": {
+    "url": "https://www.linkedin.com/jobs/view/mba-business-operations-intern-at-paypal-4351561744",
+    "title": "PayPal hiring MBA - Business Operations Intern in Chicago, IL",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "paypal-linkedin-corpdev-2023": {
+    "url": "https://www.linkedin.com/jobs/view/corporate-development-mba-intern-at-paypal-3804810085",
+    "title": "Corporate Development MBA Intern - PayPal (San Jose)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "paypal-linkedin-corpdev-2024": {
+    "url": "https://www.linkedin.com/jobs/view/mba-corporate-development-intern-at-paypal-4054616238",
+    "title": "PayPal hiring MBA - Corporate Development Intern (San Jose)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "paypal-linkedin-intmktg-2024": {
+    "url": "https://www.linkedin.com/jobs/view/mba-integrated-marketing-intern-at-paypal-4061380735",
+    "title": "PayPal hiring MBA - Integrated Marketing Intern",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "paypal-linkedin-pm-hackerrank-2022": {
+    "url": "https://www.linkedin.com/jobs/view/product-manager-intern-mba-at-paypal-3280608129",
+    "title": "PayPal hiring Product Manager Intern - MBA in Austin, TX (Summer 2023)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "paypal-linkedin-ventures-2024": {
+    "url": "https://www.linkedin.com/jobs/view/mba-ventures-intern-at-paypal-4055549460",
+    "title": "PayPal hiring MBA - Ventures Intern in New York",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "paypal-stockanalysis-mcap": {
+    "url": "https://stockanalysis.com/stocks/pypl/market-cap/",
+    "title": "PayPal (PYPL) Market Cap",
+    "publisher": "stockanalysis.com",
+    "published": "2026-10-02",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "paypal-workday-corpstrategy-posting": {
+    "url": "https://paypal.wd1.myworkdayjobs.com/en-US/jobs/job/San-Jose-California-United-States-of-America/Sr-Manager--Corporate-Strategy_R0137898",
+    "title": "Sr Manager, Corporate Strategy (R0137898), posted 2026-10-02",
+    "publisher": "PayPal",
+    "published": "2026-10-02",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "paypal-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001633917.json",
+    "title": "PayPal XBRL company facts (us-gaap:Revenues)",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "rb-pm": {
+    "url": "https://www.rocketblocks.me/product-management.php",
+    "title": "Product management interview prep | RocketBlocks",
+    "publisher": "RocketBlocks (12 MC Ventures, LLC)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "(a la carte pricing, $200 / hr)"
+  },
+  "rb-schools": {
+    "url": "https://www.rocketblocks.me/schools.php",
+    "title": "RocketBlocks Universities",
+    "publisher": "RocketBlocks (12 MC Ventures, LLC)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Stanford GSB uses RocketBlocks for interview prep",
+    "quoteCheck": "browser 2026-10-04"
+  },
+  "sa-adobe": {
+    "url": "https://stockanalysis.com/stocks/adbe/",
+    "title": "Adobe Inc. (ADBE) stock price and overview",
+    "publisher": "Stock Analysis",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "sa-airbnb": {
+    "url": "https://stockanalysis.com/stocks/abnb/",
+    "title": "Airbnb, Inc. (ABNB) stock price and overview",
+    "publisher": "Stock Analysis",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "sa-google": {
+    "url": "https://stockanalysis.com/stocks/googl/",
+    "title": "Alphabet Inc. (GOOGL) stock price and overview",
+    "publisher": "Stock Analysis",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "sa-intuit": {
+    "url": "https://stockanalysis.com/stocks/intu/",
+    "title": "Intuit Inc. (INTU) stock price and overview",
+    "publisher": "Stock Analysis",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "sa-meta": {
+    "url": "https://stockanalysis.com/stocks/meta/",
+    "title": "Meta Platforms, Inc. (META) stock price and overview",
+    "publisher": "Stock Analysis",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "sa-nvidia": {
+    "url": "https://stockanalysis.com/stocks/nvda/",
+    "title": "NVIDIA Corporation (NVDA) stock price and overview",
+    "publisher": "Stock Analysis",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "sa-uber": {
+    "url": "https://stockanalysis.com/stocks/uber/",
+    "title": "Uber Technologies, Inc. (UBER) stock price and overview",
+    "publisher": "Stock Analysis",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "salesforce-10k": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm",
+    "title": "Salesforce, Inc. Form 10-K (crm-20260131.htm)",
+    "publisher": "SEC EDGAR",
+    "published": "2026-03-02",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "As of January 31, 2026, we had 83,334 employees."
+  },
+  "salesforce-how-we-hire": {
+    "url": "https://www.salesforce.com/company/careers/culture/how-we-hire/",
+    "title": "How We Hire at Salesforce",
+    "publisher": "Salesforce",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "on-site interview at a Salesforce office will be required prior to receiving an offer"
+  },
+  "salesforce-hybrid-guidelines": {
+    "url": "https://www.salesforce.com/news/stories/hybrid-work-guidelines/",
+    "title": "Salesforce's Hybrid Work Guidelines",
+    "publisher": "Salesforce",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "salesforce-uni-us-canada": {
+    "url": "https://www.salesforce.com/company/careers/university-recruiting/us-canada/",
+    "title": "US and Canada Interview Process",
+    "publisher": "Salesforce",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Panel interview/case study where you'll present previous project and accomplishments"
+  },
+  "salesforce-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json",
+    "title": "Salesforce, Inc. XBRL company facts (10-Q/10-K revenue, dei shares outstanding)",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "servicenow-10k-2025": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000007/now-20251231.htm",
+    "title": "ServiceNow Form 10-K for fiscal year 2025",
+    "publisher": "SEC EDGAR",
+    "published": "2026-01-29",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "29,187 EMPLOYEES on a full-time basis"
+  },
+  "servicenow-10q-2026q2": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "title": "ServiceNow Form 10-Q for quarter ended June 30, 2026",
+    "publisher": "SEC EDGAR",
+    "published": "2026-07-23",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "servicenow-builtin-workplace": {
+    "url": "https://builtin.com/company/servicenow/faq/workplace-perception",
+    "title": "What's It Like to Work at ServiceNow 2026?",
+    "publisher": "Built In",
+    "published": "2026-09-28",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "servicenow-how-we-hire": {
+    "url": "https://careers.servicenow.com/how-we-hire/",
+    "title": "How We Hire",
+    "publisher": "ServiceNow",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "servicenow-jobright-ba-repo": {
+    "url": "https://github.com/jobright-ai/2026-Business-Analyst-Internship",
+    "title": "2026 Business Analyst Internship list (git history)",
+    "publisher": "Jobright.ai (GitHub)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "servicenow-jobright-corpstrategy": {
+    "url": "https://jobright.ai/jobs/info/68d241718c62e63bc7fd60aa",
+    "title": "MBA Corporate Strategy Intern - Summer 2026 @ ServiceNow",
+    "publisher": "Jobright.ai",
+    "published": "2025-09-23",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "servicenow-jobright-mgmt-repo": {
+    "url": "https://github.com/jobright-ai/2026-Management-Internship",
+    "title": "2026 Management Internship list (git history)",
+    "publisher": "Jobright.ai (GitHub)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "servicenow-jobright-mkt-repo": {
+    "url": "https://github.com/jobright-ai/2026-Marketing-Internship",
+    "title": "2026 Marketing Internship list (git history)",
+    "publisher": "Jobright.ai (GitHub)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "servicenow-jobright-outbound": {
+    "url": "https://jobright.ai/jobs/info/68c4705ae396b25cb5c680c2",
+    "title": "Sr. Outbound Product Manager Intern (MBA) - Summer 2026 @ ServiceNow",
+    "publisher": "Jobright.ai",
+    "published": "2025-09-12",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "servicenow-jobright-pm-repo": {
+    "url": "https://github.com/jobright-ai/2026-Product-Management-Internship",
+    "title": "2026 Product Management Internship list (git history)",
+    "publisher": "Jobright.ai (GitHub)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "servicenow-li-inbound-2026": {
+    "url": "https://www.linkedin.com/jobs/view/sr-inbound-product-manager-intern-mba-summer-2026-at-servicenow-4300092340",
+    "title": "Sr. Inbound Product Manager Intern (MBA) - Summer 2026",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "servicenow-li-srpm-2026": {
+    "url": "https://www.linkedin.com/jobs/view/sr-product-manager-intern-mba-summer-2026-at-servicenow-4295469403",
+    "title": "Sr. Product Manager Intern (MBA) - Summer 2026",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "servicenow-life-at": {
+    "url": "https://careers.servicenow.com/life-at-servicenow/",
+    "title": "Life at ServiceNow (work personas)",
+    "publisher": "ServiceNow",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "servicenow-sa-mcap": {
+    "url": "https://stockanalysis.com/stocks/now/market-cap/",
+    "title": "ServiceNow (NOW) Market Cap",
+    "publisher": "StockAnalysis",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "market cap or net worth of $138.93 billion as of October 2, 2026"
+  },
+  "servicenow-sr-corpdev-2026": {
+    "url": "https://careers.servicenow.com/jobs/744000083373755/corporate-business-development-mba-intern-summer-2026/",
+    "title": "Corporate Business Development MBA Intern - Summer 2026",
+    "publisher": "ServiceNow via SmartRecruiters",
+    "published": "2025-09-23",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "servicenow-sr-corpstrategy-2026": {
+    "url": "https://jobs.smartrecruiters.com/ServiceNow/744000083376235-mba-corporate-strategy-intern-summer-2026",
+    "title": "MBA Corporate Strategy Intern - Summer 2026 (redirects to 2026-02-20 repost 744000110296275)",
+    "publisher": "ServiceNow via SmartRecruiters",
+    "published": "2026-02-20",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Must be able to work hybrid in the Santa Clara office"
+  },
+  "servicenow-sr-finance-mba-2025": {
+    "url": "https://jobs.smartrecruiters.com/ServiceNow/744000015890496-finance-intern-mba-summer-2025",
+    "title": "Finance Intern MBA - Summer 2025",
+    "publisher": "ServiceNow via SmartRecruiters",
+    "published": "2024-09-23",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "servicenow-sr-finance-mba-2026": {
+    "url": "https://jobs.smartrecruiters.com/ServiceNow/744000083356169-finance-intern-mba-summer-2026",
+    "title": "Finance Intern - MBA - Summer 2026",
+    "publisher": "ServiceNow via SmartRecruiters",
+    "published": "2025-09-23",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "servicenow-sr-pm-masters-2026": {
+    "url": "https://jobs.smartrecruiters.com/ServiceNow/744000081686625-product-manager-intern-masters-degree-summer-2026",
+    "title": "Product Manager Intern (Masters Degree) - Summer 2026 (SmartRecruiters API record)",
+    "publisher": "ServiceNow via SmartRecruiters",
+    "published": "2025-09-12",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "servicenow-sr-pmm-mba-2026": {
+    "url": "https://jobs.smartrecruiters.com/ServiceNow/744000093329375-sr-product-marketing-specialist-intern-mba",
+    "title": "Sr Product Marketing Specialist Intern - MBA",
+    "publisher": "ServiceNow via SmartRecruiters",
+    "published": "2025-11-12",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "servicenow-sr-strategy-specialist-2026": {
+    "url": "https://careers.servicenow.com/jobs/744000107843625/sr-business-strategy-specialist-intern-mba-summer-2026/",
+    "title": "Sr. Business Strategy Specialist Intern MBA - Summer 2026 (current version 744000109312909)",
+    "publisher": "ServiceNow via SmartRecruiters",
+    "published": "2026-02-13",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "servicenow-wayback-corpdev": {
+    "url": "https://web.archive.org/web/20250929035754/https://jobs.smartrecruiters.com/ServiceNow/744000083373755-corporate-business-development-mba-intern-summer-2026",
+    "title": "Wayback snapshot of Corp Dev MBA Intern posting, 2025-09-29",
+    "publisher": "Internet Archive",
+    "published": "2025-09-29",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "servicenow-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001373715.json",
+    "title": "ServiceNow XBRL company facts",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "sf-2023-salary": {
+    "url": "https://www.salary.com/job/salesforce-com-inc/summer-2024-intern--mba-business-value--strategic-selling-consultant/j202310071257225445560",
+    "title": "Summer 2024 Intern - MBA Business Value & Strategic Selling Consultant (Salary.com listing, seen in search results)",
+    "publisher": "Salary.com",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "sf-2024-wayback": {
+    "url": "https://web.archive.org/web/20241104150756/https://careers.salesforce.com/en/jobs/jr269648/summer-2025-intern-mba-business-value-strategic-selling-consultant/",
+    "title": "Summer 2025 Intern - MBA Business Value & Strategic Selling Consultant (JR269648)",
+    "publisher": "Salesforce Careers via Internet Archive",
+    "published": "2024-10-29",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "sf-2025-builtin": {
+    "url": "https://builtin.com/job/summer-2026-intern-business-value-strategic-selling-consultant/7315915",
+    "title": "Summer 2026 Intern - MBA Business Value & Strategic Selling Consultant - Salesforce | Built In",
+    "publisher": "Built In",
+    "published": "2025-10-07",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "will close on Oct 27th, 2025"
+  },
+  "sf-2025-careers-titles": {
+    "url": "https://careers.salesforce.com/en/jobs/jr313081/summer-2026-intern-mba-business-value-strategic-selling-consultant/",
+    "title": "Summer 2026 Intern - MBA Business Value & Strategic Selling Consultant (JR313081; also JR313088 Financial Services, JR333727 Healthcare & Life Sciences) - titles seen in search results",
+    "publisher": "Salesforce Careers",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "sf-2025-technyc": {
+    "url": "https://jobs.technyc.org/companies/salesforce-2/jobs/60020162-summer-2026-intern-business-value-strategic-selling-consultant-healthcare-life-sciences",
+    "title": "Summer 2026 Intern - MBA Business Value & Strategic Selling Consultant (Healthcare & Life Sciences) (JR313087)",
+    "publisher": "Tech:NYC Job Board (Getro)",
+    "published": "2025-10-07",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "will close on Oct 22, 2025"
+  },
+  "sf-JR362499": {
+    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant--Healthcare---Life-Sciences-_JR362499-1",
+    "title": "Summer 2027 Intern - MBA Business Value & Strategic Selling Consultant (Healthcare & Life Sciences) (JR362499)",
+    "publisher": "Salesforce Workday",
+    "published": "2026-10-01",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "This posting will close on Oct 20th",
+    "quoteCheck": "browser 2026-10-04"
+  },
+  "sf-JR362508": {
+    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant--Financial-Services-_JR362508-1",
+    "title": "Summer 2027 Intern - MBA Business Value & Strategic Selling Consultant (Financial Services) (JR362508)",
+    "publisher": "Salesforce Workday",
+    "published": "2026-10-01",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Currently enrolled in an MBA program with an expected graduation of Spring 2028.",
+    "quoteCheck": "browser 2026-10-04"
+  },
+  "sf-JR362509": {
+    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant_JR362509-1",
+    "title": "Summer 2027 Intern - MBA Business Value & Strategic Selling Consultant (JR362509)",
+    "publisher": "Salesforce Workday",
+    "published": "2026-10-01",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "This posting will close on Oct 20th",
+    "quoteCheck": "browser 2026-10-04"
+  },
+  "sfchronicle-uber-2026": {
+    "url": "https://www.sfchronicle.com/tech/article/uber-layoffs-3300-jobs-22414352.php",
+    "title": "San Francisco-based Uber plans to cut 3,300 jobs and reduce remote work",
+    "publisher": "San Francisco Chronicle",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "sfstandard-salesforce-2024": {
+    "url": "https://sfstandard.com/2024/07/17/salesforce-pressures-its-workers-back-to-the-office-as-layoffs-continue/",
+    "title": "Salesforce mandates October return to office for most employees",
+    "publisher": "The San Francisco Standard",
+    "published": "2024-07-17",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "better clarify our in-person expectations"
+  },
+  "simplify-listings-2024-02": {
+    "url": "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/015b7a7401637fc12634f70e3f4216428dcc5a9c/.github/scripts/listings.json",
+    "title": "SimplifyJobs listings.json at commit 015b7a7 (2024-02-29)",
+    "publisher": "SimplifyJobs (GitHub)",
+    "published": "2024-02-29",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "simplify-listings-2025-02": {
+    "url": "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/95ab493772f08f16d574c855209e54bab59107d5/.github/scripts/listings.json",
+    "title": "SimplifyJobs listings.json at commit 95ab493 (2025-02-28)",
+    "publisher": "SimplifyJobs (GitHub)",
+    "published": "2025-02-28",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "simplify-listings-2026-01": {
+    "url": "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/f8176ec1e4527b2a9cbb056720e1db928fb8960a/.github/scripts/listings.json",
+    "title": "SimplifyJobs listings.json at commit f8176ec (2026-01-30)",
+    "publisher": "SimplifyJobs (GitHub)",
+    "published": "2026-01-30",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "simplify-listings-current": {
+    "url": "https://raw.githubusercontent.com/SimplifyJobs/Summer2025-Internships/dev/.github/scripts/listings.json",
+    "title": "SimplifyJobs internship tracker listings.json (current, repo now Summer2027-Internships)",
+    "publisher": "SimplifyJobs (GitHub)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "stanford-academic-calendar-2026-27": {
+    "url": "https://studentservices.stanford.edu/calendar-events/academic-calendars/stanford-academic-calendar-2026-2027",
+    "title": "Stanford Academic Calendar: 2026-2027 | Student Services",
+    "publisher": "Stanford University Student Services (Registrar)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "December 7-11 (Mon-Fri) End-Quarter examinations"
+  },
+  "startupjobs-airbnb-stratcomms-2025": {
+    "url": "https://startup.jobs/strategic-communications-content-development-intern-ma-ms-mba-airbnb-6170585",
+    "title": "Strategic Communications & Content Development Intern (MA/MS/MBA) at Airbnb (seen in search; 2025 Summer Intern Program)",
+    "publisher": "startup.jobs",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "techrepublic-adobe-hybrid": {
+    "url": "https://www.techrepublic.com/article/adobe-announces-permanent-shift-to-hybrid-work-for-its-employees/",
+    "title": "Adobe announces permanent shift to hybrid work for its employees",
+    "publisher": "TechRepublic",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "thefederal-uber-2026": {
+    "url": "https://thefederal.com/category/international/uber-cuts-3300-jobs-stricter-remote-working-policy-autonomous-future-256146",
+    "title": "Uber cuts 3,300 jobs, stricter return-to-office policy as it focuses on autonomous future",
+    "publisher": "The Federal",
+    "published": "2026-09-09",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "simpler and faster company"
+  },
+  "topjobstoday-airbnb-sfa-2026": {
+    "url": "https://topjobstoday.com/company/airbnb/job/strategic-finance-analytics-intern-mba-united-states",
+    "title": "Strategic Finance & Analytics Intern (MBA) at Airbnb – Top Jobs Today",
+    "publisher": "Top Jobs Today",
+    "published": "2025-12-20",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Found: December 20, 2025"
+  },
+  "uber-10k": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000015/uber-20251231.htm",
+    "title": "Uber Technologies, Inc. Form 10-K (uber-20251231.htm)",
+    "publisher": "SEC EDGAR",
+    "published": "2026-02-13",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "we and our subsidiaries had approximately 34,000 employees globally"
+  },
+  "uber-emerging-talent": {
+    "url": "https://jobs.uber.com/en/teams/emerging-talent/",
+    "title": "Emerging Talent",
+    "publisher": "Uber",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "uber-how-we-hire": {
+    "url": "https://jobs.uber.com/en/what-moves-us/how-we-hire/",
+    "title": "How we hire",
+    "publisher": "Uber",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Some roles include a job-related exercise."
+  },
+  "uber-internship-guide": {
+    "url": "https://jobs.uber.com/en/uber-interview-guide/internship-interview-guide/",
+    "title": "Internship Interview Guide",
+    "publisher": "Uber",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Meet the team for a business interview"
+  },
+  "uber-product-guide": {
+    "url": "https://jobs.uber.com/en/uber-interview-guide/product-interview-guide/",
+    "title": "Product Interview Guide",
+    "publisher": "Uber",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Jam Session & Interview Loop",
+    "quoteCheck": "browser 2026-10-04"
+  },
+  "uber-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001543151.json",
+    "title": "Uber Technologies, Inc. XBRL company facts (10-Q/10-K revenue, dei shares outstanding)",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "visa-10k-fy2025": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316125000089/v-20250930.htm",
+    "title": "Visa Inc. Form 10-K for fiscal year ended 2025-09-30",
+    "publisher": "SEC EDGAR",
+    "published": "2025-11-06",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "approximately 34,100 employees in fiscal 2025"
+  },
+  "visa-10q-2026q3": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000104/v-20260630.htm",
+    "title": "Visa Inc. Form 10-Q for quarter ended 2026-06-30",
+    "publisher": "SEC EDGAR",
+    "published": "2026-07-29",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "visa-corporate-ref95287k": {
+    "url": "https://corporate.visa.com/en/jobs/REF95287K",
+    "title": "Corporate Strategy MBA Intern - Summer 2026 | Visa",
+    "publisher": "Visa",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "visa-linkedin-finance-2025": {
+    "url": "https://www.linkedin.com/jobs/view/finance-mba-intern-summer-2026-at-visa-4323598869",
+    "title": "Finance MBA Intern - Summer 2026 (Foster City, CA)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "visa-linkedin-pm-2024": {
+    "url": "https://www.linkedin.com/jobs/view/product-management-mba-intern-summer-2025-at-visa-4087064097",
+    "title": "Product Management, MBA Intern - Summer 2025 (Washington, DC)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "visa-linkedin-vca-2023": {
+    "url": "https://www.linkedin.com/jobs/view/visa-consulting-analytics-mba-and-graduate-intern-2024-atlanta-at-visa-3775678912",
+    "title": "Visa Consulting & Analytics- MBA and Graduate Intern - 2024 - Atlanta",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "visa-linkedin-vca-2024": {
+    "url": "https://www.linkedin.com/jobs/view/visa-consulting-analytics-vca-mba-intern-%E2%80%93-summer-2025-at-visa-4083249897",
+    "title": "Visa Consulting Analytics (VCA) MBA Intern – Summer 2025 (Washington, DC)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "visa-linkedin-vca-2025": {
+    "url": "https://www.linkedin.com/jobs/view/visa-consulting-analytics-mba-intern-summer-2026-at-visa-4323598895",
+    "title": "Visa Consulting & Analytics MBA Intern - Summer 2026 (Ashburn, VA)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "visa-linkedin-vca-ashburn-2025": {
+    "url": "https://www.linkedin.com/jobs/view/visa-consulting-analytics-mba-intern-summer-2026-at-visa-4323628279",
+    "title": "Visa Consulting & Analytics MBA Intern - Summer 2026 (Ashburn, VA)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "visa-simplify-globalfinance-2023": {
+    "url": "https://simplify.jobs/p/ae77db97-4632-42ad-9efc-06e5f6562dc6/Visa-Global-Finance--MBA-Intern",
+    "title": "Visa Global Finance – MBA Intern @ Visa",
+    "publisher": "Simplify",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "visa-simplify-pm-2024": {
+    "url": "https://simplify.jobs/p/2babc8df-e133-4337-8406-6ee568f64c96/Product-Management--MBA-Intern",
+    "title": "Product Management – MBA Intern @ Visa",
+    "publisher": "Simplify",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "visa-smartrecruiters-pm-2024": {
+    "url": "https://jobs.smartrecruiters.com/Visa/744000028897305-product-management-mba-intern-summer-2025",
+    "title": "Product Management, MBA Intern - Summer 2025 - Visa (SmartRecruiters; API releasedDate 2024-12-04)",
+    "publisher": "SmartRecruiters",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "visa-stockanalysis-mcap": {
+    "url": "https://stockanalysis.com/stocks/v/market-cap/",
+    "title": "Visa (V) Market Cap",
+    "publisher": "stockanalysis.com",
+    "published": "2026-10-02",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "visa-wayup-corpstrategy-2025": {
+    "url": "https://www.wayup.com/i-Financial-Services-j-Corporate-Strategy-MBA-Intern-Summer-2026-Visa-90923021631053/",
+    "title": "Visa: Corporate Strategy MBA Intern - Summer 2026",
+    "publisher": "WayUp",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "visa-workday-intern-posting-2026": {
+    "url": "https://visa.wd5.myworkdayjobs.com/en-US/Visa_Early_Careers/job/US---Foster-City-CA/Staff-Research-Scientist--Intern---PhD-Quantum_REF088578W-1",
+    "title": "Staff Research Scientist, Intern - PhD Quantum (REF088578W), posted 2026-09-17",
+    "publisher": "Visa",
+    "published": "2026-09-17",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "visa-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001403161.json",
+    "title": "Visa XBRL company facts (RevenueFromContractWithCustomerExcludingAssessedTax)",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "waymo-alphabet-10k-2025": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm",
+    "title": "Alphabet Inc. Form 10-K for FY2025",
+    "publisher": "SEC EDGAR",
+    "published": "2026-02-05",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "waymo-blog-16b-round": {
+    "url": "https://waymo.com/blog/2026/02/waymo-raises-usd16-billion-investment-round/",
+    "title": "Accelerating our global growth: Waymo raises $16 billion investment round",
+    "publisher": "Waymo",
+    "published": "2026-02-02",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "valuing the company at $126 billion post-money"
+  },
+  "waymo-builtin-2026-mba-cx": {
+    "url": "https://builtin.com/job/2026-summer-intern-mba-strategy-operations-customer-experience/7574420",
+    "title": "2026 Summer Intern, MBA, Strategy & Operations, Customer Experience - Waymo",
+    "publisher": "Built In",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "removed at 10:20 p.m. (UTC) on Tuesday, Dec 23, 2025"
+  },
+  "waymo-builtin-2026-mba-ospm": {
+    "url": "https://builtin.com/job/2026-summer-intern-mba-operations-strategy-and-program-management/7517425",
+    "title": "2026 Summer Intern, MBA, Operations Strategy and Program Management - Waymo",
+    "publisher": "Built In",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "removed at 06:16 p.m. (UTC) on Friday, Dec 05, 2025"
+  },
+  "waymo-cnbc-16b-round": {
+    "url": "https://www.cnbc.com/2026/02/02/waymo-announced-16-billion-fundraising-round.html",
+    "title": "Waymo announces $16 billion funding round",
+    "publisher": "CNBC",
+    "published": "2026-02-02",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "That was a series C round of $5.6 billion at a $45 billion valuation."
+  },
+  "waymo-early-careers": {
+    "url": "https://careers.withwaymo.com/early-careers",
+    "title": "Early Careers",
+    "publisher": "Waymo",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "hosted onsite at one of our locations and work in a hybrid modality"
+  },
+  "waymo-flexindex": {
+    "url": "https://www.flexindex.com/company/waymo",
+    "title": "Waymo | Hybrid Remote Work From Home Job Policy",
+    "publisher": "Flex Index",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "waymo-gh-board-api": {
+    "url": "https://boards-api.greenhouse.io/v1/boards/waymo/jobs",
+    "title": "Waymo job board (Greenhouse API)",
+    "publisher": "Greenhouse",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "waymo-gh-ops-planning-2027": {
+    "url": "https://careers.withwaymo.com/jobs/2027-summer-intern-mba-operations-planning-san-francisco-california-united-states",
+    "title": "2027 Summer Intern, MBA, Operations Planning",
+    "publisher": "Waymo",
+    "published": "2026-09-01",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "We will accept resumes on a rolling basis until the role is filled."
+  },
+  "waymo-gh-salesforce-po-2027": {
+    "url": "https://careers.withwaymo.com/jobs?gh_jid=8198582",
+    "title": "2027 Summer Intern, MBA, Salesforce Product Owner",
+    "publisher": "Waymo",
+    "published": "2026-09-15",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "waymo-gh-strategic-finance-2027": {
+    "url": "https://careers.withwaymo.com/jobs?gh_jid=8197014",
+    "title": "2027 Summer Intern, MBA, Strategic Finance",
+    "publisher": "Waymo",
+    "published": "2026-09-14",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Currently enrolled in an MBA program focused on finance, strategic management and/or technology",
+    "quoteCheck": "browser 2026-10-04"
+  },
+  "waymo-glassdoor-2026-mba-gsm": {
+    "url": "https://www.glassdoor.com/job-listing/2026-summer-intern-mba-global-supply-manager-waymo-JV_IC1147431_KO0,44_KE45,50.htm?jl=1009927889689",
+    "title": "Waymo hiring 2026 Summer Intern, MBA, Global Supply Manager",
+    "publisher": "Glassdoor",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "waymo-how-we-hire": {
+    "url": "https://careers.withwaymo.com/how-we-hire",
+    "title": "How we hire",
+    "publisher": "Waymo",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Be prepared for behavioral, hypothetical, and case-based questions"
+  },
+  "waymo-jobright-2026-mba-sf": {
+    "url": "https://jobright.ai/jobs/info/691d3e1c7481340785ed5542",
+    "title": "2026 Summer Intern, MBA, Strategic Finance @ Waymo",
+    "publisher": "Jobright.ai",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "waymo-li-2025-mba-cs": {
+    "url": "https://www.linkedin.com/jobs/view/2025-summer-mba-intern-customer-support-at-waymo-4150140014",
+    "title": "2025 Summer MBA Intern, Customer Support",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "waymo-li-2025-mba-ops": {
+    "url": "https://www.linkedin.com/jobs/view/2025-mba-intern-operations-at-waymo-4059140001",
+    "title": "2025 MBA Intern, Operations",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "waymo-li-2026-mba-cx": {
+    "url": "https://www.linkedin.com/jobs/view/2026-summer-intern-mba-strategy-operations-customer-experience-at-waymo-4333450758",
+    "title": "2026 Summer Intern, MBA, Strategy & Operations, Customer Experience",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "waymo-li-2026-mba-ospm": {
+    "url": "https://www.linkedin.com/jobs/view/2026-summer-intern-mba-operations-strategy-and-program-management-at-waymo-4319479628",
+    "title": "2026 Summer Intern, MBA, Operations Strategy and Program Management",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "waymo-li-2026-mba-sf": {
+    "url": "https://www.linkedin.com/jobs/view/2026-summer-intern-mba-strategic-finance-at-waymo-4323302677",
+    "title": "2026 Summer Intern, MBA, Strategic Finance",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "waymo-on-uber": {
+    "url": "https://waymo.com/waymo-on-uber/",
+    "title": "Waymo On Uber | Ride with Waymo in Austin and Atlanta",
+    "publisher": "Waymo",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "waymo-revelio-headcount": {
+    "url": "https://www.reveliolabs.com/companies/waymo/employees",
+    "title": "Waymo Number of Employees",
+    "publisher": "Revelio Labs",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Waymo LLC has approximately 2,762 total employees worldwide as of March 2026"
+  },
+  "waymo-sacra-revenue": {
+    "url": "https://sacra.com/c/waymo/",
+    "title": "Waymo revenue, valuation & funding",
+    "publisher": "Sacra",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "$284M at the end of 2025 and $125M at the end of 2024"
+  },
+  "waymo-simplify-2025-mba-ops": {
+    "url": "https://simplify.jobs/p/12026b8a-1e2b-4828-b721-eb8ff37a191e/2025-MBA-Intern",
+    "title": "2025 MBA Intern @ Waymo",
+    "publisher": "Simplify",
+    "published": "2024-10-29",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "waymo-wb-2026-mba-sf": {
+    "url": "https://web.archive.org/web/20260105060734/https://careers.withwaymo.com/jobs/2026-summer-intern-mba-strategic-finance-san-francisco-california-united-states",
+    "title": "2026 Summer Intern, MBA, Strategic Finance (Wayback snapshot 2026-01-05)",
+    "publisher": "Internet Archive",
+    "published": "2025-11-18",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "waymo-working-at-waymo": {
+    "url": "https://careers.withwaymo.com/working-at-waymo",
+    "title": "Working at Waymo",
+    "publisher": "Waymo",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "wfa-nvidia-2025": {
+    "url": "https://wfa.team/blog/nvidias-work-from-anywhere-strategy/",
+    "title": "NVIDIA's Work From Anywhere Strategy",
+    "publisher": "Work From Anywhere (wfa.team)",
+    "published": "2025-03-24",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "gives individual managers and teams significant discretion to decide what works best"
+  },
+  "workday-10k-fy2026": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000014/wday-20260131.htm",
+    "title": "Workday Form 10-K for fiscal year ended January 31, 2026",
+    "publisher": "SEC EDGAR",
+    "published": "2026-03-06",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "our global workforce consisted of over 21,000 employees in 36 countries"
+  },
+  "workday-10q-2026q2": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000044/wday-20260731.htm",
+    "title": "Workday Form 10-Q for quarter ended July 31, 2026",
+    "publisher": "SEC EDGAR",
+    "published": "2026-08-27",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "workday-builtin-pmm-2025": {
+    "url": "https://builtin.com/job/product-marketing-manager-intern-mba/4386452",
+    "title": "Product Marketing Manager Intern, MBA - Workday",
+    "publisher": "Built In",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "workday-careers-faq": {
+    "url": "https://www.workday.com/en-us/company/careers/thank-you.html",
+    "title": "Workday Careers: Interview Tips and Guides / FAQs",
+    "publisher": "Workday",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "employees spend at least half (50%) of their time each quarter in the office"
+  },
+  "workday-jobright-acct-repo": {
+    "url": "https://github.com/jobright-ai/2026-Account-Internship",
+    "title": "2026 Accounting/Finance Internship list (git history)",
+    "publisher": "Jobright.ai (GitHub)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "workday-jobright-ep-mba": {
+    "url": "https://jobright.ai/jobs/info/692f926bfa28370be26aba74",
+    "title": "Enterprise Planning, MBA Intern @ Workday",
+    "publisher": "Jobright.ai",
+    "published": "2025-12-02",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "workday-jobright-fa-mba": {
+    "url": "https://jobright.ai/jobs/info/691bd3e922a2cb4b9bd168ea",
+    "title": "Financial Analyst MBA Intern @ Workday",
+    "publisher": "Jobright.ai",
+    "published": "2025-11-18",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "full-time, in-person 12-week internship"
+  },
+  "workday-jobright-mgmt-repo": {
+    "url": "https://github.com/jobright-ai/2026-Management-Internship",
+    "title": "2026 Management Internship list (git history)",
+    "publisher": "Jobright.ai (GitHub)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "workday-jobright-mkt-repo": {
+    "url": "https://github.com/jobright-ai/2026-Marketing-Internship",
+    "title": "2026 Marketing Internship list (git history)",
+    "publisher": "Jobright.ai (GitHub)",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "workday-sa-mcap": {
+    "url": "https://stockanalysis.com/stocks/wday/market-cap/",
+    "title": "Workday (WDAY) Market Cap",
+    "publisher": "StockAnalysis",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "market cap or net worth of $44.86 billion as of October 2, 2026"
+  },
+  "workday-talentally-pmm-2025": {
+    "url": "https://talentally.com/job/product-marketing-manager-intern-mba",
+    "title": "Product Marketing Manager Intern, MBA at Workday",
+    "publisher": "TalentAlly",
+    "published": "2024-12-12",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "workday-wd-ep-mba": {
+    "url": "https://workday.wd5.myworkdayjobs.com/en-US/Workday_Early_Career/job/Enterprise-Planning--MBA-Intern_JR-0101956",
+    "title": "Enterprise Planning, MBA Intern (JR-0101956), expired",
+    "publisher": "Workday",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "workday-wd-fa-mba": {
+    "url": "https://workday.wd5.myworkdayjobs.com/en-US/Workday/job/Financial-Analyst-MBA-Intern_JR-0101803-1",
+    "title": "Financial Analyst MBA Intern (JR-0101803), expired",
+    "publisher": "Workday",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "workday-weekday-ep-mba": {
+    "url": "https://jobs.weekday.works/workday-enterprise-planning,-mba-intern",
+    "title": "Workday hiring for Enterprise Planning, MBA Intern",
+    "publisher": "Weekday",
+    "published": "2026-01-03",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "workday-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001327811.json",
+    "title": "Workday XBRL company facts",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "wttj-airbnb-sfa-2026": {
+    "url": "https://app.welcometothejungle.com/jobs/bKKWESVQ",
+    "title": "Airbnb Strategic Finance & Analytics Intern (MBA/MS) (Welcome to the Jungle; datePosted 2025-12-20T00:04; gh_jid 7488879)",
+    "publisher": "Welcome to the Jungle",
+    "published": "2025-12-20",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "ziprecruiter-uber-genai-2026": {
+    "url": "https://www.ziprecruiter.com/c/Uber/Job/2026-Program-Manager-|-Incubation-GenAi-Products-MBA-Intern-,-United-States/-in-New-York,NY?jid=94eacd8d6fe8f182",
+    "title": "2026 Program Manager | Incubation GenAi Products MBA Intern , United States (ZipRecruiter; seen in search)",
+    "publisher": "ZipRecruiter",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  }
+}

@@ -1,109 +1,154 @@
-import * as d3 from "d3";
-import { type Company, type StopType, waveLabel } from "@/data/companies";
-import { SEASON_MONTHS, SEASON_WEEKS, TODAY, span } from "@/data/season";
+"use client";
 
-export const STOP: Record<StopType, { label: string; color: string; glyph: string }> = {
-  behavioral: { label: "Behavioral", color: "#5e1010", glyph: "◆" },
-  product: { label: "Product sense", color: "#8c1515", glyph: "●" },
-  analytical: { label: "Analytical", color: "#c4534a", glyph: "▲" },
-  technical: { label: "Technical", color: "#e8a49c", glyph: "■" },
-  case: { label: "Case / strategy", color: "#b6ae9e", glyph: "✕" },
-  milestone: { label: "Milestone", color: "var(--ink)", glyph: "○" },
+import { hiring, interviews, meta, roles, type Company } from "@/data";
+import type { StageType } from "@/data/types";
+import { SEASON_MONTHS, SEASON_WEEKS, fmtDate, fmtRange, monthStartWeek, span, waveLabel, waveOf, weekOf } from "@/lib/season";
+import { statusOf } from "@/lib/status";
+import { fmtCap, fmtPct, fmtWithRange, prose } from "@/lib/format";
+import { format } from "d3-format";
+import { useGuide } from "./Guide";
+import { Cite, SourceList } from "./Sources";
+
+const cycle = meta.currentCycle;
+export const STAGE: Record<StageType, { label: string; glyph: string }> = {
+  behavioral: { label: "Behavioral", glyph: "◆" },
+  product: { label: "Product sense", glyph: "●" },
+  analytical: { label: "Analytical", glyph: "▲" },
+  technical: { label: "Technical", glyph: "■" },
+  case: { label: "Case / strategy", glyph: "✕" },
+  milestone: { label: "Step", glyph: "○" },
 };
+const OPACITY = { strong: 0.95, medium: 0.6, weak: 0.3 };
+const pct = (wk: number) => `${(Math.max(0, Math.min(SEASON_WEEKS, wk)) / SEASON_WEEKS) * 100}%`;
 
 export function SeasonBar({ company }: { company: Company }) {
-  const w = company.windows;
-  if (!w.length) return <p className="label">no mba internship postings found</p>;
-  const x = d3.scaleLinear([0, SEASON_WEEKS], [0, 100]);
-  const op = { strong: 0.9, medium: 0.55, weak: 0.25 };
+  const { today, live } = useGuide();
+  const h = hiring[company.id];
+  if (!h.windows.length) return <p className="label">no mba internship postings found</p>;
+  const rows = [...h.windows].sort((a, b) => a.cycle.localeCompare(b.cycle));
+  const todayWk = weekOf(today, cycle);
   return (
-    <div>
-      <div style={{ position: "relative", height: 14 * w.length + 4, background: "var(--paper-2)" }}>
-        {w.map((o, i) => {
+    <div className="seasonbar">
+      <div className="track" style={{ height: 14 * rows.length + 4 }}>
+        {rows.map((o, i) => {
           const [a, b] = span(o);
           return (
-            <div key={o.cycle} title={`${o.cycle} cycle · ${o.evidence} evidence${o.note ? " · " + o.note : ""}`}
-              style={{ position: "absolute", top: 2 + i * 14, height: 10, left: `${x(a)}%`, width: `${Math.max(2, x(b) - x(a))}%`,
-                background: o.cycle === "2026" ? "var(--ink)" : "var(--cardinal)", opacity: op[o.evidence], borderRadius: 5 }} />
+            <div key={o.cycle} className="bar" style={{ top: 2 + i * 14, left: pct(a), width: `max(6px, calc(${pct(b)} - ${pct(a)}))`, opacity: OPACITY[o.evidence],
+              background: o.cycle === cycle ? "var(--ink)" : "var(--cardinal)" }}>
+              <span className="sr-only">{o.cycle} cycle: {fmtRange(o.from, o.to)}, {o.evidence} evidence</span>
+            </div>
           );
         })}
-        <div style={{ position: "absolute", top: 0, bottom: 0, left: `${x(TODAY)}%`, borderLeft: "1px dashed var(--cardinal)" }} />
+        {live && todayWk >= 0 && todayWk <= SEASON_WEEKS && <div className="today" style={{ left: pct(todayWk) }} />}
       </div>
-      <div style={{ display: "flex", justifyContent: "space-between", marginTop: 4 }}>
-        {SEASON_MONTHS.map((m) => <span key={m} className="label">{m[0].toLowerCase()}</span>)}
+      <div className="months" aria-hidden>
+        {SEASON_MONTHS.map((m, i) => <span key={m} style={{ left: pct(monthStartWeek(i, cycle)) }}>{m[0]}</span>)}
       </div>
-      <div style={{ fontSize: 13, color: "var(--ink-2)", marginTop: 6 }}>{company.status}</div>
     </div>
   );
 }
 
-export function Route({ company }: { company: Company }) {
-  const s = company.route;
-  if (!s) return <p className="label">no route yet — 2Ys, tell us yours</p>;
-  const W = 330, x = d3.scaleLinear([0, s.length - 1], [22, W - 22]);
-  const pts = s.map((d, i) => [x(i), 34 + (i > 0 && i < s.length - 1 ? (i % 2 ? -12 : 12) : 0)] as [number, number]);
+function Stages({ company }: { company: Company }) {
+  const iv = interviews[company.id];
+  if (!iv) return null;
   return (
-    <svg viewBox={`0 0 ${W} 80`} width="100%">
-      <path d={d3.line().curve(d3.curveCatmullRom)(pts)!} fill="none" stroke="var(--ink)" strokeWidth={1.25} strokeDasharray="2 4" />
-      {s.map((d, i) => {
-        const [px, py] = pts[i];
-        const st = STOP[d.type];
-        const last = i === s.length - 1;
-        return (
-          <g key={i}>
-            {d.type === "milestone"
-              ? <circle cx={px} cy={py} r={last ? 6 : 4} fill={last ? "var(--cardinal)" : "var(--paper)"} stroke="var(--ink)" strokeWidth={1.25} />
-              : <text x={px} y={py + 5} textAnchor="middle" fill={st.color} style={{ fontSize: 15 }}>{st.glyph}</text>}
-            <text x={px} y={i % 2 && !last ? py - 12 : py + 22} textAnchor="middle" fill="var(--ink-2)" style={{ fontSize: 10.5 }}>{d.label}</text>
-          </g>
-        );
-      })}
-    </svg>
-  );
-}
-
-export function Mix({ company }: { company: Company }) {
-  const m = company.mix;
-  if (!m) return null;
-  const entries = Object.entries(m).filter(([, v]) => v) as [Exclude<StopType, "milestone">, number][];
-  return (
-    <div>
-      <div style={{ display: "flex", gap: 2, height: 20 }}>
-        {entries.map(([k, v]) => (
-          <div key={k} title={`${STOP[k].label}: ${v}%`} style={{ width: `${v}%`, background: STOP[k].color, color: v >= 15 ? "#fff" : "transparent",
-            fontFamily: "var(--mono)", fontSize: 10.5, padding: "3px 4px" }}>{v}%</div>
-        ))}
+    <>
+      <h4>the interview process · {iv.roleScope.toLowerCase()}</h4>
+      <ol className="stages">
+        {iv.stages.map((s, i) => {
+          const kinds = s.types.filter((t) => t !== "milestone");
+          return (
+            <li key={i} className={kinds.length ? undefined : "milestone"}>
+              <span className="glyph" aria-hidden>{STAGE[kinds[0] ?? "milestone"].glyph}</span>
+              <span><strong>{s.label}</strong>{kinds.length > 0 && <span className="label"> {kinds.map((t) => STAGE[t].label).join(" + ")}</span>}
+                {s.detail && <span className="stage-detail"> · {prose(s.detail)}</span>}</span>
+            </li>
+          );
+        })}
+      </ol>
+      {iv.distinctive && <p className="small">{iv.distinctive}</p>}
+      <div className="small muted">
+        {iv.confidence === "high" ? "Stages as the company describes them." : "From the company's general (not MBA-specific) process; your loop may differ."}
+        {iv.caveat && ` ${iv.caveat}`} <Cite ids={iv.sources} />
       </div>
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "4px 12px", marginTop: 6, fontSize: 11.5, color: "var(--ink-2)" }}>
-        {entries.map(([k]) => <span key={k}><span style={{ color: STOP[k].color }}>{STOP[k].glyph}</span> {STOP[k].label}</span>)}
-      </div>
-    </div>
+    </>
   );
 }
 
 export default function CompanyPanel({ company: c }: { company: Company }) {
-  const cap = c.marketCapB >= 1000 ? `$${(c.marketCapB / 1000).toFixed(1)}T` : `$${Math.round(c.marketCapB)}B`;
+  const { today, live } = useGuide();
+  const h = hiring[c.id];
+  const st = statusOf(h, today, cycle);
+  const myRoles = roles.map((r) => ({ r, titles: r.titles.filter((t) => t.company === c.name) })).filter((x) => x.titles.length);
+  const now = h.windows.find((w) => w.cycle === cycle);
+  const allSources = [
+    ...c.marketCap.sources, ...c.growth.sources, ...c.headcount.sources, ...c.b2bPayer.sources, ...c.b2bUser.sources, ...c.office.sources,
+    ...h.windows.flatMap((w) => w.sources), ...h.current.postings.flatMap((p) => p.sources), ...(interviews[c.id]?.sources ?? []),
+    ...myRoles.flatMap((x) => x.titles.flatMap((t) => t.sources)),
+  ];
+
   return (
-    <aside className="panel" aria-live="polite">
+    <aside className="panel" aria-label={`Field notes: ${c.name}`}>
       <div className="label">field notes</div>
       <h3>{c.name}</h3>
-      <div className="sub">{waveLabel[c.wave].toLowerCase()} · {c.model.toLowerCase()} · {c.hq.toLowerCase()}</div>
+      <div className="sub">{waveLabel[waveOf(h, cycle)].toLowerCase()} · {c.model.toLowerCase()} · {c.hq.toLowerCase()}</div>
+
+      <div className={`status status-${st.state}`}>
+        <strong>{st.headline}</strong>
+        <div>{prose(h.current.summary, Number(meta.currentCycle))}</div>
+        {!live && <div className="label">as of {fmtDate(h.current.checked, { year: true })}</div>}
+      </div>
+
       <dl>
-        <dt>{c.capNote?.startsWith("Private") ? "valuation" : "market cap"}</dt><dd>{cap}{c.capNote ? ` (${c.capNote})` : ""}</dd>
-        <dt>growth</dt><dd>{c.growthPct}%{c.growthNote ? ` — ${c.growthNote}` : ""}</dd>
-        <dt>employees</dt><dd>{d3.format(",")(c.headcount)}</dd>
-        <dt>in office</dt><dd>{c.rto}</dd>
+        <dt>{c.marketCap.kind === "private valuation" ? "valuation" : "market value"}</dt>
+        <dd>{fmtCap(c.marketCap.value)} {c.marketCap.asOf && <span className="muted">· {c.marketCap.kind === "private valuation" ? "reported" : "close"} {fmtDate(c.marketCap.asOf, { year: true })}</span>} <Cite ids={c.marketCap.sources} /></dd>
+        <dt>growth</dt>
+        <dd>{fmtWithRange(c.growth, fmtPct)} <span className="muted">· {c.growth.basis.replace(/\d{4}-\d{2}-\d{2}/g, (d) => fmtDate(d, { year: true }))}</span> <Cite ids={c.growth.sources} />{c.growth.note && <div className="muted">{prose(c.growth.note)}</div>}</dd>
+        <dt>employees</dt>
+        <dd>{fmtWithRange(c.headcount, (n) => format(",")(n))}{c.headcount.asOf && <span className="muted"> · {fmtDate(c.headcount.asOf, { year: true })}</span>} <Cite ids={c.headcount.sources} />{c.headcount.note && <div className="muted">{c.headcount.note}</div>}</dd>
+        <dt>in office</dt>
+        <dd>{c.office.summary} <Cite ids={c.office.sources} />{c.office.interns && <div className="muted">Interns: {prose(c.office.interns)}</div>}</dd>
+        <dt>who pays</dt>
+        <dd>{fmtWithRange(c.b2bPayer, (n) => `${n}%`)} businesses <span className="muted">· our estimate</span></dd>
+        <dt>who uses</dt>
+        <dd>{fmtWithRange(c.b2bUser, (n) => `${n}%`)} business products <span className="muted">· our estimate</span></dd>
         <dt>ai posture</dt><dd>{c.ai}</dd>
-        <dt>process</dt><dd>{c.pattern}</dd>
+        <dt>postings</dt><dd>{h.pattern}</dd>
       </dl>
+      <details className="why">
+        <summary>How we estimated who pays and who uses</summary>
+        <p><strong>Who pays.</strong> {c.b2bPayer.reasoning}</p>
+        <p><strong>Who uses.</strong> {c.b2bUser.reasoning}</p>
+        <Cite ids={[...c.b2bPayer.sources, ...c.b2bUser.sources]} />
+      </details>
+
       <h4>mba intern roles</h4>
-      <div style={{ fontSize: 13, color: "var(--ink-2)", lineHeight: 1.7 }}>{c.roles.join(" · ")}</div>
+      {myRoles.length ? (
+        <ul className="role-list">
+          {myRoles.map(({ r, titles }) => (
+            <li key={r.id}><a href={`#role-${r.id}`}>{r.name}</a>: {titles.map((t) => t.title).join(" · ")}</li>
+          ))}
+        </ul>
+      ) : <p className="small muted">{prose(h.note) || "No MBA internship titles found."}</p>}
+
       <h4>when applications opened · black = this cycle</h4>
       <SeasonBar company={c} />
-      <h4>the interview route</h4>
-      <Route company={c} />
-      {c.mix && <><h4>where your interview time goes</h4><Mix company={c} /></>}
-      {(c.route || c.mix) && <div className="caveat">Route and mix are placeholders until 2Y interns weigh in.</div>}
+      {now && <p className="small">This cycle: {fmtRange(now.from, now.to)} ({now.evidence} evidence){now.note ? `. ${prose(now.note, Number(meta.currentCycle))}` : ""}</p>}
+      {h.current.postings.length > 0 && (
+        <ul className="postings">
+          {h.current.postings.map((p) => (
+            <li key={p.url + p.title}><a href={p.url} target="_blank" rel="noreferrer">{p.title}</a>
+              <span className="muted">{p.posted ? ` · posted ${fmtDate(p.posted)}` : ""}{p.closes ? ` · closes ${fmtDate(p.closes)}` : ""}</span></li>
+          ))}
+        </ul>
+      )}
+
+      <Stages company={c} />
+
+      <details className="why">
+        <summary>All sources for {c.name}</summary>
+        <SourceList ids={allSources} label="" />
+      </details>
     </aside>
   );
 }

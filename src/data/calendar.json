@@ -1,0 +1,219 @@
+[
+  {
+    "id": "mba1-aap",
+    "label": "AAP: employers can’t cold-contact MBA1s",
+    "from": "2026-09-10",
+    "to": "2026-10-29",
+    "kind": "quiet",
+    "description": "Academic Adjustment Period. Employers may not cold-contact first-years. The policy page says it ends Oct 29, but the Recruiting Calendar says noon on Oct 28.",
+    "confidence": "high",
+    "timeline": true,
+    "sources": [
+      "gsb-recruiting-policies",
+      "gsb-recruiting-calendar"
+    ]
+  },
+  {
+    "id": "autumn-classes-begin",
+    "label": "Autumn classes begin",
+    "from": "2026-09-22",
+    "to": null,
+    "kind": "academic",
+    "description": "First day of GSB classes for all GSB students. This is also the first day of Stanford's autumn quarter.",
+    "confidence": "high",
+    "timeline": false,
+    "sources": [
+      "gsb-recruiting-calendar",
+      "stanford-academic-calendar-2026-27"
+    ]
+  },
+  {
+    "id": "mba1-exam-period-oct",
+    "label": "MBA1 exams: no recruiting",
+    "from": "2026-10-26",
+    "to": "2026-10-28",
+    "kind": "blackout",
+    "description": "Exam period at the end of the AAP. The Recruiting Calendar marks it as no recruiting activity.",
+    "confidence": "high",
+    "timeline": false,
+    "sources": [
+      "gsb-recruiting-calendar"
+    ]
+  },
+  {
+    "id": "mba1-events-open",
+    "label": "MBA1 employer events open",
+    "from": "2026-10-29",
+    "to": null,
+    "kind": "events",
+    "description": "Employer events for first-years may start, and MBA1 resumes become available. Employers may communicate with and market to first-years after noon.",
+    "confidence": "high",
+    "timeline": true,
+    "sources": [
+      "gsb-recruiting-policies",
+      "gsb-recruiting-calendar"
+    ]
+  },
+  {
+    "id": "internship-networking-event",
+    "label": "CMC internship networking event",
+    "from": "2026-11-04",
+    "to": null,
+    "kind": "events",
+    "description": "CMC multi-employer internship networking event, on campus, 12 to 1:30 pm.",
+    "confidence": "high",
+    "timeline": false,
+    "sources": [
+      "gsb-recruiting-calendar",
+      "gsb-recruiting-policies"
+    ]
+  },
+  {
+    "id": "employer-events-blackout-winter",
+    "label": "No employer events",
+    "from": "2026-11-23",
+    "to": "2027-01-06",
+    "kind": "quiet",
+    "description": "No employer events from Thanksgiving week through Jan 6. CMC-managed interviews in early January still go ahead.",
+    "confidence": "high",
+    "timeline": true,
+    "sources": [
+      "gsb-recruiting-policies"
+    ]
+  },
+  {
+    "id": "dead-week-finals-break",
+    "label": "No recruiting at all",
+    "from": "2026-11-30",
+    "to": "2026-12-31",
+    "kind": "blackout",
+    "description": "Dead week, autumn finals and winter break, with no recruiting activity of any kind. Holding events or interviews during dead week or exams breaks policy.",
+    "confidence": "high",
+    "timeline": true,
+    "sources": [
+      "gsb-recruiting-calendar",
+      "gsb-recruiting-policies"
+    ]
+  },
+  {
+    "id": "internship-application-deadline",
+    "label": "Last OCI application deadline",
+    "from": "2026-12-04",
+    "to": null,
+    "kind": "deadline",
+    "description": "Latest application deadline for internship on-campus and CMC-managed interviews.",
+    "confidence": "high",
+    "timeline": false,
+    "sources": [
+      "gsb-recruiting-calendar"
+    ]
+  },
+  {
+    "id": "internship-interview-invites-due",
+    "label": "OCI interview invitations due",
+    "from": "2026-12-11",
+    "to": null,
+    "kind": "deadline",
+    "description": "Employers must send invitations for internship CMC-managed interviews (OCI) by this date.",
+    "confidence": "high",
+    "timeline": false,
+    "sources": [
+      "gsb-recruiting-calendar"
+    ]
+  },
+  {
+    "id": "winter-classes-begin",
+    "label": "Winter classes begin",
+    "from": "2027-01-04",
+    "to": null,
+    "kind": "academic",
+    "description": "First day of winter quarter classes.",
+    "confidence": "high",
+    "timeline": false,
+    "sources": [
+      "gsb-recruiting-calendar",
+      "stanford-academic-calendar-2026-27"
+    ]
+  },
+  {
+    "id": "internship-interviews-week1",
+    "label": "Internship interviews, week 1 (consulting, finance)",
+    "from": "2027-01-04",
+    "to": "2027-01-08",
+    "kind": "interviews",
+    "description": "Dedicated internship OCI week for consulting and finance. It falls inside the events blackout, which bans events, not interviews.",
+    "confidence": "high",
+    "timeline": true,
+    "sources": [
+      "gsb-recruiting-calendar",
+      "gsb-recruiting-policies"
+    ]
+  },
+  {
+    "id": "internship-interviews-week2",
+    "label": "Internship interviews, week 2",
+    "from": "2027-01-11",
+    "to": "2027-01-14",
+    "kind": "interviews",
+    "description": "Second week of internship interviews.",
+    "confidence": "high",
+    "timeline": true,
+    "sources": [
+      "gsb-recruiting-calendar"
+    ]
+  },
+  {
+    "id": "internship-interviews-week3",
+    "label": "Internship interviews, week 3",
+    "from": "2027-01-19",
+    "to": "2027-01-21",
+    "kind": "interviews",
+    "description": "Third week of internship interviews. No interviews on MLK Monday.",
+    "confidence": "high",
+    "timeline": true,
+    "sources": [
+      "gsb-recruiting-calendar"
+    ]
+  },
+  {
+    "id": "mba1-offer-deadline",
+    "label": "Internship offers must stay open until",
+    "from": "2027-01-29",
+    "to": null,
+    "kind": "deadline",
+    "description": "MBA1 internship offers must stay fully open until Jan 29, 2027, or two weeks after the written offer, whichever is later.",
+    "confidence": "high",
+    "timeline": true,
+    "sources": [
+      "gsb-recruiting-policies",
+      "gsb-recruiting-calendar"
+    ]
+  },
+  {
+    "id": "winter-networking-event",
+    "label": "Winter networking event",
+    "from": "2027-02-24",
+    "to": null,
+    "kind": "events",
+    "description": "Growth Company networking event, on campus, 6 to 7 pm.",
+    "confidence": "high",
+    "timeline": false,
+    "sources": [
+      "gsb-recruiting-calendar",
+      "gsb-recruiting-policies"
+    ]
+  },
+  {
+    "id": "winter-finals-spring-recess",
+    "label": "Winter finals and spring recess: no recruiting",
+    "from": "2027-03-15",
+    "to": "2027-04-02",
+    "kind": "blackout",
+    "description": "No recruiting activity during winter finals and spring recess.",
+    "confidence": "high",
+    "timeline": false,
+    "sources": [
+      "gsb-recruiting-calendar"
+    ]
+  }
+]

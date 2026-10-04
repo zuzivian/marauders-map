@@ -5,22 +5,33 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "prebuild": "vitest run",
+    "start": "npx --yes serve out",
+    "lint": "eslint",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "refresh:sec": "node scripts/refresh-sec.mjs",
+    "deploy": "npm run build && python3 scripts/publish.py",
+    "check:sources": "node scripts/check-sources.mjs"
   },
   "dependencies": {
-    "d3": "^7.9.0",
+    "d3-force": "^3.0.0",
+    "d3-format": "^3.1.2",
+    "d3-scale": "^4.0.2",
     "next": "16.3.8",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
   "devDependencies": {
-    "@types/d3": "^7.4.3",
-    "@types/node": "^20",
+    "@types/d3-force": "^3.0.10",
+    "@types/d3-format": "^3.0.4",
+    "@types/d3-scale": "^4.0.9",
+    "@types/node": "^24.19.1",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.8",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^5.0.3"
   }
 }

@@ -1,0 +1,1411 @@
+{
+  "apple": {
+    "hasProgram": true,
+    "pattern": "One talent-pool posting, reviewed on a rolling basis by teams",
+    "windows": [
+      {
+        "cycle": "2023",
+        "from": "2023-07-28",
+        "to": "2023-07-28",
+        "evidence": "strong",
+        "scope": "Single MBA talent-pool posting (all MBA areas)",
+        "note": "'MBA Internships - Summer 2024', role 200484220; posting date read from archived page.",
+        "sources": [
+          "apple-2023-wayback"
+        ]
+      },
+      {
+        "cycle": "2024",
+        "from": "2024-06-07",
+        "to": "2024-06-07",
+        "evidence": "strong",
+        "scope": "Single MBA talent-pool posting (all MBA areas)",
+        "note": "'MBA Internships - Summer 2025', role 200554355.",
+        "sources": [
+          "apple-2024-wayback"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-05-29",
+        "to": "2025-05-29",
+        "evidence": "strong",
+        "scope": "Single MBA talent-pool posting (all MBA areas)",
+        "note": "'MBA Internships - Summer 2026', role 200606799. GMT timestamp 2025-05-29 00:34, i.e. evening of May 28 Pacific.",
+        "sources": [
+          "apple-2025-wayback"
+        ]
+      },
+      {
+        "cycle": "2026",
+        "from": "2026-08-05",
+        "to": "2026-08-05",
+        "evidence": "strong",
+        "scope": "Single MBA talent-pool posting (all MBA areas)",
+        "note": "Title dropped the year: now just 'MBA Internships' (role 200676091-3810). No deadline stated.",
+        "sources": [
+          "apple-2026-mba-internships"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "Open since Aug 5, 2026: one US talent-pool posting 'MBA Internships' covering AI/ML EPM, AppleCare, Services, Marketing, Ops, Supply Chain and more; no stated deadline.",
+      "postings": [
+        {
+          "title": "MBA Internships",
+          "posted": "2026-08-05",
+          "url": "https://jobs.apple.com/en-us/details/200676091-3810/mba-internships",
+          "sources": [
+            "apple-2026-mba-internships"
+          ]
+        }
+      ]
+    }
+  },
+  "amazon": {
+    "hasProgram": true,
+    "pattern": "Posted by program, reviewed on a rolling basis",
+    "windows": [
+      {
+        "cycle": "2023",
+        "from": "2023-09-28",
+        "to": "2023-10-11",
+        "evidence": "medium",
+        "scope": "MBA Sr Program Manager (PgM) intern and Finance Leadership Development Program (FLDP) intern",
+        "note": "Job IDs 2459964/2459990 sit among IDs posted Sep 28-29, 2023 in archived amazon.jobs search results (lower bound, inference); both pages first captured by Wayback on Oct 11, 2023 (upper bound).",
+        "sources": [
+          "amazon-2023-cdx",
+          "amazon-id-calibration"
+        ]
+      },
+      {
+        "cycle": "2024",
+        "from": "2024-10-01",
+        "to": "2024-10-15",
+        "evidence": "weak",
+        "scope": "MBA PMT, PM (non-technical) and Sr PgM intern postings",
+        "note": "Inferred only from job IDs 2792425/2792538/2792557, which fall between IDs posted Oct 1 and Oct 2, 2024 in archived search results. Pages not archived until Jan 2025, so the upper bound is a guess.",
+        "sources": [
+          "amazon-2024-cdx",
+          "amazon-id-calibration",
+          "amazon-2024-pm-wayback"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-10-13",
+        "to": "2025-10-15",
+        "evidence": "medium",
+        "scope": "Pathways Ops, ALA PM, FLDP, PGM, MM, MLDP intern postings",
+        "note": "Job IDs 3108447-3110756 fall between IDs posted Oct 13 and Oct 17, 2025 (inference); Jobright's record for the ALA posting was created 2025-10-16 03:08 UTC (Oct 15 Pacific). Pathways said interviews start January 2026.",
+        "sources": [
+          "amazon-2025-cdx",
+          "amazon-id-calibration",
+          "jobright-ala-2026",
+          "amazon-2025-pathways-wayback",
+          "ofy-ala-2026"
+        ]
+      },
+      {
+        "cycle": "2026",
+        "from": "2026-08-03",
+        "to": "2026-08-03",
+        "evidence": "strong",
+        "scope": "Pathways Ops intern first (Aug 3); ALA PM, MLDP, FLDP, AWS HR LDP Aug 4; MM Aug 5; PMT Aug 20",
+        "note": "posted_date from amazon.jobs. About two months earlier than recent cycles. No deadlines stated (rolling).",
+        "sources": [
+          "amazon-search-api-2026",
+          "amazon-10491075",
+          "amazon-10491935",
+          "amazon-10491603",
+          "amazon-10492198",
+          "amazon-10491574",
+          "amazon-10493144",
+          "amazon-10509639"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "Seven US MBA intern postings live, posted Aug 3-20, 2026, none with a stated deadline; Pathways says applicants to multiple Amazon MBA intern roles are interviewed for only one.",
+      "postings": [
+        {
+          "title": "Pathways Operations Manager Intern – Summer 2027 (Nationwide Opportunities)",
+          "posted": "2026-08-03",
+          "url": "https://www.amazon.jobs/en/jobs/10491075",
+          "sources": [
+            "amazon-10491075"
+          ]
+        },
+        {
+          "title": "2027 Amazon Leadership Accelerator (ALA) Product Manager Internship",
+          "posted": "2026-08-04",
+          "url": "https://www.amazon.jobs/en/jobs/10491935/2027-amazon-leadership-accelerator-ala-product-manager-internship",
+          "sources": [
+            "amazon-10491935"
+          ]
+        },
+        {
+          "title": "2027 MBA Leadership Development Program (MLDP) Intern",
+          "posted": "2026-08-04",
+          "url": "https://www.amazon.jobs/en/jobs/10491603/2027-mba-leadership-development-program-mldp-intern",
+          "sources": [
+            "amazon-10491603"
+          ]
+        },
+        {
+          "title": "2027 MBA Finance Leadership Development Program (FLDP) Internship",
+          "posted": "2026-08-04",
+          "url": "https://www.amazon.jobs/en/jobs/10492198/2027-mba-finance-leadership-development-program-fldp-internship",
+          "sources": [
+            "amazon-10492198"
+          ]
+        },
+        {
+          "title": "Summer 2027 AWS Human Resources Leadership Development Program Internship, AWS",
+          "posted": "2026-08-04",
+          "url": "https://www.amazon.jobs/en/jobs/10491574",
+          "sources": [
+            "amazon-10491574"
+          ]
+        },
+        {
+          "title": "2027 MBA Marketing Manager (MM) Internship",
+          "posted": "2026-08-05",
+          "url": "https://www.amazon.jobs/en/jobs/10493144",
+          "sources": [
+            "amazon-10493144"
+          ]
+        },
+        {
+          "title": "Product Manager Technical (PMT) Intern - Summer 2027",
+          "posted": "2026-08-20",
+          "url": "https://www.amazon.jobs/en/jobs/10509639",
+          "sources": [
+            "amazon-10509639",
+            "mit-cdo-amazon-pmt-2027"
+          ]
+        }
+      ]
+    }
+  },
+  "intuit": {
+    "hasProgram": true,
+    "pattern": "Rolling, no stated deadlines",
+    "windows": [
+      {
+        "cycle": "2024",
+        "from": "2024-12-01",
+        "to": "2025-01-22",
+        "evidence": "weak",
+        "scope": "One MBA finance intern (Global Business Services) seen; other roles unknown",
+        "note": "Only evidence is the URL of 'mba-finance-intern-global-business-services' (ID 76178841264), whose Radancy ID sits just below IDs archived on Jan 22, 2025. Earlier fall-2024 MBA postings can't be ruled out.",
+        "sources": [
+          "intuit-cdx"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-10-28",
+        "to": "2025-10-28",
+        "evidence": "strong",
+        "scope": "Earliest found: MBA Finance Strategy Intern (Oct 28); Summer 2026 Product Manager Intern Nov 18; MBA Strategic Finance (Corporate FP&A, CG) Nov 24",
+        "note": "datePosted values read from archived job pages. An earlier unarchived MBA posting is possible.",
+        "sources": [
+          "intuit-2025-finstrat-wayback",
+          "intuit-2025-pm-wayback",
+          "intuit-2025-fpa-wayback",
+          "intuit-2025-cg-wayback"
+        ]
+      },
+      {
+        "cycle": "2026",
+        "from": "2026-08-17",
+        "to": "2026-09-11",
+        "evidence": "medium",
+        "scope": "MBA team roles (Corp Strategy, Product Marketing, Pricing, Product Strategy & BizOps, Biz Ops, Strategy & Transformation) carry datePosted Aug 17-18; generic MBA S&O and PM intern Sep 11; MBA Strategic Finance roles Sep 10-18",
+        "note": "The job pages say Aug 17, but those listings' site IDs sort with late-September IDs. A third-party guide says Summer 2027 postings went live mid-September. The roles may have been publicly visible only from about Sep 11.",
+        "sources": [
+          "intuit-search-2026",
+          "intuit-corpstrat-2027",
+          "intuit-pm-2027",
+          "intuit-sando-2027-wayback",
+          "extern-intuit-guide"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "About 16 MBA-eligible Summer 2027 postings live, dated Aug 17-Sep 30, 2026, none with a stated deadline; the generic 'MBA Strategy & Operations' and 'MBA Product Marketing' postings from Sep 11 have been removed in favour of team-specific ones.",
+      "postings": [
+        {
+          "title": "Summer 2027: MBA Corporate Strategy & Development Intern",
+          "posted": "2026-08-17",
+          "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-corporate-strategy-and-development-intern/27595/101313096080",
+          "sources": [
+            "intuit-corpstrat-2027"
+          ]
+        },
+        {
+          "title": "Summer 2027: MBA Product Marketing Intern, Payments",
+          "posted": "2026-08-17",
+          "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-product-marketing-intern-payments/27595/101313094448",
+          "sources": [
+            "intuit-search-2026"
+          ]
+        },
+        {
+          "title": "Summer 2027: MBA Product Marketing Intern, FinTech Lending",
+          "posted": "2026-08-17",
+          "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-product-marketing-intern-fintech-lending/27595/101313096000",
+          "sources": [
+            "intuit-search-2026"
+          ]
+        },
+        {
+          "title": "Summer 2027: MBA Product Strategy & Business Operations Intern, SMB and Business Platform",
+          "posted": "2026-08-17",
+          "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-product-strategy-and-business-operations-intern-smb-and-business-platform/27595/101313096064",
+          "sources": [
+            "intuit-search-2026"
+          ]
+        },
+        {
+          "title": "Summer 2027: MBA Business Operations Intern, Consumer Group",
+          "posted": "2026-08-17",
+          "url": "https://jobs.intuit.com/job/san-diego/summer-2027-mba-business-operations-intern-consumer-group/27595/101313096128",
+          "sources": [
+            "intuit-search-2026"
+          ]
+        },
+        {
+          "title": "Summer 2027: MBA Strategy & Transformation Intern, Mid Market",
+          "posted": "2026-08-17",
+          "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-strategy-and-transformation-intern-mid-market/27595/101313096112",
+          "sources": [
+            "intuit-search-2026"
+          ]
+        },
+        {
+          "title": "Summer 2027: MBA Pricing & Monetization Strategy Intern",
+          "posted": "2026-08-18",
+          "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-pricing-and-monetization-strategy-intern/27595/101313096048",
+          "sources": [
+            "intuit-search-2026"
+          ]
+        },
+        {
+          "title": "Summer 2027: MBA Product Marketing Intern, Mid Market",
+          "posted": "2026-08-18",
+          "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-product-marketing-intern-mid-market/27595/101313096032",
+          "sources": [
+            "intuit-search-2026"
+          ]
+        },
+        {
+          "title": "Summer 2027: MBA Strategic Finance Intern, GBSG",
+          "posted": "2026-09-10",
+          "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-strategic-finance-intern-gbsg/27595/101319962576",
+          "sources": [
+            "intuit-search-2026"
+          ]
+        },
+        {
+          "title": "Summer 2027: Strategic MBA Finance Intern, Consumer Group",
+          "posted": "2026-09-10",
+          "url": "https://jobs.intuit.com/job/san-diego/summer-2027-strategic-mba-finance-intern-consumer-group/27595/101319962544",
+          "sources": [
+            "intuit-search-2026"
+          ]
+        },
+        {
+          "title": "Summer 2027: MBA Strategic Finance Intern, Tech Eco",
+          "posted": "2026-09-10",
+          "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-strategic-finance-intern-tech-eco/27595/101319962624",
+          "sources": [
+            "intuit-search-2026"
+          ]
+        },
+        {
+          "title": "Summer 2027: Product Manager Intern",
+          "posted": "2026-09-11",
+          "url": "https://jobs.intuit.com/job/multiple-locations/summer-2027-product-manager-intern/27595/100620927632",
+          "sources": [
+            "intuit-pm-2027"
+          ]
+        },
+        {
+          "title": "Summer 2027: MBA Finance Strategy Intern",
+          "posted": "2026-09-16",
+          "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-finance-strategy-intern/27595/101319972336",
+          "sources": [
+            "intuit-search-2026"
+          ]
+        },
+        {
+          "title": "Summer 2027: MBA Strategic Finance Intern, Consumer Group",
+          "posted": "2026-09-18",
+          "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-strategic-finance-intern-consumer-group/27595/101319962560",
+          "sources": [
+            "intuit-search-2026"
+          ]
+        },
+        {
+          "title": "Summer 2027: MBA Strategic Sourcing Intern, Technology",
+          "posted": "2026-09-23",
+          "url": "https://jobs.intuit.com/job/san-diego/summer-2027-mba-strategic-sourcing-intern-technology/27595/101062769088",
+          "sources": [
+            "intuit-search-2026"
+          ]
+        },
+        {
+          "title": "Summer 2027: MBA Strategic Sourcing Intern, Customer Success & Sales",
+          "posted": "2026-09-30",
+          "url": "https://jobs.intuit.com/job/san-diego/summer-2027-mba-strategic-sourcing-intern-customer-success-and-sales/27595/101367735056",
+          "sources": [
+            "intuit-search-2026"
+          ]
+        }
+      ]
+    }
+  },
+  "adobe": {
+    "hasProgram": true,
+    "pattern": "Rolling; team roles keep appearing into winter",
+    "windows": [
+      {
+        "cycle": "2023",
+        "from": "2023-09-11",
+        "to": "2023-09-11",
+        "evidence": "strong",
+        "scope": "PM, Product Marketing, Strategy & Ops MBA intern postings",
+        "note": "postedDate 2023-09-11 on archived pages. Team roles followed Sep 22-Oct 6 (dateCreated), several reposted in Nov.",
+        "sources": [
+          "adobe-2023-pm-wayback",
+          "adobe-careers-cdx"
+        ]
+      },
+      {
+        "cycle": "2024",
+        "from": "2024-09-17",
+        "to": "2024-09-17",
+        "evidence": "strong",
+        "scope": "PM and Product Marketing, Digital Media MBA intern postings",
+        "note": "GTM Strategy Manager Sep 27, Corporate Strategy Oct 14, other team roles Nov-Dec 2024.",
+        "sources": [
+          "adobe-2024-pm-wayback",
+          "adobe-careers-cdx"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-09-10",
+        "to": "2025-09-10",
+        "evidence": "strong",
+        "scope": "Earliest: 2026 MBA Intern - Digital Strategy Associate (Sep 10); core PM and PMM postings Sep 23",
+        "note": "Team roles followed Oct 3 to Jan 2026. Note: R158879 was first posted Sep 16 as a non-MBA 'Intern - Associate Product Manager' and later retitled to an MBA role.",
+        "sources": [
+          "adobe-2025-dsa-wayback",
+          "adobe-2025-pm-wayback",
+          "adobe-2025-pmm-wayback",
+          "adobe-careers-cdx"
+        ]
+      },
+      {
+        "cycle": "2026",
+        "from": "2026-09-30",
+        "to": "2026-09-30",
+        "evidence": "strong",
+        "scope": "PM and Product Marketing Manager MBA intern postings",
+        "note": "Workday start date 2026-09-30. No team-specific MBA intern roles live yet; past cycles added them Oct-Jan.",
+        "sources": [
+          "adobe-R172261",
+          "adobe-R172262"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "Two MBA intern postings live since Sep 30, 2026 (PM and PMM, San Jose/San Francisco), with 'no deadline' (rolling); team-specific MBA intern roles not yet posted.",
+      "postings": [
+        {
+          "title": "2027 MBA Intern – Product Manager",
+          "posted": "2026-09-30",
+          "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/XMLNAME-2027-MBA-Intern---Product-Manager_R172261",
+          "sources": [
+            "adobe-R172261"
+          ]
+        },
+        {
+          "title": "2027 MBA Intern – Product Marketing Manager",
+          "posted": "2026-09-30",
+          "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/XMLNAME-2027-MBA-Intern---Product-Marketing-Manager_R172262",
+          "sources": [
+            "adobe-R172262"
+          ]
+        }
+      ]
+    }
+  },
+  "microsoft": {
+    "hasProgram": true,
+    "pattern": "Mostly rolling; some functions close in October",
+    "windows": [
+      {
+        "cycle": "2023",
+        "from": "2023-09-01",
+        "to": "2023-09-01",
+        "evidence": "strong",
+        "scope": "Finance: MBA Internship Opportunities (other MBA functions' dates unknown)",
+        "note": "postingDate 2023-09-01 in an archived Microsoft search-API response captured Sep 4, 2023. Sales and TPM MBA internship postings existed that cycle, but their dates were not found.",
+        "sources": [
+          "ms-2023-finance-archive",
+          "ms-jobpages-cdx"
+        ]
+      },
+      {
+        "cycle": "2024",
+        "from": "2024-07-01",
+        "to": "2024-08-15",
+        "evidence": "weak",
+        "scope": "Human Resources: Master's & MBA Internship Opportunities (earliest seen); Marketing: MBA seen by Sep 7, 2024",
+        "note": "Only upper bounds: the HR job URL was archived Aug 15, 2024 and the Marketing one Sep 7, 2024. The PM MBA posting date is unknown. The lower bound is a guess based on HR posting on Jul 28 in 2025.",
+        "sources": [
+          "ms-jobpages-cdx"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-07-28",
+        "to": "2025-07-28",
+        "evidence": "strong",
+        "scope": "Earliest: HR Master's & MBA (Jul 28). Finance Manager and Marketing MBA Sep 1; Product Manager MBA Sep 15; Deal Analytics (Xbox) Oct 1",
+        "note": "postingDate values from archived Microsoft search-API responses.",
+        "sources": [
+          "ms-2025-hr-archive",
+          "ms-2025-finance-archive",
+          "ms-2025-marketing-archive",
+          "ms-2025-pm-archive",
+          "ms-2025-deal-archive"
+        ]
+      },
+      {
+        "cycle": "2026",
+        "from": "2026-09-21",
+        "to": "2026-09-21",
+        "evidence": "strong",
+        "scope": "Finance Manager and Treasury Finance Manager MBA internships (Sep 21); Surface Business Program Management MBA intern Sep 30. PM/Marketing MBA not yet posted",
+        "note": "postedTs from Microsoft's careers API. No HR MBA posting found this cycle as of Oct 4.",
+        "sources": [
+          "ms-200055972",
+          "ms-200055974",
+          "ms-200058904",
+          "ms-search-api-2026"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "Three MBA intern postings live (Finance Manager and Treasury Finance Manager from Sep 21, Surface Business Program Management from Sep 30); no Product Manager or Marketing MBA internship posted yet as of Oct 4, 2026.",
+      "postings": [
+        {
+          "title": "Finance Manager: MBA Internship Opportunities",
+          "posted": "2026-09-21",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556999301",
+          "sources": [
+            "ms-200055972"
+          ]
+        },
+        {
+          "title": "Treasury Finance Manager: MBA Internship Opportunities",
+          "posted": "2026-09-21",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556999320",
+          "sources": [
+            "ms-200055974"
+          ]
+        },
+        {
+          "title": "Business Program Management INTERN",
+          "posted": "2026-09-30",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393557019360",
+          "sources": [
+            "ms-200058904"
+          ]
+        }
+      ]
+    }
+  },
+  "salesforce": {
+    "hasProgram": true,
+    "pattern": "Fixed window of about three weeks",
+    "windows": [
+      {
+        "cycle": "2023",
+        "from": "2023-09-15",
+        "to": "2023-10-07",
+        "evidence": "weak",
+        "scope": "MBA Business Value & Strategic Selling Consultant intern",
+        "note": "Only aggregator evidence: a Salary.com listing whose ID encodes 2023-10-07 12:57 (first-seen). The lower bound is a guess.",
+        "sources": [
+          "sf-2023-salary"
+        ]
+      },
+      {
+        "cycle": "2024",
+        "from": "2024-10-29",
+        "to": "2024-10-29",
+        "closes": "2024-11-15",
+        "evidence": "strong",
+        "scope": "MBA Business Value & Strategic Selling Consultant (+ Financial Services, Healthcare & Life Sciences variants)",
+        "note": "Archived Salesforce careers page: 'Posted 29 October 2024' and stated close date Nov 15, 2024.",
+        "sources": [
+          "sf-2024-wayback"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-10-01",
+        "to": "2025-10-07",
+        "closes": "2025-10-27",
+        "evidence": "medium",
+        "scope": "MBA Business Value & Strategic Selling Consultant (+ FS, HLS variants)",
+        "note": "Built In and Tech:NYC (Getro) both first list it on Oct 7, 2025. Stated closes: Oct 27 (general and FS) and Oct 22 (HLS, JR313087). A later HLS requisition (JR333727) also appeared.",
+        "sources": [
+          "sf-2025-builtin",
+          "sf-2025-technyc",
+          "sf-2025-careers-titles"
+        ]
+      },
+      {
+        "cycle": "2026",
+        "from": "2026-10-01",
+        "to": "2026-10-01",
+        "closes": "2026-10-20",
+        "evidence": "strong",
+        "scope": "MBA Business Value & Strategic Selling Consultant (+ FS, HLS variants), New York",
+        "note": "Workday start date Oct 1, 2026; each posting states it will close Oct 20, 2026.",
+        "sources": [
+          "sf-JR362509",
+          "sf-JR362508",
+          "sf-JR362499"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "Three MBA BVS intern postings live since Oct 1, 2026 (New York), all closing Oct 20, 2026; no other MBA intern postings found.",
+      "postings": [
+        {
+          "title": "Summer 2027 Intern - MBA Business Value & Strategic Selling Consultant",
+          "posted": "2026-10-01",
+          "closes": "2026-10-20",
+          "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant_JR362509-1",
+          "sources": [
+            "sf-JR362509"
+          ]
+        },
+        {
+          "title": "Summer 2027 Intern - MBA Business Value & Strategic Selling Consultant (Financial Services)",
+          "posted": "2026-10-01",
+          "closes": "2026-10-20",
+          "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant--Financial-Services-_JR362508-1",
+          "sources": [
+            "sf-JR362508"
+          ]
+        },
+        {
+          "title": "Summer 2027 Intern - MBA Business Value & Strategic Selling Consultant (Healthcare & Life Sciences)",
+          "posted": "2026-10-01",
+          "closes": "2026-10-20",
+          "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant--Healthcare---Life-Sciences-_JR362499-1",
+          "sources": [
+            "sf-JR362499"
+          ]
+        }
+      ]
+    }
+  },
+  "google": {
+    "hasProgram": true,
+    "pattern": "Fixed short window, then team match",
+    "windows": [
+      {
+        "cycle": "2023",
+        "from": "2023-09-01",
+        "to": "2023-10-31",
+        "evidence": "weak",
+        "scope": "MBA Intern, Summer 2024 (US general pool)",
+        "note": "US posting itself not recovered. Google's India MBA posting for the same summer closed Oct 25, 2023, and a 'mba-intern' posting syndicated to Indeed was already taken down in a Nov 1, 2023 capture, so the US window was probably Sep–Oct 2023, not as late as Nov 1.",
+        "sources": [
+          "google-mba-intern-summer-2024-india-wb",
+          "google-mba-intern-80967716-wb",
+          "arizona-google-mba-intern-2024-us",
+          "google-business-internships-page"
+        ]
+      },
+      {
+        "cycle": "2024",
+        "from": "2024-09-18",
+        "to": "2024-10-26",
+        "closes": "2024-11-18",
+        "evidence": "medium",
+        "scope": "MBA Intern, Summer 2025 (US, one posting, team-matched later)",
+        "note": "Live by Oct 26, 2024 (dated blog write-ups) and captured Nov 4 with deadline Nov 18. The Sep 18 capture of Google's business-internships page had no MBA card yet. The exact Oct 16 open date in the old dataset could not be confirmed.",
+        "sources": [
+          "google-mba-intern-summer-2025-wb",
+          "opportunitiesradar-google-mba-2025",
+          "opportunitiescorners-google-mba-2025",
+          "google-business-internships-wb-20240918",
+          "google-business-internships-wb-20241104"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-09-15",
+        "to": "2025-10-14",
+        "closes": "2025-10-31",
+        "evidence": "medium",
+        "scope": "MBA Intern, Summer 2026 (US general pool); Finance MBA Intern, 2026 also posted",
+        "note": "A dated LinkedIn post on Oct 14, 2025 said applications were open; deadline Oct 31, 2025 (about 2.5 weeks). Lower bound rests only on Google saying MBA applications open in September/October; no evidence for the old dataset's Oct 7.",
+        "sources": [
+          "linkedin-ehis-google-mba-2026",
+          "google-mba-intern-summer-2026-posting",
+          "google-mba-intern-summer-2026-cdx",
+          "google-business-internships-page"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "As of 2026-10-04 no US MBA intern posting for summer 2027 is live on Google Careers. The only MBA intern postings are three EMEA ones (London/Dublin), which open Oct 5, 2026 and close Nov 13, 2026. Google says MBA applications open in Sept–Oct, and last year's US window was only about 2.5 weeks long, so check daily.",
+      "postings": []
+    }
+  },
+  "nvidia": {
+    "hasProgram": true,
+    "pattern": "Team by team; postings close quickly",
+    "windows": [
+      {
+        "cycle": "2023",
+        "from": "2023-10-13",
+        "to": "2023-10-20",
+        "evidence": "medium",
+        "scope": "MBA 2024 Internships: Product Management, Marketing, Finance and Operations (general MBA posting)",
+        "note": "SimplifyJobs tracker first logged it on Oct 20, 2023. Its actual go-live may have been a few days earlier.",
+        "sources": [
+          "simplify-listings-2024-02",
+          "linkedin-nvidia-mba-2024"
+        ]
+      },
+      {
+        "cycle": "2024",
+        "from": "2024-10-08",
+        "to": "2024-10-15",
+        "evidence": "medium",
+        "scope": "NVIDIA 2025 Internships: MBA Product Management / MBA Product Marketing Management (general postings); team-specific PM MBA roles followed into spring 2025",
+        "note": "A job-board aggregator first recorded the PM posting on Oct 15, 2024 at 19:14 UTC. That fits the old dataset's Oct 14 but does not prove it. NVIDIA said it accepted applications 'on an ongoing basis'. Team roles kept appearing until at least Mar 2025 (AV Simulation, Agentic AI).",
+        "sources": [
+          "getro-anitab-nvidia-2025-mba-pm",
+          "nvidia-workday-2025-mba-pm",
+          "nvidia-workday-2025-mba-pmm",
+          "getro-anitab-nvidia-av-sim-2025",
+          "nvidia-workday-agentic-2025"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-09-29",
+        "to": "2025-10-27",
+        "evidence": "weak",
+        "scope": "Team-specific MBA intern roles (no general MBA posting found): Corporate Development and Treasury first, then PM/PMM/Finance roles Nov 2025–Mar 2026",
+        "note": "The earliest summer-2026 roles had stated minimum deadlines of Oct 27 (Corp Dev) and Nov 2, 2025 (Treasury), so they were live by late October. NVIDIA usually sets that date 1–4 weeks after posting. More roles followed: Enterprise AI PM (~Nov 6), AV ADAS PM (~Nov 25), Data Processing PMM (~Dec 9), VC (Dec 17), Indirect Procurement (Jan 28, 2026), more PM roles Feb–Mar 2026. Could not confirm the old dataset's 'Oct 23 strong'.",
+        "sources": [
+          "builtin-nvidia-corpdev-2026",
+          "builtin-nvidia-treasury-2026",
+          "nvidia-workday-treasury-2026",
+          "simplify-listings-2026-01",
+          "getro-anitab-nvidia-adas-2026",
+          "getro-anitab-nvidia-dataproc-2026",
+          "nvidia-eightfold-vc-2026",
+          "nvidia-eightfold-procurement-2026",
+          "linkedin-jobid-calibration"
+        ]
+      },
+      {
+        "cycle": "2026",
+        "from": "2026-09-11",
+        "to": "2026-09-15",
+        "closes": "2026-09-19",
+        "evidence": "strong",
+        "scope": "Single early team role: Product Management MBA Intern, Data Center GPU - Summer 2027 (JR2025670)",
+        "note": "NVIDIA's own careers record dates it Sep 11, 2026. SimplifyJobs logged it Sep 15 and marked it inactive by Sep 16; a GitHub tracker logged it Sep 16. A search snippet gave 'accepted at least until September 19, 2026'. It is no longer in NVIDIA's job search. One early role, not the main MBA wave, which last year started around October.",
+        "sources": [
+          "nvidia-eightfold-jr2025670",
+          "nvidia-workday-jr2025670",
+          "simplify-listings-current",
+          "github-fable-tracker-4031",
+          "nvidia-workday-api-20261004"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "As of 2026-10-04 no NVIDIA MBA intern posting is live. The Workday API returns no MBA intern roles. The one summer-2027 MBA posting (PM, Data Center GPU) appeared about Sep 11 and was gone within days. Last cycle, team-specific MBA roles began around October and kept coming through spring.",
+      "postings": [
+        {
+          "title": "Product Management MBA Intern, Data Center GPU - Summer 2027",
+          "posted": "2026-09-11",
+          "closes": "2026-09-19",
+          "url": "https://jobs.nvidia.com/careers/job/893397711858",
+          "sources": [
+            "nvidia-eightfold-jr2025670",
+            "simplify-listings-current",
+            "github-fable-tracker-4031"
+          ]
+        }
+      ]
+    }
+  },
+  "meta": {
+    "hasProgram": true,
+    "pattern": "Individual postings; some years skipped",
+    "windows": [
+      {
+        "cycle": "2023",
+        "from": "2023-11-25",
+        "to": "2023-12-12",
+        "evidence": "weak",
+        "scope": "Product Marketing Manager Intern, MBA (multiple US locations)",
+        "note": "Estimated from LinkedIn job-ID ordering, which puts it around early Dec 2023. LinkedIn shows it as '2 years ago' and closed. No primary posting date found.",
+        "sources": [
+          "linkedin-meta-pmm-3783015842",
+          "linkedin-jobid-calibration"
+        ]
+      },
+      {
+        "cycle": "2024",
+        "from": "2024-10-24",
+        "to": "2024-11-07",
+        "evidence": "weak",
+        "scope": "Product Marketing Manager Intern, MBA (original posting); reposted 2025-01-12",
+        "note": "LinkedIn job-ID ordering puts the first posting around late Oct to early Nov 2024, consistent with the old Oct 31 but not proof. A job-board aggregator recorded a repost on Jan 12, 2025 (medium). The old Jan 24 close date could not be verified.",
+        "sources": [
+          "linkedin-meta-pmm-4062928334",
+          "linkedin-meta-pmm-4120827303",
+          "getro-meta-pmm-mba-2025",
+          "linkedin-jobid-calibration"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "No Meta MBA intern posting found as of 2026-10-04. metacareers.com blocked direct queries, so this is not a full check. No live Meta MBA roles on the aggregators checked. Meta's first summer-2027 intern posting (non-MBA, Data Engineer) went live Sep 29, 2026.",
+      "postings": []
+    }
+  },
+  "airbnb": {
+    "hasProgram": true,
+    "pattern": "Team by team, each open about three weeks",
+    "windows": [
+      {
+        "cycle": "2023",
+        "from": "2023-11-27",
+        "to": "2023-12-12",
+        "evidence": "weak",
+        "scope": "Strategic Finance & Analytics Intern (MBA)",
+        "note": "LinkedIn job-ID ordering puts this about a day after Meta's PMM MBA posting, around early Dec 2023. SimplifyJobs separately logged an Airbnb 'Strategic Finance & Analytics Intern' on Feb 23, 2024 (possibly a repost).",
+        "sources": [
+          "linkedin-airbnb-sfa-3784061828",
+          "simplify-listings-2025-02",
+          "linkedin-jobid-calibration"
+        ]
+      },
+      {
+        "cycle": "2024",
+        "from": "2025-01-20",
+        "to": "2025-02-03",
+        "evidence": "weak",
+        "scope": "Strategic Finance & Analytics Intern (MBA); Business Growth Intern, Experiences (MBA); Strategic Communications & Content Development Intern (MA/MS/MBA)",
+        "note": "LinkedIn job-ID ordering puts the SF&A posting around late Jan to early Feb 2025, consistent with the old Jan 26 but not proof. The Business Growth posting was removed Feb 25, 2025.",
+        "sources": [
+          "linkedin-airbnb-sfa-4136512155",
+          "builtin-airbnb-bgi-2025",
+          "startupjobs-airbnb-stratcomms-2025",
+          "linkedin-jobid-calibration"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-12-19",
+        "to": "2025-12-20",
+        "closes": "2026-01-25",
+        "evidence": "medium",
+        "scope": "Strategic Finance & Analytics Intern (MBA) / (MBA/MS); later Advanced Analytics Intern (MS/MBA) ~Feb 6–17, 2026; Sourcing Operations & Innovation Intern (MBA)",
+        "note": "Four separate trackers first saw the SF&A posting Dec 19–20, 2025 (Greenhouse job 7488879). Built In shows a Jan 25 application deadline, and the posting was removed Feb 23, 2026.",
+        "sources": [
+          "simplify-listings-2026-01",
+          "wttj-airbnb-sfa-2026",
+          "jobright-airbnb-sfa-2026",
+          "topjobstoday-airbnb-sfa-2026",
+          "builtin-airbnb-sfa-2026",
+          "builtinnyc-airbnb-aa-2026",
+          "jobright-airbnb-aa-2026"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "As of 2026-10-04 Airbnb has no intern postings at all; its Greenhouse board lists 152 jobs and none are intern or MBA roles. MBA roles have gone up in Dec–Feb in past cycles.",
+      "postings": []
+    }
+  },
+  "uber": {
+    "hasProgram": true,
+    "pattern": "Late and consistent: January",
+    "windows": [
+      {
+        "cycle": "2023",
+        "from": "2024-01-02",
+        "to": "2024-01-07",
+        "evidence": "medium",
+        "scope": "2024 Strategy & Planning MBA Intern, US",
+        "note": "Aggregator Huzzle recorded it Jan 7, 2024. In 2025 Huzzle lagged Uber's own date by about 4 days, so the real date is likely Jan 2–7.",
+        "sources": [
+          "huzzle-uber-sp-2024"
+        ]
+      },
+      {
+        "cycle": "2024",
+        "from": "2025-01-23",
+        "to": "2025-01-23",
+        "evidence": "medium",
+        "scope": "2025 Strategy & Planning MBA Intern, US; team roles followed Feb 17–27, 2025 (Product Operations, Performance Strategy, Implementation Consultant)",
+        "note": "Huzzle's structured data gives datePosted 2025-01-23T22:36Z, apparently taken from Uber.",
+        "sources": [
+          "huzzle-uber-sp-2025",
+          "huzzle-uber-productops-2025",
+          "huzzle-uber-perfstrat-2025",
+          "huzzle-uber-implementation-2025"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2026-01-15",
+        "to": "2026-01-30",
+        "evidence": "weak",
+        "scope": "2026 Strategy and Planning MBA Intern | Global Support Operations; 2026 Risk and Payments Support MBA Intern; 2026 Program Manager | Incubation GenAi Products MBA Intern",
+        "note": "LinkedIn job-ID ordering puts the Risk & Payments role around Jan 21, 2026. A search snippet dated the S&P posting Jan 30, 2026 (not verified). Consistent with the old Jan 23 but unconfirmed.",
+        "sources": [
+          "linkedin-uber-rp-2026",
+          "muse-uber-sp-2026",
+          "ziprecruiter-uber-genai-2026",
+          "linkedin-jobid-calibration"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "No Uber summer-2027 MBA intern posting found as of 2026-10-04. Uber's careers sites (jobs.uber.com, uber.com) blocked automated checks, so this is not a full check. The last three cycles all opened in January.",
+      "postings": []
+    }
+  },
+  "openai": {
+    "hasProgram": false,
+    "pattern": "No structured MBA hiring",
+    "windows": [],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "OpenAI has no MBA internship. As of 2026-10-04 its Ashby board has 828 jobs and none are intern postings. Its one business-side internship, 'Go to Market Strategy Internship / Co-op, Emerging Talent (Summer 2026)', went up around Apr 3, 2026, with no MBA or degree requirement stated.",
+      "postings": []
+    },
+    "note": "No Anthropic MBA internship found. As of 2026-10-04 Anthropic's Greenhouse board (639 jobs) has no intern or MBA postings; the only early-career postings are Anthropic Fellows Program research fellowships. A current guide says Anthropic does not run a traditional internship program. 'Anthropic has no internships' is right in spirit, but tighten the wording to 'no MBA or traditional internship program'. Anthropic runs paid research fellowships, and SimplifyJobs logged an 'Anthropic STEM Fellow Intern' posting in Apr 2026 (Simplify's title wording; posting now closed)."
+  },
+  "cisco": {
+    "hasProgram": true,
+    "pattern": "Evergreen pipeline postings (\"accepted until further notice\"), so posted dates are a loose guide",
+    "windows": [
+      {
+        "cycle": "2023",
+        "from": "2023-07-15",
+        "to": "2023-09-30",
+        "evidence": "weak",
+        "scope": "Strategy MBA intern reqs labelled 'FY24' (Business Strategy Manager, Strategy and Planning Manager)",
+        "note": "Inferred from req IDs only (1405091, 1405262 sit about 21.5k IDs before reqs created late Jul 2024) and the FY-start pattern seen in 2024; no posted date found.",
+        "sources": [
+          "cisco-req-1405091",
+          "cisco-req-1405262",
+          "cisco-req-1426356"
+        ]
+      },
+      {
+        "cycle": "2024",
+        "from": "2024-07-23",
+        "to": "2024-08-15",
+        "evidence": "medium",
+        "scope": "Strategy and Planning Manager MBA (created Jul 23), Corporate Strategy Manager MBA (Jul 24), Product Manager MBA (Aug 1)",
+        "note": "Creation dates come from search-engine snippets of the old jobs.cisco.com pages, which now redirect. Creation can come slightly before a posting goes live. A Financial Analyst MBA role (2026 grads) was still being listed in Mar 2025.",
+        "sources": [
+          "cisco-req-1426356",
+          "cisco-req-1426404",
+          "cisco-req-1426880",
+          "cisco-wayup-finance-mba"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-08-01",
+        "to": "2025-09-23",
+        "evidence": "weak",
+        "scope": "Sustainability Analyst MBA (created Sep 23, 2025); later Operations Strategy and Planning Manager MBA (req created ~late Jan 2026) and Product Marketing Manager MBA (~Feb 21, 2026)",
+        "note": "The Sep 23, 2025 MBA posting is backed by two sources; the early-Aug lower bound is Extern's all-intern date, not MBA-specific. No PM MBA req for summer 2026 was found. Cisco moved from jobs.cisco.com to Workday around Nov 2025, and some MBA reqs only appeared in Jan-Feb 2026.",
+        "sources": [
+          "cisco-req-1450904",
+          "cisco-wayup-sustainability",
+          "cisco-extern-guide",
+          "cisco-wd-ops-strategy-mba",
+          "cisco-technata-pmm-mba",
+          "cisco-careers-reqid-calibration"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "As of 2026-10-04 no MBA internship is posted on Cisco's careers site. About 30 undergrad and master's intern reqs for summer 2027 went live Sep 3 to Oct 1, 2026. The closest fit is a master's-eligible Engineering PM intern role.",
+      "postings": [
+        {
+          "title": "Engineering Product Management Specialist II (Intern) – United States",
+          "posted": "2026-09-24",
+          "url": "https://careers.cisco.com/global/en/job/2026801",
+          "sources": [
+            "cisco-epm-specialist-ii-2026",
+            "cisco-careers-search-2026"
+          ]
+        }
+      ]
+    }
+  },
+  "dell": {
+    "hasProgram": true,
+    "pattern": "One posting per MBA function (product management, product marketing, strategy, general business). The first ones appear late Aug to Sep and more are added later in the cycle; each has a fixed end date.",
+    "windows": [
+      {
+        "cycle": "2023",
+        "from": "2023-08-01",
+        "to": "2023-08-30",
+        "evidence": "weak",
+        "scope": "Product Management MBA and Product Marketing MBA internships",
+        "note": "Upper bound is the date WayUp listed three Dell MBA postings (all 2023-08-30). WayUp is an aggregator, so Dell's own posting may have been a bit earlier.",
+        "sources": [
+          "dell-wayup-pmm-mba-2023",
+          "dell-wayup-pm-mba-2023",
+          "dell-wayup-pm-mba-2023b"
+        ]
+      },
+      {
+        "cycle": "2024",
+        "from": "2024-08-15",
+        "to": "2024-09-12",
+        "evidence": "weak",
+        "scope": "General Business Internship MBA (first seen 2024-09-12); Product Marketing Graduate Intern (2024-09-25), Strategy MBA Intern (2024-10-10), MBA Product Management Internship (2024-12-16)",
+        "note": "Aggregator (WayUp) first-listed dates; staggered across functions.",
+        "sources": [
+          "dell-wayup-genbiz-mba-2024",
+          "dell-wayup-pmm-grad-2024",
+          "dell-wayup-strategy-mba-2024",
+          "dell-wayup-mba-pm-2024"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-08-15",
+        "to": "2025-10-04",
+        "evidence": "weak",
+        "scope": "Dell Technologies Product Marketing Graduate Intern (MBA Class of 2027); Product Management MBA Internship came much later (~Feb-Mar 2026)",
+        "note": "On 2026-10-04 LinkedIn showed the PMM posting as '1 year ago', which means on or before about Oct 4, 2025. Its job ID implies roughly Sep-Oct 2025 (inference). The PM MBA posting showed '7 months ago'.",
+        "sources": [
+          "dell-li-pmm-grad-2025",
+          "dell-li-pm-mba-2025"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "As of 2026-10-04 no MBA internship is posted on Dell's careers site. Dell's summer 2027 undergrad and graduate intern roles went live Sep 9-15, 2026, mostly ending Oct 31. The only graduate-level one is a supply chain role.",
+      "postings": [
+        {
+          "title": "Global Operations Supply Chain Graduate Intern",
+          "posted": "2026-09-09",
+          "closes": "2026-10-31",
+          "url": "https://enterpriseplatform.dell.com/hcmRestApi/resources/latest/recruitingCEJobRequisitionDetails?expand=all&onlyData=true&finder=ById;Id=%22298518%22,siteNumber=CX_1001",
+          "sources": [
+            "dell-req-298518",
+            "dell-careers-api-mba-2026",
+            "dell-extern-guide"
+          ]
+        }
+      ]
+    }
+  },
+  "ibm": {
+    "hasProgram": true,
+    "pattern": "A handful of function-specific MBA intern postings (Finance FLDP, Corporate Strategy, Software Strategy & M&A, AI-First Transformation), posted mid-Aug to late Sep, rolling; no single MBA program page",
+    "windows": [
+      {
+        "cycle": "2024",
+        "from": "2025-03-01",
+        "to": "2025-03-01",
+        "evidence": "weak",
+        "scope": "Software Strategy and M&A Summer Intern (MBA)",
+        "note": "Aggregator first-seen date only; may be a re-post or a late-season req.",
+        "sources": [
+          "ibm-simplify-swstrat"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-09-05",
+        "to": "2025-09-30",
+        "evidence": "weak",
+        "scope": "Corporate Strategy Summer Consultant – 2026 Internship (job 57337)",
+        "note": "Inferred from neighbouring job IDs: 56065 posted 05-Sep-2025 and 57618 posted 08-Sep-2025 (both Wayback); the 57337 posting itself was not loaded. Later postings: Finance Leadership Development Program (FLDP) Summer Intern 2026, MBA required (2025-12-31, strong).",
+        "sources": [
+          "ibm-corpstrat-2026-search",
+          "ibm-wayback-56065",
+          "ibm-wayback-57618",
+          "ibm-wayback-fldp-2026"
+        ]
+      },
+      {
+        "cycle": "2026",
+        "from": "2026-08-17",
+        "to": "2026-08-17",
+        "evidence": "strong",
+        "scope": "2027 FLDP Summer Intern (Finance & Operations, Armonk), MBA required",
+        "note": "Earliest MBA-specific posting found in the 2026 cycle; still live on 2026-10-04 despite boilerplate saying postings stay up about 15 days. Later postings: Corporate Strategy Summer Consultant and Software Strategy and M&A Summer Intern (both MBA) (2026-08-25 to 2026-09-09, medium); AI-First Transformation – Strategy Consultant Intern (MBA or similar graduate degree) (2026-09-23, strong).",
+        "sources": [
+          "ibm-posting-128929",
+          "ibm-careers-search",
+          "ibm-posting-130063",
+          "ibm-posting-130031",
+          "ibm-posting-133909"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "Four MBA-targeted US summer 2027 internships are live as of 2026-10-04 (FLDP, Corporate Strategy, Software Strategy & M&A, AI-First Transformation); none states a deadline.",
+      "postings": [
+        {
+          "title": "2027 FLDP Summer Intern",
+          "posted": "2026-08-17",
+          "url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=128929",
+          "sources": [
+            "ibm-posting-128929"
+          ]
+        },
+        {
+          "title": "Corporate Strategy Summer Consultant – Internship",
+          "posted": "2026-09-09",
+          "url": "https://careers.ibm.com/en_US/careers/JobDetail/Corporate-Strategy-Summer-Consultant-Internship/130063",
+          "sources": [
+            "ibm-posting-130063"
+          ]
+        },
+        {
+          "title": "Software Strategy and M&A Summer Intern",
+          "posted": "2026-09-09",
+          "url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=130031",
+          "sources": [
+            "ibm-posting-130031"
+          ]
+        },
+        {
+          "title": "AI-First Transformation – Strategy Consultant Intern",
+          "posted": "2026-09-23",
+          "url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=133909",
+          "sources": [
+            "ibm-posting-133909"
+          ]
+        }
+      ]
+    }
+  },
+  "paypal": {
+    "hasProgram": true,
+    "pattern": "Staggered, one-off postings per team (Ventures, Business Ops, Corp Dev, Product Growth) from September to January, each live only about 4–8 days.",
+    "windows": [
+      {
+        "cycle": "2023",
+        "from": "2023-11-03",
+        "to": "2023-12-08",
+        "evidence": "weak",
+        "scope": "Corporate Development MBA Intern, B2B Product Go To Market MBA Intern, Product Manager MBA Intern (Summer 2024)",
+        "note": "No posted dates found. The range is inferred from LinkedIn job-ID order, since PayPal IDs come after a Visa posting whose window opened Nov 3, 2023, and from a career.com listing whose ID encodes 2023-12-08. Some PayPal Summer 2024 MBA postings (higher LinkedIn IDs) went up later, in early 2024.",
+        "sources": [
+          "paypal-linkedin-corpdev-2023",
+          "paypal-linkedin-b2bgtm-2023",
+          "paypal-careercom-pm-2023"
+        ]
+      },
+      {
+        "cycle": "2024",
+        "from": "2024-10-01",
+        "to": "2024-10-30",
+        "evidence": "weak",
+        "scope": "MBA - Corporate Development Intern, MBA - Ventures Intern, MBA - Integrated Marketing Intern (Summer 2025)",
+        "note": "Inferred. A search engine dated the Integrated Marketing LinkedIn listing Oct 30, 2024, and the Corp Dev and Ventures listings have slightly lower LinkedIn IDs. LinkedIn now only shows '1 year ago'. Another Integrated Marketing listing (higher ID) went up later in the cycle.",
+        "sources": [
+          "paypal-linkedin-corpdev-2024",
+          "paypal-linkedin-ventures-2024",
+          "paypal-linkedin-intmktg-2024"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-08-01",
+        "to": "2025-09-11",
+        "closes": "2025-09-15",
+        "evidence": "medium",
+        "scope": "First MBA posting found: MBA - Ventures Operations Intern (NYC), Summer 2026",
+        "note": "The earliest dated MBA posting is Built In's datePosted of 2025-09-11, removed 2025-09-15. 'from' is set to Aug 1 because PayPal says US recruiting season runs August to March, and an earlier unseen posting can't be ruled out. Later Built In dates (posted / removed): Business Ops (Chicago) 10-15 / 10-22; Corp Dev (San Jose) 11-04 / 11-11; Venmo Product Growth 11-17 / 11-25; Product Growth 2026-01-14 / 01-18. Business Ops was reposted on LinkedIn around Jan 2026.",
+        "sources": [
+          "paypal-builtin-ventures-ops-2025",
+          "paypal-builtin-bizops-2025",
+          "paypal-builtin-corpdev-2025",
+          "paypal-builtin-venmo-growth-2025",
+          "paypal-builtin-product-growth-2025",
+          "paypal-linkedin-bizops-2026repost",
+          "paypal-careers-na-university"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "As of 2026-10-04, no Summer 2027 MBA intern postings are live. PayPal's Workday board shows 291 jobs and no intern titles, and a LinkedIn search finds none. Last cycle's first MBA posting appeared Sep 11 and came down within 4 days, so check often.",
+      "postings": []
+    }
+  },
+  "servicenow": {
+    "hasProgram": true,
+    "pattern": "One posting per role (several MBA PM, finance and strategy roles), most posted in September with rolling review. Some roles are reposted or added later, in Nov to Feb.",
+    "windows": [
+      {
+        "cycle": "2024",
+        "from": "2024-09-06",
+        "to": "2024-09-09",
+        "evidence": "medium",
+        "scope": "Product Manager Intern (Masters Degree) and Sr. Product Manager Intern (MBA Degree), Summer 2025",
+        "note": "A job aggregator's GitHub list added the Masters PM role on 2024-09-07 (date column 'Sep 06') and the Sr. PM (MBA Degree) role on 2024-09-09 (date column 'Sep 07'). The Finance Intern MBA - Summer 2025 posting has a SmartRecruiters release date of 2024-09-23. Strategy and marketing MBA roles came later: Product & Solutions Marketing Specialist Intern - MBA around 2024-10-22, and Sr. Business Strategy Specialist Intern (MBA Degree) around 2024-12-03. The Sr. PM MBA role was reposted around 2025-02-27.",
+        "sources": [
+          "servicenow-jobright-pm-repo",
+          "servicenow-sr-finance-mba-2025",
+          "servicenow-jobright-mgmt-repo",
+          "servicenow-jobright-mkt-repo"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-09-03",
+        "to": "2025-09-04",
+        "evidence": "medium",
+        "scope": "Sr. Product Manager Intern (MBA) and Product Manager Intern (Masters Degree), Summer 2026",
+        "note": "Jobright's list added both PM roles on 2025-09-04 (date column 'Sep 03'). The Sr. Outbound and Sr. Inbound PM Intern (MBA) postings appeared around 2025-09-12. SmartRecruiters primary data shows the current version of the Masters PM posting released 2025-09-12, and Corporate Business Development MBA Intern and Finance Intern - MBA both released 2025-09-23. MBA Corporate Strategy Intern also appeared 2025-09-23 per the aggregator; it shares a requisition-number block with Corp Dev and was reposted 2026-02-20. Later additions: Sr Product Marketing Specialist Intern - MBA on 2025-11-12, Sr Business Analyst Intern - MBA around 2026-01-23, and Sr. Business Strategy Specialist Intern MBA around 2026-02-06 (current version released 2026-02-13). No close dates are published; LinkedIn shows the roles as closed.",
+        "sources": [
+          "servicenow-jobright-pm-repo",
+          "servicenow-jobright-outbound",
+          "servicenow-sr-pm-masters-2026",
+          "servicenow-sr-corpdev-2026",
+          "servicenow-sr-finance-mba-2026",
+          "servicenow-jobright-corpstrategy",
+          "servicenow-sr-pmm-mba-2026",
+          "servicenow-sr-strategy-specialist-2026",
+          "servicenow-jobright-mgmt-repo",
+          "servicenow-jobright-ba-repo",
+          "servicenow-wayback-corpdev"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "As of 2026-10-04 no Summer 2027 MBA roles are live. The only Summer 2027 US internship on ServiceNow's SmartRecruiters board is Finance Intern - Undergrad (Santa Clara and West Palm Beach, released 2026-09-29). By this date last cycle the MBA PM, Corp Dev, Strategy and Finance roles were all up, so this cycle is running later.",
+      "postings": []
+    }
+  },
+  "visa": {
+    "hasProgram": true,
+    "pattern": "Batch of function-specific MBA intern postings (Consulting & Analytics, Finance, Corporate Strategy, Product) released together in November, with a short stated window (about 2 weeks in 2025).",
+    "windows": [
+      {
+        "cycle": "2023",
+        "from": "2023-11-03",
+        "to": "2023-11-09",
+        "closes": "2023-12-31",
+        "evidence": "strong",
+        "scope": "Visa Consulting & Analytics MBA and Graduate Intern 2024 (stated window). Visa Global Finance MBA Intern posted 11/9/2023 per Simplify.",
+        "note": "The VCA posting states applications open Nov 3 to Dec 31, with final rounds in the second half of January. The year comes from the title and the 2024–2025 graduation range.",
+        "sources": [
+          "visa-linkedin-vca-2023",
+          "visa-simplify-globalfinance-2023"
+        ]
+      },
+      {
+        "cycle": "2024",
+        "from": "2024-11-01",
+        "to": "2024-11-28",
+        "evidence": "medium",
+        "scope": "Product Management MBA Intern and VCA MBA Intern, Summer 2025",
+        "note": "Simplify dates 'Product Management – MBA Intern' to 11/28/2024. A search index dated the LinkedIn 'Product Management, MBA Intern - Summer 2025' listing Nov 13, 2024. SmartRecruiters shows releasedDate 2024-12-04 for that req, which may be a re-release. No stated window was found for this cycle.",
+        "sources": [
+          "visa-simplify-pm-2024",
+          "visa-linkedin-pm-2024",
+          "visa-smartrecruiters-pm-2024",
+          "visa-linkedin-vca-2024"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-11-21",
+        "to": "2025-11-21",
+        "closes": "2025-12-04",
+        "evidence": "strong",
+        "scope": "Visa Consulting & Analytics MBA Intern and Finance MBA Intern, Summer 2026. Corporate Strategy MBA Intern was likely in the same batch.",
+        "note": "Both postings state applications accepted 11/21/2025 through 12/04/2025. The Corporate Strategy posting date is not confirmed.",
+        "sources": [
+          "visa-linkedin-vca-2025",
+          "visa-linkedin-finance-2025",
+          "visa-wayup-corpstrategy-2025"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "As of 2026-10-04, no US MBA intern postings are live: none on Visa's Workday boards (783 jobs on the main site, 24 on Early Careers) or on LinkedIn. Visa held virtual 'MBA Careers Overview' events Sep 22–23, 2026. Based on the last three cycles, expect postings in November with a roughly 2-week window. Extern's 'Sep 16–18, 2026' date matches US PhD research-intern postings, not MBA roles.",
+      "postings": []
+    }
+  },
+  "waymo": {
+    "hasProgram": true,
+    "pattern": "One posting per function, titled 'YYYY Summer Intern, MBA, <function>', reviewed on a rolling basis until filled. Apply to each role separately, up to 3. Roles go up in waves from September to December.",
+    "windows": [
+      {
+        "cycle": "2024",
+        "from": "2024-10-15",
+        "to": "2024-10-29",
+        "evidence": "medium",
+        "scope": "2025 (Summer) MBA Intern, Operations; the Customer Support MBA role came later (~Feb 2025)",
+        "note": "Simplify's tracker shows the Greenhouse req (waymo/jobs/6335188) as posted 2024-10-29; Simplify usually picks up Greenhouse posts within days, so an earlier October opening can't be ruled out. Wayback's first capture of the Customer Support MBA page is 2025-02-18.",
+        "sources": [
+          "waymo-simplify-2025-mba-ops",
+          "waymo-li-2025-mba-ops",
+          "waymo-li-2025-mba-cs"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-11-01",
+        "to": "2025-11-18",
+        "evidence": "medium",
+        "scope": "2026 Summer Intern, MBA: Strategic Finance (exact), Operations Strategy and Program Management (inferred slightly earlier); Global Supply Manager and Strategy & Operations, Customer Experience followed in late Nov-Dec",
+        "note": "Strategic Finance's own archived page carries datePosted 2025-11-18 (strong for that role), and Jobright ingested it 2025-11-19. Ops Strategy & PgM has a lower LinkedIn job ID (4319479628 vs 4323302677), so it was likely posted about 1-2 weeks earlier; that part is inferred. Built In shows Ops Strategy & PgM removed 2025-12-05 and Customer Experience removed 2025-12-23, so some roles were open only ~3-4 weeks.",
+        "sources": [
+          "waymo-wb-2026-mba-sf",
+          "waymo-jobright-2026-mba-sf",
+          "waymo-li-2026-mba-ospm",
+          "waymo-li-2026-mba-sf",
+          "waymo-builtin-2026-mba-ospm",
+          "waymo-builtin-2026-mba-cx"
+        ]
+      },
+      {
+        "cycle": "2026",
+        "from": "2026-09-01",
+        "to": "2026-09-01",
+        "evidence": "strong",
+        "scope": "2027 Summer Intern, MBA: Operations Planning (Sep 1), Strategic Finance (Sep 14), Salesforce Product Owner (Sep 15)",
+        "note": "Waymo's Greenhouse board API first_published timestamps; the posting page's datePosted is 2026-09-01T16:44:01Z. This is about 2.5 months earlier than the prior cycle's first MBA postings.",
+        "sources": [
+          "waymo-gh-board-api",
+          "waymo-gh-ops-planning-2027",
+          "waymo-gh-strategic-finance-2027",
+          "waymo-gh-salesforce-po-2027"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "As of 2026-10-04, three US MBA intern roles for Summer 2027 are live, first published Sep 1-15, 2026. Review is rolling with no stated deadline. Last cycle more MBA roles appeared in Nov-Dec and some closed within weeks, so apply early and watch for more.",
+      "postings": [
+        {
+          "title": "2027 Summer Intern, MBA, Operations Planning",
+          "posted": "2026-09-01",
+          "url": "https://careers.withwaymo.com/jobs/2027-summer-intern-mba-operations-planning-san-francisco-california-united-states",
+          "sources": [
+            "waymo-gh-ops-planning-2027",
+            "waymo-gh-board-api"
+          ]
+        },
+        {
+          "title": "2027 Summer Intern, MBA, Strategic Finance",
+          "posted": "2026-09-14",
+          "url": "https://careers.withwaymo.com/jobs?gh_jid=8197014",
+          "sources": [
+            "waymo-gh-strategic-finance-2027",
+            "waymo-gh-board-api"
+          ]
+        },
+        {
+          "title": "2027 Summer Intern, MBA, Salesforce Product Owner",
+          "posted": "2026-09-15",
+          "url": "https://careers.withwaymo.com/jobs?gh_jid=8198582",
+          "sources": [
+            "waymo-gh-salesforce-po-2027",
+            "waymo-gh-board-api"
+          ]
+        }
+      ]
+    }
+  },
+  "workday": {
+    "hasProgram": true,
+    "pattern": "A small set of MBA postings (finance, planning, product marketing) on the Workday Early Career board, posted mid-Nov to mid-Dec with rolling review. No US MBA PM role was seen in either cycle.",
+    "windows": [
+      {
+        "cycle": "2024",
+        "from": "2024-12-11",
+        "to": "2024-12-12",
+        "evidence": "medium",
+        "scope": "Product Marketing Manager Intern, MBA (Summer 2025); also Strategic Planning Finance MBA Intern and Sales Finance MBA Financial Analyst Intern",
+        "note": "A job aggregator's GitHub list added Product Marketing Manager Intern, MBA on 2024-12-12 (date column 'Dec 11'). TalentAlly shows it posted Dec 12, 2024. The finance MBA roles were added 2024-12-19 ('Dec 18'). The PMM role was reposted around 2025-03-10, and Built In shows it removed on 2025-05-08. Workday's own pages for these roles have expired and have no archived snapshots.",
+        "sources": [
+          "workday-jobright-mkt-repo",
+          "workday-talentally-pmm-2025",
+          "workday-jobright-mgmt-repo",
+          "workday-jobright-acct-repo",
+          "workday-builtin-pmm-2025"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-11-17",
+        "to": "2025-11-18",
+        "evidence": "medium",
+        "scope": "Financial Analyst MBA Intern (Summer 2026); Enterprise Planning, MBA Intern followed on 2025-12-02",
+        "note": "Jobright's record for Financial Analyst MBA Intern (JR-0101802 / JR-0101803) has publishTime 2025-11-18 02:03, which is Nov 17 US time. Enterprise Planning, MBA Intern (JR-0101956) has publishTime 2025-12-02. Financial Analyst MBA Intern was re-listed around 2026-01-02, and weekday.works shows the Enterprise Planning role with datePosted 2026-01-03, likely a re-list or scrape date. Workday's own posting pages for these roles have expired and have no archived snapshots.",
+        "sources": [
+          "workday-jobright-fa-mba",
+          "workday-jobright-ep-mba",
+          "workday-jobright-acct-repo",
+          "workday-jobright-mgmt-repo",
+          "workday-weekday-ep-mba",
+          "workday-wd-ep-mba"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "As of 2026-10-04 there are no MBA postings. The Workday Early Career board has 3 roles: Sales Development Intern (Atlanta, posted 2026-09-10), Technical Support Delivery Intern (Costa Rica) and a new-grad SDR role. In the last two cycles MBA roles appeared mid-Nov to mid-Dec, so none are expected yet.",
+      "postings": []
+    }
+  }
+}
