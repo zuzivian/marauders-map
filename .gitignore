@@ -42,3 +42,6 @@ next-env.d.ts
 
 # here.now publish state (contains claim token)
 .herenow/
+
+# agent worktrees
+/.claude/worktrees/
