@@ -462,7 +462,7 @@ export function diffPostings(kind: WatchKind, known: Posting[], seen: Job[], mat
   const listed = (p: Posting) => seen.some((j) => sameJob(kind, p, j));
   const live = known.filter((p) => !removed.has(p.url));
   return {
-    added: matches.filter((j) => !known.some((p) => sameJob(kind, p, j))),
+    added: matches.filter((j) => !known.some((p) => sameJob(kind, p, j))).sort((a, b) => (a.posted ?? "9").localeCompare(b.posted ?? "9") || a.title.localeCompare(b.title)),
     present: live.filter(listed),
     missing: live.filter((p) => !listed(p)),
     reappeared: known.filter((p) => removed.has(p.url) && listed(p)),
