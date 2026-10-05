@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { companies, hiring, type Company } from "@/data";
 import { calPath, feedIds, inOpeningOrder, myListFeed, toCsv, toTsv, trackerRows, webcalUrl } from "@/lib/export";
 import { setMyListOnly, toggleStar, useMyListOnly, useStarred } from "@/lib/myList";
@@ -47,8 +47,10 @@ export function MyListToggle() {
   );
 }
 
-/** The toggle on its own line, above a chart. */
+/** The toggle on its own line, above a chart. Until something is starred it has nothing to narrow to, so it waits. */
 export function MyListBar() {
+  const { only, starred } = useMyListFilter();
+  if (!only && !starred.size) return null;
   return <div className="mylist-bar"><MyListToggle /></div>;
 }
 
@@ -102,27 +104,50 @@ export function MyListTools() {
 
   return (
     <div className="mylist">
+      <p className="mylist-n">
+        {starred.size
+          ? `${starred.size} starred. Exports cover these: status today, usual timing, deadlines, posting links.`
+          : `Nothing starred yet. Star companies in their field notes or the timing chart to build a list; until then, exports cover all ${companies.length}.`}{" "}
+        <span className="muted">Your list stays in this browser; there&apos;s no account.</span>
+      </p>
       <div className="mylist-row">
-        <span className="label">my list</span>
-        <span className="mylist-n">{starred.size ? `${starred.size} starred` : "nothing starred yet"}</span>
         <MyListToggle />
         <button className="chip" onClick={copy}>Copy to my tracker</button>
         <button className="chip" onClick={csv}>Download CSV</button>
         {starred.size > 0 && calIds.length > 0 && <button className="chip" onClick={ics}>My list as .ics</button>}
       </div>
-      <p className="mylist-help">
-        {starred.size
-          ? "Exports cover the companies you starred: status today, usual timing, deadlines, posting links."
-          : `Star companies in their field notes or the timing chart to build a list. Until then, exports cover all ${companies.length}.`}{" "}
-        Your list stays in this browser; there&apos;s no account.
-      </p>
       <p className="mylist-cal">
-        <span className="label">calendar, all companies</span>{" "}
-        <a href={webcalUrl(calPath("all"))}>subscribe</a> · <a href={calPath("all")} download>download .ics</a>{" "}
-        <span className="muted">deadlines, estimated openings (marked as estimates), and GSB dates</span>
+        Calendar for all companies: <a href={webcalUrl(calPath("all"))}>subscribe</a> or <a href={calPath("all")} download>download .ics</a>.{" "}
+        <span className="muted">Deadlines, estimated openings (marked as estimates), and GSB dates.</span>
       </p>
       <p className="mylist-said" aria-live="polite">{said}</p>
     </div>
+  );
+}
+
+/** One quiet control in the contents bar that holds the list filter and every export, found wherever the reader is. */
+export function MyListMenu() {
+  const n = useStarred().size;
+  const ref = useRef<HTMLDetailsElement>(null);
+  useEffect(() => {
+    // Close on Escape or a tap outside, like any menu.
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== "Escape" || !ref.current?.open) return;
+      ref.current.open = false;
+      ref.current.querySelector("summary")?.focus();
+    };
+    const onDown = (e: PointerEvent) => {
+      if (ref.current?.open && !ref.current.contains(e.target as Node)) ref.current.open = false;
+    };
+    document.addEventListener("keydown", onKey);
+    document.addEventListener("pointerdown", onDown);
+    return () => { document.removeEventListener("keydown", onKey); document.removeEventListener("pointerdown", onDown); };
+  }, []);
+  return (
+    <details ref={ref} className="mylist-menu">
+      <summary>my list{n ? ` (${n})` : ""} · export</summary>
+      <div className="mylist-pop"><MyListTools /></div>
+    </details>
   );
 }
 
@@ -131,8 +156,7 @@ export function CompanyCalLinks({ company: c }: { company: Company }) {
   if (!hiring[c.id].hasProgram) return null;
   return (
     <p className="small mylist-cal">
-      <span className="label">{c.name.toLowerCase()} in your calendar</span>{" "}
-      <a href={webcalUrl(calPath(c.id))}>subscribe</a> · <a href={calPath(c.id)} download>download .ics</a>
+      {c.name} in your calendar: <a href={webcalUrl(calPath(c.id))}>subscribe</a> or <a href={calPath(c.id)} download>download .ics</a>
     </p>
   );
 }
