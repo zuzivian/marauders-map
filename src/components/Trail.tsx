@@ -6,6 +6,7 @@ import { MARK, MARK_ORDER, trailItems, type Mark, type TrailItem } from "@/lib/m
 import { SEASON_MONTHS, daysBetween, fmtDate, monthOf, monthStartWeek, seasonEnd, weekOf } from "@/lib/season";
 import { useWidth } from "@/lib/useWidth";
 import { useGuide } from "./Guide";
+import { MarkIcon, markShape } from "./MarkIcon";
 
 const cycle = meta.currentCycle;
 const LANE = 21; // px between stacked tags
@@ -19,6 +20,7 @@ function note(it: TrailItem) {
 /** Longer description for the vertical (phone) trail and for screen readers. */
 function detail(it: TrailItem) {
   const when = monthOf(it.week, cycle);
+  if (it.posted && it.week < monthStartWeek(SEASON_MONTHS.indexOf("Aug"), cycle) && it.daysLeft === null) return `opened ${when}, before this trail starts`;
   switch (it.mark) {
     case "closing":
     case "open":
@@ -46,7 +48,7 @@ function Summary({ items }: { items: TrailItem[] }) {
   return (
     <p className="trail-sum">
       {parts.map(([m, t], i) => (
-        <span key={t} className={`m-${m}`}>{i > 0 && <span className="sep"> · </span>}<span className="glyph" aria-hidden>{MARK[m].glyph}</span> {t}</span>
+        <span key={t} className={`m-${m}`}>{i > 0 && <span className="sep"> · </span>}<MarkIcon mark={m} size={13} /> {t}</span>
       ))}
     </p>
   );
@@ -56,7 +58,7 @@ export function MarkLegend({ marks = MARK_ORDER }: { marks?: Mark[] }) {
   return (
     <div className="marks" aria-label="Legend">
       {marks.map((m) => (
-        <span key={m} className={`mark-chip m-${m}`}><span className="glyph" aria-hidden>{MARK[m].glyph}</span>{MARK[m].label}</span>
+        <span key={m} className={`mark-chip m-${m}`}><MarkIcon mark={m} />{MARK[m].label}</span>
       ))}
     </div>
   );
@@ -98,17 +100,20 @@ export default function Trail() {
   );
 }
 
-/** The months the trail covers: from the earliest company (or today) to the latest, snapped to month starts. */
+const START_MONTH = SEASON_MONTHS.indexOf("Aug"); // anything earlier is drawn at the start with an arrow
+
+/** The months the trail covers: August to the latest company (or today), snapped to month starts. */
 function seasonSpan(items: TrailItem[], todayWk: number) {
-  const first = Math.min(...items.map((i) => i.week), todayWk);
   const last = Math.max(...items.map((i) => i.week), todayWk);
-  const i0 = Math.max(0, [...SEASON_MONTHS.keys()].findLast((i) => monthStartWeek(i, cycle) <= first - 1) ?? 0);
+  const i0 = START_MONTH;
   const i1 = Math.min(SEASON_MONTHS.length - 1, ([...SEASON_MONTHS.keys()].find((i) => monthStartWeek(i, cycle) > last + 1) ?? SEASON_MONTHS.length) - 1);
   const w0 = monthStartWeek(i0, cycle), w1 = i1 + 1 < SEASON_MONTHS.length ? monthStartWeek(i1 + 1, cycle) : last + 2;
   return { i0, i1, w0, w1 };
 }
-const tagText = (it: TrailItem) => `${it.company.name}${note(it) ? ` ${note(it)}` : ""}`;
-const tagWidth = (text: string) => text.length * 6.9 + 22;
+/** Tag label; companies that opened before the trail starts get an arrow pointing off the start. */
+const tagText = (it: TrailItem, w0: number, arrow: string) => `${it.week < w0 ? `${arrow} ` : ""}${it.company.name}${note(it) ? ` ${note(it)}` : ""}`;
+const tagWidth = (text: string) => text.length * 6.9 + 28;
+const ICON_R = 4.2;
 
 function HorizontalTrail({ items, W, todayWk, live, onPick }: { items: TrailItem[]; W: number; todayWk: number; live: boolean; onPick: (id: string) => void }) {
   const m = { l: 14, r: 14 };
@@ -119,9 +124,9 @@ function HorizontalTrail({ items, W, todayWk, live, onPick }: { items: TrailItem
   const ends: Record<"up" | "down", number[]> = { up: [], down: [] };
   const placed = items.map((it) => {
       const side = it.posted ? "up" : "down";
-      const text = tagText(it);
+      const text = tagText(it, w0, "←");
       const width = tagWidth(text);
-      const left = Math.min(W - m.r - width, Math.max(m.l, x(it.week) - 7));
+      const left = Math.min(W - m.r - width, Math.max(m.l, x(Math.max(w0, it.week)) - 7));
       let lane = ends[side].findIndex((end) => end + 6 < left);
       if (lane < 0) lane = ends[side].push(0) - 1;
       ends[side][lane] = left + width;
@@ -152,7 +157,7 @@ function HorizontalTrail({ items, W, todayWk, live, onPick }: { items: TrailItem
       })}
       {placed.map(({ it, side, lane, left, width, text }) => {
         const y = side === "up" ? mid - 14 - lane * LANE : mid + 30 + lane * LANE;
-        const px = x(it.week);
+        const px = x(Math.max(w0, it.week));
         return (
           <g key={it.company.id}>
             <line x1={px} x2={px} y1={mid} y2={side === "up" ? y + 5 : y - 15} className="stem" />
@@ -161,7 +166,8 @@ function HorizontalTrail({ items, W, todayWk, live, onPick }: { items: TrailItem
               aria-label={`${it.company.name}: ${MARK[it.mark].label}, ${detail(it)}`}
               onClick={() => onPick(it.company.id)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onPick(it.company.id); } }}>
               <rect width={width} height={19} rx={3} />
-              <text x={7} y={13.5}><tspan className="glyph">{MARK[it.mark].glyph}</tspan> {text}</text>
+              {markShape(it.mark, 11, 9.5, ICON_R)}
+              <text x={20} y={13.5}>{text}</text>
             </g>
           </g>
         );
@@ -187,9 +193,9 @@ function VerticalTrail({ items, W, todayWk, live, onPick }: { items: TrailItem[]
   const bottoms = { left: -Infinity, right: -Infinity };
   const placed = items.map((it) => {
     const side = it.posted ? "left" : "right";
-    const text = tagText(it);
+    const text = tagText(it, w0, "↑");
     const width = Math.min(tagWidth(text), px - 28);
-    const ty = Math.max(y(it.week) - TAG / 2, bottoms[side] + GAP);
+    const ty = Math.max(y(Math.max(w0, it.week)) - TAG / 2, bottoms[side] + GAP);
     bottoms[side] = ty + TAG;
     const tx = side === "left" ? px - 22 - width : px + 22; // clear of the month pins on the path
     return { it, side, text, width, tx, ty };
@@ -207,7 +213,7 @@ function VerticalTrail({ items, W, todayWk, live, onPick }: { items: TrailItem[]
       ))}
       <line x1={px} x2={px} y1={TOP - 6} y2={y(w1)} className="path" />
       {placed.map(({ it, side, tx, ty, width }) => {
-        const py = y(it.week), edge = side === "left" ? tx + width : tx;
+        const py = y(Math.max(w0, it.week)), edge = side === "left" ? tx + width : tx;
         return (
           <g key={`stem-${it.company.id}`}>
             <path d={`M${px},${py} C${(px + edge) / 2},${py} ${(px + edge) / 2},${ty + TAG / 2} ${edge},${ty + TAG / 2}`} className="stem" fill="none" />
@@ -229,7 +235,8 @@ function VerticalTrail({ items, W, todayWk, live, onPick }: { items: TrailItem[]
           aria-label={`${it.company.name}: ${MARK[it.mark].label}, ${detail(it)}`}
           onClick={() => onPick(it.company.id)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onPick(it.company.id); } }}>
           <rect width={width} height={TAG} rx={3} />
-          <text x={7} y={13.5}><tspan className="glyph">{MARK[it.mark].glyph}</tspan> {text}</text>
+          {markShape(it.mark, 11, 9.5, ICON_R)}
+          <text x={20} y={13.5}>{text}</text>
         </g>
       ))}
       {live && todayWk >= w0 && todayWk <= w1 && (

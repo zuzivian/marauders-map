@@ -1,4 +1,6 @@
-# Lone Tree
+# The Marauder's Map of big tech recruiting
+
+Live at **https://marauders-map.natwong.dev**.
 
 A field guide to big tech internship recruiting for Stanford GSB MBA1s. It covers what the posted titles actually mean,
 how the companies differ, when applications tend to open, and which prep is worth your time.

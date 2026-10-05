@@ -6,6 +6,7 @@ import { createSearch, titleHits } from "@/lib/search";
 import { MARK, roleMark, trailItems, type TrailItem } from "@/lib/marks";
 import { useGuide } from "./Guide";
 import { MarkLegend } from "./Trail";
+import { MarkIcon } from "./MarkIcon";
 
 const cycle = meta.currentCycle;
 const search = createSearch(roles, companies.map((c) => c.name));
@@ -33,7 +34,7 @@ export default function RoleDecoder() {
     return (
       <td key={key} className={on ? "on" : undefined}>
         <button className={`dotcell m-${mk}`} onClick={() => toggle({ role: r.id, company: c.name })} aria-pressed={on}
-          aria-label={`${r.name} at ${c.name}: ${MARK[mk].label}`}>{MARK[mk].glyph}</button>
+          aria-label={`${r.name} at ${c.name}: ${MARK[mk].label}`}><MarkIcon mark={mk} size={14} /></button>
       </td>
     );
   };
@@ -110,7 +111,7 @@ function Detail({ role: r, company, result, onClose, onCompany, itemOf }: {
     return (
       <div className="role-detail" role="region" aria-label={`${r.name} at ${company}`}>
         <button className="close linkish" onClick={onClose} aria-label="Close">×</button>
-        <div className="label">{mk && <span className={`m-${mk}`}>{MARK[mk].glyph} {MARK[mk].label}</span>}</div>
+        <div className="label">{mk && <span className={`m-${mk}`}><MarkIcon mark={mk} /> {MARK[mk].label}</span>}</div>
         <h3>{r.name} <span className="muted">at</span> {company}</h3>
         <ul className="titles">{ts.map((t) => (
           <li key={t.title}>{t.title} <span className="label">{when(t.cycles)}</span></li>

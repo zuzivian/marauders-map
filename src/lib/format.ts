@@ -2,7 +2,7 @@ import { format } from "d3-format";
 import { fmtDate } from "./season";
 
 export const fmtCap = (b: number) => (b >= 1000 ? `$${format(".2~r")(b / 1000)}T` : `$${format(".3~r")(b)}B`);
-export const fmtCount = (n: number) => format(".2~s")(n).replace("k", "K");
+export const fmtCount = (n: number) => format(".3~s")(n).replace("k", "K");
 export const fmtPct = (n: number) => `${format(".3~r")(n)}%`;
 
 /** A value with its plausible range, e.g. "18% (10–25%)". */

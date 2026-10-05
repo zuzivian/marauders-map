@@ -60,7 +60,7 @@ def main():
     } for p in files]
 
     state = json.loads(STATE.read_text()) if STATE.exists() else {}
-    body = {"files": manifest, "displayName": "Lone Tree: a field guide to big tech"}
+    body = {"files": manifest, "displayName": "The Marauder's Map of big tech recruiting"}
     if state.get("slug"):
         if state.get("claimToken"):
             body["claimToken"] = state["claimToken"]

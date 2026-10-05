@@ -7,6 +7,9 @@ import { statusOf } from "@/lib/status";
 import { prose } from "@/lib/format";
 import { useGuide } from "./Guide";
 import { Cite, SourceList } from "./Sources";
+import { MarkIcon } from "./MarkIcon";
+import GsbStrip from "./GsbStrip";
+import { MARK, trailItems } from "@/lib/marks";
 
 const cycle = meta.currentCycle;
 const CYCLES: Cycle[] = ["2023", "2024", "2025", "2026"];
@@ -23,6 +26,7 @@ export default function Windows() {
   );
   const todayWk = weekOf(today, cycle);
   const plotted = calendar.filter((m) => m.timeline);
+  const marks = new Map(trailItems(companies, hiring, today, cycle).map((i) => [i.company.id, i.mark]));
 
   return (
     <div>
@@ -49,6 +53,7 @@ export default function Windows() {
             const h = hiring[c.id];
             const v = steadiness(h, cycle);
             const st = statusOf(h, today, cycle);
+            const mk = marks.get(c.id);
             const ws = [...h.windows].sort((a, b) => a.cycle.localeCompare(b.cycle));
             return (
               <details key={c.id} className="tl-row-wrap">
@@ -68,6 +73,7 @@ export default function Windows() {
                       {ws.map((w) => `${cycleName(w.cycle)}: opened ${fmtRange(w.from, w.to)}, ${w.evidence} evidence. `).join("")}
                     </span>
                   </span>
+                  <span className="tl-mk">{mk && <MarkIcon mark={mk} size={13} />}<span className="sr-only">{mk ? MARK[mk].label : ""}</span></span>
                   <span className="tl-verdict">
                     {h.hasProgram && <span className={v.steady ? "note" : "note muted"}>{v.text}</span>}
                     {v.earlier && <span className="flag"> · earlier this year</span>}
@@ -107,15 +113,7 @@ export default function Windows() {
       </div>
 
       <h4 className="subhead">The GSB calendar, 2026–27</h4>
-      <ul className="gsb-key">
-        {calendar.map((m) => (
-          <li key={m.id}>
-            <i className={`key tl-${m.kind}${m.to ? "" : " point"}`} aria-hidden />
-            <span className="gsb-date">{m.to ? fmtRange(m.from, m.to) : fmtDate(m.from)}</span>
-            <span><strong>{m.label}.</strong> {prose(m.description, Number(meta.currentCycle))}{m.confidence !== "high" && <span className="flag"> · {m.confidence} confidence</span>} <Cite ids={m.sources} /></span>
-          </li>
-        ))}
-      </ul>
+      <GsbStrip />
       <div className="caveat">
         Dates are when postings went live on company career sites. They come from dated postings, archived snapshots, school career pages, and recruiter posts;
         each row lists its sources. GSB&apos;s calendar governs GSB-facilitated recruiting. The AAP bars employers from cold-contacting first-years, but it

@@ -121,6 +121,7 @@ export interface CalendarMarker {
   description: string;
   confidence: Confidence;
   timeline?: boolean; // drawn on the application-windows chart (the rest are listed below it)
+  key?: string; // short label when this is one of the handful of dates shown on the GSB strip
   sources: string[];
 }
 

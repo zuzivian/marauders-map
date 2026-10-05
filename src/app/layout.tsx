@@ -6,18 +6,19 @@ const serif = Newsreader({ variable: "--font-serif", subsets: ["latin"], style: 
 const sans = IBM_Plex_Sans({ variable: "--font-sans", subsets: ["latin"], weight: ["400", "500"] });
 const mono = IBM_Plex_Mono({ variable: "--font-mono", subsets: ["latin"], weight: ["400"] });
 
-const description = "What big tech MBA internship titles mean, how the companies differ, when applications open, and which prep is worth it. For Stanford GSB MBA1s.";
+const TITLE = "The Marauder's Map of big tech recruiting";
+const description = "Who's hiring MBA interns in big tech, for what, and when: every company's application window on one map, with sources. For Stanford GSB MBA1s.";
 
 export const metadata: Metadata = {
-  title: "Lone Tree: a field guide to big tech recruiting",
+  title: TITLE,
   description,
   authors: [{ name: "Nat Wong", url: "https://natwong.dev" }],
   creator: "Nat Wong",
   // here.now serves every page with `Referrer-Policy: no-referrer`; FormSubmit needs the site's origin to accept
   // the corrections form. This sends only the origin to other sites (never the page path), like browser defaults.
   referrer: "strict-origin-when-cross-origin",
-  openGraph: { title: "Lone Tree: a field guide to big tech recruiting", description, type: "website" },
-  twitter: { card: "summary", title: "Lone Tree: a field guide to big tech recruiting", description },
+  openGraph: { title: TITLE, description, type: "website" },
+  twitter: { card: "summary", title: TITLE, description },
 };
 
 export const viewport: Viewport = { themeColor: "#f5f1e8", width: "device-width", initialScale: 1 };

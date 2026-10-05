@@ -44,8 +44,8 @@ export default function Home() {
       <main className="page">
         <header className="masthead">
           <div>
-            <h1>Lone Tree<br /><em>a field guide to big tech</em></h1>
-            <div className="tagline">a map of who&apos;s hiring, and when</div>
+            <div className="presents">Messrs Recruiter, Hiring Manager, Bar Raiser &amp; Committee are proud to present</div>
+            <h1>The Marauder&apos;s Map<br /><em>of big tech recruiting</em></h1>
           </div>
           <div className="meta">
             <Compass />for gsb mba1s<br />recruiting season {meta.currentCycle}–{Number(meta.currentCycle) + 1 - 2000}<br />data checked {fmtDate(meta.researched, { year: true }).toLowerCase()}</div>
@@ -68,17 +68,16 @@ export default function Home() {
           </section>
         ))}
 
-        <Corrections />
-
         <footer className="foot">
           <div>
             <strong>How this is made.</strong> Every number links to its source. Market values and revenue come from SEC filings and market data;
             application dates come from dated postings and archived snapshots. Estimates show their range. Where we couldn&apos;t find solid evidence,
             we left it out rather than guess.
           </div>
+          <Corrections />
           <div className="foot-row">
-            <span>made by <a href="https://natwong.dev" target="_blank" rel="noopener">nat wong</a>, for gsb mba1s · not affiliated with the cmc or career hub</span>
-            {meta.correctionsEndpoint ? <a href="#corrections">send a correction</a> : <span>corrections welcome</span>}
+            <span>made by <a href="https://natwong.dev" target="_blank" rel="noopener">nat wong</a>, for gsb mba1s · not affiliated with the cmc, career hub, or warner bros.</span>
+            <span className="mischief">mischief managed.</span>
           </div>
         </footer>
       </main>

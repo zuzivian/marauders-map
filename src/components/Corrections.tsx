@@ -7,7 +7,7 @@ import { companies, meta } from "@/data";
 // It works without JavaScript; JS only adds the return URL and the thank-you note. FormSubmit's reCAPTCHA
 // stays on, and `_honey` is a honeypot that bots fill in and people never see.
 
-export const CORRECTIONS_EVENT = "lonetree:correction";
+export const CORRECTIONS_EVENT = "maraudersmap:correction";
 
 /** Open the corrections form, optionally about a specific company. */
 export function openCorrection(about?: string) {
@@ -40,11 +40,11 @@ export default function Corrections() {
   if (!meta.correctionsEndpoint) return null;
   return (
     <section id="corrections" className="corrections" aria-labelledby="corrections-h">
-      {thanks && <p className="callout" role="status">Thanks, your correction was sent. Mischief managed.</p>}
+      {thanks && <p className="callout" role="status">Thanks, your correction was sent.</p>}
       <details ref={ref}>
-        <summary id="corrections-h">Spot something wrong or out of date? Send a correction</summary>
+        <summary id="corrections-h">spot something wrong or out of date? send a correction</summary>
         <form action={meta.correctionsEndpoint} method="POST">
-          <input type="hidden" name="_subject" value={`Lone Tree correction: ${about}`} />
+          <input type="hidden" name="_subject" value={`Marauder's Map correction: ${about}`} />
           <input type="hidden" name="_template" value="table" />
           {next && <input type="hidden" name="_next" value={next} />}
           <input type="text" name="_honey" className="honey" tabIndex={-1} autoComplete="off" aria-hidden />

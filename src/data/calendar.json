@@ -11,7 +11,8 @@
     "sources": [
       "gsb-recruiting-policies",
       "gsb-recruiting-calendar"
-    ]
+    ],
+    "key": "AAP: no cold outreach"
   },
   {
     "id": "autumn-classes-begin",
@@ -38,7 +39,8 @@
     "timeline": false,
     "sources": [
       "gsb-recruiting-calendar"
-    ]
+    ],
+    "key": "exams"
   },
   {
     "id": "mba1-events-open",
@@ -52,7 +54,8 @@
     "sources": [
       "gsb-recruiting-policies",
       "gsb-recruiting-calendar"
-    ]
+    ],
+    "key": "MBA1 events open"
   },
   {
     "id": "internship-networking-event",
@@ -79,7 +82,8 @@
     "timeline": true,
     "sources": [
       "gsb-recruiting-policies"
-    ]
+    ],
+    "key": "no employer events"
   },
   {
     "id": "dead-week-finals-break",
@@ -93,7 +97,8 @@
     "sources": [
       "gsb-recruiting-calendar",
       "gsb-recruiting-policies"
-    ]
+    ],
+    "key": "no recruiting"
   },
   {
     "id": "internship-application-deadline",
@@ -106,7 +111,8 @@
     "timeline": false,
     "sources": [
       "gsb-recruiting-calendar"
-    ]
+    ],
+    "key": "OCI apps due"
   },
   {
     "id": "internship-interview-invites-due",
@@ -147,7 +153,8 @@
     "sources": [
       "gsb-recruiting-calendar",
       "gsb-recruiting-policies"
-    ]
+    ],
+    "key": "OCI interviews"
   },
   {
     "id": "internship-interviews-week2",
@@ -160,7 +167,8 @@
     "timeline": true,
     "sources": [
       "gsb-recruiting-calendar"
-    ]
+    ],
+    "key": "OCI interviews"
   },
   {
     "id": "internship-interviews-week3",
@@ -173,7 +181,8 @@
     "timeline": true,
     "sources": [
       "gsb-recruiting-calendar"
-    ]
+    ],
+    "key": "OCI interviews"
   },
   {
     "id": "mba1-offer-deadline",
@@ -187,7 +196,8 @@
     "sources": [
       "gsb-recruiting-policies",
       "gsb-recruiting-calendar"
-    ]
+    ],
+    "key": "earliest offer deadline"
   },
   {
     "id": "winter-networking-event",
