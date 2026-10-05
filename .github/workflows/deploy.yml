@@ -1,0 +1,49 @@
+# Publishes main to here.now (https://marauders-map.natwong.dev) on every push: the same `npm run build` (which runs the
+# data tests first, so a broken data file never ships) and scripts/publish.py that `npm run deploy` runs locally.
+# A merged watcher PR therefore goes live without anyone running a deploy by hand.
+#
+# Needs the HERENOW_API_KEY repository secret (Settings > Secrets and variables > Actions). Without it the job
+# builds and tests, then skips publishing with a notice instead of failing.
+
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["README.md", "AGENTS.md", "CLAUDE.md", ".claude/**", ".github/workflows/watch.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true # a newer push supersedes one still publishing
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Test and build
+        run: npm run build
+
+      - name: Publish to here.now
+        env:
+          HERENOW_API_KEY: ${{ secrets.HERENOW_API_KEY }}
+          HERENOW_SLUG: tender-quasar-mnfx
+        run: |
+          if [ -z "$HERENOW_API_KEY" ]; then
+            echo "::notice::HERENOW_API_KEY isn't set, so nothing was published. Add it under Settings > Secrets and variables > Actions."
+            exit 0
+          fi
+          python3 scripts/publish.py

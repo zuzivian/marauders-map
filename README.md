@@ -179,6 +179,13 @@ least two notes for the same internship summer (before that, only a count), so a
 
 ## Deploy
 
+Every push to `main` deploys itself: [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) runs `npm run build`
+(tests first, so broken data never ships) and `scripts/publish.py`, which updates the site named by `HERENOW_SLUG`. It
+needs the `HERENOW_API_KEY` repository secret; without it the job builds and tests, then skips publishing with a notice.
+here.now has no GitHub integration of its own, so this is the whole pipeline. Merged watcher PRs go live the same way.
+
+To publish from your machine instead:
+
 ```bash
 npm run deploy     # build (runs the tests) and publish out/ to here.now via scripts/publish.py
 ```

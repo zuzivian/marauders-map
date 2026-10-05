@@ -1,6 +1,6 @@
 # Daily posting watcher: checks every company's careers API for MBA internships (scripts/watch-postings.mjs),
 # and if the data changed, opens or updates a pull request from the bot/watch branch with the report as its body.
-# It never merges and never deploys: a person reviews the PR, merges it, and runs `npm run deploy`.
+# It never merges and never deploys: a person reviews the PR and merges it, and deploy.yml publishes main.
 #
 # Needs Settings > Actions > General > "Allow GitHub Actions to create and approve pull requests" turned on.
 
@@ -70,7 +70,7 @@ jobs:
           git commit -m "Watcher run $today"
           git push --force-with-lease origin bot/watch
           body="$RUNNER_TEMP/body.md"
-          { cat "$RUNNER_TEMP/report.md"; echo; echo "_Opened by .github/workflows/watch.yml. Review the diff, then merge and deploy by hand; nothing here merges or deploys itself._"; } > "$body"
+          { cat "$RUNNER_TEMP/report.md"; echo; echo "_Opened by .github/workflows/watch.yml. Review the diff, then merge; deploy.yml publishes main once it's merged._"; } > "$body"
           if [ "$(gh pr view bot/watch --json state -q .state 2>/dev/null)" = "OPEN" ]; then
             # Keep earlier runs' reports below today's, folded, since the branch carries their changes too.
             gh pr view bot/watch --json body -q .body > "$RUNNER_TEMP/old.md"

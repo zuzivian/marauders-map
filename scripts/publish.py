@@ -4,7 +4,7 @@ Run via `npm run deploy`, which builds (and so runs the data tests) first.
 With an API key (HERENOW_API_KEY, or ~/.herenow/credentials) the site is permanent.
 Without one the site is anonymous and expires in 24 hours; claim it
 from the claim URL (saved in .herenow/state.json, which is gitignored) to keep it.
-Re-running updates the same site.
+Re-running updates the same site. HERENOW_SLUG names the site to update when there's no state file (CI does this).
 """
 import hashlib, json, mimetypes, os, pathlib, sys, urllib.error, urllib.request
 
@@ -60,6 +60,8 @@ def main():
     } for p in files]
 
     state = json.loads(STATE.read_text()) if STATE.exists() else {}
+    if os.environ.get("HERENOW_SLUG"):  # CI has no .herenow/state.json (it's gitignored), so it names the site here
+        state["slug"] = os.environ["HERENOW_SLUG"]
     body = {"files": manifest, "displayName": "The Marauder's Map of big tech recruiting"}
     if state.get("slug"):
         if state.get("claimToken"):
