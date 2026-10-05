@@ -8,6 +8,7 @@ import Windows from "@/components/Windows";
 import PrepMatrix from "@/components/PrepMatrix";
 import Corrections from "@/components/Corrections";
 import Contribute from "@/components/Contribute";
+import { Useful } from "@/components/Analytics";
 
 const withProgram = companies.filter((c) => hiring[c.id].hasProgram).length;
 const titleCount = new Set(roles.flatMap((r) => r.titles.map((t) => `${t.company}|${t.title}`))).size;
@@ -76,6 +77,7 @@ export default function Home() {
           </div>
           <Corrections />
           <Contribute />
+          <Useful />
           <div className="foot-row">
             <span>made by <a href="https://natwong.dev" target="_blank" rel="noopener">nat wong</a>, for gsb mba1s · not affiliated with the cmc, career hub, or warner bros.</span>
             <span className="mischief">mischief managed.</span>

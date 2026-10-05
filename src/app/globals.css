@@ -419,3 +419,8 @@ details.why p { margin: 6px 0; }
 .contribute .gi-consent { display: flex; gap: 8px; align-items: flex-start; }
 .contribute .gi-consent input { margin-top: 3px; accent-color: var(--cardinal); }
 @media (max-width: 720px) { .gi-row { grid-template-columns: 1fr; } }
+
+/* ---- share ---- */
+.copylink { float: right; margin-left: 12px; line-height: 16px; }
+.copylink a { font-family: var(--mono); font-size: 11px; word-break: break-all; }
+.useful { margin: 0; font-family: var(--mono); font-size: 11px; color: var(--ink-2); }

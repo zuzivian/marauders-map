@@ -18,6 +18,32 @@ npm run build      # runs the tests, then exports static HTML to out/
 npm start          # serve out/ locally
 ```
 
+## Sharing
+
+- **Company links.** Every company has its own page at `/c/<id>/` (for example
+  [`/c/google/`](https://marauders-map.natwong.dev/c/google/)). It opens the full guide on that company's field notes, with its own
+  title, description and preview image. Picking a company on the page swaps the address bar to its link, and the field notes
+  have a "copy link" button. The trailing slash matters: the export writes `c/<id>/index.html` (`trailingSlash: true`), and
+  here.now redirects `/c/<id>` to `/c/<id>/`.
+- **Link previews.** `og.png` next to each page (`/og.png`, `/c/<id>/og.png`) is drawn at build time with `next/og`. Previews
+  and descriptions are fixed when the site is built, so they're worded as of the last check ("not posted as of Oct 4, 2026")
+  rather than "due any day". Rebuild and deploy after a data refresh to update them.
+- **Weekly digest.** `npm run -s digest` prints a Slack post for the High Tech Club channel: what's open, deadlines in the next
+  two weeks, what past cycles say should open next (labeled as estimates), and GSB dates coming up. Each company links to its page.
+  Use `-- --date 2026-10-11` for another day, and `| pbcopy` to copy it.
+
+## Analytics (off by default)
+
+Analytics are opt-in and cookie-free. With `"analytics": null` in `meta.json` nothing loads. To turn them on, create a site at
+[GoatCounter](https://www.goatcounter.com) (free for non-commercial use) and set its code:
+
+```json
+"analytics": { "kind": "goatcounter", "code": "your-site-code" }
+```
+
+GoatCounter then counts page views, plus these events: `select/<id>` (picked a company), `copy-link/<id>`, and `useful/yes` or
+`useful/no` from the "was this useful?" line in the footer, which only shows when analytics is on.
+
 ## How the data works
 
 | File | What it holds |
@@ -31,6 +57,8 @@ npm start          # serve out/ locally
 | `sources.json` | Every source: URL, publisher, dates, and a short verbatim quote where one supports the claim. |
 | `meta.json` | The current cycle, the date the data was last checked end to end, and the corrections and first-hand form links. |
 | `firsthand.json` | First-hand notes from GSB second-years on how they got in, keyed by company. Self-reported, unverified, and added only through `npm run add:firsthand`. |
+
+| `meta.json` | The current cycle, the date the data was last checked end to end, the corrections link, and analytics (off by default). |
 
 The rules:
 

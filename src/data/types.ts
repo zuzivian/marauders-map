@@ -175,4 +175,6 @@ export interface Meta {
     action: string;
     fields: Record<"company" | "roleId" | "classOf" | "internshipSummer" | "path" | "firstContactToOffer" | "stages" | "teamMatch" | "whatMattered" | "advice" | "displayName" | "consent" | "email", string>;
   } | null;
+  /** Opt-in, cookie-free counts (see src/lib/analytics.ts); null loads nothing. `code` is the GoatCounter site code. */
+  analytics: { kind: "goatcounter"; code: string } | null;
 }

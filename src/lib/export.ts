@@ -4,16 +4,17 @@ import { dateAtWeek, fmtDate, monthOf, typicalOpen } from "./season";
 import { statusOf } from "./status";
 import { prose } from "./format";
 import { buildIcs, icsDate, type IcsEvent } from "./ics";
+import { SITE, companyUrl } from "./share";
 
 // Exports into the student's own tools: rows for their tracker (CSV / tab-separated for pasting) and calendar
 // feeds. The site knows the market; their tracker knows their relationships. These feed it, they don't replace it.
 
-export const SITE_URL = "https://marauders-map.natwong.dev";
+export const SITE_URL = SITE;
 const HOST = new URL(SITE_URL).host;
 const cycle = meta.currentCycle;
 
 /** A company's own guide page (built by the share pages). */
-export const companyGuideUrl = (id: string) => `${SITE_URL}/c/${id}/`;
+export const companyGuideUrl = companyUrl;
 /** Where a calendar feed lives: "all" or a company id. */
 export const calPath = (id: string) => `/cal/${id}.ics`;
 /** webcal:// makes calendar apps offer to subscribe rather than import once. */

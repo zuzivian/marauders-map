@@ -29,5 +29,6 @@
       "consent": "consent",
       "email": "email"
     }
-  }
+  },
+  "analytics": null
 }

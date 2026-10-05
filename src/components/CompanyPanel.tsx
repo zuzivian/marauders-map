@@ -12,6 +12,7 @@ import { openCorrection } from "./Corrections";
 import { MarkIcon } from "./MarkIcon";
 import { CompanyCalLinks, StarButton } from "./MyList";
 import GettingIn from "./GettingIn";
+import { CopyLink } from "./CopyLink";
 
 const cycle = meta.currentCycle;
 const OPACITY = { strong: 0.95, medium: 0.6, weak: 0.3 };
@@ -139,7 +140,8 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
   const private_ = c.marketCap.kind === "private valuation";
 
   return (
-    <aside className="panel" aria-label={`Field notes: ${c.name}`}>
+    <aside id="field-notes" className="panel" aria-label={`Field notes: ${c.name}`}>
+      <CopyLink key={c.id} id={c.id} />
       <div className="label">field notes</div>
       <div className="mylist-head"><h3>{c.name}</h3><StarButton company={c} /></div>
       <div className="sub">{c.model.toLowerCase()} · {c.hq.toLowerCase()} · {c.ai.toLowerCase()}</div>
