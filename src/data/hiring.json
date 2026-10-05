@@ -1258,6 +1258,55 @@
       "postings": []
     }
   },
+  "spotify": {
+    "hasProgram": true,
+    "pattern": "Late and short: one New York MBA posting in late January or February, with a hard deadline about two to three weeks later",
+    "windows": [
+      {
+        "cycle": "2023",
+        "from": "2024-02-27",
+        "to": "2024-03-05",
+        "closes": "2024-03-15",
+        "evidence": "strong",
+        "scope": "2024 Summer Internship, Product Management (New York City), with one slot reserved for MBA candidates graduating in 2025",
+        "note": "The posting's own record was created 2024-02-27 (Lever createdAt, embedded in the page) and it was archived live on 2024-03-05. Deadline March 15, 2024.",
+        "sources": [
+          "spotify-wb-pm-nyc-2024"
+        ]
+      },
+      {
+        "cycle": "2024",
+        "from": "2025-01-12",
+        "to": "2025-01-22",
+        "closes": "2025-02-06",
+        "evidence": "medium",
+        "scope": "2025 Summer Internship, Business Strategy and Product Management - MBA (New York City); a London PM MBA posting followed Jan 24",
+        "note": "A Getro job board recorded it 2025-01-22 and Wayback archived it 2025-01-23. The page's Lever record dates from 2024-12-02, but nothing shows it public before late January; the start of the range allows for about ten days of aggregator lag. Deadline February 6, 2025.",
+        "sources": [
+          "spotify-accel-bspm-mba-2025",
+          "spotify-wb-bspm-mba-nyc-2025"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2026-01-19",
+        "to": "2026-01-22",
+        "closes": "2026-02-05",
+        "evidence": "strong",
+        "scope": "2026 Summer Internship, Business Strategy and Product Management - MBA (New York City); a London version followed Jan 30",
+        "note": "The posting's Lever record was created 2026-01-19 (embedded in the archived page), and Jobright picked it up 2026-01-22. Deadline February 5, 2026.",
+        "sources": [
+          "spotify-wb-bspm-mba-nyc-2026",
+          "spotify-jobright-bspm-mba-2026"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "No Spotify summer-2027 MBA posting as of 2026-10-04: its Lever board has 82 postings and the only internship is 'RecSys 2026 — Intern'. The students page says 2027 internship information is coming soon. The last three cycles posted between late January and early March and closed two to three weeks later, with no late applications accepted.",
+      "postings": []
+    }
+  },
   "tiktok": {
     "hasProgram": true,
     "pattern": "Many team-specific postings (often one per city), mostly TikTok Shop ops plus Ads/Monetization; first batch created late Jul/early Aug and more added through fall; rolling review; max two applications per application period",

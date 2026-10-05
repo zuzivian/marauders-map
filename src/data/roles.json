@@ -366,6 +366,38 @@
         ]
       },
       {
+        "company": "Spotify",
+        "title": "2024 Summer Internship, Product Management (New York City)",
+        "cycles": [
+          "2023"
+        ],
+        "sources": [
+          "spotify-wb-pm-nyc-2024"
+        ]
+      },
+      {
+        "company": "Spotify",
+        "title": "2025 Summer Internship, Business Strategy and Product Management - MBA (New York City)",
+        "cycles": [
+          "2024"
+        ],
+        "sources": [
+          "spotify-wb-bspm-mba-nyc-2025",
+          "spotify-accel-bspm-mba-2025"
+        ]
+      },
+      {
+        "company": "Spotify",
+        "title": "2026 Summer Internship, Business Strategy and Product Management - MBA (New York City)",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "spotify-wb-bspm-mba-nyc-2026",
+          "spotify-jobright-bspm-mba-2026"
+        ]
+      },
+      {
         "company": "TikTok",
         "title": "Product Manager Intern (TikTok Shop Seller Platform) - 2026 Summer (MBA)",
         "cycles": [
@@ -1505,6 +1537,28 @@
         ],
         "sources": [
           "servicenow-sr-strategy-specialist-2026"
+        ]
+      },
+      {
+        "company": "Spotify",
+        "title": "2025 Summer Internship, Business Strategy and Product Management - MBA (New York City)",
+        "cycles": [
+          "2024"
+        ],
+        "sources": [
+          "spotify-wb-bspm-mba-nyc-2025",
+          "spotify-accel-bspm-mba-2025"
+        ]
+      },
+      {
+        "company": "Spotify",
+        "title": "2026 Summer Internship, Business Strategy and Product Management - MBA (New York City)",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "spotify-wb-bspm-mba-nyc-2026",
+          "spotify-jobright-bspm-mba-2026"
         ]
       },
       {

@@ -2873,6 +2873,15 @@
     "kind": "secondary",
     "quote": null
   },
+  "sa-spot": {
+    "url": "https://stockanalysis.com/stocks/spot/",
+    "title": "Spotify Technology S.A. (SPOT) stock price and overview",
+    "publisher": "Stock Analysis",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
   "sa-uber": {
     "url": "https://stockanalysis.com/stocks/uber/",
     "title": "Uber Technologies, Inc. (UBER) stock price and overview",
@@ -3252,6 +3261,123 @@
     "published": "2026-01-30",
     "accessed": "2026-10-04",
     "kind": "secondary",
+    "quote": null
+  },
+  "spotify-20f-2025": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1639920/000162828026006874/ck0001639920-20251231.htm",
+    "title": "Spotify Technology S.A. Form 20-F for FY2025",
+    "publisher": "SEC EDGAR",
+    "published": "2026-02-10",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "we had 7,287, 7,691, and 9,123 full-time employees on average"
+  },
+  "spotify-6k-2025q2": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1639920/000163992025000012/spot-20250630x6xk.htm",
+    "title": "Spotify Technology S.A. Form 6-K: interim financial statements for the six months ended June 30, 2025",
+    "publisher": "SEC EDGAR",
+    "published": "2025-07-29",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "spotify-6k-2026q2": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1639920/000162828026052543/spot-20260630x6xk.htm",
+    "title": "Spotify Technology S.A. Form 6-K: interim financial statements for the six months ended June 30, 2026",
+    "publisher": "SEC EDGAR",
+    "published": "2026-08-04",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "spotify-accel-bspm-mba-2025": {
+    "url": "https://jobs.accel.com/companies/spotify/jobs/45090202-2025-summer-internship-business-strategy-and-product-management-mba-new-york-city",
+    "title": "2025 Summer Internship, Business Strategy and Product Management, MBA (New York City) @ Spotify (Getro listing; datePosted 2025-01-22)",
+    "publisher": "Accel job board (Getro)",
+    "published": "2025-01-22",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "spotify-fortune-wfa-2025": {
+    "url": "https://fortune.com/europe/2025/04/29/spotifys-hr-chief-remote-staff-arent-children-work-from-anywhere/",
+    "title": "Spotify's HR chief says remote staff aren't 'children' as company sticks to work-from-anywhere policy",
+    "publisher": "Fortune",
+    "published": "2025-04-29",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "hiring grownups and then treat them like children"
+  },
+  "spotify-how-we-hire": {
+    "url": "https://www.lifeatspotify.com/start-your-journey",
+    "title": "Start Your Journey (how Spotify hires)",
+    "publisher": "Spotify",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "a second interview with one or two members of the team"
+  },
+  "spotify-jobright-bspm-mba-2026": {
+    "url": "https://jobright.ai/jobs/info/6972959d9b83b424830e8c69",
+    "title": "2026 Summer Internship, Business Strategy and Product Management - MBA (New York City) @ Spotify (Jobright record created 2026-01-22, per its ID)",
+    "publisher": "Jobright.ai",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "spotify-jobsbyculture-2026": {
+    "url": "https://jobsbyculture.com/blog/working-at-spotify-2026",
+    "title": "Working at Spotify in 2026: Squads, Autonomy & What Survived the Layoffs",
+    "publisher": "JobsByCulture",
+    "published": "2026-04-28",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "There are no mandatory office days."
+  },
+  "spotify-students": {
+    "url": "https://www.lifeatspotify.com/start-your-journey/students",
+    "title": "Students | Life at Spotify",
+    "publisher": "Spotify",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Information regarding our 2027 internship opportunities coming soon."
+  },
+  "spotify-wb-bspm-mba-nyc-2025": {
+    "url": "https://web.archive.org/web/20250123123540/https://www.lifeatspotify.com/jobs/2025-summer-internship-business-strategy-and-product-management-mba-new-york-city",
+    "title": "2025 Summer Internship, Business Strategy and Product Management - MBA (New York City) (Wayback snapshot 2025-01-23)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "The last day to apply is February 6th 2025 at 12 PM ET"
+  },
+  "spotify-wb-bspm-mba-nyc-2026": {
+    "url": "https://web.archive.org/web/20260126063924/https://www.lifeatspotify.com/jobs/2026-summer-internship-business-strategy-and-product-management-mba-new-york-city",
+    "title": "2026 Summer Internship, Business Strategy and Product Management - MBA (New York City) (Wayback snapshot 2026-01-26; Lever createdAt 2026-01-19)",
+    "publisher": "Internet Archive",
+    "published": "2026-01-19",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "we ask that you come into the office 3 days a week"
+  },
+  "spotify-wb-pm-nyc-2024": {
+    "url": "https://web.archive.org/web/20240305120204/https://www.lifeatspotify.com/jobs/2024-summer-internship-product-management-new-york-city",
+    "title": "2024 Summer Internship, Product Management (New York City) (Wayback snapshot 2024-03-05; Lever createdAt 2024-02-27)",
+    "publisher": "Internet Archive",
+    "published": "2024-02-27",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "One opportunity will be specifically for candidates enrolled in an MBA program"
+  },
+  "spotify-xbrl": {
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001639920.json",
+    "title": "Spotify Technology S.A. XBRL company facts (20-F annual revenue, ifrs-full)",
+    "publisher": "SEC EDGAR",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
     "quote": null
   },
   "stanford-academic-calendar-2026-27": {

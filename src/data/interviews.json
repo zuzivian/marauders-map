@@ -750,6 +750,58 @@
       "servicenow-li-srpm-2026"
     ]
   },
+  "spotify": {
+    "confidence": "medium",
+    "roleScope": "All Spotify roles (general hiring page; no MBA-specific process published)",
+    "stages": [
+      {
+        "label": "Recruiter call",
+        "types": [
+          "behavioral"
+        ],
+        "detail": "Video or phone interview with a recruiter about you, the role and your background.",
+        "sources": [
+          "spotify-how-we-hire"
+        ]
+      },
+      {
+        "label": "Team interview",
+        "types": [
+          "behavioral"
+        ],
+        "detail": "A second interview with one or two members of the team; content not specified.",
+        "sources": [
+          "spotify-how-we-hire"
+        ]
+      },
+      {
+        "label": "Final round",
+        "types": [
+          "behavioral"
+        ],
+        "detail": "Meetings with several people across the business; when there are multiple interviewers, one leads and the others shadow.",
+        "sources": [
+          "spotify-how-we-hire"
+        ]
+      },
+      {
+        "label": "Decision",
+        "types": [
+          "milestone"
+        ],
+        "detail": null,
+        "sources": [
+          "spotify-how-we-hire"
+        ]
+      }
+    ],
+    "distinctive": "Spotify says it tells candidates who they'll meet at every stage, well ahead of time. For internships the deadline is hard: it does not accept applications after it.",
+    "caveat": "This is Spotify's general process, not one written for MBA internships; whether the business strategy or product track includes a case or product exercise isn't stated.",
+    "sources": [
+      "spotify-how-we-hire",
+      "spotify-students"
+    ]
+  },
   "tiktok": {
     "confidence": "medium",
     "roleScope": "Early-career roles generally (incl. MBA interns); not MBA-specific",
