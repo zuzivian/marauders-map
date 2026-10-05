@@ -585,15 +585,6 @@
     "kind": "secondary",
     "quote": null
   },
-  "cisco-10k-customers": {
-    "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm",
-    "title": "Cisco Systems Form 10-K FY2026, Business overview",
-    "publisher": "Cisco Systems / SEC EDGAR",
-    "published": "2026-09-02",
-    "accessed": "2026-10-04",
-    "kind": "primary",
-    "quote": "Our customers include businesses of all sizes, public institutions, governments, and service providers"
-  },
   "cisco-10k-fy26": {
     "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm",
     "title": "Cisco Systems Form 10-K for fiscal year ended July 25, 2026",
@@ -900,15 +891,6 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": "As of January 30, 2026, we had approximately 97,000 employees."
-  },
-  "dell-10k-other": {
-    "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000008/dell-20260130.htm",
-    "title": "Dell Technologies Form 10-K FY2026, segment note",
-    "publisher": "Dell Technologies / SEC EDGAR",
-    "published": "2026-03-16",
-    "accessed": "2026-10-04",
-    "kind": "primary",
-    "quote": "Corporate and other consists of results of divested businesses or non-reportable segments"
   },
   "dell-10q-q2fy27": {
     "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000046/dell-20260731.htm",
@@ -3300,15 +3282,6 @@
     "kind": "secondary",
     "quote": null
   },
-  "tiktok-sacra": {
-    "url": "https://sacra.com/c/bytedance/",
-    "title": "ByteDance revenue, valuation & funding",
-    "publisher": "Sacra",
-    "published": null,
-    "accessed": "2026-10-04",
-    "kind": "secondary",
-    "quote": null
-  },
   "tiktok-seekingalpha-valuation": {
     "url": "https://seekingalpha.com/news/4556453-bytedance-valued-at-550b-in-proposed-general-atlantic-stake-sale-reuters",
     "title": "ByteDance valued at $550B in proposed General Atlantic stake sale: Reuters",
@@ -3759,15 +3732,6 @@
     "published": null,
     "accessed": "2026-10-04",
     "kind": "secondary",
-    "quote": null
-  },
-  "waymo-on-uber": {
-    "url": "https://waymo.com/waymo-on-uber/",
-    "title": "Waymo On Uber | Ride with Waymo in Austin and Atlanta",
-    "publisher": "Waymo",
-    "published": null,
-    "accessed": "2026-10-04",
-    "kind": "primary",
     "quote": null
   },
   "waymo-revelio-headcount": {

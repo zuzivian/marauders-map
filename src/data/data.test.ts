@@ -50,16 +50,11 @@ describe("companies", () => {
   });
 
   it.each(companies.map((c) => [c.id, c] as const))("%s metrics are coherent", (_, c) => {
-    for (const m of [c.marketCap, c.growth, c.headcount, c.b2bPayer, c.b2bUser]) {
+    for (const m of [c.marketCap, c.growth, c.headcount]) {
       expect(m.sources.length, "every metric is sourced").toBeGreaterThan(0);
       if (m.low !== undefined) expect(m.low).toBeLessThanOrEqual(m.value);
       if (m.high !== undefined) expect(m.high).toBeGreaterThanOrEqual(m.value);
       if (m.asOf !== undefined) expect(isISO(m.asOf)).toBe(true);
-    }
-    for (const m of [c.b2bPayer, c.b2bUser]) {
-      expect(m.value).toBeGreaterThanOrEqual(0);
-      expect(m.value).toBeLessThanOrEqual(100);
-      expect(m.reasoning.length).toBeGreaterThan(20);
     }
     expect(c.marketCap.value).toBeGreaterThan(0);
     expect(c.marketCap.asOf && isISO(c.marketCap.asOf)).toBe(true);

@@ -22,7 +22,7 @@ npm start          # serve out/ locally
 
 | File | What it holds |
 |---|---|
-| `companies.json` | Market value, revenue growth, headcount, consumer/business splits, office policy. Each metric has `value`, an optional `low`–`high` range, `asOf`, and `sources`. |
+| `companies.json` | Market value, revenue growth, headcount, office policy. Each metric has `value`, an optional `low`–`high` range, `asOf`, and `sources`. |
 | `hiring.json` | Per company: when MBA internship postings went live in each cycle (a date *range* plus evidence strength), and what's posted right now. |
 | `roles.json` | The role dictionary, every posted title we've seen (with sources), and the keyword weights the title search uses. |
 | `interviews.json` | Interview stages, only where a company (high confidence) or its general hiring page (medium) describes them. |

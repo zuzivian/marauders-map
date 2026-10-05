@@ -78,20 +78,6 @@ function WeekStrip({ company: c }: { company: Company }) {
   );
 }
 
-/** Consumers ← → businesses, with the estimate's plausible range shaded. */
-function SplitBar({ label, m }: { label: string; m: { value: number; low?: number; high?: number } }) {
-  return (
-    <div className="split">
-      <div className="split-l"><span>{label}</span><span className="split-v">{m.value}% business</span></div>
-      <div className="split-track" role="img" aria-label={`${label}: ${m.value}% business${m.low !== undefined ? `, plausibly ${m.low}–${m.high}%` : ""}`}>
-        {m.low !== undefined && m.high !== undefined && <span className="split-range" style={{ left: `${m.low}%`, width: `${m.high - m.low}%` }} />}
-        <span className="split-mark" style={{ left: `${m.value}%` }} />
-      </div>
-      <div className="split-ends" aria-hidden><span>consumers</span><span>businesses</span></div>
-    </div>
-  );
-}
-
 function Stages({ company }: { company: Company }) {
   const iv = interviews[company.id];
   if (!iv) return null;
@@ -129,7 +115,7 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
   const myRoles = roles.map((r) => ({ r, titles: r.titles.filter((t) => t.company === c.name), mark: roleMark(r, c, item, cycle) })).filter((x) => x.titles.length);
   const now = h.windows.find((w) => w.cycle === cycle);
   const allSources = [
-    ...c.marketCap.sources, ...c.growth.sources, ...c.headcount.sources, ...c.b2bPayer.sources, ...c.b2bUser.sources, ...c.office.sources,
+    ...c.marketCap.sources, ...c.growth.sources, ...c.headcount.sources, ...c.office.sources,
     ...h.windows.flatMap((w) => w.sources), ...h.current.postings.flatMap((p) => p.sources), ...(interviews[c.id]?.sources ?? []),
     ...myRoles.flatMap((x) => x.titles.flatMap((t) => t.sources)),
   ];
@@ -183,14 +169,6 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
           <p className="muted">Office: {c.office.summary}</p>
         </details>
       )}
-
-      <SplitBar label="who pays" m={c.b2bPayer} />
-      <SplitBar label="who uses it" m={c.b2bUser} />
-      <details className="why">
-        <summary>How we estimated these splits</summary>
-        <p><strong>Who pays.</strong> {c.b2bPayer.reasoning}</p>
-        <p><strong>Who uses.</strong> {c.b2bUser.reasoning}</p>
-      </details>
 
       <h4>mba intern roles</h4>
       {myRoles.length ? (

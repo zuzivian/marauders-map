@@ -11,7 +11,7 @@ import { useWidth } from "@/lib/useWidth";
 import { useGuide } from "./Guide";
 import CompanyPanel from "./CompanyPanel";
 
-type AxisKey = "appOpen" | "b2bUser" | "b2bPayer" | "growth" | "marketCap" | "headcount" | "office";
+type AxisKey = "appOpen" | "growth" | "marketCap" | "headcount" | "office";
 interface Point { v: number; lo?: number; hi?: number }
 interface Axis {
   label: string;
@@ -40,8 +40,6 @@ const AXES: Record<AxisKey, Axis> = {
     fmt: (v) => (v >= NO_PROGRAM - 0.5 ? "none" : SEASON_MONTHS[[...SEASON_MONTHS.keys()].findLast((i) => monthStartWeek(i, cycle) <= v + 0.5) ?? 0]),
     ticks: () => [1, 3, 5, 7, 9].map((i) => monthStartWeek(i, cycle)).concat(NO_PROGRAM),
   },
-  b2bUser: { label: "Who uses it: consumers → businesses", short: "Who uses it", get: (c) => range(c.b2bUser), fmt: (v) => `${v}%`, ticks: () => [0, 25, 50, 75, 100] },
-  b2bPayer: { label: "Who pays: consumers → businesses", short: "Who pays", get: (c) => range(c.b2bPayer), fmt: (v) => `${v}%`, ticks: () => [0, 25, 50, 75, 100] },
   growth: { label: "Revenue growth, year over year", short: "Revenue growth", log: true, get: (c) => range(c.growth), fmt: (v) => `${v}%`, ticks: logTicks },
   marketCap: { label: "Market value ($)", short: "Market value", log: true, get: (c) => range(c.marketCap), fmt: fmtCap, ticks: (d) => logTicks(d).filter((t) => String(t)[0] !== "5") },
   headcount: { label: "Employees", short: "Employees", log: true, get: (c) => range(c.headcount), fmt: fmtCount, ticks: (d) => logTicks(d).filter((t) => String(t)[0] === "1") },
@@ -106,8 +104,6 @@ export default function Explorer() {
   const ax = AXES[x], ay = AXES[y];
   const xt = ax.ticks?.(sx.domain() as [number, number]) ?? sx.ticks(5);
   const yt = ay.ticks?.(sy.domain() as [number, number]) ?? sy.ticks(5);
-  const isDefault = x === "b2bUser" && y === "growth";
-  const growthMid = useMemo(() => { const g = companies.map((c) => c.growth.value).sort((a, b) => a - b); return g[Math.floor(g.length / 2)]; }, []);
   const capAsOf = latest(companies.filter((c) => c.marketCap.kind === "market cap").map((c) => c.marketCap.asOf));
   const sel = companies.find((c) => c.id === selected)!;
   const fs = narrow ? 11 : 12;
@@ -140,16 +136,6 @@ export default function Explorer() {
                 <text x={M.l - 8} y={sy(t) + 4} textAnchor="end" className="tick" style={{ fontSize: fs - 1 }}>{ay.fmt(t)}</text>
               </g>
             ))}
-            {isDefault && (
-              <g className="quads" style={{ fontSize: narrow ? 13 : 16 }}>
-                <line x1={sx(50)} x2={sx(50)} y1={M.t} y2={H - M.b} className="divider" />
-                <line x1={M.l} x2={W - M.r} y1={sy(growthMid)} y2={sy(growthMid)} className="divider" />
-                <text x={M.l + 8} y={M.t + 14}>Consumer, fast</text>
-                <text x={W - M.r - 6} y={M.t + 14} textAnchor="end">Business, fast</text>
-                <text x={M.l + 8} y={H - M.b - 8}>Consumer, steady</text>
-                <text x={W - M.r - 6} y={H - M.b - 8} textAnchor="end">Business, steady</text>
-              </g>
-            )}
             <g className="whiskers">
               {nodes.map((d) => {
                 const px = ax.get(d.c), py = ay.get(d.c), dx = d.x - d.tx, dy = d.y - d.ty;
@@ -190,8 +176,7 @@ export default function Explorer() {
         </div>
         <div className="caveat">
           Market values as of {capAsOf}{companies.some((c) => c.marketCap.kind === "private valuation") ? " (private companies: latest reported valuation)" : ""}.
-          Growth is revenue over the latest twelve reported months vs the twelve before, from SEC filings; for private companies it&apos;s reported figures, shown as a range. Consumer/business splits are our estimates from segment
-          reporting, since no company reports them; the bars show the plausible range. On &ldquo;applications open&rdquo;, bars span past cycles.
+          Growth is revenue over the latest twelve reported months vs the twelve before, from SEC filings; for private companies it&apos;s reported figures, shown as a range. On &ldquo;applications open&rdquo;, bars span past cycles.
         </div>
       </div>
       <CompanyPanel company={sel} />

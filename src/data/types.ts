@@ -55,8 +55,6 @@ export interface Company {
   marketCap: Metric & { kind: "market cap" | "private valuation" }; // $B
   growth: Metric & { basis: string }; // % revenue growth
   headcount: Metric;
-  b2bPayer: Metric & { reasoning: string }; // % of revenue paid by businesses
-  b2bUser: Metric & { reasoning: string }; // % of revenue from products mainly used by businesses
   office: OfficePolicy;
 }
 
