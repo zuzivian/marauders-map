@@ -1263,12 +1263,13 @@
         "low": 31.88,
         "high": 50,
         "per": "hour",
-        "where": "Round Rock, TX",
+        "where": "Round Rock, TX posting; the range varies by location",
         "cycle": "2025",
         "postings": 1,
-        "note": "From last cycle's Product Marketing Graduate Intern posting. The Product Management MBA posting gives $50.60 with no unit.",
+        "note": "From last cycle's Product Marketing MBA posting, which LinkedIn titles \"Product Marketing Graduate Intern\" but which requires \"MBA Class of 2027\": $31.88–$50.00 per hour, depending on location. The Product Management MBA posting says only \"$50.60\" with no unit in every copy found, so it is left out. No summer 2027 MBA posting is up yet.",
         "sources": [
           "dell-li-pmm-grad-2025-pay",
+          "dell-li-pmm-grad-2025",
           "dell-li-pm-mba-2025"
         ]
       },
