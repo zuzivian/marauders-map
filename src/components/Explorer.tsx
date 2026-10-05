@@ -100,8 +100,8 @@ type Node = SimulationNodeDatum & { c: Company; tx: number; ty: number; r: numbe
 
 export default function Explorer() {
   const { selected, select } = useGuide();
-  const [x, setX] = useState<AxisKey>("pay");
-  const [y, setY] = useState<AxisKey>("office");
+  const [x, setX] = useState<AxisKey>("office");
+  const [y, setY] = useState<AxisKey>("pay");
   const [wrapRef, measured] = useWidth<HTMLDivElement>(720);
   const W = measured || 720; // the section starts folded, where the chart measures 0 wide; lay out as prerendered until it opens
   // Animate only when the reader changes an axis, not when the chart first measures itself or resizes.

@@ -178,9 +178,13 @@ function HorizontalTrail({ items, W, todayWk, live, onPick }: { items: TrailItem
 /** The same trail turned on its side for phones: time runs down the path, posted companies on the left, not-yet on the right. */
 function VerticalTrail({ items, W, todayWk, live, onPick }: { items: TrailItem[]; W: number; todayWk: number; live: boolean; onPick: (id: string) => void }) {
   const { i0, i1, w0, w1 } = seasonSpan(items, todayWk);
-  const PER_WEEK = 22, TAG = 19, GAP = 4, TOP = 30;
+  const PER_WEEK = 22, FAR_WEEK = 7, TAG = 19, GAP = 4, TOP = 30;
   const px = Math.round(W / 2);
-  const y = (wk: number) => TOP + (wk - w0) * PER_WEEK;
+  // Months well past today hold only estimates, so they're drawn closer together: full spacing up to the first
+  // month that starts at least three weeks out, then tight. Tags still stack clear of each other below it.
+  const far = [...SEASON_MONTHS.keys()].map((i) => monthStartWeek(i, cycle)).find((w) => w >= todayWk + 3) ?? w1;
+  const cut = Math.max(w0, Math.min(w1, far));
+  const y = (wk: number) => TOP + (Math.min(wk, cut) - w0) * PER_WEEK + Math.max(0, wk - cut) * FAR_WEEK;
 
   // Stack tags down each side so they never overlap; stems run back to each company's spot on the path.
   const bottoms = { left: -Infinity, right: -Infinity };
@@ -205,6 +209,7 @@ function VerticalTrail({ items, W, todayWk, live, onPick }: { items: TrailItem[]
           className={`band band-${b.kind}`}><title>{`${b.label}: ${fmtDate(b.from)} – ${fmtDate(b.to!)}`}</title></rect>
       ))}
       <line x1={px} x2={px} y1={TOP - 6} y2={y(w1)} className="path" />
+      {cut < w1 && <text x={px - 22} y={y(cut) + 22} textAnchor="end" className="side">later months drawn closer</text>}
       {placed.map(({ it, side, tx, ty, width }) => {
         const py = y(Math.max(w0, it.week)), edge = side === "left" ? tx + width : tx;
         return (

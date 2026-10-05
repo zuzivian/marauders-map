@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { scaleLog } from "d3-scale";
 import { companies, hiring, interviews, meta, roles, sources, type Company } from "@/data";
 import type { Intern, StageType } from "@/data/types";
@@ -71,42 +72,64 @@ function WeekStrip({ company: c }: { company: Company }) {
 }
 
 const STANCE: Record<NonNullable<Intern["sponsorship"]>["stance"], string> = {
-  sponsors: "Sponsors visas", "no sponsorship": "No visa sponsorship", "authorization required": "Must be authorized to work in the US",
+  sponsors: "Sponsors visas", "no sponsorship": "No visa sponsorship", "authorization required": "US work authorization required",
 };
 const cycleName = (c: string) => (c === cycle ? "this cycle" : `${c}–${Number(c) + 1 - 2000} cycle`);
+const city = (place: string) => place.replace(/, [A-Z]{2}$/, "");
 
-/** What the MBA intern postings say: pay, where, visas, how teams are set. Missing parts say so. */
+/** What the MBA intern postings say, as four cards: pay and visas first, then where and how teams are set. */
 function InternFacts({ company: c }: { company: Company }) {
   const i = c.intern ?? {};
   const { pay, locations: loc, sponsorship: visa, teamModel: team } = i;
   const visaQuote = visa ? sources[visa.sources[0]]?.quote : null;
+  const places = loc?.places ?? [];
   return (
     <>
       <h4>The internship</h4>
-      <dl className="facts">
-        <dt>pay</dt>
-        <dd>
+      <div className="cards">
+        <div className="card">
+          <div className="card-l">Pay</div>
           {pay ? (
             <>
-              <span className="fv">{fmtMonthly(perMonth(pay.low, pay.per))}{pay.high > pay.low ? `–${fmtMonthly(perMonth(pay.high, pay.per))}` : ""}</span> a month{" "}
-              <span className="muted">(posted as {fmtStatedPay(pay)}, {pay.where}; {cycleName(pay.cycle)}, {pay.postings} posting{pay.postings === 1 ? "" : "s"})</span> <Cite ids={pay.sources} />
+              <div className="card-v big">{fmtMonthly(perMonth(pay.low, pay.per))}{pay.high > pay.low ? `–${fmtMonthly(perMonth(pay.high, pay.per))}` : ""}<span className="card-u"> a month</span></div>
+              <div className="card-s">posted as {fmtStatedPay(pay)} <Cite ids={pay.sources} /></div>
             </>
-          ) : <span className="muted">not stated on the postings we found</span>}
-        </dd>
-        {loc && (<><dt>where</dt><dd>{loc.places.join("; ")} <Cite ids={loc.sources} /></dd></>)}
-        <dt>visa</dt>
-        <dd>
+          ) : <div className="card-v none">Not stated</div>}
+        </div>
+        <div className={`card visa-${visa ? visa.stance.replace(/ /g, "-") : "none"}`}>
+          <div className="card-l">Visa</div>
           {visa ? (
-            <>{STANCE[visa.stance]}{visaQuote && <>: <q>{visaQuote}</q></>} <span className="muted">({visa.scope}, {cycleName(visa.cycle)})</span> <Cite ids={visa.sources} /></>
-          ) : <span className="muted">no posting we found says either way</span>}
-        </dd>
-        {team && (<><dt>team</dt><dd>{team.model[0].toUpperCase() + team.model.slice(1)}{team.note && <span className="muted">. {team.note}</span>} <Cite ids={team.sources} /></dd></>)}
-      </dl>
-      {pay?.note && (
+            <>
+              <div className="card-v">{STANCE[visa.stance]}</div>
+              {visaQuote && <div className="card-s"><q>{visaQuote}</q> <Cite ids={visa.sources} /></div>}
+            </>
+          ) : <div className="card-v none">Not stated</div>}
+        </div>
+        <div className="card">
+          <div className="card-l">Where</div>
+          {places.length ? (
+            <>
+              <div className="card-v">{places.slice(0, 2).map(city).join(", ")}</div>
+              {places.length > 2 ? (
+                <details className="card-more"><summary>+{places.length - 2} more</summary>{places.slice(2).map(city).join(", ")} <Cite ids={loc!.sources} /></details>
+              ) : <div className="card-s"><Cite ids={loc!.sources} /></div>}
+            </>
+          ) : <div className="card-v none">Not stated</div>}
+        </div>
+        <div className="card">
+          <div className="card-l">Team</div>
+          {team ? (
+            <><div className="card-v">{team.model[0].toUpperCase() + team.model.slice(1)}</div><div className="card-s"><Cite ids={team.sources} /></div></>
+          ) : <div className="card-v none">Not stated</div>}
+        </div>
+      </div>
+      {(pay || visa || team?.note) && (
         <details className="why">
-          <summary>Notes on pay</summary>
-          <p>{pay.note}</p>
-          <p className="muted">Monthly figures assume 40-hour weeks for hourly rates and divide annual rates by 12. They are the posted rates only.</p>
+          <summary>Notes on these figures</summary>
+          {pay && <p>Pay: {fmtStatedPay(pay)}, {pay.where}; {cycleName(pay.cycle)}, {pay.postings} posting{pay.postings === 1 ? "" : "s"}.{pay.note && ` ${pay.note}`}</p>}
+          {pay && <p className="muted">Monthly figures assume 40-hour weeks for hourly rates and divide annual rates by 12. They are the posted rates only.</p>}
+          {visa && <p>Visa: {visa.scope}, {cycleName(visa.cycle)}.</p>}
+          {team?.note && <p>Team: {team.note}</p>}
         </details>
       )}
     </>
@@ -157,6 +180,7 @@ function Stages({ company }: { company: Company }) {
 
 export default function CompanyPanel({ company: c }: { company: Company }) {
   const { today, live } = useGuide();
+  const [fullFor, setFullFor] = useState<string | null>(null); // whose long status note is expanded
   const h = hiring[c.id];
   const item = trailItems([c], hiring, today, cycle)[0];
   const myRoles = roles.map((r) => ({ r, titles: r.titles.filter((t) => t.company === c.name), mark: roleMark(r, c, item, cycle) })).filter((x) => x.titles.length);
@@ -173,17 +197,26 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
 
   return (
     <aside id="field-notes" className="panel" aria-label={`Field notes: ${c.name}`}>
-      <div className="label">Field notes</div>
-      <h3>{c.name}</h3>
-      <div className="sub">{c.model} · {c.hq} · {c.ai}</div>
-      <div className="panel-tools"><StarButton company={c} /><CopyLink key={c.id} id={c.id} /></div>
+      <div className="panel-head">
+        <div>
+          <div className="label">Field notes</div>
+          <h3>{c.name}</h3>
+          <div className="sub">{c.model} · {c.hq} · {c.ai}</div>
+        </div>
+        <div className="panel-tools"><StarButton company={c} /><CopyLink key={c.id} id={c.id} /></div>
+      </div>
 
       <div className={`status m-${item?.mark ?? "later"}`}>
         <p className="status-head">
           {item && <MarkIcon mark={item.mark} size={13} />}<strong>{item ? item.status.headline : "No MBA internship"}</strong>
           <span className="sr-only">{item ? ` (${MARK[item.mark].label})` : ""}</span>
         </p>
-        <p className="statusnote">{prose(h.current.summary, Number(cycle))} <Cite ids={h.current.sources ?? []} />{!live && <span className="muted"> As of {fmtDate(h.current.checked, { year: true })}.</span>}</p>
+        <p className={`statusnote${fullFor === c.id ? "" : " clamp"}`}>{prose(h.current.summary, Number(cycle))} <Cite ids={h.current.sources ?? []} />{!live && <span className="muted"> As of {fmtDate(h.current.checked, { year: true })}.</span>}</p>
+        {h.current.summary.length > 200 && (
+          <button className="linkish quiet more-toggle" onClick={() => setFullFor(fullFor === c.id ? null : c.id)} aria-expanded={fullFor === c.id}>
+            {fullFor === c.id ? "less" : "more"}
+          </button>
+        )}
         {h.current.postings.length > 0 && (
           <details className="why">
             <summary>This cycle&apos;s posting{h.current.postings.length === 1 ? "" : "s"} ({h.current.postings.length})</summary>
@@ -199,7 +232,7 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
 
       {h.hasProgram && <InternFacts company={c} />}
 
-      <GettingIn company={c} />
+      <div className="block-gi"><GettingIn company={c} /></div>
 
       {/* Everything a student doesn't decide with first, behind two labeled folds. */}
       <details className="more">
