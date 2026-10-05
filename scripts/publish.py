@@ -1,7 +1,8 @@
 """Publish the static export in out/ to here.now.
 
 Run via `npm run deploy`, which builds (and so runs the data tests) first.
-Without HERENOW_API_KEY the site is anonymous and expires in 24 hours; claim it
+With an API key (HERENOW_API_KEY, or ~/.herenow/credentials) the site is permanent.
+Without one the site is anonymous and expires in 24 hours; claim it
 from the claim URL (saved in .herenow/state.json, which is gitignored) to keep it.
 Re-running updates the same site.
 """
@@ -15,9 +16,18 @@ mimetypes.add_type("font/woff2", ".woff2")
 mimetypes.add_type("text/plain", ".txt")  # Next's RSC payloads
 
 
+def api_key():
+    """HERENOW_API_KEY, else the key saved at ~/.herenow/credentials (here.now's recommended location)."""
+    key = os.environ.get("HERENOW_API_KEY")
+    cred = pathlib.Path.home() / ".herenow" / "credentials"
+    if not key and cred.exists():
+        key = cred.read_text().strip().split("=")[-1].strip() or None
+    return key
+
+
 def call(method, url, body=None, headers=None, raw=None):
     h = {"Content-Type": "application/json", **(headers or {})}
-    key = os.environ.get("HERENOW_API_KEY")
+    key = api_key()
     if key and url.startswith(API):  # never send the key to presigned upload URLs
         h["Authorization"] = f"Bearer {key}"
     data = raw if raw is not None else (json.dumps(body).encode() if body is not None else None)
@@ -69,7 +79,7 @@ def main():
     STATE.write_text(json.dumps(state, indent=2))
     print(json.dumps({"siteUrl": res["siteUrl"], "expiresAt": state.get("expiresAt"),
                       "uploaded": len(up["uploads"]), "skipped": len(up.get("skipped", [])), "finalize": fin.get("status", fin)}, indent=2))
-    if state.get("claimUrl") and not os.environ.get("HERENOW_API_KEY"):
+    if state.get("claimUrl") and not api_key():
         print("Anonymous site: open the claimUrl in .herenow/state.json to keep it past expiresAt.")
 
 
