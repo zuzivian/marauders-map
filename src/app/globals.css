@@ -199,6 +199,13 @@ details.why p { margin: 6px 0; }
 .statuscard .mi { margin-top: 2px; }
 .statuscard strong { font-weight: 500; color: var(--mk); }
 .statusnote { font-size: 12.5px; color: var(--ink-2); line-height: 1.45; margin-top: 2px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.facts { display: grid; grid-template-columns: 44px 1fr; gap: 6px 10px; margin: 0; font-size: 13px; line-height: 1.45; color: var(--ink-2); }
+.facts dt { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); padding-top: 2px; }
+.facts dd { margin: 0; min-width: 0; }
+.facts .fv { font-family: var(--serif); font-size: 19px; color: var(--ink); }
+.facts q { font-family: var(--serif); font-style: italic; }
+.facts .pulse { list-style: none; margin: 0; padding: 0; }
+.facts .pulse li + li { margin-top: 3px; }
 .tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .tile { border: 0.5px solid var(--rule); padding: 8px 10px; background: var(--paper); min-width: 0; }
 .tile .tv { font-family: var(--serif); font-size: 26px; line-height: 1.05; color: var(--ink); }

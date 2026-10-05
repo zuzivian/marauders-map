@@ -19,7 +19,7 @@ const SECTIONS = [
   { id: "windows", short: "timing", title: "When applications open", dek: "Past cycles, with the uncertainty left in. A tight cluster means you can plan around it; a wide smear means watch the postings.", body: <Windows /> },
   {
     id: "companies", short: "companies", title: "The lay of the land",
-    dek: `${cap(count(companies.length))} big tech companies, ${count(withProgram)} of them with MBA internships, placed by filings and reported figures. Change the axes to see them from a different angle, and pick any company for its field notes.`,
+    dek: `${cap(count(companies.length))} big tech companies, ${count(withProgram)} of them with MBA internships. Plot them by what their intern postings pay, whether they say anything about visas, when they open, or how big the company is, and pick any company for its field notes.`,
     body: <Explorer />,
   },
   { id: "roles", short: "roles", title: "What the titles mean", dek: `${cap(count(roles.length))} jobs, ${titleCount} posted titles. Paste a title to decode it, or read across a row to see who's hiring for it right now.`, body: <RoleDecoder /> },
@@ -69,7 +69,7 @@ export default function Home() {
 
         <footer className="foot">
           <div>
-            <strong>How this is made.</strong> Every number links to its source. Market values and revenue come from SEC filings and market data;
+            <strong>How this is made.</strong> Every number links to its source. Intern pay, locations and visa terms come from the postings themselves; market values and revenue from SEC filings and market data;
             application dates come from dated postings and archived snapshots. Estimates show their range. Where we couldn&apos;t find solid evidence,
             we left it out rather than guess.
           </div>

@@ -273,7 +273,7 @@
       "pulse": [
         {
           "date": "2026-05-20",
-          "what": "Laid off about 17% of staff to refocus on AI",
+          "what": "Laid off about 3,000 people (17% of staff) to refocus on AI",
           "low": 3000,
           "high": 3000,
           "sources": [
@@ -544,7 +544,7 @@
       "pulse": [
         {
           "date": "2026-02-10",
-          "what": "Laid off staff in marketing, product management, data analytics and Agentforce",
+          "what": "Laid off fewer than 1,000 in marketing, product management, data analytics and Agentforce",
           "high": 1000,
           "sources": [
             "salesforce-layoffs-bi-2026-02"
@@ -840,7 +840,7 @@
         },
         {
           "date": "2026-04-23",
-          "what": "Laid off about 10% of staff (some 8,000, on May 20) and left 6,000 open roles unfilled",
+          "what": "Laid off about 8,000 (10%) on May 20 and left 6,000 open roles unfilled",
           "low": 8000,
           "high": 8000,
           "sources": [
@@ -1025,7 +1025,7 @@
         },
         {
           "date": "2026-09-02",
-          "what": "Cut about 10% of staff to remove management layers",
+          "what": "Cut about 3,300 roles (10%) to remove management layers",
           "low": 3300,
           "high": 3300,
           "sources": [
@@ -1779,7 +1779,7 @@
       "pulse": [
         {
           "date": "2026-07-28",
-          "what": "Cutting about 7% of staff, mostly in technology and product",
+          "what": "Cutting about 2,600 roles (7%), mostly in technology and product",
           "low": 2600,
           "high": 2600,
           "sources": [
@@ -1946,7 +1946,7 @@
         },
         {
           "date": "2026-09-29",
-          "what": "Cut about 2.5% of staff, mainly in Product and Technology",
+          "what": "Cut about 500 roles (2.5%), mainly in Product and Technology",
           "low": 500,
           "high": 500,
           "sources": [

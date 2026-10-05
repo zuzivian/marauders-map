@@ -1,11 +1,11 @@
 "use client";
 
 import { scaleLog } from "d3-scale";
-import { companies, hiring, interviews, meta, roles, type Company } from "@/data";
-import type { StageType } from "@/data/types";
+import { companies, hiring, interviews, meta, roles, sources, type Company } from "@/data";
+import type { Intern, StageType } from "@/data/types";
 import { SEASON_MONTHS, SEASON_WEEKS, fmtDate, fmtRange, monthStartWeek, span, weekOf } from "@/lib/season";
 import { MARK, roleMark, trailItems } from "@/lib/marks";
-import { fmtCap, fmtCount, fmtPct, prose } from "@/lib/format";
+import { fmtCap, fmtCount, fmtMonthly, fmtPct, fmtStatedPay, perMonth, prose } from "@/lib/format";
 import { useGuide } from "./Guide";
 import { Cite, SourceList } from "./Sources";
 import { openCorrection } from "./Corrections";
@@ -78,6 +78,61 @@ function WeekStrip({ company: c }: { company: Company }) {
   );
 }
 
+const STANCE: Record<NonNullable<Intern["sponsorship"]>["stance"], string> = {
+  sponsors: "Sponsors visas", "no sponsorship": "No visa sponsorship", "authorization required": "Must be authorized to work in the US",
+};
+const cycleName = (c: string) => (c === cycle ? "this cycle" : `${c}–${Number(c) + 1 - 2000} cycle`);
+
+/** What the MBA intern postings say: pay, where, visas, how teams are set, and recent staff cuts. Missing parts say so. */
+function InternFacts({ company: c }: { company: Company }) {
+  const i = c.intern ?? {};
+  const { pay, locations: loc, sponsorship: visa, teamModel: team, pulse } = i;
+  const visaQuote = visa ? sources[visa.sources[0]]?.quote : null;
+  return (
+    <>
+      <h4>the internship</h4>
+      <dl className="facts">
+        <dt>pay</dt>
+        <dd>
+          {pay ? (
+            <>
+              <span className="fv">{fmtMonthly(perMonth(pay.low, pay.per))}{pay.high > pay.low ? `–${fmtMonthly(perMonth(pay.high, pay.per))}` : ""}</span> a month{" "}
+              <span className="muted">· posted as {fmtStatedPay(pay)}, {pay.where} · {cycleName(pay.cycle)}, {pay.postings} posting{pay.postings === 1 ? "" : "s"}</span> <Cite ids={pay.sources} />
+            </>
+          ) : <span className="muted">not stated on the postings we found</span>}
+        </dd>
+        {loc && (<><dt>where</dt><dd>{loc.places.join(" · ")} <Cite ids={loc.sources} /></dd></>)}
+        <dt>visa</dt>
+        <dd>
+          {visa ? (
+            <>{STANCE[visa.stance]}{visaQuote && <>: <q>{visaQuote}</q></>} <span className="muted">· {visa.scope}, {cycleName(visa.cycle)}</span> <Cite ids={visa.sources} /></>
+          ) : <span className="muted">no posting we found says either way</span>}
+        </dd>
+        {team && (<><dt>team</dt><dd>{team.model[0].toUpperCase() + team.model.slice(1)}{team.note && <span className="muted"> · {team.note}</span>} <Cite ids={team.sources} /></dd></>)}
+        {pulse?.length ? (
+          <>
+            <dt>cuts</dt>
+            <dd>
+              <ul className="pulse">
+                {[...pulse].sort((a, b) => b.date.localeCompare(a.date)).map((p) => (
+                  <li key={p.date + p.what}><span className="muted">{fmtDate(p.date, { year: true })}:</span> {p.what} <Cite ids={p.sources} /></li>
+                ))}
+              </ul>
+            </dd>
+          </>
+        ) : null}
+      </dl>
+      {pay?.note && (
+        <details className="why">
+          <summary>Notes on pay</summary>
+          <p>{pay.note}</p>
+          <p className="muted">Monthly figures assume 40-hour weeks for hourly rates and divide annual rates by 12. They are the posted rates only.</p>
+        </details>
+      )}
+    </>
+  );
+}
+
 function Stages({ company }: { company: Company }) {
   const iv = interviews[company.id];
   if (!iv) return null;
@@ -116,6 +171,7 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
   const now = h.windows.find((w) => w.cycle === cycle);
   const allSources = [
     ...c.marketCap.sources, ...c.growth.sources, ...c.headcount.sources, ...c.office.sources,
+    ...[c.intern?.pay, c.intern?.locations, c.intern?.sponsorship, c.intern?.teamModel, ...(c.intern?.pulse ?? [])].flatMap((x) => x?.sources ?? []),
     ...h.windows.flatMap((w) => w.sources), ...h.current.postings.flatMap((p) => p.sources), ...(interviews[c.id]?.sources ?? []),
     ...myRoles.flatMap((x) => x.titles.flatMap((t) => t.sources)),
   ];
@@ -137,6 +193,9 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
         </div>
       </div>
 
+      {h.hasProgram && <InternFacts company={c} />}
+
+      <h4>the company</h4>
       <div className="tiles">
         <div className="tile">
           <div className="tv">{fmtCap(c.marketCap.value)}</div>
