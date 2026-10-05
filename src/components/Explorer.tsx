@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { Fragment, useMemo, useState } from "react";
 import { scaleLinear, scaleLog, scaleSqrt } from "d3-scale";
 import { forceCollide, forceSimulation, forceX, forceY, type SimulationNodeDatum } from "d3-force";
 import { format } from "d3-format";
@@ -200,7 +200,7 @@ export default function Explorer() {
         <p className="chart-key">
           Bubble size is market value; whiskers show a range. Colour is when applications usually open:{" "}
           {(["summer", "fall", "winter", "none"] as Wave[]).map((w, i) => (
-            <span key={w} className="pair">{i > 0 && ", "}<i className="dot" style={w === "none" ? { border: "1px dashed var(--ink-3)" } : { background: WAVE_FILL[w] }} />{WAVE_KEY[w]}</span>
+            <Fragment key={w}>{i > 0 && ", "}<span className="pair"><i className="dot" style={w === "none" ? { border: "1px dashed var(--ink-3)" } : { background: WAVE_FILL[w] }} />{WAVE_KEY[w]}</span></Fragment>
           ))}.
         </p>
         <label className="picker">

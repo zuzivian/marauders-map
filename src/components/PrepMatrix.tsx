@@ -19,8 +19,10 @@ export default function PrepMatrix() {
         {prep.roles.map((r) => (
           <button key={r} className="chip" aria-pressed={r === role} onClick={() => { setRole(r); setOpen(null); }}>{roleName(r)}</button>
         ))}
-        <span className="label push">tap a cell for the exact modules</span>
       </div>
+      <p className="chart-key">
+        Dots show how deeply each kind of prep covers a skill, from none to three (our judgment). Tap a cell for the exact modules.
+      </p>
       {prep.notes.filter((n) => n.highlight).map((n) => (
         <p key={n.text} className="callout">{n.text} <Cite ids={n.sources} /></p>
       ))}

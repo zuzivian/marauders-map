@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import { calendar, companies, hiring, meta } from "@/data";
 import type { Cycle } from "@/data/types";
 import { SEASON_MONTHS, SEASON_WEEKS, fmtDate, fmtRange, monthStartWeek, span, steadiness, typicalOpen, weekOf } from "@/lib/season";
@@ -34,7 +35,9 @@ export default function Windows() {
     <div>
       <p className="chart-key">
         Each bar is one cycle&apos;s opening window:{" "}
-        {[...CYCLES].reverse().map((k, i) => <span key={k} className="pair">{i > 0 && ", "}<i className="swatch" style={{ background: CYCLE_SHADE[k] }} />{k === cycle ? "this cycle" : `summer ${summerOf(k)}`}</span>)}.
+        {[...CYCLES].reverse().map((k, i) => (
+          <Fragment key={k}>{i > 0 && ", "}<span className="pair"><i className="swatch" style={{ background: CYCLE_SHADE[k] }} />{k === cycle ? "this cycle" : `summer ${summerOf(k)}`}</span></Fragment>
+        ))}.
         {" "}Wider means less sure of the date; paler, weaker evidence. Shaded columns are the GSB dates below. Tap a company for its dates and sources.
       </p>
       <MyListBar />

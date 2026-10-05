@@ -83,7 +83,7 @@ export default function Contribute() {
     <section id="contribute" className="corrections contribute" aria-labelledby="contribute-h">
       {thanks && <p className="callout" role="status">Thank you. Your note goes up after a quick read, anonymously unless you gave a name.</p>}
       <details ref={ref}>
-        <summary id="contribute-h">interned in big tech? add a first-hand note on how you got in</summary>
+        <summary id="contribute-h">Interned in big tech? Add a first-hand note on how you got in</summary>
         <p className="small gi-why">
           Answer once instead of in twenty coffee chats. It takes about 3 minutes and is anonymous by default (&ldquo;a GSB &rsquo;{String(classOf).slice(-2)}&rdquo;).
           Advice and specifics only appear once two people have written in about the same company and summer; until then the site shows a count and the common stages.

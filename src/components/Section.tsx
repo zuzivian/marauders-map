@@ -31,8 +31,10 @@ export default function Section({ id, title, line, dek, open = false, children }
   if (open === true)
     return (
       <section id={id} className="section" aria-labelledby={`${id}-h`}>
-        <div className="section-head">{head}</div>
-        {dek && <p className="section-dek">{dek}</p>}
+        <div className="section-head">
+          <h2 id={`${id}-h`}>{title}</h2>
+          <p className="section-line">{line}{dek && ` ${dek}`}</p>
+        </div>
         {children}
       </section>
     );

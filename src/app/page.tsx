@@ -28,7 +28,7 @@ const cap = (s: string) => s[0].toUpperCase() + s.slice(1);
 const SECTIONS = [
   {
     id: "windows", short: "timing", title: "When applications open", open: true as const,
-    line: `When ${count(withProgram)} companies posted MBA internships in each of the last ${count(cycles)} cycles, with the uncertainty left in.`,
+    line: `When ${count(withProgram)} companies’ MBA internship postings went live over the last ${count(cycles)} cycles, with the uncertainty left in.`,
     dek: "A tight cluster means you can plan around it; a wide smear means watch the postings.",
     body: <Windows />,
   },
@@ -96,7 +96,7 @@ export default function Home() {
           <Contribute />
           <Useful />
           <div className="foot-row">
-            <span>made by <a href="https://natwong.dev" target="_blank" rel="noopener">nat wong</a>, for gsb mba1s · not affiliated with the cmc, career hub, or warner bros.</span>
+            <span>Made by <a href="https://natwong.dev" target="_blank" rel="noopener">Nat Wong</a>, for GSB MBA1s. Not affiliated with the CMC, Career Hub, or Warner Bros.</span>
             <span className="mischief">mischief managed.</span>
           </div>
         </footer>
