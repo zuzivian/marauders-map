@@ -101,6 +101,7 @@ export interface Interview {
 export interface Role {
   id: string;
   name: string;
+  short: string; // column label, e.g. "PMM"
   epithet: string;
   definition: string;
   technical: "low" | "some" | "high"; // editorial judgment

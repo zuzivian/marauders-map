@@ -1,7 +1,7 @@
-import { companies, hiring, meta } from "@/data";
+import { companies, hiring, meta, roles } from "@/data";
 import { fmtDate } from "@/lib/season";
 import { GuideProvider } from "@/components/Guide";
-import RightNow from "@/components/RightNow";
+import Trail from "@/components/Trail";
 import RoleDecoder from "@/components/RoleDecoder";
 import Explorer from "@/components/Explorer";
 import Windows from "@/components/Windows";
@@ -9,13 +9,14 @@ import PrepMatrix from "@/components/PrepMatrix";
 import Corrections from "@/components/Corrections";
 
 const withProgram = companies.filter((c) => hiring[c.id].hasProgram).length;
+const titleCount = new Set(roles.flatMap((r) => r.titles.map((t) => `${t.company}|${t.title}`))).size;
 const words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two", "twenty-three", "twenty-four", "twenty-five"];
 const count = (n: number) => words[n] ?? String(n);
 const cap = (s: string) => s[0].toUpperCase() + s.slice(1);
 
 // Ordered the way a first-year discovers the space: what the jobs are, who offers them, when to move, how to prepare.
 const SECTIONS = [
-  { id: "roles", short: "roles", title: "What the titles mean", dek: "The same job goes by different names at different companies. Paste any title you see, or read the entries below.", body: <RoleDecoder /> },
+  { id: "roles", short: "roles", title: "What the titles mean", dek: `${cap(count(roles.length))} jobs, ${titleCount} posted titles. Paste a title to decode it, or read across a row to see who's hiring for it right now.`, body: <RoleDecoder /> },
   {
     id: "companies", short: "companies", title: "The lay of the land",
     dek: `${cap(count(companies.length))} big tech companies, ${count(withProgram)} of them with MBA internships, placed by public data. Change the axes to see them from a different angle, and pick any company for its field notes.`,
@@ -57,7 +58,7 @@ export default function Home() {
           {SECTIONS.map((s, i) => <a key={s.id} href={`#${s.id}`}><span className="no">0{i + 1}</span> {s.short}</a>)}
         </nav>
 
-        <RightNow />
+        <Trail />
 
         {SECTIONS.map((s, i) => (
           <section key={s.id} id={s.id} className="section" aria-labelledby={`${s.id}-h`}>

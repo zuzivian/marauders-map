@@ -392,7 +392,8 @@
           "waymo-gh-salesforce-po-2027"
         ]
       }
-    ]
+    ],
+    "short": "PM"
   },
   {
     "id": "pmm",
@@ -746,7 +747,8 @@
           "tiktok-careers-api-mba-intern-2027"
         ]
       }
-    ]
+    ],
+    "short": "PMM"
   },
   {
     "id": "ops",
@@ -1599,7 +1601,8 @@
           "waymo-gh-ops-planning-2027"
         ]
       }
-    ]
+    ],
+    "short": "Strat"
   },
   {
     "id": "finance",
@@ -1988,7 +1991,8 @@
           "workday-wd-ep-mba"
         ]
       }
-    ]
+    ],
+    "short": "Fin"
   },
   {
     "id": "sales",
@@ -2125,7 +2129,8 @@
           "huzzle-uber-implementation-2025"
         ]
       }
-    ]
+    ],
+    "short": "Sales"
   },
   {
     "id": "bd",
@@ -2296,6 +2301,7 @@
           "tiktok-careers-api-mba-intern-2027"
         ]
       }
-    ]
+    ],
+    "short": "BD"
   }
 ]
