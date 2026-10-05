@@ -1314,6 +1314,24 @@
       ]
     }
   },
+  "stripe": {
+    "hasProgram": false,
+    "pattern": "No structured MBA hiring",
+    "windows": [],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "Stripe has no MBA internship. As of 2026-10-04 its Greenhouse board lists 717 jobs; the internships are software engineering, data analyst, PhD data science and technical operations roles. Its one business-side internship of recent years, Finance & Strategy (posted Feb 2025), is for bachelor's students. The last MBA internships we found were for 2021 and 2022.",
+      "postings": [],
+      "sources": [
+        "stripe-gh-board-api",
+        "stripe-glynn-fs-intern-2025",
+        "stripe-wb-revops-mba-2021",
+        "stripe-simplify-climate-mba-2022",
+        "stripe-university"
+      ]
+    },
+    "note": "Stripe did hire MBA interns: 'MBA Intern: Revenue Operations' (2021) and 'MBA Intern, Climate Strategy & Operations' (posted Mar 2022). Nothing MBA-labelled since then appears in archived copies of stripe.com/jobs or on its live board, and its early-talent page says most internships are in engineering. MBA candidates go through regular full-time hiring."
+  },
   "tiktok": {
     "hasProgram": true,
     "pattern": "Many team-specific postings (often one per city), mostly TikTok Shop ops plus Ads/Monetization; first batch created late Jul/early Aug and more added through fall; rolling review; max two applications per application period",

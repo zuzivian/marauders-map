@@ -1300,6 +1300,72 @@
     }
   },
   {
+    "id": "stripe",
+    "name": "Stripe",
+    "hq": "South San Francisco / Dublin",
+    "model": "Payments",
+    "ai": "Applies AI in products",
+    "marketCap": {
+      "value": 159,
+      "asOf": "2026-02-24",
+      "kind": "private valuation",
+      "note": "Price of a tender offer for current and former employees' shares (Feb 2026), funded mostly by investors with some Stripe buybacks; not a primary fundraising round.",
+      "sources": [
+        "stripe-2025-update"
+      ]
+    },
+    "growth": {
+      "value": 33,
+      "low": 30,
+      "high": 35,
+      "basis": "calendar 2025 revenue vs 2024, as reported by The Information (via SaaStr)",
+      "note": "Private company: Stripe publishes no revenue. The Information reported 2025 revenue of about $6.8B, up 'roughly a third'; the range reflects that rounding. Stripe's own figure is total volume: $1.9T in 2025, up 34%.",
+      "sources": [
+        "stripe-saastr-revenue-2025",
+        "stripe-2025-update"
+      ],
+      "asOf": "2025-12-31"
+    },
+    "headcount": {
+      "value": 9383,
+      "asOf": "2026-03-31",
+      "note": "Third-party estimate (Revelio Labs, 'as of March 2026'; month-end used). Stripe does not publish headcount.",
+      "sources": [
+        "stripe-revelio-headcount"
+      ]
+    },
+    "b2bPayer": {
+      "value": 99,
+      "low": 95,
+      "high": 100,
+      "reasoning": "Rough estimate, not disclosed. Stripe earns fees from the businesses whose payments, billing, tax and other financial infrastructure it runs; shoppers don't pay Stripe directly, so nearly all revenue is business-paid.",
+      "sources": [
+        "stripe-2025-update"
+      ]
+    },
+    "b2bUser": {
+      "value": 95,
+      "low": 85,
+      "high": 100,
+      "reasoning": "Rough estimate, not disclosed. The products (payments APIs, Billing, Invoicing, Tax, Connect) are run by businesses and developers. Consumers touch Stripe only at checkout, through merchants' pages or its Link wallet, which earns through merchant fees; the low end allows for that.",
+      "sources": [
+        "stripe-2025-update"
+      ]
+    },
+    "office": {
+      "category": "team",
+      "days": null,
+      "low": 2,
+      "high": 3,
+      "summary": "Office-assigned staff are expected in their local office, or with users, at least 50% of the time in a given month (about 2-3 days a week), varying by role, team and location. Some roles are remote.",
+      "interns": "Intern postings carry the same 50%-of-the-month expectation.",
+      "confidence": "high",
+      "sources": [
+        "stripe-listing-data-analyst-intern-2027"
+      ]
+    }
+  },
+  {
     "id": "tiktok",
     "name": "TikTok",
     "hq": "Los Angeles / Singapore (TikTok global HQs); parent ByteDance is based in Beijing",
