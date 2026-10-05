@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { companies, meta } from "@/data";
 
 // The corrections form posts to whichever backend meta.json names:
+//  - "formspree": Formspree (https://formspree.io), sent with fetch so the reader gets a real success or error;
+//    submissions are kept in the Formspree dashboard as well as emailed. Without JS it falls back to a plain POST.
 //  - "google": a Google Form's formResponse endpoint, submitted into a hidden iframe so the reader stays here.
 //    Google emails the form's owner on each response and keeps them in a sheet.
 //  - "formsubmit": FormSubmit (https://formsubmit.co), which emails each submission after a one-time activation.
@@ -24,6 +26,7 @@ export default function Corrections() {
   const [about, setAbout] = useState("General");
   const [next, setNext] = useState<string | null>(null);
   const [thanks, setThanks] = useState(false);
+  const [state, setState] = useState<"idle" | "sending" | "error">("idle");
 
   useEffect(() => {
     const url = new URL(window.location.href);
@@ -44,15 +47,38 @@ export default function Corrections() {
 
   if (!cfg) return null;
   const google = cfg.kind === "google";
+  const formspree = cfg.kind === "formspree";
   const f = cfg.fields;
+
+  // Formspree: send in the background and report what actually happened.
+  const submitFetch = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setState("sending");
+    try {
+      const res = await fetch(cfg.action, { method: "POST", body: new FormData(e.currentTarget), headers: { Accept: "application/json" } });
+      if (!res.ok) throw new Error(String(res.status));
+      setState("idle");
+      setThanks(true);
+      formRef.current?.reset();
+      if (ref.current) ref.current.open = false;
+    } catch {
+      setState("error");
+    }
+  };
   return (
     <section id="corrections" className="corrections" aria-labelledby="corrections-h">
       {thanks && <p className="callout" role="status">Thanks, your correction was sent.</p>}
       <details ref={ref}>
         <summary id="corrections-h">spot something wrong or out of date? send a correction</summary>
         <form ref={formRef} action={cfg.action} method="POST" target={google ? "corrections-sink" : undefined}
-          onSubmit={() => { sent.current = true; }}>
-          {!google && (
+          onSubmit={formspree ? submitFetch : () => { sent.current = true; }}>
+          {formspree && (
+            <>
+              <input type="hidden" name="_subject" value={`Marauder's Map correction: ${about}`} />
+              <input type="text" name="_gotcha" className="honey" tabIndex={-1} autoComplete="off" aria-hidden />
+            </>
+          )}
+          {cfg.kind === "formsubmit" && (
             <>
               <input type="hidden" name="_subject" value={`Marauder's Map correction: ${about}`} />
               <input type="hidden" name="_template" value="table" />
@@ -83,9 +109,10 @@ export default function Corrections() {
             <span className="label">your email, only if you&apos;d like a reply</span>
             <input className="field" type="email" name={f.email} autoComplete="email" />
           </label>
-          <button className="send" type="submit">Send correction</button>
+          <button className="send" type="submit" disabled={state === "sending"}>{state === "sending" ? "Sending…" : "Send correction"}</button>
+          {state === "error" && <p className="small" role="alert" style={{ color: "var(--cardinal)" }}>That didn&apos;t go through. Try again in a minute.</p>}
           <p className="small muted">
-            {google ? "Goes to the site's maintainer through Google Forms." : "Sent by email to the site's maintainer through FormSubmit, which keeps submissions for 30 days."} Nothing is published automatically.
+            {formspree ? "Goes to the site's maintainer through Formspree." : google ? "Goes to the site's maintainer through Google Forms." : "Sent by email to the site's maintainer through FormSubmit, which keeps submissions for 30 days."} Nothing is published automatically.
           </p>
         </form>
         {google && (

@@ -146,7 +146,7 @@ export interface Meta {
   researched: ISODate; // the date the data was last checked end to end
   /** Where the corrections form posts; null hides the form. Field names map our fields onto the backend's. */
   corrections: {
-    kind: "google" | "formsubmit";
+    kind: "formspree" | "google" | "formsubmit";
     action: string;
     fields: { about: string; correction: string; source: string; email: string };
   } | null;
