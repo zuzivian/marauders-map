@@ -164,6 +164,33 @@
     "kind": "primary",
     "quote": null
   },
+  "adobe-r158568-wb": {
+    "url": "https://web.archive.org/web/20251109044238/https://careers.adobe.com/us/en/job/R158568/2026-MBA-Intern-GTM-Strategy-Ops",
+    "title": "2026 MBA Intern - GTM Strategy & Ops",
+    "publisher": "Adobe (archived)",
+    "published": null,
+    "accessed": "2026-10-05",
+    "kind": "archive",
+    "quote": null
+  },
+  "adobe-r158880-wb": {
+    "url": "https://web.archive.org/web/20251216231629/https://careers.adobe.com/us/en/job/R158880/2026-MBA-Intern-Content-Marketing-Strategy",
+    "title": "2026 MBA Intern - Content Marketing Strategy",
+    "publisher": "Adobe (archived)",
+    "published": null,
+    "accessed": "2026-10-05",
+    "kind": "archive",
+    "quote": null
+  },
+  "adobe-r161488-wb": {
+    "url": "https://web.archive.org/web/20260217084749/https://careers.adobe.com/us/en/job/R161488/2026-MBA-Intern-EX-Strategy-Business-Operations",
+    "title": "2026 MBA Intern – EX Strategy & Business Operations",
+    "publisher": "Adobe (archived)",
+    "published": null,
+    "accessed": "2026-10-05",
+    "kind": "archive",
+    "quote": null
+  },
   "adobe-xbrl": {
     "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000796343.json",
     "title": "Adobe Inc. XBRL company facts (10-Q/10-K revenue, dei shares outstanding)",
@@ -456,6 +483,15 @@
     "kind": "primary",
     "quote": "Your loop will include five 55-minute interviews"
   },
+  "amazon-sde-intern-2027": {
+    "url": "https://www.amazon.jobs/en/jobs/10552937/software-development-engineer-intern-summer-2027-usa",
+    "title": "Software Development Engineer Intern, Summer 2027 (USA)",
+    "publisher": "Amazon",
+    "published": null,
+    "accessed": "2026-10-05",
+    "kind": "primary",
+    "quote": "interns should expect to work in office, Monday-Friday"
+  },
   "amazon-search-api-2026": {
     "url": "https://www.amazon.jobs/en/search.json?base_query=summer%202027&result_limit=100&sort=recent&normalized_country_code%5B%5D=USA",
     "title": "amazon.jobs public search API (US, sorted recent) - posted_date per job",
@@ -537,15 +573,6 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": "This posting is not for a specific job opening"
-  },
-  "apple-headcount-flat-appleinsider-2026-09": {
-    "url": "https://appleinsider.com/articles/26/09/29/small-layoffs-and-budget-cuts-are-hitting-apple-with-more-expected",
-    "title": "Small layoffs and budget cuts are hitting Apple, with more expected",
-    "publisher": "AppleInsider",
-    "published": "2026-09-29",
-    "accessed": "2026-10-04",
-    "kind": "secondary",
-    "quote": "it's said that the headcount is being kept flat."
   },
   "apple-layoffs-techcrunch-2026-08": {
     "url": "https://techcrunch.com/2026/08/21/apple-is-reportedly-cutting-hundreds-of-jobs-from-siri-vision-pro-teams/",
@@ -666,15 +693,6 @@
     "kind": "secondary",
     "quote": "Applications for this job will be accepted at least until October 27, 2025."
   },
-  "builtin-nvidia-corpdev-2026-pay": {
-    "url": "https://www.builtinsf.com/job/corporate-development-mba-intern-summer-2026/7468385",
-    "title": "Corporate Development MBA Intern - Summer 2026 - NVIDIA: pay",
-    "publisher": "Built In San Francisco",
-    "published": "2025-11-18",
-    "accessed": "2026-10-04",
-    "kind": "secondary",
-    "quote": "The hourly rate for our interns is 27 USD - 82 USD."
-  },
   "builtin-nvidia-treasury-2026": {
     "url": "https://www.builtinsf.com/job/treasury-analyst-mba-intern-summer-2026/7519457",
     "title": "Treasury Analyst MBA Intern – Summer 2026 - NVIDIA | Built In San Francisco",
@@ -746,6 +764,15 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": null
+  },
+  "cisco-entry-level": {
+    "url": "https://careers.cisco.com/global/en/entry-level-careers",
+    "title": "Early in career at Cisco",
+    "publisher": "Cisco",
+    "published": null,
+    "accessed": "2026-10-05",
+    "kind": "primary",
+    "quote": "other roles may include behavioral interviews and a writing assessment"
   },
   "cisco-extern-guide": {
     "url": "https://www.extern.com/post/cisco-internship-guide",
@@ -1042,6 +1069,15 @@
     "publisher": "CNBC",
     "published": "2024-12-18",
     "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "cnbc-google-rto-2022": {
+    "url": "https://www.cnbc.com/2022/03/02/google-tells-employees-to-return-to-offices-in-april.html",
+    "title": "Google tells employees to return to offices starting in April",
+    "publisher": "CNBC",
+    "published": "2022-03-02",
+    "accessed": "2026-10-05",
     "kind": "secondary",
     "quote": null
   },
@@ -1792,6 +1828,15 @@
     "kind": "primary",
     "quote": null
   },
+  "ibm-entry-level-consultant": {
+    "url": "https://www.ibm.com/careers/blog/entry-level-consultant-the-secrets-to-becoming-a-successful-candidate",
+    "title": "Entry-level consultant: the secrets to becoming a successful candidate",
+    "publisher": "IBM Careers",
+    "published": null,
+    "accessed": "2026-10-05",
+    "kind": "primary",
+    "quote": "First round interview (case interview)"
+  },
   "ibm-layoffs-cnbc-2025-11": {
     "url": "https://www.cnbc.com/2025/11/04/ibm-layoffs-fourth-quarter.html",
     "title": "IBM layoffs: Cutting thousands of jobs in the fourth quarter",
@@ -2042,6 +2087,15 @@
     "kind": "primary",
     "quote": "Mountain View $37.5 - $68"
   },
+  "intuit-corpstrat-2027-pay-text": {
+    "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-corporate-strategy-and-development-intern/27595/101313096080",
+    "title": "Summer 2027: MBA Corporate Strategy & Development Intern: role pay range",
+    "publisher": "Intuit Careers",
+    "published": "2026-08-17",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "base pay range for this position is: $52 - 65 /hr in MTV."
+  },
   "intuit-finstrat-gbsg-2027-auth": {
     "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-strategic-finance-intern-gbsg/27595/101319962576",
     "title": "Summer 2027: MBA Strategic Finance Intern, GBSG: work authorization",
@@ -2123,6 +2177,15 @@
     "kind": "primary",
     "quote": null
   },
+  "intuit-sourcing-tech-2027-pay": {
+    "url": "https://jobs.intuit.com/job/san-diego/summer-2027-mba-strategic-sourcing-intern-technology/27595/101062769088",
+    "title": "Summer 2027: MBA Strategic Sourcing Intern, Technology: pay range",
+    "publisher": "Intuit Careers",
+    "published": "2026-09-23",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "base pay range for this position is: $36 - $53 /hr."
+  },
   "intuit-xbrl": {
     "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000896878.json",
     "title": "Intuit Inc. XBRL company facts (10-Q/10-K revenue, dei shares outstanding)",
@@ -2130,6 +2193,60 @@
     "published": null,
     "accessed": "2026-10-04",
     "kind": "primary",
+    "quote": null
+  },
+  "jobright-2026-acct-repo": {
+    "url": "https://github.com/jobright-ai/2026-Account-Internship",
+    "title": "2026 Accounting and finance internships (listing history)",
+    "publisher": "Jobright (job aggregator)",
+    "published": null,
+    "accessed": "2026-10-05",
+    "kind": "secondary",
+    "quote": null
+  },
+  "jobright-2026-consult-repo": {
+    "url": "https://github.com/jobright-ai/2026-Consultant-Internship",
+    "title": "2026 Consulting internships (listing history)",
+    "publisher": "Jobright (job aggregator)",
+    "published": null,
+    "accessed": "2026-10-05",
+    "kind": "secondary",
+    "quote": null
+  },
+  "jobright-2026-mgmt-repo": {
+    "url": "https://github.com/jobright-ai/2026-Management-Internship",
+    "title": "2026 Management internships (listing history)",
+    "publisher": "Jobright (job aggregator)",
+    "published": null,
+    "accessed": "2026-10-05",
+    "kind": "secondary",
+    "quote": null
+  },
+  "jobright-2026-mkt-repo": {
+    "url": "https://github.com/jobright-ai/2026-Marketing-Internship",
+    "title": "2026 Marketing internships (listing history)",
+    "publisher": "Jobright (job aggregator)",
+    "published": null,
+    "accessed": "2026-10-05",
+    "kind": "secondary",
+    "quote": null
+  },
+  "jobright-2026-pm-repo": {
+    "url": "https://github.com/jobright-ai/2026-Product-Management-Internship",
+    "title": "2026 Product Management internships (listing history)",
+    "publisher": "Jobright (job aggregator)",
+    "published": null,
+    "accessed": "2026-10-05",
+    "kind": "secondary",
+    "quote": null
+  },
+  "jobright-2026-sales-repo": {
+    "url": "https://github.com/jobright-ai/2026-Sales-Internship",
+    "title": "2026 Sales internships (listing history)",
+    "publisher": "Jobright (job aggregator)",
+    "published": null,
+    "accessed": "2026-10-05",
+    "kind": "secondary",
     "quote": null
   },
   "jobright-airbnb-aa-2026": {
@@ -2156,6 +2273,24 @@
     "publisher": "Jobright.ai",
     "published": null,
     "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "jobright-cisco-cam-mba-2026": {
+    "url": "https://jobright.ai/jobs/info/69407855aa598a08c3f0139f",
+    "title": "Critical Accounts Manager MBA (Intern) - United States",
+    "publisher": "Jobright (job aggregator)",
+    "published": null,
+    "accessed": "2026-10-05",
+    "kind": "secondary",
+    "quote": null
+  },
+  "jobright-cisco-pm-mba-2026": {
+    "url": "https://jobright.ai/jobs/info/69659ec02cbf4e44756f474b",
+    "title": "Product Management MBA (Intern) - United States",
+    "publisher": "Jobright (job aggregator)",
+    "published": null,
+    "accessed": "2026-10-05",
     "kind": "secondary",
     "quote": null
   },
@@ -2575,6 +2710,15 @@
     "kind": "primary",
     "quote": "whether it's from home, in the office, or a combination of the two"
   },
+  "nvidia-jr2011052": {
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Media-and-Entertainment-Industry-Business-Development--MBA-Intern---Summer-2026_JR2011052",
+    "title": "Media and Entertainment Industry Business Development, MBA Intern - Summer 2026",
+    "publisher": "NVIDIA (Workday)",
+    "published": null,
+    "accessed": "2026-10-05",
+    "kind": "primary",
+    "quote": null
+  },
   "nvidia-workday-2025-mba-pm": {
     "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/NVIDIA-2025-Internships--MBA-Product-Management_JR1987644-1",
     "title": "NVIDIA 2025 Internships: MBA Product Management (Workday URL, seen in search)",
@@ -2745,6 +2889,15 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": null
+  },
+  "openai-techspot-2025-financials": {
+    "url": "https://www.techspot.com/news/112794-openai-made-13-billion-2025-lost-21-billion.html",
+    "title": "OpenAI made $13 billion in 2025 and lost $21 billion",
+    "publisher": "TechSpot",
+    "published": null,
+    "accessed": "2026-10-05",
+    "kind": "secondary",
+    "quote": "$3.7 billion in revenue in 2024 before jumping to $13.07 billion in 2025"
   },
   "opportunitiescorners-google-mba-2025": {
     "url": "https://opportunitiescorners.com/google-mba-summer-internship/",
@@ -3569,6 +3722,15 @@
     "kind": "secondary",
     "quote": null
   },
+  "statesman-dell-rto-2025": {
+    "url": "https://www.statesman.com/story/business/technology/2025/02/04/dell-technologies-ends-remote-hybrid-work-rto/78210664007/",
+    "title": "Dell Technologies ending remote, hybrid work; employees return to office five days a week",
+    "publisher": "Austin American-Statesman",
+    "published": "2025-02-04",
+    "accessed": "2026-10-05",
+    "kind": "secondary",
+    "quote": "all future roles will be hired at a specific Dell office"
+  },
   "techrepublic-adobe-hybrid": {
     "url": "https://www.techrepublic.com/article/adobe-announces-permanent-shift-to-hybrid-work-for-its-employees/",
     "title": "Adobe announces permanent shift to hybrid work for its employees",
@@ -3586,6 +3748,15 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": "simpler and faster company"
+  },
+  "tiktok-ads-pm-intern-2027": {
+    "url": "https://simplify.jobs/p/3085d453-c413-4fb3-9fc6-7da1855ee4f1/Product-Manager-Intern",
+    "title": "Product Manager Intern (Content and Service Ads), 2027 Summer (MBA)",
+    "publisher": "Simplify (mirror of TikTok posting)",
+    "published": null,
+    "accessed": "2026-10-05",
+    "kind": "secondary",
+    "quote": "Proficient in Chinese and English to collaborate with global partners"
   },
   "tiktok-bellevue-seattletimes-2026-08": {
     "url": "https://www.seattletimes.com/business/technology/tiktok-lays-off-75-bellevue-workers-mostly-in-e-commerce-division/",
@@ -3894,6 +4065,15 @@
     "kind": "secondary",
     "quote": null
   },
+  "tiktok-scmp-valuation-2026": {
+    "url": "https://www.scmp.com/tech/big-tech/article/3349337/bytedance-valuation-surges-record-high-over-us600b-proposed-equity-sale-sources",
+    "title": "ByteDance valuation surges to record high of over US$600b on proposed equity sale",
+    "publisher": "South China Morning Post",
+    "published": "2026-04-09",
+    "accessed": "2026-10-05",
+    "kind": "secondary",
+    "quote": "ByteDance valuation surges to record high of over US$600b on proposed equity sale"
+  },
   "tiktok-seekingalpha-valuation": {
     "url": "https://seekingalpha.com/news/4556453-bytedance-valued-at-550b-in-proposed-general-atlantic-stake-sale-reuters",
     "title": "ByteDance valued at $550B in proposed General Atlantic stake sale: Reuters",
@@ -4019,6 +4199,15 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": "Uber is laying off about 3,300 people, or about 10% of its global headcount"
+  },
+  "uber-newsroom-simpler-faster-2026": {
+    "url": "https://www.uber.com/us/en/newsroom/simplerfasteruber/",
+    "title": "A simpler, faster Uber",
+    "publisher": "Uber Newsroom",
+    "published": "2026-09-02",
+    "accessed": "2026-10-05",
+    "kind": "primary",
+    "quote": "only ~1% of employees will be remote"
   },
   "uber-people-cnbc-2026-06": {
     "url": "https://www.cnbc.com/2026/06/03/uber-layoffs-people-division-ai.html",
@@ -4191,6 +4380,15 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": "Visa will not sponsor applicants for work visas in connection with this position."
+  },
+  "visa-sr-pm-mba-2025": {
+    "url": "https://jobs.smartrecruiters.com/Visa/744000028897305-product-management-mba-intern-summer-2025",
+    "title": "Product Management, MBA Intern - Summer 2025",
+    "publisher": "SmartRecruiters (Visa)",
+    "published": null,
+    "accessed": "2026-10-05",
+    "kind": "primary",
+    "quote": null
   },
   "visa-stockanalysis-mcap": {
     "url": "https://stockanalysis.com/stocks/v/market-cap/",
@@ -4436,6 +4634,15 @@
     "kind": "secondary",
     "quote": "$284M at the end of 2025 and $125M at the end of 2024"
   },
+  "waymo-siliconangle-runrate": {
+    "url": "https://siliconangle.com/2025/12/17/waymo-reportedly-seeking-raise-15b-110b-valuation/",
+    "title": "Waymo reportedly seeking to raise $15B at $110B valuation",
+    "publisher": "SiliconANGLE",
+    "published": "2025-12-17",
+    "accessed": "2026-10-05",
+    "kind": "secondary",
+    "quote": "the Alphabet unit's annualized revenue run-rate recently topped $350 million"
+  },
   "waymo-simplify-2025-mba-ops": {
     "url": "https://simplify.jobs/p/12026b8a-1e2b-4828-b721-eb8ff37a191e/2025-MBA-Intern",
     "title": "2025 MBA Intern @ Waymo",
@@ -4668,213 +4875,6 @@
     "published": null,
     "accessed": "2026-10-04",
     "kind": "secondary",
-    "quote": null
-  },
-  "tiktok-scmp-valuation-2026": {
-    "url": "https://www.scmp.com/tech/big-tech/article/3349337/bytedance-valuation-surges-record-high-over-us600b-proposed-equity-sale-sources",
-    "title": "ByteDance valuation surges to record high of over US$600b on proposed equity sale",
-    "publisher": "South China Morning Post",
-    "published": "2026-04-09",
-    "accessed": "2026-10-05",
-    "kind": "secondary",
-    "quote": "ByteDance valuation surges to record high of over US$600b on proposed equity sale"
-  },
-  "openai-techspot-2025-financials": {
-    "url": "https://www.techspot.com/news/112794-openai-made-13-billion-2025-lost-21-billion.html",
-    "title": "OpenAI made $13 billion in 2025 and lost $21 billion",
-    "publisher": "TechSpot",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "secondary",
-    "quote": "$3.7 billion in revenue in 2024 before jumping to $13.07 billion in 2025"
-  },
-  "waymo-siliconangle-runrate": {
-    "url": "https://siliconangle.com/2025/12/17/waymo-reportedly-seeking-raise-15b-110b-valuation/",
-    "title": "Waymo reportedly seeking to raise $15B at $110B valuation",
-    "publisher": "SiliconANGLE",
-    "published": "2025-12-17",
-    "accessed": "2026-10-05",
-    "kind": "secondary",
-    "quote": "the Alphabet unit's annualized revenue run-rate recently topped $350 million"
-  },
-  "amazon-sde-intern-2027": {
-    "url": "https://www.amazon.jobs/en/jobs/10552937/software-development-engineer-intern-summer-2027-usa",
-    "title": "Software Development Engineer Intern, Summer 2027 (USA)",
-    "publisher": "Amazon",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "primary",
-    "quote": "interns should expect to work in office, Monday-Friday"
-  },
-  "cnbc-google-rto-2022": {
-    "url": "https://www.cnbc.com/2022/03/02/google-tells-employees-to-return-to-offices-in-april.html",
-    "title": "Google tells employees to return to offices starting in April",
-    "publisher": "CNBC",
-    "published": "2022-03-02",
-    "accessed": "2026-10-05",
-    "kind": "secondary",
-    "quote": null
-  },
-  "uber-newsroom-simpler-faster-2026": {
-    "url": "https://www.uber.com/us/en/newsroom/simplerfasteruber/",
-    "title": "A simpler, faster Uber",
-    "publisher": "Uber Newsroom",
-    "published": "2026-09-02",
-    "accessed": "2026-10-05",
-    "kind": "primary",
-    "quote": "only ~1% of employees will be remote"
-  },
-  "statesman-dell-rto-2025": {
-    "url": "https://www.statesman.com/story/business/technology/2025/02/04/dell-technologies-ends-remote-hybrid-work-rto/78210664007/",
-    "title": "Dell Technologies ending remote, hybrid work; employees return to office five days a week",
-    "publisher": "Austin American-Statesman",
-    "published": "2025-02-04",
-    "accessed": "2026-10-05",
-    "kind": "secondary",
-    "quote": "all future roles will be hired at a specific Dell office"
-  },
-  "cisco-entry-level": {
-    "url": "https://careers.cisco.com/global/en/entry-level-careers",
-    "title": "Early in career at Cisco",
-    "publisher": "Cisco",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "primary",
-    "quote": "other roles may include behavioral interviews and a writing assessment"
-  },
-  "ibm-entry-level-consultant": {
-    "url": "https://www.ibm.com/careers/blog/entry-level-consultant-the-secrets-to-becoming-a-successful-candidate",
-    "title": "Entry-level consultant: the secrets to becoming a successful candidate",
-    "publisher": "IBM Careers",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "primary",
-    "quote": "First round interview (case interview)"
-  },
-  "tiktok-ads-pm-intern-2027": {
-    "url": "https://simplify.jobs/p/3085d453-c413-4fb3-9fc6-7da1855ee4f1/Product-Manager-Intern",
-    "title": "Product Manager Intern (Content and Service Ads), 2027 Summer (MBA)",
-    "publisher": "Simplify (mirror of TikTok posting)",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "secondary",
-    "quote": "Proficient in Chinese and English to collaborate with global partners"
-  },
-  "nvidia-jr2011052": {
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Media-and-Entertainment-Industry-Business-Development--MBA-Intern---Summer-2026_JR2011052",
-    "title": "Media and Entertainment Industry Business Development, MBA Intern - Summer 2026",
-    "publisher": "NVIDIA (Workday)",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "primary",
-    "quote": null
-  },
-  "adobe-r158568-wb": {
-    "url": "https://web.archive.org/web/20251109044238/https://careers.adobe.com/us/en/job/R158568/2026-MBA-Intern-GTM-Strategy-Ops",
-    "title": "2026 MBA Intern - GTM Strategy & Ops",
-    "publisher": "Adobe (archived)",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "archive",
-    "quote": null
-  },
-  "adobe-r161488-wb": {
-    "url": "https://web.archive.org/web/20260217084749/https://careers.adobe.com/us/en/job/R161488/2026-MBA-Intern-EX-Strategy-Business-Operations",
-    "title": "2026 MBA Intern – EX Strategy & Business Operations",
-    "publisher": "Adobe (archived)",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "archive",
-    "quote": null
-  },
-  "adobe-r158880-wb": {
-    "url": "https://web.archive.org/web/20251216231629/https://careers.adobe.com/us/en/job/R158880/2026-MBA-Intern-Content-Marketing-Strategy",
-    "title": "2026 MBA Intern - Content Marketing Strategy",
-    "publisher": "Adobe (archived)",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "archive",
-    "quote": null
-  },
-  "jobright-2026-pm-repo": {
-    "url": "https://github.com/jobright-ai/2026-Product-Management-Internship",
-    "title": "2026 Product Management internships (listing history)",
-    "publisher": "Jobright (job aggregator)",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "secondary",
-    "quote": null
-  },
-  "jobright-2026-mgmt-repo": {
-    "url": "https://github.com/jobright-ai/2026-Management-Internship",
-    "title": "2026 Management internships (listing history)",
-    "publisher": "Jobright (job aggregator)",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "secondary",
-    "quote": null
-  },
-  "jobright-2026-mkt-repo": {
-    "url": "https://github.com/jobright-ai/2026-Marketing-Internship",
-    "title": "2026 Marketing internships (listing history)",
-    "publisher": "Jobright (job aggregator)",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "secondary",
-    "quote": null
-  },
-  "jobright-2026-acct-repo": {
-    "url": "https://github.com/jobright-ai/2026-Account-Internship",
-    "title": "2026 Accounting and finance internships (listing history)",
-    "publisher": "Jobright (job aggregator)",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "secondary",
-    "quote": null
-  },
-  "jobright-2026-sales-repo": {
-    "url": "https://github.com/jobright-ai/2026-Sales-Internship",
-    "title": "2026 Sales internships (listing history)",
-    "publisher": "Jobright (job aggregator)",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "secondary",
-    "quote": null
-  },
-  "jobright-2026-consult-repo": {
-    "url": "https://github.com/jobright-ai/2026-Consultant-Internship",
-    "title": "2026 Consulting internships (listing history)",
-    "publisher": "Jobright (job aggregator)",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "secondary",
-    "quote": null
-  },
-  "jobright-cisco-pm-mba-2026": {
-    "url": "https://jobright.ai/jobs/info/69659ec02cbf4e44756f474b",
-    "title": "Product Management MBA (Intern) - United States",
-    "publisher": "Jobright (job aggregator)",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "secondary",
-    "quote": null
-  },
-  "jobright-cisco-cam-mba-2026": {
-    "url": "https://jobright.ai/jobs/info/69407855aa598a08c3f0139f",
-    "title": "Critical Accounts Manager MBA (Intern) - United States",
-    "publisher": "Jobright (job aggregator)",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "secondary",
-    "quote": null
-  },
-  "visa-sr-pm-mba-2025": {
-    "url": "https://jobs.smartrecruiters.com/Visa/744000028897305-product-management-mba-intern-summer-2025",
-    "title": "Product Management, MBA Intern - Summer 2025",
-    "publisher": "SmartRecruiters (Visa)",
-    "published": null,
-    "accessed": "2026-10-05",
-    "kind": "primary",
     "quote": null
   }
 }

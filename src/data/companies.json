@@ -68,13 +68,6 @@
           "sources": [
             "apple-layoffs-techcrunch-2026-08"
           ]
-        },
-        {
-          "date": "2026-09-29",
-          "what": "Reported to be holding headcount flat for 2027, with small layoffs and budget cuts",
-          "sources": [
-            "apple-headcount-flat-appleinsider-2026-09"
-          ]
         }
       ]
     }
@@ -232,14 +225,16 @@
     },
     "intern": {
       "pay": {
-        "low": 29.5,
-        "high": 68,
+        "low": 36,
+        "high": 65,
         "per": "hour",
         "where": "Mountain View and San Diego, CA",
         "cycle": "2026",
         "postings": 15,
-        "note": "Each posting gives a range in its text and a location band at the end, and they differ; this spans both. Leaves out the all-degree Product Manager Intern posting ($39.57–$76.92/hr).",
+        "note": "Each posting states two ranges: one in its text for the role (shown here; $36–$65 across the 15 postings) and a broader location band at the end (Mountain View $29.50–$68, San Diego $36–$56.50). The Strategic Sourcing, Customer Success & Sales posting gives only its San Diego band, $37–$56.50. Leaves out the all-degree Product Manager Intern posting ($39.57–$76.92/hr).",
         "sources": [
+          "intuit-sourcing-tech-2027-pay",
+          "intuit-corpstrat-2027-pay-text",
           "intuit-pmm-midmarket-2027-pay",
           "intuit-corpstrat-2027-pay",
           "intuit-pm-2027"
@@ -257,7 +252,7 @@
       },
       "sponsorship": {
         "stance": "authorization required",
-        "scope": "finance, sourcing and PM postings (8 of 16); the others don't say",
+        "scope": "7 of the 15 MBA postings (finance and sourcing) and the all-degree PM intern posting; the others don't say",
         "cycle": "2026",
         "sources": [
           "intuit-finstrat-gbsg-2027-auth"
@@ -412,10 +407,10 @@
         "where": "US; higher band for the SF Bay Area and New York City",
         "cycle": "2026",
         "postings": 2,
-        "note": "Bay Area and New York City band: $6,810–$11,330 a month. The Surface Business Program Management posting states no pay.",
+        "note": "Central Finance and Treasury state the same range. Bay Area and New York City band: $6,810–$11,330 a month. The Surface Business Program Management posting states no pay.",
         "sources": [
           "ms-200055972-pay",
-          "ms-200058904"
+          "ms-200055974"
         ]
       },
       "locations": {
@@ -446,7 +441,7 @@
         },
         {
           "date": "2026-07-06",
-          "what": "Cut about 4,800 roles (2.1%), mostly Xbox and commercial sales",
+          "what": "Cut about 4,800 roles (2.1%), mostly in the Commercial and Xbox organizations",
           "low": 4800,
           "high": 4800,
           "sources": [
@@ -723,20 +718,6 @@
       "days": null
     },
     "intern": {
-      "pay": {
-        "low": 27,
-        "high": 82,
-        "per": "hour",
-        "where": "US",
-        "cycle": "2025",
-        "postings": 3,
-        "note": "NVIDIA states one hourly band for all of its interns, not an MBA-specific range.",
-        "sources": [
-          "builtin-nvidia-corpdev-2026-pay",
-          "builtin-nvidia-treasury-2026",
-          "getro-anitab-nvidia-adas-2026"
-        ]
-      },
       "locations": {
         "places": [
           "Santa Clara, CA"
@@ -805,8 +786,7 @@
     "intern": {
       "locations": {
         "places": [
-          "San Francisco, CA",
-          "Burlingame, CA"
+          "San Francisco, CA"
         ],
         "cycle": "2024",
         "sources": [
@@ -840,7 +820,7 @@
         },
         {
           "date": "2026-04-23",
-          "what": "Laid off about 8,000 (10%) on May 20 and left 6,000 open roles unfilled",
+          "what": "Announced about 8,000 layoffs (10%), effective May 20, and left 6,000 open roles unfilled",
           "low": 8000,
           "high": 8000,
           "sources": [
@@ -902,7 +882,7 @@
         "where": "US",
         "cycle": "2025",
         "postings": 2,
-        "note": "Last cycle: Advanced Analytics $40–$48, Strategic Finance & Analytics $48.",
+        "note": "Last cycle: Advanced Analytics $40–$48, Strategic Finance & Analytics $48. Both postings were open to Master's as well as MBA students.",
         "sources": [
           "builtinnyc-airbnb-aa-2026-pay",
           "builtin-airbnb-sfa-2026-pay"
@@ -1533,13 +1513,14 @@
         "per": "hour",
         "where": "Santa Clara, CA",
         "cycle": "2025",
-        "postings": 4,
-        "note": "Last cycle's postings: PMM $53.13, Corporate Development $57.70–$73.97, Business Strategy $65.93, Finance $58.50–$75.",
+        "postings": 5,
+        "note": "Last cycle's postings: PMM $53.13, Corporate Development and Corporate Strategy $57.70–$73.97 each, Business Strategy $65.93, Finance $58.50–$75.",
         "sources": [
           "servicenow-sr-pmm-mba-2026-pay",
           "servicenow-sr-finance-mba-2026-pay",
           "servicenow-sr-corpdev-2026",
-          "servicenow-sr-strategy-specialist-2026"
+          "servicenow-sr-strategy-specialist-2026",
+          "servicenow-sr-corpstrategy-2026"
         ]
       },
       "locations": {
@@ -1558,7 +1539,8 @@
         "scope": "Corporate Development, Corporate Strategy and PMM postings last cycle; Finance and Business Strategy didn't say",
         "cycle": "2025",
         "sources": [
-          "servicenow-sr-corpdev-2026-visa"
+          "servicenow-sr-corpdev-2026-visa",
+          "servicenow-sr-corpstrategy-2026"
         ]
       },
       "teamModel": {
@@ -1572,7 +1554,7 @@
       "pulse": [
         {
           "date": "2026-07-30",
-          "what": "Cutting up to 1,000 roles after acquisitions, aiming for flat headcount in 2026",
+          "what": "Reported to be cutting up to 1,000 roles after acquisitions; the CEO has said headcount will end 2026 flat",
           "high": 1000,
           "sources": [
             "servicenow-layoffs-investing-2026-07"
@@ -1762,11 +1744,13 @@
       },
       "sponsorship": {
         "stance": "no sponsorship",
-        "scope": "last cycle's Finance posting and the 2024 PM posting",
+        "scope": "all three MBA postings last cycle (Consulting & Analytics, Finance, Corporate Strategy) and the 2024 PM posting",
         "cycle": "2025",
         "sources": [
           "visa-sr-pm-2024-visa",
-          "visa-linkedin-finance-2025"
+          "visa-linkedin-vca-2025",
+          "visa-linkedin-finance-2025",
+          "visa-wayup-corpstrategy-2025"
         ]
       },
       "teamModel": {
@@ -1923,11 +1907,12 @@
       },
       "sponsorship": {
         "stance": "no sponsorship",
-        "scope": "all three MBA postings (Financial Analyst, Enterprise Planning, PMM)",
+        "scope": "both MBA postings last cycle (Financial Analyst, Enterprise Planning) and the 2024 PMM posting",
         "cycle": "2025",
         "sources": [
           "workday-li-fa-mba-2025-visa",
-          "workday-weekday-ep-mba"
+          "workday-weekday-ep-mba",
+          "workday-builtin-pmm-2025"
         ]
       },
       "teamModel": {
