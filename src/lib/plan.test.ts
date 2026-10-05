@@ -1,10 +1,10 @@
 import { describe, expect, it } from "vitest";
-import type { CalendarMarker, Hiring } from "@/data/types";
+import type { CalendarMarker, Hiring, WindowObs } from "@/data/types";
 import { gsbRule, openWeeks, planOf } from "./plan";
 
-const w = (cycle: "2023" | "2024" | "2025" | "2026", from: string, to = from, evidence: "strong" | "medium" | "weak" = "strong", closes?: string) =>
+const w = (cycle: "2023" | "2024" | "2025" | "2026", from: string, to = from, evidence: "strong" | "medium" | "weak" = "strong", closes?: string): WindowObs =>
   ({ cycle, from, to, evidence, closes, sources: ["x"] });
-const h = (windows: ReturnType<typeof w>[], postings: Hiring["current"]["postings"] = []): Hiring =>
+const h = (windows: WindowObs[], postings: Hiring["current"]["postings"] = []): Hiring =>
   ({ hasProgram: true, pattern: "", windows, current: { checked: "2026-10-04", summary: "", postings } });
 const m = (id: string, from: string, to: string | null, description = ""): CalendarMarker =>
   ({ id, label: id, from, to, kind: "quiet", description, confidence: "high", sources: [`src-${id}`] });

@@ -12,7 +12,8 @@
     "typecheck": "tsc --noEmit",
     "refresh:sec": "node scripts/refresh-sec.mjs",
     "deploy": "npm run build && python3 scripts/publish.py",
-    "check:sources": "node scripts/check-sources.mjs"
+    "check:sources": "node scripts/check-sources.mjs",
+    "add:firsthand": "node scripts/add-firsthand.mjs"
   },
   "dependencies": {
     "d3-force": "^3.0.0",
