@@ -10,5 +10,6 @@
       "source": "source",
       "email": "email"
     }
-  }
+  },
+  "analytics": null
 }

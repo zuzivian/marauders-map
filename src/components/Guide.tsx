@@ -4,6 +4,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState, t
 import { companies, meta } from "@/data";
 import { useToday } from "@/lib/useToday";
 import { companyPath } from "@/lib/share";
+import { track } from "@/lib/analytics";
 
 interface GuideState {
   selected: string;
@@ -30,6 +31,7 @@ export function GuideProvider({ children }: { children: ReactNode }) {
     setSelected(id);
     // Keep the address bar on the company's own page, so whatever the reader copies is the link to share.
     window.history.replaceState(null, "", companyPath(id));
+    track(`select/${id}`, "Picked a company");
     if (opts?.reveal) document.getElementById("companies")?.scrollIntoView({ behavior: "smooth", block: "start" });
   }, []);
   // A company's page opens on its field notes. Wait two frames so the charts have measured themselves first,

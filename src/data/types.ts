@@ -150,4 +150,6 @@ export interface Meta {
     action: string;
     fields: { about: string; correction: string; source: string; email: string };
   } | null;
+  /** Opt-in, cookie-free counts (see src/lib/analytics.ts); null loads nothing. `code` is the GoatCounter site code. */
+  analytics: { kind: "goatcounter"; code: string } | null;
 }

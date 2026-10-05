@@ -3,6 +3,7 @@ import { Newsreader, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import { meta } from "@/data";
 import { SITE } from "@/lib/share";
 import { ogImage } from "@/lib/og";
+import Analytics from "@/components/Analytics";
 import "./globals.css";
 
 const serif = Newsreader({ variable: "--font-serif", subsets: ["latin"], style: ["normal", "italic"] });
@@ -33,7 +34,10 @@ export const viewport: Viewport = { themeColor: "#f5f1e8", width: "device-width"
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${serif.variable} ${sans.variable} ${mono.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { companyUrl } from "@/lib/share";
+import { track } from "@/lib/analytics";
 
 /** Copies a company's own link (/c/<id>/), the one to paste into Slack or WhatsApp. */
 export function CopyLink({ id }: { id: string }) {
@@ -17,6 +18,7 @@ export function CopyLink({ id }: { id: string }) {
     try {
       await navigator.clipboard.writeText(url);
       setState("copied");
+      track(`copy-link/${id}`, "Copied a company link");
     } catch {
       setState("failed"); // no clipboard access (old browser, insecure context): show the link to copy by hand
     }

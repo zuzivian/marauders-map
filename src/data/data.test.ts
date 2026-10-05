@@ -156,5 +156,7 @@ describe("meta", () => {
       expect(meta.corrections.action).toMatch(/^https:\/\//);
       if (meta.corrections.kind === "google") expect(meta.corrections.action).toMatch(/\/formResponse$/);
     }
+    expect(meta.analytics === null || meta.analytics.kind === "goatcounter", "analytics is off (null) or GoatCounter").toBe(true);
+    if (meta.analytics) expect(meta.analytics.code, "a GoatCounter site code, not a URL").toMatch(/^[a-z0-9][a-z0-9-]*$/);
   });
 });
