@@ -112,7 +112,7 @@ button, select, input { font: inherit; color: inherit; }
   .trail-v, .who-narrow-wrap { display: block; }
 }
 
-/* sections: a heading and one line; 02–04 fold */
+/* sections: a heading and one line, folded */
 .section { padding-top: 72px; }
 .toc + .section { padding-top: 40px; }
 .section-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0 24px; border-top: 1px solid var(--ink); padding-top: 18px; margin-bottom: 24px; }
