@@ -18,6 +18,15 @@
 * { box-sizing: border-box; }
 html { scroll-padding-top: 52px; }
 html, body { margin: 0; background: var(--paper); color: var(--ink); }
+/* Faint fold creases, like a map that's been folded in thirds and in half. */
+body {
+  background-image:
+    linear-gradient(90deg, transparent calc(33.33% - 1px), rgba(28, 26, 22, 0.035) 33.33%, transparent calc(33.33% + 1px)),
+    linear-gradient(90deg, transparent calc(66.66% - 1px), rgba(28, 26, 22, 0.035) 66.66%, transparent calc(66.66% + 1px)),
+    linear-gradient(180deg, transparent calc(50% - 1px), rgba(28, 26, 22, 0.03) 50%, transparent calc(50% + 1px)),
+    radial-gradient(ellipse at center, transparent 60%, rgba(120, 96, 60, 0.07) 100%);
+  background-attachment: fixed;
+}
 body { font-family: var(--sans); font-size: 15px; line-height: 1.55; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; }
 a { color: var(--cardinal); text-decoration-thickness: 0.5px; text-underline-offset: 3px; }
 button, select, input { font: inherit; color: inherit; }
@@ -37,6 +46,8 @@ button, select, input { font: inherit; color: inherit; }
 .masthead { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 16px; padding: 40px 0 18px; border-bottom: 2px solid var(--ink); }
 .masthead h1 { font-family: var(--serif); font-weight: 400; font-size: 54px; line-height: 1; letter-spacing: -0.01em; margin: 0; }
 .masthead h1 em { color: var(--cardinal); }
+.masthead .compass { display: block; width: 44px; height: 44px; color: var(--cardinal); opacity: 0.75; margin: 0 0 8px auto; }
+.masthead .tagline { font-family: var(--serif); font-style: italic; font-size: 15px; color: var(--ink-2); margin-top: 6px; }
 .masthead .meta { font-family: var(--mono); font-size: 11px; color: var(--ink-3); text-align: right; line-height: 1.7; }
 .dek { font-family: var(--serif); font-size: 20px; line-height: 1.45; color: var(--ink-2); max-width: 720px; margin: 18px 0 0; }
 
@@ -170,7 +181,7 @@ details.why p { margin: 6px 0; }
 .tl-line.tl-deadline { border-left: 1.5px solid var(--cardinal); }
 .tl-line.tl-events { border-left: 1px dashed var(--ink-2); }
 .tl-today { position: absolute; top: -20px; bottom: -18px; border-left: 1.5px dashed var(--cardinal); }
-.tl-today span { position: absolute; bottom: 0; left: 4px; font-family: var(--serif); font-style: italic; font-size: 13px; color: var(--cardinal); background: var(--paper); padding: 0 2px; }
+.tl-today span { position: absolute; bottom: 0; left: 4px; white-space: nowrap; font-family: var(--serif); font-style: italic; font-size: 13px; color: var(--cardinal); background: var(--paper); padding: 0 2px; }
 .tl-row-wrap { position: relative; z-index: 1; border-bottom: 0.5px dotted var(--stone); }
 .tl-row { display: grid; grid-template-columns: var(--name-w) 1fr var(--verdict-w); align-items: center; min-height: 40px; cursor: pointer; list-style: none; }
 .tl-row::-webkit-details-marker { display: none; }
@@ -244,6 +255,7 @@ details.why p { margin: 6px 0; }
   .masthead { grid-template-columns: 1fr; padding-top: 28px; }
   .masthead h1 { font-size: 40px; }
   .masthead .meta { text-align: left; }
+  .masthead .compass { margin-left: 0; width: 36px; height: 36px; }
   .dek { font-size: 18px; }
   .toc { gap: 20px; }
   .section { padding-top: 48px; }

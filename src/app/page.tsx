@@ -25,13 +25,29 @@ const SECTIONS = [
   { id: "prep", short: "prep", title: "Prep, sorted by what it’s good for", dek: "Which tools cover which interview skills, by role. Information, not a study plan.", body: <PrepMatrix /> },
 ];
 
+function Compass() {
+  return (
+    <svg className="compass" viewBox="0 0 48 48" aria-hidden>
+      <circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" strokeWidth="0.75" />
+      <circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" strokeWidth="0.5" strokeDasharray="1 2.5" />
+      <path d="M24 4 L27 24 L24 44 L21 24 Z" fill="currentColor" opacity="0.85" />
+      <path d="M4 24 L24 21 L44 24 L24 27 Z" fill="currentColor" opacity="0.35" />
+      <text x="24" y="2.5" textAnchor="middle" fontSize="5" fill="currentColor" fontFamily="var(--serif)">N</text>
+    </svg>
+  );
+}
+
 export default function Home() {
   return (
     <GuideProvider>
       <main className="page">
         <header className="masthead">
-          <h1>Lone Tree<br /><em>a field guide to big tech</em></h1>
-          <div className="meta">for gsb mba1s<br />recruiting season {meta.currentCycle}–{Number(meta.currentCycle) + 1 - 2000}<br />data checked {fmtDate(meta.researched, { year: true }).toLowerCase()}</div>
+          <div>
+            <h1>Lone Tree<br /><em>a field guide to big tech</em></h1>
+            <div className="tagline">a map of who&apos;s hiring, and when</div>
+          </div>
+          <div className="meta">
+            <Compass />for gsb mba1s<br />recruiting season {meta.currentCycle}–{Number(meta.currentCycle) + 1 - 2000}<br />data checked {fmtDate(meta.researched, { year: true }).toLowerCase()}</div>
         </header>
         <p className="dek">
           Career Hub tells you what&apos;s open. This tells you what it is: what the titles mean, how the big tech companies differ,

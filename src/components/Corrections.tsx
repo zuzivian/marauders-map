@@ -40,7 +40,7 @@ export default function Corrections() {
   if (!meta.correctionsEndpoint) return null;
   return (
     <section id="corrections" className="corrections" aria-labelledby="corrections-h">
-      {thanks && <p className="callout" role="status">Thanks, your correction was sent.</p>}
+      {thanks && <p className="callout" role="status">Thanks, your correction was sent. Mischief managed.</p>}
       <details ref={ref}>
         <summary id="corrections-h">Spot something wrong or out of date? Send a correction</summary>
         <form action={meta.correctionsEndpoint} method="POST">

@@ -42,7 +42,7 @@ export default function Windows() {
                 : <div key={m.id} className={`tl-line tl-${m.kind}`} style={{ left: pct(a) }} />;
             })}
             {live && todayWk >= 0 && todayWk <= SEASON_WEEKS && (
-              <div className="tl-today" style={{ left: pct(todayWk) }}><span>today</span></div>
+              <div className="tl-today" style={{ left: pct(todayWk) }}><span>you are here</span></div>
             )}
           </div>
           {rows.map((c) => {
