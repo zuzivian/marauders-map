@@ -50,10 +50,7 @@ export default function Home() {
           <div className="meta">
             <Compass />for gsb mba1s<br />recruiting season {meta.currentCycle}–{Number(meta.currentCycle) + 1 - 2000}<br />data checked {fmtDate(meta.researched, { year: true }).toLowerCase()}</div>
         </header>
-        <p className="dek">
-          Career Hub tells you what&apos;s open. This tells you what it is: what the titles mean, how the big tech companies differ,
-          when they tend to open, and which prep is worth your time.
-        </p>
+        <p className="dek">Who&apos;s hiring MBA interns in big tech, for what, and when. Every date sourced.</p>
         <nav className="toc" aria-label="Sections">
           {SECTIONS.map((s, i) => <a key={s.id} href={`#${s.id}`}><span className="no">0{i + 1}</span> {s.short}</a>)}
         </nav>

@@ -30,6 +30,28 @@ function detail(it: TrailItem) {
   }
 }
 
+/** One line of what matters today, computed from the same marks the trail draws. */
+function Summary({ items }: { items: TrailItem[] }) {
+  const of = (m: Mark) => items.filter((i) => i.mark === m);
+  const open = [...of("closing"), ...of("open")];
+  const soonest = open.filter((i) => i.daysLeft !== null && i.daysLeft >= 0).sort((a, b) => a.daysLeft! - b.daysLeft!)[0];
+  const due = of("due"), late = of("late");
+  const names = (xs: TrailItem[]) => (xs.length <= 2 ? xs.map((x) => x.company.name).join(" and ") : `${xs.length}`);
+  const parts: [Mark, string][] = [];
+  if (open.length) parts.push(["open", `${open.length} open now`]);
+  if (soonest) parts.push([soonest.mark, `${soonest.company.name} closes in ${plural(soonest.daysLeft!, "day")}`]);
+  if (due.length) parts.push(["due", `${names(due)} due any day`]);
+  if (late.length) parts.push(["late", `${names(late)} running late`]);
+  if (!parts.length) return null;
+  return (
+    <p className="trail-sum">
+      {parts.map(([m, t], i) => (
+        <span key={t} className={`m-${m}`}>{i > 0 && <span className="sep"> · </span>}<span className="glyph" aria-hidden>{MARK[m].glyph}</span> {t}</span>
+      ))}
+    </p>
+  );
+}
+
 export function MarkLegend({ marks = MARK_ORDER }: { marks?: Mark[] }) {
   return (
     <div className="marks" aria-label="Legend">
@@ -43,6 +65,7 @@ export function MarkLegend({ marks = MARK_ORDER }: { marks?: Mark[] }) {
 export default function Trail() {
   const { today, live, select } = useGuide();
   const [ref, W] = useWidth<HTMLDivElement>(1060);
+  const [vref, VW] = useWidth<HTMLDivElement>(343);
   const items = useMemo(() => trailItems(companies, hiring, today, cycle), [today]);
   const todayWk = weekOf(today, cycle);
 
@@ -55,13 +78,14 @@ export default function Trail() {
   return (
     <section className="trail" aria-labelledby="trail-h">
       <h2 id="trail-h" className="label">the season so far · {live ? fmtDate(today, { year: true }) : `as of ${fmtDate(meta.researched, { year: true })}`}</h2>
+      <Summary items={items} />
       {over && <p className="warn">The {cycle}–{Number(cycle) + 1 - 2000} season has ended. This guide hasn&apos;t been updated for the next one yet.</p>}
       {live && age > 10 && !over && (
         <p className="warn">Postings were last checked {fmtDate(meta.researched)} ({age} days ago). Confirm on the careers site before you count on anything here.</p>
       )}
       {/* Both layouts render; CSS shows the right one from the first paint (no flash before JS measures width). */}
       <div ref={ref} className="trail-h">{W >= 320 && <HorizontalTrail items={items} W={W} todayWk={todayWk} live={live} onPick={(id) => select(id, { reveal: true })} />}</div>
-      <div className="trail-v"><VerticalTrail items={items} todayWk={todayWk} live={live} onPick={(id) => select(id, { reveal: true })} /></div>
+      <div ref={vref} className="trail-v">{VW >= 260 && <VerticalTrail items={items} W={VW} todayWk={todayWk} live={live} onPick={(id) => select(id, { reveal: true })} />}</div>
       <MarkLegend marks={MARK_ORDER.filter((m) => shown.has(m))} />
       {(current.length > 0 || next) && (
         <p className="gsb-line">
@@ -74,21 +98,29 @@ export default function Trail() {
   );
 }
 
-function HorizontalTrail({ items, W, todayWk, live, onPick }: { items: TrailItem[]; W: number; todayWk: number; live: boolean; onPick: (id: string) => void }) {
-  const m = { l: 14, r: 14 };
+/** The months the trail covers: from the earliest company (or today) to the latest, snapped to month starts. */
+function seasonSpan(items: TrailItem[], todayWk: number) {
   const first = Math.min(...items.map((i) => i.week), todayWk);
   const last = Math.max(...items.map((i) => i.week), todayWk);
   const i0 = Math.max(0, [...SEASON_MONTHS.keys()].findLast((i) => monthStartWeek(i, cycle) <= first - 1) ?? 0);
   const i1 = Math.min(SEASON_MONTHS.length - 1, ([...SEASON_MONTHS.keys()].find((i) => monthStartWeek(i, cycle) > last + 1) ?? SEASON_MONTHS.length) - 1);
   const w0 = monthStartWeek(i0, cycle), w1 = i1 + 1 < SEASON_MONTHS.length ? monthStartWeek(i1 + 1, cycle) : last + 2;
+  return { i0, i1, w0, w1 };
+}
+const tagText = (it: TrailItem) => `${it.company.name}${note(it) ? ` ${note(it)}` : ""}`;
+const tagWidth = (text: string) => text.length * 6.9 + 22;
+
+function HorizontalTrail({ items, W, todayWk, live, onPick }: { items: TrailItem[]; W: number; todayWk: number; live: boolean; onPick: (id: string) => void }) {
+  const m = { l: 14, r: 14 };
+  const { i0, i1, w0, w1 } = seasonSpan(items, todayWk);
   const x = (wk: number) => m.l + ((wk - w0) / (w1 - w0)) * (W - m.l - m.r);
 
   // Pack tags into lanes above (posted) and below (not yet) the path so labels never overlap.
   const ends: Record<"up" | "down", number[]> = { up: [], down: [] };
   const placed = items.map((it) => {
       const side = it.posted ? "up" : "down";
-      const text = `${it.company.name}${note(it) ? ` ${note(it)}` : ""}`;
-      const width = text.length * 6.9 + 22;
+      const text = tagText(it);
+      const width = tagWidth(text);
       const left = Math.min(W - m.r - width, Math.max(m.l, x(it.week) - 7));
       let lane = ends[side].findIndex((end) => end + 6 < left);
       if (lane < 0) lane = ends[side].push(0) - 1;
@@ -144,24 +176,68 @@ function HorizontalTrail({ items, W, todayWk, live, onPick }: { items: TrailItem
   );
 }
 
-function VerticalTrail({ items, todayWk, live, onPick }: { items: TrailItem[]; todayWk: number; live: boolean; onPick: (id: string) => void }) {
-  const split = items.findIndex((it) => it.week > todayWk);
-  const before = split < 0 ? items : items.slice(0, split);
-  const after = split < 0 ? [] : items.slice(split);
-  const row = (it: TrailItem) => (
-    <li key={it.company.id}>
-      <button className={`vrow m-${it.mark}`} onClick={() => onPick(it.company.id)} aria-label={`${it.company.name}: ${MARK[it.mark].label}, ${detail(it)}`}>
-        <span className="glyph" aria-hidden>{MARK[it.mark].glyph}</span>
-        <span className="vname">{it.company.name}</span>
-        <span className="vmeta">{detail(it)}</span>
-      </button>
-    </li>
-  );
+/** The same trail turned on its side for phones: time runs down the path, posted companies on the left, not-yet on the right. */
+function VerticalTrail({ items, W, todayWk, live, onPick }: { items: TrailItem[]; W: number; todayWk: number; live: boolean; onPick: (id: string) => void }) {
+  const { i0, i1, w0, w1 } = seasonSpan(items, todayWk);
+  const PER_WEEK = 22, TAG = 19, GAP = 4, TOP = 30;
+  const px = Math.round(W / 2);
+  const y = (wk: number) => TOP + (wk - w0) * PER_WEEK;
+
+  // Stack tags down each side so they never overlap; stems run back to each company's spot on the path.
+  const bottoms = { left: -Infinity, right: -Infinity };
+  const placed = items.map((it) => {
+    const side = it.posted ? "left" : "right";
+    const text = tagText(it);
+    const width = Math.min(tagWidth(text), px - 28);
+    const ty = Math.max(y(it.week) - TAG / 2, bottoms[side] + GAP);
+    bottoms[side] = ty + TAG;
+    const tx = side === "left" ? px - 22 - width : px + 22; // clear of the month pins on the path
+    return { it, side, text, width, tx, ty };
+  });
+  const H = Math.max(y(w1), bottoms.left, bottoms.right) + 28;
+  const bands = calendar.filter((c) => c.timeline && c.to && (c.kind === "quiet" || c.kind === "interviews"));
+
   return (
-    <ol className="vtrail">
-      {before.map(row)}
-      {live && <li className="vhere" aria-label="You are here"><span>you are here</span></li>}
-      {after.map(row)}
-    </ol>
+    <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} className="trail-svg vertical" role="group" aria-label="Companies placed on the recruiting season, top to bottom. Left of the path: posted this cycle. Right: not posted yet.">
+      <text x={px - 22} y={14} textAnchor="end" className="side">posted</text>
+      <text x={px + 22} y={14} className="side">not yet</text>
+      {bands.map((b) => (
+        <rect key={b.id} x={px - 5} width={10} y={y(weekOf(b.from, cycle))} height={Math.max(2, y(weekOf(b.to!, cycle) + 1 / 7) - y(weekOf(b.from, cycle)))}
+          className={`band band-${b.kind}`}><title>{`${b.label}: ${fmtDate(b.from)} – ${fmtDate(b.to!)}`}</title></rect>
+      ))}
+      <line x1={px} x2={px} y1={TOP - 6} y2={y(w1)} className="path" />
+      {placed.map(({ it, side, tx, ty, width }) => {
+        const py = y(it.week), edge = side === "left" ? tx + width : tx;
+        return (
+          <g key={`stem-${it.company.id}`}>
+            <path d={`M${px},${py} C${(px + edge) / 2},${py} ${(px + edge) / 2},${ty + TAG / 2} ${edge},${ty + TAG / 2}`} className="stem" fill="none" />
+            <circle cx={px} cy={py} r={2.5} className={`foot m-${it.mark}`} />
+          </g>
+        );
+      })}
+      {SEASON_MONTHS.slice(i0, i1 + 1).map((mo, k) => {
+        const my = y(monthStartWeek(i0 + k, cycle));
+        return (
+          <g key={mo} className="month-pin">
+            <rect x={px - 15} y={my - 7} width={30} height={14} rx={3} />
+            <text x={px} y={my + 3.5} textAnchor="middle" className="month">{mo}</text>
+          </g>
+        );
+      })}
+      {placed.map(({ it, text, tx, ty, width }) => (
+        <g key={it.company.id} className={`tag m-${it.mark}`} transform={`translate(${tx},${ty})`} role="button" tabIndex={0}
+          aria-label={`${it.company.name}: ${MARK[it.mark].label}, ${detail(it)}`}
+          onClick={() => onPick(it.company.id)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onPick(it.company.id); } }}>
+          <rect width={width} height={TAG} rx={3} />
+          <text x={7} y={13.5}><tspan className="glyph">{MARK[it.mark].glyph}</tspan> {text}</text>
+        </g>
+      ))}
+      {live && todayWk >= w0 && todayWk <= w1 && (
+        <g className="here">
+          <line x1={4} x2={W - 4} y1={y(todayWk)} y2={y(todayWk)} />
+          <text x={W - 4} y={y(todayWk) - 5} textAnchor="end">you are here</text>
+        </g>
+      )}
+    </svg>
   );
 }

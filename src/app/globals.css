@@ -71,6 +71,10 @@ button, select, input { font: inherit; color: inherit; }
 /* the trail */
 .trail { margin-top: 28px; padding: 14px 16px 10px; background: var(--paper-2); }
 .trail h2 { margin: 0 0 4px; font-weight: 400; }
+.trail-sum { font-family: var(--serif); font-size: 19px; line-height: 1.4; margin: 0 0 6px; color: var(--ink); }
+.trail-sum .glyph { color: var(--mk); font-size: 15px; }
+.trail-sum .m-closing, .trail-sum .m-due { color: var(--cardinal); }
+.trail-sum .sep { color: var(--ink-3); }
 .trail-svg { display: block; overflow: visible; max-width: 100%; height: auto; }
 .trail-svg .path { stroke: var(--ink-2); stroke-width: 1.5; stroke-dasharray: 2 5; stroke-linecap: round; }
 .trail-svg .month-tick { stroke: var(--ink-3); stroke-width: 1; }
@@ -88,16 +92,9 @@ button, select, input { font: inherit; color: inherit; }
 .trail-svg .tag:hover rect, .trail-svg .tag:focus-visible rect { stroke: var(--cardinal); stroke-width: 1.5; }
 .trail-svg .here line { stroke: var(--cardinal); stroke-width: 1.25; stroke-dasharray: 4 3; }
 .trail-svg .here text { font-family: var(--serif); font-style: italic; font-size: 13px; fill: var(--cardinal); }
-.vtrail { list-style: none; margin: 6px 0 0; padding: 0 0 0 14px; border-left: 1.5px dotted var(--ink-3); }
-.vtrail li { margin: 0; }
-.vrow { display: grid; grid-template-columns: 18px auto 1fr; gap: 6px; align-items: baseline; width: 100%; background: none; border: none; padding: 5px 0; text-align: left; cursor: pointer; color: var(--mk); }
-.vrow .glyph { color: var(--mk); }
-.vrow .vname { font-size: 14px; }
-.vrow.m-closed .vname { text-decoration: line-through; }
-.vrow .vmeta { font-size: 12px; color: var(--ink-3); text-align: right; }
-.vrow.m-closing .vmeta { color: var(--cardinal); }
-.vhere { position: relative; margin: 6px 0 6px -14px !important; border-top: 1.25px dashed var(--cardinal); }
-.vhere span { position: relative; top: -10px; left: 14px; background: var(--paper-2); padding: 0 6px; font-family: var(--serif); font-style: italic; font-size: 13px; color: var(--cardinal); }
+.trail-svg .side { font-family: var(--mono); font-size: 10.5px; fill: var(--ink-3); }
+.trail-svg .month-pin rect { fill: var(--paper-2); stroke: var(--ink-3); stroke-width: 0.5; }
+.trail-svg.vertical .here text { paint-order: stroke; stroke: var(--paper-2); stroke-width: 4px; }
 .gsb-line { margin: 6px 0 0; font-size: 12.5px; color: var(--ink-2); }
 
 /* layout switches by CSS so the prerendered page is already right on phones */
@@ -323,6 +320,7 @@ details.why p { margin: 6px 0; }
   .section-head h2 { font-size: 28px; }
   .section-head p { grid-column: 1; }
   .search { font-size: 21px; }
+  .trail-sum { font-size: 17px; }
   .timeline { --name-w: 0px; --verdict-w: 0px; }
   .tl-head { grid-template-columns: 0 1fr 0; }
   .tl-month { font-size: 10px; padding-left: 2px; }
