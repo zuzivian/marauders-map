@@ -24,10 +24,10 @@ const count = (n: number) => words[n] ?? String(n);
 const cap = (s: string) => s[0].toUpperCase() + s.slice(1);
 
 // Ordered by urgency: when to move, who the companies are, what the jobs are called, how to prepare.
-// Timing stays open; the rest fold to a heading and one line computed from the data.
+// Each folds to a heading and one line computed from the data.
 const SECTIONS = [
   {
-    id: "windows", short: "timing", title: "When applications open", open: true as const,
+    id: "windows", short: "timing", title: "When applications open",
     line: `When ${count(withProgram)} companies’ MBA internship postings went live over the last ${count(cycles)} cycles, with the uncertainty left in.`,
     dek: "A tight cluster means you can plan around it; a wide smear means watch the postings.",
     body: <Windows />,

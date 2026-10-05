@@ -10,8 +10,8 @@ interface Props {
   line: string;
   /** How to read the section, shown once it's open. */
   dek?: string;
-  /** Start open: the timing section always; the companies section on a company's own page. */
-  open?: boolean | "on-company-page";
+  /** Start open on a company's own page (the companies section); otherwise every section starts folded. */
+  open?: false | "on-company-page";
   children: ReactNode;
 }
 
@@ -28,16 +28,6 @@ export default function Section({ id, title, line, dek, open = false, children }
       <p className="section-line">{line}</p>
     </>
   );
-  if (open === true)
-    return (
-      <section id={id} className="section" aria-labelledby={`${id}-h`}>
-        <div className="section-head">
-          <h2 id={`${id}-h`}>{title}</h2>
-          <p className="section-line">{line}{dek && ` ${dek}`}</p>
-        </div>
-        {children}
-      </section>
-    );
   return (
     <section id={id} className="section" aria-labelledby={`${id}-h`}>
       <details className="fold" open={open === "on-company-page" && company !== null ? true : undefined}>

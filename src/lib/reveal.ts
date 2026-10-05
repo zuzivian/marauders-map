@@ -1,4 +1,4 @@
-// Sections 02–04 start folded: a <details class="fold"> inside each section, so their content is in the page (and in
+// Every section starts folded: a <details class="fold"> inside each section, so their content is in the page (and in
 // find-in-page) but out of the way. Anything that sends the reader somewhere opens the folds around it first, so a link,
 // a company page or an "open field notes" button never lands on a closed section. Open/closed isn't remembered.
 
