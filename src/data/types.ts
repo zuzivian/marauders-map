@@ -142,5 +142,5 @@ export interface Prep {
 export interface Meta {
   currentCycle: Cycle;
   researched: ISODate; // the date the data was last checked end to end
-  correctionsUrl: string | null;
+  correctionsEndpoint: string | null; // FormSubmit form action; null hides the corrections form
 }

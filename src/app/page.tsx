@@ -6,6 +6,7 @@ import RoleDecoder from "@/components/RoleDecoder";
 import Explorer from "@/components/Explorer";
 import Windows from "@/components/Windows";
 import PrepMatrix from "@/components/PrepMatrix";
+import Corrections from "@/components/Corrections";
 
 const withProgram = companies.filter((c) => hiring[c.id].hasProgram).length;
 const words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two", "twenty-three", "twenty-four", "twenty-five"];
@@ -53,6 +54,8 @@ export default function Home() {
           </section>
         ))}
 
+        <Corrections />
+
         <footer className="foot">
           <div>
             <strong>How this is made.</strong> Every number links to its source. Market values and revenue come from SEC filings and market data;
@@ -61,7 +64,7 @@ export default function Home() {
           </div>
           <div className="foot-row">
             <span>made by <a href="https://natwong.dev" target="_blank" rel="noopener">nat wong</a>, for gsb mba1s · not affiliated with the cmc or career hub</span>
-            {meta.correctionsUrl ? <a href={meta.correctionsUrl}>send a correction</a> : <span>corrections welcome</span>}
+            {meta.correctionsEndpoint ? <a href="#corrections">send a correction</a> : <span>corrections welcome</span>}
           </div>
         </footer>
       </main>

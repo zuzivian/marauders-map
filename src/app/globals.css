@@ -218,6 +218,17 @@ details.why p { margin: 6px 0; }
 .dots i { width: 10px; height: 10px; border-radius: 50%; border: 1px solid var(--stone); transition: background 0.25s, border-color 0.25s; }
 .dots i.on { background: var(--cardinal); border-color: var(--cardinal); }
 
+.corrections { margin-top: 72px; }
+.corrections summary { font-family: var(--serif); font-size: 22px; cursor: pointer; color: var(--ink); }
+.corrections summary:hover { color: var(--cardinal); }
+.corrections form { display: grid; gap: 14px; max-width: 640px; margin-top: 16px; }
+.corrections label { display: grid; gap: 4px; }
+.corrections .field { width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--stone); border-radius: 0; padding: 6px 0; font-size: 15px; appearance: none; }
+.corrections textarea.field { border: 1px solid var(--stone); padding: 8px; resize: vertical; }
+.corrections .field:focus-visible { outline: none; border-color: var(--cardinal); }
+.corrections .send { justify-self: start; background: var(--cardinal); color: var(--paper); border: none; padding: 9px 18px; font-size: 14px; cursor: pointer; }
+.corrections .send:hover { background: var(--cardinal-dark); }
+.honey { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 .foot { margin-top: 96px; border-top: 2px solid var(--ink); padding-top: 14px; font-size: 13px; color: var(--ink-2); display: grid; gap: 14px; }
 .foot strong { font-weight: 500; color: var(--ink); }
 .foot-row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; font-family: var(--mono); font-size: 11px; color: var(--ink-3); }

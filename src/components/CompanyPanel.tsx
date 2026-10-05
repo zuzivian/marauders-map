@@ -8,6 +8,7 @@ import { fmtCap, fmtPct, fmtWithRange, prose } from "@/lib/format";
 import { format } from "d3-format";
 import { useGuide } from "./Guide";
 import { Cite, SourceList } from "./Sources";
+import { openCorrection } from "./Corrections";
 
 const cycle = meta.currentCycle;
 export const STAGE: Record<StageType, { label: string; glyph: string }> = {
@@ -149,6 +150,9 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
         <summary>All sources for {c.name}</summary>
         <SourceList ids={allSources} label="" />
       </details>
+      {meta.correctionsEndpoint && (
+        <p className="small"><button className="linkish" onClick={() => openCorrection(c.name)}>Something wrong about {c.name}? Tell us</button></p>
+      )}
     </aside>
   );
 }
