@@ -10,7 +10,7 @@ export const LIMITS = { text: 280, stage: 60, stages: 12, displayName: 40, weeks
 export const MIN_FOR_DETAILS = 2;
 
 export const PATH_LABEL: Record<FirsthandPath, string> = {
-  oci: "OCI", referral: "referral", "direct application": "direct application", "company event": "company event", "club or trek": "club or trek", other: "other",
+  oci: "OCI", referral: "referral", "direct application": "direct application", "company event": "company event", "club or trek": "club or trek", other: "another route",
 };
 
 const ISO = /^\d{4}-\d{2}-\d{2}$/;
