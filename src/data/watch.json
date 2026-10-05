@@ -352,5 +352,38 @@
     "board": "https://workday.wd5.myworkdayjobs.com/Workday_Early_Career",
     "publisher": "Workday Careers",
     "verified": "2026-10-04"
+  },
+  "databricks": {
+    "kind": "greenhouse",
+    "endpoints": [
+      "https://boards-api.greenhouse.io/v1/boards/databricks/jobs"
+    ],
+    "queries": [],
+    "filters": "the whole public board (about 885 jobs), filtered client-side",
+    "board": "https://www.databricks.com/company/careers/open-positions",
+    "publisher": "Databricks (Greenhouse)",
+    "verified": "2026-10-04"
+  },
+  "spotify": {
+    "kind": "manual",
+    "endpoints": [],
+    "queries": [],
+    "filters": "",
+    "board": "https://www.lifeatspotify.com/jobs",
+    "publisher": "Spotify",
+    "verified": "2026-10-04",
+    "reason": "Spotify posts on Lever (api.lever.co/v0/postings/spotify answers), and the watcher has no Lever adapter yet."
+  },
+  "stripe": {
+    "kind": "greenhouse",
+    "endpoints": [
+      "https://boards-api.greenhouse.io/v1/boards/stripe/jobs"
+    ],
+    "queries": [],
+    "filters": "the whole public board (about 717 jobs), filtered client-side",
+    "board": "https://stripe.com/jobs/search",
+    "publisher": "Stripe (Greenhouse)",
+    "verified": "2026-10-04",
+    "note": "hiring.json says Stripe has no MBA program, so a match is reported for a person, not written."
   }
 }

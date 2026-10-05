@@ -165,6 +165,7 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
     ...c.marketCap.sources, ...c.growth.sources, ...c.headcount.sources, ...c.office.sources,
     ...[c.intern?.pay, c.intern?.locations, c.intern?.sponsorship, c.intern?.teamModel, ...(c.intern?.pulse ?? [])].flatMap((x) => x?.sources ?? []),
     ...h.windows.flatMap((w) => w.sources), ...h.current.postings.flatMap((p) => p.sources), ...(interviews[c.id]?.sources ?? []),
+    ...(h.current.sources ?? []),
     ...myRoles.flatMap((x) => x.titles.flatMap((t) => t.sources)),
   ];
   const g = c.growth;
@@ -182,7 +183,7 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
           {item && <MarkIcon mark={item.mark} size={13} />}<strong>{item ? item.status.headline : "No MBA internship"}</strong>
           <span className="sr-only">{item ? ` (${MARK[item.mark].label})` : ""}</span>
         </p>
-        <p className="statusnote">{prose(h.current.summary, Number(cycle))}{!live && <span className="muted"> As of {fmtDate(h.current.checked, { year: true })}.</span>}</p>
+        <p className="statusnote">{prose(h.current.summary, Number(cycle))} <Cite ids={h.current.sources ?? []} />{!live && <span className="muted"> As of {fmtDate(h.current.checked, { year: true })}.</span>}</p>
         {h.current.postings.length > 0 && (
           <details className="why">
             <summary>This cycle&apos;s posting{h.current.postings.length === 1 ? "" : "s"} ({h.current.postings.length})</summary>

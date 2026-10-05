@@ -68,13 +68,6 @@
           "sources": [
             "apple-layoffs-techcrunch-2026-08"
           ]
-        },
-        {
-          "date": "2026-09-29",
-          "what": "Reported to be holding headcount flat for 2027, with small layoffs and budget cuts",
-          "sources": [
-            "apple-headcount-flat-appleinsider-2026-09"
-          ]
         }
       ]
     }
@@ -232,14 +225,16 @@
     },
     "intern": {
       "pay": {
-        "low": 29.5,
-        "high": 68,
+        "low": 36,
+        "high": 65,
         "per": "hour",
         "where": "Mountain View and San Diego, CA",
         "cycle": "2026",
         "postings": 15,
-        "note": "Each posting gives a range in its text and a location band at the end, and they differ; this spans both. Leaves out the all-degree Product Manager Intern posting ($39.57–$76.92/hr).",
+        "note": "Each posting states two ranges: one in its text for the role (shown here; $36–$65 across the 15 postings) and a broader location band at the end (Mountain View $29.50–$68, San Diego $36–$56.50). The Strategic Sourcing, Customer Success & Sales posting gives only its San Diego band, $37–$56.50. Leaves out the all-degree Product Manager Intern posting ($39.57–$76.92/hr).",
         "sources": [
+          "intuit-sourcing-tech-2027-pay",
+          "intuit-corpstrat-2027-pay-text",
           "intuit-pmm-midmarket-2027-pay",
           "intuit-corpstrat-2027-pay",
           "intuit-pm-2027"
@@ -257,7 +252,7 @@
       },
       "sponsorship": {
         "stance": "authorization required",
-        "scope": "finance, sourcing and PM postings (8 of 16); the others don't say",
+        "scope": "7 of the 15 MBA postings (finance and sourcing) and the all-degree PM intern posting; the others don't say",
         "cycle": "2026",
         "sources": [
           "intuit-finstrat-gbsg-2027-auth"
@@ -412,10 +407,10 @@
         "where": "US; higher band for the SF Bay Area and New York City",
         "cycle": "2026",
         "postings": 2,
-        "note": "Bay Area and New York City band: $6,810–$11,330 a month. The Surface Business Program Management posting states no pay.",
+        "note": "Central Finance and Treasury state the same range. Bay Area and New York City band: $6,810–$11,330 a month. The Surface Business Program Management posting states no pay.",
         "sources": [
           "ms-200055972-pay",
-          "ms-200058904"
+          "ms-200055974"
         ]
       },
       "locations": {
@@ -446,7 +441,7 @@
         },
         {
           "date": "2026-07-06",
-          "what": "Cut about 4,800 roles (2.1%), mostly Xbox and commercial sales",
+          "what": "Cut about 4,800 roles (2.1%), mostly in the Commercial and Xbox organizations",
           "low": 4800,
           "high": 4800,
           "sources": [
@@ -723,20 +718,6 @@
       "days": null
     },
     "intern": {
-      "pay": {
-        "low": 27,
-        "high": 82,
-        "per": "hour",
-        "where": "US",
-        "cycle": "2025",
-        "postings": 3,
-        "note": "NVIDIA states one hourly band for all of its interns, not an MBA-specific range.",
-        "sources": [
-          "builtin-nvidia-corpdev-2026-pay",
-          "builtin-nvidia-treasury-2026",
-          "getro-anitab-nvidia-adas-2026"
-        ]
-      },
       "locations": {
         "places": [
           "Santa Clara, CA"
@@ -805,8 +786,7 @@
     "intern": {
       "locations": {
         "places": [
-          "San Francisco, CA",
-          "Burlingame, CA"
+          "San Francisco, CA"
         ],
         "cycle": "2024",
         "sources": [
@@ -840,7 +820,7 @@
         },
         {
           "date": "2026-04-23",
-          "what": "Laid off about 8,000 (10%) on May 20 and left 6,000 open roles unfilled",
+          "what": "Announced about 8,000 layoffs (10%), effective May 20, and left 6,000 open roles unfilled",
           "low": 8000,
           "high": 8000,
           "sources": [
@@ -902,7 +882,7 @@
         "where": "US",
         "cycle": "2025",
         "postings": 2,
-        "note": "Last cycle: Advanced Analytics $40–$48, Strategic Finance & Analytics $48.",
+        "note": "Last cycle: Advanced Analytics $40–$48, Strategic Finance & Analytics $48. Both postings were open to Master's as well as MBA students.",
         "sources": [
           "builtinnyc-airbnb-aa-2026-pay",
           "builtin-airbnb-sfa-2026-pay"
@@ -1175,6 +1155,54 @@
             "cisco-path-forward-2026-05"
           ]
         }
+      ]
+    }
+  },
+  {
+    "id": "databricks",
+    "name": "Databricks",
+    "hq": "San Francisco",
+    "model": "Enterprise software",
+    "ai": "Builds AI infrastructure",
+    "marketCap": {
+      "value": 190,
+      "asOf": "2026-08-13",
+      "kind": "private valuation",
+      "note": "$5B strategic round closed Aug 2026, up from $134B in Feb 2026.",
+      "sources": [
+        "databricks-pr-7b-runrate",
+        "databricks-pr-5-4b-runrate"
+      ]
+    },
+    "growth": {
+      "value": 80,
+      "low": 65,
+      "basis": "year-over-year growth of the revenue run-rate in Databricks' Q2 (announced 2026-08-13), as reported by the company",
+      "note": "Private company: company-reported run-rate growth, not audited revenue. Databricks said '>80%' on a run-rate above $7B; the quarter before it said '>65%' on $5.4B, shown as the low end.",
+      "sources": [
+        "databricks-pr-7b-runrate",
+        "databricks-pr-5-4b-runrate"
+      ],
+      "asOf": "2026-08-13"
+    },
+    "headcount": {
+      "value": 14321,
+      "asOf": "2026-03-31",
+      "note": "Third-party estimate (Revelio Labs, 'as of March 2026'; month-end used). Databricks does not publish headcount.",
+      "sources": [
+        "databricks-revelio-headcount"
+      ]
+    },
+    "office": {
+      "category": "fixed",
+      "days": 3,
+      "summary": "3 days a week in the office for most roles at hub offices, with badge tracking, per employee accounts compiled by JobsByCulture; Databricks publishes no formal policy. Some current postings require the ability to work onsite three days a week.",
+      "interns": "No intern-specific policy found. Past MBA intern postings were based in San Francisco (the 2026 TPM role also Mountain View).",
+      "confidence": "medium",
+      "sources": [
+        "databricks-jobsbyculture-rto",
+        "databricks-gh-tpm-security",
+        "databricks-wb-2026-mba-tpm"
       ]
     }
   },
@@ -1533,13 +1561,14 @@
         "per": "hour",
         "where": "Santa Clara, CA",
         "cycle": "2025",
-        "postings": 4,
-        "note": "Last cycle's postings: PMM $53.13, Corporate Development $57.70–$73.97, Business Strategy $65.93, Finance $58.50–$75.",
+        "postings": 5,
+        "note": "Last cycle's postings: PMM $53.13, Corporate Development and Corporate Strategy $57.70–$73.97 each, Business Strategy $65.93, Finance $58.50–$75.",
         "sources": [
           "servicenow-sr-pmm-mba-2026-pay",
           "servicenow-sr-finance-mba-2026-pay",
           "servicenow-sr-corpdev-2026",
-          "servicenow-sr-strategy-specialist-2026"
+          "servicenow-sr-strategy-specialist-2026",
+          "servicenow-sr-corpstrategy-2026"
         ]
       },
       "locations": {
@@ -1558,7 +1587,8 @@
         "scope": "Corporate Development, Corporate Strategy and PMM postings last cycle; Finance and Business Strategy didn't say",
         "cycle": "2025",
         "sources": [
-          "servicenow-sr-corpdev-2026-visa"
+          "servicenow-sr-corpdev-2026-visa",
+          "servicenow-sr-corpstrategy-2026"
         ]
       },
       "teamModel": {
@@ -1572,12 +1602,110 @@
       "pulse": [
         {
           "date": "2026-07-30",
-          "what": "Cutting up to 1,000 roles after acquisitions, aiming for flat headcount in 2026",
+          "what": "Reported to be cutting up to 1,000 roles after acquisitions; the CEO has said headcount will end 2026 flat",
           "high": 1000,
           "sources": [
             "servicenow-layoffs-investing-2026-07"
           ]
         }
+      ]
+    }
+  },
+  {
+    "id": "spotify",
+    "name": "Spotify",
+    "ticker": "SPOT",
+    "cik": "0001639920",
+    "hq": "Stockholm (US interns in New York)",
+    "model": "Media and entertainment",
+    "ai": "Applies AI in products",
+    "marketCap": {
+      "value": 97.2,
+      "asOf": "2026-10-02",
+      "kind": "market cap",
+      "sources": [
+        "sa-spot"
+      ]
+    },
+    "growth": {
+      "value": 9,
+      "basis": "twelve months to 2026-06-30 vs the twelve months before, in euros (IFRS)",
+      "note": "Spotify files 20-F and 6-K reports, not 10-Qs, so scripts/refresh-sec.mjs (us-gaap only) can't recompute this. Computed from SEC filings: FY2025 revenue €17,186M plus H1 2026 €9,310M minus H1 2025 €8,383M = €18,113M, vs €16,613M a year earlier. Euro-reported; Premium grew 15% in Q2 2026.",
+      "sources": [
+        "spotify-xbrl",
+        "spotify-6k-2026q2",
+        "spotify-6k-2025q2"
+      ],
+      "asOf": "2026-06-30"
+    },
+    "headcount": {
+      "value": 7287,
+      "asOf": "2025-12-31",
+      "note": "Average full-time employees during 2025, per the 20-F (7,691 in 2024, 9,123 in 2023).",
+      "sources": [
+        "spotify-20f-2025"
+      ]
+    },
+    "office": {
+      "category": "remote",
+      "days": null,
+      "summary": "Work From Anywhere since Feb 2021: employees choose office, home or a mix, with no required office days. The HR chief defended it in Apr 2025; still in effect as of 2026 per JobsByCulture.",
+      "interns": "Interns are the exception: the MBA intern postings ask interns to come into the New York office 3 days a week, and Spotify takes summer interns only in London, Stockholm and NYC.",
+      "confidence": "medium",
+      "sources": [
+        "spotify-fortune-wfa-2025",
+        "spotify-jobsbyculture-2026",
+        "spotify-wb-bspm-mba-nyc-2026",
+        "spotify-students"
+      ]
+    }
+  },
+  {
+    "id": "stripe",
+    "name": "Stripe",
+    "hq": "South San Francisco / Dublin",
+    "model": "Payments",
+    "ai": "Applies AI in products",
+    "marketCap": {
+      "value": 159,
+      "asOf": "2026-02-24",
+      "kind": "private valuation",
+      "note": "Price of a tender offer for current and former employees' shares (Feb 2026), funded mostly by investors with some Stripe buybacks; not a primary fundraising round.",
+      "sources": [
+        "stripe-2025-update"
+      ]
+    },
+    "growth": {
+      "value": 33,
+      "low": 30,
+      "high": 35,
+      "basis": "calendar 2025 revenue vs 2024, as reported by The Information (via SaaStr)",
+      "note": "Private company: Stripe publishes no revenue. The Information reported 2025 revenue of about $6.8B, up 'roughly a third'; the range reflects that rounding. Stripe's own figure is total volume: $1.9T in 2025, up 34%.",
+      "sources": [
+        "stripe-saastr-revenue-2025",
+        "stripe-2025-update"
+      ],
+      "asOf": "2025-12-31"
+    },
+    "headcount": {
+      "value": 9383,
+      "asOf": "2026-03-31",
+      "note": "Third-party estimate (Revelio Labs, 'as of March 2026'; month-end used). Stripe does not publish headcount.",
+      "sources": [
+        "stripe-revelio-headcount"
+      ]
+    },
+    "office": {
+      "category": "team",
+      "days": null,
+      "low": 2,
+      "high": 3,
+      "summary": "Office-assigned staff are expected in their local office, or with users, at least 50% of the time in a given month (about 2-3 days a week), varying by role, team and location. Some roles are remote: 114 of 717 jobs on its board on 2026-10-04 list a remote option.",
+      "interns": "Intern postings carry the same 50%-of-the-month expectation.",
+      "confidence": "high",
+      "sources": [
+        "stripe-listing-data-analyst-intern-2027",
+        "stripe-gh-board-api"
       ]
     }
   },
@@ -1762,11 +1890,13 @@
       },
       "sponsorship": {
         "stance": "no sponsorship",
-        "scope": "last cycle's Finance posting and the 2024 PM posting",
+        "scope": "all three MBA postings last cycle (Consulting & Analytics, Finance, Corporate Strategy) and the 2024 PM posting",
         "cycle": "2025",
         "sources": [
           "visa-sr-pm-2024-visa",
-          "visa-linkedin-finance-2025"
+          "visa-linkedin-vca-2025",
+          "visa-linkedin-finance-2025",
+          "visa-wayup-corpstrategy-2025"
         ]
       },
       "teamModel": {
@@ -1923,11 +2053,12 @@
       },
       "sponsorship": {
         "stance": "no sponsorship",
-        "scope": "all three MBA postings (Financial Analyst, Enterprise Planning, PMM)",
+        "scope": "both MBA postings last cycle (Financial Analyst, Enterprise Planning) and the 2024 PMM posting",
         "cycle": "2025",
         "sources": [
           "workday-li-fa-mba-2025-visa",
-          "workday-weekday-ep-mba"
+          "workday-weekday-ep-mba",
+          "workday-builtin-pmm-2025"
         ]
       },
       "teamModel": {
