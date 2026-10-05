@@ -7,6 +7,7 @@ import { SEASON_MONTHS, daysBetween, fmtDate, monthOf, monthStartWeek, seasonEnd
 import { useWidth } from "@/lib/useWidth";
 import { useGuide } from "./Guide";
 import { MarkIcon, markShape } from "./MarkIcon";
+import { MyListEmpty, MyListTools, useMyListFilter } from "./MyList";
 
 const cycle = meta.currentCycle;
 const LANE = 21; // px between stacked tags
@@ -68,7 +69,9 @@ export default function Trail() {
   const { today, live, select } = useGuide();
   const [ref, W] = useWidth<HTMLDivElement>(1060);
   const [vref, VW] = useWidth<HTMLDivElement>(343);
-  const items = useMemo(() => trailItems(companies, hiring, today, cycle), [today]);
+  const { only, starred } = useMyListFilter();
+  const items = useMemo(() => trailItems(only ? companies.filter((c) => starred.has(c.id)) : companies, hiring, today, cycle), [today, only, starred]);
+  const hide = only && !items.length; // "my list only" left nothing to draw
   const todayWk = weekOf(today, cycle);
 
   const current = calendar.filter((m) => m.to && m.kind !== "academic" && m.from <= today && today <= m.to);
@@ -86,8 +89,9 @@ export default function Trail() {
         <p className="warn">Postings were last checked {fmtDate(meta.researched)} ({age} days ago). Confirm on the careers site before you count on anything here.</p>
       )}
       {/* Both layouts render; CSS shows the right one from the first paint (no flash before JS measures width). */}
-      <div ref={ref} className="trail-h">{W >= 320 && <HorizontalTrail items={items} W={W} todayWk={todayWk} live={live} onPick={(id) => select(id, { reveal: true })} />}</div>
-      <div ref={vref} className="trail-v">{VW >= 260 && <VerticalTrail items={items} W={VW} todayWk={todayWk} live={live} onPick={(id) => select(id, { reveal: true })} />}</div>
+      {hide && <MyListEmpty />}
+      <div ref={ref} className={`trail-h${hide ? " mylist-hidden" : ""}`}>{W >= 320 && <HorizontalTrail items={items} W={W} todayWk={todayWk} live={live} onPick={(id) => select(id, { reveal: true })} />}</div>
+      <div ref={vref} className={`trail-v${hide ? " mylist-hidden" : ""}`}>{VW >= 260 && <VerticalTrail items={items} W={VW} todayWk={todayWk} live={live} onPick={(id) => select(id, { reveal: true })} />}</div>
       <MarkLegend marks={MARK_ORDER.filter((m) => shown.has(m))} />
       {(current.length > 0 || next) && (
         <p className="gsb-line">
@@ -96,6 +100,7 @@ export default function Trail() {
           {next && <span>next: {next.label}, {fmtDate(next.from)}</span>}
         </p>
       )}
+      <MyListTools />
     </section>
   );
 }
