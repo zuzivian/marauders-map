@@ -1,0 +1,410 @@
+{
+ "code": 0,
+ "data": {
+  "job_post_list": [
+   {
+    "id": "7669871213245974837",
+    "code": "A175818B",
+    "title": "Project Management Office Associate Graduate (Finance) - 2027 Start (MBA)",
+    "description": "We partner closely with business leaders and cross-functional teams to turn financial insights into better business decisions. Leveraging our expertise in budgeting, forecasting, financial planning, a…",
+    "requirement": "Minimum Qualifications \n- Individuals who are completing or have recently completed an MBA Degree\n- Solid finance background, with prior experience in investment banking, consulting, corporate finance, or related fields.\n- Exceptional executive communication and storytelling skills, with the ability… … Minimum Qualifications \n- Individuals who are completing or have recently completed an MBA Degree\n- Solid finance background, with prior experience in investment banking, consulting, corporate finance, or relat",
+    "recruit_type": {
+     "id": "201",
+     "name": null,
+     "en_name": "Regular",
+     "i18n_name": "Regular"
+    },
+    "job_category": {
+     "id": "6704215913488451847",
+     "name": null,
+     "en_name": "Corporate Function / Support",
+     "i18n_name": "Corporate Function / Support",
+     "parent": null
+    },
+    "city_info": {
+     "code": "CT_1103355",
+     "location_type": 3,
+     "name": null,
+     "en_name": "San Jose",
+     "i18n_name": "San Jose",
+     "parent": {
+      "code": "ST_31",
+      "location_type": 2,
+      "name": null,
+      "en_name": "California",
+      "i18n_name": "California",
+      "parent": {
+       "code": "CN_6",
+       "location_type": 1,
+       "name": null,
+       "en_name": "United States of America",
+       "i18n_name": "United States of America",
+       "parent": null
+      }
+     }
+    },
+    "tag_list": null,
+    "job_subject": {
+     "id": "7648842986533292341",
+     "name": null,
+     "en_name": "MBA Graduates - 2027 Start",
+     "i18n_name": "MBA Graduates - 2027 Start"
+    },
+    "vacancies": null,
+    "department_info": null,
+    "job_post_info": {
+     "min_salary": null,
+     "max_salary": null,
+     "currency": null,
+     "required_degree": null,
+     "experience": null,
+     "sequence": null,
+     "min_level": null,
+     "max_level": null,
+     "highlight_list": null,
+     "job_post_object_value_list": null,
+     "expiry_time": null
+    },
+    "process_type": null,
+    "channel_online_status": null
+   },
+   {
+    "id": "7676283436713593093",
+    "code": "A48293",
+    "title": "Product Manager Intern (Content and Service Ads) - 2027 Summer (MBA)",
+    "description": "As TikTok has become one of the world's leading social media platforms, TikTok Search Ads is committed to making every search more valuable by delivering user content that matches their needs, maximiz…",
+    "requirement": "Minimum Qualifications: \n- Currently pursuing an MBA Degree\n- Proficient in leveraging AI tools for data analysis and workflow efficiency, with a solid understanding of the underlying logic of model optimization.\n- Be able to  understand clients' measurement metrics and budget allocation logics, dig… … Minimum Qualifications: \n- Currently pursuing an MBA Degree\n- Proficient in leveraging AI tools for data analysis and workflow efficiency, with a solid understanding of the",
+    "recruit_type": {
+     "id": "202",
+     "name": null,
+     "en_name": "Intern",
+     "i18n_name": "Intern"
+    },
+    "job_category": {
+     "id": "6704215864629004552",
+     "name": null,
+     "en_name": "Product",
+     "i18n_name": "Product",
+     "parent": null
+    },
+    "city_info": {
+     "code": "CT_1103355",
+     "location_type": 3,
+     "name": null,
+     "en_name": "San Jose",
+     "i18n_name": "San Jose",
+     "parent": {
+      "code": "ST_31",
+      "location_type": 2,
+      "name": null,
+      "en_name": "California",
+      "i18n_name": "California",
+      "parent": {
+       "code": "CN_6",
+       "location_type": 1,
+       "name": null,
+       "en_name": "United States of America",
+       "i18n_name": "United States of America",
+       "parent": null
+      }
+     }
+    },
+    "tag_list": null,
+    "job_subject": {
+     "id": "7648841736006093061",
+     "name": null,
+     "en_name": "MBA Intern - 2027 Start",
+     "i18n_name": "MBA Intern - 2027 Start"
+    },
+    "vacancies": null,
+    "department_info": null,
+    "job_post_info": {
+     "min_salary": null,
+     "max_salary": null,
+     "currency": null,
+     "required_degree": null,
+     "experience": null,
+     "sequence": null,
+     "min_level": null,
+     "max_level": null,
+     "highlight_list": null,
+     "job_post_object_value_list": null,
+     "expiry_time": null
+    },
+    "process_type": null,
+    "channel_online_status": null
+   },
+   {
+    "id": "7667851312545515781",
+    "code": "A11782",
+    "title": "Special Project Strategist Intern (TikTok Shop - Operations) - 2027 Start (MBA)",
+    "description": "About the Team\nThe commerce industry has seen tremendous growth in recent years and has become a hotly contested space amongst leading Internet companies, and its future growth cannot be underestimate…",
+    "requirement": "Minimum Qualifications:\n- Currently pursuing an MBA Degree\n- Able to commit to working for 12 weeks during Summer 2027\n- Have good logical thinking, business analysis ability, systematic thinking and critical thinking ability.\n- Have strong learning ability, execution ability and stress resistance, … … Minimum Qualifications:\n- Currently pursuing an MBA Degree\n- Able to commit to working for 12 weeks during Summer 2027\n- Have good logical thinking, business analysis abil … merce or having a solid understanding of the industry landscape is a plus\n- Currently pursuing a bachelor's or master's degree, preferably in a communication/marketing/e-commerce-related major.\n- Familiar with TikTok and other content platforms; ",
+    "recruit_type": {
+     "id": "202",
+     "name": null,
+     "en_name": "Intern",
+     "i18n_name": "Intern"
+    },
+    "job_category": {
+     "id": "6704215882479962371",
+     "name": null,
+     "en_name": "Operations",
+     "i18n_name": "Operations",
+     "parent": null
+    },
+    "city_info": {
+     "code": "CT_157",
+     "location_type": 3,
+     "name": null,
+     "en_name": "Seattle",
+     "i18n_name": "Seattle",
+     "parent": {
+      "code": "ST_54",
+      "location_type": 2,
+      "name": null,
+      "en_name": "Washington",
+      "i18n_name": "Washington",
+      "parent": {
+       "code": "CN_6",
+       "location_type": 1,
+       "name": null,
+       "en_name": "United States of America",
+       "i18n_name": "United States of America",
+       "parent": null
+      }
+     }
+    },
+    "tag_list": null,
+    "job_subject": {
+     "id": "7648841736006093061",
+     "name": null,
+     "en_name": "MBA Intern - 2027 Start",
+     "i18n_name": "MBA Intern - 2027 Start"
+    },
+    "vacancies": null,
+    "department_info": null,
+    "job_post_info": {
+     "min_salary": null,
+     "max_salary": null,
+     "currency": null,
+     "required_degree": null,
+     "experience": null,
+     "sequence": null,
+     "min_level": null,
+     "max_level": null,
+     "highlight_list": null,
+     "job_post_object_value_list": null,
+     "expiry_time": null
+    },
+    "process_type": null,
+    "channel_online_status": null
+   },
+   {
+    "id": "7675890206373218565",
+    "code": "A174797A",
+    "title": "Product Strategist Project Intern (Advertisement Team) - 2026 Start (MBA)",
+    "description": "The Monetization Strategy & Operations organization provides business-critical insights using analysis and financial modeling, ensures cross-functional alignment of goals and execution, and helps team…",
+    "requirement": "Minimum Qualification(s)\n- Currently pursuing a MBA degree\n- Solid understanding of basic industry research methodologies and strong logical thinking skills.\n- Highly self-motivated, responsible, and passionate about internet products, with a strong sense of curiosity.\n- Strong data analysis skills.… … Minimum Qualification(s)\n- Currently pursuing a MBA degree\n- Solid understanding of basic industry research methodologies and strong logical thinking skills.\n- Highly self … Minimum Qualification(s)\n- Currently pursuing a MBA degree\n- Solid understanding of basic industry research methodologies and strong logical thinking skills.\n- Highly self-motiva",
+    "recruit_type": {
+     "id": "202",
+     "name": null,
+     "en_name": "Intern",
+     "i18n_name": "Intern"
+    },
+    "job_category": {
+     "id": "6704215864629004552",
+     "name": null,
+     "en_name": "Product",
+     "i18n_name": "Product",
+     "parent": null
+    },
+    "city_info": {
+     "code": "CT_1103355",
+     "location_type": 3,
+     "name": null,
+     "en_name": "San Jose",
+     "i18n_name": "San Jose",
+     "parent": {
+      "code": "ST_31",
+      "location_type": 2,
+      "name": null,
+      "en_name": "California",
+      "i18n_name": "California",
+      "parent": {
+       "code": "CN_6",
+       "location_type": 1,
+       "name": null,
+       "en_name": "United States of America",
+       "i18n_name": "United States of America",
+       "parent": null
+      }
+     }
+    },
+    "tag_list": null,
+    "job_subject": {
+     "id": "7391494724038953254",
+     "name": null,
+     "en_name": "Project Intern",
+     "i18n_name": "Project Intern"
+    },
+    "vacancies": null,
+    "department_info": null,
+    "job_post_info": {
+     "min_salary": null,
+     "max_salary": null,
+     "currency": null,
+     "required_degree": null,
+     "experience": null,
+     "sequence": null,
+     "min_level": null,
+     "max_level": null,
+     "highlight_list": null,
+     "job_post_object_value_list": null,
+     "expiry_time": null
+    },
+    "process_type": null,
+    "channel_online_status": null
+   },
+   {
+    "id": "7683559907224930613",
+    "code": "A187704",
+    "title": "Strategy Intern (Monetization Strategy & Operations) - 2027 Summer (MBA)",
+    "description": "The high-performing Global Monetization Strategy & Operations (MSO) organization is essential to enabling our advertising business growth. We partner with business leaders in strategy setting, revenue…",
+    "requirement": "Minimum Qualifications:\n- Currently pursuing a Master's in Business Administration or a related discipline. \n- Able to commit to working 12 weeks during summer 2027\n- Strong analytical and problem-solving skills with the ability to interpret complex data and provide actionable insights for strategic… … ",
+    "recruit_type": {
+     "id": "202",
+     "name": null,
+     "en_name": "Intern",
+     "i18n_name": "Intern"
+    },
+    "job_category": {
+     "id": "6704215882479962371",
+     "name": null,
+     "en_name": "Operations",
+     "i18n_name": "Operations",
+     "parent": null
+    },
+    "city_info": {
+     "code": "CT_114",
+     "location_type": 3,
+     "name": null,
+     "en_name": "New York",
+     "i18n_name": "New York",
+     "parent": {
+      "code": "ST_46",
+      "location_type": 2,
+      "name": null,
+      "en_name": "New York",
+      "i18n_name": "New York",
+      "parent": {
+       "code": "CN_6",
+       "location_type": 1,
+       "name": null,
+       "en_name": "United States of America",
+       "i18n_name": "United States of America",
+       "parent": null
+      }
+     }
+    },
+    "tag_list": null,
+    "job_subject": {
+     "id": "7648841736006093061",
+     "name": null,
+     "en_name": "MBA Intern - 2027 Start",
+     "i18n_name": "MBA Intern - 2027 Start"
+    },
+    "vacancies": null,
+    "department_info": null,
+    "job_post_info": {
+     "min_salary": null,
+     "max_salary": null,
+     "currency": null,
+     "required_degree": null,
+     "experience": null,
+     "sequence": null,
+     "min_level": null,
+     "max_level": null,
+     "highlight_list": null,
+     "job_post_object_value_list": null,
+     "expiry_time": null
+    },
+    "process_type": null,
+    "channel_online_status": null
+   },
+   {
+    "id": "7669786459579468085",
+    "code": "A89752",
+    "title": "Product Operation Manager Graduate (Creative-GMPT) - 2027 Start",
+    "description": "About the Team:\nOur Creative and Brand Innovation Product Team is dedicated to building full-funnel marketing solutions that combine creative content—such as the TikTok One platform, content packages,…",
+    "requirement": "Minimum Qualifications:\n- Master’s degree or above.\n- Prior experience in internet monetization, consulting, or areas such as brand advertising, creator marketing, or AIGC is a strong plus.\n- Strong analytical thinking and high data sensitivity; experience with advanced data analysis and tools is pr… … Minimum Qualifications:\n- Master’s degree or above.\n- Prior experience in internet monetization, consulting, or areas such as brand advertising, creator marketin",
+    "recruit_type": {
+     "id": "201",
+     "name": null,
+     "en_name": "Regular",
+     "i18n_name": "Regular"
+    },
+    "job_category": {
+     "id": "6704215882438019342",
+     "name": null,
+     "en_name": "Commerce ops",
+     "i18n_name": "Commerce ops",
+     "parent": {
+      "id": "6704215882479962371",
+      "name": null,
+      "en_name": "Operations",
+      "i18n_name": "Operations",
+      "parent": null
+     }
+    },
+    "city_info": {
+     "code": "CT_163",
+     "location_type": 3,
+     "name": null,
+     "en_name": "Singapore",
+     "i18n_name": "Singapore",
+     "parent": {
+      "code": "ST_100785",
+      "location_type": 2,
+      "name": null,
+      "en_name": "Singapore",
+      "i18n_name": "Singapore",
+      "parent": {
+       "code": "CN_25",
+       "location_type": 1,
+       "name": null,
+       "en_name": "Singapore",
+       "i18n_name": "Singapore",
+       "parent": null
+      }
+     }
+    },
+    "tag_list": null,
+    "job_subject": {
+     "id": "7648842986533292341",
+     "name": null,
+     "en_name": "MBA Graduates - 2027 Start",
+     "i18n_name": "MBA Graduates - 2027 Start"
+    },
+    "vacancies": null,
+    "department_info": null,
+    "job_post_info": {
+     "min_salary": null,
+     "max_salary": null,
+     "currency": null,
+     "required_degree": null,
+     "experience": null,
+     "sequence": null,
+     "min_level": null,
+     "max_level": null,
+     "highlight_list": null,
+     "job_post_object_value_list": null,
+     "expiry_time": null
+    },
+    "process_type": null,
+    "channel_online_status": null
+   }
+  ],
+  "count": 88
+ }
+}
