@@ -176,6 +176,7 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
     ...c.marketCap.sources, ...c.growth.sources, ...c.headcount.sources, ...c.office.sources,
     ...[c.intern?.pay, c.intern?.locations, c.intern?.sponsorship, c.intern?.teamModel, ...(c.intern?.pulse ?? [])].flatMap((x) => x?.sources ?? []),
     ...h.windows.flatMap((w) => w.sources), ...h.current.postings.flatMap((p) => p.sources), ...(interviews[c.id]?.sources ?? []),
+    ...(h.current.sources ?? []),
     ...myRoles.flatMap((x) => x.titles.flatMap((t) => t.sources)),
   ];
   const g = c.growth;
@@ -192,7 +193,7 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
         {item ? <MarkIcon mark={item.mark} size={16} /> : null}
         <div>
           <strong>{item ? item.status.headline : "No MBA internship"}</strong>
-          <div className="statusnote">{prose(h.current.summary, Number(cycle))}</div>
+          <div className="statusnote">{prose(h.current.summary, Number(cycle))} <Cite ids={h.current.sources ?? []} /></div>
           {!live && <div className="label">as of {fmtDate(h.current.checked, { year: true })}</div>}
         </div>
       </div>

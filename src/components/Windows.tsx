@@ -86,7 +86,7 @@ export default function Windows() {
                   </span>
                 </summary>
                 <div className="tl-detail">
-                  <p>{prose(h.current.summary, Number(meta.currentCycle))} <span className="muted">(checked {fmtDate(h.current.checked)})</span></p>
+                  <p>{prose(h.current.summary, Number(meta.currentCycle))} <span className="muted">(checked {fmtDate(h.current.checked)})</span> <Cite ids={h.current.sources ?? []} /></p>
                   {ws.length > 0 && (
                     <table className="obs">
                       <thead><tr><th>cycle</th><th>postings went up</th><th>evidence</th><th>notes</th></tr></thead>
@@ -102,7 +102,7 @@ export default function Windows() {
                       </tbody>
                     </table>
                   )}
-                  <SourceList ids={[...ws.flatMap((w) => w.sources), ...h.current.postings.flatMap((p) => p.sources)]} />
+                  <SourceList ids={[...ws.flatMap((w) => w.sources), ...h.current.postings.flatMap((p) => p.sources), ...(h.current.sources ?? [])]} />
                   <button className="chip" onClick={() => select(c.id, { reveal: true })}>Open {c.name} field notes ↓</button>
                   <StarButton company={c} chip />
                 </div>

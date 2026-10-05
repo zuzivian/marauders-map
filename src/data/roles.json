@@ -259,6 +259,27 @@
         ]
       },
       {
+        "company": "Databricks",
+        "title": "MBA Intern - Commercialization Product Management",
+        "cycles": [
+          "2024"
+        ],
+        "sources": [
+          "databricks-wb-2025-mba-cpm",
+          "databricks-getro-commercialization-pm-2025"
+        ]
+      },
+      {
+        "company": "Databricks",
+        "title": "MBA Intern - Technical Program Management (TPM)",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "databricks-wb-2026-mba-tpm"
+        ]
+      },
+      {
         "company": "Dell",
         "title": "Product Management MBA Internship",
         "cycles": [
@@ -342,6 +363,38 @@
         ],
         "sources": [
           "servicenow-sr-pm-masters-2026"
+        ]
+      },
+      {
+        "company": "Spotify",
+        "title": "2024 Summer Internship, Product Management (New York City)",
+        "cycles": [
+          "2023"
+        ],
+        "sources": [
+          "spotify-wb-pm-nyc-2024"
+        ]
+      },
+      {
+        "company": "Spotify",
+        "title": "2025 Summer Internship, Business Strategy and Product Management - MBA (New York City)",
+        "cycles": [
+          "2024"
+        ],
+        "sources": [
+          "spotify-wb-bspm-mba-nyc-2025",
+          "spotify-accel-bspm-mba-2025"
+        ]
+      },
+      {
+        "company": "Spotify",
+        "title": "2026 Summer Internship, Business Strategy and Product Management - MBA (New York City)",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "spotify-wb-bspm-mba-nyc-2026",
+          "spotify-jobright-bspm-mba-2026"
         ]
       },
       {
@@ -1315,6 +1368,83 @@
         ]
       },
       {
+        "company": "Databricks",
+        "title": "MBA Intern - Strategy & Operations",
+        "cycles": [
+          "2023"
+        ],
+        "sources": [
+          "databricks-meetfrank-so-2024",
+          "databricks-huzzle-so-2024"
+        ]
+      },
+      {
+        "company": "Databricks",
+        "title": "MBA Intern - Strategy & Execution",
+        "cycles": [
+          "2024",
+          "2025"
+        ],
+        "sources": [
+          "databricks-wb-2025-mba-se",
+          "databricks-wb-2026-mba-se"
+        ]
+      },
+      {
+        "company": "Databricks",
+        "title": "MBA Intern - Product Operations",
+        "cycles": [
+          "2024",
+          "2025"
+        ],
+        "sources": [
+          "databricks-wb-2025-mba-po",
+          "databricks-wb-2026-mba-po"
+        ]
+      },
+      {
+        "company": "Databricks",
+        "title": "MBA Intern - Corporate Operations (Corp Ops)",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "databricks-wb-2026-mba-corpops",
+          "databricks-getro-corp-ops-2026"
+        ]
+      },
+      {
+        "company": "Databricks",
+        "title": "MBA Intern - Workforce Intelligence",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "databricks-wb-2026-mba-people"
+        ]
+      },
+      {
+        "company": "Databricks",
+        "title": "MBA Intern - Product Pricing & Commercialization",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "databricks-wb-2026-mba-pricing"
+        ]
+      },
+      {
+        "company": "Databricks",
+        "title": "MBA Intern - Commercial Transformation",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "databricks-wb-2026-mba-ct",
+          "databricks-jobright-commercial-transformation-2026"
+        ]
+      },
+      {
         "company": "Dell",
         "title": "General Business Internship MBA",
         "cycles": [
@@ -1407,6 +1537,28 @@
         ],
         "sources": [
           "servicenow-sr-strategy-specialist-2026"
+        ]
+      },
+      {
+        "company": "Spotify",
+        "title": "2025 Summer Internship, Business Strategy and Product Management - MBA (New York City)",
+        "cycles": [
+          "2024"
+        ],
+        "sources": [
+          "spotify-wb-bspm-mba-nyc-2025",
+          "spotify-accel-bspm-mba-2025"
+        ]
+      },
+      {
+        "company": "Spotify",
+        "title": "2026 Summer Internship, Business Strategy and Product Management - MBA (New York City)",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "spotify-wb-bspm-mba-nyc-2026",
+          "spotify-jobright-bspm-mba-2026"
         ]
       },
       {
@@ -1933,6 +2085,19 @@
         ],
         "sources": [
           "cisco-wayup-finance-mba"
+        ]
+      },
+      {
+        "company": "Databricks",
+        "title": "MBA Intern - Strategic Finance",
+        "cycles": [
+          "2024",
+          "2025"
+        ],
+        "sources": [
+          "databricks-wb-2025-mba-sf",
+          "databricks-wb-2026-mba-sf",
+          "databricks-getro-strategic-finance-2025"
         ]
       },
       {
