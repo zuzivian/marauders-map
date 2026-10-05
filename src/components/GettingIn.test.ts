@@ -37,7 +37,7 @@ describe("getting in block", () => {
   it("shows advice once a company and summer has two reports", async () => {
     fixtures.google = [r({ advice: "FIXTURE-A" }), r({ advice: "FIXTURE-B", displayName: "Fixture Name" }), r({ advice: "FIXTURE-OLD", internshipSummer: 2025 })];
     const html = await render("google");
-    expect(html).toContain("n=3");
+    expect(html).toContain("from 3 second-years");
     expect(html).toContain("FIXTURE-A");
     expect(html).toContain("Fixture Name");
     expect(html).toContain("a GSB &#x27;27");

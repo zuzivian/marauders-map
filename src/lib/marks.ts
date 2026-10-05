@@ -2,17 +2,17 @@ import type { Company, Cycle, Hiring, Role } from "@/data/types";
 import { dateAtWeek, daysBetween, typicalOpen, weekOf } from "./season";
 import { statusOf, type Status } from "./status";
 
-// One visual vocabulary for "where things stand", shared by the trail and the who-hires-what grid.
+// One vocabulary for "where things stand", shared by the trail, the timing chart, the who-hires-what grid and the
+// field notes. Six states, drawn with three shapes (see MarkIcon): posted, not posted yet, closed.
 export type Mark = "closing" | "open" | "due" | "late" | "later" | "closed";
-export const MARK: Record<Mark, { glyph: string; label: string }> = {
-  closing: { glyph: "◉", label: "closing soon" },
-  open: { glyph: "●", label: "open now" },
-  due: { glyph: "◐", label: "due any day" },
-  late: { glyph: "◷", label: "running late" },
-  later: { glyph: "○", label: "not posted yet" },
-  closed: { glyph: "×", label: "closed" },
+export const MARK: Record<Mark, { label: string }> = {
+  closing: { label: "closing soon" },
+  open: { label: "open now" },
+  due: { label: "due any day" },
+  late: { label: "running late" },
+  later: { label: "not posted yet" },
+  closed: { label: "closed" },
 };
-export const MARK_ORDER: Mark[] = ["closing", "open", "due", "late", "later", "closed"];
 
 const fromState: Partial<Record<Status["state"], Mark>> = {
   closing: "closing", open: "open", due: "due", late: "late", expected: "later", closed: "closed",

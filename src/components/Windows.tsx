@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import { calendar, companies, hiring, meta } from "@/data";
 import type { Cycle } from "@/data/types";
 import { SEASON_MONTHS, SEASON_WEEKS, fmtDate, fmtRange, monthStartWeek, span, steadiness, typicalOpen, weekOf } from "@/lib/season";
@@ -7,7 +8,7 @@ import { statusOf } from "@/lib/status";
 import { prose } from "@/lib/format";
 import { useGuide } from "./Guide";
 import { Cite, SourceList } from "./Sources";
-import { MarkIcon } from "./MarkIcon";
+import { MarkIcon, MarkKey } from "./MarkIcon";
 import GsbStrip from "./GsbStrip";
 import { MyListBar, MyListEmpty, StarButton, StarMark, useMyListFilter } from "./MyList";
 import { MARK, trailItems } from "@/lib/marks";
@@ -32,6 +33,13 @@ export default function Windows() {
 
   return (
     <div>
+      <p className="chart-key">
+        Each bar is one cycle&apos;s opening window:{" "}
+        {[...CYCLES].reverse().map((k, i) => (
+          <Fragment key={k}>{i > 0 && ", "}<span className="pair"><i className="swatch" style={{ background: CYCLE_SHADE[k] }} />{k === cycle ? "this cycle" : `summer ${summerOf(k)}`}</span></Fragment>
+        ))}.
+        {" "}Wider means less sure of the date; paler, weaker evidence. Shaded columns are the GSB dates below. Tap a company for its dates and sources.
+      </p>
       <MyListBar />
       {only && !rows.length && <MyListEmpty />}
       <div className={`timeline${only && !rows.length ? " mylist-hidden" : ""}`}>
@@ -79,10 +87,8 @@ export default function Windows() {
                   </span>
                   <span className="tl-mk">{mk && <MarkIcon mark={mk} size={13} />}<span className="sr-only">{mk ? MARK[mk].label : ""}</span></span>
                   <span className="tl-verdict">
-                    {h.hasProgram && <span className={v.steady ? "note" : "note muted"}>{v.text}</span>}
-                    {v.earlier && <span className="flag"> · earlier this year</span>}
-                    {v.later && <span className="flag"> · later this year</span>}
                     <span className={`tl-status status-${st.state}`}>{st.headline}</span>
+                    {h.hasProgram && <span className="tl-steady">{v.text}{v.earlier ? ", earlier this year" : v.later ? ", later this year" : ""}</span>}
                   </span>
                 </summary>
                 <div className="tl-detail">
@@ -103,7 +109,7 @@ export default function Windows() {
                     </table>
                   )}
                   <SourceList ids={[...ws.flatMap((w) => w.sources), ...h.current.postings.flatMap((p) => p.sources), ...(h.current.sources ?? [])]} />
-                  <button className="chip" onClick={() => select(c.id, { reveal: true })}>Open {c.name} field notes ↓</button>
+                  <button className="chip" onClick={() => select(c.id, { reveal: true })}>Open {c.name} field notes</button>
                   <StarButton company={c} chip />
                 </div>
               </details>
@@ -112,12 +118,9 @@ export default function Windows() {
         </div>
       </div>
 
-      <div className="legend wrap">
-        {CYCLES.map((k) => <span key={k}><i className="pill" style={{ background: CYCLE_SHADE[k] }} />{k === cycle ? "this cycle" : `for summer ${summerOf(k)}`}</span>)}
-        <span className="label">width = how unsure the date is · faded = weaker evidence · tap a row for sources</span>
-      </div>
+      <MarkKey />
 
-      <h4 className="subhead">The GSB calendar, 2026–27</h4>
+      <h3 className="subhead">The GSB calendar, 2026–27</h3>
       <GsbStrip />
       <div className="caveat">
         Dates are when postings went live on company career sites. They come from dated postings, archived snapshots, school career pages, and recruiter posts;

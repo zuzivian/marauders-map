@@ -2,20 +2,20 @@
 
 import { useMemo } from "react";
 import { calendar, companies, hiring, meta } from "@/data";
-import { MARK, MARK_ORDER, trailItems, type Mark, type TrailItem } from "@/lib/marks";
+import { MARK, trailItems, type Mark, type TrailItem } from "@/lib/marks";
 import { SEASON_MONTHS, daysBetween, fmtDate, monthOf, monthStartWeek, seasonEnd, weekOf } from "@/lib/season";
 import { useWidth } from "@/lib/useWidth";
 import { useGuide } from "./Guide";
-import { MarkIcon, markShape } from "./MarkIcon";
-import { MyListEmpty, MyListTools, useMyListFilter } from "./MyList";
+import { markShape } from "./MarkIcon";
+import { MyListEmpty, useMyListFilter } from "./MyList";
 
 const cycle = meta.currentCycle;
 const LANE = 21; // px between stacked tags
 const plural = (n: number, w: string) => `${n} ${w}${n === 1 ? "" : "s"}`;
 
-/** The short note after a company's name, when it adds something the glyph doesn't. */
+/** The short note after a company's name, when it adds something the mark doesn't. */
 function note(it: TrailItem) {
-  if (it.daysLeft !== null && it.daysLeft >= 0 && it.daysLeft <= 30) return `${it.daysLeft}d`;
+  if (it.daysLeft !== null && it.daysLeft >= 0 && it.daysLeft <= 30) return plural(it.daysLeft, "day");
   return "";
 }
 /** Longer description for the vertical (phone) trail and for screen readers. */
@@ -33,7 +33,7 @@ function detail(it: TrailItem) {
   }
 }
 
-/** One line of what matters today, computed from the same marks the trail draws. */
+/** One line of what matters today, in words, computed from the same marks the trail draws. */
 function Summary({ items }: { items: TrailItem[] }) {
   const of = (m: Mark) => items.filter((i) => i.mark === m);
   const open = [...of("closing"), ...of("open")];
@@ -49,19 +49,9 @@ function Summary({ items }: { items: TrailItem[] }) {
   return (
     <p className="trail-sum">
       {parts.map(([m, t], i) => (
-        <span key={t} className={`m-${m}`}>{i > 0 && <span className="sep"> · </span>}<MarkIcon mark={m} size={13} /> {t}</span>
+        <span key={t} className={`m-${m}`}>{i > 0 && <span className="sep"> · </span>}{t}</span>
       ))}
     </p>
-  );
-}
-
-export function MarkLegend({ marks = MARK_ORDER }: { marks?: Mark[] }) {
-  return (
-    <div className="marks" aria-label="Legend">
-      {marks.map((m) => (
-        <span key={m} className={`mark-chip m-${m}`}><MarkIcon mark={m} />{MARK[m].label}</span>
-      ))}
-    </div>
   );
 }
 
@@ -78,11 +68,10 @@ export default function Trail() {
   const next = calendar.filter((m) => m.from > today && m.kind !== "academic").sort((a, b) => a.from.localeCompare(b.from))[0];
   const age = daysBetween(meta.researched, today);
   const over = daysBetween(seasonEnd(cycle), today) > 0;
-  const shown = new Set(items.map((i) => i.mark));
 
   return (
     <section className="trail" aria-labelledby="trail-h">
-      <h2 id="trail-h" className="label">the season so far · {live ? fmtDate(today, { year: true }) : `as of ${fmtDate(meta.researched, { year: true })}`}</h2>
+      <h2 id="trail-h" className="label">The season so far, {live ? fmtDate(today, { year: true }) : `as of ${fmtDate(meta.researched, { year: true })}`}</h2>
       <Summary items={items} />
       {over && <p className="warn">The {cycle}–{Number(cycle) + 1 - 2000} season has ended. This guide hasn&apos;t been updated for the next one yet.</p>}
       {live && age > 10 && !over && (
@@ -92,15 +81,12 @@ export default function Trail() {
       {hide && <MyListEmpty />}
       <div ref={ref} className={`trail-h${hide ? " mylist-hidden" : ""}`}>{W >= 320 && <HorizontalTrail items={items} W={W} todayWk={todayWk} live={live} onPick={(id) => select(id, { reveal: true })} />}</div>
       <div ref={vref} className={`trail-v${hide ? " mylist-hidden" : ""}`}>{VW >= 260 && <VerticalTrail items={items} W={VW} todayWk={todayWk} live={live} onPick={(id) => select(id, { reveal: true })} />}</div>
-      <MarkLegend marks={MARK_ORDER.filter((m) => shown.has(m))} />
       {(current.length > 0 || next) && (
         <p className="gsb-line">
-          <span className="label">at the gsb</span>{" "}
-          {current.map((m) => <span key={m.id}>{m.label} until {fmtDate(m.to!)} · </span>)}
-          {next && <span>next: {next.label}, {fmtDate(next.from)}</span>}
+          At the GSB: {current.map((m) => <span key={m.id}>{m.label} until {fmtDate(m.to!)}. </span>)}
+          {next && <span>Next, {next.label}, {fmtDate(next.from)}.</span>}
         </p>
       )}
-      <MyListTools />
     </section>
   );
 }
@@ -121,7 +107,7 @@ const tagWidth = (text: string) => text.length * 6.9 + 28;
 const ICON_R = 4.2;
 
 function HorizontalTrail({ items, W, todayWk, live, onPick }: { items: TrailItem[]; W: number; todayWk: number; live: boolean; onPick: (id: string) => void }) {
-  const m = { l: 14, r: 14 };
+  const m = { l: 64, r: 14 }; // room on the left to say what each side of the path means
   const { i0, i1, w0, w1 } = seasonSpan(items, todayWk);
   const x = (wk: number) => m.l + ((wk - w0) / (w1 - w0)) * (W - m.l - m.r);
 
@@ -151,6 +137,8 @@ function HorizontalTrail({ items, W, todayWk, live, onPick }: { items: TrailItem
           className={`band band-${b.kind}`}><title>{`${b.label}: ${fmtDate(b.from)} – ${fmtDate(b.to!)}`}</title></rect>
       ))}
       <line x1={m.l} x2={W - m.r} y1={mid} y2={mid} className="path" />
+      <text x={m.l - 10} y={mid - 5} textAnchor="end" className="side">posted</text>
+      <text x={m.l - 10} y={mid + 13} textAnchor="end" className="side">not yet</text>
       {SEASON_MONTHS.slice(i0, i1 + 1).map((mo, k) => {
         const mx = x(monthStartWeek(i0 + k, cycle));
         return (

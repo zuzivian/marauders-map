@@ -22,9 +22,9 @@ export function Useful() {
   };
   return (
     <p className="useful" aria-live="polite">
-      {answered ? "thanks, noted." : (
+      {answered ? "Thanks, noted." : (
         <>
-          was this useful?{" "}
+          Was this useful?{" "}
           <button type="button" className="linkish quiet" onClick={() => answer("yes")}>yes</button>{" / "}
           <button type="button" className="linkish quiet" onClick={() => answer("no")}>not really</button>
           <span className="muted"> · counted anonymously, no cookies</span>

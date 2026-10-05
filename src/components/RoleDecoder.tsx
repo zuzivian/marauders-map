@@ -5,13 +5,11 @@ import { companies, companyByName, hiring, meta, roles, type Company, type Role 
 import { createSearch, titleHits } from "@/lib/search";
 import { MARK, roleMark, trailItems, type TrailItem } from "@/lib/marks";
 import { useGuide } from "./Guide";
-import { MarkLegend } from "./Trail";
-import { MarkIcon } from "./MarkIcon";
+import { MarkIcon, MarkKey } from "./MarkIcon";
 import { MyListBar, MyListEmpty, useMyListFilter } from "./MyList";
 
 const cycle = meta.currentCycle;
 const search = createSearch(roles, companies.map((c) => c.name));
-const TECH = { low: 1, some: 2, high: 3 } as const;
 const EXAMPLES = ["PM-T", "Strategy & Operations", "Corp Dev", "FLDP"];
 type Pick = { role: string; company?: string } | null;
 
@@ -56,7 +54,7 @@ export default function RoleDecoder() {
         onChange={(e) => { setQ(e.target.value); setPick(null); }} aria-describedby="title-search-out" />
       <div id="title-search-out" className="search-out" aria-live="polite">
         {!result ? (
-          <span className="label">try {EXAMPLES.map((e, i) => <span key={e}>{i > 0 && " · "}<button className="linkish" onClick={() => setQ(e)}>{e}</button></span>)}</span>
+          <span className="muted">Try {EXAMPLES.map((e, i) => <span key={e}>{i > 0 && (i === EXAMPLES.length - 1 ? " or " : ", ")}<button className="linkish" onClick={() => setQ(e)}>{e}</button></span>)}.</span>
         ) : result.confidence === "none" ? (
           <>No match yet. Try one distinctive word, like “partnerships” or “finance”.</>
         ) : !result.matches[0].phrases.length && result.companies.length ? (
@@ -93,8 +91,7 @@ export default function RoleDecoder() {
           ))}</tbody>
         </table>
       </div>
-      <MarkLegend />
-      <p className="label">blank = doesn&apos;t post that role · tap a dot for the exact titles, or a role for what it means</p>
+      <MarkKey tail="A blank means the company doesn't post that role. Tap a mark for the exact titles, or a role for what it means." />
 
       {active && <Detail role={roles.find((r) => r.id === active.role)!} company={active.company} result={result}
         onClose={() => setPick(null)} onCompany={(name) => select(companyByName[name.toLowerCase()].id, { reveal: true })} itemOf={itemOf} />}
@@ -116,12 +113,12 @@ function Detail({ role: r, company, result, onClose, onCompany, itemOf }: {
     return (
       <div className="role-detail" role="region" aria-label={`${r.name} at ${company}`}>
         <button className="close linkish" onClick={onClose} aria-label="Close">×</button>
-        <div className="label">{mk && <span className={`m-${mk}`}><MarkIcon mark={mk} /> {MARK[mk].label}</span>}</div>
+        {mk && <div className={`detail-status m-${mk}`}><MarkIcon mark={mk} /> {MARK[mk].label}</div>}
         <h3>{r.name} <span className="muted">at</span> {company}</h3>
         <ul className="titles">{ts.map((t) => (
-          <li key={t.title}>{t.title} <span className="label">{when(t.cycles)}</span></li>
+          <li key={t.title}>{t.title} <span className="muted">· {when(t.cycles)}</span></li>
         ))}</ul>
-        <button className="chip" onClick={() => onCompany(company)}>Open {company} field notes ↑</button>
+        <button className="chip" onClick={() => onCompany(company)}>Open {company} field notes</button>
       </div>
     );
   }
@@ -131,12 +128,10 @@ function Detail({ role: r, company, result, onClose, onCompany, itemOf }: {
       <h3>{r.name} <span className="ep">n. · {r.epithet}</span></h3>
       <p>{r.definition}</p>
       <p className="small">
-        <span className="label">how technical</span>{" "}
-        <span className="dots" role="img" aria-label={`${r.technical} (our read)`}>{[1, 2, 3].map((i) => <i key={i} className={i <= TECH[r.technical] ? "on" : ""} />)}</span>
-        <span className="label" style={{ marginLeft: 12 }}>leads to</span> {r.leadsTo}
+        How technical: {r.technical} <span className="muted">(our read)</span>. Where it leads: {r.leadsTo}
       </p>
       <div className="aka">
-        <span className="label">posted as</span>
+        <span className="label">Posted as</span>
         <ul>{posters.map((p) => {
           const ts = r.titles.filter((t) => t.company === p);
           const hit = result ? ts.filter((t) => titleHits(result, r.id, t)) : [];

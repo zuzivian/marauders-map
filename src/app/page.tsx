@@ -1,6 +1,8 @@
-import { companies, hiring, meta, roles } from "@/data";
+import { companies, hiring, meta, prep, roles } from "@/data";
 import { fmtDate } from "@/lib/season";
+import { fmtMonthly, perMonth } from "@/lib/format";
 import { GuideProvider } from "@/components/Guide";
+import Section from "@/components/Section";
 import Trail from "@/components/Trail";
 import RoleDecoder from "@/components/RoleDecoder";
 import Explorer from "@/components/Explorer";
@@ -8,24 +10,46 @@ import Windows from "@/components/Windows";
 import PrepMatrix from "@/components/PrepMatrix";
 import Corrections from "@/components/Corrections";
 import Contribute from "@/components/Contribute";
+import { MyListMenu } from "@/components/MyList";
 import { Useful } from "@/components/Analytics";
 
 const withProgram = companies.filter((c) => hiring[c.id].hasProgram).length;
 const titleCount = new Set(roles.flatMap((r) => r.titles.map((t) => `${t.company}|${t.title}`))).size;
+const cycles = new Set(companies.flatMap((c) => hiring[c.id].windows.map((w) => w.cycle))).size;
+const pay = companies.flatMap((c) => (c.intern?.pay ? [c.intern.pay] : []));
+const payLow = Math.min(...pay.map((p) => perMonth(p.low, p.per))), payHigh = Math.max(...pay.map((p) => perMonth(p.high, p.per)));
+const noVisa = companies.filter((c) => c.intern?.sponsorship?.stance === "no sponsorship").length;
 const words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two", "twenty-three", "twenty-four", "twenty-five"];
 const count = (n: number) => words[n] ?? String(n);
 const cap = (s: string) => s[0].toUpperCase() + s.slice(1);
 
 // Ordered by urgency: when to move, who the companies are, what the jobs are called, how to prepare.
+// Timing stays open; the rest fold to a heading and one line computed from the data.
 const SECTIONS = [
-  { id: "windows", short: "timing", title: "When applications open", dek: "Past cycles, with the uncertainty left in. A tight cluster means you can plan around it; a wide smear means watch the postings.", body: <Windows /> },
   {
-    id: "companies", short: "companies", title: "The lay of the land",
-    dek: `${cap(count(companies.length))} big tech companies, ${count(withProgram)} of them with MBA internships. Plot them by what their intern postings pay, whether they say anything about visas, when they open, or how big the company is, and pick any company for its field notes.`,
+    id: "windows", short: "timing", title: "When applications open", open: true as const,
+    line: `When ${count(withProgram)} companies’ MBA internship postings went live over the last ${count(cycles)} cycles, with the uncertainty left in.`,
+    dek: "A tight cluster means you can plan around it; a wide smear means watch the postings.",
+    body: <Windows />,
+  },
+  {
+    id: "companies", short: "companies", title: "The lay of the land", open: "on-company-page" as const,
+    line: `${cap(count(companies.length))} companies, ${count(withProgram)} with MBA internships. Where postings state pay, it runs ${fmtMonthly(payLow)} to ${fmtMonthly(payHigh)} a month; ${count(noVisa)} say they won’t sponsor visas.`,
+    dek: "Plot them by what their intern postings pay, whether they say anything about visas, when they open, or how big the company is, and pick any company for its field notes.",
     body: <Explorer />,
   },
-  { id: "roles", short: "roles", title: "What the titles mean", dek: `${cap(count(roles.length))} jobs, ${titleCount} posted titles. Paste a title to decode it, or read across a row to see who's hiring for it right now.`, body: <RoleDecoder /> },
-  { id: "prep", short: "prep", title: "Prep, sorted by what it’s good for", dek: "Which tools cover which interview skills, by role. Information, not a study plan.", body: <PrepMatrix /> },
+  {
+    id: "roles", short: "roles", title: "What the titles mean",
+    line: `${cap(count(roles.length))} jobs behind ${titleCount} posted titles (${roles.map((r) => r.short).join(", ")}), and who’s hiring for each right now.`,
+    dek: "Paste a title to decode it, or read across a row to see who's hiring for it.",
+    body: <RoleDecoder />,
+  },
+  {
+    id: "prep", short: "prep", title: "Prep, sorted by what it’s good for",
+    line: `${cap(count(prep.columns.length))} kinds of prep, rated on ${count(prep.skills.length)} interview skills for ${count(prep.roles.length)} roles.`,
+    dek: "Which tools cover which interview skills, by role. Information, not a study plan.",
+    body: <PrepMatrix />,
+  },
 ];
 
 function Compass() {
@@ -46,28 +70,21 @@ export default function Home() {
       <main className="page">
         <header className="masthead">
           <div>
-            <h1>The Marauder&apos;s Map<br /><em>of big tech recruiting</em></h1>
-            <div className="meta">gsb mba1s · {meta.currentCycle}–{Number(meta.currentCycle) + 1 - 2000} · checked {fmtDate(meta.researched).toLowerCase()}</div>
+            <h1>The Marauder&apos;s Map <em>of big tech recruiting</em></h1>
+            <p className="dek">Who&apos;s hiring MBA interns in big tech, for what, and when. Every date sourced.</p>
+            <div className="meta">For GSB MBA1s · {meta.currentCycle}–{Number(meta.currentCycle) + 1 - 2000} · checked {fmtDate(meta.researched)}</div>
           </div>
           <Compass />
         </header>
-        <p className="dek">Who&apos;s hiring MBA interns in big tech, for what, and when. Every date sourced.</p>
-        <nav className="toc" aria-label="Sections">
-          {SECTIONS.map((s, i) => <a key={s.id} href={`#${s.id}`}><span className="no">0{i + 1}</span> {s.short}</a>)}
-        </nav>
 
         <Trail />
 
-        {SECTIONS.map((s, i) => (
-          <section key={s.id} id={s.id} className="section" aria-labelledby={`${s.id}-h`}>
-            <div className="section-head">
-              <div className="no">0{i + 1}</div>
-              <h2 id={`${s.id}-h`}>{s.title}</h2>
-              <p>{s.dek}</p>
-            </div>
-            {s.body}
-          </section>
-        ))}
+        <nav className="toc" aria-label="Sections">
+          <div className="toc-links">{SECTIONS.map((s) => <a key={s.id} href={`#${s.id}`}>{s.short}</a>)}</div>
+          <MyListMenu />
+        </nav>
+
+        {SECTIONS.map((s) => <Section key={s.id} id={s.id} title={s.title} line={s.line} dek={s.dek} open={s.open}>{s.body}</Section>)}
 
         <footer className="foot">
           <div>
@@ -79,7 +96,7 @@ export default function Home() {
           <Contribute />
           <Useful />
           <div className="foot-row">
-            <span>made by <a href="https://natwong.dev" target="_blank" rel="noopener">nat wong</a>, for gsb mba1s · not affiliated with the cmc, career hub, or warner bros.</span>
+            <span>Made by <a href="https://natwong.dev" target="_blank" rel="noopener">Nat Wong</a>, for GSB MBA1s. Not affiliated with the CMC, Career Hub, or Warner Bros.</span>
             <span className="mischief">mischief managed.</span>
           </div>
         </footer>

@@ -21,25 +21,14 @@ const pct = (wk: number) => `${(Math.max(0, Math.min(SEASON_WEEKS, wk)) / SEASON
 const growthAll = companies.flatMap((c) => [c.growth.value, c.growth.low ?? c.growth.value, c.growth.high ?? c.growth.value]);
 const growthScale = scaleLog([Math.max(1, Math.min(...growthAll) / 1.3), Math.max(...growthAll) * 1.1], [4, 100]).clamp(true);
 
-export const STAGE: Record<StageType, string> = {
-  behavioral: "Behavioral", product: "Product sense", analytical: "Analytical", technical: "Technical", case: "Case / strategy", milestone: "Step",
+const STAGE: Record<StageType, string> = {
+  behavioral: "behavioral", product: "product sense", analytical: "analytical", technical: "technical", case: "case or strategy", milestone: "step",
 };
-function StageIcon({ type }: { type: StageType }) {
-  const shape = {
-    behavioral: <path d="M6 1.5 L10.5 6 L6 10.5 L1.5 6 Z" fill="currentColor" />,
-    product: <circle cx={6} cy={6} r={4.4} fill="currentColor" />,
-    analytical: <path d="M6 1.6 L10.6 10 L1.4 10 Z" fill="currentColor" />,
-    technical: <rect x={2} y={2} width={8} height={8} fill="currentColor" />,
-    case: <path d="M2.4 2.4 L9.6 9.6 M9.6 2.4 L2.4 9.6" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" />,
-    milestone: <circle cx={6} cy={6} r={3.8} fill="none" stroke="currentColor" strokeWidth={1.3} />,
-  }[type];
-  return <svg className="si" width={11} height={11} viewBox="0 0 12 12" aria-hidden>{shape}</svg>;
-}
 
-export function SeasonBar({ company }: { company: Company }) {
+function SeasonBar({ company }: { company: Company }) {
   const { today, live } = useGuide();
   const h = hiring[company.id];
-  if (!h.windows.length) return <p className="label">no mba internship postings found</p>;
+  if (!h.windows.length) return <p className="small muted">No MBA internship postings found.</p>;
   const rows = [...h.windows].sort((a, b) => a.cycle.localeCompare(b.cycle));
   const todayWk = weekOf(today, cycle);
   return (
@@ -86,44 +75,32 @@ const STANCE: Record<NonNullable<Intern["sponsorship"]>["stance"], string> = {
 };
 const cycleName = (c: string) => (c === cycle ? "this cycle" : `${c}–${Number(c) + 1 - 2000} cycle`);
 
-/** What the MBA intern postings say: pay, where, visas, how teams are set, and recent staff cuts. Missing parts say so. */
+/** What the MBA intern postings say: pay, where, visas, how teams are set. Missing parts say so. */
 function InternFacts({ company: c }: { company: Company }) {
   const i = c.intern ?? {};
-  const { pay, locations: loc, sponsorship: visa, teamModel: team, pulse } = i;
+  const { pay, locations: loc, sponsorship: visa, teamModel: team } = i;
   const visaQuote = visa ? sources[visa.sources[0]]?.quote : null;
   return (
     <>
-      <h4>the internship</h4>
+      <h4>The internship</h4>
       <dl className="facts">
         <dt>pay</dt>
         <dd>
           {pay ? (
             <>
               <span className="fv">{fmtMonthly(perMonth(pay.low, pay.per))}{pay.high > pay.low ? `–${fmtMonthly(perMonth(pay.high, pay.per))}` : ""}</span> a month{" "}
-              <span className="muted">· posted as {fmtStatedPay(pay)}, {pay.where} · {cycleName(pay.cycle)}, {pay.postings} posting{pay.postings === 1 ? "" : "s"}</span> <Cite ids={pay.sources} />
+              <span className="muted">(posted as {fmtStatedPay(pay)}, {pay.where}; {cycleName(pay.cycle)}, {pay.postings} posting{pay.postings === 1 ? "" : "s"})</span> <Cite ids={pay.sources} />
             </>
           ) : <span className="muted">not stated on the postings we found</span>}
         </dd>
-        {loc && (<><dt>where</dt><dd>{loc.places.join(" · ")} <Cite ids={loc.sources} /></dd></>)}
+        {loc && (<><dt>where</dt><dd>{loc.places.join("; ")} <Cite ids={loc.sources} /></dd></>)}
         <dt>visa</dt>
         <dd>
           {visa ? (
-            <>{STANCE[visa.stance]}{visaQuote && <>: <q>{visaQuote}</q></>} <span className="muted">· {visa.scope}, {cycleName(visa.cycle)}</span> <Cite ids={visa.sources} /></>
+            <>{STANCE[visa.stance]}{visaQuote && <>: <q>{visaQuote}</q></>} <span className="muted">({visa.scope}, {cycleName(visa.cycle)})</span> <Cite ids={visa.sources} /></>
           ) : <span className="muted">no posting we found says either way</span>}
         </dd>
-        {team && (<><dt>team</dt><dd>{team.model[0].toUpperCase() + team.model.slice(1)}{team.note && <span className="muted"> · {team.note}</span>} <Cite ids={team.sources} /></dd></>)}
-        {pulse?.length ? (
-          <>
-            <dt>cuts</dt>
-            <dd>
-              <ul className="pulse">
-                {[...pulse].sort((a, b) => b.date.localeCompare(a.date)).map((p) => (
-                  <li key={p.date + p.what}><span className="muted">{fmtDate(p.date, { year: true })}:</span> {p.what} <Cite ids={p.sources} /></li>
-                ))}
-              </ul>
-            </dd>
-          </>
-        ) : null}
+        {team && (<><dt>team</dt><dd>{team.model[0].toUpperCase() + team.model.slice(1)}{team.note && <span className="muted">. {team.note}</span>} <Cite ids={team.sources} /></dd></>)}
       </dl>
       {pay?.note && (
         <details className="why">
@@ -136,26 +113,38 @@ function InternFacts({ company: c }: { company: Company }) {
   );
 }
 
+/** Layoffs and hiring freezes in the last 12 months, newest first. */
+function StaffCuts({ company: c }: { company: Company }) {
+  const pulse = c.intern?.pulse;
+  if (!pulse?.length) return null;
+  return (
+    <>
+      <h4>Staff cuts, last 12 months</h4>
+      <ul className="pulse">
+        {[...pulse].sort((a, b) => b.date.localeCompare(a.date)).map((p) => (
+          <li key={p.date + p.what}><span className="muted">{fmtDate(p.date, { year: true })}:</span> {p.what} <Cite ids={p.sources} /></li>
+        ))}
+      </ul>
+    </>
+  );
+}
+
 function Stages({ company }: { company: Company }) {
   const iv = interviews[company.id];
   if (!iv) return null;
   return (
     <>
-      <h4>the interview process · {iv.roleScope.toLowerCase()}</h4>
-      <ol className="stepper">
+      <h4>The interview process <span className="muted">({iv.roleScope.toLowerCase()})</span></h4>
+      <ol className="stages">
         {iv.stages.map((s, i) => {
           const kinds = s.types.filter((t) => t !== "milestone");
           return (
-            <li key={i} className={kinds.length ? "stage" : "stage step"} title={s.detail ? prose(s.detail) : undefined}>
-              {(kinds.length ? kinds : (["milestone"] as StageType[])).map((t) => <StageIcon key={t} type={t} />)}
-              <span>{s.label}</span>
+            <li key={i} title={s.detail ? prose(s.detail) : undefined}>
+              {s.label}{kinds.length > 0 && <span className="muted">: {kinds.map((t) => STAGE[t]).join(", ")}</span>}
             </li>
           );
         })}
       </ol>
-      <div className="stage-key" aria-hidden>
-        {[...new Set(iv.stages.flatMap((s) => s.types).filter((t) => t !== "milestone"))].map((t) => <span key={t}><StageIcon type={t} />{STAGE[t]}</span>)}
-      </div>
       <details className="why">
         <summary>Stage details</summary>
         <ul className="stage-details">{iv.stages.filter((s) => s.detail).map((s, i) => <li key={i}><strong>{s.label}:</strong> {prose(s.detail)}</li>)}</ul>
@@ -184,95 +173,104 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
 
   return (
     <aside id="field-notes" className="panel" aria-label={`Field notes: ${c.name}`}>
-      <CopyLink key={c.id} id={c.id} />
-      <div className="label">field notes</div>
-      <div className="mylist-head"><h3>{c.name}</h3><StarButton company={c} /></div>
-      <div className="sub">{c.model.toLowerCase()} · {c.hq.toLowerCase()} · {c.ai.toLowerCase()}</div>
+      <div className="label">Field notes</div>
+      <h3>{c.name}</h3>
+      <div className="sub">{c.model} · {c.hq} · {c.ai}</div>
+      <div className="panel-tools"><StarButton company={c} /><CopyLink key={c.id} id={c.id} /></div>
 
-      <div className={`statuscard m-${item?.mark ?? "later"}`}>
-        {item ? <MarkIcon mark={item.mark} size={16} /> : null}
-        <div>
-          <strong>{item ? item.status.headline : "No MBA internship"}</strong>
-          <div className="statusnote">{prose(h.current.summary, Number(cycle))} <Cite ids={h.current.sources ?? []} /></div>
-          {!live && <div className="label">as of {fmtDate(h.current.checked, { year: true })}</div>}
-        </div>
+      <div className={`status m-${item?.mark ?? "later"}`}>
+        <p className="status-head">
+          {item && <MarkIcon mark={item.mark} size={13} />}<strong>{item ? item.status.headline : "No MBA internship"}</strong>
+          <span className="sr-only">{item ? ` (${MARK[item.mark].label})` : ""}</span>
+        </p>
+        <p className="statusnote">{prose(h.current.summary, Number(cycle))} <Cite ids={h.current.sources ?? []} />{!live && <span className="muted"> As of {fmtDate(h.current.checked, { year: true })}.</span>}</p>
+        {h.current.postings.length > 0 && (
+          <details className="why">
+            <summary>This cycle&apos;s posting{h.current.postings.length === 1 ? "" : "s"} ({h.current.postings.length})</summary>
+            <ul className="postings">
+              {h.current.postings.map((p) => (
+                <li key={p.url + p.title}><a href={p.url} target="_blank" rel="noreferrer">{p.title}</a>
+                  <span className="muted">{p.posted ? `, posted ${fmtDate(p.posted)}` : ""}{p.closes ? (p.closes < today ? `, closed ${fmtDate(p.closes)}` : `, closes ${fmtDate(p.closes)}`) : ""}</span></li>
+              ))}
+            </ul>
+          </details>
+        )}
       </div>
 
       {h.hasProgram && <InternFacts company={c} />}
 
-      <h4>the company</h4>
-      <div className="tiles">
-        <div className="tile">
-          <div className="tv">{fmtCap(c.marketCap.value)}</div>
-          <div className="tl">{private_ ? "valuation" : "market value"} · {c.marketCap.asOf ? fmtDate(c.marketCap.asOf) : ""} <Cite ids={c.marketCap.sources} /></div>
-        </div>
-        <div className="tile">
-          <div className="tv">{fmtPct(g.value)}</div>
-          <div className="gbar" role="img" aria-label={`Revenue growth ${g.value}%`}>
-            {g.low !== undefined && g.high !== undefined && <span className="grange" style={{ left: `${growthScale(g.low)}%`, width: `${growthScale(g.high) - growthScale(g.low)}%` }} />}
-            <span className="gfill" style={{ width: `${growthScale(g.value)}%` }} />
-          </div>
-          <div className="tl" title={g.basis}>revenue growth <Cite ids={g.sources} /></div>
-        </div>
-        <div className="tile">
-          <div className="tv">{fmtCount(c.headcount.value)}{c.headcount.low !== undefined && <span className="tvs"> ±</span>}</div>
-          <div className="tl" title={c.headcount.note ?? undefined}>employees <Cite ids={c.headcount.sources} /></div>
-        </div>
-        <div className="tile">
-          <WeekStrip company={c} />
-          <div className="tl">in the office <Cite ids={c.office.sources} /></div>
-        </div>
-      </div>
-      {(g.note || c.headcount.note || c.office.interns) && (
-        <details className="why">
-          <summary>Notes on these numbers</summary>
-          {g.note && <p>{prose(g.note)}</p>}
-          <p className="muted">Growth: {prose(g.basis)}.</p>
-          {c.headcount.note && <p>Employees: {c.headcount.note}</p>}
-          {c.office.interns && <p>Interns: {prose(c.office.interns)}</p>}
-          <p className="muted">Office: {c.office.summary}</p>
-        </details>
-      )}
-
-      <h4>mba intern roles</h4>
-      {myRoles.length ? (
-        <div className="rolechips">
-          {myRoles.map(({ r, titles, mark }) => (
-            <a key={r.id} href="#roles" className={`rolechip m-${mark ?? "later"}`} title={titles.map((t) => t.title).join("\n")}>
-              {mark && <MarkIcon mark={mark} />}{r.name}<span className="n">{titles.length}</span>
-            </a>
-          ))}
-        </div>
-      ) : <p className="small muted">{prose(h.note) || "No MBA internship titles found."}</p>}
-
-      <h4>when applications opened · black = this cycle</h4>
-      <SeasonBar company={c} />
-      <p className="small muted">{now ? `This cycle: ${fmtRange(now.from, now.to)} (${now.evidence} evidence). ` : ""}{h.pattern}.</p>
-      <CompanyCalLinks company={c} />
-      {h.current.postings.length > 0 && (
-        <details className="why">
-          <summary>this cycle&apos;s posting{h.current.postings.length === 1 ? "" : "s"} ({h.current.postings.length})</summary>
-          <ul className="postings">
-            {h.current.postings.map((p) => (
-              <li key={p.url + p.title}><a href={p.url} target="_blank" rel="noreferrer">{p.title}</a>
-                <span className="muted">{p.posted ? ` · posted ${fmtDate(p.posted)}` : ""}{p.closes ? (p.closes < today ? ` · closed ${fmtDate(p.closes)}` : ` · closes ${fmtDate(p.closes)}`) : ""}</span></li>
-            ))}
-          </ul>
-        </details>
-      )}
-
       <GettingIn company={c} />
 
-      <Stages company={c} />
+      {/* Everything a student doesn't decide with first, behind two labeled folds. */}
+      <details className="more">
+        <summary>Past openings, roles{interviews[c.id] ? " and interviews" : ""}</summary>
+        <h4>When applications opened</h4>
+        <SeasonBar company={c} />
+        <p className="small muted">
+          {h.windows.length > 0 && "One bar per cycle: this cycle in black, earlier ones in red, paler for weaker evidence. "}
+          {now ? `This cycle: ${fmtRange(now.from, now.to)} (${now.evidence} evidence). ` : ""}{h.pattern}.
+        </p>
+        <CompanyCalLinks company={c} />
 
-      <details className="why">
-        <summary>All sources for {c.name}</summary>
+        <h4>MBA intern roles</h4>
+        {myRoles.length ? (
+          <div className="rolechips">
+            {myRoles.map(({ r, titles, mark }) => (
+              <a key={r.id} href="#roles" className={`rolechip m-${mark ?? "later"}`} title={titles.map((t) => t.title).join("\n")}>
+                {mark && <MarkIcon mark={mark} />}{r.name}<span className="n">{titles.length} title{titles.length === 1 ? "" : "s"}</span>
+              </a>
+            ))}
+          </div>
+        ) : <p className="small muted">{prose(h.note) || "No MBA internship titles found."}</p>}
+
+        <Stages company={c} />
+      </details>
+
+      <details className="more">
+        <summary>The company{c.intern?.pulse?.length ? ", staff cuts" : ""} and all sources</summary>
+        <h4>Size, growth and office days</h4>
+        <div className="tiles">
+          <div className="tile">
+            <div className="tv">{fmtCap(c.marketCap.value)}</div>
+            <div className="tl">{private_ ? "valuation" : "market value"}, {c.marketCap.asOf ? fmtDate(c.marketCap.asOf) : ""} <Cite ids={c.marketCap.sources} /></div>
+          </div>
+          <div className="tile">
+            <div className="tv">{fmtPct(g.value)}</div>
+            <div className="gbar" role="img" aria-label={`Revenue growth ${g.value}%`}>
+              {g.low !== undefined && g.high !== undefined && <span className="grange" style={{ left: `${growthScale(g.low)}%`, width: `${growthScale(g.high) - growthScale(g.low)}%` }} />}
+              <span className="gfill" style={{ width: `${growthScale(g.value)}%` }} />
+            </div>
+            <div className="tl" title={g.basis}>revenue growth <Cite ids={g.sources} /></div>
+          </div>
+          <div className="tile">
+            <div className="tv">{fmtCount(c.headcount.value)}{c.headcount.low !== undefined && <span className="tvs"> approx.</span>}</div>
+            <div className="tl" title={c.headcount.note ?? undefined}>employees <Cite ids={c.headcount.sources} /></div>
+          </div>
+          <div className="tile">
+            <WeekStrip company={c} />
+            <div className="tl">in the office <Cite ids={c.office.sources} /></div>
+          </div>
+        </div>
+        {(g.note || c.headcount.note || c.office.interns) && (
+          <details className="why">
+            <summary>Notes on these numbers</summary>
+            {g.note && <p>{prose(g.note)}</p>}
+            <p className="muted">Growth: {prose(g.basis)}.</p>
+            {c.headcount.note && <p>Employees: {c.headcount.note}</p>}
+            {c.office.interns && <p>Interns: {prose(c.office.interns)}</p>}
+            <p className="muted">Office: {c.office.summary}</p>
+          </details>
+        )}
+
+        <StaffCuts company={c} />
+
+        <h4>All sources for {c.name}</h4>
         <SourceList ids={allSources} label="" />
       </details>
+
       {meta.corrections && (
-        <p className="small"><button className="linkish quiet" onClick={() => openCorrection(c.name)}>something wrong about {c.name}?</button></p>
+        <p className="small panel-fix"><button className="linkish quiet" onClick={() => openCorrection(c.name)}>Something wrong about {c.name}?</button></p>
       )}
-      <span className="sr-only">{item ? MARK[item.mark].label : ""}</span>
     </aside>
   );
 }

@@ -136,7 +136,9 @@ merge, then `npm run deploy`. Two repo settings matter:
 The site feeds a student's own tracker and calendar; it doesn't replace them (or Career Hub).
 
 - **My list.** Star companies in their field notes or in a row of the timing chart. Stars live in the browser's
-  localStorage (no account). "My list only" narrows the trail, the timing chart and the roles grid to them.
+  localStorage (no account). "My list only" narrows the trail, the timing chart and the roles grid to them. The filter and
+  every export live in the "my list · export" menu in the contents bar; once something is starred, the timing chart and roles
+  grid also get their own "my list only" toggle.
 - **Copy to my tracker.** Copies the starred companies (or all, if none are starred) as tab-separated rows for
   Google Sheets, Notion, Airtable or Excel, or downloads them as CSV. Columns: company, status today (the site's own
   wording), usually opens, opened this cycle, closes, posting URLs, how postings behave, and a link to the company's guide page.
@@ -153,7 +155,7 @@ The writers are in [`src/lib/ics.ts`](src/lib/ics.ts) and [`src/lib/export.ts`](
 Each company's field notes have a "Getting in" block. The top half is computed: a backward plan from that company's past
 windows, plus the GSB rule that bears on its timing. The only number in it that isn't data, the two-week lead time, is
 labeled a rule of thumb. The bottom half is first-hand notes from second-years, shown as their own evidence class
-("first-hand · n=3 · not verified by the company").
+("First-hand, from 3 second-years. Not verified by the company.").
 
 **How notes come in.** Second-years fill in the form at the bottom of the page. It posts to the same Formspree form as
 corrections, marked `kind=firsthand` with its own subject line, and its fields mirror `firsthand.json`. Shareable links

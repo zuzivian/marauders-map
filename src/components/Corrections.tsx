@@ -69,7 +69,7 @@ export default function Corrections() {
     <section id="corrections" className="corrections" aria-labelledby="corrections-h">
       {thanks && <p className="callout" role="status">Thanks, your correction was sent.</p>}
       <details ref={ref}>
-        <summary id="corrections-h">spot something wrong or out of date? send a correction</summary>
+        <summary id="corrections-h">Spot something wrong or out of date? Send a correction</summary>
         <form ref={formRef} action={cfg.action} method="POST" target={google ? "corrections-sink" : undefined}
           onSubmit={formspree ? submitFetch : () => { sent.current = true; }}>
           {formspree && (
