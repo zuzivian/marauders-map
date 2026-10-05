@@ -1,0 +1,279 @@
+{
+ "totalFound": 89,
+ "content": [
+  {
+   "id": "744000152290609",
+   "name": "Finance Intern - Undergrad Summer 2027",
+   "uuid": "ab9b70ce-dd62-48ed-84c0-9cb4312e848a",
+   "jobAdId": "4ea70abb-4c5f-444b-be0b-e0f9563bb932",
+   "defaultJobAd": true,
+   "refNumber": "JB0074794",
+   "releasedDate": "2026-09-29T00:37:47.509Z",
+   "location": {
+    "city": "Santa Clara",
+    "region": "CALIFORNIA",
+    "country": "us",
+    "address": "Building A,B,C 2225 Lawson Lane",
+    "postalCode": "95054",
+    "remote": false,
+    "hybrid": true,
+    "fullLocation": "Santa Clara, CALIFORNIA, United States"
+   },
+   "industry": {
+    "id": "it_and_services",
+    "label": "Information Technology And Services"
+   },
+   "department": {
+    "id": "2294072",
+    "label": "Finance & Accounting"
+   },
+   "function": {
+    "id": "other",
+    "label": "Other"
+   },
+   "typeOfEmployment": {
+    "id": "intern",
+    "label": "Intern"
+   },
+   "experienceLevel": {
+    "id": "not_applicable",
+    "label": "Not Applicable"
+   },
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.com/v1/companies/ServiceNow/postings/744000152290609",
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  },
+  {
+   "id": "744000152290539",
+   "name": "Finance Intern - Undergrad Summer 2027",
+   "uuid": "28c195be-f4be-4a05-b214-c6f9c397267e",
+   "jobAdId": "8b973e65-a11e-42fb-90ec-9e4f529ec9fc",
+   "defaultJobAd": false,
+   "refNumber": "JB0074794",
+   "releasedDate": "2026-09-29T00:36:45.763Z",
+   "location": {
+    "city": "West Palm Beach",
+    "region": "Florida",
+    "country": "us",
+    "address": "525 Okeechobee Boulevard",
+    "postalCode": "33401",
+    "remote": false,
+    "hybrid": true,
+    "fullLocation": "West Palm Beach, Florida, United States"
+   },
+   "industry": {
+    "id": "it_and_services",
+    "label": "Information Technology And Services"
+   },
+   "department": {
+    "id": "2294072",
+    "label": "Finance & Accounting"
+   },
+   "function": {
+    "id": "other",
+    "label": "Other"
+   },
+   "typeOfEmployment": {
+    "id": "intern",
+    "label": "Intern"
+   },
+   "experienceLevel": {
+    "id": "not_applicable",
+    "label": "Not Applicable"
+   },
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.com/v1/companies/ServiceNow/postings/744000152290539",
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  },
+  {
+   "id": "744000151719919",
+   "name": "Senior Analyst, US International Tax",
+   "uuid": "462c38eb-ffba-4c55-9e8e-183ca6bd8149",
+   "jobAdId": "c1f364b8-3565-4a9e-b213-2ae8a02809a9",
+   "defaultJobAd": true,
+   "refNumber": "JB0075690",
+   "releasedDate": "2026-09-25T00:04:20.497Z",
+   "location": {
+    "city": "Santa Clara",
+    "region": "CALIFORNIA",
+    "country": "us",
+    "address": "Building A,B,C 2225 Lawson Lane",
+    "postalCode": "95054",
+    "remote": false,
+    "hybrid": false,
+    "fullLocation": "Santa Clara, CALIFORNIA, United States"
+   },
+   "industry": {
+    "id": "it_and_services",
+    "label": "Information Technology And Services"
+   },
+   "department": {},
+   "function": {
+    "id": "finance",
+    "label": "Finance"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Full-time"
+   },
+   "experienceLevel": {
+    "id": "not_applicable",
+    "label": "Not Applicable"
+   },
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.com/v1/companies/ServiceNow/postings/744000151719919",
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  },
+  {
+   "id": "744000151646289",
+   "name": "Sr. Internal Auditor",
+   "uuid": "5d76e17d-c1af-4194-9d62-3967d0214630",
+   "jobAdId": "548b175a-c720-4a4b-bac1-c0f6828e6540",
+   "defaultJobAd": true,
+   "refNumber": "JB0075000",
+   "releasedDate": "2026-09-24T15:00:29.585Z",
+   "location": {
+    "city": "Salt Lake City",
+    "region": "Utah",
+    "country": "us",
+    "address": "Remote",
+    "postalCode": "84101",
+    "remote": true,
+    "hybrid": false,
+    "fullLocation": "Salt Lake City, Utah, United States"
+   },
+   "industry": {
+    "id": "it_and_services",
+    "label": "Information Technology And Services"
+   },
+   "department": {
+    "id": "2294072",
+    "label": "Finance & Accounting"
+   },
+   "function": {
+    "id": "finance",
+    "label": "Finance"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Full-time"
+   },
+   "experienceLevel": {
+    "id": "not_applicable",
+    "label": "Not Applicable"
+   },
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.com/v1/companies/ServiceNow/postings/744000151646289",
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  },
+  {
+   "id": "744000153222540",
+   "name": "Principal Customer Success Executive - Manufacturing Vertical ",
+   "uuid": "5b895a90-3b2c-4e5d-ae0f-9537198c437e",
+   "jobAdId": "56f393a2-a16b-4cb4-8fe2-d982600fbd12",
+   "defaultJobAd": true,
+   "refNumber": "JB0075371",
+   "releasedDate": "2026-10-02T15:56:39.334Z",
+   "location": {
+    "city": "Detroit",
+    "region": "Michigan",
+    "country": "us",
+    "address": "Remote",
+    "postalCode": "48226",
+    "remote": true,
+    "hybrid": false,
+    "fullLocation": "Detroit, Michigan, United States"
+   },
+   "industry": {
+    "id": "it_and_services",
+    "label": "Information Technology And Services"
+   },
+   "department": {
+    "id": "2294004",
+    "label": "Customer Outcomes"
+   },
+   "function": {
+    "id": "customer_service",
+    "label": "Customer Service"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Full-time"
+   },
+   "experienceLevel": {
+    "id": "not_applicable",
+    "label": "Not Applicable"
+   },
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.com/v1/companies/ServiceNow/postings/744000153222540",
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  },
+  {
+   "id": "744000153187289",
+   "name": "Senior Software Engineer",
+   "uuid": "a98322a9-72fd-42c3-af31-1c012e5e5011",
+   "jobAdId": "d219172b-6878-453e-9954-9b9712e03562",
+   "defaultJobAd": true,
+   "refNumber": "JB0075016",
+   "releasedDate": "2026-10-02T13:37:47.218Z",
+   "location": {
+    "city": "Santa Clara",
+    "region": "CALIFORNIA",
+    "country": "us",
+    "address": "2225 Lawson Lane",
+    "postalCode": "95054",
+    "remote": false,
+    "hybrid": true,
+    "hybridDescription": "Hybrid Requires 2 days per week in the office",
+    "fullLocation": "Santa Clara, CALIFORNIA, United States"
+   },
+   "industry": {
+    "id": "it_and_services",
+    "label": "Information Technology And Services"
+   },
+   "department": {
+    "id": "2294038",
+    "label": "Engineering, Infrastructure and Operations"
+   },
+   "function": {
+    "id": "engineering",
+    "label": "Engineering"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Full-time"
+   },
+   "experienceLevel": {
+    "id": "not_applicable",
+    "label": "Not Applicable"
+   },
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.com/v1/companies/ServiceNow/postings/744000153187289",
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "took": 38,
+ "timed_out": false,
+ "hits": {
+  "total": {
+   "value": 4,
+   "relation": "eq"
+  },
+  "max_score": 13.697642,
+  "hits": [
+   {
+    "_score": 13.697642,
+    "_source": {
+     "url": "https://careers.ibm.com/careers/JobDetail?jobId=128929",
+     "title": "2027 FLDP Summer Intern",
+     "body": "AI, Hybrid Cloud, Quantum — IBM does more than just innovate and create these technologies; our purpose is to be the catalyst that makes the world better.  We are helping all industries, from cybersec … rong interpersonal and leadership skills, communicate with impact, collaborate globally and embrace challenge, we invite you to apply. Currently enrolled in an MBA degree program at an Accredited College Strong background in Microsoft Excel Adept in technology and use of AI Experience in statistical and quantitative analy …  interpersonal and leadership skills, communicate with impact, collaborate globally and embrace challenge, we invite you to apply. Currently enrolled in an MBA degree program at an Accredited College Strong background in Microsoft Excel Adept in technology and use of AI Experience in statistical and quantitative analysis and … and predictive models Proven Leadership Excellent oral and written communication skills Bachelor's Degree in Finance, Accounting or related field / Enrolled in MBA Program United States Enterprise Operations Hybrid Internship Armonk, US (0147) International Business Machines Corporation",
+     "field_keyword_05": "United States",
+     "field_keyword_18": "Internship",
+     "field_keyword_19": "Armonk, US",
+     "field_text_01": 128929
+    }
+   },
+   {
+    "_score": 10.60634,
+    "_source": {
+     "url": "https://careers.ibm.com/careers/JobDetail?jobId=133909",
+     "title": "AI-First Transformation – Strategy Consultant Intern",
+     "body": "About the Team IBM’s AI-First Transformation organization is redefining how a global enterprise operates in the agentic AI era—designing workflows, operating models, and technology foundations that po … ss IBM Who You Are   You are a high-performing candidate drawn to the intersection of AI, strategy, product, and enterprise transformation. You are pursuing an MBA or similar graduate degree, such as a master’s degree in Finance or Economics, and may have experience in    You may have experience in: Strategy, transformati …  are a high-performing candidate drawn to the intersection of AI, strategy, product, and enterprise transformation. You are pursuing an MBA or similar graduate degree, such as a master’s degree in Finance or Economics, and may have experience in    You may have experience in: Strategy, transformation, or operations Technolog … idate drawn to the intersection of AI, strategy, product, and enterprise transformation. You are pursuing an MBA or similar graduate degree, such as a master’s degree in Finance or Economics, and may have experience in    You may have experience in: Strategy, transformation, or operations Technology, product development, or  … for impact This position is ideal for candidates aspiring to leadership careers in AI, transformation, product, operations, or enterprise strategy. Pursuing an MBA or similar graduate degree, such as a master's degree in Finance or Economics United States Consulting Hybrid Internship New York, US (0147) International Busi …  is ideal for candidates aspiring to leadership careers in AI, transformation, product, operations, or enterprise strategy. Pursuing an MBA or similar graduate degree, such as a master's degree in Finance or Economics United States Consulting Hybrid Internship New York, US (0147) International Business Machines Corporation … piring to leadership careers in AI, transformation, product, operations, or enterprise strategy. Pursuing an MBA or similar graduate degree, such as a master's degree in Finance or Economics United States Consulting Hybrid Internship New York, US (0147) International Business Machines Corporation",
+     "field_keyword_05": "United States",
+     "field_keyword_18": "Internship",
+     "field_keyword_19": "New York, US",
+     "field_text_01": 133909
+    }
+   },
+   {
+    "_score": 8.525522,
+    "_source": {
+     "url": "https://careers.ibm.com/careers/JobDetail?jobId=130031",
+     "title": "Software Strategy and M&A Summer Intern",
+     "body": "The Software Strategy and M&A team is a high-performing group of professionals which provides strategic perspectives on driving revenue growth and profitability for IBM Software. The team is responsib … Go-To-Market: Solid understanding of the information technology industry, in software and/or in sales/go-to-market. • Technical or data-intensive undergraduate degree. • Currently enrolled in an MBA program at a top school, graduating in May 2027. • Experience with a major business Consulting firm, Software, Sales, Data Scie … f the information technology industry, in software and/or in sales/go-to-market. • Technical or data-intensive undergraduate degree. • Currently enrolled in an MBA program at a top school, graduating in May 2027. • Experience with a major business Consulting firm, Software, Sales, Data Science or Banking/Finance. • Prior ",
+     "field_keyword_05": "United States",
+     "field_keyword_18": "Internship",
+     "field_keyword_19": "Cambridge, US",
+     "field_text_01": 130031
+    }
+   },
+   {
+    "_score": 6.261978,
+    "_source": {
+     "url": "https://careers.ibm.com/careers/JobDetail?jobId=130373",
+     "title": "Intern Finance Specialist (SAP) – 2027",
+     "body": "In this role, you'll work in one of our IBM Consulting FutureNow Centers, where we deliver deep technical and industry expertise to a wide range of public and private sector clients around the world.  … ccount regularly — it’s the best way to get a centralized view of which roles you have active applications against. Currently pursuing a Bachelor's or Master's degree in Finance, Accounting, Business Administration with a concentration in Finance or Accounting, or a closely related business field. MBA students with relevant  … chelor's or Master's degree in Finance, Accounting, Business Administration with a concentration in Finance or Accounting, or a closely related business field. MBA students with relevant finance, accounting, or financial business-process coursework or experience are also encouraged to apply.  Strong interest and foundatio",
+     "field_keyword_05": "United States",
+     "field_keyword_18": "Internship",
+     "field_keyword_19": "BATON ROUGE, US",
+     "field_text_01": 130373
+    }
+   }
+  ]
+ }
+}

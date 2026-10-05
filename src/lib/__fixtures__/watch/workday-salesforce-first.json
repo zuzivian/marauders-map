@@ -1,0 +1,359 @@
+{
+ "total": 33,
+ "facets": [
+  {
+   "facetParameter": "CF_-_REC_-_LRV_-_Job_Posting_Anchor_-_Country_from_Job_Posting_Location_Extended",
+   "descriptor": "Country",
+   "values": [
+    {
+     "descriptor": "United States of America",
+     "id": "bc33aa3152ec42d4995f4791a106ed09",
+     "count": 25
+    },
+    {
+     "descriptor": "France",
+     "id": "54c5b6971ffb4bf0b116fe7651ec789a",
+     "count": 2
+    },
+    {
+     "descriptor": "United Kingdom",
+     "id": "29247e57dbaf46fb855b224e03170bc7",
+     "count": 1
+    },
+    {
+     "descriptor": "Switzerland",
+     "id": "187134fccb084a0ea9b4b95f23890dbe",
+     "count": 1
+    },
+    {
+     "descriptor": "Poland",
+     "id": "131d5ac7e3ee4d7b962bdc96e498e412",
+     "count": 1
+    },
+    {
+     "descriptor": "Japan",
+     "id": "8b705da2becf43cfaccc091da0988ab2",
+     "count": 1
+    },
+    {
+     "descriptor": "Germany",
+     "id": "dcc5b7608d8644b3a93716604e78e995",
+     "count": 1
+    },
+    {
+     "descriptor": "Australia",
+     "id": "d903bb3fedad45039383f6de334ad4db",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "jobFamilyGroup",
+   "descriptor": "Job Category",
+   "values": [
+    {
+     "descriptor": "Sales",
+     "id": "14fa3452ec7c1011f90d030426db0000",
+     "count": 7
+    },
+    {
+     "descriptor": "Product",
+     "id": "14fa3452ec7c1011f90cf2c552640000",
+     "count": 7
+    },
+    {
+     "descriptor": "Customer Success",
+     "id": "14fa3452ec7c1011f90ce62273ea0000",
+     "count": 5
+    },
+    {
+     "descriptor": "Fixed Term & Temporary",
+     "id": "14fa3452ec7c1011f90ce92475890000",
+     "count": 4
+    },
+    {
+     "descriptor": "Program & Project Management",
+     "id": "14fa3452ec7c1011f90cfc667aed0000",
+     "count": 2
+    },
+    {
+     "descriptor": "Operations",
+     "id": "14fa3452ec7c1011f90cfe3492140000",
+     "count": 2
+    },
+    {
+     "descriptor": "Marketing & Communications",
+     "id": "14fa3452ec7c1011f90cecc098e70000",
+     "count": 2
+    },
+    {
+     "descriptor": "Finance",
+     "id": "14fa3452ec7c1011f90ceaf258770000",
+     "count": 2
+    },
+    {
+     "descriptor": "Data",
+     "id": "14fa3452ec7c1011f90cf661a7c80000",
+     "count": 1
+    },
+    {
+     "descriptor": "Employee Success",
+     "id": "14fa3452ec7c1011f90cfa981ed60000",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "workerSubType",
+   "descriptor": "Job Type",
+   "values": [
+    {
+     "descriptor": "Regular",
+     "id": "3a910852b2c31010f48d2bbc8b020000",
+     "count": 29
+    },
+    {
+     "descriptor": "Intern (Fixed Term)",
+     "id": "3a910852b2c31010f48d2cefdccd0000",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "facetParameter": "timeType",
+   "descriptor": "Time Type",
+   "values": [
+    {
+     "descriptor": "Full time",
+     "id": "0e28126347c3100fe3b402cf26290000",
+     "count": 32
+    },
+    {
+     "descriptor": "Part time",
+     "id": "0e28126347c3100fe3b4019b861f0000",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "locationMainGroup",
+   "values": [
+    {
+     "facetParameter": "locations",
+     "descriptor": "Locations",
+     "values": [
+      {
+       "descriptor": "Australia - Melbourne",
+       "id": "1038e944b1101012453f3edd3baa0000",
+       "count": 1
+      },
+      {
+       "descriptor": "California - Irvine",
+       "id": "1038e944b1101012453b514614620000",
+       "count": 2
+      },
+      {
+       "descriptor": "California - Palo Alto",
+       "id": "1038e944b1101012453aeffdcf990000",
+       "count": 1
+      },
+      {
+       "descriptor": "California - Remote",
+       "id": "1038e944b1101012453ae52d34d90000",
+       "count": 1
+      },
+      {
+       "descriptor": "California - San Francisco",
+       "id": "1038e944b1101012453f6677d95a0000",
+       "count": 12
+      },
+      {
+       "descriptor": "California - San Francisco Metro - Remote",
+       "id": "1038e944b1101012453a808340ba0000",
+       "count": 2
+      },
+      {
+       "descriptor": "Colorado - Denver",
+       "id": "1038e944b110101245402a1aa0900000",
+       "count": 1
+      },
+      {
+       "descriptor": "Colorado - Remote",
+       "id": "1038e944b1101012453bcb4b56f50000",
+       "count": 1
+      },
+      {
+       "descriptor": "Connecticut - New York City Metro - Remote",
+       "id": "1038e944b1101012453aa849296c0000",
+       "count": 1
+      },
+      {
+       "descriptor": "District of Columbia - Washington",
+       "id": "a26a2e385bb51001cfab0315f6a20000",
+       "count": 2
+      },
+      {
+       "descriptor": "France - Paris",
+       "id": "1038e944b1101012453e06b10a450000",
+       "count": 2
+      },
+      {
+       "descriptor": "Georgia - Atlanta",
+       "id": "1038e944b1101012453b7e549d150000",
+       "count": 5
+      },
+      {
+       "descriptor": "Georgia - Atlanta Metro - Remote",
+       "id": "1038e944b1101012453b72506c400000",
+       "count": 2
+      },
+      {
+       "descriptor": "Germany - Munich",
+       "id": "2c2bf80869591012453ab08dba880000",
+       "count": 1
+      },
+      {
+       "descriptor": "Illinois - Chicago",
+       "id": "1038e944b1101012453a519010ae0000",
+       "count": 11
+      },
+      {
+       "descriptor": "Illinois - Chicago Metro - Remote",
+       "id": "1038e944b1101012453f7a44a4600000",
+       "count": 2
+      },
+      {
+       "descriptor": "Illinois - Remote",
+       "id": "1038e944b1101012453fb2ac8e470000",
+       "count": 1
+      },
+      {
+       "descriptor": "Indiana - Indianapolis",
+       "id": "1038e944b11010124540a2b92d130000",
+       "count": 2
+      },
+      {
+       "descriptor": "Japan - Tokyo",
+       "id": "8ef61f627eb01012453b012b8e820000",
+       "count": 1
+      },
+      {
+       "descriptor": "Massachusetts - Boston",
+       "id": "1038e944b1101012453b66e461660000",
+       "count": 2
+      },
+      {
+       "descriptor": "New Jersey - New York City Metro - Remote",
+       "id": "1038e944b11010124540b7b942ff0000",
+       "count": 1
+      },
+      {
+       "descriptor": "New York - New York",
+       "id": "1038e944b1101012453ce26572b10000",
+       "count": 10
+      },
+      {
+       "descriptor": "New York - Remote",
+       "id": "1038e944b1101012453b89242f400000",
+       "count": 1
+      },
+      {
+       "descriptor": "Poland - Warszawa",
+       "id": "50051940270a1001ef819f110b7c0000",
+       "count": 1
+      },
+      {
+       "descriptor": "Switzerland - Zurich",
+       "id": "af0ffbc54e311012453adea9f28b0000",
+       "count": 1
+      },
+      {
+       "descriptor": "Texas - Austin",
+       "id": "1038e944b1101012453b1104bc1b0000",
+       "count": 2
+      },
+      {
+       "descriptor": "Texas - Austin Metro - Remote",
+       "id": "1038e944b1101012453df715ee030000",
+       "count": 2
+      },
+      {
+       "descriptor": "Texas - Dallas",
+       "id": "1038e944b1101012453f1ca83d0a0000",
+       "count": 2
+      },
+      {
+       "descriptor": "United Kingdom - London",
+       "id": "26e99ef44f7b1005bacbf00731000000",
+       "count": 1
+      },
+      {
+       "descriptor": "US, Remote",
+       "id": "837ce96d41ed1003d810709470e50000",
+       "count": 2
+      },
+      {
+       "descriptor": "Utah - Remote",
+       "id": "27cc52fb221f1012453a325b2e3a0000",
+       "count": 1
+      },
+      {
+       "descriptor": "Virginia - Herndon",
+       "id": "1038e944b1101012453b1b39ed230000",
+       "count": 1
+      },
+      {
+       "descriptor": "Virginia - Mclean",
+       "id": "1038e944b1101012453edf70c4ef0000",
+       "count": 1
+      },
+      {
+       "descriptor": "Virginia - Washington DC Metro - Remote",
+       "id": "1038e944b1101012453b30da001a0000",
+       "count": 1
+      },
+      {
+       "descriptor": "Washington - Bellevue",
+       "id": "1038e944b1101012453e88646a9a0000",
+       "count": 3
+      },
+      {
+       "descriptor": "Washington - Seattle",
+       "id": "27cc52fb221f1012453a6392417f0000",
+       "count": 8
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "jobPostings": [
+  {
+   "title": "Chief of Staff",
+   "externalPath": "/job/Colorado---Remote/Chief-of-Staff_JR362577",
+   "locationsText": "Colorado - Remote",
+   "postedOn": "Posted 2 Days Ago",
+   "bulletFields": [
+    "JR362577"
+   ]
+  },
+  {
+   "title": "Technical Product Strategist - Product Strategy & Innovation",
+   "externalPath": "/job/France---Paris/Director-of-Product-Strategy---Office-of-the-CEO_JR360050-1",
+   "locationsText": "France - Paris",
+   "postedOn": "Posted 2 Days Ago",
+   "bulletFields": [
+    "JR360050"
+   ]
+  },
+  {
+   "title": "Technical Product Strategist - Product Strategy & Innovation",
+   "externalPath": "/job/United-Kingdom---London/Product-Strategy---Office-of-the-CEO_JR360049",
+   "locationsText": "United Kingdom - London",
+   "postedOn": "Posted 2 Days Ago",
+   "bulletFields": [
+    "JR360049"
+   ]
+  }
+ ]
+}

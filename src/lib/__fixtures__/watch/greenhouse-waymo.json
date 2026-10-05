@@ -1,0 +1,185 @@
+{
+ "jobs": [
+  {
+   "absolute_url": "https://careers.withwaymo.com/jobs?gh_jid=8201252",
+   "internal_job_id": 3549490,
+   "location": {
+    "name": "Mountain View, California"
+   },
+   "id": 8201252,
+   "updated_at": "2026-09-22T13:51:21-04:00",
+   "requisition_id": "5405",
+   "title": "2027 Summer Intern, BS/MS, Global Supply Management (GSM)",
+   "company_name": "Waymo",
+   "first_published": "2026-09-21T14:45:03-04:00",
+   "language": "en",
+   "application_deadline": null,
+   "metadata": [
+    {
+     "id": 2193086,
+     "name": "Job Level",
+     "value": [
+      "Intern"
+     ],
+     "value_type": "multi_select"
+    }
+   ]
+  },
+  {
+   "absolute_url": "https://careers.withwaymo.com/jobs?gh_jid=8214729",
+   "internal_job_id": 3555119,
+   "location": {
+    "name": "Warsaw, Poland"
+   },
+   "id": 8214729,
+   "updated_at": "2026-09-25T17:19:50-04:00",
+   "requisition_id": "5434",
+   "title": "2027 Summer Intern, BS/MS, Software Engineer, RO Performance team, Release Evaluation (Simulation)",
+   "company_name": "Waymo",
+   "first_published": "2026-09-18T18:07:50-04:00",
+   "language": "en",
+   "application_deadline": null,
+   "metadata": [
+    {
+     "id": 2193086,
+     "name": "Job Level",
+     "value": [
+      "Intern"
+     ],
+     "value_type": "multi_select"
+    }
+   ]
+  },
+  {
+   "absolute_url": "https://careers.withwaymo.com/jobs?gh_jid=8165014",
+   "education": "education_required",
+   "internal_job_id": 3533553,
+   "location": {
+    "name": "San Francisco, California, United States"
+   },
+   "id": 8165014,
+   "updated_at": "2026-09-30T17:22:21-04:00",
+   "requisition_id": "5346",
+   "title": "2027 Summer Intern, MBA, Operations Planning",
+   "company_name": "Waymo",
+   "first_published": "2026-09-01T12:19:08-04:00",
+   "language": "en",
+   "application_deadline": null,
+   "metadata": [
+    {
+     "id": 2193086,
+     "name": "Job Level",
+     "value": [
+      "Intern"
+     ],
+     "value_type": "multi_select"
+    }
+   ]
+  },
+  {
+   "absolute_url": "https://careers.withwaymo.com/jobs?gh_jid=8198582",
+   "education": "education_required",
+   "internal_job_id": 3548172,
+   "location": {
+    "name": "Los Angeles, California, United States"
+   },
+   "id": 8198582,
+   "updated_at": "2026-09-21T17:51:44-04:00",
+   "requisition_id": "5402",
+   "title": "2027 Summer Intern, MBA, Salesforce Product Owner",
+   "company_name": "Waymo",
+   "first_published": "2026-09-15T14:51:38-04:00",
+   "language": "en",
+   "application_deadline": null,
+   "metadata": [
+    {
+     "id": 2193086,
+     "name": "Job Level",
+     "value": [
+      "Intern"
+     ],
+     "value_type": "multi_select"
+    }
+   ]
+  },
+  {
+   "absolute_url": "https://careers.withwaymo.com/jobs?gh_jid=8197014",
+   "education": "education_required",
+   "internal_job_id": 3547474,
+   "location": {
+    "name": "San Francisco, California, United States"
+   },
+   "id": 8197014,
+   "updated_at": "2026-09-21T17:51:44-04:00",
+   "requisition_id": "5394",
+   "title": "2027 Summer Intern, MBA, Strategic Finance",
+   "company_name": "Waymo",
+   "first_published": "2026-09-14T18:08:49-04:00",
+   "language": "en",
+   "application_deadline": null,
+   "metadata": [
+    {
+     "id": 2193086,
+     "name": "Job Level",
+     "value": [
+      "Intern"
+     ],
+     "value_type": "multi_select"
+    }
+   ]
+  },
+  {
+   "absolute_url": "https://careers.withwaymo.com/jobs?gh_jid=8221956",
+   "internal_job_id": 3558365,
+   "location": {
+    "name": "Mountain View, CA, USA; San Francisco, CA, USA"
+   },
+   "id": 8221956,
+   "updated_at": "2026-10-01T13:51:25-04:00",
+   "requisition_id": "5443",
+   "title": "2027 Summer Intern, PhD, Data Science",
+   "company_name": "Waymo",
+   "first_published": "2026-09-22T18:02:12-04:00",
+   "language": "en",
+   "application_deadline": null,
+   "metadata": [
+    {
+     "id": 2193086,
+     "name": "Job Level",
+     "value": [
+      "Intern"
+     ],
+     "value_type": "multi_select"
+    }
+   ]
+  },
+  {
+   "absolute_url": "https://careers.withwaymo.com/jobs?gh_jid=7429795",
+   "internal_job_id": 3306039,
+   "location": {
+    "name": "Mountain View, CA, US"
+   },
+   "id": 7429795,
+   "updated_at": "2026-10-02T17:53:38-04:00",
+   "requisition_id": "4067",
+   "title": "Senior Software Engineer, Internal Tooling",
+   "company_name": "Waymo",
+   "first_published": "2026-01-07T14:45:41-05:00",
+   "language": "en",
+   "application_deadline": null,
+   "metadata": [
+    {
+     "id": 2193086,
+     "name": "Job Level",
+     "value": [
+      "5"
+     ],
+     "value_type": "multi_select"
+    }
+   ]
+  }
+ ],
+ "meta": {
+  "total": 364
+ }
+}

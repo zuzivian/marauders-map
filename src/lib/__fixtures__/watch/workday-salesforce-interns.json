@@ -1,0 +1,124 @@
+{
+ "total": 4,
+ "jobPostings": [
+  {
+   "title": "Summer 2027 Intern - MBA Business Value & Strategic Selling Consultant",
+   "externalPath": "/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant_JR362509-1",
+   "locationsText": "New York - New York",
+   "postedOn": "Posted 3 Days Ago",
+   "bulletFields": [
+    "JR362509"
+   ]
+  },
+  {
+   "title": "Summer 2027 Intern - MBA Business Value & Strategic Selling Consultant (Financial Services)",
+   "externalPath": "/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant--Financial-Services-_JR362508-1",
+   "locationsText": "New York - New York",
+   "postedOn": "Posted 3 Days Ago",
+   "bulletFields": [
+    "JR362508"
+   ]
+  },
+  {
+   "title": "Summer 2027 Intern - MBA Business Value & Strategic Selling Consultant (Healthcare & Life Sciences)",
+   "externalPath": "/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant--Healthcare---Life-Sciences-_JR362499-1",
+   "locationsText": "New York - New York",
+   "postedOn": "Posted 3 Days Ago",
+   "bulletFields": [
+    "JR362499"
+   ]
+  },
+  {
+   "title": "Sales Intern (North)",
+   "externalPath": "/job/Germany---Munich/Sales-Intern--North-_JR335815",
+   "locationsText": "Germany - Munich",
+   "postedOn": "Posted 9 Days Ago",
+   "bulletFields": [
+    "JR335815"
+   ]
+  }
+ ],
+ "facets": [
+  {
+   "facetParameter": "CF_-_REC_-_LRV_-_Job_Posting_Anchor_-_Country_from_Job_Posting_Location_Extended",
+   "descriptor": "Country",
+   "values": [
+    {
+     "descriptor": "United States of America",
+     "id": "bc33aa3152ec42d4995f4791a106ed09",
+     "count": 3
+    },
+    {
+     "descriptor": "Germany",
+     "id": "dcc5b7608d8644b3a93716604e78e995",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "jobFamilyGroup",
+   "descriptor": "Job Category",
+   "values": [
+    {
+     "descriptor": "Fixed Term & Temporary",
+     "id": "14fa3452ec7c1011f90ce92475890000",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "facetParameter": "workerSubType",
+   "descriptor": "Job Type",
+   "values": [
+    {
+     "descriptor": "Regular",
+     "id": "3a910852b2c31010f48d2bbc8b020000",
+     "count": 29
+    },
+    {
+     "descriptor": "Intern (Fixed Term)",
+     "id": "3a910852b2c31010f48d2cefdccd0000",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "facetParameter": "timeType",
+   "descriptor": "Time Type",
+   "values": [
+    {
+     "descriptor": "Full time",
+     "id": "0e28126347c3100fe3b402cf26290000",
+     "count": 3
+    },
+    {
+     "descriptor": "Part time",
+     "id": "0e28126347c3100fe3b4019b861f0000",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "locationMainGroup",
+   "values": [
+    {
+     "facetParameter": "locations",
+     "descriptor": "Locations",
+     "values": [
+      {
+       "descriptor": "New York - New York",
+       "id": "1038e944b1101012453ce26572b10000",
+       "count": 3
+      },
+      {
+       "descriptor": "Germany - Munich",
+       "id": "2c2bf80869591012453ab08dba880000",
+       "count": 1
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "userAuthenticated": false
+}

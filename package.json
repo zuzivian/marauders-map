@@ -14,7 +14,8 @@
     "deploy": "npm run build && python3 scripts/publish.py",
     "check:sources": "node scripts/check-sources.mjs",
     "add:firsthand": "node scripts/add-firsthand.mjs",
-    "digest": "node scripts/digest.mjs"
+    "digest": "node scripts/digest.mjs",
+    "watch": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/watch-postings.mjs"
   },
   "dependencies": {
     "d3-force": "^3.0.0",

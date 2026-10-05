@@ -1,0 +1,233 @@
+{
+ "data": {
+  "count": 41,
+  "positions": [
+   {
+    "id": 1970393557022614,
+    "displayJobId": "200059429",
+    "name": "Director, Surface Specialist",
+    "locations": [
+     "United States, North Carolina, Charlotte"
+    ],
+    "standardizedLocations": [
+     "Charlotte, NC, US"
+    ],
+    "postedTs": 1790987919,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Solution Area Specialists",
+    "creationTs": 1790896849,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "200059429",
+    "positionUrl": "/careers/job/1970393557022614"
+   },
+   {
+    "id": 1970393557019443,
+    "displayJobId": "200058981",
+    "name": "Surface Specialist",
+    "locations": [
+     "United States, Multiple Locations, Multiple Locations"
+    ],
+    "standardizedLocations": [
+     "US"
+    ],
+    "postedTs": 1790986486,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Solution Area Specialists",
+    "creationTs": 1790725998,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "200058981",
+    "positionUrl": "/careers/job/1970393557019443"
+   },
+   {
+    "id": 1970393557019326,
+    "displayJobId": "200058873",
+    "name": "Diagnostic Imaging Solution Area Specialist",
+    "locations": [
+     "United States"
+    ],
+    "standardizedLocations": [
+     "US"
+    ],
+    "postedTs": 1790973981,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Solution Area Specialists",
+    "creationTs": 1790708993,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "200058873",
+    "positionUrl": "/careers/job/1970393557019326"
+   },
+   {
+    "id": 1970393557019329,
+    "displayJobId": "200058881",
+    "name": "PowerScribe One Solution Specialist",
+    "locations": [
+     "United States"
+    ],
+    "standardizedLocations": [
+     "US"
+    ],
+    "postedTs": 1790973939,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Solution Area Specialists",
+    "creationTs": 1790710131,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "200058881",
+    "positionUrl": "/careers/job/1970393557019329"
+   },
+   {
+    "id": 1970393556986137,
+    "displayJobId": "200053341",
+    "name": "Data Science: AI Experiences PhD Internship Opportunities - Redmond",
+    "locations": [
+     "United States, Washington, Redmond"
+    ],
+    "standardizedLocations": [
+     "Redmond, WA, US"
+    ],
+    "postedTs": 1790971900,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Data Science",
+    "creationTs": 1788371915,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "200053341",
+    "positionUrl": "/careers/job/1970393556986137"
+   },
+   {
+    "id": 1970393557008728,
+    "displayJobId": "200058363",
+    "name": "Senior AI Workforce Digital Specialist",
+    "locations": [
+     "United States, Texas, Dallas",
+     "United States, Georgia, Atlanta"
+    ],
+    "standardizedLocations": [
+     "Dallas, TX, US",
+     "Atlanta, GA, US"
+    ],
+    "postedTs": 1790970934,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Digital Solution Area Specialists",
+    "creationTs": 1790371662,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "200058363",
+    "positionUrl": "/careers/job/1970393557008728"
+   },
+   {
+    "id": 1970393557019143,
+    "displayJobId": "200058839",
+    "name": "Principal PM Manager, Commercial Cloud Demand Planning",
+    "locations": [
+     "United States, Washington, Redmond",
+     "United States, Texas, Austin"
+    ],
+    "standardizedLocations": [
+     "Redmond, WA, US",
+     "Austin, TX, US"
+    ],
+    "postedTs": 1790968335,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Technical Program Management",
+    "creationTs": 1790702977,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "200058839",
+    "positionUrl": "/careers/job/1970393557019143"
+   },
+   {
+    "id": 1970393557021571,
+    "displayJobId": "200059105",
+    "name": "Account Manager, Advertising",
+    "locations": [
+     "United States, New York, New York",
+     "United States, California, San Francisco",
+     "United States, Texas, Austin"
+    ],
+    "standardizedLocations": [
+     "New York, NY, US",
+     "San Francisco, CA, US",
+     "Austin, TX, US"
+    ],
+    "postedTs": 1790885056,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Advertising Client Success",
+    "creationTs": 1790791799,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "200059105",
+    "positionUrl": "/careers/job/1970393557021571"
+   },
+   {
+    "id": 1970393557019360,
+    "displayJobId": "200058904",
+    "name": "Business Program Management INTERN",
+    "locations": [
+     "United States, Washington, Redmond"
+    ],
+    "standardizedLocations": [
+     "Redmond, WA, US"
+    ],
+    "postedTs": 1790782570,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Business Program Management",
+    "creationTs": 1790717687,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "200058904",
+    "positionUrl": "/careers/job/1970393557019360"
+   },
+   {
+    "id": 1970393556992026,
+    "displayJobId": "200054588",
+    "name": "Digital Specialist-AI Biz Process-State & Local Government",
+    "locations": [
+     "United States, Georgia, Atlanta",
+     "United States, Illinois, Chicago",
+     "United States, Minnesota, Minneapolis",
+     "United States, North Dakota, Fargo",
+     "United States, Texas, Las Colinas"
+    ],
+    "standardizedLocations": [
+     "Atlanta, GA, US",
+     "Chicago, IL, US",
+     "Minneapolis, MN, US",
+     "Fargo, ND, US",
+     "Irving, TX, US"
+    ],
+    "postedTs": 1790776398,
+    "solrScore": null,
+    "stars": 0,
+    "department": "Digital Solution Area Specialists",
+    "creationTs": 1788985040,
+    "isHot": 0,
+    "workLocationOption": "onsite",
+    "locationFlexibility": null,
+    "atsJobId": "200054588",
+    "positionUrl": "/careers/job/1970393556992026"
+   }
+  ]
+ }
+}

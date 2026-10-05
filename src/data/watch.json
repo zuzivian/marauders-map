@@ -1,0 +1,356 @@
+{
+  "apple": {
+    "kind": "apple",
+    "endpoints": [
+      "https://jobs.apple.com/en-us/search"
+    ],
+    "queries": [
+      {
+        "q": "MBA"
+      }
+    ],
+    "params": {
+      "team": "internships-STDNT-INTRN",
+      "sort": "newest"
+    },
+    "filters": "Students > Internships team, keyword MBA, newest first; results are read from the JSON the page embeds",
+    "board": "https://jobs.apple.com/en-us/search?search=MBA&team=internships-STDNT-INTRN",
+    "publisher": "Apple Careers",
+    "verified": "2026-10-04",
+    "note": "Apple posts one US 'MBA Internships' talent-pool role; postDateInGMT gives the posted date."
+  },
+  "amazon": {
+    "kind": "amazon",
+    "endpoints": [
+      "https://www.amazon.jobs/en/search.json"
+    ],
+    "queries": [
+      {
+        "q": "MBA",
+        "params": {
+          "business_category[]": "studentprograms"
+        }
+      },
+      {
+        "q": "MBA intern"
+      }
+    ],
+    "params": {
+      "normalized_country_code[]": "USA",
+      "sort": "recent",
+      "result_limit": "100"
+    },
+    "filters": "US only; keyword MBA within Student Programs (where every 2027 MBA role sits), plus 'MBA intern' across all categories",
+    "board": "https://www.amazon.jobs/en/search?base_query=MBA&business_category[]=studentprograms&country[]=USA",
+    "publisher": "Amazon.jobs",
+    "verified": "2026-10-04",
+    "note": "Full-time MBA roles (MLDP Full-Time, ALA PM Full Time, Pathways Full-time) come back in the same search and are filtered out."
+  },
+  "intuit": {
+    "kind": "radancy",
+    "endpoints": [
+      "https://jobs.intuit.com/search-jobs/results"
+    ],
+    "queries": [
+      {
+        "q": "MBA"
+      }
+    ],
+    "params": {
+      "RecordsPerPage": "100"
+    },
+    "filters": "keyword MBA (TalentBrew search returns the list as HTML in JSON); each new job page's JSON-LD gives datePosted",
+    "board": "https://jobs.intuit.com/search-jobs/MBA/27595/1",
+    "publisher": "Intuit Careers",
+    "verified": "2026-10-04"
+  },
+  "adobe": {
+    "kind": "workday",
+    "endpoints": [
+      "https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs"
+    ],
+    "queries": [
+      {
+        "q": "MBA"
+      }
+    ],
+    "filters": "keyword MBA, narrowed to the 'Intern (Fixed Term)' worker type when Workday offers that facet; job detail gives startDate, endDate and country",
+    "board": "https://careers.adobe.com/us/en/search-results?keywords=MBA",
+    "publisher": "Adobe Workday",
+    "verified": "2026-10-04"
+  },
+  "microsoft": {
+    "kind": "eightfold",
+    "endpoints": [
+      "https://apply.careers.microsoft.com/api/pcsx/search"
+    ],
+    "queries": [
+      {
+        "q": "MBA"
+      }
+    ],
+    "params": {
+      "domain": "microsoft.com",
+      "location": "United States",
+      "sort_by": "timestamp"
+    },
+    "filters": "US, keyword MBA, newest first (10 per page); MBA internships aren't all tagged 'Intern' seniority, so that filter isn't used",
+    "board": "https://apply.careers.microsoft.com/careers?query=MBA&location=United%20States",
+    "publisher": "Microsoft Careers",
+    "verified": "2026-10-04",
+    "note": "Rate-limits quickly (HTTP 429 on the second request within a second); the script waits 3 s between calls here."
+  },
+  "salesforce": {
+    "kind": "workday",
+    "endpoints": [
+      "https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs"
+    ],
+    "queries": [
+      {
+        "q": "MBA"
+      }
+    ],
+    "filters": "keyword MBA, narrowed to the 'Intern (Fixed Term)' worker type; job detail gives startDate, endDate (stated close date) and country",
+    "board": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site?q=MBA",
+    "publisher": "Salesforce Workday",
+    "verified": "2026-10-04"
+  },
+  "google": {
+    "kind": "google",
+    "endpoints": [
+      "https://www.google.com/about/careers/applications/jobs/results/"
+    ],
+    "queries": [
+      {
+        "q": "MBA"
+      }
+    ],
+    "params": {
+      "target_level": "INTERN_AND_APPRENTICE"
+    },
+    "filters": "Interns & apprentices, keyword MBA, all countries (so EMEA-only postings can be reported); results are read from the data the page embeds",
+    "board": "https://www.google.com/about/careers/applications/jobs/results/?q=MBA&target_level=INTERN_AND_APPRENTICE",
+    "publisher": "Google Careers",
+    "verified": "2026-10-04",
+    "note": "No public API: the parser reads the page's embedded AF_initDataCallback array, so a Google layout change shows up as a failure, not a silent miss."
+  },
+  "nvidia": {
+    "kind": "workday",
+    "endpoints": [
+      "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs"
+    ],
+    "queries": [
+      {
+        "q": "MBA"
+      }
+    ],
+    "filters": "keyword MBA, narrowed to the 'Intern (Fixed Term)' worker type when any intern matches",
+    "board": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite?q=MBA",
+    "publisher": "NVIDIA Workday",
+    "verified": "2026-10-04",
+    "note": "NVIDIA MBA roles close within days, so a daily check is the minimum useful frequency."
+  },
+  "meta": {
+    "kind": "manual",
+    "endpoints": [],
+    "queries": [],
+    "filters": "",
+    "board": "https://www.metacareers.com/jobsearch/?q=MBA",
+    "publisher": "Meta Careers",
+    "verified": "2026-10-04",
+    "reason": "metacareers.com renders results client-side from an undocumented GraphQL endpoint with rotating query ids and session tokens; no stable public API."
+  },
+  "airbnb": {
+    "kind": "greenhouse",
+    "endpoints": [
+      "https://boards-api.greenhouse.io/v1/boards/airbnb/jobs"
+    ],
+    "queries": [],
+    "filters": "the whole public board (about 150 jobs), filtered client-side",
+    "board": "https://careers.airbnb.com/positions/",
+    "publisher": "Airbnb (Greenhouse)",
+    "verified": "2026-10-04"
+  },
+  "uber": {
+    "kind": "manual",
+    "endpoints": [],
+    "queries": [],
+    "filters": "",
+    "board": "https://jobs.uber.com/en/search/?q=MBA",
+    "publisher": "Uber Careers",
+    "verified": "2026-10-04",
+    "reason": "jobs.uber.com answers scripts with a Cloudflare bot challenge (HTTP 403), and the old uber.com loadSearchJobsResults API is retired (404)."
+  },
+  "openai": {
+    "kind": "ashby",
+    "endpoints": [
+      "https://api.ashbyhq.com/posting-api/job-board/openai"
+    ],
+    "queries": [],
+    "filters": "the whole public board (about 830 jobs, 13 MB with descriptions), filtered client-side",
+    "board": "https://jobs.ashbyhq.com/openai",
+    "publisher": "OpenAI (Ashby)",
+    "verified": "2026-10-04",
+    "note": "hiring.json says OpenAI has no MBA program, so a match is reported for a person, not written."
+  },
+  "cisco": {
+    "kind": "workday",
+    "endpoints": [
+      "https://cisco.wd5.myworkdayjobs.com/wday/cxs/cisco/Cisco_Careers/jobs"
+    ],
+    "queries": [
+      {
+        "q": "MBA"
+      }
+    ],
+    "filters": "keyword MBA, narrowed to the 'Intern (Fixed Term) (Seasonal) (Trainee)' worker type when any intern matches",
+    "board": "https://careers.cisco.com/global/en/search-results?keywords=MBA",
+    "publisher": "Cisco Workday",
+    "verified": "2026-10-04"
+  },
+  "dell": {
+    "kind": "oracle-hcm",
+    "endpoints": [
+      "https://enterpriseplatform.dell.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions"
+    ],
+    "queries": [
+      {
+        "q": "MBA"
+      }
+    ],
+    "params": {
+      "siteNumber": "CX_1001",
+      "sortBy": "POSTING_DATES_DESC",
+      "limit": "100",
+      "jobBase": "https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/careers"
+    },
+    "filters": "keyword MBA (matches descriptions too), newest first; requisition detail gives the stated end date",
+    "board": "https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/careers/jobs?keyword=MBA",
+    "publisher": "Dell Careers (Oracle Recruiting)",
+    "verified": "2026-10-04"
+  },
+  "ibm": {
+    "kind": "ibm",
+    "endpoints": [
+      "https://www-api.ibm.com/search/api/v2"
+    ],
+    "queries": [
+      {
+        "q": "MBA"
+      },
+      {
+        "q": "\"Master of Business Administration\""
+      }
+    ],
+    "params": {
+      "field_keyword_18": "Internship",
+      "field_keyword_05": "United States"
+    },
+    "filters": "US internships, keyword MBA or 'Master of Business Administration' (some IBM MBA postings only spell it out)",
+    "board": "https://www.ibm.com/careers/search?field_keyword_18[0]=Internship&field_keyword_05[0]=United%20States&q=MBA",
+    "publisher": "IBM",
+    "verified": "2026-10-04",
+    "note": "The index gives no posted dates, and careers.ibm.com job pages sit behind a bot check, so new IBM postings are added without a date."
+  },
+  "paypal": {
+    "kind": "workday",
+    "endpoints": [
+      "https://paypal.wd1.myworkdayjobs.com/wday/cxs/paypal/jobs/jobs"
+    ],
+    "queries": [
+      {
+        "q": "MBA"
+      }
+    ],
+    "filters": "keyword MBA, narrowed to an intern worker type when Workday offers one",
+    "board": "https://paypal.wd1.myworkdayjobs.com/jobs?q=MBA",
+    "publisher": "PayPal Workday",
+    "verified": "2026-10-04",
+    "note": "PayPal MBA postings have stayed up only 4-8 days, so a daily check matters most here."
+  },
+  "servicenow": {
+    "kind": "smartrecruiters",
+    "endpoints": [
+      "https://api.smartrecruiters.com/v1/companies/ServiceNow/postings"
+    ],
+    "queries": [
+      {
+        "q": "MBA"
+      },
+      {
+        "q": "intern"
+      }
+    ],
+    "params": {
+      "country": "us",
+      "limit": "100"
+    },
+    "filters": "US, keyword MBA and keyword intern; typeOfEmployment 'intern' is read per posting",
+    "board": "https://careers.servicenow.com/jobs/?search=MBA",
+    "publisher": "ServiceNow (SmartRecruiters)",
+    "verified": "2026-10-04"
+  },
+  "tiktok": {
+    "kind": "tiktok",
+    "endpoints": [
+      "https://api.lifeattiktok.com/api/v1/public/supplier/search/job/posts"
+    ],
+    "queries": [
+      {
+        "q": "MBA"
+      }
+    ],
+    "params": {
+      "limit": "100"
+    },
+    "filters": "keyword MBA, all locations; the job subject ('MBA Intern - 2027 Start') and recruit type ('Intern') are read per posting",
+    "board": "https://lifeattiktok.com/search?keyword=MBA",
+    "publisher": "TikTok",
+    "verified": "2026-10-04",
+    "note": "The API gives no posted dates. 'Project Intern ... 2026 Start (MBA)' roles are off-cycle and filtered out by year."
+  },
+  "visa": {
+    "kind": "workday",
+    "endpoints": [
+      "https://visa.wd5.myworkdayjobs.com/wday/cxs/visa/Visa/jobs",
+      "https://visa.wd5.myworkdayjobs.com/wday/cxs/visa/Visa_Early_Careers/jobs"
+    ],
+    "queries": [
+      {
+        "q": "MBA"
+      }
+    ],
+    "filters": "keyword MBA on both Visa Workday sites (corporate.visa.com/jobs redirects to the first), narrowed to the 'Intern' job family when any intern matches",
+    "board": "https://corporate.visa.com/en/jobs/?q=MBA",
+    "publisher": "Visa Workday",
+    "verified": "2026-10-04",
+    "note": "Visa's old SmartRecruiters board is empty (0 postings) since the move to Workday."
+  },
+  "waymo": {
+    "kind": "greenhouse",
+    "endpoints": [
+      "https://boards-api.greenhouse.io/v1/boards/waymo/jobs"
+    ],
+    "queries": [],
+    "filters": "the whole public board (about 360 jobs), filtered client-side; first_published gives the posted date",
+    "board": "https://careers.withwaymo.com/jobs/search?query=MBA",
+    "publisher": "Waymo (Greenhouse)",
+    "verified": "2026-10-04"
+  },
+  "workday": {
+    "kind": "workday",
+    "endpoints": [
+      "https://workday.wd5.myworkdayjobs.com/wday/cxs/workday/Workday/jobs",
+      "https://workday.wd5.myworkdayjobs.com/wday/cxs/workday/Workday_Early_Career/jobs"
+    ],
+    "queries": [
+      {
+        "q": "MBA"
+      }
+    ],
+    "filters": "keyword MBA on the main and Early Career Workday sites (past MBA roles appeared on both)",
+    "board": "https://workday.wd5.myworkdayjobs.com/Workday_Early_Career",
+    "publisher": "Workday Careers",
+    "verified": "2026-10-04"
+  }
+}

@@ -1,0 +1,25 @@
+{
+ "took": 67,
+ "timed_out": false,
+ "hits": {
+  "total": {
+   "value": 1,
+   "relation": "eq"
+  },
+  "max_score": 13.842666,
+  "hits": [
+   {
+    "_score": 13.842666,
+    "_source": {
+     "url": "https://careers.ibm.com/careers/JobDetail?jobId=130063",
+     "title": "Corporate Strategy Summer Consultant – Internship",
+     "body": "At IBM Finance & Operations, we are the backbone of IBM’s transformation driving efficiency, transparency, and smart decision-making across the business. Our teams provide the insight and discipline t … s and senior executives Collaborate with client teams to implement and, in select circumstances, to manage pragmatic, bold, and actionable solutions • Pursuing Master of Business Administration • Bachelor’s degree with 1 or less years of relevant experience • Able to travel approximately 10% annually • Fluent in the English language •  Pursuing Master …  teams to implement and, in select circumstances, to manage pragmatic, bold, and actionable solutions • Pursuing Master of Business Administration • Bachelor’s degree with 1 or less years of relevant experience • Able to travel approximately 10% annually • Fluent in the English language •  Pursuing Master’s Degree in Busines",
+     "field_keyword_05": "United States",
+     "field_keyword_18": "Internship",
+     "field_keyword_19": "New York, US",
+     "field_text_01": 130063
+    }
+   }
+  ]
+ }
+}
