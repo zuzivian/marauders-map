@@ -1158,6 +1158,78 @@
     }
   },
   {
+    "id": "tiktok",
+    "name": "TikTok",
+    "hq": "Los Angeles / Singapore (TikTok global HQs); parent ByteDance is based in Beijing",
+    "model": "Ads",
+    "ai": "Builds frontier models",
+    "marketCap": {
+      "value": 550,
+      "asOf": "2026-02-25",
+      "kind": "private valuation",
+      "sources": [
+        "tiktok-reuters-valuation",
+        "tiktok-seekingalpha-valuation",
+        "tiktok-theinformation-valuation"
+      ]
+    },
+    "growth": {
+      "value": 29,
+      "low": 27,
+      "high": 29,
+      "basis": "ByteDance calendar 2025 revenue (~$200B) vs 2024 (~$155B), as reported by The Information (Sep 2026)",
+      "note": "Press reports, not audited filings (ByteDance is private). 29% is The Information's figure; ~27-28% is implied by 36Kr's split (China ~+20%, overseas ~+50%, overseas ~25% of 2024 revenue), our calculation. Bloomberg's May 2025 report of a ~20% internal target (~$186B) was a goal, not an actual. H1 2026 revenue was reported up ~30% to ~$120B.",
+      "sources": [
+        "tiktok-proactive-revenue",
+        "tiktok-biggo-h1-2026",
+        "tiktok-theinformation-h1-2026",
+        "tiktok-biggo-2025-mix",
+        "tiktok-bloomberg-2025-target"
+      ]
+    },
+    "headcount": {
+      "value": 150000,
+      "asOf": "2026-10-04",
+      "note": "ByteDance group-wide, 'over 150,000' per the undated company website (accessed 2026-10-04); not an audited figure. The website does not say whether staff at the TikTok USDS Joint Venture (19.9% ByteDance-owned) are counted.",
+      "sources": [
+        "tiktok-bytedance-about"
+      ]
+    },
+    "b2bPayer": {
+      "value": 72,
+      "low": 62,
+      "high": 78,
+      "reasoning": "Analyst estimates put advertising at ~60% of revenue and live-stream gifting (consumer-paid) at ~26%. The rest is mostly e-commerce commissions and merchant fees (business-paid), plus Volcano Engine cloud and Lark (enterprise). So roughly 60% ads + 8-15% merchant/enterprise fees are paid by businesses. Consumer payments are gifting, subscriptions and games.",
+      "sources": [
+        "tiktok-sacra",
+        "tiktok-biggo-2025-mix"
+      ]
+    },
+    "b2bUser": {
+      "value": 5,
+      "low": 2,
+      "high": 10,
+      "reasoning": "Ads and e-commerce run on consumer apps (Douyin, TikTok, TikTok Shop), so they count as consumer-used. Only Volcano Engine (cloud and model APIs), Lark/Feishu and merchant/advertiser tools are mainly used by businesses, an estimated low-single-digit to ~10% share. Not disclosed.",
+      "sources": [
+        "tiktok-sacra",
+        "tiktok-bytedance-about"
+      ]
+    },
+    "office": {
+      "category": "fixed",
+      "days": 5,
+      "summary": "5 days a week for most US staff since Sep 2026; TikTok Shop already went to 5 days over a year earlier",
+      "effective": "2026-09",
+      "interns": "No intern-specific policy found. One 2027 MBA PM intern posting says candidates available to work 5 days a week are preferred.",
+      "confidence": "medium",
+      "sources": [
+        "tiktok-sfchronicle-rto",
+        "tiktok-commercialobserver-rto",
+        "tiktok-careers-api-mba-intern-2027"
+      ]
+    }
+  },
+  {
     "id": "visa",
     "name": "Visa",
     "ticker": "V",

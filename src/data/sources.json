@@ -3000,7 +3000,7 @@
     "published": "2024-10-29",
     "accessed": "2026-10-04",
     "kind": "archive",
-    "quote": null
+    "quote": "This posting will close on Nov 15, 2024"
   },
   "sf-2025-builtin": {
     "url": "https://builtin.com/job/summer-2026-intern-business-value-strategic-selling-consultant/7315915",
@@ -3148,6 +3148,359 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": "simpler and faster company"
+  },
+  "tiktok-biggo-2025-mix": {
+    "url": "https://finance.biggo.com/news/Li0bqZ0ByH9TLH69BBLF",
+    "title": "ByteDance's 2025 Financial Report Revealed: Heavy AI Investment Slashes Profits, Overseas Revenue Share Exceeds 30% for First Time",
+    "publisher": "BigGo Finance (citing 36Kr / STAR Market Daily)",
+    "published": "2026-04-20",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "tiktok-biggo-h1-2026": {
+    "url": "https://finance.biggo.com/news/92930446-e9ed-456c-aeb5-966d300d5811",
+    "title": "ByteDance's first-half revenue tops $120 billion, but net profit slips to $20 billion in rare decline",
+    "publisher": "BigGo Finance (citing The Information)",
+    "published": "2026-09-15",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "For full-year 2025, ByteDance posted revenue of about $200 billion"
+  },
+  "tiktok-bloomberg-2025-target": {
+    "url": "https://www.bloomberg.com/news/articles/2025-05-16/bytedance-aims-to-match-meta-sales-in-2025-as-tiktok-gains-steam",
+    "title": "ByteDance Aims to Match Meta Sales in 2025 as TikTok Gains Steam",
+    "publisher": "Bloomberg",
+    "published": "2025-05-16",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "tiktok-bytedance-about": {
+    "url": "https://www.bytedance.com/en/",
+    "title": "ByteDance - Inspire Creativity, Enrich Life",
+    "publisher": "ByteDance",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "ByteDance has over 150,000 employees based out of nearly 120 cities globally"
+  },
+  "tiktok-careers-api-mba-intern-2027": {
+    "url": "https://api.lifeattiktok.com/api/v1/public/supplier/search/job/posts",
+    "title": "TikTok careers job-search API, filtered to job subject 'MBA Intern - 2027 Start' (23 US postings on 2026-10-04)",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null,
+    "gone": "2026-10-04"
+  },
+  "tiktok-commercialobserver-rto": {
+    "url": "https://commercialobserver.com/2026/08/tiktok-employees-5-days-office/",
+    "title": "TikTok Tells U.S. Employees to Return to Office 5 Days a Week",
+    "publisher": "Commercial Observer",
+    "published": "2026-08-12",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "resumed five-day office attendance more than a year ago"
+  },
+  "tiktok-earlycareers-faq": {
+    "url": "https://lifeattiktok.com/earlycareers/faq",
+    "title": "Early Careers FAQ",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Most intern and graduate positions open in early August each year."
+  },
+  "tiktok-interview-tips": {
+    "url": "https://lifeattiktok.com/interview",
+    "title": "Interview Tips",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "You should expect to complete several interviews for positions."
+  },
+  "tiktok-linkedin-gps-mso-2026summer": {
+    "url": "https://www.linkedin.com/jobs/view/global-product-strategist-intern-mso-2026-summer-mba-at-tiktok-4307003173",
+    "title": "Global Product Strategist Intern-(MSO) 2026 Summer (MBA)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "tiktok-linkedin-imp-2026summer": {
+    "url": "https://www.linkedin.com/jobs/view/integrated-marketing-promotion-manager-intern-tiktok-shop-operations-2026-summer-mba-at-tiktok-4293573236",
+    "title": "Integrated Marketing & Promotion Manager Intern (TikTok Shop - Operations) - 2026 Summer (MBA)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "tiktok-linkedin-refresh-2026": {
+    "url": "https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/4447326807",
+    "title": "LinkedIn listing: Category Manager Intern (TikTok Shop - Operations) - 2027 Summer (MBA), New York (shows '5 days ago' on 2026-10-04 although the TikTok record dates to 2026-08-03)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "tiktok-muse-globalpartnerships-2026summer": {
+    "url": "https://www.themuse.com/jobs/tiktok/global-partnerships-intern-tiktok-shop-2026-summer-mba",
+    "title": "Global Partnerships Intern (TikTok Shop) - 2026 Summer (MBA) at TikTok",
+    "publisher": "The Muse",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null,
+    "gone": "2026-10-04"
+  },
+  "tiktok-post-affiliate-2026summer": {
+    "url": "https://lifeattiktok.com/search/7532382628306962696",
+    "title": "Affiliate Strategist Intern (TikTok Shop Creator and Affiliates) - 2026 Summer (MBA)",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "tiktok-post-category-manager-ny-2027": {
+    "url": "https://lifeattiktok.com/search/7669921687043541253",
+    "title": "Category Manager Intern (TikTok Shop - Operations) - 2027 Summer (MBA)",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Able to commit to working for 12 weeks during Summer 2027"
+  },
+  "tiktok-post-catmgr-2026summer": {
+    "url": "https://lifeattiktok.com/search/7558676459792304392",
+    "title": "Category Manager Intern (TikTok Shop - Operations) - 2026 Summer (MBA)",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "tiktok-post-gbs-ops-2024summer": {
+    "url": "https://careers.tiktok.com/position/7266064575559518521/detail",
+    "title": "Global Business Solutions Operations Specialist, MBA Summer Intern - 2024 Start",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "tiktok-post-mso-2026summer": {
+    "url": "https://lifeattiktok.com/search/7533767426492860679",
+    "title": "Strategy Operations Intern-(MSO) 2026 Summer (MBA)",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "tiktok-post-mso-int-2026summer": {
+    "url": "https://lifeattiktok.com/search/7533733894363252999",
+    "title": "Monetization Strategy and Operations Intern-(MSO) 2026 Summer (MBA)",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "tiktok-post-mso-smb-2024summer": {
+    "url": "https://careers.tiktok.com/position/7273167714473527607/detail",
+    "title": "Strategy Operations Intern (Monetization Strategy and Operations - SMB) - 2024 Summer (MBA)",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "tiktok-post-pm-ads-2025summer": {
+    "url": "https://lifeattiktok.com/position/detail/7397502411709876517",
+    "title": "Product Manager MBA Intern (Ads Platform) - 2025 Summer (MBA)",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "tiktok-post-pm-brand-2025summer": {
+    "url": "https://lifeattiktok.com/search/7397944706702903603",
+    "title": "Product Manager MBA Intern (Brand Innovation)- 2025 Summer (MBA)",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "tiktok-post-pm-genai-2024summer": {
+    "url": "https://careers.tiktok.com/position/detail/7283645131893803325",
+    "title": "Product Manager MBA Intern (Generative AI) - 2024 Summer (MBA)",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "tiktok-post-pm-seller-2025summer": {
+    "url": "https://lifeattiktok.com/search/7398324041361082661",
+    "title": "Product Manager MBA Intern (TikTok Shop - Seller Platform) - 2025 Summer Start (MBA)",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "tiktok-post-pm-seller-2026summer": {
+    "url": "https://lifeattiktok.com/search/7545748758039218440",
+    "title": "Product Manager Intern (TikTok Shop Seller Platform) - 2026 Summer (MBA)",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "tiktok-post-pmm-seller-2025summer": {
+    "url": "https://careers.tiktok.com/m/position/detail/7398033323031447846",
+    "title": "Product Marketing Manager MBA Intern (TikTok Shop - Seller Platform) - 2025 Summer Start (MBA)",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "tiktok-post-pmm-shop-2026summer": {
+    "url": "https://lifeattiktok.com/search/7532380611958769927",
+    "title": "Product Marketing Manager Intern (TikTok Shop Product Marketing) - 2026 Summer (MBA)",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "tiktok-post-spm-2026summer": {
+    "url": "https://lifeattiktok.com/search/7544150366742497554",
+    "title": "Strategic Partner Manager Intern (TikTok Shop - Operations) - 2026 Summer (MBA)",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "tiktok-prachub-pm-intern": {
+    "url": "https://prachub.com/interview-experiences/tiktok-intern-product-manager-interview-experience-four-rounds-manager-round-was-the-toughest",
+    "title": "TikTok Intern Product Manager Interview Experience - Four Rounds",
+    "publisher": "PracHub",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "forum",
+    "quote": null
+  },
+  "tiktok-proactive-revenue": {
+    "url": "https://finance.yahoo.com/technology/ai/articles/tiktok-developer-bytedance-profit-drops-142800788.html",
+    "title": "TikTok developer ByteDance profit drops as AI spending weighs",
+    "publisher": "Proactive via Yahoo Finance (citing The Information)",
+    "published": "2026-09-15",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Revenue for the whole of 2025 grew 29% to about $200 billion"
+  },
+  "tiktok-reuters-valuation": {
+    "url": "https://finance.yahoo.com/news/bytedance-valuation-surges-550-billion-174713731.html",
+    "title": "ByteDance valuation surges to $550 billion in stake sale, Reuters reports",
+    "publisher": "Investing.com via Yahoo Finance (citing Reuters)",
+    "published": "2026-02-25",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "tiktok-sacra": {
+    "url": "https://sacra.com/c/bytedance/",
+    "title": "ByteDance revenue, valuation & funding",
+    "publisher": "Sacra",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "tiktok-seekingalpha-valuation": {
+    "url": "https://seekingalpha.com/news/4556453-bytedance-valued-at-550b-in-proposed-general-atlantic-stake-sale-reuters",
+    "title": "ByteDance valued at $550B in proposed General Atlantic stake sale: Reuters",
+    "publisher": "Seeking Alpha",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "tiktok-sfchronicle-rto": {
+    "url": "https://finance.yahoo.com/technology/articles/tiktoks-bay-area-workers-face-183048721.html",
+    "title": "TikTok's Bay Area workers face a 5-day office mandate starting next month",
+    "publisher": "San Francisco Chronicle via Yahoo Finance (citing Business Insider)",
+    "published": "2026-08-12",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "tiktok-theinformation-h1-2026": {
+    "url": "https://www.theinformation.com/articles/bytedances-first-half-profit-drops-20-billion-weighed-ai-spending",
+    "title": "ByteDance's First-Half Profit Drops to $20 Billion, Weighed Down by AI Spending",
+    "publisher": "The Information",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "tiktok-theinformation-valuation": {
+    "url": "https://www.theinformation.com/briefings/bytedance-valued-550-billion-share-sale-report-says",
+    "title": "Bytedance Valued at $550 Billion in Share Sale, Report Says",
+    "publisher": "The Information",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "tiktok-wayback-mso-2026summer": {
+    "url": "https://web.archive.org/web/20251005065158/https://lifeattiktok.com/search/7533767426492860679",
+    "title": "Wayback capture 2025-10-05: Strategy Operations Intern-(MSO) 2026 Summer (MBA)",
+    "publisher": "Internet Archive",
+    "published": "2025-10-05",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "tiktok-wayback-pm-ads-2027": {
+    "url": "https://web.archive.org/web/20260902100341/https://lifeattiktok.com/search/7676283436713593093",
+    "title": "Wayback capture 2026-09-02: Product Manager Intern (Content and Service Ads) - 2027 Summer (MBA)",
+    "publisher": "Internet Archive",
+    "published": "2026-09-02",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "tiktok-wayback-prodops-2027": {
+    "url": "https://web.archive.org/web/20260919213404/https://lifeattiktok.com/search/7668820702623467781",
+    "title": "Wayback capture 2026-09-19: Product Operations Intern (TikTok Shop Apps and API) - 2027 Summer (MBA)",
+    "publisher": "Internet Archive",
+    "published": "2026-09-19",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "tiktok-wayback-spm-2026summer": {
+    "url": "https://web.archive.org/web/20250908123318/https://lifeattiktok.com/search/7544150366742497554",
+    "title": "Wayback capture 2025-09-08: Strategic Partner Manager Intern (TikTok Shop - Operations) - 2026 Summer (MBA)",
+    "publisher": "Internet Archive",
+    "published": "2025-09-08",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
   },
   "topjobstoday-airbnb-sfa-2026": {
     "url": "https://topjobstoday.com/company/airbnb/job/strategic-finance-analytics-intern-mba-united-states",
@@ -3436,7 +3789,7 @@
     "published": "2026-09-01",
     "accessed": "2026-10-04",
     "kind": "primary",
-    "quote": "We will accept resumes on a rolling basis until the role is filled."
+    "quote": null
   },
   "waymo-gh-salesforce-po-2027": {
     "url": "https://careers.withwaymo.com/jobs?gh_jid=8198582",

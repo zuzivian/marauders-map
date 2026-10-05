@@ -7,11 +7,13 @@ import { useGuide } from "./Guide";
 
 const search = createSearch(roles, companies.map((c) => c.name));
 const TECH = { low: 1, some: 2, high: 3 } as const;
+const SHOW = 2; // titles shown per company before "+N more"
 const EXAMPLES = ["Product Manager Technical (PMT) Intern", "Strategy & Operations", "PM-T", "Corp Dev"];
 
 export default function RoleDecoder() {
   const { select } = useGuide();
   const [q, setQ] = useState("");
+  const [open, setOpen] = useState<Set<string>>(new Set()); // role|company groups showing every title
   const result = useMemo(() => search(q), [q]);
   const hit = new Set(result?.matches.map((m) => m.role.id));
   const [top, second] = result?.matches ?? [];
@@ -59,12 +61,26 @@ export default function RoleDecoder() {
                 <span className="label" style={{ marginLeft: 12 }}>leads to</span> {r.leadsTo}
               </p>
               <div className="aka">
-                <span className="label">also posted as</span><br />
-                {r.titles.map((t, i) => (
-                  <span key={`${t.company}${t.title}`}>{i > 0 && " · "}
-                    {result && titleHits(result, r.id, t) ? <mark>{t.title}</mark> : t.title} <span className="muted">{t.company}</span>
-                  </span>
-                ))}
+                <span className="label">also posted as</span>
+                <ul>
+                  {posters.map((p) => {
+                    const ts = r.titles.filter((t) => t.company === p);
+                    const key = `${r.id}|${p}`;
+                    const hits = result ? ts.filter((t) => titleHits(result, r.id, t)) : [];
+                    const shown = open.has(key) ? ts : [...new Set([...hits, ...ts.slice(0, SHOW)])];
+                    return (
+                      <li key={p}>
+                        <span className="aka-co">{p}</span>{" "}
+                        {shown.map((t, i) => (
+                          <span key={t.title}>{i > 0 && " · "}{hits.includes(t) ? <mark>{t.title}</mark> : t.title}</span>
+                        ))}
+                        {ts.length > shown.length && (
+                          <>{" "}<button className="linkish more" onClick={() => setOpen((o) => new Set(o).add(key))}>+{ts.length - shown.length} more</button></>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
               </div>
               <div className="posters">
                 <span className="label">who hires for it</span>

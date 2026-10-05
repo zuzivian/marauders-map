@@ -744,6 +744,63 @@
       "servicenow-li-srpm-2026"
     ]
   },
+  "tiktok": {
+    "confidence": "medium",
+    "roleScope": "Early-career roles generally (incl. MBA interns); not MBA-specific",
+    "stages": [
+      {
+        "label": "Resume screen",
+        "types": [
+          "milestone"
+        ],
+        "detail": "Rolling review in order of application; max two positions per application period (Jan-Jun, Jul-Dec)",
+        "sources": [
+          "tiktok-earlycareers-faq",
+          "tiktok-post-category-manager-ny-2027"
+        ]
+      },
+      {
+        "label": "Assessment",
+        "types": [
+          "analytical"
+        ],
+        "detail": "Online assessment 'if applicable'; depends on role and region. Can be a virtual or in-person exercise, sometimes with other candidates",
+        "sources": [
+          "tiktok-earlycareers-faq",
+          "tiktok-interview-tips"
+        ]
+      },
+      {
+        "label": "Team interviews",
+        "types": [
+          "behavioral"
+        ],
+        "detail": "Several interviews with the hiring team, mostly online. Expect background, why-TikTok and role-specific questions",
+        "sources": [
+          "tiktok-earlycareers-faq",
+          "tiktok-interview-tips"
+        ]
+      },
+      {
+        "label": "Offer",
+        "types": [
+          "milestone"
+        ],
+        "detail": null,
+        "sources": [
+          "tiktok-earlycareers-faq"
+        ]
+      }
+    ],
+    "distinctive": "Some MBA roles ask for more than the usual: the 2027 Ads PM intern posting requires Chinese and English, for meetings with Mandarin-speaking engineering teams.",
+    "caveat": "TikTok's pages describe the early-careers process in general, not MBA roles specifically. They don't give a round count or say whether product/case rounds are used. One forum anecdote describes four rounds for a PM intern (peer/leader screens, product take-home, manager, HR); that is unverified.",
+    "sources": [
+      "tiktok-earlycareers-faq",
+      "tiktok-interview-tips",
+      "tiktok-prachub-pm-intern",
+      "tiktok-post-category-manager-ny-2027"
+    ]
+  },
   "waymo": {
     "confidence": "medium",
     "roleScope": "All Waymo roles (no MBA-specific page)",

@@ -1232,6 +1232,241 @@
       "postings": []
     }
   },
+  "tiktok": {
+    "hasProgram": true,
+    "pattern": "Many team-specific postings (often one per city), mostly TikTok Shop ops plus Ads/Monetization; first batch created late Jul/early Aug and more added through fall; rolling review; max two applications per application period",
+    "windows": [
+      {
+        "cycle": "2023",
+        "from": "2023-08-11",
+        "to": "2023-09-30",
+        "evidence": "weak",
+        "scope": "GBS Operations Specialist MBA summer intern; Strategy Operations Intern (MSO - SMB); PM MBA Intern (Generative AI)",
+        "note": "Posting-ID creation timestamps only: 2023-08-11, 2023-08-30, 2023-09-27. No archive confirmation.",
+        "sources": [
+          "tiktok-post-gbs-ops-2024summer",
+          "tiktok-post-mso-smb-2024summer",
+          "tiktok-post-pm-genai-2024summer"
+        ]
+      },
+      {
+        "cycle": "2024",
+        "from": "2024-07-30",
+        "to": "2024-08-31",
+        "evidence": "weak",
+        "scope": "MBA PM interns (Ads Platform, Brand Innovation, TikTok Shop Seller Platform/Onboarding) and TikTok Shop PMM intern",
+        "note": "Posting-ID creation timestamps only (2024-07-30 to 2024-08-01), with no Wayback confirmation. 'to' is a judgment call. A later PM intern posting (Product Infrastructure) has an ID dated 2025-03-07.",
+        "sources": [
+          "tiktok-post-pm-ads-2025summer",
+          "tiktok-post-pm-brand-2025summer",
+          "tiktok-post-pm-seller-2025summer",
+          "tiktok-post-pmm-seller-2025summer",
+          "tiktok-earlycareers-faq"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2025-07-29",
+        "to": "2025-09-08",
+        "evidence": "medium",
+        "scope": "TikTok Shop MBA interns (Product Marketing, Affiliate Strategist) and Monetization Strategy & Ops (MSO) interns; more TikTok Shop roles added Aug 29-Oct 8",
+        "note": "Based on posting-ID creation timestamps (inference): PMM and Affiliate 2025-07-29, MSO 2025-08-01, Strategic Partner Mgr 2025-08-29, PM Seller Platform 2025-09-03, Category Mgr 2025-10-08. Upper bound from Wayback: Strategic Partner Mgr live by 2025-09-08. Matches the FAQ's early-August statement.",
+        "sources": [
+          "tiktok-post-pmm-shop-2026summer",
+          "tiktok-post-affiliate-2026summer",
+          "tiktok-post-mso-2026summer",
+          "tiktok-wayback-spm-2026summer",
+          "tiktok-wayback-mso-2026summer",
+          "tiktok-earlycareers-faq"
+        ]
+      },
+      {
+        "cycle": "2026",
+        "from": "2026-07-29",
+        "to": "2026-09-02",
+        "evidence": "medium",
+        "scope": "US TikTok Shop operations MBA interns (category mgmt, affiliate, marketing, product ops) first; Ads PM intern (San Jose) by Aug 21-Sep 2; Monetization Strategy & Ops interns (NY) added ~Sep 9",
+        "note": "The site shows no posted dates. 'from' is the earliest creation timestamp encoded in the posting IDs (top 32 bits = Unix seconds; our inference). 'to' is the first Wayback capture of an MBA intern posting (2026-09-02). TikTok's FAQ says intern roles open in early August. LinkedIn's late-Sep 'posted' dates are refreshes, not first postings.",
+        "sources": [
+          "tiktok-careers-api-mba-intern-2027",
+          "tiktok-earlycareers-faq",
+          "tiktok-wayback-pm-ads-2027",
+          "tiktok-wayback-prodops-2027",
+          "tiktok-linkedin-refresh-2026"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "As of 2026-10-04, 23 US postings are tagged 'MBA Intern - 2027 Start' (LA, NY, Seattle, San Jose). Most are TikTok Shop operations roles, plus one Ads PM and Monetization Strategy/PMM roles in NY. None states a deadline and review is rolling. Most were created Jul 29-Aug 5; the late-Sep 'posted' dates on job boards are refreshes.",
+      "postings": [
+        {
+          "title": "Special Project Strategist Intern (TikTok Shop - Operations) - 2027 Start (MBA)",
+          "url": "https://lifeattiktok.com/search/7667851312545515781",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Integrated Marketing & Promotion Manager Intern (TikTok Shop - Operations) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7668572675925330181",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Category Manager Intern (TikTok Shop - Operations-Health & Elevated Home) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7668746534220024069",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Category Manager Intern (TikTok Shop - Operations-Health & Elevated Home ) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7668751182047758597",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Product Operations Intern (TikTok Shop Apps and API) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7668820702623467781",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027",
+            "tiktok-wayback-prodops-2027"
+          ]
+        },
+        {
+          "title": "Affiliate Strategist Intern (TikTok Shop Creator and Affiliates) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7668821366074427701",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Category Manager Intern (TikTok Shop - Operations) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7669921687043541253",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027",
+            "tiktok-post-category-manager-ny-2027"
+          ]
+        },
+        {
+          "title": "Category Manager Intern (TikTok Shop - Operations-Beauty, Food & Beverage ) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7669924879914862901",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Category Manager Intern (TikTok Shop - Operations-Beauty, Food & Beverage ) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7669925556293601541",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Product Operations Intern (TikTok Shop Apps and API) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7669927344569764101",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Category Manager Intern (TikTok Shop - Operations-Personal Care and Lifestyle) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7669945224375290165",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Category Manager Intern (TikTok Shop - Operations) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7669945864905492741",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Category Manager Intern (TikTok Shop - Operations-Electronics, Books, Hardlines & Virtual Goods) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7669957922289993989",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Category Manager Intern (TikTok Shop - Operations-Personal Care and Lifestyle) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7670217990416058629",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Category Manager Intern (TikTok Shop - Operations-Electronics, Books, Hardlines & Virtual Goods) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7670219314064738565",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Integrated Marketing & Promotion Manager Intern (TikTok Shop - Operations) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7670668069613603125",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Creator Business Development & Incubation Intern (TikTok Shop - Operations) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7673137466134186245",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Product Manager Intern (Content and Service Ads) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7676283436713593093",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027",
+            "tiktok-wayback-pm-ads-2027"
+          ]
+        },
+        {
+          "title": "Strategy Intern (Monetization Strategy & Operations) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7683559907224930613",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Strategy Intern (Monetization Strategy & Operations) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7683675373903415557",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Product Marketing Management Intern (Systems Strategy & Operations) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7683679497136179509",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Category Manager Intern (TikTok Shop - Operations, Beauty, Food & Beverage) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7688769993879030021",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        },
+        {
+          "title": "Category Manager Intern (TikTok Shop - Operations Beauty, Food & Beverage) - 2027 Summer (MBA)",
+          "url": "https://lifeattiktok.com/search/7688770038477801733",
+          "sources": [
+            "tiktok-careers-api-mba-intern-2027"
+          ]
+        }
+      ]
+    }
+  },
   "visa": {
     "hasProgram": true,
     "pattern": "Batch of function-specific MBA intern postings (Consulting & Analytics, Finance, Corporate Strategy, Product) released together in November, with a short stated window (about 2 weeks in 2025).",

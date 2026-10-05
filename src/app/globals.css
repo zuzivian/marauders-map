@@ -142,6 +142,10 @@ details.why p { margin: 6px 0; }
 .entry .ep { font-family: var(--serif); font-style: italic; color: var(--ink-3); font-size: 15px; }
 .entry p { color: var(--ink-2); margin: 8px 0; }
 .entry .aka { font-size: 13px; line-height: 1.8; color: var(--ink-2); }
+.entry .aka ul { list-style: none; margin: 2px 0 0; padding: 0; }
+.entry .aka li { margin: 2px 0; line-height: 1.55; }
+.entry .aka .aka-co { font-family: var(--mono); font-size: 11px; color: var(--ink-3); margin-right: 4px; }
+.entry .aka .more { font-size: 12px; }
 .entry .aka mark { background: var(--cardinal-wash); color: var(--cardinal); padding: 1px 3px; }
 .posters { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 8px; }
 .posters .label { margin-right: 4px; }
