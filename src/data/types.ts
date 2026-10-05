@@ -56,6 +56,31 @@ export interface Company {
   growth: Metric & { basis: string }; // % revenue growth
   headcount: Metric;
   office: OfficePolicy;
+  intern?: Intern; // what the MBA intern postings themselves say; every part is optional
+}
+
+/** Pay exactly as the postings state it. The page converts it to a month (40-hour weeks) so companies compare. */
+export interface InternPay {
+  low: number; // USD
+  high: number; // equal to `low` when the postings give a single rate
+  per: "hour" | "month" | "year";
+  where: string; // the location the range applies to, in the postings' words
+  cycle: Cycle;
+  postings: number; // how many MBA postings the range spans
+  note?: string;
+  sources: string[];
+}
+
+export interface Intern {
+  pay?: InternPay;
+  locations?: { places: string[]; cycle: Cycle; sources: string[] };
+  /** Only when a posting says it outright; the first source carries the posting's words as its quote. */
+  sponsorship?: { stance: "sponsors" | "no sponsorship" | "authorization required"; scope: string; cycle: Cycle; sources: string[] };
+  /** hired to a team = you apply to one team's posting; matched after offer = the team is chosen once you have an offer;
+   *  pooled, then placed = you join a program or pool and the company assigns the team. */
+  teamModel?: { model: "hired to a team" | "matched after offer" | "pooled, then placed"; note?: string; sources: string[] };
+  /** Layoffs or hiring freezes in the 12 months before the last check; `low`/`high` = roles affected, when reported. */
+  pulse?: { date: ISODate; what: string; low?: number; high?: number; sources: string[] }[];
 }
 
 export interface WindowObs {

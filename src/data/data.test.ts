@@ -70,6 +70,41 @@ describe("companies", () => {
   });
 });
 
+describe("intern fields", () => {
+  const withIntern = companies.filter((c) => c.intern).map((c) => [c.id, c.intern!] as const);
+  const yearBefore = `${Number(meta.researched.slice(0, 4)) - 1}${meta.researched.slice(4)}`;
+  it.each(withIntern)("%s", (id, i) => {
+    expect(hiring[id].hasProgram, "only companies with an MBA internship").toBe(true);
+    if (i.pay) {
+      expect(i.pay.low).toBeGreaterThan(0);
+      expect(i.pay.high).toBeGreaterThanOrEqual(i.pay.low);
+      expect(["hour", "month", "year"]).toContain(i.pay.per);
+      expect(CYCLES).toContain(i.pay.cycle);
+      expect(i.pay.postings).toBeGreaterThan(0);
+      expect(i.pay.where.length).toBeGreaterThan(0);
+      expect(i.pay.sources.length).toBeGreaterThan(0);
+    }
+    if (i.locations) {
+      expect(i.locations.places.length).toBeGreaterThan(0);
+      expect(i.locations.sources.length).toBeGreaterThan(0);
+    }
+    if (i.sponsorship) {
+      expect(["sponsors", "no sponsorship", "authorization required"]).toContain(i.sponsorship.stance);
+      expect(sources[i.sponsorship.sources[0]]?.quote, "sponsorship is quoted from the posting").toBeTruthy();
+    }
+    if (i.teamModel) {
+      expect(["hired to a team", "matched after offer", "pooled, then placed"]).toContain(i.teamModel.model);
+      expect(i.teamModel.sources.length).toBeGreaterThan(0);
+    }
+    for (const p of i.pulse ?? []) {
+      expect(isISO(p.date)).toBe(true);
+      expect(p.date >= yearBefore && p.date <= meta.researched, `${id}: pulse covers the last 12 months`).toBe(true);
+      if (p.low !== undefined && p.high !== undefined) expect(p.low).toBeLessThanOrEqual(p.high);
+      expect(p.sources.length).toBeGreaterThan(0);
+    }
+  });
+});
+
 describe("hiring windows", () => {
   it.each(Object.entries(hiring))("%s", (id, h) => {
     expect(isISO(h.current.checked)).toBe(true);

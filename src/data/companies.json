@@ -42,6 +42,24 @@
         "bloomberg-apple-2022",
         "archie-rto-tracker-2026"
       ]
+    },
+    "intern": {
+      "locations": {
+        "places": [
+          "United States (the posting names no city)"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "apple-2026-mba-internships"
+        ]
+      },
+      "teamModel": {
+        "model": "pooled, then placed",
+        "note": "One talent-pool posting covers every area (AI/ML, AppleCare, Services, Marketing, Operations and more); it is not a specific opening.",
+        "sources": [
+          "apple-2026-mba-internships-pool"
+        ]
+      }
     }
   },
   {
@@ -90,6 +108,46 @@
         "amazon-intern-page",
         "amazon-sde-intern-2027"
       ]
+    },
+    "intern": {
+      "pay": {
+        "low": 95400,
+        "high": 163900,
+        "per": "year",
+        "where": "Seattle, WA",
+        "cycle": "2026",
+        "postings": 7,
+        "note": "Amazon states intern pay as an annual rate. Fixed rates: $117,045 (HR LDP), $121,380 (Marketing), $136,170 (ALA PM and PMT). Ranges: $95,400–$163,200 (Finance LDP), $121,200–$163,900 (MLDP), $135,000–$162,000 (Pathways).",
+        "sources": [
+          "amazon-10492198-pay",
+          "amazon-10491603-pay",
+          "amazon-10491075",
+          "amazon-10491935",
+          "amazon-10491574",
+          "amazon-10493144",
+          "amazon-10509639"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Seattle, WA",
+          "Arlington, VA (some PMT roles)",
+          "Operations sites across the US (Pathways)"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "amazon-10509639",
+          "amazon-10491075"
+        ]
+      },
+      "teamModel": {
+        "model": "pooled, then placed",
+        "note": "PMT and Marketing interns are placed by business need. Pathways matches you to a site before the offer.",
+        "sources": [
+          "amazon-10509639-team",
+          "amazon-10491075"
+        ]
+      }
     }
   },
   {
@@ -134,6 +192,47 @@
       "sources": [
         "intuit-hybrid-careers"
       ]
+    },
+    "intern": {
+      "pay": {
+        "low": 29.5,
+        "high": 68,
+        "per": "hour",
+        "where": "Mountain View and San Diego, CA",
+        "cycle": "2026",
+        "postings": 15,
+        "note": "Each posting gives a range in its text and a location band at the end, and they differ; this spans both. Leaves out the all-degree Product Manager Intern posting ($39.57–$76.92/hr).",
+        "sources": [
+          "intuit-pmm-midmarket-2027-pay",
+          "intuit-corpstrat-2027-pay",
+          "intuit-pm-2027"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Mountain View, CA",
+          "San Diego, CA"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "intuit-search-2026"
+        ]
+      },
+      "sponsorship": {
+        "stance": "authorization required",
+        "scope": "finance, sourcing and PM postings (8 of 16); the others don't say",
+        "cycle": "2026",
+        "sources": [
+          "intuit-finstrat-gbsg-2027-auth"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "note": "Each posting names its team.",
+        "sources": [
+          "intuit-pmm-payments-2027-team"
+        ]
+      }
     }
   },
   {
@@ -185,6 +284,30 @@
       ],
       "days": null,
       "interns": "Adobe's 2027 MBA intern postings say all 2027 interns will be co-located hybrid."
+    },
+    "intern": {
+      "pay": {
+        "low": 37,
+        "high": 50,
+        "per": "hour",
+        "where": "US (one range across US markets)",
+        "cycle": "2026",
+        "postings": 2,
+        "sources": [
+          "adobe-R172261-pay"
+        ]
+      },
+      "locations": {
+        "places": [
+          "San Jose, CA",
+          "San Francisco, CA"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "adobe-R172261",
+          "adobe-R172262"
+        ]
+      }
     }
   },
   {
@@ -232,6 +355,39 @@
         "entrepreneur-msft-ai-4day",
         "archie-rto-tracker-2026"
       ]
+    },
+    "intern": {
+      "pay": {
+        "low": 5190,
+        "high": 10250,
+        "per": "month",
+        "where": "US; higher band for the SF Bay Area and New York City",
+        "cycle": "2026",
+        "postings": 2,
+        "note": "Bay Area and New York City band: $6,810–$11,330 a month. The Surface Business Program Management posting states no pay.",
+        "sources": [
+          "ms-200055972-pay",
+          "ms-200058904"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Redmond, WA"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "ms-200055972",
+          "ms-200055974",
+          "ms-200058904"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "note": "Each posting is for one team (Central Finance, Treasury, Surface).",
+        "sources": [
+          "ms-200058904-team"
+        ]
+      }
     }
   },
   {
@@ -281,6 +437,44 @@
         "sf-JR362509"
       ],
       "days": null
+    },
+    "intern": {
+      "pay": {
+        "low": 46,
+        "high": 57,
+        "per": "hour",
+        "where": "New York, NY",
+        "cycle": "2026",
+        "postings": 3,
+        "sources": [
+          "sf-JR362509-pay"
+        ]
+      },
+      "locations": {
+        "places": [
+          "New York, NY"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "sf-JR362509",
+          "sf-JR362508",
+          "sf-JR362499"
+        ]
+      },
+      "sponsorship": {
+        "stance": "no sponsorship",
+        "scope": "all three Business Value Services postings",
+        "cycle": "2026",
+        "sources": [
+          "sf-JR362508-visa"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "sources": [
+          "sf-JR362499-team"
+        ]
+      }
     }
   },
   {
@@ -675,6 +869,47 @@
         "dell-req-298518",
         "statesman-dell-rto-2025"
       ]
+    },
+    "intern": {
+      "pay": {
+        "low": 31.88,
+        "high": 50,
+        "per": "hour",
+        "where": "Round Rock, TX",
+        "cycle": "2025",
+        "postings": 1,
+        "note": "From last cycle's Product Marketing Graduate Intern posting. The Product Management MBA posting gives $50.60 with no unit.",
+        "sources": [
+          "dell-li-pmm-grad-2025-pay",
+          "dell-li-pm-mba-2025"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Round Rock, TX",
+          "Hopkinton, MA"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "dell-li-pm-mba-2025-team",
+          "dell-li-pmm-grad-2025"
+        ]
+      },
+      "sponsorship": {
+        "stance": "no sponsorship",
+        "scope": "the 2024 General Business MBA posting; later postings don't say",
+        "cycle": "2024",
+        "sources": [
+          "dell-wayup-genbiz-mba-2024-visa"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "note": "Each posting names its team.",
+        "sources": [
+          "dell-li-pm-mba-2025-team"
+        ]
+      }
     }
   },
   {
@@ -723,6 +958,37 @@
         "ibm-rto-techradar-2025",
         "ibm-posting-130063"
       ]
+    },
+    "intern": {
+      "locations": {
+        "places": [
+          "New York, NY",
+          "Armonk, NY",
+          "Cambridge, MA"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "ibm-posting-128929",
+          "ibm-posting-130063",
+          "ibm-posting-130031",
+          "ibm-posting-133909"
+        ]
+      },
+      "sponsorship": {
+        "stance": "no sponsorship",
+        "scope": "the Finance (FLDP) posting; the other three don't say",
+        "cycle": "2026",
+        "sources": [
+          "ibm-posting-128929-visa"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "note": "Each posting is for one team; AI-First Transformation hires for three and asks your preference while interviewing.",
+        "sources": [
+          "ibm-posting-133909-team"
+        ]
+      }
     }
   },
   {
@@ -772,6 +1038,46 @@
         "paypal-careers-na-university",
         "paypal-careers-intern-hub"
       ]
+    },
+    "intern": {
+      "pay": {
+        "low": 22,
+        "high": 57,
+        "per": "hour",
+        "where": "US national range",
+        "cycle": "2025",
+        "postings": 5,
+        "note": "Last cycle: Corporate Development $22–$53, Business Operations $33, Venmo Product Growth $41, Product Growth $45–$55 (San Jose), Ventures Operations $57.",
+        "sources": [
+          "paypal-builtin-corpdev-2025-pay",
+          "paypal-builtin-ventures-ops-2025-pay",
+          "paypal-builtin-bizops-2025",
+          "paypal-builtin-venmo-growth-2025",
+          "paypal-builtin-product-growth-2025"
+        ]
+      },
+      "locations": {
+        "places": [
+          "San Jose, CA",
+          "New York, NY",
+          "Chicago, IL"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "paypal-builtin-corpdev-2025",
+          "paypal-builtin-ventures-ops-2025",
+          "paypal-builtin-bizops-2025"
+        ]
+      },
+      "sponsorship": {
+        "stance": "authorization required",
+        "scope": "Business Operations and Venmo Product Growth postings last cycle; the others don't say",
+        "cycle": "2025",
+        "sources": [
+          "paypal-builtin-bizops-2025-auth",
+          "paypal-builtin-venmo-growth-2025"
+        ]
+      }
     }
   },
   {
@@ -822,6 +1128,50 @@
       ],
       "low": 2,
       "high": 5
+    },
+    "intern": {
+      "pay": {
+        "low": 53.13,
+        "high": 75,
+        "per": "hour",
+        "where": "Santa Clara, CA",
+        "cycle": "2025",
+        "postings": 4,
+        "note": "Last cycle's postings: PMM $53.13, Corporate Development $57.70–$73.97, Business Strategy $65.93, Finance $58.50–$75.",
+        "sources": [
+          "servicenow-sr-pmm-mba-2026-pay",
+          "servicenow-sr-finance-mba-2026-pay",
+          "servicenow-sr-corpdev-2026",
+          "servicenow-sr-strategy-specialist-2026"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Santa Clara, CA"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "servicenow-sr-corpdev-2026",
+          "servicenow-sr-finance-mba-2026",
+          "servicenow-sr-pmm-mba-2026"
+        ]
+      },
+      "sponsorship": {
+        "stance": "no sponsorship",
+        "scope": "Corporate Development, Corporate Strategy and PMM postings last cycle; Finance and Business Strategy didn't say",
+        "cycle": "2025",
+        "sources": [
+          "servicenow-sr-corpdev-2026-visa"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "note": "Finance is the exception: interns are placed in a finance function through a matching process.",
+        "sources": [
+          "servicenow-sr-corpdev-2026-team",
+          "servicenow-sr-finance-mba-2026-placement"
+        ]
+      }
     }
   },
   {
@@ -876,6 +1226,36 @@
         "tiktok-commercialobserver-rto",
         "tiktok-careers-api-mba-intern-2027"
       ]
+    },
+    "intern": {
+      "pay": {
+        "low": 38,
+        "high": 69,
+        "per": "hour",
+        "where": "the posting's city (Los Angeles, Seattle, New York, San Jose)",
+        "cycle": "2026",
+        "postings": 23,
+        "note": "TikTok Shop roles: $38 in Los Angeles and Seattle, $40 in New York; Shop Product Operations $47.50 (Seattle); Ads PM $55 (San Jose); Monetization Strategy and PMM $69 (New York).",
+        "sources": [
+          "tiktok-catmgr-la-2027-pay",
+          "tiktok-monetization-strategy-ny-2027-pay",
+          "tiktok-post-category-manager-ny-2027",
+          "tiktok-wayback-prodops-2027",
+          "tiktok-wayback-pm-ads-2027"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Los Angeles, CA",
+          "Seattle, WA",
+          "New York, NY",
+          "San Jose, CA"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "tiktok-careers-api-mba-intern-2027"
+        ]
+      }
     }
   },
   {
@@ -924,6 +1304,51 @@
         "visa-linkedin-vca-ashburn-2025",
         "visa-linkedin-pm-2024"
       ]
+    },
+    "intern": {
+      "pay": {
+        "low": 52,
+        "high": 60,
+        "per": "hour",
+        "where": "Ashburn, VA; Foster City and San Francisco, CA",
+        "cycle": "2025",
+        "postings": 3,
+        "note": "Last cycle: Consulting & Analytics $52 (Ashburn), Finance $53 (Foster City), Corporate Strategy $60 (San Francisco).",
+        "sources": [
+          "visa-linkedin-vca-2025-pay",
+          "visa-wayup-corpstrategy-2025-pay",
+          "visa-linkedin-finance-2025"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Ashburn, VA",
+          "Foster City, CA",
+          "San Francisco, CA"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "visa-linkedin-vca-2025",
+          "visa-linkedin-finance-2025",
+          "visa-wayup-corpstrategy-2025"
+        ]
+      },
+      "sponsorship": {
+        "stance": "no sponsorship",
+        "scope": "last cycle's Finance posting and the 2024 PM posting",
+        "cycle": "2025",
+        "sources": [
+          "visa-sr-pm-2024-visa",
+          "visa-linkedin-finance-2025"
+        ]
+      },
+      "teamModel": {
+        "model": "pooled, then placed",
+        "note": "Stated on the Finance posting; the others don't say.",
+        "sources": [
+          "visa-linkedin-finance-2025-placement"
+        ]
+      }
     }
   },
   {
@@ -974,6 +1399,29 @@
         "waymo-gh-ops-planning-2027"
       ],
       "days": null
+    },
+    "intern": {
+      "pay": {
+        "low": 50,
+        "high": 50,
+        "per": "hour",
+        "where": "San Francisco and Los Angeles, CA",
+        "cycle": "2026",
+        "postings": 3,
+        "sources": [
+          "waymo-gh-strategic-finance-2027-pay"
+        ]
+      },
+      "locations": {
+        "places": [
+          "San Francisco, CA",
+          "Los Angeles, CA"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "waymo-gh-board-api"
+        ]
+      }
     }
   },
   {
@@ -1023,6 +1471,33 @@
         "workday-jobright-fa-mba"
       ],
       "days": null
+    },
+    "intern": {
+      "locations": {
+        "places": [
+          "Pleasanton, CA"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "workday-jobright-fa-mba",
+          "workday-weekday-ep-mba"
+        ]
+      },
+      "sponsorship": {
+        "stance": "no sponsorship",
+        "scope": "all three MBA postings (Financial Analyst, Enterprise Planning, PMM)",
+        "cycle": "2025",
+        "sources": [
+          "workday-li-fa-mba-2025-visa",
+          "workday-weekday-ep-mba"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "sources": [
+          "workday-weekday-ep-mba-team"
+        ]
+      }
     }
   }
 ]
