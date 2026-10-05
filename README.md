@@ -172,9 +172,8 @@ It accepts Formspree JSON or pasted `field: value` lines. It refuses anything wi
 emails, phone numbers, links and a chosen display name in the text. Read those flags before you write, and edit the JSON
 by hand if something identifying slips through.
 
-**Anonymity.** Notes show as "a GSB '27" unless the contributor gave a name. A company's count, path mix and common
-stages show from the first note. Advice and "what mattered" show only once that company has at least two notes for the
-same internship summer, so a lone note can't be traced back to its author.
+**Anonymity.** Notes show as "a GSB '27" unless the contributor gave a name. Nothing from a note shows until that company has at
+least two notes for the same internship summer (before that, only a count), so a lone note can't be traced back to its author.
 
 ## Deploy
 

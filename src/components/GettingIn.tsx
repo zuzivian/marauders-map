@@ -31,7 +31,13 @@ export default function GettingIn({ company: c }: { company: Company }) {
       )}
 
       <div className="gi-firsthand">
-        {notes ? (
+        {notes && notes.summers.length === 0 ? (
+          // Nothing shows until two people from the same summer have written in, so a lone note can't be traced.
+          <p className="small">
+            {notes.n === 1 ? "One note in so far" : `${notes.n} notes in so far`}; they show once two people from the same summer have written in.
+            {invite && <> Interned here? {invite}</>}
+          </p>
+        ) : notes ? (
           <>
             <div className="label">first-hand · n={notes.n} · not verified by the company</div>
             <p className="small">
@@ -52,7 +58,6 @@ export default function GettingIn({ company: c }: { company: Company }) {
                 </details>
               </div>
             ))}
-            {notes.summers.length === 0 && <p className="small muted">Advice shows once two people have written in about the same summer.</p>}
             {invite && <p className="small">{invite}</p>}
           </>
         ) : (

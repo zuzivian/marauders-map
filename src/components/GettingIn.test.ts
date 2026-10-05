@@ -25,11 +25,13 @@ describe("getting in block", () => {
     expect(html).toContain("rule of thumb:");
   });
 
-  it("shows only the aggregate for a single report", async () => {
-    fixtures.google = [r({ advice: "FIXTURE-SOLO" })];
+  it("shows only a count for a single report", async () => {
+    fixtures.google = [r({ advice: "FIXTURE-SOLO", stages: ["FIXTURE-STAGE"] })];
     const html = await render("google");
-    expect(html).toContain("first-hand · n=1 · not verified by the company");
+    expect(html).toContain("One note in so far");
     expect(html).not.toContain("FIXTURE-SOLO");
+    expect(html).not.toContain("FIXTURE-STAGE");
+    expect(html).not.toContain("got in by");
   });
 
   it("shows advice once a company and summer has two reports", async () => {
