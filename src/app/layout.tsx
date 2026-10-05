@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   description,
   authors: [{ name: "Nat Wong", url: "https://natwong.dev" }],
   creator: "Nat Wong",
+  // here.now serves every page with `Referrer-Policy: no-referrer`; FormSubmit needs the site's origin to accept
+  // the corrections form. This sends only the origin to other sites (never the page path), like browser defaults.
+  referrer: "strict-origin-when-cross-origin",
   openGraph: { title: "Lone Tree: a field guide to big tech recruiting", description, type: "website" },
   twitter: { card: "summary", title: "Lone Tree: a field guide to big tech recruiting", description },
 };
