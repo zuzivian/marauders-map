@@ -44,11 +44,10 @@ export default function Home() {
       <main className="page">
         <header className="masthead">
           <div>
-            <div className="presents">Messrs Recruiter, Hiring Manager, Bar Raiser &amp; Committee are proud to present</div>
             <h1>The Marauder&apos;s Map<br /><em>of big tech recruiting</em></h1>
+            <div className="meta">gsb mba1s · {meta.currentCycle}–{Number(meta.currentCycle) + 1 - 2000} · checked {fmtDate(meta.researched).toLowerCase()}</div>
           </div>
-          <div className="meta">
-            <Compass />for gsb mba1s<br />recruiting season {meta.currentCycle}–{Number(meta.currentCycle) + 1 - 2000}<br />data checked {fmtDate(meta.researched, { year: true }).toLowerCase()}</div>
+          <Compass />
         </header>
         <p className="dek">Who&apos;s hiring MBA interns in big tech, for what, and when. Every date sourced.</p>
         <nav className="toc" aria-label="Sections">
