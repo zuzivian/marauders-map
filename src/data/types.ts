@@ -151,3 +151,38 @@ export interface Meta {
     fields: { about: string; correction: string; source: string; email: string };
   } | null;
 }
+
+/**
+ * How scripts/watch-postings.mjs queries one company's careers site for MBA intern postings (src/data/watch.json).
+ * `manual` means no reliable machine-readable endpoint exists; `reason` says why, and a person checks by hand.
+ */
+export type WatchKind =
+  | "greenhouse" | "ashby" | "workday" | "smartrecruiters" | "eightfold" | "oracle-hcm" | "radancy"
+  | "amazon" | "apple" | "google" | "tiktok" | "ibm" | "manual";
+
+export interface WatchQuery {
+  q: string; // search terms
+  params?: Record<string, string>; // extra query-string or body filters for this search only
+}
+
+export interface WatchEntry {
+  kind: WatchKind;
+  endpoints: string[]; // the API URLs queried (empty for manual)
+  queries: WatchQuery[];
+  params?: Record<string, string>; // filters sent with every query (country, job level, sort)
+  filters: string; // plain-English summary of what's filtered server-side; US / intern / MBA / cycle are also checked client-side
+  board: string; // the careers page a person would use
+  publisher: string; // `publisher` for the sources.json entries this company's postings get
+  verified: ISODate; // last date the endpoint was confirmed with a real request
+  reason?: string; // manual only: why it isn't automatic
+  note?: string;
+}
+
+/** One line of src/data/changes.json, the watcher's machine-readable log of postings appearing and disappearing. */
+export interface Change {
+  date: ISODate;
+  company: string; // company id
+  kind: "posted" | "removed";
+  title: string;
+  url: string;
+}
