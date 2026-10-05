@@ -70,6 +70,23 @@ dates need judgment about evidence. When you update them, bump `asOf` / `checked
 - **medium**: a credible secondary source (a school career page, a dated recruiter post, news), or snapshots within about four weeks.
 - **weak**: inference (neighboring job IDs, forum posts). Weak cycles are drawn faded and ignored when estimating "usually opens" if better evidence exists.
 
+## Exports and calendar feeds
+
+The site feeds a student's own tracker and calendar; it doesn't replace them (or Career Hub).
+
+- **My list.** Star companies in their field notes or in a row of the timing chart. Stars live in the browser's
+  localStorage (no account). "My list only" narrows the trail, the timing chart and the roles grid to them.
+- **Copy to my tracker.** Copies the starred companies (or all, if none are starred) as tab-separated rows for
+  Google Sheets, Notion, Airtable or Excel, or downloads them as CSV. Columns: company, status today (the site's own
+  wording), usually opens, opened this cycle, closes, posting URLs, how postings behave, and a link to the company's guide page.
+- **Calendar feeds**, written at build time by [`src/app/cal/[file]/route.ts`](src/app/cal/%5Bfile%5D/route.ts):
+  `/cal/all.ics` (every company plus the GSB calendar) and `/cal/<id>.ics` for each company with an MBA program.
+  Events are all-day: stated deadlines, when this cycle's postings went live, and, for companies that haven't posted,
+  an "expected to open (estimate)" date from past cycles with the range in the description. UIDs are stable, so a
+  subscribed calendar updates instead of duplicating. The starred list downloads as a one-time `.ics` built in the browser.
+
+The writers are in [`src/lib/ics.ts`](src/lib/ics.ts) and [`src/lib/export.ts`](src/lib/export.ts), with tests beside them.
+
 ## Deploy
 
 ```bash
