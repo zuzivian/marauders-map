@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { companies, companyById, hiring, meta } from "@/data";
 import { companyPath, describe } from "@/lib/share";
+import { ogImage } from "@/lib/og";
 import { InitialCompany } from "@/components/Guide";
 import Home from "../../page";
 
@@ -15,12 +16,13 @@ export async function generateMetadata({ params }: PageProps<"/c/[id]">): Promis
   const c = companyById[id];
   const title = `${c.name} MBA internships · The Marauder's Map`;
   const description = describe(c, hiring[id], meta.currentCycle);
+  const images = ogImage(companyPath(id), `${c.name}: MBA internship status and past application windows`, meta.researched);
   return {
     title,
     description,
     alternates: { canonical: companyPath(id) },
-    openGraph: { title, description, url: companyPath(id), type: "website" },
-    twitter: { card: "summary_large_image", title, description },
+    openGraph: { title, description, url: companyPath(id), type: "website", images },
+    twitter: { card: "summary_large_image", title, description, images },
   };
 }
 
