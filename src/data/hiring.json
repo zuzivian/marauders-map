@@ -237,7 +237,7 @@
     ],
     "current": {
       "checked": "2026-10-05",
-      "summary": "About 16 MBA-eligible Summer 2027 postings live, dated Aug 17-Sep 30, 2026, none with a stated deadline; the generic 'MBA Strategy & Operations' and 'MBA Product Marketing' postings from Sep 11 have been removed in favour of team-specific ones.",
+      "summary": "As of 2026-10-05, 17 US MBA intern postings are live, posted 2026-08-17 to 2026-10-05: 'Summer 2027: MBA Corporate Strategy & Development Intern', 'Summer 2027: MBA Product Marketing Intern, Payments' and 'Summer 2027: MBA Product Marketing Intern, FinTech Lending' and 14 more. No stated deadline.",
       "postings": [
         {
           "title": "Summer 2027: MBA Corporate Strategy & Development Intern",
@@ -365,6 +365,15 @@
           "url": "https://jobs.intuit.com/job/san-diego/summer-2027-mba-strategic-sourcing-intern-customer-success-and-sales/27595/101367735056",
           "sources": [
             "intuit-search-2026"
+          ]
+        },
+        {
+          "title": "Summer 2027: MBA Strategic Finance Intern, Corporate FP&A",
+          "posted": "2026-10-05",
+          "closes": null,
+          "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-strategic-finance-intern-corporate-fp-and-a/27595/101575696896",
+          "sources": [
+            "intuit-101575696896"
           ]
         }
       ]
