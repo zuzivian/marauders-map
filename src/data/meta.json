@@ -10,5 +10,24 @@
       "source": "source",
       "email": "email"
     }
+  },
+  "firsthand": {
+    "kind": "formspree",
+    "action": "https://formspree.io/f/xnpjaklb",
+    "fields": {
+      "company": "company",
+      "roleId": "roleId",
+      "classOf": "classOf",
+      "internshipSummer": "internshipSummer",
+      "path": "path",
+      "firstContactToOffer": "firstContactToOffer",
+      "stages": "stages",
+      "teamMatch": "teamMatch",
+      "whatMattered": "whatMattered",
+      "advice": "advice",
+      "displayName": "displayName",
+      "consent": "consent",
+      "email": "email"
+    }
   }
 }

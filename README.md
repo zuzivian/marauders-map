@@ -29,7 +29,8 @@ npm start          # serve out/ locally
 | `calendar.json` | GSB recruiting calendar: the AAP, blackouts, OCI interview weeks, offer deadline. |
 | `prep.json` | Prep resources by role × skill. Scores (0–3) are editorial judgments; module names and links are checked. |
 | `sources.json` | Every source: URL, publisher, dates, and a short verbatim quote where one supports the claim. |
-| `meta.json` | The current cycle, the date the data was last checked end to end, and the corrections link. |
+| `meta.json` | The current cycle, the date the data was last checked end to end, and the corrections and first-hand form links. |
+| `firsthand.json` | First-hand notes from GSB second-years on how they got in, keyed by company. Self-reported, unverified, and added only through `npm run add:firsthand`. |
 
 The rules:
 
@@ -86,6 +87,34 @@ The site feeds a student's own tracker and calendar; it doesn't replace them (or
   subscribed calendar updates instead of duplicating. The starred list downloads as a one-time `.ics` built in the browser.
 
 The writers are in [`src/lib/ics.ts`](src/lib/ics.ts) and [`src/lib/export.ts`](src/lib/export.ts), with tests beside them.
+
+## First-hand notes
+
+Each company's field notes have a "Getting in" block. The top half is computed: a backward plan from that company's past
+windows, plus the GSB rule that bears on its timing. The only number in it that isn't data, the two-week lead time, is
+labeled a rule of thumb. The bottom half is first-hand notes from second-years, shown as their own evidence class
+("first-hand · n=3 · not verified by the company").
+
+**How notes come in.** Second-years fill in the form at the bottom of the page. It posts to the same Formspree form as
+corrections, marked `kind=firsthand` with its own subject line, and its fields mirror `firsthand.json`. Shareable links
+open it directly: `https://marauders-map.natwong.dev/#contribute`, or `?contribute=google#contribute` to preselect a company.
+
+**Moderating one** (about 30 seconds). Copy the submission from the Formspree dashboard or email, then:
+
+```bash
+pbpaste | npm run add:firsthand              # dry run: the normalized entry, plus anything to check
+pbpaste | npm run add:firsthand -- --write   # add it to src/data/firsthand.json
+npm test                                     # then commit
+```
+
+It accepts Formspree JSON or pasted `field: value` lines. It refuses anything without consent or not marked
+`kind=firsthand`, trims text to the limits (280 characters for "what mattered" and advice), drops the email, and flags
+emails, phone numbers, links and a chosen display name in the text. Read those flags before you write, and edit the JSON
+by hand if something identifying slips through.
+
+**Anonymity.** Notes show as "a GSB '27" unless the contributor gave a name. A company's count, path mix and common
+stages show from the first note. Advice and "what mattered" show only once that company has at least two notes for the
+same internship summer, so a lone note can't be traced back to its author.
 
 ## Deploy
 

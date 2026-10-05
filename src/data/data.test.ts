@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { calendar, companies, hiring, interviews, meta, prep, roles, sources } from ".";
+import { calendar, companies, firsthand, hiring, interviews, meta, prep, roles, sources } from ".";
 import { seasonEnd, seasonStart } from "@/lib/season";
+import { problems } from "@/lib/firsthand";
 
 // Data health checks. These run in CI-free `npm test` and before every build (see package.json "prebuild").
 
@@ -148,6 +149,16 @@ describe("prep matrix", () => {
   });
 });
 
+describe("first-hand notes", () => {
+  it("are keyed by known companies", () => {
+    expect(Object.keys(firsthand).filter((id) => !companies.some((c) => c.id === id))).toEqual([]);
+  });
+  it.each(Object.entries(firsthand))("%s reports are publishable", (_, reports) => {
+    expect(Array.isArray(reports)).toBe(true);
+    for (const r of reports) expect(problems(r, { roles: roles.map((x) => x.id) }), JSON.stringify(r)).toEqual([]);
+  });
+});
+
 describe("meta", () => {
   it("is valid", () => {
     expect(CYCLES).toContain(meta.currentCycle);
@@ -156,5 +167,6 @@ describe("meta", () => {
       expect(meta.corrections.action).toMatch(/^https:\/\//);
       if (meta.corrections.kind === "google") expect(meta.corrections.action).toMatch(/\/formResponse$/);
     }
+    if (meta.firsthand) expect(meta.firsthand.action).toMatch(/^https:\/\//);
   });
 });

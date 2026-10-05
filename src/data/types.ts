@@ -141,6 +141,25 @@ export interface Prep {
   notes: { text: string; sources: string[]; highlight?: boolean }[]; // highlighted notes show above the table
 }
 
+export type FirsthandPath = "oci" | "referral" | "direct application" | "company event" | "club or trek" | "other";
+export type TeamMatch = "hired to a team" | "matched after offer" | "unsure";
+
+/** A GSB second-year's own account of getting an internship. Self-reported and unverified; added by scripts/add-firsthand.mjs. */
+export interface FirsthandReport {
+  received: ISODate;
+  classOf: number; // e.g. 2027
+  internshipSummer: number; // e.g. 2026, the summer of the internship (cycle 2025)
+  roleId: string; // id in roles.json
+  path: FirsthandPath;
+  firstContactToOffer?: number; // weeks
+  stages: string[]; // short, in order
+  teamMatch: TeamMatch;
+  whatMattered: string; // ≤ 280 chars
+  advice: string; // ≤ 280 chars
+  displayName?: string; // omitted = anonymous ("a GSB '27")
+  consent: true;
+}
+
 export interface Meta {
   currentCycle: Cycle;
   researched: ISODate; // the date the data was last checked end to end
@@ -149,5 +168,11 @@ export interface Meta {
     kind: "formspree" | "google" | "formsubmit";
     action: string;
     fields: { about: string; correction: string; source: string; email: string };
+  } | null;
+  /** Where the first-hand notes form posts (Formspree only for now); null hides the form. Same field mapping idea as corrections. */
+  firsthand?: {
+    kind: "formspree";
+    action: string;
+    fields: Record<"company" | "roleId" | "classOf" | "internshipSummer" | "path" | "firstContactToOffer" | "stages" | "teamMatch" | "whatMattered" | "advice" | "displayName" | "consent" | "email", string>;
   } | null;
 }

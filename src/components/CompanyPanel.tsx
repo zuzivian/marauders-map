@@ -11,6 +11,7 @@ import { Cite, SourceList } from "./Sources";
 import { openCorrection } from "./Corrections";
 import { MarkIcon } from "./MarkIcon";
 import { CompanyCalLinks, StarButton } from "./MyList";
+import GettingIn from "./GettingIn";
 
 const cycle = meta.currentCycle;
 const OPACITY = { strong: 0.95, medium: 0.6, weak: 0.3 };
@@ -219,6 +220,8 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
           </ul>
         </details>
       )}
+
+      <GettingIn company={c} />
 
       <Stages company={c} />
 
