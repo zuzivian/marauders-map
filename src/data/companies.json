@@ -31,26 +31,6 @@
         "apple-10k"
       ]
     },
-    "b2bPayer": {
-      "value": 18,
-      "low": 13,
-      "high": 25,
-      "reasoning": "Services (~26%) include business-paid items (default-search licensing payments, App Store search ads, Apple Pay issuer fees) alongside consumer-paid App Store/iCloud/AppleCare; perhaps 25-35% of Services is business-paid. Hardware (~74%) is mostly consumer-bought; enterprise/education fleets maybe 10-20%. Combined ~13-25%.",
-      "sources": [
-        "apple-xbrl",
-        "apple-10k"
-      ]
-    },
-    "b2bUser": {
-      "value": 11,
-      "low": 8,
-      "high": 15,
-      "reasoning": "Day-to-day users are overwhelmingly consumers. Business-used share is mainly enterprise/education Macs, iPads and corporate iPhones (est. 10-15% of hardware) plus negligible business services.",
-      "sources": [
-        "apple-xbrl",
-        "apple-10k"
-      ]
-    },
     "office": {
       "category": "fixed",
       "days": 3,
@@ -61,6 +41,41 @@
         "fortune-apple-2022",
         "bloomberg-apple-2022",
         "archie-rto-tracker-2026"
+      ]
+    },
+    "intern": {
+      "locations": {
+        "places": [
+          "United States (the posting names no city)"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "apple-2026-mba-internships"
+        ]
+      },
+      "teamModel": {
+        "model": "pooled, then placed",
+        "note": "One talent-pool posting covers every area (AI/ML, AppleCare, Services, Marketing, Operations and more); it is not a specific opening.",
+        "sources": [
+          "apple-2026-mba-internships-pool"
+        ]
+      },
+      "pulse": [
+        {
+          "date": "2026-08-21",
+          "what": "Cut 200+ roles on the Vision Pro, Siri and Intelligent Systems teams",
+          "low": 200,
+          "sources": [
+            "apple-layoffs-techcrunch-2026-08"
+          ]
+        },
+        {
+          "date": "2026-09-29",
+          "what": "Reported to be holding headcount flat for 2027, with small layoffs and budget cuts",
+          "sources": [
+            "apple-headcount-flat-appleinsider-2026-09"
+          ]
+        }
       ]
     }
   },
@@ -96,26 +111,6 @@
         "amazon-10k"
       ]
     },
-    "b2bPayer": {
-      "value": 53,
-      "low": 47,
-      "high": 58,
-      "reasoning": "Business-paid: third-party seller fees (24%), advertising (9.6%), AWS (18%), Other (0.8%) = ~52%; plus some Amazon Business purchases within Online stores. Lower bound reflects that seller fees are partly passed through to shoppers.",
-      "sources": [
-        "amazon-xbrl",
-        "amazon-10k"
-      ]
-    },
-    "b2bUser": {
-      "value": 20,
-      "low": 17,
-      "high": 32,
-      "reasoning": "AWS (18%) is clearly business-used. Seller services are used daily by merchants (fulfillment, seller tools) but the marketplace experience is consumer; counting part of them widens the upper bound.",
-      "sources": [
-        "amazon-xbrl",
-        "amazon-10k"
-      ]
-    },
     "office": {
       "category": "fixed",
       "days": 5,
@@ -129,6 +124,66 @@
         "cnbc-amazon-delay-2024",
         "amazon-intern-page",
         "amazon-sde-intern-2027"
+      ]
+    },
+    "intern": {
+      "pay": {
+        "low": 95400,
+        "high": 163900,
+        "per": "year",
+        "where": "Seattle, WA",
+        "cycle": "2026",
+        "postings": 7,
+        "note": "Amazon states intern pay as an annual rate. Fixed rates: $117,045 (HR LDP), $121,380 (Marketing), $136,170 (ALA PM and PMT). Ranges: $95,400–$163,200 (Finance LDP), $121,200–$163,900 (MLDP), $135,000–$162,000 (Pathways).",
+        "sources": [
+          "amazon-10492198-pay",
+          "amazon-10491603-pay",
+          "amazon-10491075",
+          "amazon-10491935",
+          "amazon-10491574",
+          "amazon-10493144",
+          "amazon-10509639"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Seattle, WA",
+          "Arlington, VA (some PMT roles)",
+          "Operations sites across the US (Pathways)"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "amazon-10509639",
+          "amazon-10491075"
+        ]
+      },
+      "teamModel": {
+        "model": "pooled, then placed",
+        "note": "PMT and Marketing interns are placed by business need. Pathways matches you to a site before the offer.",
+        "sources": [
+          "amazon-10509639-team",
+          "amazon-10491075"
+        ]
+      },
+      "pulse": [
+        {
+          "date": "2025-10-28",
+          "what": "Cut about 14,000 corporate roles",
+          "low": 14000,
+          "high": 14000,
+          "sources": [
+            "amazon-layoffs-2025-10"
+          ]
+        },
+        {
+          "date": "2026-01-28",
+          "what": "Cut about 16,000 more corporate roles",
+          "low": 16000,
+          "high": 16000,
+          "sources": [
+            "amazon-layoffs-2026-01"
+          ]
+        }
       ]
     }
   },
@@ -166,28 +221,6 @@
         "intuit-10k"
       ]
     },
-    "b2bPayer": {
-      "value": 75,
-      "low": 70,
-      "high": 78,
-      "reasoning": "Business-paid: Global Business Solutions (QuickBooks, Mailchimp, payments, payroll; 60%), ProTax paid by accounting firms (3%), Credit Karma paid by lender/card partners (12%) = ~75%. Lower bound: some QuickBooks users are sole proprietors close to consumers.",
-      "sources": [
-        "intuit-xbrl",
-        "intuit-10k",
-        "intuit-10k"
-      ]
-    },
-    "b2bUser": {
-      "value": 63,
-      "low": 58,
-      "high": 66,
-      "reasoning": "Business-used: Global Business Solutions (60%) + ProTax (3%) = 63%. TurboTax and Credit Karma users are consumers (Credit Karma is consumer-used, business-paid).",
-      "sources": [
-        "intuit-xbrl",
-        "intuit-10k",
-        "intuit-10k"
-      ]
-    },
     "office": {
       "category": "fixed",
       "days": 3,
@@ -195,6 +228,58 @@
       "confidence": "medium",
       "sources": [
         "intuit-hybrid-careers"
+      ]
+    },
+    "intern": {
+      "pay": {
+        "low": 29.5,
+        "high": 68,
+        "per": "hour",
+        "where": "Mountain View and San Diego, CA",
+        "cycle": "2026",
+        "postings": 15,
+        "note": "Each posting gives a range in its text and a location band at the end, and they differ; this spans both. Leaves out the all-degree Product Manager Intern posting ($39.57–$76.92/hr).",
+        "sources": [
+          "intuit-pmm-midmarket-2027-pay",
+          "intuit-corpstrat-2027-pay",
+          "intuit-pm-2027"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Mountain View, CA",
+          "San Diego, CA"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "intuit-search-2026"
+        ]
+      },
+      "sponsorship": {
+        "stance": "authorization required",
+        "scope": "finance, sourcing and PM postings (8 of 16); the others don't say",
+        "cycle": "2026",
+        "sources": [
+          "intuit-finstrat-gbsg-2027-auth"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "note": "Each posting names its team.",
+        "sources": [
+          "intuit-pmm-payments-2027-team"
+        ]
+      },
+      "pulse": [
+        {
+          "date": "2026-05-20",
+          "what": "Laid off about 3,000 people (17% of staff) to refocus on AI",
+          "low": 3000,
+          "high": 3000,
+          "sources": [
+            "intuit-layoffs-techcrunch-2026-05"
+          ]
+        }
       ]
     }
   },
@@ -231,26 +316,6 @@
         "adobe-10k"
       ]
     },
-    "b2bPayer": {
-      "value": 72,
-      "low": 62,
-      "high": 82,
-      "reasoning": "Digital Experience and Publishing (26%) are enterprise-paid. Digital Media (74%) mixes enterprise/team licenses with individual Creative Cloud and Acrobat subscribers. Wide range because freelancers paying for themselves are arguably businesses.",
-      "sources": [
-        "adobe-xbrl",
-        "adobe-10k"
-      ]
-    },
-    "b2bUser": {
-      "value": 78,
-      "low": 70,
-      "high": 88,
-      "reasoning": "FY2025 subscription revenue by customer group: Creative & Marketing Professionals $16.3B vs Business Professionals & Consumers $6.5B. The first group plus part of the second (business Acrobat users) is professional use. Students, hobbyists and consumers keep it below ~88%.",
-      "sources": [
-        "adobe-xbrl",
-        "adobe-10k"
-      ]
-    },
     "office": {
       "category": "team",
       "low": 2,
@@ -267,6 +332,30 @@
       ],
       "days": null,
       "interns": "Adobe's 2027 MBA intern postings say all 2027 interns will be co-located hybrid."
+    },
+    "intern": {
+      "pay": {
+        "low": 37,
+        "high": 50,
+        "per": "hour",
+        "where": "US (one range across US markets)",
+        "cycle": "2026",
+        "postings": 2,
+        "sources": [
+          "adobe-R172261-pay"
+        ]
+      },
+      "locations": {
+        "places": [
+          "San Jose, CA",
+          "San Francisco, CA"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "adobe-R172261",
+          "adobe-R172262"
+        ]
+      }
     }
   },
   {
@@ -302,28 +391,6 @@
         "microsoft-10k"
       ]
     },
-    "b2bPayer": {
-      "value": 88,
-      "low": 84,
-      "high": 91,
-      "reasoning": "FY2026 product lines: server/cloud $129.4B, M365 Commercial $102.0B, Dynamics $9.0B, Enterprise & partner services $8.3B and search ads $15.2B are business-paid (~79%). Most of LinkedIn ($19.8B) and Windows OEM/commercial ($17.1B) are business-paid too. Xbox ($21.8B) and M365 Consumer ($9.2B) are consumer-paid.",
-      "sources": [
-        "microsoft-xbrl",
-        "microsoft-10k",
-        "microsoft-10k"
-      ]
-    },
-    "b2bUser": {
-      "value": 82,
-      "low": 78,
-      "high": 86,
-      "reasoning": "Business-used: server/cloud, M365 Commercial, Dynamics, enterprise services (~75%), plus most of LinkedIn (professional network) and commercial Windows. Consumer-used: Xbox, M365 Consumer, Bing/search ads, consumer Windows and Surface.",
-      "sources": [
-        "microsoft-xbrl",
-        "microsoft-10k",
-        "microsoft-10k"
-      ]
-    },
     "office": {
       "category": "fixed",
       "days": 3,
@@ -335,6 +402,57 @@
         "geekwire-msft-2026",
         "entrepreneur-msft-ai-4day",
         "archie-rto-tracker-2026"
+      ]
+    },
+    "intern": {
+      "pay": {
+        "low": 5190,
+        "high": 10250,
+        "per": "month",
+        "where": "US; higher band for the SF Bay Area and New York City",
+        "cycle": "2026",
+        "postings": 2,
+        "note": "Bay Area and New York City band: $6,810–$11,330 a month. The Surface Business Program Management posting states no pay.",
+        "sources": [
+          "ms-200055972-pay",
+          "ms-200058904"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Redmond, WA"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "ms-200055972",
+          "ms-200055974",
+          "ms-200058904"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "note": "Each posting is for one team (Central Finance, Treasury, Surface).",
+        "sources": [
+          "ms-200058904-team"
+        ]
+      },
+      "pulse": [
+        {
+          "date": "2026-04-23",
+          "what": "Offered its first voluntary buyout, open to up to 7% of US staff (not a layoff)",
+          "sources": [
+            "microsoft-buyout-cnbc-2026-04"
+          ]
+        },
+        {
+          "date": "2026-07-06",
+          "what": "Cut about 4,800 roles (2.1%), mostly Xbox and commercial sales",
+          "low": 4800,
+          "high": 4800,
+          "sources": [
+            "microsoft-layoffs-2026-07"
+          ]
+        }
       ]
     }
   },
@@ -369,26 +487,6 @@
         "salesforce-10k"
       ]
     },
-    "b2bPayer": {
-      "value": 100,
-      "low": 99,
-      "high": 100,
-      "reasoning": "All revenue is enterprise software subscriptions and professional services sold to organizations.",
-      "sources": [
-        "salesforce-xbrl",
-        "salesforce-10k"
-      ]
-    },
-    "b2bUser": {
-      "value": 100,
-      "low": 99,
-      "high": 100,
-      "reasoning": "Users are employees of customer organizations. Consumer-facing Commerce/Service experiences are still operated by businesses.",
-      "sources": [
-        "salesforce-xbrl",
-        "salesforce-10k"
-      ]
-    },
     "office": {
       "category": "team",
       "low": 3,
@@ -405,6 +503,63 @@
         "sf-JR362509"
       ],
       "days": null
+    },
+    "intern": {
+      "pay": {
+        "low": 46,
+        "high": 57,
+        "per": "hour",
+        "where": "New York, NY",
+        "cycle": "2026",
+        "postings": 3,
+        "sources": [
+          "sf-JR362509-pay"
+        ]
+      },
+      "locations": {
+        "places": [
+          "New York, NY"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "sf-JR362509",
+          "sf-JR362508",
+          "sf-JR362499"
+        ]
+      },
+      "sponsorship": {
+        "stance": "no sponsorship",
+        "scope": "all three Business Value Services postings",
+        "cycle": "2026",
+        "sources": [
+          "sf-JR362508-visa"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "sources": [
+          "sf-JR362499-team"
+        ]
+      },
+      "pulse": [
+        {
+          "date": "2026-02-10",
+          "what": "Laid off fewer than 1,000 in marketing, product management, data analytics and Agentforce",
+          "high": 1000,
+          "sources": [
+            "salesforce-layoffs-bi-2026-02"
+          ]
+        },
+        {
+          "date": "2026-08-07",
+          "what": "WARN filings for 133 more jobs in Washington and San Francisco",
+          "low": 133,
+          "high": 133,
+          "sources": [
+            "salesforce-layoffs-tnw-2026-08"
+          ]
+        }
+      ]
     }
   },
   {
@@ -441,26 +596,6 @@
         "google-10k"
       ]
     },
-    "b2bPayer": {
-      "value": 88,
-      "low": 85,
-      "high": 90,
-      "reasoning": "Advertising (73%) and Google Cloud incl. Workspace (15%) are business-paid = ~88%. Subscriptions/platforms/devices (12%: YouTube Premium/TV, Google One, Play, Pixel) are mostly consumer-paid.",
-      "sources": [
-        "google-xbrl",
-        "google-10k"
-      ]
-    },
-    "b2bUser": {
-      "value": 15,
-      "low": 13,
-      "high": 18,
-      "reasoning": "Only Google Cloud (GCP + Workspace, 14.6%) is mainly business-used. Search, YouTube and Network ads are consumer-used. Small uplift for business use of Play and devices.",
-      "sources": [
-        "google-xbrl",
-        "google-10k"
-      ]
-    },
     "office": {
       "category": "fixed",
       "days": 3,
@@ -473,6 +608,69 @@
         "cnbc-google-rto-2022"
       ],
       "effective": "2022-04"
+    },
+    "intern": {
+      "pay": {
+        "low": 96000,
+        "high": 125000,
+        "per": "year",
+        "where": "US",
+        "cycle": "2025",
+        "postings": 1,
+        "note": "Google states intern pay as an annual US base salary range. The summer 2025 posting gave $96,000–$121,000.",
+        "sources": [
+          "google-mba-intern-summer-2026-wb-pay",
+          "google-mba-intern-summer-2025-wb"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Mountain View, CA",
+          "San Francisco, CA",
+          "Sunnyvale, CA",
+          "San Bruno, CA",
+          "Seattle, WA",
+          "New York, NY",
+          "Chicago, IL",
+          "Atlanta, GA",
+          "Washington, DC"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "google-mba-intern-summer-2026-wb-places"
+        ]
+      },
+      "sponsorship": {
+        "stance": "authorization required",
+        "scope": "the US MBA posting",
+        "cycle": "2025",
+        "sources": [
+          "google-mba-intern-summer-2026-wb-auth"
+        ]
+      },
+      "teamModel": {
+        "model": "pooled, then placed",
+        "note": "One US posting for every function; Google matches candidates to teams.",
+        "sources": [
+          "google-mba-intern-summer-2026-wb-team"
+        ]
+      },
+      "pulse": [
+        {
+          "date": "2026-02-11",
+          "what": "Offered voluntary buyouts to select US Global Business Organization teams (not a layoff)",
+          "sources": [
+            "google-buyouts-gbo-2026-02"
+          ]
+        },
+        {
+          "date": "2026-06-04",
+          "what": "Laid off staff across Google Cloud; number not reported",
+          "sources": [
+            "google-cloud-layoffs-bi-2026-06"
+          ]
+        }
+      ]
     }
   },
   {
@@ -508,26 +706,6 @@
         "nvidia-10k"
       ]
     },
-    "b2bPayer": {
-      "value": 93,
-      "low": 92,
-      "high": 100,
-      "reasoning": "Nvidia's direct customers are almost all businesses (cloud providers, OEMs, add-in-board partners, distributors). If Gaming GPUs (7.4%) count as consumer-funded, the business share is ~93%. Counting the direct payer gives ~100%.",
-      "sources": [
-        "nvidia-xbrl",
-        "nvidia-10k"
-      ]
-    },
-    "b2bUser": {
-      "value": 93,
-      "low": 91,
-      "high": 95,
-      "reasoning": "Data Center, ProViz, Automotive and OEM = $199.8B / $215.9B = 92.6%. Gaming GPUs are consumer-used (some go to creators and AI hobbyists).",
-      "sources": [
-        "nvidia-xbrl",
-        "nvidia-10k"
-      ]
-    },
     "office": {
       "category": "flexible",
       "summary": "No company-wide office requirement; managers and teams set expectations, from fully remote to most days in office",
@@ -543,6 +721,40 @@
         "hubble-rto-list-2026"
       ],
       "days": null
+    },
+    "intern": {
+      "pay": {
+        "low": 27,
+        "high": 82,
+        "per": "hour",
+        "where": "US",
+        "cycle": "2025",
+        "postings": 3,
+        "note": "NVIDIA states one hourly band for all of its interns, not an MBA-specific range.",
+        "sources": [
+          "builtin-nvidia-corpdev-2026-pay",
+          "builtin-nvidia-treasury-2026",
+          "getro-anitab-nvidia-adas-2026"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Santa Clara, CA"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "getro-anitab-nvidia-adas-2026",
+          "nvidia-eightfold-vc-2026",
+          "nvidia-eightfold-procurement-2026"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "note": "Each posting is for a named team.",
+        "sources": [
+          "nvidia-eightfold-vc-2026-team"
+        ]
+      }
     }
   },
   {
@@ -577,26 +789,6 @@
         "meta-10k"
       ]
     },
-    "b2bPayer": {
-      "value": 98,
-      "low": 97,
-      "high": 99,
-      "reasoning": "Advertising is 97.6% of revenue. FoA Other (WhatsApp Business messaging, Meta Verified) is partly business-paid. Reality Labs hardware is consumer-paid.",
-      "sources": [
-        "meta-xbrl",
-        "meta-10k"
-      ]
-    },
-    "b2bUser": {
-      "value": 1,
-      "low": 0,
-      "high": 3,
-      "reasoning": "Ads count as consumer-used. Only WhatsApp Business messaging and part of Meta Verified (a slice of the 1.3% 'Other') are business-used.",
-      "sources": [
-        "meta-xbrl",
-        "meta-10k"
-      ]
-    },
     "office": {
       "category": "fixed",
       "days": 3,
@@ -608,6 +800,53 @@
         "cnbc-instagram-2025",
         "fortune-meta-2023",
         "archie-rto-tracker-2026"
+      ]
+    },
+    "intern": {
+      "locations": {
+        "places": [
+          "San Francisco, CA",
+          "Burlingame, CA"
+        ],
+        "cycle": "2024",
+        "sources": [
+          "linkedin-meta-pmm-4062928334"
+        ]
+      },
+      "sponsorship": {
+        "stance": "authorization required",
+        "scope": "the 2024 Product Marketing Manager MBA posting",
+        "cycle": "2024",
+        "sources": [
+          "linkedin-meta-pmm-4062928334-auth"
+        ]
+      },
+      "pulse": [
+        {
+          "date": "2025-10-22",
+          "what": "Cut about 600 jobs in Meta Superintelligence Labs",
+          "low": 600,
+          "high": 600,
+          "sources": [
+            "meta-ai-layoffs-techcrunch-2025-10"
+          ]
+        },
+        {
+          "date": "2026-01-14",
+          "what": "Cut about 10% of Reality Labs",
+          "sources": [
+            "meta-reality-labs-techcrunch-2026-01"
+          ]
+        },
+        {
+          "date": "2026-04-23",
+          "what": "Laid off about 8,000 (10%) on May 20 and left 6,000 open roles unfilled",
+          "low": 8000,
+          "high": 8000,
+          "sources": [
+            "meta-layoffs-npr-2026-04"
+          ]
+        }
       ]
     }
   },
@@ -643,26 +882,6 @@
         "airbnb-10k"
       ]
     },
-    "b2bPayer": {
-      "value": 15,
-      "low": 8,
-      "high": 30,
-      "reasoning": "Revenue is service fees. Guest fees (consumer-paid) dominate. Host fees are paid by hosts, a growing share of whom are professional property managers on host-only fee pricing; some trips are employer-paid business travel. Wide range because host fee share is not disclosed.",
-      "sources": [
-        "airbnb-xbrl",
-        "airbnb-10k"
-      ]
-    },
-    "b2bUser": {
-      "value": 5,
-      "low": 3,
-      "high": 12,
-      "reasoning": "Guests are mostly leisure consumers; business travel is a minority. Hosts use the platform but are counted as the supply side, not end users.",
-      "sources": [
-        "airbnb-xbrl",
-        "airbnb-10k"
-      ]
-    },
     "office": {
       "category": "remote",
       "summary": "Live and work anywhere (since Apr 2022); the CEO says staff come to SF about one week a month; a minority of roles must be SF-based.",
@@ -674,6 +893,49 @@
         "hubble-rto-list-2026"
       ],
       "days": null
+    },
+    "intern": {
+      "pay": {
+        "low": 40,
+        "high": 48,
+        "per": "hour",
+        "where": "US",
+        "cycle": "2025",
+        "postings": 2,
+        "note": "Last cycle: Advanced Analytics $40–$48, Strategic Finance & Analytics $48.",
+        "sources": [
+          "builtinnyc-airbnb-aa-2026-pay",
+          "builtin-airbnb-sfa-2026-pay"
+        ]
+      },
+      "locations": {
+        "places": [
+          "US, remote-eligible",
+          "San Francisco, CA",
+          "New York, NY"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "builtinnyc-airbnb-aa-2026-remote",
+          "builtin-airbnb-sfa-2026"
+        ]
+      },
+      "sponsorship": {
+        "stance": "authorization required",
+        "scope": "both postings last cycle; Advanced Analytics accepts CPT and OPT",
+        "cycle": "2025",
+        "sources": [
+          "builtinnyc-airbnb-aa-2026-cpt",
+          "builtin-airbnb-sfa-2026"
+        ]
+      },
+      "teamModel": {
+        "model": "pooled, then placed",
+        "note": "Stated on the Strategic Finance & Analytics posting.",
+        "sources": [
+          "builtin-airbnb-sfa-2026-team"
+        ]
+      }
     }
   },
   {
@@ -709,26 +971,6 @@
         "uber-10k"
       ]
     },
-    "b2bPayer": {
-      "value": 25,
-      "low": 15,
-      "high": 35,
-      "reasoning": "Freight (9.8%) is shipper-paid. Advertising (>$2B run rate, mostly in Delivery) is brand/merchant-paid. Uber for Business rides are employer-paid. Restaurant/merchant commissions make up a large but undisclosed part of Delivery net revenue. Riders and eaters pay the rest. Wide range because Uber does not split Delivery revenue by payer.",
-      "sources": [
-        "uber-xbrl",
-        "uber-10k"
-      ]
-    },
-    "b2bUser": {
-      "value": 13,
-      "low": 10,
-      "high": 17,
-      "reasoning": "Freight (9.8%) is business-used, plus Uber for Business rides and merchant-facing tools. Riders and eaters are consumers.",
-      "sources": [
-        "uber-xbrl",
-        "uber-10k"
-      ]
-    },
     "office": {
       "category": "fixed",
       "days": 3,
@@ -741,6 +983,56 @@
         "sfchronicle-uber-2026",
         "archie-rto-tracker-2026",
         "uber-newsroom-simpler-faster-2026"
+      ]
+    },
+    "intern": {
+      "pay": {
+        "low": 45,
+        "high": 54,
+        "per": "hour",
+        "where": "Chicago ($45) and New York ($54)",
+        "cycle": "2025",
+        "postings": 1,
+        "note": "From last cycle's Risk and Payments Support MBA posting. The 2025 Strategy & Planning MBA posting gave $51 an hour.",
+        "sources": [
+          "linkedin-uber-rp-2026-pay",
+          "huzzle-uber-sp-2025"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Chicago, IL",
+          "New York, NY"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "linkedin-uber-rp-2026"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "sources": [
+          "linkedin-uber-rp-2026-team"
+        ]
+      },
+      "pulse": [
+        {
+          "date": "2026-06-03",
+          "what": "Cut 23% of the People (HR and recruiting) division",
+          "sources": [
+            "uber-people-cnbc-2026-06"
+          ]
+        },
+        {
+          "date": "2026-09-02",
+          "what": "Cut about 3,300 roles (10%) to remove management layers",
+          "low": 3300,
+          "high": 3300,
+          "sources": [
+            "uber-layoffs-techcrunch-2026-09",
+            "uber-newsroom-simpler-faster-2026"
+          ]
+        }
       ]
     }
   },
@@ -784,32 +1076,6 @@
       "sources": [
         "openai-engadget-headcount",
         "openai-revelio"
-      ]
-    },
-    "b2bPayer": {
-      "value": 57,
-      "low": 50,
-      "high": 65,
-      "reasoning": "Company said enterprise exceeded 40% of revenue (Apr 2026). CFO reportedly told investors in Aug 2026 that enterprise now exceeds consumer. Enterprise (ChatGPT Enterprise/Team/Edu + API) more than doubled since July (Axios). Ads (~$1B run rate, Aug 2026) are also business-paid. Consumer ChatGPT subscriptions remain large; Q3 consumer revenue exceeded all of 2025's.",
-      "sources": [
-        "openai-quartz-70b",
-        "openai-axios-70b",
-        "openai-bloomberg-40b",
-        "openai-info-h1-2025",
-        "openai-latka-2024"
-      ]
-    },
-    "b2bUser": {
-      "value": 50,
-      "low": 40,
-      "high": 60,
-      "reasoning": "Enterprise seats are business-used. API revenue is paid by developers, but many API-powered apps serve consumers, so business-used share sits a bit below business-paid. ChatGPT Plus/Pro and ad-supported free usage are consumer.",
-      "sources": [
-        "openai-quartz-70b",
-        "openai-axios-70b",
-        "openai-bloomberg-40b",
-        "openai-info-h1-2025",
-        "openai-latka-2024"
       ]
     },
     "office": {
@@ -859,26 +1125,6 @@
         "cisco-10k-fy26"
       ]
     },
-    "b2bPayer": {
-      "value": 99,
-      "low": 98,
-      "high": 100,
-      "reasoning": "Cisco sells to businesses, public institutions, governments and service providers, mostly through channel partners. It has no meaningful consumer product line, so nearly all revenue is paid by organizations.",
-      "sources": [
-        "cisco-10k-customers",
-        "cisco-10k-fy26"
-      ]
-    },
-    "b2bUser": {
-      "value": 99,
-      "low": 97,
-      "high": 100,
-      "reasoning": "Networking gear, security, observability and services are run by IT and network professionals; Webex is used at work. Any consumer-style use (e.g. home users of Webex) is negligible in revenue terms.",
-      "sources": [
-        "cisco-10k-customers",
-        "cisco-10k-fy26"
-      ]
-    },
     "office": {
       "category": "flexible",
       "summary": "Hybrid with no company-wide office minimum; employees and managers decide (policy since 2021)",
@@ -891,6 +1137,45 @@
         "cisco-hrexec-2025"
       ],
       "days": null
+    },
+    "intern": {
+      "locations": {
+        "places": [
+          "Research Triangle, NC",
+          "Atlanta, GA"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "cisco-li-strategy-2026-team",
+          "cisco-wayup-finance-mba"
+        ]
+      },
+      "sponsorship": {
+        "stance": "no sponsorship",
+        "scope": "the 2024 Financial Analyst MBA posting; the Strategy postings don't say",
+        "cycle": "2024",
+        "sources": [
+          "cisco-wayup-finance-mba-visa"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "note": "Strategy postings are for one team; Financial Analyst interns are assigned a role.",
+        "sources": [
+          "cisco-li-strategy-2026-team",
+          "cisco-wayup-finance-mba-assign"
+        ]
+      },
+      "pulse": [
+        {
+          "date": "2026-05-13",
+          "what": "Restructuring with fewer than 4,000 job cuts (under 5%)",
+          "high": 4000,
+          "sources": [
+            "cisco-path-forward-2026-05"
+          ]
+        }
+      ]
     }
   },
   {
@@ -929,25 +1214,6 @@
         "dell-10k-fy26"
       ]
     },
-    "b2bPayer": {
-      "value": 94,
-      "low": 92,
-      "high": 95,
-      "reasoning": "Of $113.5B in FY2026 revenue, only CSG Consumer ($6.9B, about 6%) is sold to consumers. ISG, commercial PCs and the VMware-resale remnant are bought by businesses, governments and schools. The range allows for some 'commercial' sales to sole proprietors.",
-      "sources": [
-        "dell-10k-fy26",
-        "dell-10k-other"
-      ]
-    },
-    "b2bUser": {
-      "value": 93,
-      "low": 90,
-      "high": 95,
-      "reasoning": "Servers, storage and networking are run by IT teams, and commercial PCs are used by employees at work. Consumer PCs (about 6%) plus a sliver of commercial laptops used personally are the consumer-used part.",
-      "sources": [
-        "dell-10k-fy26"
-      ]
-    },
     "office": {
       "category": "fixed",
       "days": 5,
@@ -963,6 +1229,58 @@
         "dell-hrgrapevine-2026",
         "dell-req-298518",
         "statesman-dell-rto-2025"
+      ]
+    },
+    "intern": {
+      "pay": {
+        "low": 31.88,
+        "high": 50,
+        "per": "hour",
+        "where": "Round Rock, TX",
+        "cycle": "2025",
+        "postings": 1,
+        "note": "From last cycle's Product Marketing Graduate Intern posting. The Product Management MBA posting gives $50.60 with no unit.",
+        "sources": [
+          "dell-li-pmm-grad-2025-pay",
+          "dell-li-pm-mba-2025"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Round Rock, TX",
+          "Hopkinton, MA"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "dell-li-pm-mba-2025-team",
+          "dell-li-pmm-grad-2025"
+        ]
+      },
+      "sponsorship": {
+        "stance": "no sponsorship",
+        "scope": "the 2024 General Business MBA posting; later postings don't say",
+        "cycle": "2024",
+        "sources": [
+          "dell-wayup-genbiz-mba-2024-visa"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "note": "Each posting names its team.",
+        "sources": [
+          "dell-li-pm-mba-2025-team"
+        ]
+      },
+      "pulse": [
+        {
+          "date": "2026-03-17",
+          "what": "10-K shows headcount down about 11,000 (about 10%) in the year to Jan 2026; layoffs and attrition not split",
+          "low": 11000,
+          "high": 11000,
+          "sources": [
+            "dell-headcount-proactive-2026-03"
+          ]
+        }
       ]
     }
   },
@@ -1000,24 +1318,6 @@
         "ibm-ar-2025"
       ]
     },
-    "b2bPayer": {
-      "value": 99,
-      "low": 98,
-      "high": 100,
-      "reasoning": "All four segments (software, consulting, infrastructure hardware, financing) sell to enterprises and governments; IBM has no meaningful consumer business.",
-      "sources": [
-        "ibm-ar-2025"
-      ]
-    },
-    "b2bUser": {
-      "value": 99,
-      "low": 97,
-      "high": 100,
-      "reasoning": "Day-to-day users are enterprise IT, developers, and business staff (Red Hat, watsonx, automation, mainframes, consulting deliverables). No meaningful consumer products.",
-      "sources": [
-        "ibm-ar-2025"
-      ]
-    },
     "office": {
       "category": "fixed",
       "days": 3,
@@ -1029,6 +1329,46 @@
         "ibm-rto-computerworld-2023",
         "ibm-rto-techradar-2025",
         "ibm-posting-130063"
+      ]
+    },
+    "intern": {
+      "locations": {
+        "places": [
+          "New York, NY",
+          "Armonk, NY",
+          "Cambridge, MA"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "ibm-posting-128929",
+          "ibm-posting-130063",
+          "ibm-posting-130031",
+          "ibm-posting-133909"
+        ]
+      },
+      "sponsorship": {
+        "stance": "no sponsorship",
+        "scope": "the Finance (FLDP) posting; the other three don't say",
+        "cycle": "2026",
+        "sources": [
+          "ibm-posting-128929-visa"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "note": "Each posting is for one team; AI-First Transformation hires for three and asks your preference while interviewing.",
+        "sources": [
+          "ibm-posting-133909-team"
+        ]
+      },
+      "pulse": [
+        {
+          "date": "2025-11-04",
+          "what": "Cut a low single-digit percentage of its global workforce (thousands of jobs)",
+          "sources": [
+            "ibm-layoffs-cnbc-2025-11"
+          ]
+        }
       ]
     }
   },
@@ -1067,24 +1407,6 @@
         "paypal-10k-2025"
       ]
     },
-    "b2bPayer": {
-      "value": 80,
-      "low": 70,
-      "high": 88,
-      "reasoning": "PayPal reports one segment. Most transaction revenue is fees charged to merchants (branded checkout, Braintree/unbranded processing, BNPL, POS, payouts). Consumers pay some fees directly: instant transfers, currency conversion, cross-border/Xoom, crypto, plus interest on consumer credit. PayPal does not split payer type, so this is an estimate.",
-      "sources": [
-        "paypal-10k-2025"
-      ]
-    },
-    "b2bUser": {
-      "value": 25,
-      "low": 15,
-      "high": 35,
-      "reasoning": "Branded PayPal/Venmo checkout and P2P are used day to day by consumers. Revenue from merchant-facing products (Braintree unbranded processing, POS, payouts/Hyperwallet, business financing, risk tools) counts as business-used. PayPal does not disclose Braintree revenue, so this is a rough estimate.",
-      "sources": [
-        "paypal-10k-2025"
-      ]
-    },
     "office": {
       "category": "fixed",
       "days": 3,
@@ -1096,6 +1418,62 @@
         "paypal-builtin-ventures-ops-2025",
         "paypal-careers-na-university",
         "paypal-careers-intern-hub"
+      ]
+    },
+    "intern": {
+      "pay": {
+        "low": 22,
+        "high": 57,
+        "per": "hour",
+        "where": "US national range",
+        "cycle": "2025",
+        "postings": 5,
+        "note": "Last cycle: Corporate Development $22–$53, Business Operations $33, Venmo Product Growth $41, Product Growth $45–$55 (San Jose), Ventures Operations $57.",
+        "sources": [
+          "paypal-builtin-corpdev-2025-pay",
+          "paypal-builtin-ventures-ops-2025-pay",
+          "paypal-builtin-bizops-2025",
+          "paypal-builtin-venmo-growth-2025",
+          "paypal-builtin-product-growth-2025"
+        ]
+      },
+      "locations": {
+        "places": [
+          "San Jose, CA",
+          "New York, NY",
+          "Chicago, IL"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "paypal-builtin-corpdev-2025",
+          "paypal-builtin-ventures-ops-2025",
+          "paypal-builtin-bizops-2025"
+        ]
+      },
+      "sponsorship": {
+        "stance": "authorization required",
+        "scope": "Business Operations and Venmo Product Growth postings last cycle; the others don't say",
+        "cycle": "2025",
+        "sources": [
+          "paypal-builtin-bizops-2025-auth",
+          "paypal-builtin-venmo-growth-2025"
+        ]
+      },
+      "pulse": [
+        {
+          "date": "2026-05-06",
+          "what": "Plans to cut about 20% of its workforce over two to three years",
+          "sources": [
+            "paypal-layoffs-quartz-2026-05"
+          ]
+        },
+        {
+          "date": "2026-09-01",
+          "what": "A further round of cuts under that plan; number not disclosed",
+          "sources": [
+            "paypal-layoffs-paymentsdive-2026-09"
+          ]
+        }
       ]
     }
   },
@@ -1134,24 +1512,6 @@
         "servicenow-10k-2025"
       ]
     },
-    "b2bPayer": {
-      "value": 100,
-      "low": 99,
-      "high": 100,
-      "reasoning": "ServiceNow sells subscriptions to enterprises and government agencies. It has no consumer revenue line. One US federal channel partner alone accounted for 11% of FY2025 revenue.",
-      "sources": [
-        "servicenow-10k-2025"
-      ]
-    },
-    "b2bUser": {
-      "value": 98,
-      "low": 95,
-      "high": 100,
-      "reasoning": "The day-to-day users are IT, HR, customer-service and security staff, plus employees using service portals at work. The only consumer-facing use is end customers on CSM portals or chat, and it is small.",
-      "sources": [
-        "servicenow-10k-2025"
-      ]
-    },
     "office": {
       "category": "team",
       "days": null,
@@ -1165,6 +1525,60 @@
       ],
       "low": 2,
       "high": 5
+    },
+    "intern": {
+      "pay": {
+        "low": 53.13,
+        "high": 75,
+        "per": "hour",
+        "where": "Santa Clara, CA",
+        "cycle": "2025",
+        "postings": 4,
+        "note": "Last cycle's postings: PMM $53.13, Corporate Development $57.70–$73.97, Business Strategy $65.93, Finance $58.50–$75.",
+        "sources": [
+          "servicenow-sr-pmm-mba-2026-pay",
+          "servicenow-sr-finance-mba-2026-pay",
+          "servicenow-sr-corpdev-2026",
+          "servicenow-sr-strategy-specialist-2026"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Santa Clara, CA"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "servicenow-sr-corpdev-2026",
+          "servicenow-sr-finance-mba-2026",
+          "servicenow-sr-pmm-mba-2026"
+        ]
+      },
+      "sponsorship": {
+        "stance": "no sponsorship",
+        "scope": "Corporate Development, Corporate Strategy and PMM postings last cycle; Finance and Business Strategy didn't say",
+        "cycle": "2025",
+        "sources": [
+          "servicenow-sr-corpdev-2026-visa"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "note": "Finance is the exception: interns are placed in a finance function through a matching process.",
+        "sources": [
+          "servicenow-sr-corpdev-2026-team",
+          "servicenow-sr-finance-mba-2026-placement"
+        ]
+      },
+      "pulse": [
+        {
+          "date": "2026-07-30",
+          "what": "Cutting up to 1,000 roles after acquisitions, aiming for flat headcount in 2026",
+          "high": 1000,
+          "sources": [
+            "servicenow-layoffs-investing-2026-07"
+          ]
+        }
+      ]
     }
   },
   {
@@ -1207,26 +1621,6 @@
         "tiktok-bytedance-about"
       ]
     },
-    "b2bPayer": {
-      "value": 72,
-      "low": 62,
-      "high": 78,
-      "reasoning": "Analyst estimates put advertising at ~60% of revenue and live-stream gifting (consumer-paid) at ~26%. The rest is mostly e-commerce commissions and merchant fees (business-paid), plus Volcano Engine cloud and Lark (enterprise). So roughly 60% ads + 8-15% merchant/enterprise fees are paid by businesses. Consumer payments are gifting, subscriptions and games.",
-      "sources": [
-        "tiktok-sacra",
-        "tiktok-biggo-2025-mix"
-      ]
-    },
-    "b2bUser": {
-      "value": 5,
-      "low": 2,
-      "high": 10,
-      "reasoning": "Ads and e-commerce run on consumer apps (Douyin, TikTok, TikTok Shop), so they count as consumer-used. Only Volcano Engine (cloud and model APIs), Lark/Feishu and merchant/advertiser tools are mainly used by businesses, an estimated low-single-digit to ~10% share. Not disclosed.",
-      "sources": [
-        "tiktok-sacra",
-        "tiktok-bytedance-about"
-      ]
-    },
     "office": {
       "category": "fixed",
       "days": 5,
@@ -1238,6 +1632,56 @@
         "tiktok-sfchronicle-rto",
         "tiktok-commercialobserver-rto",
         "tiktok-careers-api-mba-intern-2027"
+      ]
+    },
+    "intern": {
+      "pay": {
+        "low": 38,
+        "high": 69,
+        "per": "hour",
+        "where": "the posting's city (Los Angeles, Seattle, New York, San Jose)",
+        "cycle": "2026",
+        "postings": 23,
+        "note": "TikTok Shop roles: $38 in Los Angeles and Seattle, $40 in New York; Shop Product Operations $47.50 (Seattle); Ads PM $55 (San Jose); Monetization Strategy and PMM $69 (New York).",
+        "sources": [
+          "tiktok-catmgr-la-2027-pay",
+          "tiktok-monetization-strategy-ny-2027-pay",
+          "tiktok-post-category-manager-ny-2027",
+          "tiktok-wayback-prodops-2027",
+          "tiktok-wayback-pm-ads-2027"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Los Angeles, CA",
+          "Seattle, WA",
+          "New York, NY",
+          "San Jose, CA"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "tiktok-careers-api-mba-intern-2027"
+        ]
+      },
+      "pulse": [
+        {
+          "date": "2026-08-06",
+          "what": "Closed its Nashville office, laying off 250",
+          "low": 250,
+          "high": 250,
+          "sources": [
+            "tiktok-nashville-techcrunch-2026-08"
+          ]
+        },
+        {
+          "date": "2026-08-19",
+          "what": "Laid off 75 in Bellevue, mostly TikTok Shop (e-commerce)",
+          "low": 75,
+          "high": 75,
+          "sources": [
+            "tiktok-bellevue-seattletimes-2026-08"
+          ]
+        }
       ]
     }
   },
@@ -1276,24 +1720,6 @@
         "visa-10k-fy2025"
       ]
     },
-    "b2bPayer": {
-      "value": 99,
-      "low": 97,
-      "high": 100,
-      "reasoning": "Visa has one reportable segment and is paid by its clients, issuers and acquirers (financial institutions), plus merchants and others for value-added services. Cardholders don't pay Visa directly.",
-      "sources": [
-        "visa-10k-fy2025"
-      ]
-    },
-    "b2bUser": {
-      "value": 35,
-      "low": 25,
-      "high": 45,
-      "reasoning": "Most network revenue comes from consumer cardholders' spending, so the end users are consumers. Value-added services (issuing processing, risk and identity, acceptance, advisory) were $10.9B in FY2025, about 27% of net revenue, and are used by banks and merchants. Commercial cards and B2B money movement add a bit more. Visa doesn't split the core network by commercial vs consumer, so this is an estimate.",
-      "sources": [
-        "visa-10k-fy2025"
-      ]
-    },
     "office": {
       "category": "fixed",
       "days": 3,
@@ -1304,6 +1730,62 @@
         "visa-workday-intern-posting-2026",
         "visa-linkedin-vca-ashburn-2025",
         "visa-linkedin-pm-2024"
+      ]
+    },
+    "intern": {
+      "pay": {
+        "low": 52,
+        "high": 60,
+        "per": "hour",
+        "where": "Ashburn, VA; Foster City and San Francisco, CA",
+        "cycle": "2025",
+        "postings": 3,
+        "note": "Last cycle: Consulting & Analytics $52 (Ashburn), Finance $53 (Foster City), Corporate Strategy $60 (San Francisco).",
+        "sources": [
+          "visa-linkedin-vca-2025-pay",
+          "visa-wayup-corpstrategy-2025-pay",
+          "visa-linkedin-finance-2025"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Ashburn, VA",
+          "Foster City, CA",
+          "San Francisco, CA"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "visa-linkedin-vca-2025",
+          "visa-linkedin-finance-2025",
+          "visa-wayup-corpstrategy-2025"
+        ]
+      },
+      "sponsorship": {
+        "stance": "no sponsorship",
+        "scope": "last cycle's Finance posting and the 2024 PM posting",
+        "cycle": "2025",
+        "sources": [
+          "visa-sr-pm-2024-visa",
+          "visa-linkedin-finance-2025"
+        ]
+      },
+      "teamModel": {
+        "model": "pooled, then placed",
+        "note": "Stated on the Finance posting; the others don't say.",
+        "sources": [
+          "visa-linkedin-finance-2025-placement"
+        ]
+      },
+      "pulse": [
+        {
+          "date": "2026-07-28",
+          "what": "Cutting about 2,600 roles (7%), mostly in technology and product",
+          "low": 2600,
+          "high": 2600,
+          "sources": [
+            "visa-layoffs-cnbc-2026-07"
+          ]
+        }
       ]
     }
   },
@@ -1343,26 +1825,6 @@
         "waymo-revelio-headcount"
       ]
     },
-    "b2bPayer": {
-      "value": 10,
-      "low": 5,
-      "high": 25,
-      "reasoning": "Nearly all revenue is robotaxi fares paid by consumer riders in the Waymo app. In Austin and Atlanta, rides are sold only through Uber, so Uber is the business counterparty paying Waymo. Small extras (partnerships, business accounts) push this up only slightly. The high end allows for an Uber channel larger than public data shows.",
-      "sources": [
-        "waymo-blog-16b-round",
-        "waymo-on-uber"
-      ]
-    },
-    "b2bUser": {
-      "value": 5,
-      "low": 0,
-      "high": 10,
-      "reasoning": "The day-to-day end users are individual riders, including riders who book through Uber. Only a small sliver of business/fleet use exists, such as corporate travel.",
-      "sources": [
-        "waymo-blog-16b-round",
-        "waymo-on-uber"
-      ]
-    },
     "office": {
       "category": "team",
       "summary": "Varies by role: on-site, hybrid, or remote. Postings say 'hybrid' without a day count; Flex Index lists 2 days a week (unverified).",
@@ -1375,6 +1837,29 @@
         "waymo-gh-ops-planning-2027"
       ],
       "days": null
+    },
+    "intern": {
+      "pay": {
+        "low": 50,
+        "high": 50,
+        "per": "hour",
+        "where": "San Francisco and Los Angeles, CA",
+        "cycle": "2026",
+        "postings": 3,
+        "sources": [
+          "waymo-gh-strategic-finance-2027-pay"
+        ]
+      },
+      "locations": {
+        "places": [
+          "San Francisco, CA",
+          "Los Angeles, CA"
+        ],
+        "cycle": "2026",
+        "sources": [
+          "waymo-gh-board-api"
+        ]
+      }
     }
   },
   {
@@ -1412,24 +1897,6 @@
         "workday-10k-fy2026"
       ]
     },
-    "b2bPayer": {
-      "value": 100,
-      "low": 99,
-      "high": 100,
-      "reasoning": "All revenue comes from enterprise, mid-market and public-sector customers buying HCM, finance, spend and planning subscriptions plus implementation services. There is no consumer revenue.",
-      "sources": [
-        "workday-10k-fy2026"
-      ]
-    },
-    "b2bUser": {
-      "value": 97,
-      "low": 93,
-      "high": 100,
-      "reasoning": "Daily users are HR, finance and payroll staff, plus customers' employees doing HR and expense tasks at work. Job applicants using Workday-powered career sites are a small consumer-like slice.",
-      "sources": [
-        "workday-10k-fy2026"
-      ]
-    },
     "office": {
       "category": "team",
       "low": 2,
@@ -1442,6 +1909,52 @@
         "workday-jobright-fa-mba"
       ],
       "days": null
+    },
+    "intern": {
+      "locations": {
+        "places": [
+          "Pleasanton, CA"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "workday-jobright-fa-mba",
+          "workday-weekday-ep-mba"
+        ]
+      },
+      "sponsorship": {
+        "stance": "no sponsorship",
+        "scope": "all three MBA postings (Financial Analyst, Enterprise Planning, PMM)",
+        "cycle": "2025",
+        "sources": [
+          "workday-li-fa-mba-2025-visa",
+          "workday-weekday-ep-mba"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "sources": [
+          "workday-weekday-ep-mba-team"
+        ]
+      },
+      "pulse": [
+        {
+          "date": "2026-02-04",
+          "what": "Cut about 2% of staff, mainly in Global Customer Operations",
+          "sources": [
+            "workday-8k-2026-01"
+          ]
+        },
+        {
+          "date": "2026-09-29",
+          "what": "Cut about 500 roles (2.5%), mainly in Product and Technology",
+          "low": 500,
+          "high": 500,
+          "sources": [
+            "workday-8k-2026-09",
+            "workday-layoffs-bi-2026-09"
+          ]
+        }
+      ]
     }
   }
 ]

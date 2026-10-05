@@ -6,12 +6,12 @@ import { forceCollide, forceSimulation, forceX, forceY, type SimulationNodeDatum
 import { format } from "d3-format";
 import { companies, hiring, meta, type Company } from "@/data";
 import { SEASON_MONTHS, SEASON_WEEKS, monthStartWeek, typicalOpen, waveLabel, waveOf, type Wave } from "@/lib/season";
-import { fmtCap, fmtCount, latest } from "@/lib/format";
+import { fmtCap, fmtCount, fmtMonthly, latest, perMonth } from "@/lib/format";
 import { useWidth } from "@/lib/useWidth";
 import { useGuide } from "./Guide";
 import CompanyPanel from "./CompanyPanel";
 
-type AxisKey = "appOpen" | "b2bUser" | "b2bPayer" | "growth" | "marketCap" | "headcount" | "office";
+type AxisKey = "pay" | "visa" | "appOpen" | "growth" | "marketCap" | "headcount" | "office";
 interface Point { v: number; lo?: number; hi?: number }
 interface Axis {
   label: string;
@@ -27,10 +27,37 @@ const NO_PROGRAM = SEASON_WEEKS - 2;
 // Office policy as an ordered scale: remote-first, then office-based with no minimum, then required days.
 const OFFICE_REMOTE = -1.6, OFFICE_FLEX = -0.6;
 const range = (m: { value: number; low?: number; high?: number }): Point => ({ v: m.value, lo: m.low, hi: m.high });
+// Intern pay a month, from the range the postings state. Companies whose postings state none get their own lane below the lowest.
+function payPoint(c: Company): Point | null {
+  const p = c.intern?.pay;
+  if (!p) return null;
+  const lo = perMonth(p.low, p.per), hi = perMonth(p.high, p.per);
+  return { v: (lo + hi) / 2, lo, hi };
+}
+const PAID = companies.map(payPoint).filter((p): p is Point => p !== null);
+const PAY_STEP = 2000;
+const PAY_FIRST = Math.ceil(Math.min(...PAID.map((p) => p.lo ?? p.v)) / PAY_STEP) * PAY_STEP;
+const PAY_NONE = PAY_FIRST - 1.5 * PAY_STEP;
+const PAY_MAX = Math.max(...PAID.map((p) => p.hi ?? p.v));
+// Sponsorship as lanes: what the postings say, with "not stated" kept apart rather than read as a no.
+const VISA_LANE = { "no sponsorship": 0, "authorization required": 1, sponsors: 2 } as const;
+const VISA_NONE = -1.2;
 const logTicks = ([a, b]: [number, number]) =>
   [1, 2.5, 5].flatMap((k) => [0, 1, 2, 3, 4, 5, 6].map((e) => k * 10 ** e)).filter((t) => t >= a && t <= b).sort((x, y) => x - y);
 
 const AXES: Record<AxisKey, Axis> = {
+  pay: {
+    label: "Intern pay a month, as posted", short: "Intern pay",
+    get: (c) => payPoint(c) ?? { v: PAY_NONE },
+    fmt: (v) => (v <= PAY_NONE ? "not stated" : fmtMonthly(v)),
+    ticks: () => [PAY_NONE, ...Array.from({ length: Math.floor((PAY_MAX - PAY_FIRST) / PAY_STEP) + 1 }, (_, i) => PAY_FIRST + i * PAY_STEP)],
+  },
+  visa: {
+    label: "Visa sponsorship, as a posting states it", short: "Visa sponsorship",
+    get: (c) => ({ v: c.intern?.sponsorship ? VISA_LANE[c.intern.sponsorship.stance] : VISA_NONE }),
+    fmt: (v) => (v === VISA_NONE ? "not stated" : ["no", "needs auth", "yes"][Math.round(v)]),
+    ticks: () => [VISA_NONE, 0, 1, 2],
+  },
   appOpen: {
     label: "When applications usually open", short: "Applications open",
     get: (c) => {
@@ -40,8 +67,6 @@ const AXES: Record<AxisKey, Axis> = {
     fmt: (v) => (v >= NO_PROGRAM - 0.5 ? "none" : SEASON_MONTHS[[...SEASON_MONTHS.keys()].findLast((i) => monthStartWeek(i, cycle) <= v + 0.5) ?? 0]),
     ticks: () => [1, 3, 5, 7, 9].map((i) => monthStartWeek(i, cycle)).concat(NO_PROGRAM),
   },
-  b2bUser: { label: "Who uses it: consumers → businesses", short: "Who uses it", get: (c) => range(c.b2bUser), fmt: (v) => `${v}%`, ticks: () => [0, 25, 50, 75, 100] },
-  b2bPayer: { label: "Who pays: consumers → businesses", short: "Who pays", get: (c) => range(c.b2bPayer), fmt: (v) => `${v}%`, ticks: () => [0, 25, 50, 75, 100] },
   growth: { label: "Revenue growth, year over year", short: "Revenue growth", log: true, get: (c) => range(c.growth), fmt: (v) => `${v}%`, ticks: logTicks },
   marketCap: { label: "Market value ($)", short: "Market value", log: true, get: (c) => range(c.marketCap), fmt: fmtCap, ticks: (d) => logTicks(d).filter((t) => String(t)[0] !== "5") },
   headcount: { label: "Employees", short: "Employees", log: true, get: (c) => range(c.headcount), fmt: fmtCount, ticks: (d) => logTicks(d).filter((t) => String(t)[0] === "1") },
@@ -58,7 +83,8 @@ function domainFor(k: AxisKey): [number, number] {
   const a = AXES[k];
   if (k === "appOpen") return [0, SEASON_WEEKS];
   if (k === "office") return [-2.2, 5.4];
-  if (!a.log) return [0, 100];
+  if (k === "pay") return [PAY_NONE - PAY_STEP / 2, PAY_MAX * 1.04];
+  if (k === "visa") return [VISA_NONE - 0.5, 2.5];
   const vals = companies.flatMap((c) => { const p = a.get(c); return [p.v, p.lo ?? p.v, p.hi ?? p.v]; }).filter((v) => v > 0);
   return [Math.min(...vals) / 1.5, Math.max(...vals) * 1.5];
 }
@@ -74,8 +100,11 @@ export default function Explorer() {
   // Animate only when the reader changes an axis, not when the chart first measures itself or resizes.
   const [animateAt, setAnimateAt] = useState<number | null>(null);
   const narrow = W < 560;
+  const fs = narrow ? 11 : 12;
   const H = Math.round(Math.min(560, narrow ? W * 1.1 : W * 0.74));
-  const M = { l: narrow ? 46 : 58, r: 14, t: 30, b: 44 };
+  // Leave room on the left for the longest vertical-axis label, e.g. "not stated".
+  const yLabel = Math.max(...(AXES[y].ticks?.(domainFor(y)) ?? []).map((t) => AXES[y].fmt(t).length));
+  const M = { l: Math.max(narrow ? 46 : 58, Math.round(yLabel * (fs - 1) * 0.62 + 12)), r: 14, t: 30, b: 44 };
   const waves = useMemo(() => Object.fromEntries(companies.map((c) => [c.id, waveOf(hiring[c.id], cycle)])) as Record<string, Wave>, []);
 
   const { sx, sy, nodes } = useMemo(() => {
@@ -106,11 +135,9 @@ export default function Explorer() {
   const ax = AXES[x], ay = AXES[y];
   const xt = ax.ticks?.(sx.domain() as [number, number]) ?? sx.ticks(5);
   const yt = ay.ticks?.(sy.domain() as [number, number]) ?? sy.ticks(5);
-  const isDefault = x === "b2bUser" && y === "growth";
-  const growthMid = useMemo(() => { const g = companies.map((c) => c.growth.value).sort((a, b) => a - b); return g[Math.floor(g.length / 2)]; }, []);
   const capAsOf = latest(companies.filter((c) => c.marketCap.kind === "market cap").map((c) => c.marketCap.asOf));
   const sel = companies.find((c) => c.id === selected)!;
-  const fs = narrow ? 11 : 12;
+  const shown = ([x, y] as AxisKey[]).filter((k, i, a) => (k === "pay" || k === "visa") && a.indexOf(k) === i);
 
   const axisSelect = (value: AxisKey, set: (k: AxisKey) => void, label: string) => (
     <select className="select" value={value} onChange={(e) => { setAnimateAt(W); set(e.target.value as AxisKey); }} aria-label={label}>
@@ -140,16 +167,6 @@ export default function Explorer() {
                 <text x={M.l - 8} y={sy(t) + 4} textAnchor="end" className="tick" style={{ fontSize: fs - 1 }}>{ay.fmt(t)}</text>
               </g>
             ))}
-            {isDefault && (
-              <g className="quads" style={{ fontSize: narrow ? 13 : 16 }}>
-                <line x1={sx(50)} x2={sx(50)} y1={M.t} y2={H - M.b} className="divider" />
-                <line x1={M.l} x2={W - M.r} y1={sy(growthMid)} y2={sy(growthMid)} className="divider" />
-                <text x={M.l + 8} y={M.t + 14}>Consumer, fast</text>
-                <text x={W - M.r - 6} y={M.t + 14} textAnchor="end">Business, fast</text>
-                <text x={M.l + 8} y={H - M.b - 8}>Consumer, steady</text>
-                <text x={W - M.r - 6} y={H - M.b - 8} textAnchor="end">Business, steady</text>
-              </g>
-            )}
             <g className="whiskers">
               {nodes.map((d) => {
                 const px = ax.get(d.c), py = ay.get(d.c), dx = d.x - d.tx, dy = d.y - d.ty;
@@ -190,8 +207,10 @@ export default function Explorer() {
         </div>
         <div className="caveat">
           Market values as of {capAsOf}{companies.some((c) => c.marketCap.kind === "private valuation") ? " (private companies: latest reported valuation)" : ""}.
-          Growth is revenue over the latest twelve reported months vs the twelve before, from SEC filings; for private companies it&apos;s reported figures, shown as a range. Consumer/business splits are our estimates from segment
-          reporting, since no company reports them; the bars show the plausible range. On &ldquo;applications open&rdquo;, bars span past cycles.
+          Growth is revenue over the latest twelve reported months vs the twelve before, from SEC filings; for private companies it&apos;s reported figures, shown as a range. On &ldquo;applications open&rdquo;, bars span past cycles.
+          Intern pay is the range stated on US MBA intern postings (this cycle&apos;s where they&apos;re up, otherwise last cycle&apos;s), put on a monthly basis with hourly rates at 40 hours a week; bars span the range.
+          Visa sponsorship is only what a posting says outright; &ldquo;needs auth&rdquo; means you must already be authorized to work in the US.
+          {shown.map((k) => <span key={k}> {AXES[k].short} not stated: {companies.filter((c) => AXES[k].get(c).v === (k === "pay" ? PAY_NONE : VISA_NONE)).map((c) => c.name).join(", ")}.</span>)}
         </div>
       </div>
       <CompanyPanel company={sel} />

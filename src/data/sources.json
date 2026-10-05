@@ -109,6 +109,15 @@
     "quote": "Currently enrolled in a full-time MBA program, graduating between December 2027 and June 2028.",
     "quoteCheck": "browser 2026-10-04"
   },
+  "adobe-R172261-pay": {
+    "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/XMLNAME-2027-MBA-Intern---Product-Manager_R172261",
+    "title": "2027 MBA Intern – Product Manager (R172261): pay range",
+    "publisher": "Adobe Workday",
+    "published": "2026-09-30",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "The U.S. pay range for this position is $37.00 - $50.00 hourly."
+  },
   "adobe-R172262": {
     "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/XMLNAME-2027-MBA-Intern---Product-Marketing-Manager_R172262",
     "title": "2027 MBA Intern – Product Marketing Manager (R172262)",
@@ -218,6 +227,15 @@
     "kind": "primary",
     "quote": "Cohort 1: May 24, 2027"
   },
+  "amazon-10491603-pay": {
+    "url": "https://www.amazon.jobs/en/jobs/10491603/2027-mba-leadership-development-program-mldp-intern",
+    "title": "2027 MBA Leadership Development Program (MLDP) Intern: starting pay",
+    "publisher": "Amazon.jobs",
+    "published": "2026-08-04",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "USA, WA, Seattle - 121,200.00 - 163,900.00 USD annually"
+  },
   "amazon-10491935": {
     "url": "https://www.amazon.jobs/en/jobs/10491935/2027-amazon-leadership-accelerator-ala-product-manager-internship",
     "title": "2027 Amazon Leadership Accelerator (ALA) Product Manager Internship",
@@ -236,6 +254,15 @@
     "kind": "primary",
     "quote": "Are you a MBA candidate ready to transform the world of finance?"
   },
+  "amazon-10492198-pay": {
+    "url": "https://www.amazon.jobs/en/jobs/10492198/2027-mba-finance-leadership-development-program-fldp-internship",
+    "title": "2027 MBA Finance Leadership Development Program (FLDP) Internship: starting pay",
+    "publisher": "Amazon.jobs",
+    "published": "2026-08-04",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "USA, WA, Seattle - 95,400.00 - 163,200.00 USD annually"
+  },
   "amazon-10493144": {
     "url": "https://www.amazon.jobs/en/jobs/10493144",
     "title": "2027 MBA Marketing Manager (MM) Internship",
@@ -253,6 +280,15 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": "Currently enrolled in MBA program with expected graduation conferral date"
+  },
+  "amazon-10509639-team": {
+    "url": "https://www.amazon.jobs/en/jobs/10509639",
+    "title": "Product Manager Technical (PMT) Intern - Summer 2027: team placement",
+    "publisher": "Amazon.jobs",
+    "published": "2026-08-20",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Role and team placement are based on business needs"
   },
   "amazon-10k": {
     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
@@ -363,6 +399,24 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": "we're going to make this new expectation active on January 2, 2025"
+  },
+  "amazon-layoffs-2025-10": {
+    "url": "https://www.aboutamazon.com/news/company-news/amazon-workforce-reduction",
+    "title": "An update from SVP Beth Galetti on Amazon workforce reduction",
+    "publisher": "Amazon",
+    "published": "2025-10-28",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "an overall reduction in our corporate workforce of approximately 14,000 roles"
+  },
+  "amazon-layoffs-2026-01": {
+    "url": "https://www.aboutamazon.com/news/company-news/amazon-layoffs-corporate-jan-2026",
+    "title": "A message from Amazon on recent layoffs: update on our organization",
+    "publisher": "Amazon",
+    "published": "2026-01-28",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "The reductions we are making today will impact approximately 16,000 roles across Amazon"
   },
   "amazon-mba-programs": {
     "url": "https://www.amazon.jobs/content/en/career-programs/university/mba",
@@ -475,6 +529,33 @@
     "kind": "primary",
     "quote": null
   },
+  "apple-2026-mba-internships-pool": {
+    "url": "https://jobs.apple.com/en-us/details/200676091-3810/mba-internships",
+    "title": "MBA Internships (role 200676091-3810): Pay & Benefits note",
+    "publisher": "Apple Careers",
+    "published": "2026-08-05",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "This posting is not for a specific job opening"
+  },
+  "apple-headcount-flat-appleinsider-2026-09": {
+    "url": "https://appleinsider.com/articles/26/09/29/small-layoffs-and-budget-cuts-are-hitting-apple-with-more-expected",
+    "title": "Small layoffs and budget cuts are hitting Apple, with more expected",
+    "publisher": "AppleInsider",
+    "published": "2026-09-29",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "it's said that the headcount is being kept flat."
+  },
+  "apple-layoffs-techcrunch-2026-08": {
+    "url": "https://techcrunch.com/2026/08/21/apple-is-reportedly-cutting-hundreds-of-jobs-from-siri-vision-pro-teams/",
+    "title": "Apple is reportedly cutting hundreds of jobs from Siri, Vision Pro teams",
+    "publisher": "TechCrunch",
+    "published": "2026-08-21",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Over 200 positions, all told, have been cut, sources told Bloomberg"
+  },
   "apple-xbrl": {
     "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
     "title": "Apple Inc. XBRL company facts (10-Q/10-K revenue, dei shares outstanding)",
@@ -558,6 +639,24 @@
     "kind": "secondary",
     "quote": "first-year MBA students (graduating Spring 2027)"
   },
+  "builtin-airbnb-sfa-2026-pay": {
+    "url": "https://www.builtinsf.com/job/strategic-finance-analytics-intern-mba/8042721",
+    "title": "Strategic Finance & Analytics Intern (MBA/MS) - Airbnb: pay",
+    "publisher": "Built In San Francisco",
+    "published": "2026-02-09",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "$48 per hour"
+  },
+  "builtin-airbnb-sfa-2026-team": {
+    "url": "https://www.builtinsf.com/job/strategic-finance-analytics-intern-mba/8042721",
+    "title": "Strategic Finance & Analytics Intern (MBA/MS) - Airbnb: team placement",
+    "publisher": "Built In San Francisco",
+    "published": "2026-02-09",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "will be dependent on the team you are placed in"
+  },
   "builtin-nvidia-corpdev-2026": {
     "url": "https://www.builtinsf.com/job/corporate-development-mba-intern-summer-2026/7468385",
     "title": "Corporate Development MBA Intern - Summer 2026 - NVIDIA | Built In San Francisco",
@@ -566,6 +665,15 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": "Applications for this job will be accepted at least until October 27, 2025."
+  },
+  "builtin-nvidia-corpdev-2026-pay": {
+    "url": "https://www.builtinsf.com/job/corporate-development-mba-intern-summer-2026/7468385",
+    "title": "Corporate Development MBA Intern - Summer 2026 - NVIDIA: pay",
+    "publisher": "Built In San Francisco",
+    "published": "2025-11-18",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "The hourly rate for our interns is 27 USD - 82 USD."
   },
   "builtin-nvidia-treasury-2026": {
     "url": "https://www.builtinsf.com/job/treasury-analyst-mba-intern-summer-2026/7519457",
@@ -585,14 +693,32 @@
     "kind": "secondary",
     "quote": null
   },
-  "cisco-10k-customers": {
-    "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm",
-    "title": "Cisco Systems Form 10-K FY2026, Business overview",
-    "publisher": "Cisco Systems / SEC EDGAR",
-    "published": "2026-09-02",
+  "builtinnyc-airbnb-aa-2026-cpt": {
+    "url": "https://www.builtinnyc.com/job/advanced-analytics-intern/8279170",
+    "title": "Advanced Analytics Intern (MS/MBA) - Airbnb: work authorization",
+    "publisher": "Built In NYC",
+    "published": "2026-02-17",
     "accessed": "2026-10-04",
-    "kind": "primary",
-    "quote": "Our customers include businesses of all sizes, public institutions, governments, and service providers"
+    "kind": "secondary",
+    "quote": "(CPT/OPT with 2-year STEM extension is accepted)"
+  },
+  "builtinnyc-airbnb-aa-2026-pay": {
+    "url": "https://www.builtinnyc.com/job/advanced-analytics-intern/8279170",
+    "title": "Advanced Analytics Intern (MS/MBA) - Airbnb: pay",
+    "publisher": "Built In NYC",
+    "published": "2026-02-17",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "$40 - $48 per hour"
+  },
+  "builtinnyc-airbnb-aa-2026-remote": {
+    "url": "https://www.builtinnyc.com/job/advanced-analytics-intern/8279170",
+    "title": "Advanced Analytics Intern (MS/MBA) - Airbnb: location",
+    "publisher": "Built In NYC",
+    "published": "2026-02-17",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "This position is US - Remote Eligible."
   },
   "cisco-10k-fy26": {
     "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm",
@@ -666,6 +792,15 @@
     "kind": "secondary",
     "quote": null
   },
+  "cisco-li-strategy-2026-team": {
+    "url": "https://www.linkedin.com/jobs/view/4328844944",
+    "title": "Strategy and Planning Manager MBA (Intern) United States: team (text via LinkedIn guest API)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Joining our Corporate Strategy team offers the opportunity to solve complex problems"
+  },
   "cisco-mcap-cmc": {
     "url": "https://companiesmarketcap.com/cisco/marketcap/",
     "title": "Cisco market capitalization",
@@ -692,6 +827,15 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": null
+  },
+  "cisco-path-forward-2026-05": {
+    "url": "https://blogs.cisco.com/news/our-path-forward",
+    "title": "Our Path Forward",
+    "publisher": "Cisco Blogs",
+    "published": "2026-05-13",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "reduction of our overall workforce in Q4 by fewer than 4,000 jobs"
   },
   "cisco-req-1405091": {
     "url": "https://jobs.cisco.com/jobs/Register?projectId=1405091",
@@ -773,6 +917,24 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": null
+  },
+  "cisco-wayup-finance-mba-assign": {
+    "url": "https://www.wayup.com/i-Computer-Networking-j-Financial-Analyst-MBA-Intern-United-States-Cisco-478524417990946/",
+    "title": "Cisco: Financial Analyst MBA (Intern) United States: placement",
+    "publisher": "WayUp",
+    "published": "2025-03-13",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Each intern will be assigned to a specific role and set of deliverables."
+  },
+  "cisco-wayup-finance-mba-visa": {
+    "url": "https://www.wayup.com/i-Computer-Networking-j-Financial-Analyst-MBA-Intern-United-States-Cisco-478524417990946/",
+    "title": "Cisco: Financial Analyst MBA (Intern) United States: sponsorship",
+    "publisher": "WayUp",
+    "published": "2025-03-13",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "without visa support or sponsorship"
   },
   "cisco-wayup-sustainability": {
     "url": "https://www.wayup.com/i-Computer-Networking-j-Sustainability-Analyst-MBA-Intern-United-States-Cisco-34802783052154/",
@@ -901,15 +1063,6 @@
     "kind": "primary",
     "quote": "As of January 30, 2026, we had approximately 97,000 employees."
   },
-  "dell-10k-other": {
-    "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000008/dell-20260130.htm",
-    "title": "Dell Technologies Form 10-K FY2026, segment note",
-    "publisher": "Dell Technologies / SEC EDGAR",
-    "published": "2026-03-16",
-    "accessed": "2026-10-04",
-    "kind": "primary",
-    "quote": "Corporate and other consists of results of divested businesses or non-reportable segments"
-  },
   "dell-10q-q2fy27": {
     "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000046/dell-20260731.htm",
     "title": "Dell Technologies Form 10-Q for quarter ended July 31, 2026",
@@ -936,6 +1089,15 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": "starting March 3rd for all employees that live near the office"
+  },
+  "dell-headcount-proactive-2026-03": {
+    "url": "https://finance.yahoo.com/news/dell-shrinks-workforce-11-000-153300870.html",
+    "title": "Dell shrinks workforce by 11,000 in fiscal 2026 amid ongoing restructuring",
+    "publisher": "Proactive via Yahoo Finance",
+    "published": "2026-03-17",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "reduced its workforce by roughly 11,000 employees in fiscal 2026"
   },
   "dell-how-we-hire": {
     "url": "https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/careers/pages/how-we-hire",
@@ -964,6 +1126,15 @@
     "kind": "secondary",
     "quote": null
   },
+  "dell-li-pm-mba-2025-team": {
+    "url": "https://www.linkedin.com/jobs/view/product-management-mba-internship-at-dell-technologies-4373210751",
+    "title": "Product Management MBA Internship - Dell Technologies: team (text via LinkedIn guest API)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "MBA Intern on our Product Management team in Round Rock, TX or Hopkinton, MA"
+  },
   "dell-li-pmm-grad-2025": {
     "url": "https://www.linkedin.com/jobs/view/dell-technologies-product-marketing-graduate-intern-at-dell-technologies-4298149911",
     "title": "Dell Technologies Product Marketing Graduate Intern (LinkedIn, closed; shown as posted '1 year ago' on 2026-10-04)",
@@ -972,6 +1143,15 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": null
+  },
+  "dell-li-pmm-grad-2025-pay": {
+    "url": "https://www.linkedin.com/jobs/view/dell-technologies-product-marketing-graduate-intern-at-dell-technologies-4298149911",
+    "title": "Dell Technologies Product Marketing Graduate Intern: pay (text via LinkedIn guest API)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "pay range for this position is $31.88 - $50.00 per hour"
   },
   "dell-mcap-cmc": {
     "url": "https://companiesmarketcap.com/dell/marketcap/",
@@ -1035,6 +1215,15 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": null
+  },
+  "dell-wayup-genbiz-mba-2024-visa": {
+    "url": "https://www.wayup.com/i-Information-Technology-and-Services-j-General-Business-Internship-MBA-Dell-Technologies-794143812579173/",
+    "title": "Dell Technologies: General Business Internship MBA: sponsorship",
+    "publisher": "WayUp",
+    "published": "2024-09-12",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "should not require, now or in the future, sponsorship for employment visa status"
   },
   "dell-wayup-mba-pm-2024": {
     "url": "https://www.wayup.com/i-Information-Technology-and-Services-j-MBA-Product-Management-Internship-Dell-Technologies-112942384136146/",
@@ -1351,6 +1540,24 @@
     "kind": "archive",
     "quote": null
   },
+  "google-buyouts-gbo-2026-02": {
+    "url": "https://www.business-standard.com/world-news/google-voluntary-buyouts-gbo-staff-exit-package-us-126021101185_1.html",
+    "title": "Google offers exit package to select GBO staff who are 'ready to move on'",
+    "publisher": "Business Standard",
+    "published": "2026-02-11",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Google is once again offering voluntary buyouts to its employees in select teams"
+  },
+  "google-cloud-layoffs-bi-2026-06": {
+    "url": "https://www.aol.com/articles/google-quietly-laying-off-staff-223801000.html",
+    "title": "Google is quietly laying off staff in its cloud division (Business Insider, syndicated)",
+    "publisher": "Business Insider via AOL",
+    "published": "2026-06-04",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "It's unclear exactly how many people were impacted"
+  },
   "google-how-we-hire": {
     "url": "https://www.google.com/about/careers/applications/how-we-hire/",
     "title": "Our hiring process - Google Careers",
@@ -1413,6 +1620,42 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": null
+  },
+  "google-mba-intern-summer-2026-wb-auth": {
+    "url": "https://web.archive.org/web/20251030234741/https://www.google.com/about/careers/applications/jobs/results/121416951455982278-mba-intern-summer-2026",
+    "title": "Wayback capture 2025-10-30: MBA Intern, Summer 2026 (US): work authorization",
+    "publisher": "Internet Archive",
+    "published": "2025-10-30",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "located and have legal authorization to work in the United States"
+  },
+  "google-mba-intern-summer-2026-wb-pay": {
+    "url": "https://web.archive.org/web/20251030234741/https://www.google.com/about/careers/applications/jobs/results/121416951455982278-mba-intern-summer-2026",
+    "title": "Wayback capture 2025-10-30: MBA Intern, Summer 2026 (US): pay",
+    "publisher": "Internet Archive",
+    "published": "2025-10-30",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "The US base salary range for this full-time position is $96,000-$125,000."
+  },
+  "google-mba-intern-summer-2026-wb-places": {
+    "url": "https://web.archive.org/web/20251030234741/https://www.google.com/about/careers/applications/jobs/results/121416951455982278-mba-intern-summer-2026",
+    "title": "Wayback capture 2025-10-30: MBA Intern, Summer 2026 (US): locations",
+    "publisher": "Internet Archive",
+    "published": "2025-10-30",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "Mountain View, CA, USA; Atlanta, GA, USA; Chicago, IL, USA"
+  },
+  "google-mba-intern-summer-2026-wb-team": {
+    "url": "https://web.archive.org/web/20251030234741/https://www.google.com/about/careers/applications/jobs/results/121416951455982278-mba-intern-summer-2026",
+    "title": "Wayback capture 2025-10-30: MBA Intern, Summer 2026 (US): team matching",
+    "publisher": "Internet Archive",
+    "published": "2025-10-30",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "Candidates will be matched with teams based on their background and skills."
   },
   "google-xbrl": {
     "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
@@ -1549,6 +1792,15 @@
     "kind": "primary",
     "quote": null
   },
+  "ibm-layoffs-cnbc-2025-11": {
+    "url": "https://www.cnbc.com/2025/11/04/ibm-layoffs-fourth-quarter.html",
+    "title": "IBM layoffs: Cutting thousands of jobs in the fourth quarter",
+    "publisher": "CNBC",
+    "published": "2025-11-04",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "will impact a low single-digit percentage of our global workforce"
+  },
   "ibm-posting-128929": {
     "url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=128929",
     "title": "2027 FLDP Summer Intern - 128929",
@@ -1558,6 +1810,15 @@
     "kind": "primary",
     "quote": "Currently enrolled in an MBA degree program at an Accredited College",
     "quoteCheck": "browser 2026-10-04"
+  },
+  "ibm-posting-128929-visa": {
+    "url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=128929",
+    "title": "2027 FLDP Summer Intern - 128929: work authorization (text read via IBM's careers search API)",
+    "publisher": "IBM",
+    "published": "2026-08-17",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "ability to work in the US without current or future need for sponsorship"
   },
   "ibm-posting-130031": {
     "url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=130031",
@@ -1588,6 +1849,15 @@
     "kind": "primary",
     "quote": "You are pursuing an MBA or similar graduate degree",
     "quoteCheck": "browser 2026-10-04"
+  },
+  "ibm-posting-133909-team": {
+    "url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=133909",
+    "title": "AI-First Transformation – Strategy Consultant Intern - 133909: team choice",
+    "publisher": "IBM",
+    "published": "2026-09-23",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "During the interview process, you can indicate your preferred team."
   },
   "ibm-rto-computerworld-2023": {
     "url": "https://www.computerworld.com/article/1635061/ibms-software-unit-issues-global-return-to-office-mandate.html",
@@ -1763,6 +2033,24 @@
     "kind": "primary",
     "quote": "Must be enrolled in an MBA program graduating in May/June 2028"
   },
+  "intuit-corpstrat-2027-pay": {
+    "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-corporate-strategy-and-development-intern/27595/101313096080",
+    "title": "Summer 2027: MBA Corporate Strategy & Development Intern: pay range",
+    "publisher": "Intuit Careers",
+    "published": "2026-08-17",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Mountain View $37.5 - $68"
+  },
+  "intuit-finstrat-gbsg-2027-auth": {
+    "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-strategic-finance-intern-gbsg/27595/101319962576",
+    "title": "Summer 2027: MBA Strategic Finance Intern, GBSG: work authorization",
+    "publisher": "Intuit Careers",
+    "published": "2026-09-10",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Must be legally authorized to work in the United States on a full-time basis"
+  },
   "intuit-hiring-process": {
     "url": "https://www.intuit.com/careers/hiring-process",
     "title": "Hiring Process | Intuit Careers",
@@ -1781,6 +2069,15 @@
     "kind": "primary",
     "quote": "teams are expected to work onsite three days per week"
   },
+  "intuit-layoffs-techcrunch-2026-05": {
+    "url": "https://techcrunch.com/2026/05/20/intuit-to-lay-off-over-3000-employees-to-refocus-on-ai/",
+    "title": "Intuit to lay off over 3,000 employees to refocus on AI",
+    "publisher": "TechCrunch",
+    "published": "2026-05-20",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Intuit is letting 17% of its staff go, or about 3,000 people"
+  },
   "intuit-pm-2027": {
     "url": "https://jobs.intuit.com/job/multiple-locations/summer-2027-product-manager-intern/27595/100620927632",
     "title": "Summer 2027: Product Manager Intern (Job ID 24123)",
@@ -1789,6 +2086,24 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": "Relevant programs include bachelor's, master’s, MBA, and PhD students"
+  },
+  "intuit-pmm-midmarket-2027-pay": {
+    "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-product-marketing-intern-mid-market/27595/101313096032",
+    "title": "Summer 2027: MBA Product Marketing Intern, Mid Market: pay range",
+    "publisher": "Intuit Careers",
+    "published": "2026-08-18",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Mountain View $29.5 - $56.5"
+  },
+  "intuit-pmm-payments-2027-team": {
+    "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-product-marketing-intern-payments/27595/101313094448",
+    "title": "Summer 2027: MBA Product Marketing Intern, Payments",
+    "publisher": "Intuit Careers",
+    "published": "2026-08-17",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "As a Product Marketing MBA Intern on the Money PMM team"
   },
   "intuit-sando-2027-wayback": {
     "url": "https://web.archive.org/web/20260914220545/https://jobs.intuit.com/job/mountain-view/summer-2027-mba-strategy-and-operations-intern/27595/100620927760",
@@ -1907,6 +2222,15 @@
     "kind": "secondary",
     "quote": null
   },
+  "linkedin-meta-pmm-4062928334-auth": {
+    "url": "https://www.linkedin.com/jobs/view/product-marketing-manager-intern-mba-at-meta-4062928334",
+    "title": "Product Marketing Manager Intern, MBA - Meta: work authorization (text via LinkedIn guest API)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Must obtain work authorization in country of employment at the time of hire"
+  },
   "linkedin-meta-pmm-4120827303": {
     "url": "https://www.linkedin.com/jobs/view/product-marketing-manager-intern-mba-at-meta-4120827303",
     "title": "Product Marketing Manager Intern, MBA (LinkedIn; seen in search)",
@@ -1935,6 +2259,24 @@
     "kind": "secondary",
     "quote": null
   },
+  "linkedin-uber-rp-2026-pay": {
+    "url": "https://www.linkedin.com/jobs/view/2026-risk-and-payments-support-mba-intern-united-states-at-uber-4366257375",
+    "title": "2026 Risk and Payments Support MBA Intern, United States: pay (text via LinkedIn guest API)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "NY-based roles: The base hourly rate amount for this role is USD$54.00 per hour."
+  },
+  "linkedin-uber-rp-2026-team": {
+    "url": "https://www.linkedin.com/jobs/view/2026-risk-and-payments-support-mba-intern-united-states-at-uber-4366257375",
+    "title": "2026 Risk and Payments Support MBA Intern, United States: team (text via LinkedIn guest API)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "join our Global Risk and Payments Support teams"
+  },
   "meta-10k": {
     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
     "title": "Meta Platforms, Inc. Form 10-K (meta-20251231.htm)",
@@ -1943,6 +2285,33 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": "We had a global workforce of 78,865 employees as of December 31, 2025"
+  },
+  "meta-ai-layoffs-techcrunch-2025-10": {
+    "url": "https://techcrunch.com/2025/10/22/meta-cuts-600-ai-jobs-amid-ongoing-reorganization/",
+    "title": "Meta cuts 600 AI jobs amid ongoing reorganization",
+    "publisher": "TechCrunch",
+    "published": "2025-10-22",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "the company will cut about 600 jobs from its superintelligence lab"
+  },
+  "meta-layoffs-npr-2026-04": {
+    "url": "https://www.npr.org/2026/04/23/nx-s1-5797855/meta-layoffs-10-percent-staff",
+    "title": "Meta will lay off 10% of its staff",
+    "publisher": "NPR",
+    "published": "2026-04-23",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Meta will also not hire for 6,000 open roles"
+  },
+  "meta-reality-labs-techcrunch-2026-01": {
+    "url": "https://techcrunch.com/2026/01/14/meta-to-reportedly-lay-off-10-of-reality-labs-staff/",
+    "title": "Meta to reportedly lay off 10% of Reality Labs staff",
+    "publisher": "TechCrunch",
+    "published": "2026-01-14",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Meta is laying off 10% of staff in its Reality Labs division"
   },
   "meta-xbrl": {
     "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json",
@@ -1962,6 +2331,15 @@
     "kind": "primary",
     "quote": "we employed approximately 223,000 people on a full-time basis"
   },
+  "microsoft-buyout-cnbc-2026-04": {
+    "url": "https://www.cnbc.com/2026/04/23/microsoft-plans-first-voluntary-retirement-program-for-us-employees.html",
+    "title": "Microsoft plans first voluntary retirement program for US employees",
+    "publisher": "CNBC",
+    "published": "2026-04-23",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "voluntary employee buyout for up to 7% of U.S. workforce"
+  },
   "microsoft-flexible-work-2025": {
     "url": "https://blogs.microsoft.com/blog/2025/09/09/flexible-work-update/",
     "title": "Flexible work update",
@@ -1979,6 +2357,15 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": "Most interviews include 2-4 conversations with potential teammates and cross-functional colleagues"
+  },
+  "microsoft-layoffs-2026-07": {
+    "url": "https://blogs.microsoft.com/blog/2026/07/06/the-latest-in-our-company-transformation/",
+    "title": "The latest in our company transformation",
+    "publisher": "Official Microsoft Blog",
+    "published": "2026-07-06",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Today we are eliminating around 4,800 roles, about 2.1% of our global workforce"
   },
   "microsoft-student-interviewing": {
     "url": "https://careers.microsoft.com/v2/global/en/hiring-tips/student-interviewing",
@@ -2016,6 +2403,15 @@
     "kind": "primary",
     "quote": null
   },
+  "ms-200055972-pay": {
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393556999301",
+    "title": "Finance Manager: MBA Internship Opportunities (200055972): pay range",
+    "publisher": "Microsoft Careers",
+    "published": "2026-09-21",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "The base pay range for this internship is USD $5,190.00 - $10,250.00 per month."
+  },
   "ms-200055974": {
     "url": "https://apply.careers.microsoft.com/careers/job/1970393556999320",
     "title": "Treasury Finance Manager: MBA Internship Opportunities (200055974)",
@@ -2033,6 +2429,15 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": null
+  },
+  "ms-200058904-team": {
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557019360",
+    "title": "Business Program Management INTERN (200058904): team",
+    "publisher": "Microsoft Careers",
+    "published": "2026-09-30",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "As an MBA intern on the Surface Business Team"
   },
   "ms-2023-finance-archive": {
     "url": "https://web.archive.org/web/20230904025911/https://gcsservices.careers.microsoft.com/search/api/v1/search?lc=United%20States&l=en_us&pg=1&pgSz=20&o=Relevance&flt=true",
@@ -2151,6 +2556,15 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": null
+  },
+  "nvidia-eightfold-vc-2026-team": {
+    "url": "https://jobs.nvidia.com/api/apply/v2/jobs/893392538320?domain=nvidia.com",
+    "title": "NVIDIA careers record: Venture Associate MBA Intern - Summer 2026 (JR2010306): team",
+    "publisher": "NVIDIA",
+    "published": "2025-12-17",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "to be a core member of our small investment team"
   },
   "nvidia-intern-benefits": {
     "url": "https://www.nvidia.com/en-us/benefits/interns/",
@@ -2377,6 +2791,15 @@
     "kind": "secondary",
     "quote": null
   },
+  "paypal-builtin-bizops-2025-auth": {
+    "url": "https://www.builtinchicago.org/job/mba-business-operations-intern/7406279",
+    "title": "MBA - Business Operations Intern - PayPal: work authorization",
+    "publisher": "Built In Chicago",
+    "published": "2025-10-15",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Must be able to obtain authorization to work in the U.S. for the summer."
+  },
   "paypal-builtin-corpdev-2025": {
     "url": "https://www.builtinsf.com/job/mba-corporate-development-intern/7594895",
     "title": "MBA - Corporate Development Intern - PayPal (removed Nov 11, 2025)",
@@ -2385,6 +2808,15 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": null
+  },
+  "paypal-builtin-corpdev-2025-pay": {
+    "url": "https://www.builtinsf.com/job/mba-corporate-development-intern/7594895",
+    "title": "MBA - Corporate Development Intern - PayPal: pay",
+    "publisher": "Built In San Francisco",
+    "published": "2025-11-04",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "The U.S. national hourly pay range for this role is $22 to $53."
   },
   "paypal-builtin-product-growth-2025": {
     "url": "https://builtin.com/job/product-growth-mba-intern/8203701",
@@ -2412,6 +2844,15 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": null
+  },
+  "paypal-builtin-ventures-ops-2025-pay": {
+    "url": "https://www.builtinnyc.com/job/mba-ventures-operations-intern/7111368",
+    "title": "MBA - Ventures Operations Intern - PayPal: pay",
+    "publisher": "Built In NYC",
+    "published": "2025-09-11",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "The U.S national annual pay range for this role is $57/hr"
   },
   "paypal-careercom-pm-2023": {
     "url": "https://www.career.com/job/paypal/product-manager-mba-intern/j202312081959169303530",
@@ -2448,6 +2889,24 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": "The US and Canada recruitment season suns from August to March each year."
+  },
+  "paypal-layoffs-paymentsdive-2026-09": {
+    "url": "https://www.paymentsdive.com/news/paypal-employee-job-cuts-restructuring-enrique-lores/829314/",
+    "title": "PayPal makes job cuts",
+    "publisher": "Payments Dive",
+    "published": "2026-09-01",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "PayPal Holdings has eliminated an unknown number of jobs this week"
+  },
+  "paypal-layoffs-quartz-2026-05": {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/paypal-layoffs-ceo-cuts-20-154944985.html",
+    "title": "PayPal layoffs: New CEO cuts 20% of workforce in Q1 2026",
+    "publisher": "Quartz via Yahoo Finance",
+    "published": "2026-05-06",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "PayPal plans to eliminate about 20% of its workforce"
   },
   "paypal-linkedin-b2bgtm-2023": {
     "url": "https://www.linkedin.com/jobs/view/b2b-product-go-to-market-mba-intern-at-paypal-3838166847",
@@ -2648,6 +3107,24 @@
     "kind": "primary",
     "quote": null
   },
+  "salesforce-layoffs-bi-2026-02": {
+    "url": "https://www.aol.com/news/salesforce-quietly-laid-off-workers-021344579.html",
+    "title": "Salesforce quietly laid off workers in a new round of cuts (Business Insider, syndicated)",
+    "publisher": "Business Insider via AOL",
+    "published": "2026-02-10",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "The cut involved fewer than 1,000 roles"
+  },
+  "salesforce-layoffs-tnw-2026-08": {
+    "url": "https://thenextweb.com/news/salesforce-133-layoffs-washington-california-ai-restructuring",
+    "title": "Salesforce is cutting 133 more jobs. The filings don't mention AI",
+    "publisher": "The Next Web",
+    "published": "2026-08-07",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Salesforce is cutting another 133 jobs, including 59 in Washington state"
+  },
   "salesforce-uni-us-canada": {
     "url": "https://www.salesforce.com/company/careers/university-recruiting/us-canada/",
     "title": "US and Canada Interview Process",
@@ -2756,6 +3233,15 @@
     "kind": "secondary",
     "quote": null
   },
+  "servicenow-layoffs-investing-2026-07": {
+    "url": "https://finance.yahoo.com/technology/articles/exclusive-servicenow-cut-1k-jobs-183242920.html",
+    "title": "Exclusive: ServiceNow to cut up to 1K jobs as part of planned rightsizing",
+    "publisher": "Investing.com via Yahoo Finance",
+    "published": "2026-07-30",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "could cut up to 1,000 roles this year"
+  },
   "servicenow-li-inbound-2026": {
     "url": "https://www.linkedin.com/jobs/view/sr-inbound-product-manager-intern-mba-summer-2026-at-servicenow-4300092340",
     "title": "Sr. Inbound Product Manager Intern (MBA) - Summer 2026",
@@ -2801,6 +3287,24 @@
     "kind": "primary",
     "quote": null
   },
+  "servicenow-sr-corpdev-2026-team": {
+    "url": "https://jobs.smartrecruiters.com/ServiceNow/744000083373755-corporate-business-development-mba-intern-summer-2026",
+    "title": "Corporate Business Development MBA Intern - Summer 2026: team (text via SmartRecruiters API)",
+    "publisher": "SmartRecruiters (ServiceNow)",
+    "published": "2025-09-23",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "MBA intern to join our Corporate Development team for the summer!"
+  },
+  "servicenow-sr-corpdev-2026-visa": {
+    "url": "https://jobs.smartrecruiters.com/ServiceNow/744000083373755-corporate-business-development-mba-intern-summer-2026",
+    "title": "Corporate Business Development MBA Intern - Summer 2026: sponsorship (text via SmartRecruiters API)",
+    "publisher": "SmartRecruiters (ServiceNow)",
+    "published": "2025-09-23",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "This role is not eligible for employer-based sponsorship."
+  },
   "servicenow-sr-corpstrategy-2026": {
     "url": "https://jobs.smartrecruiters.com/ServiceNow/744000083376235-mba-corporate-strategy-intern-summer-2026",
     "title": "MBA Corporate Strategy Intern - Summer 2026 (redirects to 2026-02-20 repost 744000110296275)",
@@ -2828,6 +3332,24 @@
     "kind": "primary",
     "quote": null
   },
+  "servicenow-sr-finance-mba-2026-pay": {
+    "url": "https://jobs.smartrecruiters.com/ServiceNow/744000083356169-finance-intern-mba-summer-2026",
+    "title": "Finance Intern - MBA - Summer 2026: pay (text via SmartRecruiters API)",
+    "publisher": "SmartRecruiters (ServiceNow)",
+    "published": "2025-09-23",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "we offer a base pay of $58.50 - $75/hr, plus equity"
+  },
+  "servicenow-sr-finance-mba-2026-placement": {
+    "url": "https://jobs.smartrecruiters.com/ServiceNow/744000083356169-finance-intern-mba-summer-2026",
+    "title": "Finance Intern - MBA - Summer 2026: placement (text via SmartRecruiters API)",
+    "publisher": "SmartRecruiters (ServiceNow)",
+    "published": "2025-09-23",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "you will be placed in a key finance function through a matching process"
+  },
   "servicenow-sr-pm-masters-2026": {
     "url": "https://jobs.smartrecruiters.com/ServiceNow/744000081686625-product-manager-intern-masters-degree-summer-2026",
     "title": "Product Manager Intern (Masters Degree) - Summer 2026 (SmartRecruiters API record)",
@@ -2845,6 +3367,15 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": null
+  },
+  "servicenow-sr-pmm-mba-2026-pay": {
+    "url": "https://jobs.smartrecruiters.com/ServiceNow/744000093329375-sr-product-marketing-specialist-intern-mba",
+    "title": "Sr Product Marketing Specialist Intern - MBA: pay (text via SmartRecruiters API)",
+    "publisher": "SmartRecruiters (ServiceNow)",
+    "published": "2025-11-12",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "we offer a base pay of $53.13/hr, plus equity"
   },
   "servicenow-sr-strategy-specialist-2026": {
     "url": "https://careers.servicenow.com/jobs/744000107843625/sr-business-strategy-specialist-intern-mba-summer-2026/",
@@ -2928,6 +3459,15 @@
     "quote": "This posting will close on Oct 20th",
     "quoteCheck": "browser 2026-10-04"
   },
+  "sf-JR362499-team": {
+    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant--Healthcare---Life-Sciences-_JR362499-1",
+    "title": "Summer 2027 Intern - MBA Business Value & Strategic Selling Consultant (Healthcare & Life Sciences) (JR362499): team",
+    "publisher": "Salesforce Workday",
+    "published": "2026-10-01",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "The Business Value Services team at Salesforce is looking for an MBA intern"
+  },
   "sf-JR362508": {
     "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant--Financial-Services-_JR362508-1",
     "title": "Summer 2027 Intern - MBA Business Value & Strategic Selling Consultant (Financial Services) (JR362508)",
@@ -2938,6 +3478,15 @@
     "quote": "Currently enrolled in an MBA program with an expected graduation of Spring 2028.",
     "quoteCheck": "browser 2026-10-04"
   },
+  "sf-JR362508-visa": {
+    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant--Financial-Services-_JR362508-1",
+    "title": "Summer 2027 Intern - MBA Business Value & Strategic Selling Consultant (Financial Services) (JR362508): sponsorship",
+    "publisher": "Salesforce Workday",
+    "published": "2026-10-01",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "This position is ineligible for visa sponsorship."
+  },
   "sf-JR362509": {
     "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant_JR362509-1",
     "title": "Summer 2027 Intern - MBA Business Value & Strategic Selling Consultant (JR362509)",
@@ -2947,6 +3496,15 @@
     "kind": "primary",
     "quote": "This posting will close on Oct 20th",
     "quoteCheck": "browser 2026-10-04"
+  },
+  "sf-JR362509-pay": {
+    "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/New-York---New-York/Summer-2027-Intern---MBA-Business-Value---Strategic-Selling-Consultant_JR362509-1",
+    "title": "Summer 2027 Intern - MBA Business Value & Strategic Selling Consultant (JR362509): pay range",
+    "publisher": "Salesforce Workday",
+    "published": "2026-10-01",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "The typical base salary range for this position is $46 - $57 per hour."
   },
   "sfchronicle-uber-2026": {
     "url": "https://www.sfchronicle.com/tech/article/uber-layoffs-3300-jobs-22414352.php",
@@ -3029,6 +3587,15 @@
     "kind": "secondary",
     "quote": "simpler and faster company"
   },
+  "tiktok-bellevue-seattletimes-2026-08": {
+    "url": "https://www.seattletimes.com/business/technology/tiktok-lays-off-75-bellevue-workers-mostly-in-e-commerce-division/",
+    "title": "TikTok lays off 75 Bellevue workers, mostly in e-commerce division",
+    "publisher": "The Seattle Times",
+    "published": "2026-08-19",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "TikTok is laying off 75 Bellevue-based employees amid broader restructuring"
+  },
   "tiktok-biggo-2025-mix": {
     "url": "https://finance.biggo.com/news/Li0bqZ0ByH9TLH69BBLF",
     "title": "ByteDance's 2025 Financial Report Revealed: Heavy AI Investment Slashes Profits, Overseas Revenue Share Exceeds 30% for First Time",
@@ -3073,6 +3640,15 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": null
+  },
+  "tiktok-catmgr-la-2027-pay": {
+    "url": "https://lifeattiktok.com/search/7669945864905492741",
+    "title": "Category Manager Intern (TikTok Shop - Operations) - 2027 Summer (MBA), Los Angeles: pay",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "The hourly rate range for this position in the selected city is $38- $38."
   },
   "tiktok-commercialobserver-rto": {
     "url": "https://commercialobserver.com/2026/08/tiktok-employees-5-days-office/",
@@ -3128,6 +3704,15 @@
     "kind": "secondary",
     "quote": null
   },
+  "tiktok-monetization-strategy-ny-2027-pay": {
+    "url": "https://lifeattiktok.com/search/7683559907224930613",
+    "title": "Strategy Intern (Monetization Strategy & Operations) - 2027 Summer (MBA), New York: pay",
+    "publisher": "TikTok",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "The hourly rate range for this position in the selected city is $69.00- $69.00."
+  },
   "tiktok-muse-globalpartnerships-2026summer": {
     "url": "https://www.themuse.com/jobs/tiktok/global-partnerships-intern-tiktok-shop-2026-summer-mba",
     "title": "Global Partnerships Intern (TikTok Shop) - 2026 Summer (MBA) at TikTok",
@@ -3137,6 +3722,15 @@
     "kind": "secondary",
     "quote": null,
     "gone": "2026-10-04"
+  },
+  "tiktok-nashville-techcrunch-2026-08": {
+    "url": "https://techcrunch.com/2026/08/06/tiktok-lays-off-250-employees-shutters-its-nashville-office/",
+    "title": "TikTok lays off 250 employees, shutters its Nashville office",
+    "publisher": "TechCrunch",
+    "published": "2026-08-06",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "TikTok is laying off 250 employees and closing its Nashville office"
   },
   "tiktok-post-affiliate-2026summer": {
     "url": "https://lifeattiktok.com/search/7532382628306962696",
@@ -3300,15 +3894,6 @@
     "kind": "secondary",
     "quote": null
   },
-  "tiktok-sacra": {
-    "url": "https://sacra.com/c/bytedance/",
-    "title": "ByteDance revenue, valuation & funding",
-    "publisher": "Sacra",
-    "published": null,
-    "accessed": "2026-10-04",
-    "kind": "secondary",
-    "quote": null
-  },
   "tiktok-seekingalpha-valuation": {
     "url": "https://seekingalpha.com/news/4556453-bytedance-valued-at-550b-in-proposed-general-atlantic-stake-sale-reuters",
     "title": "ByteDance valued at $550B in proposed General Atlantic stake sale: Reuters",
@@ -3426,6 +4011,24 @@
     "kind": "primary",
     "quote": "Meet the team for a business interview"
   },
+  "uber-layoffs-techcrunch-2026-09": {
+    "url": "https://techcrunch.com/2026/09/02/uber-is-laying-off-10-of-staff-or-3300-people/",
+    "title": "Uber is laying off 10% of staff, or 3,300 people",
+    "publisher": "TechCrunch",
+    "published": "2026-09-02",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Uber is laying off about 3,300 people, or about 10% of its global headcount"
+  },
+  "uber-people-cnbc-2026-06": {
+    "url": "https://www.cnbc.com/2026/06/03/uber-layoffs-people-division-ai.html",
+    "title": "Uber slashes people division by nearly a quarter. CEO says 'changes are necessary'",
+    "publisher": "CNBC",
+    "published": "2026-06-03",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Uber is slashing 23% of jobs in its people division"
+  },
   "uber-product-guide": {
     "url": "https://jobs.uber.com/en/uber-interview-guide/product-interview-guide/",
     "title": "Product Interview Guide",
@@ -3472,6 +4075,15 @@
     "kind": "primary",
     "quote": null
   },
+  "visa-layoffs-cnbc-2026-07": {
+    "url": "https://www.cnbc.com/2026/07/28/visa-is-cutting-7percent-of-employees-in-efficiency-push-as-ai-reshapes-work.html",
+    "title": "Visa is cutting 7% of employees in efficiency push as AI reshapes work",
+    "publisher": "CNBC",
+    "published": "2026-07-28",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "The company plans to eliminate roughly 2,600 positions"
+  },
   "visa-linkedin-finance-2025": {
     "url": "https://www.linkedin.com/jobs/view/finance-mba-intern-summer-2026-at-visa-4323598869",
     "title": "Finance MBA Intern - Summer 2026 (Foster City, CA)",
@@ -3480,6 +4092,15 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": null
+  },
+  "visa-linkedin-finance-2025-placement": {
+    "url": "https://www.linkedin.com/jobs/view/finance-mba-intern-summer-2026-at-visa-4323598869",
+    "title": "Finance MBA Intern - Summer 2026 (Foster City, CA): placement (text via LinkedIn guest API)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Summer Interns are placed in finance functions based on their background"
   },
   "visa-linkedin-pm-2024": {
     "url": "https://www.linkedin.com/jobs/view/product-management-mba-intern-summer-2025-at-visa-4087064097",
@@ -3517,6 +4138,15 @@
     "kind": "secondary",
     "quote": null
   },
+  "visa-linkedin-vca-2025-pay": {
+    "url": "https://www.linkedin.com/jobs/view/visa-consulting-analytics-mba-intern-summer-2026-at-visa-4323598895",
+    "title": "Visa Consulting & Analytics MBA Intern - Summer 2026 (Ashburn, VA): pay (text via LinkedIn guest API)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "estimated hourly range for a new hire into this position is $52.00/hr"
+  },
   "visa-linkedin-vca-ashburn-2025": {
     "url": "https://www.linkedin.com/jobs/view/visa-consulting-analytics-mba-intern-summer-2026-at-visa-4323628279",
     "title": "Visa Consulting & Analytics MBA Intern - Summer 2026 (Ashburn, VA)",
@@ -3553,6 +4183,15 @@
     "kind": "primary",
     "quote": null
   },
+  "visa-sr-pm-2024-visa": {
+    "url": "https://jobs.smartrecruiters.com/Visa/744000028897305-product-management-mba-intern-summer-2025",
+    "title": "Product Management, MBA Intern - Summer 2025: sponsorship (text via SmartRecruiters API)",
+    "publisher": "SmartRecruiters (Visa)",
+    "published": "2024-12-04",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Visa will not sponsor applicants for work visas in connection with this position."
+  },
   "visa-stockanalysis-mcap": {
     "url": "https://stockanalysis.com/stocks/v/market-cap/",
     "title": "Visa (V) Market Cap",
@@ -3570,6 +4209,15 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": null
+  },
+  "visa-wayup-corpstrategy-2025-pay": {
+    "url": "https://www.wayup.com/i-Financial-Services-j-Corporate-Strategy-MBA-Intern-Summer-2026-Visa-90923021631053/",
+    "title": "Visa: Corporate Strategy MBA Intern - Summer 2026: pay",
+    "publisher": "WayUp",
+    "published": "2025-11-21",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "estimated hourly range for a new hire into this position is $60.00/hr."
   },
   "visa-workday-intern-posting-2026": {
     "url": "https://visa.wd5.myworkdayjobs.com/en-US/Visa_Early_Careers/job/US---Foster-City-CA/Staff-Research-Scientist--Intern---PhD-Quantum_REF088578W-1",
@@ -3689,6 +4337,15 @@
     "quote": "Currently enrolled in an MBA program focused on finance, strategic management and/or technology",
     "quoteCheck": "browser 2026-10-04"
   },
+  "waymo-gh-strategic-finance-2027-pay": {
+    "url": "https://careers.withwaymo.com/jobs?gh_jid=8197014",
+    "title": "2027 Summer Intern, MBA, Strategic Finance: hourly MBA pay (text via Greenhouse job board API)",
+    "publisher": "Waymo",
+    "published": "2026-09-14",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "$50 — $50 USD"
+  },
   "waymo-glassdoor-2026-mba-gsm": {
     "url": "https://www.glassdoor.com/job-listing/2026-summer-intern-mba-global-supply-manager-waymo-JV_IC1147431_KO0,44_KE45,50.htm?jl=1009927889689",
     "title": "Waymo hiring 2026 Summer Intern, MBA, Global Supply Manager",
@@ -3759,15 +4416,6 @@
     "published": null,
     "accessed": "2026-10-04",
     "kind": "secondary",
-    "quote": null
-  },
-  "waymo-on-uber": {
-    "url": "https://waymo.com/waymo-on-uber/",
-    "title": "Waymo On Uber | Ride with Waymo in Austin and Atlanta",
-    "publisher": "Waymo",
-    "published": null,
-    "accessed": "2026-10-04",
-    "kind": "primary",
     "quote": null
   },
   "waymo-revelio-headcount": {
@@ -3842,6 +4490,24 @@
     "kind": "primary",
     "quote": null
   },
+  "workday-8k-2026-01": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000004/wday-20260130.htm",
+    "title": "Workday Form 8-K (Item 2.05), event date 2026-01-30",
+    "publisher": "Workday / SEC EDGAR",
+    "published": "2026-02-04",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "the elimination of approximately 2% of Workday’s current workforce"
+  },
+  "workday-8k-2026-09": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000048/wday-20260929.htm",
+    "title": "Workday Form 8-K (Item 2.05)",
+    "publisher": "Workday / SEC EDGAR",
+    "published": "2026-09-29",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "a reduction of approximately 2.5% of Workday’s current workforce"
+  },
   "workday-builtin-pmm-2025": {
     "url": "https://builtin.com/job/product-marketing-manager-intern-mba/4386452",
     "title": "Product Marketing Manager Intern, MBA - Workday",
@@ -3905,6 +4571,24 @@
     "kind": "secondary",
     "quote": null
   },
+  "workday-layoffs-bi-2026-09": {
+    "url": "https://uk.finance.yahoo.com/news/workday-doing-another-round-layoffs-212052410.html",
+    "title": "Workday is doing another round of layoffs (Business Insider, syndicated)",
+    "publisher": "Business Insider via Yahoo Finance",
+    "published": "2026-09-29",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Workday is letting go about 500 employees"
+  },
+  "workday-li-fa-mba-2025-visa": {
+    "url": "https://www.linkedin.com/jobs/view/4340965284",
+    "title": "Financial Analyst MBA Intern - Workday: sponsorship (text via LinkedIn guest API)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "does not sponsor employment visas or consider individuals on time-limited visas"
+  },
   "workday-sa-mcap": {
     "url": "https://stockanalysis.com/stocks/wday/market-cap/",
     "title": "Workday (WDAY) Market Cap",
@@ -3949,6 +4633,15 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": null
+  },
+  "workday-weekday-ep-mba-team": {
+    "url": "https://jobs.weekday.works/workday-enterprise-planning,-mba-intern",
+    "title": "Workday hiring for Enterprise Planning, MBA Intern: team",
+    "publisher": "Weekday",
+    "published": "2026-01-03",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "The MBA Intern for Enterprise Planning will join a critical and visible team"
   },
   "workday-xbrl": {
     "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001327811.json",

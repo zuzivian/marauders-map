@@ -51,16 +51,11 @@ describe("companies", () => {
   });
 
   it.each(companies.map((c) => [c.id, c] as const))("%s metrics are coherent", (_, c) => {
-    for (const m of [c.marketCap, c.growth, c.headcount, c.b2bPayer, c.b2bUser]) {
+    for (const m of [c.marketCap, c.growth, c.headcount]) {
       expect(m.sources.length, "every metric is sourced").toBeGreaterThan(0);
       if (m.low !== undefined) expect(m.low).toBeLessThanOrEqual(m.value);
       if (m.high !== undefined) expect(m.high).toBeGreaterThanOrEqual(m.value);
       if (m.asOf !== undefined) expect(isISO(m.asOf)).toBe(true);
-    }
-    for (const m of [c.b2bPayer, c.b2bUser]) {
-      expect(m.value).toBeGreaterThanOrEqual(0);
-      expect(m.value).toBeLessThanOrEqual(100);
-      expect(m.reasoning.length).toBeGreaterThan(20);
     }
     expect(c.marketCap.value).toBeGreaterThan(0);
     expect(c.marketCap.asOf && isISO(c.marketCap.asOf)).toBe(true);
@@ -73,6 +68,41 @@ describe("companies", () => {
     if (o.category === "team" && (o.low !== undefined || o.high !== undefined)) expect(o.low! < o.high!).toBe(true); // a team policy may have no published band
     if (o.category === "flexible" || o.category === "remote") expect(o.days).toBeNull();
     if (o.days !== null) expect(o.days).toBeGreaterThan(0);
+  });
+});
+
+describe("intern fields", () => {
+  const withIntern = companies.filter((c) => c.intern).map((c) => [c.id, c.intern!] as const);
+  const yearBefore = `${Number(meta.researched.slice(0, 4)) - 1}${meta.researched.slice(4)}`;
+  it.each(withIntern)("%s", (id, i) => {
+    expect(hiring[id].hasProgram, "only companies with an MBA internship").toBe(true);
+    if (i.pay) {
+      expect(i.pay.low).toBeGreaterThan(0);
+      expect(i.pay.high).toBeGreaterThanOrEqual(i.pay.low);
+      expect(["hour", "month", "year"]).toContain(i.pay.per);
+      expect(CYCLES).toContain(i.pay.cycle);
+      expect(i.pay.postings).toBeGreaterThan(0);
+      expect(i.pay.where.length).toBeGreaterThan(0);
+      expect(i.pay.sources.length).toBeGreaterThan(0);
+    }
+    if (i.locations) {
+      expect(i.locations.places.length).toBeGreaterThan(0);
+      expect(i.locations.sources.length).toBeGreaterThan(0);
+    }
+    if (i.sponsorship) {
+      expect(["sponsors", "no sponsorship", "authorization required"]).toContain(i.sponsorship.stance);
+      expect(sources[i.sponsorship.sources[0]]?.quote, "sponsorship is quoted from the posting").toBeTruthy();
+    }
+    if (i.teamModel) {
+      expect(["hired to a team", "matched after offer", "pooled, then placed"]).toContain(i.teamModel.model);
+      expect(i.teamModel.sources.length).toBeGreaterThan(0);
+    }
+    for (const p of i.pulse ?? []) {
+      expect(isISO(p.date)).toBe(true);
+      expect(p.date >= yearBefore && p.date <= meta.researched, `${id}: pulse covers the last 12 months`).toBe(true);
+      if (p.low !== undefined && p.high !== undefined) expect(p.low).toBeLessThanOrEqual(p.high);
+      expect(p.sources.length).toBeGreaterThan(0);
+    }
   });
 });
 

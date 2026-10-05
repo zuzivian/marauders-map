@@ -48,7 +48,7 @@ GoatCounter then counts page views, plus these events: `select/<id>` (picked a c
 
 | File | What it holds |
 |---|---|
-| `companies.json` | Market value, revenue growth, headcount, consumer/business splits, office policy. Each metric has `value`, an optional `low`–`high` range, `asOf`, and `sources`. |
+| `companies.json` | Market value, revenue growth, headcount, office policy. Each metric has `value`, an optional `low`–`high` range, `asOf`, and `sources`. An optional `intern` object holds what the MBA intern postings say: pay as stated (with its basis, location and cycle), locations, visa sponsorship (only when a posting says it outright, quoted), how teams are assigned, and layoffs or hiring freezes in the last 12 months. Any part a source doesn't give is left out. |
 | `hiring.json` | Per company: when MBA internship postings went live in each cycle (a date *range* plus evidence strength), and what's posted right now. |
 | `roles.json` | The role dictionary, every posted title we've seen (with sources), and the keyword weights the title search uses. |
 | `interviews.json` | Interview stages, only where a company (high confidence) or its general hiring page (medium) describes them. |
