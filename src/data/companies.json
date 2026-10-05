@@ -119,15 +119,16 @@
     "office": {
       "category": "fixed",
       "days": 5,
-      "summary": "5 days a week since Jan 2025",
+      "summary": "5 days a week since Jan 2025 (some US offices phased in by about May 2025)",
       "effective": "2025-01",
-      "interns": "Undated Amazon page says interns 'schedule a mix of in-office and work-from-home days'. It likely predates the 5-day rule, so don't rely on it.",
+      "interns": "Amazon's current intern postings say interns work in office Monday–Friday (e.g. the Summer 2027 SDE intern posting, Sep 2026). The older 'hybrid' intern page dates from June 2022, before the 5-day rule.",
       "confidence": "high",
       "sources": [
         "amazon-jassy-memo-2024",
         "cnbc-amazon-2024",
         "cnbc-amazon-delay-2024",
-        "amazon-intern-page"
+        "amazon-intern-page",
+        "amazon-sde-intern-2027"
       ]
     }
   },
@@ -190,11 +191,10 @@
     "office": {
       "category": "fixed",
       "days": 3,
-      "summary": "3 days a week on site",
+      "summary": "3 days a week on site, per Intuit's careers page (seen Oct 2025 to Oct 2026)",
       "confidence": "medium",
       "sources": [
-        "intuit-hybrid-careers",
-        "hubble-rto-list-2026"
+        "intuit-hybrid-careers"
       ]
     }
   },
@@ -262,9 +262,11 @@
         "adobe-future-of-work-2021",
         "techrepublic-adobe-hybrid",
         "hubble-rto-list-2026",
-        "blind-adobe-2025"
+        "blind-adobe-2025",
+        "adobe-R172261"
       ],
-      "days": null
+      "days": null,
+      "interns": "Adobe's 2027 MBA intern postings say all 2027 interns will be co-located hybrid."
     }
   },
   {
@@ -325,7 +327,7 @@
     "office": {
       "category": "fixed",
       "days": 3,
-      "summary": "3 days a week for staff within 50 miles of an office; Seattle area since Feb 2026, other US offices phasing in",
+      "summary": "3 days a week for staff within 50 miles of an office (Seattle area since Feb 23, 2026; other US offices to follow, no public date). Microsoft AI requires 4 days. Teams pick the days.",
       "effective": "2026-02",
       "confidence": "high",
       "sources": [
@@ -391,15 +393,16 @@
       "category": "team",
       "low": 3,
       "high": 5,
-      "summary": "3-5 days by role since Oct 2024 (sales 4-5, most others 3; many engineers 10 days a quarter)",
+      "summary": "3–5 days by role since Oct 2024: Office-Based (select sales and onsite roles) 4–5; Office-Flex (most others) 3; some engineers 10 days a quarter; remote only by exemption.",
       "effective": "2024-10",
-      "interns": "Reported (Extern guide, secondary) as 4-5 days a week in person at US hubs. Not confirmed on Salesforce's own pages.",
+      "interns": "Salesforce's own Summer 2027 intern postings, including the MBA roles, are designated 'Office - Flexible', which Salesforce defines as 3 days a week in person.",
       "confidence": "medium",
       "sources": [
         "sfstandard-salesforce-2024",
         "salesforce-hybrid-guidelines",
         "extern-salesforce-interns",
-        "archie-rto-tracker-2026"
+        "archie-rto-tracker-2026",
+        "sf-JR362509"
       ],
       "days": null
     }
@@ -413,10 +416,10 @@
     "model": "Ads",
     "ai": "Builds frontier models",
     "marketCap": {
-      "value": 4200,
+      "value": 4180,
       "asOf": "2026-10-02",
       "kind": "market cap",
-      "note": "Alphabet",
+      "note": "Alphabet, all share classes (Class A and B at the GOOGL price, Class C at the GOOG price)",
       "sources": [
         "sa-google",
         "cmc-home"
@@ -461,13 +464,15 @@
     "office": {
       "category": "fixed",
       "days": 3,
-      "summary": "3 days a week; tightened for remote staff near offices since Apr 2025",
+      "summary": "3 days a week since Apr 2022. Since 2025, remote staff within 50 miles of an office in several units (Technical Services, People Ops, Search/Ads, Core) must go hybrid or leave.",
       "confidence": "high",
       "sources": [
         "fortune-google-remote-2025",
         "fortune-google-wfa-2025",
-        "archie-rto-tracker-2026"
-      ]
+        "archie-rto-tracker-2026",
+        "cnbc-google-rto-2022"
+      ],
+      "effective": "2022-04"
     }
   },
   {
@@ -526,7 +531,7 @@
     "office": {
       "category": "flexible",
       "summary": "No company-wide office requirement; managers and teams set expectations, from fully remote to most days in office",
-      "interns": "Nvidia's intern benefits page says interns can work from home, in the office or a mix. It covers remote-work costs, plus housing and travel if placed at an office more than 50 miles from campus.",
+      "interns": "Nvidia's intern benefits page says interns can work from home, in the office or a mix. Remote interns get ergonomic furniture and internet reimbursement; interns assigned to an office 50+ miles from their university get a housing stipend and travel.",
       "confidence": "high",
       "sources": [
         "nvidia-intern-benefits",
@@ -595,7 +600,7 @@
     "office": {
       "category": "fixed",
       "days": 3,
-      "summary": "3 days a week since Sep 2023; Instagram US 5 days since Feb 2026",
+      "summary": "3 days a week since Sep 2023 (Facebook, WhatsApp and most teams). Instagram's US hybrid staff moved to 5 days from Feb 2, 2026; New York staff were exempt pending office space.",
       "effective": "2023-09",
       "confidence": "high",
       "sources": [
@@ -660,7 +665,7 @@
     },
     "office": {
       "category": "remote",
-      "summary": "Live and work anywhere (since Apr 2022); periodic in-person gatherings",
+      "summary": "Live and work anywhere (since Apr 2022); the CEO says staff come to SF about one week a month; a minority of roles must be SF-based.",
       "effective": "2022-04",
       "confidence": "high",
       "sources": [
@@ -727,14 +732,15 @@
     "office": {
       "category": "fixed",
       "days": 3,
-      "summary": "3 days a week (Tue-Thu) since Jun 2025; enforcement tightened Sep 2026, remote roles capped at ~1%",
+      "summary": "3 days a week (Tue–Thu) since Jun 2025. A Sep 2, 2026 memo stepped up enforcement, moved most remote staff to offices (only about 1% stay remote) and concentrated global teams in NY and SF.",
       "effective": "2025-06",
       "confidence": "high",
       "sources": [
         "foxbusiness-uber-2025",
         "thefederal-uber-2026",
         "sfchronicle-uber-2026",
-        "archie-rto-tracker-2026"
+        "archie-rto-tracker-2026",
+        "uber-newsroom-simpler-faster-2026"
       ]
     }
   },
@@ -755,17 +761,18 @@
       ]
     },
     "growth": {
-      "value": 200,
-      "low": 150,
-      "high": 300,
+      "value": 250,
+      "low": 190,
+      "high": 255,
       "basis": "calendar 2025 revenue vs 2024, cross-checked against 2026 quarterly reports",
-      "note": "Private company: figures are press reports of revenue OpenAI hasn't published, so the range is wide. Annualized run-rate jumps (often quoted) overstate year-over-year growth.",
+      "note": "Private company: figures are press reports. 2025 revenue $13.07B vs $3.7B in 2024 (+253%), per leaked financials reported Jun 2026; H1 2026 (~$12.4B) vs H1 2025 ($4.3B) is about +190%. Annualized run-rate jumps overstate year-over-year growth.",
       "sources": [
         "openai-quartz-70b",
         "openai-axios-70b",
         "openai-bloomberg-40b",
         "openai-info-h1-2025",
-        "openai-latka-2024"
+        "openai-latka-2024",
+        "openai-techspot-2025-financials"
       ]
     },
     "headcount": {
@@ -808,8 +815,8 @@
     "office": {
       "category": "fixed",
       "days": 3,
-      "summary": "3 days a week in office (typically Mon-Wed)",
-      "confidence": "medium",
+      "summary": "3 days a week in office for most roles, per OpenAI's job postings; some hardware, devices and robotics roles require 4–5.",
+      "confidence": "high",
       "sources": [
         "openai-careers-posting",
         "jobsbyculture-openai-2026",
@@ -944,9 +951,9 @@
     "office": {
       "category": "fixed",
       "days": 5,
-      "summary": "5 days a week since Mar 3, 2025 for anyone within about an hour of a Dell office; staff farther away can stay remote. Enforcement tightened in Dec 2025.",
+      "summary": "5 days a week since Mar 3, 2025 for anyone within about an hour of a Dell office. All new roles are hired to a specific office, not remote. In Dec 2025, North America sales added an 8-hour office day.",
       "effective": "2025-03",
-      "interns": "Dell's summer 2027 graduate intern postings list workplace type 'On-site'.",
+      "interns": "Dell's Summer 2027 intern postings, including its one open graduate role (Supply Chain, Austin), list workplace type 'On-site'.",
       "confidence": "high",
       "sources": [
         "dell-fortune-rto-2025",
@@ -954,7 +961,8 @@
         "dell-techco-rto-2025",
         "dell-storyboard18-2025",
         "dell-hrgrapevine-2026",
-        "dell-req-298518"
+        "dell-req-298518",
+        "statesman-dell-rto-2025"
       ]
     }
   },
@@ -1013,9 +1021,9 @@
     "office": {
       "category": "fixed",
       "days": 3,
-      "summary": "3 days a week in office (or at a client site) for staff near an IBM office; reiterated in 2023 and again for US sales and cloud staff in 2025",
+      "summary": "3 days a week in office or at a client site: IBM Software from Sep 2023 (staff within 50 miles of an office), all US managers from Jan 2024, US sales and cloud staff from mid-2025.",
       "effective": "2025-07",
-      "interns": "2026-cycle MBA intern postings list work arrangement as Hybrid (NY, Armonk, Cambridge)",
+      "interns": "Summer 2027 intern postings (posted Sep 2026), including the MBA Corporate Strategy internship, list the work arrangement as hybrid (New York, Armonk, Cambridge).",
       "confidence": "medium",
       "sources": [
         "ibm-rto-computerworld-2023",
@@ -1041,15 +1049,15 @@
       ]
     },
     "growth": {
-      "value": 5.8,
-      "basis": "twelve months to 2026-03-31 vs the twelve months before",
+      "value": 5.7,
+      "basis": "twelve months to 2026-06-30 vs the twelve months before",
       "note": "TTM = FY2025 $33.172B - H1 2025 $16.079B + H1 2026 $17.035B; prior = FY2024 $31.797B - H1 2024 $15.584B + H1 2025 $16.079B (us-gaap:Revenues).",
       "sources": [
         "paypal-xbrl",
         "paypal-10q-2026q2",
         "paypal-10k-2025"
       ],
-      "asOf": "2026-03-31"
+      "asOf": "2026-06-30"
     },
     "headcount": {
       "value": 23800,
@@ -1081,7 +1089,7 @@
       "category": "fixed",
       "days": 3,
       "summary": "3 days a week in the office for most employees ('balanced hybrid'), per current job postings",
-      "interns": "MBA intern postings carry the same 3-day hybrid language, and Built In tagged them 'In-Office'. PayPal's US university page says interns must relocate to the role's office for the summer. An older Intern Hub page mentions a 'Virtual Flex model' for interns and looks out of date.",
+      "interns": "Built In tagged the Summer 2026 MBA Ventures Operations posting 'In-Office'. PayPal's Intern Hub still describes a 'Virtual Flex model' (home or office with manager support), which conflicts with its relocation requirement; ask your recruiter.",
       "confidence": "medium",
       "sources": [
         "paypal-workday-corpstrategy-posting",
@@ -1145,16 +1153,18 @@
       ]
     },
     "office": {
-      "category": "fixed",
-      "days": 2,
-      "summary": "Most staff are on the 'flexible' work persona: in the office 2+ days a week. Some roles are fully in-office, and staff living more than 30 miles from an office may be remote.",
-      "interns": "The MBA Corporate Strategy intern posting says candidates must be able to work hybrid in the Santa Clara office. Jobright listed the Summer 2026 MBA PM roles as Hybrid.",
+      "category": "team",
+      "days": null,
+      "summary": "Most staff are on the 'flexible' persona: 2+ days a week in the office. Some roles are fully in-office; per Built In, staff more than 30 miles from an office may be eligible for remote.",
+      "interns": "Summer 2026 MBA postings (now closed) said 'Must be able to work hybrid in the Santa Clara office'; Summer 2027 MBA roles weren't posted as of early Oct 2026.",
       "confidence": "medium",
       "sources": [
         "servicenow-life-at",
         "servicenow-builtin-workplace",
         "servicenow-sr-corpstrategy-2026"
-      ]
+      ],
+      "low": 2,
+      "high": 5
     }
   },
   {
@@ -1164,14 +1174,16 @@
     "model": "Ads",
     "ai": "Builds frontier models",
     "marketCap": {
-      "value": 550,
-      "asOf": "2026-02-25",
+      "value": 600,
+      "asOf": "2026-04-09",
       "kind": "private valuation",
       "sources": [
         "tiktok-reuters-valuation",
         "tiktok-seekingalpha-valuation",
-        "tiktok-theinformation-valuation"
-      ]
+        "tiktok-theinformation-valuation",
+        "tiktok-scmp-valuation-2026"
+      ],
+      "note": "ByteDance: over $600B in a founding shareholder's proposed equity sale (SCMP, Apr 2026), up from $550B in Feb 2026. A secondary-market valuation, not a primary round."
     },
     "growth": {
       "value": 29,
@@ -1218,9 +1230,9 @@
     "office": {
       "category": "fixed",
       "days": 5,
-      "summary": "5 days a week for most US staff since Sep 2026; TikTok Shop already went to 5 days over a year earlier",
+      "summary": "5 days a week from Sep 2026 for most US corporate staff (product, marketing, ad sales), per staffers who spoke to Business Insider; not confirmed by TikTok. TikTok Shop staff were already on 5 days.",
       "effective": "2026-09",
-      "interns": "No intern-specific policy found. One 2027 MBA PM intern posting says candidates available to work 5 days a week are preferred.",
+      "interns": "No intern-specific policy found. Most 2027 MBA intern postings are in TikTok Shop, which has been 5 days in office for over a year; the Ads PM intern posting (San Jose) prefers candidates available 5 days a week.",
       "confidence": "medium",
       "sources": [
         "tiktok-sfchronicle-rto",
@@ -1247,14 +1259,14 @@
     },
     "growth": {
       "value": 14.4,
-      "basis": "twelve months to 2026-03-31 vs the twelve months before",
+      "basis": "twelve months to 2026-06-30 vs the twelve months before",
       "note": "Fiscal year ends Sep 30. TTM = FY2025 $40.000B - 9M FY2025 $29.276B + 9M FY2026 $33.764B; prior = FY2024 $35.926B - 9M FY2024 $26.309B + 9M FY2025 $29.276B (us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax). Q3 FY2026 net revenue $11.633B, +14%.",
       "sources": [
         "visa-xbrl",
         "visa-10q-2026q3",
         "visa-10k-fy2025"
       ],
-      "asOf": "2026-03-31"
+      "asOf": "2026-06-30"
     },
     "headcount": {
       "value": 34100,
@@ -1286,7 +1298,7 @@
       "category": "fixed",
       "days": 3,
       "summary": "At least 3 days a week in the office, per current (Sep–Oct 2026) US job postings",
-      "interns": "Current US intern postings (Sep 2026) also say at least 3 days. Summer 2026 MBA intern postings said days in office would be confirmed by the hiring manager. Summer 2025 postings described 2–3 set days a week, about 50%+ in office.",
+      "interns": "Current US PhD intern postings (Sep 2026) say at least 3 days; Summer 2027 MBA postings weren't up as of early Oct 2026. Summer 2026 MBA postings said days would be confirmed by the hiring manager.",
       "confidence": "medium",
       "sources": [
         "visa-workday-intern-posting-2026",
@@ -1313,13 +1325,14 @@
     "growth": {
       "value": 117,
       "low": 117,
-      "high": 127,
+      "high": 180,
       "basis": "Annualized revenue run-rate, end-2025 vs end-2024 (Sacra estimate; Waymo does not disclose revenue)",
-      "note": "These are third-party estimates, not audited filings. Sacra gives 116.8% y/y growth for 2025 (low). Its run-rate figures ($125M at end-2024, $284M at end-2025) imply about 127% (high). Waymo's only official volume figure: 2025 ride volume 'more than tripled' to 15M rides. Alphabet reports Waymo inside 'Other Bets' with Verily and others. Other Bets revenue fell from $1.648B (2024) to $1.537B (2025), so it is not a usable Waymo proxy. ttmB/priorTtmB here are run-rates, not true TTM.",
+      "note": "Third-party estimates; Waymo publishes no revenue. Bloomberg (Dec 2025) reported a run-rate above $350M, implying about +180% on Sacra's end-2024 $125M, hence the wide high end.",
       "sources": [
         "waymo-sacra-revenue",
         "waymo-blog-16b-round",
-        "waymo-alphabet-10k-2025"
+        "waymo-alphabet-10k-2025",
+        "waymo-siliconangle-runrate"
       ]
     },
     "headcount": {
@@ -1351,8 +1364,8 @@
       ]
     },
     "office": {
-      "category": "flexible",
-      "summary": "Hybrid, varies by role and team; one tracker lists 2 days a week, unverified",
+      "category": "team",
+      "summary": "Varies by role: on-site, hybrid, or remote. Postings say 'hybrid' without a day count; Flex Index lists 2 days a week (unverified).",
       "interns": "Interns are hosted onsite at a Waymo location in a hybrid modality. All 2027 MBA postings say 'hybrid onsite internship position'.",
       "confidence": "low",
       "sources": [
@@ -1392,9 +1405,9 @@
       "asOf": "2026-07-31"
     },
     "headcount": {
-      "value": 21000,
+      "value": 21070,
       "asOf": "2026-01-31",
-      "note": "The 10-K says 'over 21,000 employees' (about 58% in the US). It gives no exact figure.",
+      "note": "Per the 10-K key-metrics table (21,070, up from 20,482); about 58% in the US.",
       "sources": [
         "workday-10k-fy2026"
       ]
@@ -1418,17 +1431,17 @@
       ]
     },
     "office": {
-      "category": "fixed",
+      "category": "team",
       "low": 2,
       "high": 3,
-      "summary": "'Flex Work': at least 50% of time each quarter in the office or with customers. No set weekly days; this works out to roughly 2-3 days a week.",
-      "interns": "The Summer 2026 Financial Analyst MBA Intern posting asked for a full-time, in-person 12-week internship. Jobright listed the Enterprise Planning MBA role as Hybrid.",
+      "summary": "'Flex Work': at least half of each quarter in the office or with customers, with no set weekly days (about 2–3 days a week). Some roles are fully remote or on-site.",
+      "interns": "Summer 2026 MBA intern postings (now closed) asked for a 'full-time, in-person 12-week internship'. No Summer 2027 MBA postings as of early Oct 2026.",
       "confidence": "high",
       "sources": [
         "workday-careers-faq",
         "workday-jobright-fa-mba"
       ],
-      "days": 2.5
+      "days": null
     }
   }
 ]

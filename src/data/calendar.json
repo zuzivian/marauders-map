@@ -20,7 +20,7 @@
     "from": "2026-09-22",
     "to": null,
     "kind": "academic",
-    "description": "First day of GSB classes for all GSB students. This is also the first day of Stanford's autumn quarter.",
+    "description": "First day of autumn quarter for all GSB students (MBA1 instruction began Sep 10) and for Stanford as a whole.",
     "confidence": "high",
     "timeline": false,
     "sources": [
@@ -87,11 +87,11 @@
   },
   {
     "id": "dead-week-finals-break",
-    "label": "No recruiting at all",
+    "label": "No recruiting events or interviews",
     "from": "2026-11-30",
     "to": "2026-12-31",
     "kind": "blackout",
-    "description": "Dead week, autumn finals and winter break, with no recruiting activity of any kind. Holding events or interviews during dead week or exams breaks policy.",
+    "description": "Dead week, autumn finals and winter break. The Recruiting Calendar marks it as no recruiting activity, and holding events or interviews then breaks policy. Applications are still due inside this window (latest OCI deadline Dec 4).",
     "confidence": "high",
     "timeline": true,
     "sources": [
@@ -112,7 +112,7 @@
     "sources": [
       "gsb-recruiting-calendar"
     ],
-    "key": "OCI apps due"
+    "key": "latest OCI app deadline"
   },
   {
     "id": "internship-interview-invites-due",
@@ -176,7 +176,7 @@
     "from": "2027-01-19",
     "to": "2027-01-21",
     "kind": "interviews",
-    "description": "Third week of internship interviews. No interviews on MLK Monday.",
+    "description": "Third week of internship interviews. No interviews on MLK Monday (Jan 18); Wednesday Jan 20 runs a Monday class schedule.",
     "confidence": "high",
     "timeline": true,
     "sources": [
@@ -219,7 +219,7 @@
     "from": "2027-03-15",
     "to": "2027-04-02",
     "kind": "blackout",
-    "description": "No recruiting activity during winter finals and spring recess.",
+    "description": "No recruiting activity during winter finals and spring recess. The Recruiting Calendar runs this to Apr 2, though GSB spring classes start Apr 1.",
     "confidence": "high",
     "timeline": false,
     "sources": [

@@ -65,7 +65,7 @@ function WeekStrip({ company: c }: { company: Company }) {
   const o = c.office;
   const solid = o.category === "fixed" ? Math.round(o.days ?? 0) : o.category === "team" ? Math.floor(o.low ?? 0) : 0;
   const maybe = o.category === "team" ? Math.ceil(o.high ?? 0) - solid : 0;
-  const caption = o.category === "remote" ? "remote-first" : o.category === "flexible" ? "no set minimum" : o.category === "team" ? `${o.low}–${o.high} days, by team` : `${o.days} days a week`;
+  const caption = o.category === "remote" ? "remote-first" : o.category === "flexible" ? "no set minimum" : o.category === "team" ? (o.low !== undefined ? `${o.low}–${o.high} days a week` : "varies by team") : `${o.days} days a week`;
   return (
     <div className="weekstrip" title={o.summary}>
       <div className="days" aria-hidden>
@@ -208,11 +208,11 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
       <p className="small muted">{now ? `This cycle: ${fmtRange(now.from, now.to)} (${now.evidence} evidence). ` : ""}{h.pattern}.</p>
       {h.current.postings.length > 0 && (
         <details className="why">
-          <summary>{h.current.postings.length} live posting{h.current.postings.length === 1 ? "" : "s"}</summary>
+          <summary>this cycle&apos;s posting{h.current.postings.length === 1 ? "" : "s"} ({h.current.postings.length})</summary>
           <ul className="postings">
             {h.current.postings.map((p) => (
               <li key={p.url + p.title}><a href={p.url} target="_blank" rel="noreferrer">{p.title}</a>
-                <span className="muted">{p.posted ? ` · posted ${fmtDate(p.posted)}` : ""}{p.closes ? ` · closes ${fmtDate(p.closes)}` : ""}</span></li>
+                <span className="muted">{p.posted ? ` · posted ${fmtDate(p.posted)}` : ""}{p.closes ? (p.closes < today ? ` · closed ${fmtDate(p.closes)}` : ` · closes ${fmtDate(p.closes)}`) : ""}</span></li>
             ))}
           </ul>
         </details>

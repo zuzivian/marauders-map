@@ -8,7 +8,7 @@
         "types": [
           "milestone"
         ],
-        "detail": "Requires 3+ yrs post-undergrad work experience before the MBA",
+        "detail": "Requires 3+ years of relevant post-undergrad work experience before the MBA",
         "sources": [
           "amazon-mba-programs"
         ]
@@ -29,7 +29,7 @@
           "behavioral",
           "product"
         ],
-        "detail": "Full-time PM: 60 min with a senior leader, half Leadership Principles behavioral. MBA-intern format not stated officially; Full-time PM: other half covers functional PM experience",
+        "detail": "Not listed on Amazon's MBA page. Amazon's general guidance: 1–2 phone screens are typical. PM prep page (all PM roles): 60 min with a senior leader, half Leadership Principles behavioral, half functional PM.",
         "sources": [
           "amazon-pm-prep",
           "amazon-interview-process-news"
@@ -41,7 +41,7 @@
           "behavioral",
           "product"
         ],
-        "detail": "Individual 1:1s with employees, Leadership Principles based, incl. a Bar Raiser. Full-time PM: five 55-min interviews plus a writing assessment due ~2 days before; Full-time PM loop also covers product mgmt and stakeholder mgmt competencies",
+        "detail": "Individual 1:1s with employees, Leadership Principles based, incl. a Bar Raiser. PM prep page (all PM roles): five 55-min interviews plus a writing assessment due ~2 days before; Full-time PM loop also covers product mgmt and stakeholder mgmt competencies",
         "sources": [
           "amazon-interview-loop",
           "amazon-pm-prep",
@@ -61,7 +61,7 @@
       }
     ],
     "distinctive": "Every interview is anchored on the Leadership Principles, and a Bar Raiser from outside the hiring team sits in on the loop.",
-    "caveat": "Amazon's MBA page lists the steps; screen and loop detail comes from its full-time PM prep page, so intern loops may be shorter.",
+    "caveat": "Amazon's MBA page lists the steps; screen and loop detail comes from its full-time PM prep page, so intern loops may be shorter. Amazon's MBA FAQ: you're considered for one role at a time, and without an offer you're no longer eligible for MBA-level roles that cycle.",
     "sources": [
       "amazon-mba-programs",
       "amazon-pm-prep",
@@ -72,7 +72,7 @@
   },
   "google": {
     "confidence": "high",
-    "roleScope": "the MBA Intern posting",
+    "roleScope": "all roles, incl. internships",
     "stages": [
       {
         "label": "Apply",
@@ -110,9 +110,9 @@
         "label": "Interviews",
         "types": [
           "behavioral",
-          "case"
+          "analytical"
         ],
-        "detail": "Panel of interviews over video or in person, scored on rubrics; covers how you work with a team. Count not stated officially; 'Role-related, open-ended questions' on problem solving, no brainteasers. A case study may be assigned beforehand ('project work')",
+        "detail": "Panel of interviews over video or in person, scored on rubrics; role-related, open-ended questions, no brainteasers. Some roles assign a small project (e.g. a case study) before interviews.",
         "sources": [
           "google-how-we-hire"
         ]
@@ -122,7 +122,7 @@
         "types": [
           "milestone"
         ],
-        "detail": "Application and interviews reviewed together. Secondary guides call this the hiring committee (full-time PM)",
+        "detail": "Application and interviews reviewed together. Secondary guides (full-time PM) call this the hiring committee; team matching may come before or after it.",
         "sources": [
           "google-how-we-hire",
           "aced-google-pm"
@@ -149,7 +149,7 @@
         ]
       }
     ],
-    "distinctive": "Google hires into a job family first, then matches you to a team. The decision comes from a review of your whole packet, not from any one interviewer.",
+    "distinctive": "MBA interns are placed on a team after interviews, based on background and skills; the decision comes from a review of your whole packet, not any one interviewer.",
     "caveat": "Google doesn't publish interview counts or lengths.",
     "sources": [
       "google-how-we-hire",
@@ -177,7 +177,7 @@
         "types": [
           "behavioral"
         ],
-        "detail": "'In some cases' a brief screening conversation before interview invites",
+        "detail": "All-roles page: 'in some cases' a brief screening conversation before interview invites; for students the first round itself is called the screen.",
         "sources": [
           "microsoft-how-we-hire"
         ]
@@ -187,7 +187,7 @@
         "types": [
           "behavioral"
         ],
-        "detail": "Initial interview, virtual; behavioral plus functional/technical questions",
+        "detail": "Initial virtual interview (first-round screen); you're assessed for a functional role (e.g. PM) across all teams that hire for it.",
         "sources": [
           "microsoft-student-interviewing"
         ]
@@ -198,7 +198,7 @@
           "behavioral",
           "product"
         ],
-        "detail": "1:1 meetings with employees, breaks between; general hiring page says 2–4 conversations of up to an hour; PM intern (non-MBA guide): ~3 × 45–60 min mixing behavioral, product sense and technical fluency",
+        "detail": "Virtual interview day: 1:1s with breaks; behavioral and functional/technical questions; you're assessed for a specific role or org, then team-matched. 1:1 meetings with employees, breaks between; general hiring page says 2–4 conversations of up to an hour; PM intern (non-MBA guide): ~3 × 45–60 min mixing behavioral, product sense and technical fluency",
         "sources": [
           "microsoft-student-interviewing",
           "microsoft-how-we-hire",
@@ -217,7 +217,7 @@
       }
     ],
     "distinctive": "Two official rounds for students, an initial and a final, and every interview is virtual.",
-    "caveat": "The PM final-round mix comes from a prep guide written for non-MBA interns.",
+    "caveat": "The PM final-round mix comes from a third-party prep guide that doesn't distinguish MBA interns. Microsoft says decisions can take up to 90 days and it can't expedite for competing offer deadlines.",
     "sources": [
       "microsoft-student-interviewing",
       "microsoft-how-we-hire",
@@ -225,7 +225,7 @@
     ]
   },
   "salesforce": {
-    "confidence": "high",
+    "confidence": "medium",
     "roleScope": "MBA Intern track",
     "stages": [
       {
@@ -243,17 +243,18 @@
         "types": [
           "behavioral"
         ],
-        "detail": "Interview with hiring manager covering work experience and educational focus",
+        "detail": "Interview with a hiring manager and team member covering work experience and educational focus",
         "sources": [
           "salesforce-uni-us-canada"
         ]
       },
       {
-        "label": "Panel + case",
+        "label": "Panel + presentation",
         "types": [
+          "behavioral",
           "case"
         ],
-        "detail": "Panel interview / case study where you present a previous project and accomplishments",
+        "detail": "Typically a panel interview or case study where you present a previous project and accomplishments",
         "sources": [
           "salesforce-uni-us-canada"
         ]
@@ -263,21 +264,21 @@
         "types": [
           "milestone"
         ],
-        "detail": "Interviews mostly virtual (Google Meet), but an on-site at a Salesforce office is required before an offer",
+        "detail": "Salesforce's all-roles FAQ: most interviews are virtual (Google Meet), but an on-site at a Salesforce office is required before an offer. Not mentioned on the MBA-intern page.",
         "sources": [
           "salesforce-how-we-hire"
         ]
       }
     ],
-    "distinctive": "The final round is a panel where you present a past project of your own. Salesforce also requires an on-site visit before it makes an offer.",
-    "caveat": "Salesforce's university-recruiting page is undated.",
+    "distinctive": "The final round is a panel where you present a past project of your own. Salesforce's general hiring FAQ also requires an on-site visit before any offer.",
+    "caveat": "Salesforce's university-recruiting page appears to date from about 2018, so the MBA steps may be out of date. The on-site requirement comes from Salesforce's all-roles hiring FAQ.",
     "sources": [
       "salesforce-uni-us-canada",
       "salesforce-how-we-hire"
     ]
   },
   "intuit": {
-    "confidence": "high",
+    "confidence": "medium",
     "roleScope": "interview day, all roles",
     "stages": [
       {
@@ -285,7 +286,7 @@
         "types": [
           "behavioral"
         ],
-        "detail": "Not described on the official page. Aced (full-time PM) lists a recruiter call and a ~2-hr take-home before the final round",
+        "detail": "Not described on the official page. Aced (PM guide, not intern-specific) lists recruiter calls, then phone interviews, then a 2-hour take-home before the final round.",
         "sources": [
           "aced-intuit-pm"
         ]
@@ -379,7 +380,7 @@
         "types": [
           "analytical"
         ],
-        "detail": "Role-dependent work-related assessment, e.g. an analytics task, written exercise or work simulation",
+        "detail": "Role-specific (your recruiter tells you if it's required): a task mirroring the role, e.g. an analytics task, written exercise or work simulation. In some roles it comes before the recruiter screen.",
         "sources": [
           "uber-internship-guide",
           "uber-how-we-hire"
@@ -390,7 +391,7 @@
         "types": [
           "behavioral"
         ],
-        "detail": "'Business interview' with the team and cross-functional partners. Count/length not stated",
+        "detail": "'Business interview' with hiring managers or team members; be ready to solve problems live. Internship FAQ: interviews typically last 30–60 min, with 2–4 stages depending on the role.",
         "sources": [
           "uber-internship-guide",
           "uber-how-we-hire"
@@ -407,8 +408,8 @@
         ]
       }
     ],
-    "distinctive": "PM candidates get a 'Jam Session' (a collaborative problem-solving round) before the interview loop.",
-    "caveat": null,
+    "distinctive": "Uber's full-time Product guide describes a 'Jam Session' (a take-home assignment you present) run alongside a 3–4 interview loop. Uber doesn't say whether MBA PM interns get it.",
+    "caveat": "Uber's internship guide is generic (written mostly for university students) and doesn't describe an MBA-specific process. The Jam Session is from Uber's full-time Product guide.",
     "sources": [
       "uber-how-we-hire",
       "uber-internship-guide",
@@ -454,7 +455,8 @@
       {
         "label": "Skills + team",
         "types": [
-          "behavioral"
+          "behavioral",
+          "case"
         ],
         "detail": "Further interviews with team members and partners, plus role-dependent skills assessments (e.g. technical, sales scenario, design thinking)",
         "sources": [
@@ -473,7 +475,7 @@
       }
     ],
     "distinctive": null,
-    "caveat": null,
+    "caveat": "Adobe's hiring page covers all roles and says nothing MBA-specific.",
     "sources": [
       "adobe-hiring-process",
       "adobe-mba-pm-posting"
@@ -508,9 +510,10 @@
         "types": [
           "behavioral"
         ],
-        "detail": "Format varies by team and role; you share your experience and may take an assessment.",
+        "detail": "Format varies by team and role. Cisco's early-careers page says non-engineering roles may include behavioral interviews and a writing assessment.",
         "sources": [
-          "cisco-how-we-hire"
+          "cisco-how-we-hire",
+          "cisco-entry-level"
         ]
       },
       {
@@ -524,11 +527,12 @@
         ]
       }
     ],
-    "distinctive": "Cisco's MBA intern postings are pipeline ads ('This exact role may not be open today'), so applying puts you in a pool. A recruiter reaches out when a specific team opens a role.",
-    "caveat": "Cisco's official page covers all roles. No reputable source describes what MBA PM or strategy interviews contain (cases, product questions). Extern's HackerRank and coding process is for engineering interns.",
+    "distinctive": "Cisco's MBA postings are pipeline ads: a Cisco representative may contact you if a relevant role opens.",
+    "caveat": "Cisco's pages aren't MBA-specific, and nothing says whether MBA PM or strategy loops use cases or product questions.",
     "sources": [
       "cisco-how-we-hire",
-      "cisco-li-pm-mba"
+      "cisco-li-pm-mba",
+      "cisco-entry-level"
     ]
   },
   "dell": {
@@ -561,7 +565,7 @@
         "types": [
           "behavioral"
         ],
-        "detail": "Conversations about team fit, Dell's values and your career goals. They can be virtual (InterviewStream) or onsite.",
+        "detail": "Conversations about team fit, Dell's values and your career goals. They can be virtual (InterviewStream) or onsite. Dell asks for specific examples of past behavior that show the competencies the role needs.",
         "sources": [
           "dell-how-we-hire",
           "dell-faq"
@@ -572,7 +576,7 @@
         "types": [
           "milestone"
         ],
-        "detail": "Dell commits to telling interviewed candidates the outcome within 14 days.",
+        "detail": "Dell's FAQ says interviewed candidates hear the outcome within 14 days (its hiring page says it 'strives' to).",
         "sources": [
           "dell-how-we-hire",
           "dell-faq"
@@ -580,7 +584,7 @@
       }
     ],
     "distinctive": "Dell publishes service commitments: screening within about 4 weeks of posting and an outcome within 14 days of interviewing.",
-    "caveat": "These are Dell's general hiring pages, not MBA-specific. No reputable source describes MBA PM or marketing interview content. Extern's HackerRank process covers technical interns.",
+    "caveat": "These are Dell's general hiring pages, not MBA-specific; no reputable source describes MBA PM or marketing interview content. Dell doesn't contact candidates who aren't selected for a screen or interview.",
     "sources": [
       "dell-how-we-hire",
       "dell-faq"
@@ -613,9 +617,10 @@
       {
         "label": "Online assess.",
         "types": [
-          "behavioral"
+          "behavioral",
+          "analytical"
         ],
-        "detail": "One or two assessments may be required, e.g. recorded video interview questions; varies by role",
+        "detail": "One or two role-dependent assessments: a recorded video interview, a multiple-choice or coding test, and/or an English test.",
         "sources": [
           "ibm-application-process"
         ]
@@ -625,7 +630,7 @@
         "types": [
           "behavioral"
         ],
-        "detail": "Structured/behavioral interviews by phone, video or in person; AI-First posting lets you state a preferred team during interviews",
+        "detail": "Structured/behavioral interviews by phone, video or in person; AI-First posting lets you state a preferred team during interviews Or an assessment-center visit (group exercise plus in-person interview).",
         "sources": [
           "ibm-application-process",
           "ibm-posting-133909"
@@ -642,11 +647,12 @@
         ]
       }
     ],
-    "distinctive": "IBM says it uses structured or behavioral interviews; the official page does not mention cases.",
-    "caveat": "Official page describes IBM's generic process; no source describes the MBA strategy or FLDP loops specifically (e.g. whether a case is used).",
+    "distinctive": "IBM's application page describes structured/behavioral interviews, but its entry-level consulting guide says consulting candidates typically get a first-round case interview, then a behavioral round.",
+    "caveat": "IBM's official pages cover the generic process and entry-level (not MBA) consulting. Whether MBA strategy interns or FLDP get a case round isn't confirmed, so prepare for one. Postings say IBM won't sponsor visas for these roles.",
     "sources": [
       "ibm-application-process",
-      "ibm-posting-133909"
+      "ibm-posting-133909",
+      "ibm-entry-level-consultant"
     ]
   },
   "paypal": {
@@ -658,7 +664,7 @@
         "types": [
           "analytical"
         ],
-        "detail": "Product Manager MBA intern postings (Summer 2023 cycle) said applicants complete a HackerRank skills assessment before a University Recruiter follows up. Not confirmed for current non-PM MBA roles.",
+        "detail": "A Product Manager Intern – MBA posting (Summer 2023 cycle) said applicants complete a HackerRank skills assessment before a University Recruiter follows up. Not confirmed for current non-PM MBA roles.",
         "sources": [
           "paypal-linkedin-pm-hackerrank-2022"
         ]
@@ -737,8 +743,8 @@
         ]
       }
     ],
-    "distinctive": "PM interns are hired into Inbound (build and roadmap) or Outbound (go-to-market and evangelism) PM tracks. Candidates state a preference and may be considered for both.",
-    "caveat": "The official page describes ServiceNow's general three-step process, not MBA-intern rounds specifically. No reliable source was found for the number or content of MBA PM interview rounds.",
+    "distinctive": "In the Summer 2026 cycle, pM interns are hired into Inbound (build and roadmap) or Outbound (go-to-market and evangelism) PM tracks. Candidates state a preference and may be considered for both.",
+    "caveat": "The official page describes ServiceNow's general three-step process, not MBA-intern rounds specifically. No reliable source was found for the number or content of MBA PM interview rounds. ServiceNow's own FAQ points intern candidates to its Early Career page, which gives no interview details.",
     "sources": [
       "servicenow-how-we-hire",
       "servicenow-li-srpm-2026"
@@ -753,7 +759,7 @@
         "types": [
           "milestone"
         ],
-        "detail": "Rolling review in order of application; max two positions per application period (Jan-Jun, Jul-Dec)",
+        "detail": "Rolling review in order of application; max two applications per application period (Jan–Jun, Jul–Dec), counting TikTok and affiliates globally.",
         "sources": [
           "tiktok-earlycareers-faq",
           "tiktok-post-category-manager-ny-2027"
@@ -762,7 +768,8 @@
       {
         "label": "Assessment",
         "types": [
-          "analytical"
+          "analytical",
+          "behavioral"
         ],
         "detail": "Online assessment 'if applicable'; depends on role and region. Can be a virtual or in-person exercise, sometimes with other candidates",
         "sources": [
@@ -793,12 +800,13 @@
       }
     ],
     "distinctive": "Some MBA roles ask for more than the usual: the 2027 Ads PM intern posting requires Chinese and English, for meetings with Mandarin-speaking engineering teams.",
-    "caveat": "TikTok's pages describe the early-careers process in general, not MBA roles specifically. They don't give a round count or say whether product/case rounds are used. One forum anecdote describes four rounds for a PM intern (peer/leader screens, product take-home, manager, HR); that is unverified.",
+    "caveat": "One forum anecdote (PracHub, July 2025, not stated to be MBA) describes four rounds for a PM intern: background, behavioral, a tough manager round, and HR; some interviewers switched to Chinese. Unverified.",
     "sources": [
       "tiktok-earlycareers-faq",
       "tiktok-interview-tips",
       "tiktok-prachub-pm-intern",
-      "tiktok-post-category-manager-ny-2027"
+      "tiktok-post-category-manager-ny-2027",
+      "tiktok-ads-pm-intern-2027"
     ]
   },
   "waymo": {
@@ -828,9 +836,10 @@
       {
         "label": "Phone screens",
         "types": [
+          "behavioral",
           "case"
         ],
-        "detail": "1-2 phone/video interviews with a potential peer or manager: behavioral, hypothetical and case-based questions on role knowledge.",
+        "detail": "1–2 behavioral and/or technical phone or video interviews with a potential peer or manager: behavioral, hypothetical and case-based questions.",
         "sources": [
           "waymo-how-we-hire"
         ]
@@ -857,7 +866,7 @@
       }
     ],
     "distinctive": "Waymo explicitly bans AI assistance in live interviews. Its tips stress clarifying questions, framing and breaking down problems, and examples of handling ambiguity and gaining alignment in a matrixed org.",
-    "caveat": "The official page describes Waymo's general process, not MBA internships specifically. Internships may use fewer rounds. Whether Strategic Finance includes a modeling test is not stated.",
+    "caveat": "The official page describes Waymo's general process, not MBA internships; the early-careers page gives no intern-specific process. Whether Strategic Finance includes a modeling test isn't stated.",
     "sources": [
       "waymo-how-we-hire"
     ]

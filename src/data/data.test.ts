@@ -69,7 +69,7 @@ describe("companies", () => {
   it.each(companies.map((c) => [c.id, c.office] as const))("%s office policy matches its category", (_, o) => {
     expect(o.sources.length).toBeGreaterThan(0);
     if (o.category === "fixed") expect(typeof o.days).toBe("number");
-    if (o.category === "team") expect(o.low! < o.high!).toBe(true);
+    if (o.category === "team" && (o.low !== undefined || o.high !== undefined)) expect(o.low! < o.high!).toBe(true); // a team policy may have no published band
     if (o.category === "flexible" || o.category === "remote") expect(o.days).toBeNull();
     if (o.days !== null) expect(o.days).toBeGreaterThan(0);
   });

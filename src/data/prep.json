@@ -48,7 +48,7 @@
             "Cracking the PM Interview"
           ],
           "url": "https://www.lewis-lin.com",
-          "note": "(2013)."
+          "note": "Cracking the PM Interview is the 2013 edition; Decode and Conquer is in its 5th edition."
         },
         "Free": {
           "score": 2,
@@ -85,7 +85,7 @@
             "Cracking the PM Interview"
           ],
           "url": "https://www.lewis-lin.com",
-          "note": "(2013)."
+          "note": "Cracking the PM Interview is the 2013 edition; Decode and Conquer is in its 5th edition."
         },
         "Free": {
           "score": 2,
@@ -259,12 +259,12 @@
           "url": "https://www.crackingthepminterview.com"
         },
         "Free": {
-          "score": 2,
+          "score": 1,
           "items": [
             "PMExercises (community answers; coaching & mock interviews)"
           ],
           "url": "https://www.productmanagementexercises.com",
-          "note": "We couldn't confirm this one when we checked; treat it as unverified."
+          "note": "PMExercises has a free-forever account with community answers; coaching and mock interviews are paid."
         }
       },
       "Company-specific prep": {
@@ -326,7 +326,7 @@
             "Decode and Conquer"
           ],
           "url": "https://www.lewis-lin.com",
-          "note": "(2013)."
+          "note": "Decode and Conquer is in its 5th edition."
         },
         "Free": {
           "score": 1,
@@ -359,7 +359,7 @@
             "Decode and Conquer"
           ],
           "url": "https://www.lewis-lin.com",
-          "note": "(2013)."
+          "note": "Decode and Conquer is in its 5th edition."
         },
         "Free": {
           "score": 1,
@@ -588,7 +588,7 @@
             "Decode and Conquer"
           ],
           "url": "https://www.lewis-lin.com",
-          "note": "(2013)."
+          "note": "Decode and Conquer is in its 5th edition."
         },
         "Free": {
           "score": 1,
@@ -663,13 +663,11 @@
           "url": "https://casequestions.com/"
         },
         "Free": {
-          "score": 0,
+          "score": 1,
           "items": [
-            "none verified",
             "CaseInterview.com free preparation program (Victor Cheng), incl. case interview math"
           ],
-          "url": "https://caseinterview.com/",
-          "note": "We couldn't confirm this one when we checked; treat it as unverified."
+          "url": "https://caseinterview.com/"
         }
       },
       "Behavioral": {
@@ -1073,7 +1071,7 @@
   },
   "notes": [
     {
-      "text": "Current GSB students get RocketBlocks and Exponent (now Aced) through the CMC: look under MyGSB → interview prep tools before paying.",
+      "text": "Current GSB students get RocketBlocks and Exponent's PM Interview Prep (Exponent is now Aced) through the CMC: search MyGSB for “interview prep tools” before paying, and check what the Aced access covers.",
       "sources": [
         "gsb-libguide-interview",
         "rb-schools"

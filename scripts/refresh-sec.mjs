@@ -77,6 +77,11 @@ for (const c of companies) {
     continue;
   }
   const pct = Math.round((now.sum / prior.sum - 1) * 1000) / 10;
+  // A figure taken by hand from a newer filing (XBRL in SEC's API can lag a 10-Q by weeks) wins over older API data.
+  if (c.growth.asOf && c.growth.asOf > now.end) {
+    rows.push({ company: c.name, ttmEnd: now.end, sec: pct, current: c.growth.value, note: `kept: current figure is through ${c.growth.asOf}` });
+    continue;
+  }
   rows.push({ company: c.name, ttmEnd: now.end, ttmB: +(now.sum / 1e9).toFixed(2), priorB: +(prior.sum / 1e9).toFixed(2), sec: pct, current: c.growth.value, diff: +(pct - c.growth.value).toFixed(1) });
   if (WRITE) {
     if (pct !== c.growth.value) changed++;

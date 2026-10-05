@@ -332,7 +332,7 @@ details.why p { margin: 6px 0; }
 .dots i.on { background: var(--cardinal); border-color: var(--cardinal); }
 
 .corrections { margin: 0; }
-.corrections summary { font-family: var(--mono); font-size: 11px; cursor: pointer; color: var(--ink-3); text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; list-style: none; }
+.corrections summary { font-family: var(--mono); font-size: 11px; cursor: pointer; color: var(--cardinal); text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; list-style: none; }
 .corrections summary::-webkit-details-marker { display: none; }
 .corrections summary:hover { color: var(--cardinal); }
 .corrections form { display: grid; gap: 14px; max-width: 640px; margin-top: 16px; }

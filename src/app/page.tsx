@@ -19,7 +19,7 @@ const SECTIONS = [
   { id: "roles", short: "roles", title: "What the titles mean", dek: `${cap(count(roles.length))} jobs, ${titleCount} posted titles. Paste a title to decode it, or read across a row to see who's hiring for it right now.`, body: <RoleDecoder /> },
   {
     id: "companies", short: "companies", title: "The lay of the land",
-    dek: `${cap(count(companies.length))} big tech companies, ${count(withProgram)} of them with MBA internships, placed by public data. Change the axes to see them from a different angle, and pick any company for its field notes.`,
+    dek: `${cap(count(companies.length))} big tech companies, ${count(withProgram)} of them with MBA internships, placed by filings and reported figures. Change the axes to see them from a different angle, and pick any company for its field notes.`,
     body: <Explorer />,
   },
   { id: "windows", short: "timing", title: "When applications open", dek: "Past cycles, with the uncertainty left in. A tight cluster means you can plan around it; a wide smear means watch the postings.", body: <Windows /> },

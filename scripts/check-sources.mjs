@@ -74,6 +74,8 @@ async function checkLive(id, s) {
   try {
     const res = await fetch(s.url, { headers: { "User-Agent": UA, Accept: "text/html,application/xhtml+xml,application/pdf,*/*" }, redirect: "follow", signal: AbortSignal.timeout(25_000) });
     if ([401, 403, 429, 999].includes(res.status)) return { id, status: "blocked", code: res.status };
+    // Search APIs often only answer POST; a 400/405 to a plain GET doesn't mean the source is gone.
+    if ([400, 405].includes(res.status) && /\/api\//.test(s.url)) return { id, status: "unverifiable", note: "API endpoint (POST only)" };
     if (!res.ok) return { id, status: "dead", code: res.status };
     if (!s.quote) return { id, status: "ok" };
     const type = res.headers.get("content-type") ?? "";

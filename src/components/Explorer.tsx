@@ -48,7 +48,7 @@ const AXES: Record<AxisKey, Axis> = {
   office: {
     label: "Days a week in the office", short: "Office days",
     get: ({ office: o }) =>
-      o.category === "remote" ? { v: OFFICE_REMOTE } : o.category === "flexible" ? { v: OFFICE_FLEX } : { v: o.days ?? ((o.low ?? 0) + (o.high ?? 0)) / 2, lo: o.low, hi: o.high },
+      o.category === "remote" ? { v: OFFICE_REMOTE } : o.category === "flexible" || (o.category === "team" && o.low === undefined) ? { v: OFFICE_FLEX } : { v: o.days ?? ((o.low ?? 0) + (o.high ?? 0)) / 2, lo: o.low, hi: o.high },
     fmt: (v) => (v === OFFICE_REMOTE ? "remote" : v === OFFICE_FLEX ? "no rule" : format("~g")(v)),
     ticks: () => [OFFICE_REMOTE, OFFICE_FLEX, 1, 2, 3, 4, 5],
   },
@@ -190,7 +190,7 @@ export default function Explorer() {
         </div>
         <div className="caveat">
           Market values as of {capAsOf}{companies.some((c) => c.marketCap.kind === "private valuation") ? " (private companies: latest reported valuation)" : ""}.
-          Growth is trailing-twelve-month revenue vs the year before. Consumer/business splits are our estimates from segment
+          Growth is revenue over the latest twelve reported months vs the twelve before, from SEC filings; for private companies it&apos;s reported figures, shown as a range. Consumer/business splits are our estimates from segment
           reporting, since no company reports them; the bars show the plausible range. On &ldquo;applications open&rdquo;, bars span past cycles.
         </div>
       </div>

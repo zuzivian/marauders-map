@@ -67,16 +67,6 @@
       },
       {
         "company": "Amazon",
-        "title": "2026 MBA Program Management (PGM) Internship",
-        "cycles": [
-          "2025"
-        ],
-        "sources": [
-          "amazon-pgm-2026-search"
-        ]
-      },
-      {
-        "company": "Amazon",
         "title": "Senior Product Manager MBA Intern, Amazon University Talent Acquisition",
         "cycles": [
           "2025"
@@ -187,16 +177,6 @@
         ]
       },
       {
-        "company": "Google",
-        "title": "MBA Intern, 2026",
-        "cycles": [
-          "2025"
-        ],
-        "sources": [
-          "google-mba-intern-2026-china-wb"
-        ]
-      },
-      {
         "company": "Nvidia",
         "title": "Product Management MBA Intern, Data Center GPU - Summer 2027",
         "cycles": [
@@ -294,10 +274,12 @@
         "company": "Dell",
         "title": "MBA Product Management Internship",
         "cycles": [
-          "2024"
+          "2024",
+          "2025"
         ],
         "sources": [
-          "dell-wayup-mba-pm-2024"
+          "dell-wayup-mba-pm-2024",
+          "jobright-2026-mgmt-repo"
         ]
       },
       {
@@ -390,6 +372,77 @@
         ],
         "sources": [
           "waymo-gh-salesforce-po-2027"
+        ]
+      },
+      {
+        "company": "Apple",
+        "title": "MBA Internships - Summer 2026",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "apple-2025-wayback"
+        ]
+      },
+      {
+        "company": "Apple",
+        "title": "MBA Internships",
+        "cycles": [
+          "2026"
+        ],
+        "sources": [
+          "apple-2026-mba-internships"
+        ]
+      },
+      {
+        "company": "Cisco",
+        "title": "Product Management MBA (Intern) - United States",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "jobright-cisco-pm-mba-2026"
+        ]
+      },
+      {
+        "company": "PayPal",
+        "title": "Product Manager Wallet Intern - MBA",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "jobright-2026-pm-repo"
+        ]
+      },
+      {
+        "company": "PayPal",
+        "title": "Technical Product Manager Intern - MBA",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "jobright-2026-pm-repo"
+        ]
+      },
+      {
+        "company": "PayPal",
+        "title": "Product Manager MBA Intern",
+        "cycles": [
+          "2023",
+          "2024"
+        ],
+        "sources": [
+          "jobright-2026-pm-repo"
+        ]
+      },
+      {
+        "company": "Visa",
+        "title": "Product Management, MBA Intern - Summer 2025",
+        "cycles": [
+          "2024"
+        ],
+        "sources": [
+          "visa-sr-pm-mba-2025"
         ]
       }
     ],
@@ -581,37 +634,6 @@
         ]
       },
       {
-        "company": "Google",
-        "title": "MBA Intern, Summer 2026",
-        "cycles": [
-          "2025"
-        ],
-        "sources": [
-          "google-mba-intern-summer-2026-posting",
-          "linkedin-ehis-google-mba-2026"
-        ]
-      },
-      {
-        "company": "Google",
-        "title": "MBA Intern, Summer 2025",
-        "cycles": [
-          "2024"
-        ],
-        "sources": [
-          "google-mba-intern-summer-2025-wb"
-        ]
-      },
-      {
-        "company": "Google",
-        "title": "MBA Intern, 2026",
-        "cycles": [
-          "2025"
-        ],
-        "sources": [
-          "google-mba-intern-2026-china-wb"
-        ]
-      },
-      {
         "company": "Nvidia",
         "title": "Product Marketing MBA Intern, Data Processing - Summer 2026",
         "cycles": [
@@ -652,16 +674,6 @@
           "linkedin-meta-pmm-3783015842",
           "linkedin-meta-pmm-4062928334",
           "getro-meta-pmm-mba-2025"
-        ]
-      },
-      {
-        "company": "Airbnb",
-        "title": "Strategic Communications & Content Development Intern (MA/MS/MBA)",
-        "cycles": [
-          "2024"
-        ],
-        "sources": [
-          "startupjobs-airbnb-stratcomms-2025"
         ]
       },
       {
@@ -746,6 +758,46 @@
         "sources": [
           "tiktok-careers-api-mba-intern-2027"
         ]
+      },
+      {
+        "company": "Adobe",
+        "title": "2026 MBA Intern - Content Marketing Strategy",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "adobe-r158880-wb"
+        ]
+      },
+      {
+        "company": "PayPal",
+        "title": "MBA - Product Marketing Intern",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "jobright-2026-mkt-repo"
+        ]
+      },
+      {
+        "company": "PayPal",
+        "title": "MBA - Integrated Marketing Intern",
+        "cycles": [
+          "2024"
+        ],
+        "sources": [
+          "jobright-2026-mkt-repo"
+        ]
+      },
+      {
+        "company": "Workday",
+        "title": "Product Marketing Manager Intern, MBA",
+        "cycles": [
+          "2024"
+        ],
+        "sources": [
+          "jobright-2026-mkt-repo"
+        ]
       }
     ],
     "short": "PMM"
@@ -755,7 +807,7 @@
     "name": "Strategy and BizOps",
     "epithet": "the internal consultant",
     "technical": "some",
-    "definition": "Takes on the messiest problems in the business: planning, metrics, pricing, operations, and one-off strategy projects. Rotational leadership programs usually land here too.",
+    "definition": "Takes on the messiest problems in the business: planning, metrics, pricing, operations, and one-off strategy projects. General-management rotations (e.g. Amazon MLDP) land here; finance rotations (FLDP) sit under Strategic finance.",
     "leadsTo": "Strategy lead, chief of staff, or a general-manager track.",
     "prepKey": "Strategy & BizOps",
     "keywords": [
@@ -870,6 +922,10 @@
       [
         "enterprise",
         0
+      ],
+      [
+        "payments manager",
+        2
       ]
     ],
     "titles": [
@@ -1115,36 +1171,6 @@
         ]
       },
       {
-        "company": "Google",
-        "title": "MBA Intern, 2026",
-        "cycles": [
-          "2025"
-        ],
-        "sources": [
-          "google-mba-intern-2026-china-wb"
-        ]
-      },
-      {
-        "company": "Google",
-        "title": "Strategy and Operations MBA Intern, 2027",
-        "cycles": [
-          "2026"
-        ],
-        "sources": [
-          "google-emea-so-mba-2027"
-        ]
-      },
-      {
-        "company": "Google",
-        "title": "Business Analyst MBA Intern, 2027",
-        "cycles": [
-          "2026"
-        ],
-        "sources": [
-          "google-emea-ba-mba-2027"
-        ]
-      },
-      {
         "company": "Nvidia",
         "title": "Indirect Procurement MBA Intern - Summer 2026",
         "cycles": [
@@ -1270,10 +1296,12 @@
         "company": "Cisco",
         "title": "Strategy and Planning Manager MBA (Intern) United States",
         "cycles": [
-          "2024"
+          "2024",
+          "2025"
         ],
         "sources": [
-          "cisco-req-1426356"
+          "cisco-req-1426356",
+          "jobright-2026-mgmt-repo"
         ]
       },
       {
@@ -1290,20 +1318,24 @@
         "company": "Dell",
         "title": "General Business Internship MBA",
         "cycles": [
-          "2024"
+          "2024",
+          "2025"
         ],
         "sources": [
-          "dell-wayup-genbiz-mba-2024"
+          "dell-wayup-genbiz-mba-2024",
+          "jobright-2026-mgmt-repo"
         ]
       },
       {
         "company": "Dell",
         "title": "Strategy MBA Intern",
         "cycles": [
-          "2024"
+          "2024",
+          "2025"
         ],
         "sources": [
-          "dell-wayup-strategy-mba-2024"
+          "dell-wayup-strategy-mba-2024",
+          "jobright-2026-mgmt-repo"
         ]
       },
       {
@@ -1479,16 +1511,6 @@
       },
       {
         "company": "TikTok",
-        "title": "Category Manager Intern (TikTok Shop - Operations-Beauty, Food & Beverage) - 2027 Summer (MBA)",
-        "cycles": [
-          "2026"
-        ],
-        "sources": [
-          "tiktok-careers-api-mba-intern-2027"
-        ]
-      },
-      {
-        "company": "TikTok",
         "title": "Category Manager Intern (TikTok Shop - Operations-Personal Care and Lifestyle) - 2027 Summer (MBA)",
         "cycles": [
           "2026"
@@ -1510,26 +1532,6 @@
       {
         "company": "TikTok",
         "title": "Strategy Intern (Monetization Strategy & Operations) - 2027 Summer (MBA)",
-        "cycles": [
-          "2026"
-        ],
-        "sources": [
-          "tiktok-careers-api-mba-intern-2027"
-        ]
-      },
-      {
-        "company": "TikTok",
-        "title": "Category Manager Intern (TikTok Shop - Operations, Beauty, Food & Beverage) - 2027 Summer (MBA)",
-        "cycles": [
-          "2026"
-        ],
-        "sources": [
-          "tiktok-careers-api-mba-intern-2027"
-        ]
-      },
-      {
-        "company": "TikTok",
-        "title": "Category Manager Intern (TikTok Shop - Operations Beauty, Food & Beverage) - 2027 Summer (MBA)",
         "cycles": [
           "2026"
         ],
@@ -1600,6 +1602,67 @@
         "sources": [
           "waymo-gh-ops-planning-2027"
         ]
+      },
+      {
+        "company": "Adobe",
+        "title": "2026 MBA Intern - Payments Manager",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "adobe-careers-cdx"
+        ]
+      },
+      {
+        "company": "Workday",
+        "title": "Enterprise Planning, MBA Intern",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "workday-jobright-ep-mba",
+          "workday-wd-ep-mba"
+        ]
+      },
+      {
+        "company": "Amazon",
+        "title": "2026 MBA Program Management (PGM) Internship",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "amazon-pgm-2026-search"
+        ]
+      },
+      {
+        "company": "TikTok",
+        "title": "Category Manager Intern (TikTok Shop - Operations, Beauty, Food & Beverage) - 2027 Summer (MBA)",
+        "cycles": [
+          "2026"
+        ],
+        "sources": [
+          "tiktok-careers-api-mba-intern-2027"
+        ]
+      },
+      {
+        "company": "Adobe",
+        "title": "2026 MBA Intern - GTM Strategy & Ops",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "adobe-r158568-wb"
+        ]
+      },
+      {
+        "company": "Adobe",
+        "title": "2026 MBA Intern – EX Strategy & Business Operations",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "adobe-r161488-wb"
+        ]
       }
     ],
     "short": "Strat"
@@ -1652,10 +1715,6 @@
       [
         "finance strategy",
         4
-      ],
-      [
-        "payments manager",
-        2
       ]
     ],
     "titles": [
@@ -1770,16 +1829,6 @@
         ]
       },
       {
-        "company": "Adobe",
-        "title": "2026 MBA Intern - Payments Manager",
-        "cycles": [
-          "2025"
-        ],
-        "sources": [
-          "adobe-careers-cdx"
-        ]
-      },
-      {
         "company": "Microsoft",
         "title": "Finance Manager: MBA Internship Opportunities",
         "cycles": [
@@ -1809,26 +1858,6 @@
         ],
         "sources": [
           "ms-200055974"
-        ]
-      },
-      {
-        "company": "Google",
-        "title": "Finance MBA Intern, 2026",
-        "cycles": [
-          "2025"
-        ],
-        "sources": [
-          "google-finance-mba-intern-2026"
-        ]
-      },
-      {
-        "company": "Google",
-        "title": "Finance MBA Intern, 2027",
-        "cycles": [
-          "2026"
-        ],
-        "sources": [
-          "google-emea-finance-mba-2027"
         ]
       },
       {
@@ -1877,13 +1906,11 @@
         "title": "Strategic Finance & Analytics Intern (MBA)",
         "cycles": [
           "2023",
-          "2024",
-          "2025"
+          "2024"
         ],
         "sources": [
           "linkedin-airbnb-sfa-3784061828",
-          "linkedin-airbnb-sfa-4136512155",
-          "topjobstoday-airbnb-sfa-2026"
+          "linkedin-airbnb-sfa-4136512155"
         ]
       },
       {
@@ -1981,14 +2008,54 @@
         ]
       },
       {
-        "company": "Workday",
-        "title": "Enterprise Planning, MBA Intern",
+        "company": "Google",
+        "title": "MBA Intern, Summer 2026",
         "cycles": [
           "2025"
         ],
         "sources": [
-          "workday-jobright-ep-mba",
-          "workday-wd-ep-mba"
+          "google-mba-intern-summer-2026-posting",
+          "linkedin-ehis-google-mba-2026"
+        ]
+      },
+      {
+        "company": "Google",
+        "title": "MBA Intern, Summer 2025",
+        "cycles": [
+          "2024"
+        ],
+        "sources": [
+          "google-mba-intern-summer-2025-wb"
+        ]
+      },
+      {
+        "company": "Visa",
+        "title": "Global Finance, MBA Intern - Summer 2025",
+        "cycles": [
+          "2024"
+        ],
+        "sources": [
+          "jobright-2026-acct-repo"
+        ]
+      },
+      {
+        "company": "Workday",
+        "title": "Strategic Planning Finance MBA Intern",
+        "cycles": [
+          "2024"
+        ],
+        "sources": [
+          "jobright-2026-acct-repo"
+        ]
+      },
+      {
+        "company": "Workday",
+        "title": "Sales Finance MBA Financial Analyst Intern",
+        "cycles": [
+          "2024"
+        ],
+        "sources": [
+          "jobright-2026-acct-repo"
         ]
       }
     ],
@@ -2000,7 +2067,7 @@
     "epithet": "the closer",
     "technical": "some",
     "definition": "Works with customers to scope what they need, show what a product is worth to them, and close the deal. Common at enterprise software companies.",
-    "leadsTo": "Account executive or solutions leadership; a fast route to running a region.",
+    "leadsTo": "Full-time value or solutions consultant, then sales strategy or account leadership.",
     "prepKey": null,
     "keywords": [
       [
@@ -2127,6 +2194,38 @@
         ],
         "sources": [
           "huzzle-uber-implementation-2025"
+        ]
+      },
+      {
+        "company": "Google",
+        "title": "MBA Intern, Summer 2026",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "google-mba-intern-summer-2026-posting",
+          "linkedin-ehis-google-mba-2026"
+        ]
+      },
+      {
+        "company": "Google",
+        "title": "MBA Intern, Summer 2025",
+        "cycles": [
+          "2024"
+        ],
+        "sources": [
+          "google-mba-intern-summer-2025-wb"
+        ]
+      },
+      {
+        "company": "Cisco",
+        "title": "Critical Accounts Manager MBA (Intern) - United States",
+        "cycles": [
+          "2024",
+          "2025"
+        ],
+        "sources": [
+          "jobright-cisco-cam-mba-2026"
         ]
       }
     ],
@@ -2255,10 +2354,12 @@
         "company": "PayPal",
         "title": "MBA - Corporate Development Intern",
         "cycles": [
+          "2024",
           "2025"
         ],
         "sources": [
-          "paypal-builtin-corpdev-2025"
+          "paypal-builtin-corpdev-2025",
+          "jobright-2026-sales-repo"
         ]
       },
       {
@@ -2299,6 +2400,26 @@
         ],
         "sources": [
           "tiktok-careers-api-mba-intern-2027"
+        ]
+      },
+      {
+        "company": "Apple",
+        "title": "MBA Internships",
+        "cycles": [
+          "2026"
+        ],
+        "sources": [
+          "apple-2026-mba-internships"
+        ]
+      },
+      {
+        "company": "Nvidia",
+        "title": "Media and Entertainment Industry Business Development, MBA Intern - Summer 2026",
+        "cycles": [
+          "2025"
+        ],
+        "sources": [
+          "nvidia-jr2011052"
         ]
       }
     ],
