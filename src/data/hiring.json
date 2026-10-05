@@ -1013,7 +1013,10 @@
     "current": {
       "checked": "2026-10-04",
       "summary": "No Databricks summer-2027 MBA intern posting as of 2026-10-04: its Greenhouse board lists 885 jobs, and the only product internship is the CS-track 'Product Management Intern (Summer 2027)', which asks for a bachelor's or master's in computer science. The last three cycles' MBA roles went up between mid-January and late March.",
-      "postings": []
+      "postings": [],
+      "sources": [
+        "databricks-gh-board-api"
+      ]
     }
   },
   "dell": {
@@ -1304,7 +1307,11 @@
     "current": {
       "checked": "2026-10-04",
       "summary": "No Spotify summer-2027 MBA posting as of 2026-10-04: its Lever board has 82 postings and the only internship is 'RecSys 2026 — Intern'. The students page says 2027 internship information is coming soon. The last three cycles posted between late January and early March and closed two to three weeks later, with no late applications accepted.",
-      "postings": []
+      "postings": [],
+      "sources": [
+        "spotify-lever-api",
+        "spotify-students"
+      ]
     }
   },
   "tiktok": {

@@ -3335,6 +3335,15 @@
     "kind": "secondary",
     "quote": "There are no mandatory office days."
   },
+  "spotify-lever-api": {
+    "url": "https://api.lever.co/v0/postings/spotify?mode=json",
+    "title": "Spotify job board (Lever postings API): 82 postings",
+    "publisher": "Lever",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
   "spotify-students": {
     "url": "https://www.lifeatspotify.com/start-your-journey/students",
     "title": "Students | Life at Spotify",

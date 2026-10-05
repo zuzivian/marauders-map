@@ -83,7 +83,7 @@ export interface Hiring {
   hasProgram: boolean;
   pattern: string; // how postings behave, in plain English
   windows: WindowObs[];
-  current: { checked: ISODate; summary: string; postings: Posting[] };
+  current: { checked: ISODate; summary: string; postings: Posting[]; sources?: string[] }; // sources: what backs the summary (live job board, careers page)
   note?: string | null;
 }
 
