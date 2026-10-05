@@ -107,6 +107,7 @@ button, select, input { font: inherit; color: inherit; }
 
 /* who hires what */
 .who-wrap { overflow-x: auto; margin-top: 18px; }
+.who-wide-wrap { padding-right: 56px; } /* room for the last column's slanted name, which leans right past the table */
 .who { border-collapse: collapse; width: 100%; table-layout: fixed; }
 .who th, .who td { padding: 0; border-bottom: 0.5px solid var(--rule); text-align: center; }
 .who thead th { border-bottom: 1.5px solid var(--ink); vertical-align: bottom; height: 92px; }
