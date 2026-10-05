@@ -949,6 +949,73 @@
       "postings": []
     }
   },
+  "databricks": {
+    "hasProgram": true,
+    "pattern": "Late, in one batch: MBA roles go up in late January to February (late March in 2024), with no stated deadline",
+    "windows": [
+      {
+        "cycle": "2023",
+        "from": "2024-03-01",
+        "to": "2024-03-21",
+        "evidence": "medium",
+        "scope": "MBA Intern - Strategy & Operations (for MBAs graduating Spring 2025), San Francisco",
+        "note": "Only aggregator dates survive: MeetFrank published it 2024-03-21 and Huzzle 2024-03-28. No archived copy of Databricks' own page, and no other MBA roles from this cycle, were found.",
+        "sources": [
+          "databricks-meetfrank-so-2024",
+          "databricks-huzzle-so-2024"
+        ]
+      },
+      {
+        "cycle": "2024",
+        "from": "2025-01-13",
+        "to": "2025-01-24",
+        "evidence": "medium",
+        "scope": "MBA Intern roles for Summer 2025: Commercialization Product Management, Product Operations, Strategy & Execution, Strategic Finance",
+        "note": "A Getro job board recorded Commercialization Product Management on 2025-01-24, and Strategy & Execution was being shared on LinkedIn by 2025-01-31. LinkedIn job IDs for Product Operations and Strategy & Execution (~4.1325B) fit late January. Strategic Finance's Greenhouse ID sits among jobs first published Jan 13-15, 2025, the earliest it could have gone up, though Getro first recorded it Feb 6.",
+        "sources": [
+          "databricks-getro-commercialization-pm-2025",
+          "databricks-getro-strategic-finance-2025",
+          "databricks-li-2025-mba-po",
+          "databricks-li-2025-mba-se",
+          "databricks-li-post-se-2025",
+          "linkedin-jobid-calibration",
+          "databricks-gh-board-api",
+          "databricks-wb-2025-mba-cpm",
+          "databricks-wb-2025-mba-po",
+          "databricks-wb-2025-mba-se",
+          "databricks-wb-2025-mba-sf"
+        ]
+      },
+      {
+        "cycle": "2025",
+        "from": "2026-02-02",
+        "to": "2026-02-10",
+        "evidence": "medium",
+        "scope": "MBA Intern roles for Summer 2026: Product Operations, Technical Program Management, Corporate Operations, Strategic Finance, People Analytics (retitled Workforce Intelligence), Product Pricing & Commercialization, Commercial Transformation, Strategy & Execution",
+        "note": "A Getro job board recorded Product Operations on 2026-02-10 and Corporate Operations on 2026-02-18; Jobright picked up Commercial Transformation on 2026-03-03. The roles' Greenhouse IDs (8399535002-8402617002) sit among jobs first published Feb 2-3, 2026, so they were created about then. Strategy & Execution reused its 2025 requisition and was live by 2026-03-25. Databricks says its early-career applications typically open in August; its MBA roles have not followed that.",
+        "sources": [
+          "databricks-getro-product-ops-2026",
+          "databricks-getro-corp-ops-2026",
+          "databricks-jobright-commercial-transformation-2026",
+          "databricks-gh-board-api",
+          "databricks-wb-2026-mba-po",
+          "databricks-wb-2026-mba-tpm",
+          "databricks-wb-2026-mba-corpops",
+          "databricks-wb-2026-mba-sf",
+          "databricks-wb-2026-mba-people",
+          "databricks-wb-2026-mba-pricing",
+          "databricks-wb-2026-mba-ct",
+          "databricks-wb-2026-mba-se",
+          "databricks-university"
+        ]
+      }
+    ],
+    "current": {
+      "checked": "2026-10-04",
+      "summary": "No Databricks summer-2027 MBA intern posting as of 2026-10-04: its Greenhouse board lists 885 jobs, and the only product internship is the CS-track 'Product Management Intern (Summer 2027)', which asks for a bachelor's or master's in computer science. The last three cycles' MBA roles went up between mid-January and late March.",
+      "postings": []
+    }
+  },
   "dell": {
     "hasProgram": true,
     "pattern": "One posting per MBA function (product management, product marketing, strategy, general business). The first ones appear late Aug to Sep and more are added later in the cycle; each has a fixed end date.",

@@ -894,6 +894,71 @@
     }
   },
   {
+    "id": "databricks",
+    "name": "Databricks",
+    "hq": "San Francisco",
+    "model": "Enterprise software",
+    "ai": "Builds AI infrastructure",
+    "marketCap": {
+      "value": 190,
+      "asOf": "2026-08-13",
+      "kind": "private valuation",
+      "note": "$5B strategic round closed Aug 2026, up from $134B in Feb 2026.",
+      "sources": [
+        "databricks-pr-7b-runrate",
+        "databricks-pr-5-4b-runrate"
+      ]
+    },
+    "growth": {
+      "value": 80,
+      "low": 65,
+      "basis": "year-over-year growth of the revenue run-rate in Databricks' Q2 (announced 2026-08-13), as reported by the company",
+      "note": "Private company: company-reported run-rate growth, not audited revenue. Databricks said '>80%' on a run-rate above $7B; the quarter before it said '>65%' on $5.4B, shown as the low end.",
+      "sources": [
+        "databricks-pr-7b-runrate",
+        "databricks-pr-5-4b-runrate"
+      ],
+      "asOf": "2026-08-13"
+    },
+    "headcount": {
+      "value": 14321,
+      "asOf": "2026-03-31",
+      "note": "Third-party estimate (Revelio Labs, 'as of March 2026'; month-end used). Databricks does not publish headcount.",
+      "sources": [
+        "databricks-revelio-headcount"
+      ]
+    },
+    "b2bPayer": {
+      "value": 100,
+      "low": 97,
+      "high": 100,
+      "reasoning": "Rough estimate, not disclosed. Databricks sells its data and AI platform to organizations (it cites more than 20,000) on consumption and subscription terms, and has no consumer product, so effectively all revenue is paid by businesses.",
+      "sources": [
+        "databricks-pr-7b-runrate"
+      ]
+    },
+    "b2bUser": {
+      "value": 100,
+      "low": 97,
+      "high": 100,
+      "reasoning": "Rough estimate, not disclosed. The platform (data warehousing, Lakebase, Genie, AI tooling) is used by companies' data, engineering and business teams; there is no consumer-facing product line.",
+      "sources": [
+        "databricks-pr-7b-runrate"
+      ]
+    },
+    "office": {
+      "category": "fixed",
+      "days": 3,
+      "summary": "3 days a week in the office for most roles at hub offices, with badge tracking, per employee accounts compiled by JobsByCulture; Databricks publishes no formal policy. Some current postings require the ability to work onsite three days a week.",
+      "interns": "No intern-specific policy found. Past MBA intern postings were based in San Francisco (the 2026 TPM role also Mountain View).",
+      "confidence": "medium",
+      "sources": [
+        "databricks-jobsbyculture-rto",
+        "databricks-gh-tpm-security"
+      ]
+    }
+  },
+  {
     "id": "dell",
     "name": "Dell",
     "ticker": "DELL",

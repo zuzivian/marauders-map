@@ -892,6 +892,267 @@
     "kind": "secondary",
     "quote": "only applies to Instagram and not to the company's other family of apps"
   },
+  "databricks-getro-commercialization-pm-2025": {
+    "url": "https://jobs.stripes.co/companies/databricks/jobs/45139478-mba-intern-commercialization-product-management",
+    "title": "MBA Intern - Commercialization Product Management @ Databricks (Getro listing; datePosted 2025-01-24)",
+    "publisher": "Stripes job board (Getro)",
+    "published": "2025-01-24",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "databricks-getro-corp-ops-2026": {
+    "url": "https://jobs.dcvc.com/companies/databricks/jobs/68030215-mba-intern-corporate-operations-corp-ops",
+    "title": "MBA Intern - Corporate Operations (Corp Ops) @ Databricks (Getro listing; datePosted 2026-02-18)",
+    "publisher": "DCVC job board (Getro)",
+    "published": "2026-02-18",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "databricks-getro-product-ops-2026": {
+    "url": "https://jobs.luxcapital.com/companies/databricks/jobs/67302307-mba-intern-product-operations",
+    "title": "MBA Intern - Product Operations @ Databricks (Getro listing; datePosted 2026-02-10)",
+    "publisher": "Lux Capital job board (Getro)",
+    "published": "2026-02-10",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "databricks-getro-strategic-finance-2025": {
+    "url": "https://jobs.thrivecap.com/companies/databricks/jobs/45664813-mba-intern-strategic-finance",
+    "title": "MBA Intern - Strategic Finance @ Databricks (Getro listing; datePosted 2025-02-06)",
+    "publisher": "Thrive Capital job board (Getro)",
+    "published": "2025-02-06",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "databricks-gh-board-api": {
+    "url": "https://boards-api.greenhouse.io/v1/boards/databricks/jobs",
+    "title": "Databricks job board (Greenhouse API): 885 jobs with first_published dates, used to date job IDs",
+    "publisher": "Greenhouse",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "databricks-gh-tpm-security": {
+    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8864285002",
+    "title": "Staff Technical Program Manager - Security",
+    "publisher": "Databricks",
+    "published": "2026-10-02",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Ability to work onsite three days per week"
+  },
+  "databricks-huzzle-so-2024": {
+    "url": "https://www.huzzle.com/internships/mba-intern-strategy-operations-607229",
+    "title": "MBA Intern - Strategy & Operations | Databricks (posted_at 2024-03-28)",
+    "publisher": "Huzzle",
+    "published": "2024-03-28",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "You will graduate in Spring 2025 from an MBA program"
+  },
+  "databricks-jobright-commercial-transformation-2026": {
+    "url": "https://jobright.ai/jobs/info/69a73d6f76bbe83d3afa9875",
+    "title": "MBA Intern - Commercial Transformation @ Databricks (Jobright record created 2026-03-03, per its ID)",
+    "publisher": "Jobright.ai",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "databricks-jobsbyculture-rto": {
+    "url": "https://jobsbyculture.com/blog/databricks-remote-work-policy-2026",
+    "title": "Databricks Remote Work Policy 2026: Hybrid-First With Strict RTO (updated April 2026)",
+    "publisher": "JobsByCulture",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Most roles require 3 days per week in a Databricks office"
+  },
+  "databricks-li-2025-mba-po": {
+    "url": "https://www.linkedin.com/jobs/view/mba-intern-product-operations-at-databricks-4132524045",
+    "title": "MBA Intern - Product Operations - Databricks",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "databricks-li-2025-mba-se": {
+    "url": "https://www.linkedin.com/jobs/view/mba-intern-strategy-execution-at-databricks-4132526021",
+    "title": "MBA Intern - Strategy & Execution - Databricks",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "databricks-li-post-se-2025": {
+    "url": "https://www.linkedin.com/posts/aislinggrogan_mba-intern-strategy-execution-databricks-activity-7291171937551106050-jdLX",
+    "title": "LinkedIn post sharing 'MBA Intern - Strategy & Execution - Databricks' (activity ID timestamp 2025-01-31)",
+    "publisher": "LinkedIn",
+    "published": "2025-01-31",
+    "accessed": "2026-10-04",
+    "kind": "forum",
+    "quote": null
+  },
+  "databricks-meetfrank-so-2024": {
+    "url": "https://meetfrank.com/jobs/databricks/mba-intern-strategy-operations",
+    "title": "MBA Intern - Strategy & Operations - Databricks (publishedAt 2024-03-21)",
+    "publisher": "MeetFrank",
+    "published": "2024-03-21",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
+  },
+  "databricks-pr-5-4b-runrate": {
+    "url": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-65-yoy-surpasses-5-4-billion-revenue-run-rate",
+    "title": "Databricks Grows >65% YoY, Surpasses $5.4 Billion Revenue Run-Rate, Doubles Down on Lakebase and Genie",
+    "publisher": "Databricks",
+    "published": "2026-02-09",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "~$5B of equity financing at a $134 billion valuation"
+  },
+  "databricks-pr-7b-runrate": {
+    "url": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+    "title": "Databricks Grows >80% YoY, Surpasses $7B Revenue Run-Rate, Scales Lakebase, Genie, and Unity AI Gateway",
+    "publisher": "Databricks",
+    "published": "2026-08-13",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "crossed a $7 billion revenue run-rate, delivering >80% year-over-year growth"
+  },
+  "databricks-revelio-headcount": {
+    "url": "https://www.reveliolabs.com/companies/databricks/employees",
+    "title": "Databricks Number of Employees",
+    "publisher": "Revelio Labs",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "approximately 14,321 total employees worldwide as of March 2026"
+  },
+  "databricks-university": {
+    "url": "https://www.databricks.com/company/careers/university-recruiting",
+    "title": "Internships and early careers at Databricks",
+    "publisher": "Databricks",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "typically opening applications in August"
+  },
+  "databricks-wb-2025-mba-cpm": {
+    "url": "https://web.archive.org/web/20250210141444/https://www.databricks.com/company/careers/business-strategy-and-ops/mba-intern---commercialization-product-management-7823924002?gh_jid=7823924002&gh_src=apmlist",
+    "title": "MBA Intern - Commercialization Product Management (Wayback snapshot 2025-02-10)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "You will graduate in Spring 2026 from an MBA program"
+  },
+  "databricks-wb-2025-mba-po": {
+    "url": "https://web.archive.org/web/20250210070807/https://www.databricks.com/company/careers/engineering/mba-intern---product-operations-7823918002",
+    "title": "MBA Intern - Product Operations (Wayback snapshot 2025-02-10)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "You will graduate in Spring 2026 from an MBA program"
+  },
+  "databricks-wb-2025-mba-se": {
+    "url": "https://web.archive.org/web/20250215012613/https://www.databricks.com/company/careers/university-recruiting/mba-intern---strategy--execution-7295056002",
+    "title": "MBA Intern - Strategy & Execution (Wayback snapshot 2025-02-15)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "databricks-wb-2025-mba-sf": {
+    "url": "https://web.archive.org/web/20250319193917/https://www.databricks.com/company/careers/finance/mba-intern---strategic-finance-7795032002",
+    "title": "MBA Intern - Strategic Finance (Wayback snapshot 2025-03-19)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "databricks-wb-2026-mba-corpops": {
+    "url": "https://web.archive.org/web/20260317150232/https://www.databricks.com/company/careers/corporate-operations/mba-intern---corporate-operations-corp-ops-8402603002",
+    "title": "MBA Intern - Corporate Operations (Corp Ops) (Wayback snapshot 2026-03-17)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "graduate in Spring 2027 from a top-tier MBA program"
+  },
+  "databricks-wb-2026-mba-ct": {
+    "url": "https://web.archive.org/web/20260313114027/https://www.databricks.com/company/careers/business-strategy-and-ops/mba-intern---commercial-transformation-8402617002",
+    "title": "MBA Intern - Commercial Transformation (Wayback snapshot 2026-03-13)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "databricks-wb-2026-mba-people": {
+    "url": "https://web.archive.org/web/20260225093528/https://www.databricks.com/company/careers/people/mba-intern---people-analytics-8402613002",
+    "title": "MBA Intern - People Analytics, later retitled Workforce Intelligence (Wayback snapshot 2026-02-25)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "Currently pursuing an MBA with a graduation date in Spring 2027"
+  },
+  "databricks-wb-2026-mba-po": {
+    "url": "https://web.archive.org/web/20260305235105/https://www.databricks.com/company/careers/university-recruiting/mba-intern---product-operations-8399535002",
+    "title": "MBA Intern - Product Operations (Wayback snapshot 2026-03-05)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "databricks-wb-2026-mba-pricing": {
+    "url": "https://web.archive.org/web/20260317153154/https://www.databricks.com/company/careers/business-strategy-and-ops/mba-intern---product-pricing--commercialization-8402615002",
+    "title": "MBA Intern - Product Pricing & Commercialization (Wayback snapshot 2026-03-17)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "databricks-wb-2026-mba-se": {
+    "url": "https://web.archive.org/web/20260325073250/https://www.databricks.com/company/careers/university-recruiting/mba-intern---strategy--execution-7295056002?gh_jid=7295056002%253Fref%253Djobsbyculture.com",
+    "title": "MBA Intern - Strategy & Execution, reposted for Spring 2027 graduates (Wayback snapshot 2026-03-25)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "You will graduate in Spring 2027 from an MBA program"
+  },
+  "databricks-wb-2026-mba-sf": {
+    "url": "https://web.archive.org/web/20260310212429/https://www.databricks.com/company/careers/finance/mba-intern---strategic-finance-8402610002",
+    "title": "MBA Intern - Strategic Finance (Wayback snapshot 2026-03-10)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": null
+  },
+  "databricks-wb-2026-mba-tpm": {
+    "url": "https://web.archive.org/web/20260304173717/https://www.databricks.com/company/careers/university-recruiting/mba-intern---technical-program-management-tpm-8399537002",
+    "title": "MBA Intern - Technical Program Management (TPM) (Wayback snapshot 2026-03-04)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "Currently enrolled in a top-tier MBA program"
+  },
   "dell-10k-fy26": {
     "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000008/dell-20260130.htm",
     "title": "Dell Technologies Form 10-K for fiscal year ended January 30, 2026",
