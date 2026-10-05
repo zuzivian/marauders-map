@@ -639,6 +639,24 @@
     "kind": "secondary",
     "quote": "first-year MBA students (graduating Spring 2027)"
   },
+  "builtin-airbnb-sfa-2026-pay": {
+    "url": "https://www.builtinsf.com/job/strategic-finance-analytics-intern-mba/8042721",
+    "title": "Strategic Finance & Analytics Intern (MBA/MS) - Airbnb: pay",
+    "publisher": "Built In San Francisco",
+    "published": "2026-02-09",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "$48 per hour"
+  },
+  "builtin-airbnb-sfa-2026-team": {
+    "url": "https://www.builtinsf.com/job/strategic-finance-analytics-intern-mba/8042721",
+    "title": "Strategic Finance & Analytics Intern (MBA/MS) - Airbnb: team placement",
+    "publisher": "Built In San Francisco",
+    "published": "2026-02-09",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "will be dependent on the team you are placed in"
+  },
   "builtin-nvidia-corpdev-2026": {
     "url": "https://www.builtinsf.com/job/corporate-development-mba-intern-summer-2026/7468385",
     "title": "Corporate Development MBA Intern - Summer 2026 - NVIDIA | Built In San Francisco",
@@ -647,6 +665,15 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": "Applications for this job will be accepted at least until October 27, 2025."
+  },
+  "builtin-nvidia-corpdev-2026-pay": {
+    "url": "https://www.builtinsf.com/job/corporate-development-mba-intern-summer-2026/7468385",
+    "title": "Corporate Development MBA Intern - Summer 2026 - NVIDIA: pay",
+    "publisher": "Built In San Francisco",
+    "published": "2025-11-18",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "The hourly rate for our interns is 27 USD - 82 USD."
   },
   "builtin-nvidia-treasury-2026": {
     "url": "https://www.builtinsf.com/job/treasury-analyst-mba-intern-summer-2026/7519457",
@@ -665,6 +692,33 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": null
+  },
+  "builtinnyc-airbnb-aa-2026-cpt": {
+    "url": "https://www.builtinnyc.com/job/advanced-analytics-intern/8279170",
+    "title": "Advanced Analytics Intern (MS/MBA) - Airbnb: work authorization",
+    "publisher": "Built In NYC",
+    "published": "2026-02-17",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "(CPT/OPT with 2-year STEM extension is accepted)"
+  },
+  "builtinnyc-airbnb-aa-2026-pay": {
+    "url": "https://www.builtinnyc.com/job/advanced-analytics-intern/8279170",
+    "title": "Advanced Analytics Intern (MS/MBA) - Airbnb: pay",
+    "publisher": "Built In NYC",
+    "published": "2026-02-17",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "$40 - $48 per hour"
+  },
+  "builtinnyc-airbnb-aa-2026-remote": {
+    "url": "https://www.builtinnyc.com/job/advanced-analytics-intern/8279170",
+    "title": "Advanced Analytics Intern (MS/MBA) - Airbnb: location",
+    "publisher": "Built In NYC",
+    "published": "2026-02-17",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "This position is US - Remote Eligible."
   },
   "cisco-10k-fy26": {
     "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm",
@@ -737,6 +791,15 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": null
+  },
+  "cisco-li-strategy-2026-team": {
+    "url": "https://www.linkedin.com/jobs/view/4328844944",
+    "title": "Strategy and Planning Manager MBA (Intern) United States: team (text via LinkedIn guest API)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Joining our Corporate Strategy team offers the opportunity to solve complex problems"
   },
   "cisco-mcap-cmc": {
     "url": "https://companiesmarketcap.com/cisco/marketcap/",
@@ -854,6 +917,24 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": null
+  },
+  "cisco-wayup-finance-mba-assign": {
+    "url": "https://www.wayup.com/i-Computer-Networking-j-Financial-Analyst-MBA-Intern-United-States-Cisco-478524417990946/",
+    "title": "Cisco: Financial Analyst MBA (Intern) United States: placement",
+    "publisher": "WayUp",
+    "published": "2025-03-13",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Each intern will be assigned to a specific role and set of deliverables."
+  },
+  "cisco-wayup-finance-mba-visa": {
+    "url": "https://www.wayup.com/i-Computer-Networking-j-Financial-Analyst-MBA-Intern-United-States-Cisco-478524417990946/",
+    "title": "Cisco: Financial Analyst MBA (Intern) United States: sponsorship",
+    "publisher": "WayUp",
+    "published": "2025-03-13",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "without visa support or sponsorship"
   },
   "cisco-wayup-sustainability": {
     "url": "https://www.wayup.com/i-Computer-Networking-j-Sustainability-Analyst-MBA-Intern-United-States-Cisco-34802783052154/",
@@ -1540,6 +1621,42 @@
     "kind": "primary",
     "quote": null
   },
+  "google-mba-intern-summer-2026-wb-auth": {
+    "url": "https://web.archive.org/web/20251030234741/https://www.google.com/about/careers/applications/jobs/results/121416951455982278-mba-intern-summer-2026",
+    "title": "Wayback capture 2025-10-30: MBA Intern, Summer 2026 (US): work authorization",
+    "publisher": "Internet Archive",
+    "published": "2025-10-30",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "located and have legal authorization to work in the United States"
+  },
+  "google-mba-intern-summer-2026-wb-pay": {
+    "url": "https://web.archive.org/web/20251030234741/https://www.google.com/about/careers/applications/jobs/results/121416951455982278-mba-intern-summer-2026",
+    "title": "Wayback capture 2025-10-30: MBA Intern, Summer 2026 (US): pay",
+    "publisher": "Internet Archive",
+    "published": "2025-10-30",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "The US base salary range for this full-time position is $96,000-$125,000."
+  },
+  "google-mba-intern-summer-2026-wb-places": {
+    "url": "https://web.archive.org/web/20251030234741/https://www.google.com/about/careers/applications/jobs/results/121416951455982278-mba-intern-summer-2026",
+    "title": "Wayback capture 2025-10-30: MBA Intern, Summer 2026 (US): locations",
+    "publisher": "Internet Archive",
+    "published": "2025-10-30",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "Mountain View, CA, USA; Atlanta, GA, USA; Chicago, IL, USA"
+  },
+  "google-mba-intern-summer-2026-wb-team": {
+    "url": "https://web.archive.org/web/20251030234741/https://www.google.com/about/careers/applications/jobs/results/121416951455982278-mba-intern-summer-2026",
+    "title": "Wayback capture 2025-10-30: MBA Intern, Summer 2026 (US): team matching",
+    "publisher": "Internet Archive",
+    "published": "2025-10-30",
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "Candidates will be matched with teams based on their background and skills."
+  },
   "google-xbrl": {
     "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
     "title": "Alphabet Inc. XBRL company facts (10-Q/10-K revenue, dei shares outstanding)",
@@ -2105,6 +2222,15 @@
     "kind": "secondary",
     "quote": null
   },
+  "linkedin-meta-pmm-4062928334-auth": {
+    "url": "https://www.linkedin.com/jobs/view/product-marketing-manager-intern-mba-at-meta-4062928334",
+    "title": "Product Marketing Manager Intern, MBA - Meta: work authorization (text via LinkedIn guest API)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Must obtain work authorization in country of employment at the time of hire"
+  },
   "linkedin-meta-pmm-4120827303": {
     "url": "https://www.linkedin.com/jobs/view/product-marketing-manager-intern-mba-at-meta-4120827303",
     "title": "Product Marketing Manager Intern, MBA (LinkedIn; seen in search)",
@@ -2132,6 +2258,24 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": null
+  },
+  "linkedin-uber-rp-2026-pay": {
+    "url": "https://www.linkedin.com/jobs/view/2026-risk-and-payments-support-mba-intern-united-states-at-uber-4366257375",
+    "title": "2026 Risk and Payments Support MBA Intern, United States: pay (text via LinkedIn guest API)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "NY-based roles: The base hourly rate amount for this role is USD$54.00 per hour."
+  },
+  "linkedin-uber-rp-2026-team": {
+    "url": "https://www.linkedin.com/jobs/view/2026-risk-and-payments-support-mba-intern-united-states-at-uber-4366257375",
+    "title": "2026 Risk and Payments Support MBA Intern, United States: team (text via LinkedIn guest API)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "join our Global Risk and Payments Support teams"
   },
   "meta-10k": {
     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
@@ -2412,6 +2556,15 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": null
+  },
+  "nvidia-eightfold-vc-2026-team": {
+    "url": "https://jobs.nvidia.com/api/apply/v2/jobs/893392538320?domain=nvidia.com",
+    "title": "NVIDIA careers record: Venture Associate MBA Intern - Summer 2026 (JR2010306): team",
+    "publisher": "NVIDIA",
+    "published": "2025-12-17",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "to be a core member of our small investment team"
   },
   "nvidia-intern-benefits": {
     "url": "https://www.nvidia.com/en-us/benefits/interns/",

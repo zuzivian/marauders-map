@@ -610,6 +610,51 @@
       "effective": "2022-04"
     },
     "intern": {
+      "pay": {
+        "low": 96000,
+        "high": 125000,
+        "per": "year",
+        "where": "US",
+        "cycle": "2025",
+        "postings": 1,
+        "note": "Google states intern pay as an annual US base salary range. The summer 2025 posting gave $96,000–$121,000.",
+        "sources": [
+          "google-mba-intern-summer-2026-wb-pay",
+          "google-mba-intern-summer-2025-wb"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Mountain View, CA",
+          "San Francisco, CA",
+          "Sunnyvale, CA",
+          "San Bruno, CA",
+          "Seattle, WA",
+          "New York, NY",
+          "Chicago, IL",
+          "Atlanta, GA",
+          "Washington, DC"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "google-mba-intern-summer-2026-wb-places"
+        ]
+      },
+      "sponsorship": {
+        "stance": "authorization required",
+        "scope": "the US MBA posting",
+        "cycle": "2025",
+        "sources": [
+          "google-mba-intern-summer-2026-wb-auth"
+        ]
+      },
+      "teamModel": {
+        "model": "pooled, then placed",
+        "note": "One US posting for every function; Google matches candidates to teams.",
+        "sources": [
+          "google-mba-intern-summer-2026-wb-team"
+        ]
+      },
       "pulse": [
         {
           "date": "2026-02-11",
@@ -676,6 +721,40 @@
         "hubble-rto-list-2026"
       ],
       "days": null
+    },
+    "intern": {
+      "pay": {
+        "low": 27,
+        "high": 82,
+        "per": "hour",
+        "where": "US",
+        "cycle": "2025",
+        "postings": 3,
+        "note": "NVIDIA states one hourly band for all of its interns, not an MBA-specific range.",
+        "sources": [
+          "builtin-nvidia-corpdev-2026-pay",
+          "builtin-nvidia-treasury-2026",
+          "getro-anitab-nvidia-adas-2026"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Santa Clara, CA"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "getro-anitab-nvidia-adas-2026",
+          "nvidia-eightfold-vc-2026",
+          "nvidia-eightfold-procurement-2026"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "note": "Each posting is for a named team.",
+        "sources": [
+          "nvidia-eightfold-vc-2026-team"
+        ]
+      }
     }
   },
   {
@@ -724,6 +803,24 @@
       ]
     },
     "intern": {
+      "locations": {
+        "places": [
+          "San Francisco, CA",
+          "Burlingame, CA"
+        ],
+        "cycle": "2024",
+        "sources": [
+          "linkedin-meta-pmm-4062928334"
+        ]
+      },
+      "sponsorship": {
+        "stance": "authorization required",
+        "scope": "the 2024 Product Marketing Manager MBA posting",
+        "cycle": "2024",
+        "sources": [
+          "linkedin-meta-pmm-4062928334-auth"
+        ]
+      },
       "pulse": [
         {
           "date": "2025-10-22",
@@ -796,6 +893,49 @@
         "hubble-rto-list-2026"
       ],
       "days": null
+    },
+    "intern": {
+      "pay": {
+        "low": 40,
+        "high": 48,
+        "per": "hour",
+        "where": "US",
+        "cycle": "2025",
+        "postings": 2,
+        "note": "Last cycle: Advanced Analytics $40–$48, Strategic Finance & Analytics $48.",
+        "sources": [
+          "builtinnyc-airbnb-aa-2026-pay",
+          "builtin-airbnb-sfa-2026-pay"
+        ]
+      },
+      "locations": {
+        "places": [
+          "US, remote-eligible",
+          "San Francisco, CA",
+          "New York, NY"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "builtinnyc-airbnb-aa-2026-remote",
+          "builtin-airbnb-sfa-2026"
+        ]
+      },
+      "sponsorship": {
+        "stance": "authorization required",
+        "scope": "both postings last cycle; Advanced Analytics accepts CPT and OPT",
+        "cycle": "2025",
+        "sources": [
+          "builtinnyc-airbnb-aa-2026-cpt",
+          "builtin-airbnb-sfa-2026"
+        ]
+      },
+      "teamModel": {
+        "model": "pooled, then placed",
+        "note": "Stated on the Strategic Finance & Analytics posting.",
+        "sources": [
+          "builtin-airbnb-sfa-2026-team"
+        ]
+      }
     }
   },
   {
@@ -846,6 +986,35 @@
       ]
     },
     "intern": {
+      "pay": {
+        "low": 45,
+        "high": 54,
+        "per": "hour",
+        "where": "Chicago ($45) and New York ($54)",
+        "cycle": "2025",
+        "postings": 1,
+        "note": "From last cycle's Risk and Payments Support MBA posting. The 2025 Strategy & Planning MBA posting gave $51 an hour.",
+        "sources": [
+          "linkedin-uber-rp-2026-pay",
+          "huzzle-uber-sp-2025"
+        ]
+      },
+      "locations": {
+        "places": [
+          "Chicago, IL",
+          "New York, NY"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "linkedin-uber-rp-2026"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "sources": [
+          "linkedin-uber-rp-2026-team"
+        ]
+      },
       "pulse": [
         {
           "date": "2026-06-03",
@@ -970,6 +1139,33 @@
       "days": null
     },
     "intern": {
+      "locations": {
+        "places": [
+          "Research Triangle, NC",
+          "Atlanta, GA"
+        ],
+        "cycle": "2025",
+        "sources": [
+          "cisco-li-strategy-2026-team",
+          "cisco-wayup-finance-mba"
+        ]
+      },
+      "sponsorship": {
+        "stance": "no sponsorship",
+        "scope": "the 2024 Financial Analyst MBA posting; the Strategy postings don't say",
+        "cycle": "2024",
+        "sources": [
+          "cisco-wayup-finance-mba-visa"
+        ]
+      },
+      "teamModel": {
+        "model": "hired to a team",
+        "note": "Strategy postings are for one team; Financial Analyst interns are assigned a role.",
+        "sources": [
+          "cisco-li-strategy-2026-team",
+          "cisco-wayup-finance-mba-assign"
+        ]
+      },
       "pulse": [
         {
           "date": "2026-05-13",
