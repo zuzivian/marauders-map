@@ -7,6 +7,7 @@ import { MARK, roleMark, trailItems, type TrailItem } from "@/lib/marks";
 import { useGuide } from "./Guide";
 import { MarkLegend } from "./Trail";
 import { MarkIcon } from "./MarkIcon";
+import { MyListBar, MyListEmpty, useMyListFilter } from "./MyList";
 
 const cycle = meta.currentCycle;
 const search = createSearch(roles, companies.map((c) => c.name));
@@ -21,7 +22,9 @@ export default function RoleDecoder() {
   const result = useMemo(() => search(q), [q]);
   const items = useMemo(() => trailItems(companies, hiring, today, cycle), [today]);
   const itemOf = (c: Company) => items.find((i) => i.company.id === c.id);
-  const cols = items.map((i) => i.company); // same order as the trail: by when they open
+  const { only, keep } = useMyListFilter();
+  const cols = items.map((i) => i.company).filter((c) => keep(c.id)); // same order as the trail: by when they open
+  const hide = only && !cols.length ? " mylist-hidden" : "";
   const hits = new Set(result && result.confidence !== "none" ? result.matches.map((m) => m.role.id) : []);
   const active: Pick = pick ?? (result && result.confidence !== "none" ? { role: result.matches[0].role.id } : null);
   const toggle = (p: NonNullable<Pick>) => setPick((cur) => (cur && cur.role === p.role && cur.company === p.company ? null : p));
@@ -66,7 +69,9 @@ export default function RoleDecoder() {
       </div>
 
       {/* Both orientations render; CSS picks one by screen width so phones never see a squeezed wide table. */}
-      <div className="who-wrap who-wide-wrap">
+      <MyListBar />
+      {hide && <MyListEmpty />}
+      <div className={`who-wrap who-wide-wrap${hide}`}>
         <table className={`who${hits.size ? " searching" : ""}`}>
           <caption className="sr-only">Which companies hire MBA interns for which roles, and where each stands this cycle</caption>
           <thead><tr><th />{cols.map((c) => <th key={c.id} scope="col" className="co"><span>{c.name}</span></th>)}</tr></thead>
@@ -75,7 +80,7 @@ export default function RoleDecoder() {
           ))}</tbody>
         </table>
       </div>
-      <div className="who-wrap who-narrow-wrap">
+      <div className={`who-wrap who-narrow-wrap${hide}`}>
         <table className="who narrow">
           <caption className="sr-only">Which roles each company hires MBA interns for, and where each stands this cycle</caption>
           <thead><tr><th />{roles.map((r) => (

@@ -10,6 +10,7 @@ import { useGuide } from "./Guide";
 import { Cite, SourceList } from "./Sources";
 import { openCorrection } from "./Corrections";
 import { MarkIcon } from "./MarkIcon";
+import { CompanyCalLinks, StarButton } from "./MyList";
 
 const cycle = meta.currentCycle;
 const OPACITY = { strong: 0.95, medium: 0.6, weak: 0.3 };
@@ -139,7 +140,7 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
   return (
     <aside className="panel" aria-label={`Field notes: ${c.name}`}>
       <div className="label">field notes</div>
-      <h3>{c.name}</h3>
+      <div className="mylist-head"><h3>{c.name}</h3><StarButton company={c} /></div>
       <div className="sub">{c.model.toLowerCase()} · {c.hq.toLowerCase()} · {c.ai.toLowerCase()}</div>
 
       <div className={`statuscard m-${item?.mark ?? "later"}`}>
@@ -206,6 +207,7 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
       <h4>when applications opened · black = this cycle</h4>
       <SeasonBar company={c} />
       <p className="small muted">{now ? `This cycle: ${fmtRange(now.from, now.to)} (${now.evidence} evidence). ` : ""}{h.pattern}.</p>
+      <CompanyCalLinks company={c} />
       {h.current.postings.length > 0 && (
         <details className="why">
           <summary>this cycle&apos;s posting{h.current.postings.length === 1 ? "" : "s"} ({h.current.postings.length})</summary>

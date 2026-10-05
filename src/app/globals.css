@@ -382,3 +382,24 @@ details.why p { margin: 6px 0; }
   .dots { gap: 3px; }
   .dots i { width: 9px; height: 9px; }
 }
+
+/* ---- my list ---- */
+.star { flex: none; vertical-align: -1px; }
+.star path { fill: none; stroke: currentColor; stroke-width: 1; }
+.star.on path { fill: var(--cardinal); stroke: var(--cardinal); }
+.star-btn { display: inline-flex; align-items: center; gap: 5px; background: none; border: none; padding: 4px 0; cursor: pointer; font-family: var(--mono); font-size: 11px; color: var(--ink-3); white-space: nowrap; }
+.star-btn:hover, .star-btn[aria-pressed="true"] { color: var(--cardinal); }
+.star-chip { display: inline-flex; align-items: center; gap: 5px; }
+.chip + .star-chip { margin-left: 6px; }
+.star-mark { margin-left: 4px; }
+.mylist-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.mylist-hidden { display: none !important; }
+.mylist-empty { font-family: var(--serif); font-style: italic; font-size: 16px; color: var(--ink-2); margin: 10px 0; }
+.mylist-bar { display: flex; justify-content: flex-end; margin-bottom: 6px; }
+.mylist { margin-top: 12px; padding-top: 10px; border-top: 0.5px solid var(--rule); }
+.mylist-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.mylist-n { font-family: var(--serif); font-style: italic; color: var(--ink-2); margin-right: 4px; }
+.mylist-help, .mylist-cal { margin: 6px 0 0; font-size: 12.5px; color: var(--ink-2); }
+.mylist-cal .label { margin-right: 4px; }
+.mylist-said { margin: 4px 0 0; font-size: 12.5px; color: var(--cardinal); min-height: 0; }
+.mylist-said:empty { display: none; }

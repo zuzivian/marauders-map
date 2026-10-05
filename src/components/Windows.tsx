@@ -9,6 +9,7 @@ import { useGuide } from "./Guide";
 import { Cite, SourceList } from "./Sources";
 import { MarkIcon } from "./MarkIcon";
 import GsbStrip from "./GsbStrip";
+import { MyListBar, MyListEmpty, StarButton, StarMark, useMyListFilter } from "./MyList";
 import { MARK, trailItems } from "@/lib/marks";
 
 const cycle = meta.currentCycle;
@@ -21,7 +22,8 @@ const cycleName = (c: Cycle) => (c === cycle ? "this cycle" : `${c} cycle`);
 
 export default function Windows() {
   const { today, live, select } = useGuide();
-  const rows = [...companies].sort(
+  const { only, keep } = useMyListFilter();
+  const rows = [...companies].filter((c) => keep(c.id)).sort(
     (a, b) => (typicalOpen(hiring[a.id], cycle)?.week ?? 99) - (typicalOpen(hiring[b.id], cycle)?.week ?? 99),
   );
   const todayWk = weekOf(today, cycle);
@@ -30,7 +32,9 @@ export default function Windows() {
 
   return (
     <div>
-      <div className="timeline">
+      <MyListBar />
+      {only && !rows.length && <MyListEmpty />}
+      <div className={`timeline${only && !rows.length ? " mylist-hidden" : ""}`}>
         <div className="tl-head" aria-hidden>
           <div className="tl-track">
             {SEASON_MONTHS.map((m, i) => <span key={m} className="tl-month" style={{ left: pct(monthStartWeek(i, cycle)) }}>{m}</span>)}
@@ -58,7 +62,7 @@ export default function Windows() {
             return (
               <details key={c.id} className="tl-row-wrap">
                 <summary className="tl-row">
-                  <span className="tl-name">{c.name}</span>
+                  <span className="tl-name">{c.name}<StarMark id={c.id} /></span>
                   <span className="tl-track">
                     {ws.map((w) => {
                       const [a, b] = span(w);
@@ -100,6 +104,7 @@ export default function Windows() {
                   )}
                   <SourceList ids={[...ws.flatMap((w) => w.sources), ...h.current.postings.flatMap((p) => p.sources)]} />
                   <button className="chip" onClick={() => select(c.id, { reveal: true })}>Open {c.name} field notes ↓</button>
+                  <StarButton company={c} chip />
                 </div>
               </details>
             );
