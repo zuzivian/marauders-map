@@ -30,6 +30,8 @@ npm start          # serve out/ locally
 | `prep.json` | Prep resources by role × skill. Scores (0–3) are editorial judgments; module names and links are checked. |
 | `sources.json` | Every source: URL, publisher, dates, and a short verbatim quote where one supports the claim. |
 | `meta.json` | The current cycle, the date the data was last checked end to end, and the corrections link. |
+| `watch.json` | How the posting watcher queries each company's careers site: API kind, endpoint, search terms, filters (or `manual`, with the reason). |
+| `changes.json` | The watcher's log of postings appearing and disappearing: `{date, company, kind: "posted" \| "removed", title, url}`. |
 
 The rules:
 
@@ -60,9 +62,41 @@ npm run check:sources -- --mark-gone        # stamp expired postings "since remo
 Pages that render with JavaScript (Workday, SmartRecruiters, most careers sites) can't be verified by the script. Check
 those quotes in a browser and mark them `"quoteCheck": "browser YYYY-MM-DD"` in `sources.json`.
 
-Market values and postings still need a person to check them. Market data has no free, reliable, keyless API, and posting
-dates need judgment about evidence. When you update them, bump `asOf` / `checked`, cite a source, and bump
-`meta.researched`. The page warns readers when that date is more than 10 days old.
+Market values still need a person to check them: market data has no free, reliable, keyless API. Postings are checked
+daily by the watcher (below), except where a careers site has no usable API. When you update anything by hand, bump
+`asOf` / `checked`, cite a source, and bump `meta.researched`. The page warns readers when that date is more than 10 days old.
+
+### Watcher
+
+```bash
+npm run watch                                # dry run: print the report
+npm run watch -- --write                     # also update hiring.json, sources.json, changes.json, meta.json
+npm run watch -- --write --mark-gone         # also stamp `gone` on the sources of postings the ATS says are removed
+npm run watch -- --only=google,nvidia        # just these companies
+```
+
+[`scripts/watch-postings.mjs`](scripts/watch-postings.mjs) asks each company's careers API ([`watch.json`](src/data/watch.json):
+Greenhouse, Ashby, Workday, SmartRecruiters, Eightfold, Oracle, amazon.jobs, Apple, Google, TikTok, IBM, Intuit) for MBA
+internships for `meta.currentCycle`, and prints a markdown report: new postings, postings that disappeared, what needs a
+person, MBA internships outside the US (such as Google's EMEA-only ones), and companies that failed or are manual (Meta and
+Uber block scripts). A match must be an internship, for the cycle's summer, in the US, and either say MBA in the title or
+require an MBA in the description. Internships that list an MBA among other degrees are reported, not added. The filtering,
+diffing and window logic is in [`src/lib/watch.ts`](src/lib/watch.ts), tested against recorded responses.
+
+With `--write`, for every company it checked it sets `current.checked` to today and adds new postings, each with a new
+primary source. The first posting of the cycle also adds the window: the API's posted date (strong), or else the span from
+the last check that found nothing to today, with evidence by the gap (definitions below). It never deletes a posting.
+Disappearances are logged in `changes.json` and, with `--mark-gone`, stamped on the posting's own source. Whenever a
+company's postings change, its `current.summary` is rewritten from a template and flagged in the report. A hand-written
+sentence would contradict the new state, so a plain true one is used instead, and you can add context in review.
+`meta.researched` moves to today only when no automatic check failed.
+
+[`.github/workflows/watch.yml`](.github/workflows/watch.yml) runs this daily at about 15:00 UTC (and on demand). If the data
+changed it opens or updates a pull request from `bot/watch` with the report as its body. It never merges or deploys: review,
+merge, then `npm run deploy`. Two repo settings matter:
+
+- **Settings → Actions → General → "Allow GitHub Actions to create and approve pull requests"** must be on, or the PR step fails.
+- This is a private repo, so each run spends Actions minutes (a run takes about 3–5 minutes, so roughly 100–150 a month).
 
 ### Evidence strength (application windows)
 

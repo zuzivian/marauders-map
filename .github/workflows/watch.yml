@@ -1,0 +1,82 @@
+# Daily posting watcher: checks every company's careers API for MBA internships (scripts/watch-postings.mjs),
+# and if the data changed, opens or updates a pull request from the bot/watch branch with the report as its body.
+# It never merges and never deploys: a person reviews the PR, merges it, and runs `npm run deploy`.
+#
+# Needs Settings > Actions > General > "Allow GitHub Actions to create and approve pull requests" turned on.
+
+name: Watch postings
+
+on:
+  schedule:
+    - cron: "7 15 * * *" # about 15:00 UTC, 8am Pacific (7am in winter); off the hour, when Actions is less busy
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: watch-postings
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Build on an open bot/watch PR rather than starting over, so a posting first seen yesterday keeps yesterday's date.
+      - name: Continue the bot/watch branch if it exists
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin bot/watch >/dev/null; then
+            git switch -c bot/watch origin/bot/watch
+            if ! git merge --no-edit origin/main; then
+              echo "bot/watch no longer merges cleanly with main; starting it over from main."
+              git merge --abort
+              git switch -C bot/watch origin/main
+            fi
+          else
+            git switch -c bot/watch
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Check careers sites
+        run: npm run watch -- --write --mark-gone --report="$RUNNER_TEMP/report.md"
+
+      - name: Check the data
+        run: npm test
+
+      - name: Open or update the pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet -- src/data; then
+            echo "No data changes."
+            exit 0
+          fi
+          today=$(date -u +%F)
+          git add src/data
+          git commit -m "Watcher run $today"
+          git push --force-with-lease origin bot/watch
+          body="$RUNNER_TEMP/body.md"
+          { cat "$RUNNER_TEMP/report.md"; echo; echo "_Opened by .github/workflows/watch.yml. Review the diff, then merge and deploy by hand; nothing here merges or deploys itself._"; } > "$body"
+          if [ "$(gh pr view bot/watch --json state -q .state 2>/dev/null)" = "OPEN" ]; then
+            # Keep earlier runs' reports below today's, folded, since the branch carries their changes too.
+            gh pr view bot/watch --json body -q .body > "$RUNNER_TEMP/old.md"
+            { echo; echo "<details><summary>Earlier runs on this branch</summary>"; echo; sed -n '/^# Posting watch/,$p' "$RUNNER_TEMP/old.md" | sed '/^<details><summary>Earlier runs/d;/^<\/details>$/d'; echo; echo "</details>"; } >> "$body"
+            head -c 60000 "$body" > "$body.cut"
+            gh pr edit bot/watch --title "Posting watcher: changes through $today" --body-file "$body.cut"
+          else
+            gh pr create --base main --head bot/watch --title "Posting watcher: changes through $today" --body-file "$body"
+          fi
