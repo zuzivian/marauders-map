@@ -2,8 +2,8 @@
   "currentCycle": "2026",
   "researched": "2026-10-04",
   "corrections": {
-    "kind": "formsubmit",
-    "action": "https://formsubmit.co/natwong@stanford.edu",
+    "kind": "formspree",
+    "action": "https://formspree.io/f/xnpjaklb",
     "fields": {
       "about": "about",
       "correction": "correction",
