@@ -405,7 +405,8 @@ details.more > h4:first-of-type { margin-top: 8px; }
 
 @media (max-width: 900px) {
   .explorer { grid-template-columns: minmax(0, 1fr); }
-  .panel { position: static; max-height: none; overflow: visible; border-left: none; padding-left: 0; border-top: 0.5px solid var(--rule); padding-top: 24px; }
+  /* stacked: field notes come first, the chart under them */
+  .panel { order: -1; position: static; max-height: none; overflow: visible; border-left: none; padding-left: 0; border-bottom: 0.5px solid var(--rule); padding-bottom: 28px; scroll-margin-top: 56px; /* clear of the sticky contents bar */ }
 }
 
 @media (max-width: 720px) {

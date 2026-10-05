@@ -45,7 +45,7 @@ export function GuideProvider({ children }: { children: ReactNode }) {
     if (!initial) return;
     let id = requestAnimationFrame(() => (id = requestAnimationFrame(() => {
       if (window.scrollY > 40) return;
-      const stacked = window.matchMedia("(max-width: 900px)").matches; // the panel sits under the chart
+      const stacked = window.matchMedia("(max-width: 900px)").matches; // the panel sits above the chart
       reveal(stacked ? "field-notes" : "companies", "instant");
     })));
     return () => cancelAnimationFrame(id);

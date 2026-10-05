@@ -152,6 +152,13 @@ export default function Explorer() {
     </select>
   );
 
+  // Stacked (phones, tablets), the field notes sit above the chart, so picking a company scrolls up to them.
+  const pick = (id: string) => {
+    select(id);
+    if (window.matchMedia("(max-width: 900px)").matches)
+      requestAnimationFrame(() => document.getElementById("field-notes")?.scrollIntoView({ behavior: "smooth", block: "start" }));
+  };
+
   return (
     <div className="explorer">
       <div>
@@ -189,7 +196,7 @@ export default function Explorer() {
               return (
                 <g key={d.c.id} className="node nodepos" style={{ transform: translate(d.x, d.y) }} role="button" tabIndex={0}
                   aria-pressed={on} aria-label={`${d.c.name}: ${ax.short} ${ax.fmt(ax.get(d.c).v)}, ${ay.short} ${ay.fmt(ay.get(d.c).v)}`}
-                  onClick={() => select(d.c.id)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(d.c.id); } }}>
+                  onClick={() => pick(d.c.id)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(d.c.id); } }}>
                   <circle r={d.r} fill={WAVE_FILL[w]} fillOpacity={0.9} stroke={on ? "var(--ink)" : w === "none" ? "var(--ink-3)" : "var(--paper)"}
                     strokeWidth={on ? 2.5 : 1.5} strokeDasharray={w === "none" ? "3 2" : undefined} />
                   <text textAnchor="middle" dy={inside ? 4 : d.r + fs + 2} style={{ fontSize: fs }}
@@ -209,7 +216,7 @@ export default function Explorer() {
         </p>
         <label className="picker">
           Field notes for{" "}
-          <select className="select" value={selected} onChange={(e) => select(e.target.value)}>
+          <select className="select" value={selected} onChange={(e) => pick(e.target.value)}>
             {companies.map((c) => <option key={c.id} value={c.id}>{c.name}</option>)}
           </select>
           <span className="muted"> or tap a bubble</span>
