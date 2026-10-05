@@ -99,7 +99,7 @@ export default function Windows() {
                     </table>
                   )}
                   <SourceList ids={[...ws.flatMap((w) => w.sources), ...h.current.postings.flatMap((p) => p.sources)]} />
-                  <button className="chip" onClick={() => select(c.id, { reveal: true })}>Open {c.name} field notes ↑</button>
+                  <button className="chip" onClick={() => select(c.id, { reveal: true })}>Open {c.name} field notes ↓</button>
                 </div>
               </details>
             );

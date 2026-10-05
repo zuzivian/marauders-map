@@ -116,7 +116,7 @@ function Detail({ role: r, company, result, onClose, onCompany, itemOf }: {
         <ul className="titles">{ts.map((t) => (
           <li key={t.title}>{t.title} <span className="label">{when(t.cycles)}</span></li>
         ))}</ul>
-        <button className="chip" onClick={() => onCompany(company)}>Open {company} field notes ↓</button>
+        <button className="chip" onClick={() => onCompany(company)}>Open {company} field notes ↑</button>
       </div>
     );
   }
