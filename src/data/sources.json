@@ -574,15 +574,6 @@
     "kind": "primary",
     "quote": "This posting is not for a specific job opening"
   },
-  "apple-headcount-flat-appleinsider-2026-09": {
-    "url": "https://appleinsider.com/articles/26/09/29/small-layoffs-and-budget-cuts-are-hitting-apple-with-more-expected",
-    "title": "Small layoffs and budget cuts are hitting Apple, with more expected",
-    "publisher": "AppleInsider",
-    "published": "2026-09-29",
-    "accessed": "2026-10-04",
-    "kind": "secondary",
-    "quote": "it's said that the headcount is being kept flat."
-  },
   "apple-layoffs-techcrunch-2026-08": {
     "url": "https://techcrunch.com/2026/08/21/apple-is-reportedly-cutting-hundreds-of-jobs-from-siri-vision-pro-teams/",
     "title": "Apple is reportedly cutting hundreds of jobs from Siri, Vision Pro teams",
@@ -701,15 +692,6 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": "Applications for this job will be accepted at least until October 27, 2025."
-  },
-  "builtin-nvidia-corpdev-2026-pay": {
-    "url": "https://www.builtinsf.com/job/corporate-development-mba-intern-summer-2026/7468385",
-    "title": "Corporate Development MBA Intern - Summer 2026 - NVIDIA: pay",
-    "publisher": "Built In San Francisco",
-    "published": "2025-11-18",
-    "accessed": "2026-10-04",
-    "kind": "secondary",
-    "quote": "The hourly rate for our interns is 27 USD - 82 USD."
   },
   "builtin-nvidia-treasury-2026": {
     "url": "https://www.builtinsf.com/job/treasury-analyst-mba-intern-summer-2026/7519457",
@@ -2105,6 +2087,15 @@
     "kind": "primary",
     "quote": "Mountain View $37.5 - $68"
   },
+  "intuit-corpstrat-2027-pay-text": {
+    "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-corporate-strategy-and-development-intern/27595/101313096080",
+    "title": "Summer 2027: MBA Corporate Strategy & Development Intern: role pay range",
+    "publisher": "Intuit Careers",
+    "published": "2026-08-17",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "base pay range for this position is: $52 - 65 /hr in MTV."
+  },
   "intuit-finstrat-gbsg-2027-auth": {
     "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-strategic-finance-intern-gbsg/27595/101319962576",
     "title": "Summer 2027: MBA Strategic Finance Intern, GBSG: work authorization",
@@ -2185,6 +2176,15 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": null
+  },
+  "intuit-sourcing-tech-2027-pay": {
+    "url": "https://jobs.intuit.com/job/san-diego/summer-2027-mba-strategic-sourcing-intern-technology/27595/101062769088",
+    "title": "Summer 2027: MBA Strategic Sourcing Intern, Technology: pay range",
+    "publisher": "Intuit Careers",
+    "published": "2026-09-23",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "base pay range for this position is: $36 - $53 /hr."
   },
   "intuit-xbrl": {
     "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000896878.json",
