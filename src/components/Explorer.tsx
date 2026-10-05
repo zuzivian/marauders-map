@@ -68,8 +68,8 @@ type Node = SimulationNodeDatum & { c: Company; tx: number; ty: number; r: numbe
 
 export default function Explorer() {
   const { selected, select } = useGuide();
-  const [x, setX] = useState<AxisKey>("b2bUser");
-  const [y, setY] = useState<AxisKey>("growth");
+  const [x, setX] = useState<AxisKey>("headcount");
+  const [y, setY] = useState<AxisKey>("office");
   const [wrapRef, W] = useWidth<HTMLDivElement>(720);
   // Animate only when the reader changes an axis, not when the chart first measures itself or resizes.
   const [animateAt, setAnimateAt] = useState<number | null>(null);
