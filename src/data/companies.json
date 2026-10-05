@@ -954,7 +954,8 @@
       "confidence": "medium",
       "sources": [
         "databricks-jobsbyculture-rto",
-        "databricks-gh-tpm-security"
+        "databricks-gh-tpm-security",
+        "databricks-wb-2026-mba-tpm"
       ]
     }
   },
@@ -1357,11 +1358,12 @@
       "days": null,
       "low": 2,
       "high": 3,
-      "summary": "Office-assigned staff are expected in their local office, or with users, at least 50% of the time in a given month (about 2-3 days a week), varying by role, team and location. Some roles are remote.",
+      "summary": "Office-assigned staff are expected in their local office, or with users, at least 50% of the time in a given month (about 2-3 days a week), varying by role, team and location. Some roles are remote: 114 of 717 jobs on its board on 2026-10-04 list a remote option.",
       "interns": "Intern postings carry the same 50%-of-the-month expectation.",
       "confidence": "high",
       "sources": [
-        "stripe-listing-data-analyst-intern-2027"
+        "stripe-listing-data-analyst-intern-2027",
+        "stripe-gh-board-api"
       ]
     }
   },
