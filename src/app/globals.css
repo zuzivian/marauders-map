@@ -105,6 +105,20 @@ button, select, input { font: inherit; color: inherit; }
 .trail-svg.vertical .here text { paint-order: stroke; stroke: var(--paper-2); stroke-width: 4px; }
 .gsb-line { margin: 8px 0 0; font-size: var(--t-s); color: var(--ink-2); }
 
+/* "I want to…": the four ways in, right under the masthead */
+.wants { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 22px; }
+.want { display: flex; flex-direction: column; justify-content: space-between; gap: 6px; min-height: 84px; padding: 14px 16px; border: 1px solid var(--cardinal); border-radius: 6px; background: var(--paper); color: var(--ink); text-decoration: none; transition: background 0.15s, color 0.15s; }
+.want-l { font-size: var(--t-xs); color: var(--cardinal); }
+.want-t { font-family: var(--serif); font-size: 19px; line-height: 1.2; }
+.want-t::after { content: "\00a0→"; color: var(--cardinal); } /* no-break space keeps the arrow on the last word */
+.want:hover, .want:focus-visible { background: var(--cardinal); color: var(--paper); }
+.want:hover .want-l, .want:hover .want-t::after, .want:focus-visible .want-l, .want:focus-visible .want-t::after { color: var(--paper); }
+@media (max-width: 720px) {
+  .wants { grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 18px; }
+  .want { min-height: 76px; padding: 12px 14px; }
+  .want-t { font-size: 17px; }
+}
+
 /* layout switches by CSS so the prerendered page is already right on phones */
 .trail-v, .who-narrow-wrap { display: none; }
 @media (max-width: 640px) {
@@ -129,6 +143,12 @@ details.fold > summary:hover h2 { color: var(--cardinal); }
 details.fold[open] > summary .fold-cue::before { content: "Close"; }
 details.fold[open] > summary .fold-cue::after { transform: translateY(2px) rotate(-135deg); }
 details.fold > summary:hover .fold-cue { border-color: var(--cardinal); }
+/* A closed section is one big pressable card with a solid Open button, so it reads as something to tap. */
+details.fold:not([open]) > summary.section-head { padding: 20px 20px 22px; border: 0.5px solid var(--rule); border-top: 1px solid var(--ink); border-radius: 0 0 6px 6px; background: color-mix(in srgb, var(--paper-2) 55%, var(--paper)); transition: background 0.15s; }
+details.fold:not([open]) > summary.section-head:hover { background: var(--paper-2); }
+details.fold > summary:focus-visible { outline: 2px solid var(--cardinal); outline-offset: 3px; }
+details.fold:not([open]) .fold-cue { background: var(--cardinal); border-color: var(--cardinal); color: var(--paper); font-weight: 500; }
+details.fold:not([open]) > summary:hover .fold-cue { background: var(--cardinal-dark); border-color: var(--cardinal-dark); }
 .subhead { font-family: var(--serif); font-weight: 400; font-size: 22px; color: var(--ink); margin: 56px 0 10px; }
 
 .label { font-size: var(--t-xs); color: var(--ink-3); }

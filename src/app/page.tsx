@@ -27,25 +27,25 @@ const cap = (s: string) => s[0].toUpperCase() + s.slice(1);
 // Each folds to a heading and one line computed from the data.
 const SECTIONS = [
   {
-    id: "windows", short: "timing", title: "When applications open",
+    id: "windows", short: "timing", want: "know when applications open", title: "When applications open",
     line: `When ${count(withProgram)} companies’ MBA internship postings went live over the last ${count(cycles)} cycles, with the uncertainty left in.`,
     dek: "A tight cluster means you can plan around it; a wide smear means watch the postings.",
     body: <Windows />,
   },
   {
-    id: "companies", short: "companies", title: "The lay of the land", open: "on-company-page" as const,
+    id: "companies", short: "companies", want: "compare pay, visas and companies", title: "The lay of the land", open: "on-company-page" as const,
     line: `${cap(count(companies.length))} companies, ${count(withProgram)} with MBA internships. Where postings state pay, it runs ${fmtMonthly(payLow)} to ${fmtMonthly(payHigh)} a month; ${count(noVisa)} say they won’t sponsor visas.`,
     dek: "Plot them by what their intern postings pay, whether they say anything about visas, when they open, or how big the company is, and pick any company for its field notes.",
     body: <Explorer />,
   },
   {
-    id: "roles", short: "roles", title: "What the titles mean",
+    id: "roles", short: "roles", want: "decode a job title", title: "What the titles mean",
     line: `${cap(count(roles.length))} jobs behind ${titleCount} posted titles (${roles.map((r) => r.short).join(", ")}), and who’s hiring for each right now.`,
     dek: "Paste a title to decode it, or read across a row to see who's hiring for it.",
     body: <RoleDecoder />,
   },
   {
-    id: "prep", short: "prep", title: "Prep, sorted by what it’s good for",
+    id: "prep", short: "prep", want: "prepare for interviews", title: "Prep, sorted by what it’s good for",
     line: `${cap(count(prep.columns.length))} kinds of prep, rated on ${count(prep.skills.length)} interview skills for ${count(prep.roles.length)} roles.`,
     dek: "Which tools cover which interview skills, by role. Information, not a study plan.",
     body: <PrepMatrix />,
@@ -76,6 +76,13 @@ export default function Home() {
           </div>
           <Compass />
         </header>
+
+        {/* The four ways in. Each opens its section (lib/reveal catches same-page links) and scrolls to it. */}
+        <nav className="wants" aria-label="Where to start">
+          {SECTIONS.map((s) => (
+            <a key={s.id} href={`#${s.id}`} className="want"><span className="want-l">I want to…</span><span className="want-t">{s.want}</span></a>
+          ))}
+        </nav>
 
         <Trail />
 
