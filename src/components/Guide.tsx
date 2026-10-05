@@ -5,6 +5,7 @@ import { companies, meta } from "@/data";
 import { useToday } from "@/lib/useToday";
 import { companyPath } from "@/lib/share";
 import { track } from "@/lib/analytics";
+import { reveal, unfoldOnNavigate } from "@/lib/reveal";
 
 interface GuideState {
   selected: string;
@@ -23,6 +24,9 @@ export function InitialCompany({ id, children }: { id: string; children: ReactNo
   return <InitialCtx.Provider value={id}>{children}</InitialCtx.Provider>;
 }
 
+/** The company a /c/<id>/ page opened on, or null on the home page. */
+export const useInitialCompany = () => useContext(InitialCtx);
+
 export function GuideProvider({ children }: { children: ReactNode }) {
   const clientToday = useToday();
   const initial = useContext(InitialCtx);
@@ -32,8 +36,9 @@ export function GuideProvider({ children }: { children: ReactNode }) {
     // Keep the address bar on the company's own page, so whatever the reader copies is the link to share.
     window.history.replaceState(null, "", companyPath(id));
     track(`select/${id}`, "Picked a company");
-    if (opts?.reveal) document.getElementById("companies")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (opts?.reveal) reveal("companies");
   }, []);
+  useEffect(unfoldOnNavigate, []);
   // A company's page opens on its field notes. Wait two frames so the charts have measured themselves first,
   // and leave the reader where they are if the browser already restored a scroll position.
   useEffect(() => {
@@ -41,7 +46,7 @@ export function GuideProvider({ children }: { children: ReactNode }) {
     let id = requestAnimationFrame(() => (id = requestAnimationFrame(() => {
       if (window.scrollY > 40) return;
       const stacked = window.matchMedia("(max-width: 900px)").matches; // the panel sits under the chart
-      document.getElementById(stacked ? "field-notes" : "companies")?.scrollIntoView({ behavior: "instant", block: "start" });
+      reveal(stacked ? "field-notes" : "companies", "instant");
     })));
     return () => cancelAnimationFrame(id);
   }, [initial]);
