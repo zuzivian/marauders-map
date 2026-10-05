@@ -400,6 +400,24 @@
     "kind": "primary",
     "quote": "we're going to make this new expectation active on January 2, 2025"
   },
+  "amazon-layoffs-2025-10": {
+    "url": "https://www.aboutamazon.com/news/company-news/amazon-workforce-reduction",
+    "title": "An update from SVP Beth Galetti on Amazon workforce reduction",
+    "publisher": "Amazon",
+    "published": "2025-10-28",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "an overall reduction in our corporate workforce of approximately 14,000 roles"
+  },
+  "amazon-layoffs-2026-01": {
+    "url": "https://www.aboutamazon.com/news/company-news/amazon-layoffs-corporate-jan-2026",
+    "title": "A message from Amazon on recent layoffs: update on our organization",
+    "publisher": "Amazon",
+    "published": "2026-01-28",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "The reductions we are making today will impact approximately 16,000 roles across Amazon"
+  },
   "amazon-mba-programs": {
     "url": "https://www.amazon.jobs/content/en/career-programs/university/mba",
     "title": "MBA",
@@ -519,6 +537,24 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": "This posting is not for a specific job opening"
+  },
+  "apple-headcount-flat-appleinsider-2026-09": {
+    "url": "https://appleinsider.com/articles/26/09/29/small-layoffs-and-budget-cuts-are-hitting-apple-with-more-expected",
+    "title": "Small layoffs and budget cuts are hitting Apple, with more expected",
+    "publisher": "AppleInsider",
+    "published": "2026-09-29",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "it's said that the headcount is being kept flat."
+  },
+  "apple-layoffs-techcrunch-2026-08": {
+    "url": "https://techcrunch.com/2026/08/21/apple-is-reportedly-cutting-hundreds-of-jobs-from-siri-vision-pro-teams/",
+    "title": "Apple is reportedly cutting hundreds of jobs from Siri, Vision Pro teams",
+    "publisher": "TechCrunch",
+    "published": "2026-08-21",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Over 200 positions, all told, have been cut, sources told Bloomberg"
   },
   "apple-xbrl": {
     "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
@@ -728,6 +764,15 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": null
+  },
+  "cisco-path-forward-2026-05": {
+    "url": "https://blogs.cisco.com/news/our-path-forward",
+    "title": "Our Path Forward",
+    "publisher": "Cisco Blogs",
+    "published": "2026-05-13",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "reduction of our overall workforce in Q4 by fewer than 4,000 jobs"
   },
   "cisco-req-1405091": {
     "url": "https://jobs.cisco.com/jobs/Register?projectId=1405091",
@@ -963,6 +1008,15 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": "starting March 3rd for all employees that live near the office"
+  },
+  "dell-headcount-proactive-2026-03": {
+    "url": "https://finance.yahoo.com/news/dell-shrinks-workforce-11-000-153300870.html",
+    "title": "Dell shrinks workforce by 11,000 in fiscal 2026 amid ongoing restructuring",
+    "publisher": "Proactive via Yahoo Finance",
+    "published": "2026-03-17",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "reduced its workforce by roughly 11,000 employees in fiscal 2026"
   },
   "dell-how-we-hire": {
     "url": "https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/careers/pages/how-we-hire",
@@ -1405,6 +1459,24 @@
     "kind": "archive",
     "quote": null
   },
+  "google-buyouts-gbo-2026-02": {
+    "url": "https://www.business-standard.com/world-news/google-voluntary-buyouts-gbo-staff-exit-package-us-126021101185_1.html",
+    "title": "Google offers exit package to select GBO staff who are 'ready to move on'",
+    "publisher": "Business Standard",
+    "published": "2026-02-11",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Google is once again offering voluntary buyouts to its employees in select teams"
+  },
+  "google-cloud-layoffs-bi-2026-06": {
+    "url": "https://www.aol.com/articles/google-quietly-laying-off-staff-223801000.html",
+    "title": "Google is quietly laying off staff in its cloud division (Business Insider, syndicated)",
+    "publisher": "Business Insider via AOL",
+    "published": "2026-06-04",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "It's unclear exactly how many people were impacted"
+  },
   "google-how-we-hire": {
     "url": "https://www.google.com/about/careers/applications/how-we-hire/",
     "title": "Our hiring process - Google Careers",
@@ -1602,6 +1674,15 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": null
+  },
+  "ibm-layoffs-cnbc-2025-11": {
+    "url": "https://www.cnbc.com/2025/11/04/ibm-layoffs-fourth-quarter.html",
+    "title": "IBM layoffs: Cutting thousands of jobs in the fourth quarter",
+    "publisher": "CNBC",
+    "published": "2025-11-04",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "will impact a low single-digit percentage of our global workforce"
   },
   "ibm-posting-128929": {
     "url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=128929",
@@ -1871,6 +1952,15 @@
     "kind": "primary",
     "quote": "teams are expected to work onsite three days per week"
   },
+  "intuit-layoffs-techcrunch-2026-05": {
+    "url": "https://techcrunch.com/2026/05/20/intuit-to-lay-off-over-3000-employees-to-refocus-on-ai/",
+    "title": "Intuit to lay off over 3,000 employees to refocus on AI",
+    "publisher": "TechCrunch",
+    "published": "2026-05-20",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Intuit is letting 17% of its staff go, or about 3,000 people"
+  },
   "intuit-pm-2027": {
     "url": "https://jobs.intuit.com/job/multiple-locations/summer-2027-product-manager-intern/27595/100620927632",
     "title": "Summer 2027: Product Manager Intern (Job ID 24123)",
@@ -2052,6 +2142,33 @@
     "kind": "primary",
     "quote": "We had a global workforce of 78,865 employees as of December 31, 2025"
   },
+  "meta-ai-layoffs-techcrunch-2025-10": {
+    "url": "https://techcrunch.com/2025/10/22/meta-cuts-600-ai-jobs-amid-ongoing-reorganization/",
+    "title": "Meta cuts 600 AI jobs amid ongoing reorganization",
+    "publisher": "TechCrunch",
+    "published": "2025-10-22",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "the company will cut about 600 jobs from its superintelligence lab"
+  },
+  "meta-layoffs-npr-2026-04": {
+    "url": "https://www.npr.org/2026/04/23/nx-s1-5797855/meta-layoffs-10-percent-staff",
+    "title": "Meta will lay off 10% of its staff",
+    "publisher": "NPR",
+    "published": "2026-04-23",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Meta will also not hire for 6,000 open roles"
+  },
+  "meta-reality-labs-techcrunch-2026-01": {
+    "url": "https://techcrunch.com/2026/01/14/meta-to-reportedly-lay-off-10-of-reality-labs-staff/",
+    "title": "Meta to reportedly lay off 10% of Reality Labs staff",
+    "publisher": "TechCrunch",
+    "published": "2026-01-14",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Meta is laying off 10% of staff in its Reality Labs division"
+  },
   "meta-xbrl": {
     "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json",
     "title": "Meta Platforms, Inc. XBRL company facts (10-Q/10-K revenue, dei shares outstanding)",
@@ -2070,6 +2187,15 @@
     "kind": "primary",
     "quote": "we employed approximately 223,000 people on a full-time basis"
   },
+  "microsoft-buyout-cnbc-2026-04": {
+    "url": "https://www.cnbc.com/2026/04/23/microsoft-plans-first-voluntary-retirement-program-for-us-employees.html",
+    "title": "Microsoft plans first voluntary retirement program for US employees",
+    "publisher": "CNBC",
+    "published": "2026-04-23",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "voluntary employee buyout for up to 7% of U.S. workforce"
+  },
   "microsoft-flexible-work-2025": {
     "url": "https://blogs.microsoft.com/blog/2025/09/09/flexible-work-update/",
     "title": "Flexible work update",
@@ -2087,6 +2213,15 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": "Most interviews include 2-4 conversations with potential teammates and cross-functional colleagues"
+  },
+  "microsoft-layoffs-2026-07": {
+    "url": "https://blogs.microsoft.com/blog/2026/07/06/the-latest-in-our-company-transformation/",
+    "title": "The latest in our company transformation",
+    "publisher": "Official Microsoft Blog",
+    "published": "2026-07-06",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "Today we are eliminating around 4,800 roles, about 2.1% of our global workforce"
   },
   "microsoft-student-interviewing": {
     "url": "https://careers.microsoft.com/v2/global/en/hiring-tips/student-interviewing",
@@ -2602,6 +2737,24 @@
     "kind": "primary",
     "quote": "The US and Canada recruitment season suns from August to March each year."
   },
+  "paypal-layoffs-paymentsdive-2026-09": {
+    "url": "https://www.paymentsdive.com/news/paypal-employee-job-cuts-restructuring-enrique-lores/829314/",
+    "title": "PayPal makes job cuts",
+    "publisher": "Payments Dive",
+    "published": "2026-09-01",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "PayPal Holdings has eliminated an unknown number of jobs this week"
+  },
+  "paypal-layoffs-quartz-2026-05": {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/paypal-layoffs-ceo-cuts-20-154944985.html",
+    "title": "PayPal layoffs: New CEO cuts 20% of workforce in Q1 2026",
+    "publisher": "Quartz via Yahoo Finance",
+    "published": "2026-05-06",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "PayPal plans to eliminate about 20% of its workforce"
+  },
   "paypal-linkedin-b2bgtm-2023": {
     "url": "https://www.linkedin.com/jobs/view/b2b-product-go-to-market-mba-intern-at-paypal-3838166847",
     "title": "PayPal hiring B2B Product Go To Market MBA Intern in New York, NY",
@@ -2801,6 +2954,24 @@
     "kind": "primary",
     "quote": null
   },
+  "salesforce-layoffs-bi-2026-02": {
+    "url": "https://www.aol.com/news/salesforce-quietly-laid-off-workers-021344579.html",
+    "title": "Salesforce quietly laid off workers in a new round of cuts (Business Insider, syndicated)",
+    "publisher": "Business Insider via AOL",
+    "published": "2026-02-10",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "The cut involved fewer than 1,000 roles"
+  },
+  "salesforce-layoffs-tnw-2026-08": {
+    "url": "https://thenextweb.com/news/salesforce-133-layoffs-washington-california-ai-restructuring",
+    "title": "Salesforce is cutting 133 more jobs. The filings don't mention AI",
+    "publisher": "The Next Web",
+    "published": "2026-08-07",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Salesforce is cutting another 133 jobs, including 59 in Washington state"
+  },
   "salesforce-uni-us-canada": {
     "url": "https://www.salesforce.com/company/careers/university-recruiting/us-canada/",
     "title": "US and Canada Interview Process",
@@ -2908,6 +3079,15 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": null
+  },
+  "servicenow-layoffs-investing-2026-07": {
+    "url": "https://finance.yahoo.com/technology/articles/exclusive-servicenow-cut-1k-jobs-183242920.html",
+    "title": "Exclusive: ServiceNow to cut up to 1K jobs as part of planned rightsizing",
+    "publisher": "Investing.com via Yahoo Finance",
+    "published": "2026-07-30",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "could cut up to 1,000 roles this year"
   },
   "servicenow-li-inbound-2026": {
     "url": "https://www.linkedin.com/jobs/view/sr-inbound-product-manager-intern-mba-summer-2026-at-servicenow-4300092340",
@@ -3254,6 +3434,15 @@
     "kind": "secondary",
     "quote": "simpler and faster company"
   },
+  "tiktok-bellevue-seattletimes-2026-08": {
+    "url": "https://www.seattletimes.com/business/technology/tiktok-lays-off-75-bellevue-workers-mostly-in-e-commerce-division/",
+    "title": "TikTok lays off 75 Bellevue workers, mostly in e-commerce division",
+    "publisher": "The Seattle Times",
+    "published": "2026-08-19",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "TikTok is laying off 75 Bellevue-based employees amid broader restructuring"
+  },
   "tiktok-biggo-2025-mix": {
     "url": "https://finance.biggo.com/news/Li0bqZ0ByH9TLH69BBLF",
     "title": "ByteDance's 2025 Financial Report Revealed: Heavy AI Investment Slashes Profits, Overseas Revenue Share Exceeds 30% for First Time",
@@ -3380,6 +3569,15 @@
     "kind": "secondary",
     "quote": null,
     "gone": "2026-10-04"
+  },
+  "tiktok-nashville-techcrunch-2026-08": {
+    "url": "https://techcrunch.com/2026/08/06/tiktok-lays-off-250-employees-shutters-its-nashville-office/",
+    "title": "TikTok lays off 250 employees, shutters its Nashville office",
+    "publisher": "TechCrunch",
+    "published": "2026-08-06",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "TikTok is laying off 250 employees and closing its Nashville office"
   },
   "tiktok-post-affiliate-2026summer": {
     "url": "https://lifeattiktok.com/search/7532382628306962696",
@@ -3660,6 +3858,24 @@
     "kind": "primary",
     "quote": "Meet the team for a business interview"
   },
+  "uber-layoffs-techcrunch-2026-09": {
+    "url": "https://techcrunch.com/2026/09/02/uber-is-laying-off-10-of-staff-or-3300-people/",
+    "title": "Uber is laying off 10% of staff, or 3,300 people",
+    "publisher": "TechCrunch",
+    "published": "2026-09-02",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Uber is laying off about 3,300 people, or about 10% of its global headcount"
+  },
+  "uber-people-cnbc-2026-06": {
+    "url": "https://www.cnbc.com/2026/06/03/uber-layoffs-people-division-ai.html",
+    "title": "Uber slashes people division by nearly a quarter. CEO says 'changes are necessary'",
+    "publisher": "CNBC",
+    "published": "2026-06-03",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Uber is slashing 23% of jobs in its people division"
+  },
   "uber-product-guide": {
     "url": "https://jobs.uber.com/en/uber-interview-guide/product-interview-guide/",
     "title": "Product Interview Guide",
@@ -3705,6 +3921,15 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": null
+  },
+  "visa-layoffs-cnbc-2026-07": {
+    "url": "https://www.cnbc.com/2026/07/28/visa-is-cutting-7percent-of-employees-in-efficiency-push-as-ai-reshapes-work.html",
+    "title": "Visa is cutting 7% of employees in efficiency push as AI reshapes work",
+    "publisher": "CNBC",
+    "published": "2026-07-28",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "The company plans to eliminate roughly 2,600 positions"
   },
   "visa-linkedin-finance-2025": {
     "url": "https://www.linkedin.com/jobs/view/finance-mba-intern-summer-2026-at-visa-4323598869",
@@ -4112,6 +4337,24 @@
     "kind": "primary",
     "quote": null
   },
+  "workday-8k-2026-01": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000004/wday-20260130.htm",
+    "title": "Workday Form 8-K (Item 2.05), event date 2026-01-30",
+    "publisher": "Workday / SEC EDGAR",
+    "published": "2026-02-04",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "the elimination of approximately 2% of Workday’s current workforce"
+  },
+  "workday-8k-2026-09": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000048/wday-20260929.htm",
+    "title": "Workday Form 8-K (Item 2.05)",
+    "publisher": "Workday / SEC EDGAR",
+    "published": "2026-09-29",
+    "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": "a reduction of approximately 2.5% of Workday’s current workforce"
+  },
   "workday-builtin-pmm-2025": {
     "url": "https://builtin.com/job/product-marketing-manager-intern-mba/4386452",
     "title": "Product Marketing Manager Intern, MBA - Workday",
@@ -4174,6 +4417,15 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": null
+  },
+  "workday-layoffs-bi-2026-09": {
+    "url": "https://uk.finance.yahoo.com/news/workday-doing-another-round-layoffs-212052410.html",
+    "title": "Workday is doing another round of layoffs (Business Insider, syndicated)",
+    "publisher": "Business Insider via Yahoo Finance",
+    "published": "2026-09-29",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "Workday is letting go about 500 employees"
   },
   "workday-li-fa-mba-2025-visa": {
     "url": "https://www.linkedin.com/jobs/view/4340965284",

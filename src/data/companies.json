@@ -59,7 +59,24 @@
         "sources": [
           "apple-2026-mba-internships-pool"
         ]
-      }
+      },
+      "pulse": [
+        {
+          "date": "2026-08-21",
+          "what": "Cut 200+ roles on the Vision Pro, Siri and Intelligent Systems teams",
+          "low": 200,
+          "sources": [
+            "apple-layoffs-techcrunch-2026-08"
+          ]
+        },
+        {
+          "date": "2026-09-29",
+          "what": "Reported to be holding headcount flat for 2027, with small layoffs and budget cuts",
+          "sources": [
+            "apple-headcount-flat-appleinsider-2026-09"
+          ]
+        }
+      ]
     }
   },
   {
@@ -147,7 +164,27 @@
           "amazon-10509639-team",
           "amazon-10491075"
         ]
-      }
+      },
+      "pulse": [
+        {
+          "date": "2025-10-28",
+          "what": "Cut about 14,000 corporate roles",
+          "low": 14000,
+          "high": 14000,
+          "sources": [
+            "amazon-layoffs-2025-10"
+          ]
+        },
+        {
+          "date": "2026-01-28",
+          "what": "Cut about 16,000 more corporate roles",
+          "low": 16000,
+          "high": 16000,
+          "sources": [
+            "amazon-layoffs-2026-01"
+          ]
+        }
+      ]
     }
   },
   {
@@ -232,7 +269,18 @@
         "sources": [
           "intuit-pmm-payments-2027-team"
         ]
-      }
+      },
+      "pulse": [
+        {
+          "date": "2026-05-20",
+          "what": "Laid off about 17% of staff to refocus on AI",
+          "low": 3000,
+          "high": 3000,
+          "sources": [
+            "intuit-layoffs-techcrunch-2026-05"
+          ]
+        }
+      ]
     }
   },
   {
@@ -387,7 +435,25 @@
         "sources": [
           "ms-200058904-team"
         ]
-      }
+      },
+      "pulse": [
+        {
+          "date": "2026-04-23",
+          "what": "Offered its first voluntary buyout, open to up to 7% of US staff (not a layoff)",
+          "sources": [
+            "microsoft-buyout-cnbc-2026-04"
+          ]
+        },
+        {
+          "date": "2026-07-06",
+          "what": "Cut about 4,800 roles (2.1%), mostly Xbox and commercial sales",
+          "low": 4800,
+          "high": 4800,
+          "sources": [
+            "microsoft-layoffs-2026-07"
+          ]
+        }
+      ]
     }
   },
   {
@@ -474,7 +540,26 @@
         "sources": [
           "sf-JR362499-team"
         ]
-      }
+      },
+      "pulse": [
+        {
+          "date": "2026-02-10",
+          "what": "Laid off staff in marketing, product management, data analytics and Agentforce",
+          "high": 1000,
+          "sources": [
+            "salesforce-layoffs-bi-2026-02"
+          ]
+        },
+        {
+          "date": "2026-08-07",
+          "what": "WARN filings for 133 more jobs in Washington and San Francisco",
+          "low": 133,
+          "high": 133,
+          "sources": [
+            "salesforce-layoffs-tnw-2026-08"
+          ]
+        }
+      ]
     }
   },
   {
@@ -523,6 +608,24 @@
         "cnbc-google-rto-2022"
       ],
       "effective": "2022-04"
+    },
+    "intern": {
+      "pulse": [
+        {
+          "date": "2026-02-11",
+          "what": "Offered voluntary buyouts to select US Global Business Organization teams (not a layoff)",
+          "sources": [
+            "google-buyouts-gbo-2026-02"
+          ]
+        },
+        {
+          "date": "2026-06-04",
+          "what": "Laid off staff across Google Cloud; number not reported",
+          "sources": [
+            "google-cloud-layoffs-bi-2026-06"
+          ]
+        }
+      ]
     }
   },
   {
@@ -619,6 +722,35 @@
         "fortune-meta-2023",
         "archie-rto-tracker-2026"
       ]
+    },
+    "intern": {
+      "pulse": [
+        {
+          "date": "2025-10-22",
+          "what": "Cut about 600 jobs in Meta Superintelligence Labs",
+          "low": 600,
+          "high": 600,
+          "sources": [
+            "meta-ai-layoffs-techcrunch-2025-10"
+          ]
+        },
+        {
+          "date": "2026-01-14",
+          "what": "Cut about 10% of Reality Labs",
+          "sources": [
+            "meta-reality-labs-techcrunch-2026-01"
+          ]
+        },
+        {
+          "date": "2026-04-23",
+          "what": "Laid off about 10% of staff (some 8,000, on May 20) and left 6,000 open roles unfilled",
+          "low": 8000,
+          "high": 8000,
+          "sources": [
+            "meta-layoffs-npr-2026-04"
+          ]
+        }
+      ]
     }
   },
   {
@@ -711,6 +843,27 @@
         "sfchronicle-uber-2026",
         "archie-rto-tracker-2026",
         "uber-newsroom-simpler-faster-2026"
+      ]
+    },
+    "intern": {
+      "pulse": [
+        {
+          "date": "2026-06-03",
+          "what": "Cut 23% of the People (HR and recruiting) division",
+          "sources": [
+            "uber-people-cnbc-2026-06"
+          ]
+        },
+        {
+          "date": "2026-09-02",
+          "what": "Cut about 10% of staff to remove management layers",
+          "low": 3300,
+          "high": 3300,
+          "sources": [
+            "uber-layoffs-techcrunch-2026-09",
+            "uber-newsroom-simpler-faster-2026"
+          ]
+        }
       ]
     }
   },
@@ -815,6 +968,18 @@
         "cisco-hrexec-2025"
       ],
       "days": null
+    },
+    "intern": {
+      "pulse": [
+        {
+          "date": "2026-05-13",
+          "what": "Restructuring with fewer than 4,000 job cuts (under 5%)",
+          "high": 4000,
+          "sources": [
+            "cisco-path-forward-2026-05"
+          ]
+        }
+      ]
     }
   },
   {
@@ -909,7 +1074,18 @@
         "sources": [
           "dell-li-pm-mba-2025-team"
         ]
-      }
+      },
+      "pulse": [
+        {
+          "date": "2026-03-17",
+          "what": "10-K shows headcount down about 11,000 (about 10%) in the year to Jan 2026; layoffs and attrition not split",
+          "low": 11000,
+          "high": 11000,
+          "sources": [
+            "dell-headcount-proactive-2026-03"
+          ]
+        }
+      ]
     }
   },
   {
@@ -988,7 +1164,16 @@
         "sources": [
           "ibm-posting-133909-team"
         ]
-      }
+      },
+      "pulse": [
+        {
+          "date": "2025-11-04",
+          "what": "Cut a low single-digit percentage of its global workforce (thousands of jobs)",
+          "sources": [
+            "ibm-layoffs-cnbc-2025-11"
+          ]
+        }
+      ]
     }
   },
   {
@@ -1077,7 +1262,23 @@
           "paypal-builtin-bizops-2025-auth",
           "paypal-builtin-venmo-growth-2025"
         ]
-      }
+      },
+      "pulse": [
+        {
+          "date": "2026-05-06",
+          "what": "Plans to cut about 20% of its workforce over two to three years",
+          "sources": [
+            "paypal-layoffs-quartz-2026-05"
+          ]
+        },
+        {
+          "date": "2026-09-01",
+          "what": "A further round of cuts under that plan; number not disclosed",
+          "sources": [
+            "paypal-layoffs-paymentsdive-2026-09"
+          ]
+        }
+      ]
     }
   },
   {
@@ -1171,7 +1372,17 @@
           "servicenow-sr-corpdev-2026-team",
           "servicenow-sr-finance-mba-2026-placement"
         ]
-      }
+      },
+      "pulse": [
+        {
+          "date": "2026-07-30",
+          "what": "Cutting up to 1,000 roles after acquisitions, aiming for flat headcount in 2026",
+          "high": 1000,
+          "sources": [
+            "servicenow-layoffs-investing-2026-07"
+          ]
+        }
+      ]
     }
   },
   {
@@ -1255,7 +1466,27 @@
         "sources": [
           "tiktok-careers-api-mba-intern-2027"
         ]
-      }
+      },
+      "pulse": [
+        {
+          "date": "2026-08-06",
+          "what": "Closed its Nashville office, laying off 250",
+          "low": 250,
+          "high": 250,
+          "sources": [
+            "tiktok-nashville-techcrunch-2026-08"
+          ]
+        },
+        {
+          "date": "2026-08-19",
+          "what": "Laid off 75 in Bellevue, mostly TikTok Shop (e-commerce)",
+          "low": 75,
+          "high": 75,
+          "sources": [
+            "tiktok-bellevue-seattletimes-2026-08"
+          ]
+        }
+      ]
     }
   },
   {
@@ -1348,7 +1579,18 @@
         "sources": [
           "visa-linkedin-finance-2025-placement"
         ]
-      }
+      },
+      "pulse": [
+        {
+          "date": "2026-07-28",
+          "what": "Cutting about 7% of staff, mostly in technology and product",
+          "low": 2600,
+          "high": 2600,
+          "sources": [
+            "visa-layoffs-cnbc-2026-07"
+          ]
+        }
+      ]
     }
   },
   {
@@ -1497,7 +1739,26 @@
         "sources": [
           "workday-weekday-ep-mba-team"
         ]
-      }
+      },
+      "pulse": [
+        {
+          "date": "2026-02-04",
+          "what": "Cut about 2% of staff, mainly in Global Customer Operations",
+          "sources": [
+            "workday-8k-2026-01"
+          ]
+        },
+        {
+          "date": "2026-09-29",
+          "what": "Cut about 2.5% of staff, mainly in Product and Technology",
+          "low": 500,
+          "high": 500,
+          "sources": [
+            "workday-8k-2026-09",
+            "workday-layoffs-bi-2026-09"
+          ]
+        }
+      ]
     }
   }
 ]
