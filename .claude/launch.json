@@ -2,6 +2,6 @@
   "version": "0.0.1",
   "configurations": [
     { "name": "static", "runtimeExecutable": "npx", "runtimeArgs": ["--yes", "serve", "out", "-l", "4321"], "port": 4321 },
-    { "name": "dev", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 3000 }
+    { "name": "dev", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 3000, "autoPort": true }
   ]
 }
