@@ -342,6 +342,7 @@ details.why p { margin: 6px 0; }
 .corrections .field:focus-visible { outline: none; border-color: var(--cardinal); }
 .corrections .send { justify-self: start; background: var(--cardinal); color: var(--paper); border: none; padding: 9px 18px; font-size: 14px; cursor: pointer; }
 .corrections .send:hover { background: var(--cardinal-dark); }
+.corrections .sink { position: absolute; width: 0; height: 0; border: 0; visibility: hidden; }
 .honey { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 .foot { margin-top: 96px; border-top: 2px solid var(--ink); padding-top: 14px; font-size: 13px; color: var(--ink-2); display: grid; gap: 14px; }
 .foot strong { font-weight: 500; color: var(--ink); }

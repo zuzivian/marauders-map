@@ -3,9 +3,11 @@
 import { useEffect, useRef, useState } from "react";
 import { companies, meta } from "@/data";
 
-// A plain HTML form posted to FormSubmit (https://formsubmit.co), which emails each submission to the maintainer.
-// It works without JavaScript; JS only adds the return URL and the thank-you note. FormSubmit's reCAPTCHA
-// stays on, and `_honey` is a honeypot that bots fill in and people never see.
+// The corrections form posts to whichever backend meta.json names:
+//  - "google": a Google Form's formResponse endpoint, submitted into a hidden iframe so the reader stays here.
+//    Google emails the form's owner on each response and keeps them in a sheet.
+//  - "formsubmit": FormSubmit (https://formsubmit.co), which emails each submission after a one-time activation.
+// Field names map our four fields onto the backend's (Google uses entry.<id>).
 
 export const CORRECTIONS_EVENT = "maraudersmap:correction";
 
@@ -15,7 +17,10 @@ export function openCorrection(about?: string) {
 }
 
 export default function Corrections() {
+  const cfg = meta.corrections;
   const ref = useRef<HTMLDetailsElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
+  const sent = useRef(false);
   const [about, setAbout] = useState("General");
   const [next, setNext] = useState<string | null>(null);
   const [thanks, setThanks] = useState(false);
@@ -37,21 +42,27 @@ export default function Corrections() {
     return () => window.removeEventListener(CORRECTIONS_EVENT, onOpen);
   }, []);
 
-  if (!meta.correctionsEndpoint) return null;
+  if (!cfg) return null;
+  const google = cfg.kind === "google";
+  const f = cfg.fields;
   return (
     <section id="corrections" className="corrections" aria-labelledby="corrections-h">
       {thanks && <p className="callout" role="status">Thanks, your correction was sent.</p>}
       <details ref={ref}>
         <summary id="corrections-h">spot something wrong or out of date? send a correction</summary>
-        <form action={meta.correctionsEndpoint} method="POST">
-          <input type="hidden" name="_subject" value={`Marauder's Map correction: ${about}`} />
-          <input type="hidden" name="_template" value="table" />
-          {next && <input type="hidden" name="_next" value={next} />}
-          <input type="text" name="_honey" className="honey" tabIndex={-1} autoComplete="off" aria-hidden />
-
+        <form ref={formRef} action={cfg.action} method="POST" target={google ? "corrections-sink" : undefined}
+          onSubmit={() => { sent.current = true; }}>
+          {!google && (
+            <>
+              <input type="hidden" name="_subject" value={`Marauder's Map correction: ${about}`} />
+              <input type="hidden" name="_template" value="table" />
+              {next && <input type="hidden" name="_next" value={next} />}
+              <input type="text" name="_honey" className="honey" tabIndex={-1} autoComplete="off" aria-hidden />
+            </>
+          )}
           <label>
             <span className="label">about</span>
-            <select className="field" name="about" value={about} onChange={(e) => setAbout(e.target.value)}>
+            <select className="field" name={f.about} value={about} onChange={(e) => setAbout(e.target.value)}>
               <option>General</option>
               {companies.map((c) => <option key={c.id}>{c.name}</option>)}
               <option>GSB calendar</option>
@@ -61,22 +72,27 @@ export default function Corrections() {
           </label>
           <label>
             <span className="label">what&apos;s wrong, and what&apos;s right</span>
-            <textarea className="field" name="correction" required rows={4} maxLength={4000}
+            <textarea className="field" name={f.correction} required rows={4} maxLength={4000}
               placeholder="Which date, title or number is off, and what it should be." />
           </label>
           <label>
             <span className="label">source, if you have one</span>
-            <input className="field" type="url" name="source" placeholder="https://…" />
+            <input className="field" type="url" name={f.source} placeholder="https://…" />
           </label>
           <label>
             <span className="label">your email, only if you&apos;d like a reply</span>
-            <input className="field" type="email" name="email" autoComplete="email" />
+            <input className="field" type="email" name={f.email} autoComplete="email" />
           </label>
           <button className="send" type="submit">Send correction</button>
           <p className="small muted">
-            Sent by email to the site&apos;s maintainer through FormSubmit, which keeps submissions for 30 days. Nothing is published automatically.
+            {google ? "Goes to the site's maintainer through Google Forms." : "Sent by email to the site's maintainer through FormSubmit, which keeps submissions for 30 days."} Nothing is published automatically.
           </p>
         </form>
+        {google && (
+          // Google answers with its own page; landing it in a hidden frame keeps the reader on the map.
+          <iframe name="corrections-sink" title="Corrections form response" className="sink" tabIndex={-1} aria-hidden
+            onLoad={() => { if (sent.current) { sent.current = false; setThanks(true); formRef.current?.reset(); if (ref.current) ref.current.open = false; } }} />
+        )}
       </details>
     </section>
   );

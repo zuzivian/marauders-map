@@ -1,5 +1,14 @@
 {
   "currentCycle": "2026",
   "researched": "2026-10-04",
-  "correctionsEndpoint": "https://formsubmit.co/natwong@stanford.edu"
+  "corrections": {
+    "kind": "formsubmit",
+    "action": "https://formsubmit.co/natwong@stanford.edu",
+    "fields": {
+      "about": "about",
+      "correction": "correction",
+      "source": "source",
+      "email": "email"
+    }
+  }
 }

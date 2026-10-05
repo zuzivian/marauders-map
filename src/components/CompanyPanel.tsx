@@ -224,7 +224,7 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
         <summary>All sources for {c.name}</summary>
         <SourceList ids={allSources} label="" />
       </details>
-      {meta.correctionsEndpoint && (
+      {meta.corrections && (
         <p className="small"><button className="linkish quiet" onClick={() => openCorrection(c.name)}>something wrong about {c.name}?</button></p>
       )}
       <span className="sr-only">{item ? MARK[item.mark].label : ""}</span>

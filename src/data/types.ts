@@ -144,5 +144,10 @@ export interface Prep {
 export interface Meta {
   currentCycle: Cycle;
   researched: ISODate; // the date the data was last checked end to end
-  correctionsEndpoint: string | null; // FormSubmit form action; null hides the corrections form
+  /** Where the corrections form posts; null hides the form. Field names map our fields onto the backend's. */
+  corrections: {
+    kind: "google" | "formsubmit";
+    action: string;
+    fields: { about: string; correction: string; source: string; email: string };
+  } | null;
 }

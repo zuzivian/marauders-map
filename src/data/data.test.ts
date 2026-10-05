@@ -152,5 +152,9 @@ describe("meta", () => {
   it("is valid", () => {
     expect(CYCLES).toContain(meta.currentCycle);
     expect(isISO(meta.researched)).toBe(true);
+    if (meta.corrections) {
+      expect(meta.corrections.action).toMatch(/^https:\/\//);
+      if (meta.corrections.kind === "google") expect(meta.corrections.action).toMatch(/\/formResponse$/);
+    }
   });
 });
