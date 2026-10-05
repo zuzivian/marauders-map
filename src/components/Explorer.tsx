@@ -79,6 +79,10 @@ const AXES: Record<AxisKey, Axis> = {
   },
 };
 
+// Rounded to a hundredth of a pixel: browsers shorten long decimals in a style attribute, so unrounded positions
+// from the layout read back differently from the prerendered HTML and break hydration.
+const translate = (x: number, y: number) => `translate(${Math.round(x * 100) / 100}px, ${Math.round(y * 100) / 100}px)`;
+
 function domainFor(k: AxisKey): [number, number] {
   const a = AXES[k];
   if (k === "appOpen") return [0, SEASON_WEEKS];
@@ -96,7 +100,7 @@ type Node = SimulationNodeDatum & { c: Company; tx: number; ty: number; r: numbe
 
 export default function Explorer() {
   const { selected, select } = useGuide();
-  const [x, setX] = useState<AxisKey>("headcount");
+  const [x, setX] = useState<AxisKey>("pay");
   const [y, setY] = useState<AxisKey>("office");
   const [wrapRef, measured] = useWidth<HTMLDivElement>(720);
   const W = measured || 720; // the section starts folded, where the chart measures 0 wide; lay out as prerendered until it opens
@@ -173,7 +177,7 @@ export default function Explorer() {
               {nodes.map((d) => {
                 const px = ax.get(d.c), py = ay.get(d.c), dx = d.x - d.tx, dy = d.y - d.ty;
                 return (
-                  <g key={d.c.id} className="nodepos" style={{ transform: `translate(${dx}px, ${dy}px)` }}>
+                  <g key={d.c.id} className="nodepos" style={{ transform: translate(dx, dy) }}>
                     {px.lo !== undefined && px.hi !== undefined && px.hi > px.lo && <Whisker x1={sx(px.lo)} x2={sx(px.hi)} y1={d.ty} y2={d.ty} />}
                     {py.lo !== undefined && py.hi !== undefined && py.hi > py.lo && <Whisker x1={d.tx} x2={d.tx} y1={sy(py.lo)} y2={sy(py.hi)} />}
                   </g>
@@ -183,7 +187,7 @@ export default function Explorer() {
             {nodes.map((d) => {
               const w = waves[d.c.id], on = d.c.id === selected, inside = d.r >= 22;
               return (
-                <g key={d.c.id} className="node nodepos" style={{ transform: `translate(${d.x}px, ${d.y}px)` }} role="button" tabIndex={0}
+                <g key={d.c.id} className="node nodepos" style={{ transform: translate(d.x, d.y) }} role="button" tabIndex={0}
                   aria-pressed={on} aria-label={`${d.c.name}: ${ax.short} ${ax.fmt(ax.get(d.c).v)}, ${ay.short} ${ay.fmt(ay.get(d.c).v)}`}
                   onClick={() => select(d.c.id)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(d.c.id); } }}>
                   <circle r={d.r} fill={WAVE_FILL[w]} fillOpacity={0.9} stroke={on ? "var(--ink)" : w === "none" ? "var(--ink-3)" : "var(--paper)"}
