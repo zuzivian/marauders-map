@@ -1351,6 +1351,15 @@
     "kind": "archive",
     "quote": "Currently enrolled in a top-tier MBA program"
   },
+  "databricks-wb-2026-mba-workforce": {
+    "url": "https://web.archive.org/web/20260310215610/https://www.databricks.com/company/careers/people/mba-intern---workforce-intelligence-8402613002",
+    "title": "MBA Intern - Workforce Intelligence (Wayback snapshot 2026-03-10)",
+    "publisher": "Internet Archive",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "archive",
+    "quote": "Currently pursuing an MBA with a graduation date in Spring 2027"
+  },
   "dell-10k-fy26": {
     "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000008/dell-20260130.htm",
     "title": "Dell Technologies Form 10-K for fiscal year ended January 30, 2026",
@@ -4055,6 +4064,15 @@
     "kind": "primary",
     "quote": null
   },
+  "spotify-li-bspm-mba-2025": {
+    "url": "https://www.linkedin.com/jobs/view/2025-summer-internship-business-strategy-and-product-management-mba-new-york-city-at-spotify-4130611710",
+    "title": "2025 Summer Internship, Business Strategy and Product Management - MBA (New York City) - Spotify (LinkedIn job 4130611710, closed)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "The last day to apply is February 6th 2025 at 12 PM ET"
+  },
   "spotify-students": {
     "url": "https://www.lifeatspotify.com/start-your-journey/students",
     "title": "Students | Life at Spotify",
@@ -4154,6 +4172,15 @@
     "kind": "secondary",
     "quote": "pursuing a Bachelor’s Degree with an emphasis in Finance or a related field"
   },
+  "stripe-li-fs-intern-2026": {
+    "url": "https://www.linkedin.com/jobs/view/finance-strategy-intern-at-stripe-4342165728",
+    "title": "Finance & Strategy Intern - Stripe (LinkedIn, San Francisco; Summer 2026, closed)",
+    "publisher": "LinkedIn",
+    "published": null,
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": "pursuing a Bachelor’s Degree with an emphasis in Finance or a related field"
+  },
   "stripe-listing-data-analyst-intern-2027": {
     "url": "https://stripe.com/jobs/listing/data-analyst-intern/8194291",
     "title": "Data Analyst, Intern",
@@ -4198,6 +4225,15 @@
     "accessed": "2026-10-04",
     "kind": "primary",
     "quote": "the large majority of our internships are available on the engineering team"
+  },
+  "stripe-wayup-fs-mba-2018": {
+    "url": "https://www.wayup.com/i-Legal-Services-j-Redpoint-Ventures-896196182140027/",
+    "title": "Finance & Strategy MBA Intern at Stripe (WayUp, via the Redpoint Ventures board; datePosted 2018-04-28)",
+    "publisher": "WayUp",
+    "published": "2018-04-28",
+    "accessed": "2026-10-04",
+    "kind": "secondary",
+    "quote": null
   },
   "stripe-wb-revops-mba-2021": {
     "url": "https://web.archive.org/web/20210411230318/https://stripe.com/jobs/listing/2021-revops-mba-intern/3012234",

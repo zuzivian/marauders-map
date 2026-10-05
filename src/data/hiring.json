@@ -951,7 +951,7 @@
   },
   "databricks": {
     "hasProgram": true,
-    "pattern": "Late, in one batch: MBA roles go up in late January to February (late March in 2024), with no stated deadline",
+    "pattern": "Late, in one batch: MBA roles go up in late January to February (March in 2024), with no stated deadline",
     "windows": [
       {
         "cycle": "2023",
@@ -959,10 +959,11 @@
         "to": "2024-03-21",
         "evidence": "medium",
         "scope": "MBA Intern - Strategy & Operations (for MBAs graduating Spring 2025), San Francisco",
-        "note": "Only aggregator dates survive: MeetFrank published it 2024-03-21 and Huzzle 2024-03-28. No archived copy of Databricks' own page, and no other MBA roles from this cycle, were found.",
+        "note": "Only aggregator dates survive: MeetFrank published it 2024-03-21 and Huzzle 2024-03-28. Both link to Greenhouse job 7295056002 (the requisition later reused for Strategy & Execution), whose ID is above Databricks jobs first published 2024-03-06, so it was most likely created in March. No archived copy of Databricks' own page, and no other MBA roles from this cycle, were found.",
         "sources": [
           "databricks-meetfrank-so-2024",
-          "databricks-huzzle-so-2024"
+          "databricks-huzzle-so-2024",
+          "databricks-gh-board-api"
         ]
       },
       {
@@ -971,7 +972,7 @@
         "to": "2025-01-24",
         "evidence": "medium",
         "scope": "MBA Intern roles for Summer 2025: Commercialization Product Management, Product Operations, Strategy & Execution, Strategic Finance",
-        "note": "A Getro job board recorded Commercialization Product Management on 2025-01-24, and Strategy & Execution was being shared on LinkedIn by 2025-01-31. LinkedIn job IDs for Product Operations and Strategy & Execution (~4.1325B) fit late January. Strategic Finance's Greenhouse ID sits among jobs first published Jan 13-15, 2025, the earliest it could have gone up, though Getro first recorded it Feb 6.",
+        "note": "A Getro job board recorded Commercialization Product Management on 2025-01-24, and Strategy & Execution was being shared on LinkedIn by 2025-01-31. LinkedIn job IDs for Product Operations and Strategy & Execution (~4.1325B) fit late January. Commercialization PM and Product Operations have Greenhouse IDs above a Databricks job first published 2025-01-13, so they were created no earlier than about then. Strategic Finance's lower ID means it was created on or before Jan 13, but Getro first recorded it Feb 6. Strategy & Execution reused its 2024 requisition, so its ID says nothing about timing.",
         "sources": [
           "databricks-getro-commercialization-pm-2025",
           "databricks-getro-strategic-finance-2025",
@@ -988,11 +989,11 @@
       },
       {
         "cycle": "2025",
-        "from": "2026-02-02",
+        "from": "2026-01-29",
         "to": "2026-02-10",
         "evidence": "medium",
         "scope": "MBA Intern roles for Summer 2026: Product Operations, Technical Program Management, Corporate Operations, Strategic Finance, People Analytics (retitled Workforce Intelligence), Product Pricing & Commercialization, Commercial Transformation, Strategy & Execution",
-        "note": "A Getro job board recorded Product Operations on 2026-02-10 and Corporate Operations on 2026-02-18; Jobright picked up Commercial Transformation on 2026-03-03. The roles' Greenhouse IDs (8399535002-8402617002) sit among jobs first published Feb 2-3, 2026, so they were created about then. Strategy & Execution reused its 2025 requisition and was live by 2026-03-25. Databricks says its early-career applications typically open in August; its MBA roles have not followed that.",
+        "note": "A Getro job board recorded Product Operations on 2026-02-10 and Corporate Operations on 2026-02-18; Jobright picked up Commercial Transformation on 2026-03-03. The roles' Greenhouse IDs (8399535002-8402617002) fall between Databricks jobs first published Jan 29 and Feb 2-3, 2026, so they were created about then. Strategy & Execution reused the requisition it had used since 2024 and was live by 2026-03-25. Databricks says its early-career applications typically open in August; its MBA roles have not followed that.",
         "sources": [
           "databricks-getro-product-ops-2026",
           "databricks-getro-corp-ops-2026",
@@ -1012,7 +1013,7 @@
     ],
     "current": {
       "checked": "2026-10-04",
-      "summary": "No Databricks summer-2027 MBA intern posting as of 2026-10-04: its Greenhouse board lists 885 jobs, and the only product internship is the CS-track 'Product Management Intern (Summer 2027)', which asks for a bachelor's or master's in computer science. The last three cycles' MBA roles went up between mid-January and late March.",
+      "summary": "No Databricks summer-2027 MBA intern posting as of 2026-10-04: its Greenhouse board lists 885 jobs, and the only product internship is the CS-track 'Product Management Intern (Summer 2027)', which asks for a bachelor's or master's in computer science. The last three cycles' MBA roles went up between mid-January and March.",
       "postings": [],
       "sources": [
         "databricks-gh-board-api"
@@ -1263,7 +1264,7 @@
   },
   "spotify": {
     "hasProgram": true,
-    "pattern": "Late and short: one New York MBA posting in late January or February, with a hard deadline about two to three weeks later",
+    "pattern": "Late and short: one New York MBA posting between late January and early March, with a hard deadline about two to three weeks later",
     "windows": [
       {
         "cycle": "2023",
@@ -1279,15 +1280,17 @@
       },
       {
         "cycle": "2024",
-        "from": "2025-01-12",
+        "from": "2024-12-02",
         "to": "2025-01-22",
         "closes": "2025-02-06",
-        "evidence": "medium",
+        "evidence": "weak",
         "scope": "2025 Summer Internship, Business Strategy and Product Management - MBA (New York City); a London PM MBA posting followed Jan 24",
-        "note": "A Getro job board recorded it 2025-01-22 and Wayback archived it 2025-01-23. The page's Lever record dates from 2024-12-02, but nothing shows it public before late January; the start of the range allows for about ten days of aggregator lag. Deadline February 6, 2025.",
+        "note": "The page's Lever record was created 2024-12-02, the earliest it could have gone up. The first dated public records are a Getro job board (2025-01-22) and Wayback (2025-01-23), and its LinkedIn job ID fits late January too, so it most likely went up then; nothing found rules out earlier. Deadline February 6, 2025.",
         "sources": [
           "spotify-accel-bspm-mba-2025",
-          "spotify-wb-bspm-mba-nyc-2025"
+          "spotify-wb-bspm-mba-nyc-2025",
+          "spotify-li-bspm-mba-2025",
+          "linkedin-jobid-calibration"
         ]
       },
       {
@@ -1320,17 +1323,19 @@
     "windows": [],
     "current": {
       "checked": "2026-10-04",
-      "summary": "Stripe has no MBA internship. As of 2026-10-04 its Greenhouse board lists 717 jobs; the internships are software engineering, data analyst, PhD data science and technical operations roles. Its one business-side internship of recent years, Finance & Strategy (posted Feb 2025), is for bachelor's students. The last MBA internships we found were for 2021 and 2022.",
+      "summary": "We found no Stripe MBA internship as of 2026-10-04. Its Greenhouse board lists 717 jobs; the internships are software engineering (including a high-school program), data analyst, PhD data science and technical operations roles. Its business-side internship of recent years, Finance & Strategy (Summer 2025, and Summer 2026 alongside Treasury Finance), is for bachelor's students. The last MBA internships we found were for 2021 and 2022.",
       "postings": [],
       "sources": [
         "stripe-gh-board-api",
         "stripe-glynn-fs-intern-2025",
         "stripe-wb-revops-mba-2021",
         "stripe-simplify-climate-mba-2022",
-        "stripe-university"
+        "stripe-university",
+        "stripe-li-fs-intern-2026",
+        "stripe-wayup-fs-mba-2018"
       ]
     },
-    "note": "Stripe did hire MBA interns: 'MBA Intern: Revenue Operations' (2021) and 'MBA Intern, Climate Strategy & Operations' (posted Mar 2022). We found none since: archived stripe.com/jobs listings from 2023 on show only engineering, data, design and apprenticeship internships (the archive is incomplete), the live board has none, and its early-talent page says most internships are in engineering."
+    "note": "Stripe has posted MBA internships before: Finance & Strategy MBA Intern (2018), 'MBA Intern: Revenue Operations' (2021) and 'MBA Intern, Climate Strategy & Operations' (posted Mar 2022). We found none since: archived stripe.com/jobs listings from 2023 on show only engineering, data, design and apprenticeship internships (the archive is incomplete), the live board has none, and its early-talent page says most internships are in engineering."
   },
   "tiktok": {
     "hasProgram": true,
