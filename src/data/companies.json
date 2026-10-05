@@ -1176,9 +1176,8 @@
     },
     "growth": {
       "value": 80,
-      "low": 65,
       "basis": "year-over-year growth of the revenue run-rate in Databricks' Q2 (announced 2026-08-13), as reported by the company",
-      "note": "Private company: company-reported run-rate growth, not audited revenue. Databricks said '>80%' on a run-rate above $7B; the quarter before it said '>65%' on $5.4B, shown as the low end.",
+      "note": "Private company: company-reported run-rate growth, not audited revenue. Databricks said '>80%' on a run-rate above $7B, so 80% is a floor. The quarter before, it said '>65%' on $5.4B.",
       "sources": [
         "databricks-pr-7b-runrate",
         "databricks-pr-5-4b-runrate"
