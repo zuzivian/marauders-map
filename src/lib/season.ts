@@ -66,12 +66,6 @@ export function typicalOpen(h: Hiring, currentCycle: Cycle): Typical | null {
 
 export type Wave = "summer" | "fall" | "winter" | "none";
 export const WAVE_BOUNDS = { fall: monthStartWeek(4), winter: monthStartWeek(6) }; // Sep 1, Nov 1
-export const waveLabel: Record<Wave, string> = {
-  summer: "Usually opens by August",
-  fall: "Usually opens Sep–Oct",
-  winter: "Usually opens Nov or later",
-  none: "No MBA internship",
-};
 
 export function waveOf(h: Hiring, currentCycle: Cycle): Wave {
   const t = h.hasProgram ? typicalOpen(h, currentCycle) : null;

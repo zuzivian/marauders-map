@@ -5,7 +5,7 @@ import { scaleLinear, scaleLog, scaleSqrt } from "d3-scale";
 import { forceCollide, forceSimulation, forceX, forceY, type SimulationNodeDatum } from "d3-force";
 import { format } from "d3-format";
 import { companies, hiring, meta, type Company } from "@/data";
-import { SEASON_MONTHS, SEASON_WEEKS, monthStartWeek, typicalOpen, waveLabel, waveOf, type Wave } from "@/lib/season";
+import { SEASON_MONTHS, SEASON_WEEKS, monthStartWeek, typicalOpen, waveOf, type Wave } from "@/lib/season";
 import { fmtCap, fmtCount, fmtMonthly, latest, perMonth } from "@/lib/format";
 import { useWidth } from "@/lib/useWidth";
 import { useGuide } from "./Guide";
@@ -90,13 +90,16 @@ function domainFor(k: AxisKey): [number, number] {
 }
 
 export const WAVE_FILL: Record<Wave, string> = { summer: "var(--cardinal-dark)", fall: "var(--cardinal)", winter: "var(--cardinal-3)", none: "transparent" };
+// The colour key, worded to follow "Colour is when applications usually open:".
+const WAVE_KEY: Record<Wave, string> = { summer: "by August", fall: "Sep–Oct", winter: "Nov or later", none: "no MBA internship" };
 type Node = SimulationNodeDatum & { c: Company; tx: number; ty: number; r: number; x: number; y: number };
 
 export default function Explorer() {
   const { selected, select } = useGuide();
   const [x, setX] = useState<AxisKey>("headcount");
   const [y, setY] = useState<AxisKey>("office");
-  const [wrapRef, W] = useWidth<HTMLDivElement>(720);
+  const [wrapRef, measured] = useWidth<HTMLDivElement>(720);
+  const W = measured || 720; // the section starts folded, where the chart measures 0 wide; lay out as prerendered until it opens
   // Animate only when the reader changes an axis, not when the chart first measures itself or resizes.
   const [animateAt, setAnimateAt] = useState<number | null>(null);
   const narrow = W < 560;
@@ -151,7 +154,6 @@ export default function Explorer() {
         <div className="controls">
           <span className="pair">Across {axisSelect(x, setX, "Horizontal axis")}</span>
           <span className="pair">Up {axisSelect(y, setY, "Vertical axis")}</span>
-          <span className="label push">size = market value · bars = uncertainty</span>
         </div>
         <div ref={wrapRef}>
           <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} className={`chart${animateAt === W ? " animate" : ""}`} role="group" aria-label={`${companies.length} companies plotted by ${ax.label} and ${ay.label}. Use the buttons below the chart, or tab to a bubble, to open its field notes.`}>
@@ -195,23 +197,31 @@ export default function Explorer() {
             <text x={M.l} y={14} className="axis-title" style={{ fontSize: fs }}>↑ {ay.label}</text>
           </svg>
         </div>
-        <div className="legend">
-          {(["summer", "fall", "winter", "none"] as Wave[]).map((w) => (
-            <span key={w}><i style={w === "none" ? { border: "1px dashed var(--ink-3)" } : { background: WAVE_FILL[w] }} />{waveLabel[w]}</span>
-          ))}
-        </div>
-        <div className="picker" role="group" aria-label="Choose a company">
-          {companies.map((c) => (
-            <button key={c.id} className="chip" aria-pressed={c.id === selected} onClick={() => select(c.id)}>{c.name}</button>
-          ))}
-        </div>
-        <div className="caveat">
-          Market values as of {capAsOf}{companies.some((c) => c.marketCap.kind === "private valuation") ? " (private companies: latest reported valuation)" : ""}.
-          Growth is revenue over the latest twelve reported months vs the twelve before, from SEC filings; for private companies it&apos;s reported figures, shown as a range. On &ldquo;applications open&rdquo;, bars span past cycles.
-          Intern pay is the range stated on US MBA intern postings (this cycle&apos;s where they&apos;re up, otherwise last cycle&apos;s), put on a monthly basis with hourly rates at 40 hours a week; bars span the range.
-          Visa sponsorship is only what a posting says outright; &ldquo;needs auth&rdquo; means you must already be authorized to work in the US.
-          {shown.map((k) => <span key={k}> {AXES[k].short} not stated: {companies.filter((c) => AXES[k].get(c).v === (k === "pay" ? PAY_NONE : VISA_NONE)).map((c) => c.name).join(", ")}.</span>)}
-        </div>
+        <p className="chart-key">
+          Bubble size is market value; whiskers show a range. Colour is when applications usually open:{" "}
+          {(["summer", "fall", "winter", "none"] as Wave[]).map((w, i) => (
+            <span key={w} className="pair">{i > 0 && ", "}<i className="dot" style={w === "none" ? { border: "1px dashed var(--ink-3)" } : { background: WAVE_FILL[w] }} />{WAVE_KEY[w]}</span>
+          ))}.
+        </p>
+        <label className="picker">
+          Field notes for{" "}
+          <select className="select" value={selected} onChange={(e) => select(e.target.value)}>
+            {companies.map((c) => <option key={c.id} value={c.id}>{c.name}</option>)}
+          </select>
+          <span className="muted"> or tap a bubble</span>
+        </label>
+        <details className="why">
+          <summary>How these are measured</summary>
+          <p>
+            Market values as of {capAsOf}{companies.some((c) => c.marketCap.kind === "private valuation") ? " (private companies: latest reported valuation)" : ""}.
+            Growth is revenue over the latest twelve reported months vs the twelve before, from SEC filings; for private companies it&apos;s reported figures, shown as a range. On &ldquo;applications open&rdquo;, bars span past cycles.
+          </p>
+          <p>
+            Intern pay is the range stated on US MBA intern postings (this cycle&apos;s where they&apos;re up, otherwise last cycle&apos;s), put on a monthly basis with hourly rates at 40 hours a week; bars span the range.
+            Visa sponsorship is only what a posting says outright; &ldquo;needs auth&rdquo; means you must already be authorized to work in the US.
+          </p>
+          {shown.length > 0 && <p>{shown.map((k) => <span key={k}>{AXES[k].short} not stated: {companies.filter((c) => AXES[k].get(c).v === (k === "pay" ? PAY_NONE : VISA_NONE)).map((c) => c.name).join(", ")}. </span>)}</p>}
+        </details>
       </div>
       <CompanyPanel company={sel} />
       <div className="sr-only" aria-live="polite">Showing field notes for {sel.name}</div>

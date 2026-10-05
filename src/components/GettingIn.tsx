@@ -21,7 +21,7 @@ export default function GettingIn({ company: c }: { company: Company }) {
 
   return (
     <>
-      <h4>getting in</h4>
+      <h4>Getting in</h4>
       {plan && (
         <div className="gi-plan">
           <p className="gi-act">{plan.action}{plan.rule && <> <span className="gi-rot">rule of thumb: {plan.rule}</span></>}</p>
@@ -39,7 +39,7 @@ export default function GettingIn({ company: c }: { company: Company }) {
           </p>
         ) : notes ? (
           <>
-            <div className="label">first-hand · n={notes.n} · not verified by the company</div>
+            <div className="label">First-hand, from {notes.n} second-year{notes.n === 1 ? "" : "s"}. Not verified by the company.</div>
             <p className="small">
               {notes.n === 1 ? "One second-year" : notes.paths.length === 1 ? `All ${notes.n} second-years` : `${notes.n} second-years`} got in by{" "}
               {notes.paths.map(([p, k]) => (notes.paths.length === 1 ? PATH_LABEL[p] : `${PATH_LABEL[p]} (${k})`)).join(", ")}.
@@ -47,23 +47,21 @@ export default function GettingIn({ company: c }: { company: Company }) {
               {notes.weeks !== null && ` About ${notes.weeks} weeks from first contact to offer (median).`}
             </p>
             {notes.summers.map(({ summer, reports }) => (
-              <div key={summer}>
-                <div className="label">summer {summer} · {reports.length} notes</div>
+              <details key={summer} className="why">
+                <summary>Their advice, summer {summer} ({reports.length} notes)</summary>
                 <ul className="gi-advice">
                   {reports.map((r, i) => <li key={i}><q>{r.advice}</q> <span className="muted">— {byline(r)}</span></li>)}
                 </ul>
-                <details className="why">
-                  <summary>What mattered, in their words</summary>
-                  <ul className="gi-advice">{reports.map((r, i) => <li key={i}>{r.whatMattered} <span className="muted">— {byline(r)}</span></li>)}</ul>
-                </details>
-              </div>
+                <div className="label">What mattered, in their words</div>
+                <ul className="gi-advice">{reports.map((r, i) => <li key={i}>{r.whatMattered} <span className="muted">— {byline(r)}</span></li>)}</ul>
+              </details>
             ))}
             {invite && <p className="small">{invite}</p>}
           </>
         ) : (
           <p className="small">
             No first-hand notes yet.
-            {invite && <> Interned here? Answer once instead of in twenty coffee chats: 3 minutes, anonymous by default. {invite}</>}
+            {invite && <> Interned here? {invite}: 3 minutes, anonymous by default.</>}
           </p>
         )}
       </div>
