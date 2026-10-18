@@ -22,7 +22,9 @@ describe("getting in block", () => {
   it("invites a first note when there are none", async () => {
     const html = await render("google");
     expect(html).toContain("No first-hand notes yet.");
-    expect(html).toContain("rule of thumb:");
+    // The plan's wording follows live hiring.json and today's date (the watcher changes both), so only check it renders;
+    // plan.test.ts pins the wording with fixed data.
+    expect(html).toContain("gi-plan");
   });
 
   it("shows only a count for a single report", async () => {
