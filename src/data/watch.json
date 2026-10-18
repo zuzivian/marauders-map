@@ -365,14 +365,15 @@
     "verified": "2026-10-04"
   },
   "spotify": {
-    "kind": "manual",
-    "endpoints": [],
+    "kind": "lever",
+    "endpoints": [
+      "https://api.lever.co/v0/postings/spotify"
+    ],
     "queries": [],
-    "filters": "",
+    "filters": "the whole public board (about 82 jobs), filtered client-side; no posted date (createdAt is the record's creation, not go-live)",
     "board": "https://www.lifeatspotify.com/jobs",
-    "publisher": "Spotify",
-    "verified": "2026-10-04",
-    "reason": "Spotify posts on Lever (api.lever.co/v0/postings/spotify answers), and the watcher has no Lever adapter yet."
+    "publisher": "Spotify (Lever)",
+    "verified": "2026-10-18"
   },
   "stripe": {
     "kind": "greenhouse",

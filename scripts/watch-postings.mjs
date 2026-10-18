@@ -105,6 +105,13 @@ const adapters = {
     exists: async (e, p) => (W.keyFromUrl("ashby", p.url) ? false : null), // the whole board was listed and its id isn't on it
   },
 
+  lever: {
+    async search(e) {
+      return W.parseLever(await json(`${e.endpoints[0]}?mode=json`));
+    },
+    exists: async (e, p) => (W.keyFromUrl("lever", p.url) ? false : null), // the whole board was listed and its id isn't on it
+  },
+
   workday: {
     async search(e) {
       const out = [];
