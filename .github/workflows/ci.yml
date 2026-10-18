@@ -31,7 +31,8 @@ jobs:
 
       - run: npm run lint
 
-      - run: npm run typecheck
-
       - name: Test and build
         run: npm run build
+
+      # After the build: PageProps, RouteContext and LayoutProps come from .next/types, which the build generates.
+      - run: npm run typecheck
