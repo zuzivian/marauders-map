@@ -9,7 +9,7 @@ import changesJson from "./changes.json";
 const watch = watchJson as unknown as Record<string, WatchEntry>;
 const changes = changesJson as unknown as Change[];
 const ISO = /^\d{4}-\d{2}-\d{2}$/;
-const KINDS = ["greenhouse", "ashby", "workday", "smartrecruiters", "eightfold", "oracle-hcm", "radancy", "amazon", "apple", "google", "tiktok", "ibm", "manual"];
+const KINDS = ["greenhouse", "ashby", "workday", "smartrecruiters", "eightfold", "oracle-hcm", "radancy", "amazon", "apple", "google", "tiktok", "ibm", "lever", "manual"];
 
 describe("watch.json", () => {
   it("covers every company", () => expect(Object.keys(watch).sort()).toEqual(Object.keys(hiring).sort()));
@@ -27,7 +27,7 @@ describe("watch.json", () => {
     expect(w.endpoints.length, `${id}: an endpoint`).toBeGreaterThan(0);
     w.endpoints.forEach((u) => expect(u).toMatch(/^https:\/\//));
     if (w.kind === "workday") w.endpoints.forEach((u) => expect(u).toMatch(/\/wday\/cxs\/[^/]+\/[^/]+\/jobs$/));
-    if (!["greenhouse", "ashby"].includes(w.kind)) expect(w.queries.length, `${id}: search terms`).toBeGreaterThan(0); // full boards need none
+    if (!["greenhouse", "ashby", "lever"].includes(w.kind)) expect(w.queries.length, `${id}: search terms`).toBeGreaterThan(0); // full boards need none
     w.queries.forEach((q) => expect(typeof q.q).toBe("string"));
     expect(w.filters.length).toBeGreaterThan(0);
   });

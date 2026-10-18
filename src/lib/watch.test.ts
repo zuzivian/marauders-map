@@ -5,7 +5,8 @@ import watchJson from "@/data/watch.json";
 import type { Posting, WatchEntry } from "@/data/types";
 import * as W from "./watch";
 
-// Fixtures are real responses recorded on 2026-10-04, trimmed (see __fixtures__/watch). No test touches the network.
+// Fixtures are real responses recorded on 2026-10-04, trimmed (see __fixtures__/watch), except lever-spotify-synthetic.json:
+// Spotify had no MBA posting to record, so it is hand-built from Lever's documented shape. No test touches the network.
 const raw = (f: string) => readFileSync(new URL(`./__fixtures__/watch/${f}`, import.meta.url), "utf8");
 const fx = (f: string) => JSON.parse(raw(f));
 const watch = watchJson as unknown as Record<string, WatchEntry>;
@@ -147,6 +148,35 @@ describe("parsers on recorded responses", () => {
   });
 });
 
+describe("Lever (Spotify, synthetic fixture)", () => {
+  const jobs = W.parseLever(fx("lever-spotify-synthetic.json"));
+  const id = (n: number) => `5f0a1c2e-0000-4000-8000-${String(n).padStart(12, "0")}`;
+
+  it("reads the country code, the intern commitment and the list text, but not createdAt (record date, not go-live)", () => {
+    expect(jobs).toHaveLength(5);
+    const nyc = byTitle(jobs, /MBA \(New York City\)/);
+    expect(nyc).toMatchObject({ key: id(1), posted: null, url: `https://jobs.lever.co/spotify/${id(1)}`, countries: ["US"], location: "New York", intern: true });
+    expect(nyc.text).toContain("enrolled in a full-time MBA program");
+    expect(byTitle(jobs, /RecSys/).location).toBe("Stockholm; New York");
+    expect(W.parseLever(null)).toEqual([]);
+  });
+
+  it("MBA in the title matches; an MBA among other degrees is reported, not added", () => {
+    expect(verdict(byTitle(jobs, /MBA \(New York City\)/))).toBe("match:title");
+    expect(verdict(byTitle(jobs, /Marketing Analytics/))).toBe("MBA mentioned only in passing");
+    expect(verdict(byTitle(jobs, /Senior Product Manager/))).toBe("not an internship"); // "An MBA is a plus"
+    expect(verdict(byTitle(jobs, /RecSys/))).toBe("other cycle"); // "2026" in the title
+  });
+
+  it("a London MBA internship is found but dropped as non-US; only the New York one is new", () => {
+    const london = byTitle(jobs, /MBA \(London\)/);
+    expect(verdict(london)).toBe("match:title");
+    expect(W.inUS(london)).toBe(false);
+    const matches = jobs.filter((j) => W.classify(j, CYCLE).match && W.inUS(j));
+    expect(W.diffPostings("lever", [], jobs, matches).added.map((j) => j.key)).toEqual([id(1)]);
+  });
+});
+
 describe("classify", () => {
   it.each([
     ["2027 MBA Intern – Product Manager", null, "match:title"],
@@ -207,6 +237,7 @@ describe("posting ids", () => {
     ["workday", "https://visa.wd5.myworkdayjobs.com/en-US/Visa_Early_Careers/job/US---Foster-City-CA/Staff-Research-Scientist--Intern---PhD-Quantum_REF088578W-1", "REF088578W"],
     ["greenhouse", "https://careers.withwaymo.com/jobs/2027-summer-intern-mba-operations-planning-san-francisco-california-united-states", null],
     ["greenhouse", "https://careers.airbnb.com/positions/8184174?gh_jid=8184174", "8184174"],
+    ["lever", "https://jobs.lever.co/spotify/5f0a1c2e-0000-4000-8000-000000000001/apply", "5f0a1c2e-0000-4000-8000-000000000001"],
     ["ibm", "https://careers.ibm.com/en_US/careers/JobDetail/Corporate-Strategy-Summer-Consultant-Internship/130063", "130063"],
     ["smartrecruiters", "https://jobs.smartrecruiters.com/ServiceNow/744000083356169-finance-intern-mba-summer-2026", "744000083356169"],
     ["radancy", "https://jobs.intuit.com/job/mountain-view/summer-2027-product-manager-intern/27595/100620927632", "100620927632"],

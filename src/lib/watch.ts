@@ -154,6 +154,7 @@ export function keyFromUrl(kind: WatchKind, url: string): string | null {
   switch (kind) {
     case "greenhouse": return pick(/[?&]gh_jid=(\d+)/, /\/(?:jobs|positions)\/(\d{6,})(?:[/?#]|$)/); // not the "2027" of a slug URL
     case "ashby": return pick(/jobs\.ashbyhq\.com\/[^/]+\/([0-9a-f-]{36})/);
+    case "lever": return pick(/jobs(?:\.eu)?\.lever\.co\/[^/]+\/([0-9a-f-]{36})/);
     case "workday": return pick(/_([A-Z]*-?\d+[A-Z]?)(?:-\d+)?(?:[/?#]|$)/);
     case "amazon": return pick(/\/jobs\/(\d+)/);
     case "eightfold": return pick(/\/job\/(\d+)/, /[?&]pid=(\d+)/);
@@ -200,6 +201,27 @@ export function parseAshby(raw: any): Job[] {
       intern: j.employmentType === "Intern" || undefined,
       text: j.descriptionPlain ?? (j.descriptionHtml ? plain(j.descriptionHtml) : undefined),
     }));
+}
+
+/** Lever postings API (Spotify): `country` is an ISO code and the description is split into `lists`. `createdAt` is left out on
+ *  purpose: it's when the record was made, not when it went public (Spotify's Dec 2, 2024 record went live about Jan 22, 2025),
+ *  so the window comes from the daily checks instead of a date that would read as strong evidence. */
+export function parseLever(raw: any): Job[] {
+  return (Array.isArray(raw) ? raw : []).map((j: any) => {
+    const c = j.categories ?? {};
+    const text = plain([j.descriptionPlain ?? j.description, ...(j.lists ?? []).map((l: any) => `${l.text}. ${l.content}`), j.additionalPlain ?? j.additional].filter(Boolean).join(" "));
+    return {
+      key: String(j.id),
+      title: String(j.text).trim(),
+      url: j.hostedUrl,
+      posted: null,
+      closes: null,
+      countries: j.country ? [countryCode(String(j.country))] : [],
+      location: [...new Set([c.location, ...(c.allLocations ?? [])].filter(Boolean))].join("; "),
+      intern: /\bintern(ship)?\b/i.test(String(c.commitment ?? "")) || undefined,
+      text: text || undefined,
+    };
+  });
 }
 
 /** Workday CXS: `/wday/cxs/<tenant>/<site>/jobs` → `https://<host>/<site>` is the public site. */

@@ -103,7 +103,7 @@ npm run watch -- --only=google,nvidia        # just these companies
 ```
 
 [`scripts/watch-postings.mjs`](scripts/watch-postings.mjs) asks each company's careers API ([`watch.json`](src/data/watch.json):
-Greenhouse, Ashby, Workday, SmartRecruiters, Eightfold, Oracle, amazon.jobs, Apple, Google, TikTok, IBM, Intuit) for MBA
+Greenhouse, Ashby, Lever, Workday, SmartRecruiters, Eightfold, Oracle, amazon.jobs, Apple, Google, TikTok, IBM, Intuit) for MBA
 internships for `meta.currentCycle`, and prints a markdown report: new postings, postings that disappeared, what needs a
 person, MBA internships outside the US (such as Google's EMEA-only ones), and companies that failed or are manual (Meta and
 Uber block scripts). A match must be an internship, for the cycle's summer, in the US, and either say MBA in the title or
@@ -118,11 +118,20 @@ company's postings change, its `current.summary` is rewritten from a template an
 sentence would contradict the new state, so a plain true one is used instead, and you can add context in review.
 `meta.researched` moves to today only when no automatic check failed.
 
-[`.github/workflows/watch.yml`](.github/workflows/watch.yml) runs this daily at about 15:00 UTC (and on demand). If the data
-changed it opens or updates a pull request from `bot/watch` with the report as its body. It never merges or deploys: review,
-merge, then `npm run deploy`. Two repo settings matter:
+[`.github/workflows/watch.yml`](.github/workflows/watch.yml) runs this daily at about 15:00 UTC (and on demand), then, if the
+repository variable `SEC_USER_AGENT` is set, `refresh:sec -- --write` (allowed to fail, so an SEC outage can't hold back
+postings). If the data changed and `npm run build` passes (every test, then the full export), it commits straight to `main`
+and starts `deploy.yml`, so a new posting is live the same morning with nobody merging anything. Review happens after the
+fact:
 
-- **Settings → Actions → General → "Allow GitHub Actions to create and approve pull requests"** must be on, or the PR step fails.
+- **"Posting watcher: what changed"** is one rolling issue. Each run that published gets a comment with its report. Read its
+  **Needs a human** section: status sentences rewritten from the template (add the context they lost), internships that list
+  an MBA among other degrees, and disappearances only search results vouch for. Fix anything with a normal commit to `main`.
+- **"Posting watcher is failing"** opens (or gets a comment) on every failed run, and the next good run closes it. The site keeps
+  the last published data meanwhile, and its staleness warning shows after 10 days.
+- Run it from another branch to try a change: it stops after the build and never publishes or comments.
+- [`.github/workflows/ci.yml`](.github/workflows/ci.yml) runs lint, types, tests and the build on every pull request, so a
+  change that would break the watcher's build fails there first.
 - This is a private repo, so each run spends Actions minutes (a run takes about 3–5 minutes, so roughly 100–150 a month).
 
 ### Evidence strength (application windows)
@@ -182,7 +191,8 @@ least two notes for the same internship summer (before that, only a count), so a
 Every push to `main` deploys itself: [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) runs `npm run build`
 (tests first, so broken data never ships) and `scripts/publish.py`, which updates the site named by `HERENOW_SLUG`. It
 needs the `HERENOW_API_KEY` repository secret; without it the job builds and tests, then skips publishing with a notice.
-here.now has no GitHub integration of its own, so this is the whole pipeline. Merged watcher PRs go live the same way.
+here.now has no GitHub integration of its own, so this is the whole pipeline. The watcher's pushes use `GITHUB_TOKEN`, which
+doesn't trigger `push` workflows, so watch.yml starts this one itself.
 
 To publish from your machine instead:
 

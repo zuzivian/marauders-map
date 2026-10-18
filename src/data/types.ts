@@ -208,7 +208,7 @@ export interface Meta {
  */
 export type WatchKind =
   | "greenhouse" | "ashby" | "workday" | "smartrecruiters" | "eightfold" | "oracle-hcm" | "radancy"
-  | "amazon" | "apple" | "google" | "tiktok" | "ibm" | "manual";
+  | "amazon" | "apple" | "google" | "tiktok" | "ibm" | "lever" | "manual";
 
 export interface WatchQuery {
   q: string; // search terms

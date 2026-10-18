@@ -1,0 +1,38 @@
+# Checks every pull request the way deploy.yml and watch.yml will: lint, types, the data tests, and a full static build.
+# A change that would break the daily watcher's `npm run build` (as a data-coupled test did from Oct 12, 2026) fails
+# here first, before it reaches main.
+
+name: CI
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run lint
+
+      - name: Test and build
+        run: npm run build
+
+      # After the build: PageProps, RouteContext and LayoutProps come from .next/types, which the build generates.
+      - run: npm run typecheck
