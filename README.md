@@ -118,6 +118,13 @@ company's postings change, its `current.summary` is rewritten from a template an
 sentence would contradict the new state, so a plain true one is used instead, and you can add context in review.
 `meta.researched` moves to today only when no automatic check failed.
 
+**How long postings stay up.** [`src/lib/lifetime.ts`](src/lib/lifetime.ts) works out each posting's age from `hiring.json` and
+`changes.json`, in the browser, so nothing is typed by hand. A posting is gone when its last logged change is "removed". It
+counts from the posting's own `posted` date, or else from the date the watcher first logged it (worded "about" on the page); with
+neither, it has no age. A removal is dated by the first daily check that missed the posting, so it's good to about a day. The field
+notes mark postings that came down and show how old live ones are. The "Getting in" block adds one cross-company line, the median
+and range for postings that came down with no stated deadline, once at least three have.
+
 [`.github/workflows/watch.yml`](.github/workflows/watch.yml) runs this daily at about 15:00 UTC (and on demand), then, if the
 repository variable `SEC_USER_AGENT` is set, `refresh:sec -- --write` (allowed to fail, so an SEC outage can't hold back
 postings). If the data changed and `npm run build` passes (every test, then the full export), it commits straight to `main`
