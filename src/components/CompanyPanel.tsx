@@ -13,6 +13,7 @@ import { openCorrection } from "./Corrections";
 import { MarkIcon } from "./MarkIcon";
 import { CompanyCalLinks, StarButton } from "./MyList";
 import GettingIn from "./GettingIn";
+import H1bRecord from "./H1bRecord";
 import { CopyLink } from "./CopyLink";
 
 const cycle = meta.currentCycle;
@@ -231,6 +232,8 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
       </div>
 
       {h.hasProgram && <InternFacts company={c} />}
+
+      <H1bRecord company={c} />
 
       <div className="block-gi"><GettingIn company={c} /></div>
 

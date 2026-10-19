@@ -228,6 +228,29 @@ export interface WatchEntry {
   note?: string;
 }
 
+/** Certified H-1B Labor Condition Applications for one company's title family: count, and offered yearly wage. */
+export interface LcaFamily {
+  n: number;
+  wage: { median: number; low: number; high: number } | null; // low/high = middle half; null below 5 wages
+}
+
+/** src/data/visa.json, written by scripts/refresh-lca.py from OFLC's quarterly disclosure file (cumulative for the fiscal year). */
+export interface VisaData {
+  fy: number | null; // fiscal year, Oct 1 of the year before to Sep 30
+  quarter: number | null;
+  from: ISODate | null;
+  through: ISODate | null;
+  checked: ISODate | null;
+  source: string | null;
+  companies: Record<string, {
+    match: string; // regex on the upper-cased employer name, edited by hand
+    employers?: string[]; // the names it matched in the file
+    all?: number; // certified H-1B LCAs across every title
+    roles?: Record<"pm" | "program" | "pmm", LcaFamily>;
+    sources?: string[];
+  }>;
+}
+
 /** One line of src/data/changes.json, the watcher's machine-readable log of postings appearing and disappearing. */
 export interface Change {
   date: ISODate;

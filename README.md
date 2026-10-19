@@ -58,6 +58,7 @@ GoatCounter then counts page views, plus these events: `select/<id>` (picked a c
 | `meta.json` | The current cycle, the date the data was last checked end to end, the corrections and first-hand form links, and analytics (off by default). |
 | `firsthand.json` | First-hand notes from GSB second-years on how they got in, keyed by company. Self-reported, unverified, and added only through `npm run add:firsthand`. |
 | `watch.json` | How the posting watcher queries each company's careers site: API kind, endpoint, search terms, filters (or `manual`, with the reason). |
+| `visa.json` | Certified H-1B filings per company for product titles this fiscal year, from OFLC's LCA disclosure data (`scripts/refresh-lca.py`), with each company's employer-name pattern. |
 | `changes.json` | The watcher's log of postings appearing and disappearing: `{date, company, kind: "posted" \| "removed", title, url}`. |
 
 The rules:
@@ -133,6 +134,26 @@ fact:
 - [`.github/workflows/ci.yml`](.github/workflows/ci.yml) runs lint, types, tests and the build on every pull request, so a
   change that would break the watcher's build fails there first.
 - This is a private repo, so each run spends Actions minutes (a run takes about 3–5 minutes, so roughly 100–150 a month).
+
+### H-1B filings
+
+Each company's field notes say how many H-1B Labor Condition Applications the Labor Department certified for product
+manager, program manager (including TPM) and product marketing titles this fiscal year, with the offered wage's median and
+middle half. It answers an F-1 student's real question, whether the company files for the full-time job an internship
+converts into, from the government's own records rather than a posting's boilerplate.
+
+```bash
+python3 scripts/refresh-lca.py              # dry run: find OFLC's newest quarterly file, count, print the table
+python3 scripts/refresh-lca.py --write      # also update src/data/visa.json and its source
+```
+
+[`scripts/refresh-lca.py`](scripts/refresh-lca.py) (standard library only) streams the multi-hundred-MB `.xlsx` from
+[OFLC's performance page](https://www.dol.gov/agencies/eta/foreign-labor/performance), keeps certified H-1B rows, and
+matches employers by the `match` regex per company in [`visa.json`](src/data/visa.json). Edit a `match` when a company
+files under another entity name; the table (and `employers` in the file) lists every name each pattern caught, and a
+company that matches nothing is flagged. [`.github/workflows/visa.yml`](.github/workflows/visa.yml) runs it on the 6th of
+each month and publishes to `main` when a new quarter is out, the same way the watcher does; a pull request that changes
+the script gets a full dry run with the table in its job summary. An LCA isn't a visa granted, and the page says so.
 
 ### Evidence strength (application windows)
 

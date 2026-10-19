@@ -1,4 +1,4 @@
-import type { CalendarMarker, Company, FirsthandReport, Hiring, Interview, Meta, Prep, Role, Source } from "./types";
+import type { CalendarMarker, Company, FirsthandReport, Hiring, Interview, Meta, Prep, Role, Source, VisaData } from "./types";
 import companiesJson from "./companies.json";
 import hiringJson from "./hiring.json";
 import interviewsJson from "./interviews.json";
@@ -8,6 +8,7 @@ import prepJson from "./prep.json";
 import sourcesJson from "./sources.json";
 import metaJson from "./meta.json";
 import firsthandJson from "./firsthand.json";
+import visaJson from "./visa.json";
 
 // JSON imports widen string unions to `string`; the casts are checked at runtime by data.test.ts.
 export const companies = companiesJson as unknown as Company[];
@@ -19,8 +20,9 @@ export const prep = prepJson as unknown as Prep;
 export const sources = sourcesJson as unknown as Record<string, Source>;
 export const meta = metaJson as unknown as Meta;
 export const firsthand = firsthandJson as unknown as Record<string, FirsthandReport[]>; // keyed by company id
+export const visa = visaJson as unknown as VisaData; // H-1B filings by company, from scripts/refresh-lca.py
 
 export const companyById = Object.fromEntries(companies.map((c) => [c.id, c])) as Record<string, Company>;
 export const companyByName = Object.fromEntries(companies.map((c) => [c.name.toLowerCase(), c])) as Record<string, Company>;
 
-export type { CalendarMarker, Company, FirsthandReport, Hiring, Interview, Meta, Prep, Role, Source };
+export type { CalendarMarker, Company, FirsthandReport, Hiring, Interview, Meta, Prep, Role, Source, VisaData };
