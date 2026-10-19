@@ -96,13 +96,12 @@ jobs:
           SHA: ${{ steps.publish.outputs.committed }}
           RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
+          open_issue() { gh issue list --state open --limit 200 --json number,title -q ".[] | select(.title == \"$1\") | .number" | head -1; } # list, not search: search lags new issues
           body="$RUNNER_TEMP/comment.md"
           { cat "$RUNNER_TEMP/report.md"; echo; echo "_Published as $SHA by [this run]($RUN). Fix anything wrong with a normal commit to main; the watcher builds on whatever main holds._"; } | head -c 60000 > "$body"
-          n=$(gh issue list --state open --search "in:title \"$CHANGES_ISSUE\"" --json number,title -q ".[] | select(.title == \"$CHANGES_ISSUE\") | .number" | head -1)
-          if [ -z "$n" ]; then
-            gh issue create --title "$CHANGES_ISSUE" --body "The daily watcher publishes data changes to main by itself and comments here each time it does. Read the **Needs a human** section of each report: add context to rewritten status sentences, and check postings it couldn't judge. Close this issue whenever; the next change opens a new one."
-            n=$(gh issue list --state open --search "in:title \"$CHANGES_ISSUE\"" --json number,title -q ".[] | select(.title == \"$CHANGES_ISSUE\") | .number" | head -1)
-          fi
+          n=$(open_issue "$CHANGES_ISSUE")
+          # A new issue isn't searchable for a while, so use the URL that create prints rather than looking it up again.
+          [ -n "$n" ] || n=$(gh issue create --title "$CHANGES_ISSUE" --body "The daily watcher publishes data changes to main by itself and comments here each time it does. Read the **Needs a human** section of each report: add context to rewritten status sentences, and check postings it couldn't judge. Close this issue whenever; the next change opens a new one.")
           gh issue comment "$n" --body-file "$body"
 
       - name: Clear the failing notice
@@ -110,7 +109,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          for n in $(gh issue list --state open --search "in:title \"$FAILING_ISSUE\"" --json number,title -q ".[] | select(.title == \"$FAILING_ISSUE\") | .number"); do
+          open_issue() { gh issue list --state open --limit 200 --json number,title -q ".[] | select(.title == \"$1\") | .number" | head -1; } # list, not search: search lags new issues
+          for n in $(open_issue "$FAILING_ISSUE"); do
             gh issue close "$n" --comment "Recovered: the $(date -u +%F) run passed."
           done
 
@@ -119,11 +119,14 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          SHA: ${{ steps.publish.outputs.committed }}
         run: |
-          msg="The $(date -u +%F) run failed, so nothing was published: $RUN"
-          n=$(gh issue list --state open --search "in:title \"$FAILING_ISSUE\"" --json number,title -q ".[] | select(.title == \"$FAILING_ISSUE\") | .number" | head -1)
+          open_issue() { gh issue list --state open --limit 200 --json number,title -q ".[] | select(.title == \"$1\") | .number" | head -1; } # list, not search: search lags new issues
+          if [ -n "$SHA" ]; then msg="The $(date -u +%F) run published its data as $SHA, then a later step failed: $RUN"
+          else msg="The $(date -u +%F) run failed before publishing, so nothing went out: $RUN"; fi
+          n=$(open_issue "$FAILING_ISSUE")
           if [ -n "$n" ]; then
             gh issue comment "$n" --body "$msg"
           else
-            gh issue create --title "$FAILING_ISSUE" --body "$msg. The site keeps showing the last published data (and says how old it is) until a run passes. The log names the failing step."
+            gh issue create --title "$FAILING_ISSUE" --body "$msg . The log names the failing step; the next good run closes this issue."
           fi
