@@ -44,7 +44,7 @@ def newest_file() -> tuple[str, int, int]:
     found = {}
     for href in re.findall(r'href="([^"]+)"', html):
         m = FILE_RE.search(href)
-        if m: found[(int(m[1]), int(m[2]))] = urllib.request.urljoin(PAGE, href)
+        if m: found[(int(m[1]), int(m[2]))] = re.sub(r"(?<!:)//+", "/", urllib.request.urljoin(PAGE, href))  # the page links "dol.gov//media/…"
     if not found: raise SystemExit(f"No LCA_Disclosure_Data_FY____Q_.xlsx link on {PAGE}; the page layout may have changed.")
     (fy, q), url = max(found.items())
     return url, fy, q
@@ -138,7 +138,7 @@ def main():
     if local:
         m = FILE_RE.search(pathlib.Path(local).name)
         if not m: raise SystemExit("--file must be named like LCA_Disclosure_Data_FY2026_Q3.xlsx")
-        url, fy, q = f"https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs/{m[0]}", int(m[1]), int(m[2])
+        url, fy, q = f"https://www.dol.gov/media/{m[0]}", int(m[1]), int(m[2])
     else:
         url, fy, q = newest_file()
     have = (visa.get("fy"), visa.get("quarter"))
