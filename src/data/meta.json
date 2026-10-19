@@ -30,5 +30,15 @@
       "email": "email"
     }
   },
+  "spotted": {
+    "kind": "formspree",
+    "action": "https://formspree.io/f/xnpjaklb",
+    "fields": {
+      "company": "company",
+      "url": "url",
+      "title": "title",
+      "email": "email"
+    }
+  },
   "analytics": null
 }

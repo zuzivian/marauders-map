@@ -198,6 +198,12 @@ export interface Meta {
     action: string;
     fields: Record<"company" | "roleId" | "classOf" | "internshipSummer" | "path" | "firstContactToOffer" | "stages" | "teamMatch" | "whatMattered" | "advice" | "displayName" | "consent" | "email", string>;
   } | null;
+  /** Where "it's live" reports post, for companies the watcher can't check (Formspree only for now); null hides them. */
+  spotted?: {
+    kind: "formspree";
+    action: string;
+    fields: Record<"company" | "url" | "title" | "email", string>;
+  } | null;
   /** Opt-in, cookie-free counts (see src/lib/analytics.ts); null loads nothing. `code` is the GoatCounter site code. */
   analytics: { kind: "goatcounter"; code: string } | null;
 }

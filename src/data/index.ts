@@ -1,4 +1,4 @@
-import type { CalendarMarker, Company, FirsthandReport, Hiring, Interview, Meta, Prep, Role, Source } from "./types";
+import type { CalendarMarker, Company, FirsthandReport, Hiring, Interview, Meta, Prep, Role, Source, WatchEntry } from "./types";
 import companiesJson from "./companies.json";
 import hiringJson from "./hiring.json";
 import interviewsJson from "./interviews.json";
@@ -8,6 +8,7 @@ import prepJson from "./prep.json";
 import sourcesJson from "./sources.json";
 import metaJson from "./meta.json";
 import firsthandJson from "./firsthand.json";
+import watchJson from "./watch.json";
 
 // JSON imports widen string unions to `string`; the casts are checked at runtime by data.test.ts.
 export const companies = companiesJson as unknown as Company[];
@@ -19,6 +20,7 @@ export const prep = prepJson as unknown as Prep;
 export const sources = sourcesJson as unknown as Record<string, Source>;
 export const meta = metaJson as unknown as Meta;
 export const firsthand = firsthandJson as unknown as Record<string, FirsthandReport[]>; // keyed by company id
+export const watch = watchJson as unknown as Record<string, WatchEntry>; // keyed by company id
 
 export const companyById = Object.fromEntries(companies.map((c) => [c.id, c])) as Record<string, Company>;
 export const companyByName = Object.fromEntries(companies.map((c) => [c.name.toLowerCase(), c])) as Record<string, Company>;

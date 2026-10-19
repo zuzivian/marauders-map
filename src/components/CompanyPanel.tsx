@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { scaleLog } from "d3-scale";
-import { companies, hiring, interviews, meta, roles, sources, type Company } from "@/data";
+import { companies, hiring, interviews, meta, roles, sources, watch, type Company } from "@/data";
 import type { Intern, StageType } from "@/data/types";
 import { SEASON_MONTHS, SEASON_WEEKS, fmtDate, fmtRange, monthStartWeek, span, weekOf } from "@/lib/season";
 import { MARK, roleMark, trailItems } from "@/lib/marks";
@@ -14,6 +14,7 @@ import { MarkIcon } from "./MarkIcon";
 import { CompanyCalLinks, StarButton } from "./MyList";
 import GettingIn from "./GettingIn";
 import { CopyLink } from "./CopyLink";
+import Spotted from "./Spotted";
 
 const cycle = meta.currentCycle;
 const OPACITY = { strong: 0.95, medium: 0.6, weak: 0.3 };
@@ -228,6 +229,8 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
             </ul>
           </details>
         )}
+        {/* Only where the watcher can't look, so a student's "I see it posted" is the one way this page learns of it. */}
+        {meta.spotted && watch[c.id]?.kind === "manual" && h.hasProgram && !now && <Spotted key={c.id} id={c.id} name={c.name} />}
       </div>
 
       {h.hasProgram && <InternFacts company={c} />}

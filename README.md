@@ -186,6 +186,30 @@ by hand if something identifying slips through.
 **Anonymity.** Notes show as "a GSB '27" unless the contributor gave a name. Nothing from a note shows until that company has at
 least two notes for the same internship summer (before that, only a count), so a lone note can't be traced back to its author.
 
+### "It's live" reports
+
+The watcher can't check companies marked `"kind": "manual"` in `watch.json` (today Meta and Uber), so the site only learns of
+a posting when a person adds it. Until that company has a window for the current cycle, its status block asks "Seen its MBA
+internship posted?" and reveals a small form: link (https, required), title and email (optional). It posts to the same
+Formspree form, marked `kind=spotted` (counted as the `spotted/<id>` event when analytics is on). Nothing shows until you add it.
+
+**Moderating one** (about 30 seconds). Open the link and check it's a real, live MBA internship posting. Then copy the
+submission from the Formspree dashboard or email:
+
+```bash
+pbpaste | npm run add:spotted                # dry run: what it would add, plus anything to check
+pbpaste | npm run add:spotted -- --write     # apply it
+npm test                                     # then commit to main, and it deploys
+```
+
+It accepts Formspree JSON or pasted `field: value` lines, and refuses anything not marked `kind=spotted`. A title is
+required: pass `--title="..."` if the form's was blank (it also replaces a title the student typed). It warns, without
+refusing, when the link isn't on the company's board in `watch.json`. With `--write` it does what the watcher does for a
+posting it finds: adds the posting with a new primary source (publisher from `watch.json`), sets `current.checked` to today,
+rewrites `current.summary` from the template (add back any context it dropped), logs it in `changes.json`, and, if it's the
+company's first posting this cycle, adds the window the watcher's way: no posted date, so from the last check that found
+nothing to today, with evidence by the gap. The email is never stored.
+
 ## Deploy
 
 Every push to `main` deploys itself: [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) runs `npm run build`
