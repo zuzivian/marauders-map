@@ -247,6 +247,7 @@ details.why p { margin: 6px 0; }
 .statusnote { font-size: var(--t-s); color: var(--ink-2); line-height: 1.55; margin: 6px 0 0; }
 .postings { list-style: none; padding: 0; margin: 6px 0 0; font-size: var(--t-s); line-height: 1.6; }
 .postings li + li { margin-top: 4px; }
+.postings .gone > a { color: var(--ink-3); }
 .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .card { min-width: 0; padding: 12px 14px; border: 0.5px solid var(--rule); border-radius: 4px; background: color-mix(in srgb, var(--paper-2) 55%, var(--paper)); }
 .card-l { font-size: var(--t-xs); color: var(--ink-3); }

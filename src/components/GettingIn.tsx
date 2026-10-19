@@ -1,8 +1,9 @@
 "use client";
 
-import { calendar, firsthand, hiring, meta } from "@/data";
+import { calendar, changes, firsthand, hiring, meta } from "@/data";
 import type { Company } from "@/data/types";
 import { planOf } from "@/lib/plan";
+import { cameDownLine, cameDownStats } from "@/lib/lifetime";
 import { PATH_LABEL, aggregate, byline } from "@/lib/firsthand";
 import { useGuide } from "./Guide";
 import { Cite } from "./Sources";
@@ -14,6 +15,7 @@ const cycle = meta.currentCycle;
 export default function GettingIn({ company: c }: { company: Company }) {
   const { today } = useGuide();
   const plan = planOf(hiring[c.id], calendar, today, cycle);
+  const cameDown = cameDownLine(cameDownStats(hiring, changes, today));
   const notes = aggregate(firsthand[c.id] ?? []);
   const invite = meta.firsthand && (
     <button className="linkish" onClick={() => openContribute(c.id)}>{notes ? "Add yours" : "Add a note"}</button>
@@ -26,6 +28,7 @@ export default function GettingIn({ company: c }: { company: Company }) {
         <div className="gi-plan">
           <p className="gi-act">{plan.action}{plan.rule && <> <span className="gi-rot">rule of thumb: {plan.rule}</span></>}</p>
           {plan.history && <p className="small muted">{plan.history}</p>}
+          {cameDown && <p className="small muted">{cameDown}</p>}
           {plan.gsb && <p className="small">{plan.gsb.text} <Cite ids={plan.gsb.sources} /></p>}
         </div>
       )}
