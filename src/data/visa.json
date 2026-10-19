@@ -1,0 +1,82 @@
+{
+  "fy": null,
+  "quarter": null,
+  "from": null,
+  "through": null,
+  "checked": null,
+  "source": null,
+  "companies": {
+    "apple": {
+      "match": "^APPLE INC\\b"
+    },
+    "amazon": {
+      "match": "^AMAZON(\\.COM| WEB SERVICES| DEVELOPMENT CENTER| DATA SERVICES| ADVERTISING| CAPITAL SERVICES| PAYMENTS| ROBOTICS| LOGISTICS| TECHNOLOGIES| MEDIA GROUP| FRESH| PRIME AIR)\\b"
+    },
+    "intuit": {
+      "match": "^INTUIT INC\\b"
+    },
+    "adobe": {
+      "match": "^ADOBE (INC|SYSTEMS)\\b"
+    },
+    "microsoft": {
+      "match": "^MICROSOFT CORP"
+    },
+    "salesforce": {
+      "match": "^SALESFORCE(\\.COM)?,? INC\\b"
+    },
+    "google": {
+      "match": "^GOOGLE LLC\\b"
+    },
+    "nvidia": {
+      "match": "^NVIDIA CORP"
+    },
+    "meta": {
+      "match": "^META PLATFORMS"
+    },
+    "airbnb": {
+      "match": "^AIRBNB,? INC\\b"
+    },
+    "uber": {
+      "match": "^UBER TECHNOLOGIES"
+    },
+    "openai": {
+      "match": "^OPENAI\\b"
+    },
+    "cisco": {
+      "match": "^CISCO SYSTEMS"
+    },
+    "databricks": {
+      "match": "^DATABRICKS,? INC\\b"
+    },
+    "dell": {
+      "match": "^DELL (USA|PRODUCTS|TECHNOLOGIES|MARKETING|INC|FINANCIAL)\\b"
+    },
+    "ibm": {
+      "match": "^(INTERNATIONAL BUSINESS MACHINES|IBM CORP)"
+    },
+    "paypal": {
+      "match": "^PAYPAL,? INC\\b"
+    },
+    "servicenow": {
+      "match": "^SERVICENOW,? INC\\b"
+    },
+    "spotify": {
+      "match": "^SPOTIFY (USA|INC)\\b"
+    },
+    "stripe": {
+      "match": "^STRIPE,? INC\\b"
+    },
+    "tiktok": {
+      "match": "^(TIKTOK|BYTEDANCE)\\b"
+    },
+    "visa": {
+      "match": "^VISA (U\\.S\\.A\\.|USA|TECHNOLOGY|INC)\\b"
+    },
+    "waymo": {
+      "match": "^WAYMO\\b"
+    },
+    "workday": {
+      "match": "^WORKDAY,? INC\\b"
+    }
+  }
+}

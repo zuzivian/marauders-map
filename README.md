@@ -58,6 +58,7 @@ GoatCounter then counts page views, plus these events: `select/<id>` (picked a c
 | `meta.json` | The current cycle, the date the data was last checked end to end, the corrections and first-hand form links, and analytics (off by default). |
 | `firsthand.json` | First-hand notes from GSB second-years on how they got in, keyed by company. Self-reported, unverified, and added only through `npm run add:firsthand`. |
 | `watch.json` | How the posting watcher queries each company's careers site: API kind, endpoint, search terms, filters (or `manual`, with the reason). |
+| `visa.json` | Certified H-1B filings per company for product titles this fiscal year, from OFLC's LCA disclosure data (`scripts/refresh-lca.py`), with each company's employer-name pattern. |
 | `changes.json` | The watcher's log of postings appearing and disappearing: `{date, company, kind: "posted" \| "removed", title, url}`. |
 
 The rules:
@@ -118,6 +119,13 @@ company's postings change, its `current.summary` is rewritten from a template an
 sentence would contradict the new state, so a plain true one is used instead, and you can add context in review.
 `meta.researched` moves to today only when no automatic check failed.
 
+**How long postings stay up.** [`src/lib/lifetime.ts`](src/lib/lifetime.ts) works out each posting's age from `hiring.json` and
+`changes.json`, in the browser, so nothing is typed by hand. A posting is gone when its last logged change is "removed". It
+counts from the posting's own `posted` date, or else from the date the watcher first logged it (worded "about" on the page); with
+neither, it has no age. A removal is dated by the first daily check that missed the posting, so it's good to about a day. The field
+notes mark postings that came down and show how old live ones are. The "Getting in" block adds one cross-company line, the median
+and range for postings that came down with no stated deadline, once at least three have.
+
 [`.github/workflows/watch.yml`](.github/workflows/watch.yml) runs this daily at about 15:00 UTC (and on demand), then, if the
 repository variable `SEC_USER_AGENT` is set, `refresh:sec -- --write` (allowed to fail, so an SEC outage can't hold back
 postings). If the data changed and `npm run build` passes (every test, then the full export), it commits straight to `main`
@@ -133,6 +141,26 @@ fact:
 - [`.github/workflows/ci.yml`](.github/workflows/ci.yml) runs lint, types, tests and the build on every pull request, so a
   change that would break the watcher's build fails there first.
 - This is a private repo, so each run spends Actions minutes (a run takes about 3–5 minutes, so roughly 100–150 a month).
+
+### H-1B filings
+
+Each company's field notes say how many H-1B Labor Condition Applications the Labor Department certified for product
+manager, program manager (including TPM) and product marketing titles this fiscal year, with the offered wage's median and
+middle half. It answers an F-1 student's real question, whether the company files for the full-time job an internship
+converts into, from the government's own records rather than a posting's boilerplate.
+
+```bash
+python3 scripts/refresh-lca.py              # dry run: find OFLC's newest quarterly file, count, print the table
+python3 scripts/refresh-lca.py --write      # also update src/data/visa.json and its source
+```
+
+[`scripts/refresh-lca.py`](scripts/refresh-lca.py) (standard library only) streams the multi-hundred-MB `.xlsx` from
+[OFLC's performance page](https://www.dol.gov/agencies/eta/foreign-labor/performance), keeps certified H-1B rows, and
+matches employers by the `match` regex per company in [`visa.json`](src/data/visa.json). Edit a `match` when a company
+files under another entity name; the table (and `employers` in the file) lists every name each pattern caught, and a
+company that matches nothing is flagged. [`.github/workflows/visa.yml`](.github/workflows/visa.yml) runs it on the 6th of
+each month and publishes to `main` when a new quarter is out, the same way the watcher does; a pull request that changes
+the script gets a full dry run with the table in its job summary. An LCA isn't a visa granted, and the page says so.
 
 ### Evidence strength (application windows)
 
@@ -185,6 +213,30 @@ by hand if something identifying slips through.
 
 **Anonymity.** Notes show as "a GSB '27" unless the contributor gave a name. Nothing from a note shows until that company has at
 least two notes for the same internship summer (before that, only a count), so a lone note can't be traced back to its author.
+
+### "It's live" reports
+
+The watcher can't check companies marked `"kind": "manual"` in `watch.json` (today Meta and Uber), so the site only learns of
+a posting when a person adds it. Until that company has a window for the current cycle, its status block asks "Seen its MBA
+internship posted?" and reveals a small form: link (https, required), title and email (optional). It posts to the same
+Formspree form, marked `kind=spotted` (counted as the `spotted/<id>` event when analytics is on). Nothing shows until you add it.
+
+**Moderating one** (about 30 seconds). Open the link and check it's a real, live MBA internship posting. Then copy the
+submission from the Formspree dashboard or email:
+
+```bash
+pbpaste | npm run add:spotted                # dry run: what it would add, plus anything to check
+pbpaste | npm run add:spotted -- --write     # apply it
+npm test                                     # then commit to main, and it deploys
+```
+
+It accepts Formspree JSON or pasted `field: value` lines, and refuses anything not marked `kind=spotted`. A title is
+required: pass `--title="..."` if the form's was blank (it also replaces a title the student typed). It warns, without
+refusing, when the link isn't on the company's board in `watch.json`. With `--write` it does what the watcher does for a
+posting it finds: adds the posting with a new primary source (publisher from `watch.json`), sets `current.checked` to today,
+rewrites `current.summary` from the template (add back any context it dropped), logs it in `changes.json`, and, if it's the
+company's first posting this cycle, adds the window the watcher's way: no posted date, so from the last check that found
+nothing to today, with evidence by the gap. The email is never stored.
 
 ## Deploy
 

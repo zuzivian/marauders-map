@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { calendar, companies, firsthand, hiring, interviews, meta, prep, roles, sources } from ".";
+import { calendar, companies, firsthand, hiring, interviews, meta, prep, roles, sources, visa } from ".";
 import { seasonEnd, seasonStart } from "@/lib/season";
 import { problems } from "@/lib/firsthand";
 
@@ -19,7 +19,7 @@ function citedIds(x: unknown, out: string[] = []): string[] {
     }
   return out;
 }
-const allData = { companies, hiring, interviews, roles, calendar, prepNotes: prep.notes };
+const allData = { companies, hiring, interviews, roles, calendar, prepNotes: prep.notes, visa };
 
 describe("sources", () => {
   it.each(Object.entries(sources))("%s is well-formed", (_, s) => {
@@ -198,7 +198,33 @@ describe("meta", () => {
       if (meta.corrections.kind === "google") expect(meta.corrections.action).toMatch(/\/formResponse$/);
     }
     if (meta.firsthand) expect(meta.firsthand.action).toMatch(/^https:\/\//);
+    if (meta.spotted) expect(meta.spotted.action).toMatch(/^https:\/\//);
     expect(meta.analytics === null || meta.analytics.kind === "goatcounter", "analytics is off (null) or GoatCounter").toBe(true);
     if (meta.analytics) expect(meta.analytics.code, "a GoatCounter site code, not a URL").toMatch(/^[a-z0-9][a-z0-9-]*$/);
+  });
+});
+
+describe("visa.json (H-1B filings)", () => {
+  it("has a valid employer pattern for every company", () => {
+    expect(Object.keys(visa.companies)).toEqual(companies.map((c) => c.id));
+    for (const v of Object.values(visa.companies)) expect(() => new RegExp(v.match)).not.toThrow();
+  });
+  it("is either empty or a complete quarter, cited", () => {
+    if (visa.fy === null) {
+      for (const v of Object.values(visa.companies)) expect(v.all, "counts without a quarter").toBeUndefined();
+      return;
+    }
+    expect([1, 2, 3, 4]).toContain(visa.quarter);
+    for (const d of [visa.from, visa.through, visa.checked]) expect(isISO(d)).toBe(true);
+    expect(visa.from! < visa.through!).toBe(true);
+    expect(sources[visa.source!]?.kind).toBe("primary");
+    for (const [id, v] of Object.entries(visa.companies)) {
+      expect(v.sources, id).toEqual([visa.source]);
+      expect(Number.isInteger(v.all) && v.all! >= 0, id).toBe(true);
+      const fams = Object.values(v.roles ?? {});
+      expect(fams.length, id).toBe(3);
+      expect(fams.reduce((n, f) => n + f.n, 0), `${id}: families within all`).toBeLessThanOrEqual(v.all!);
+      for (const f of fams) if (f.wage) expect(f.wage.low <= f.wage.median && f.wage.median <= f.wage.high, id).toBe(true);
+    }
   });
 });

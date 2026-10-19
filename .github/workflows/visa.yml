@@ -1,0 +1,72 @@
+# Monthly H-1B refresh: scripts/refresh-lca.py looks for a newer quarter of OFLC's LCA disclosure data and, when one
+# is out (about four times a year), recounts each company's certified H-1B filings for product roles into
+# src/data/visa.json. If the tests and build pass, it commits to main and starts deploy.yml, like watch.yml.
+#
+# Pull requests that change the script get a full dry run (download, count, tests, build) without publishing, and the
+# table lands in the job summary for review. Only main publishes.
+
+name: H-1B filings
+
+on:
+  schedule:
+    - cron: "41 13 6 * *" # the 6th of each month, about 6am Pacific; OFLC posts a quarter some weeks after it ends
+  workflow_dispatch:
+  pull_request:
+    paths: ["scripts/refresh-lca.py", ".github/workflows/visa.yml"]
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: h1b-filings-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      # On a pull request, re-read even when visa.json is current, so the script change is actually exercised.
+      - name: Count filings
+        run: python3 scripts/refresh-lca.py --write --report="$RUNNER_TEMP/visa.md" ${{ github.event_name == 'pull_request' && '--force' || '' }}
+
+      - name: Show the table
+        if: always()
+        run: if [ -f "$RUNNER_TEMP/visa.md" ]; then cat "$RUNNER_TEMP/visa.md" >> "$GITHUB_STEP_SUMMARY"; fi
+
+      - name: Test and build
+        run: npm run build
+
+      - name: Commit to main and publish
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet -- src/data; then
+            echo "No new quarter."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data
+          label=$(python3 -c "import json; v = json.load(open('src/data/visa.json')); print('FY%s Q%s' % (v['fy'], v['quarter']))")
+          git commit -m "H-1B filings: $label"
+          pushed=""
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then pushed=1; break; fi
+            git pull --rebase origin main
+          done
+          [ -n "$pushed" ] || { echo "::error::Couldn't push to main after 3 tries."; exit 1; }
+          gh workflow run deploy.yml --ref main

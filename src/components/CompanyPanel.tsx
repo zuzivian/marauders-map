@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 import { scaleLog } from "d3-scale";
-import { companies, hiring, interviews, meta, roles, sources, type Company } from "@/data";
+import { changes, companies, hiring, interviews, meta, roles, sources, watch, type Company } from "@/data";
 import type { Intern, StageType } from "@/data/types";
 import { SEASON_MONTHS, SEASON_WEEKS, fmtDate, fmtRange, monthStartWeek, span, weekOf } from "@/lib/season";
 import { MARK, roleMark, trailItems } from "@/lib/marks";
+import { lifetimes } from "@/lib/lifetime";
 import { fmtCap, fmtCount, fmtMonthly, fmtPct, fmtStatedPay, perMonth, prose } from "@/lib/format";
 import { useGuide } from "./Guide";
 import { Cite, SourceList } from "./Sources";
@@ -13,7 +14,9 @@ import { openCorrection } from "./Corrections";
 import { MarkIcon } from "./MarkIcon";
 import { CompanyCalLinks, StarButton } from "./MyList";
 import GettingIn from "./GettingIn";
+import H1bRecord from "./H1bRecord";
 import { CopyLink } from "./CopyLink";
+import Spotted from "./Spotted";
 
 const cycle = meta.currentCycle;
 const OPACITY = { strong: 0.95, medium: 0.6, weak: 0.3 };
@@ -75,6 +78,7 @@ const STANCE: Record<NonNullable<Intern["sponsorship"]>["stance"], string> = {
   sponsors: "Sponsors visas", "no sponsorship": "No visa sponsorship", "authorization required": "US work authorization required",
 };
 const cycleName = (c: string) => (c === cycle ? "this cycle" : `${c}–${Number(c) + 1 - 2000} cycle`);
+const spanOf = (days: number) => (days === 0 ? "less than a day" : `${days} day${days === 1 ? "" : "s"}`);
 const city = (place: string) => place.replace(/, [A-Z]{2}$/, "");
 
 /** What the MBA intern postings say, as four cards: pay and visas first, then where and how teams are set. */
@@ -185,6 +189,8 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
   const item = trailItems([c], hiring, today, cycle)[0];
   const myRoles = roles.map((r) => ({ r, titles: r.titles.filter((t) => t.company === c.name), mark: roleMark(r, c, item, cycle) })).filter((x) => x.titles.length);
   const now = h.windows.find((w) => w.cycle === cycle);
+  const lives = lifetimes(c.id, h.current.postings, changes, today);
+  const down = lives.filter((l) => l.state === "removed").length;
   const allSources = [
     ...c.marketCap.sources, ...c.growth.sources, ...c.headcount.sources, ...c.office.sources,
     ...[c.intern?.pay, c.intern?.locations, c.intern?.sponsorship, c.intern?.teamModel, ...(c.intern?.pulse ?? [])].flatMap((x) => x?.sources ?? []),
@@ -219,18 +225,30 @@ export default function CompanyPanel({ company: c }: { company: Company }) {
         )}
         {h.current.postings.length > 0 && (
           <details className="why">
-            <summary>This cycle&apos;s posting{h.current.postings.length === 1 ? "" : "s"} ({h.current.postings.length})</summary>
+            <summary>This cycle&apos;s posting{h.current.postings.length === 1 ? "" : "s"} ({down ? `${h.current.postings.length - down} live, ${down} came down` : h.current.postings.length})</summary>
             <ul className="postings">
-              {h.current.postings.map((p) => (
-                <li key={p.url + p.title}><a href={p.url} target="_blank" rel="noreferrer">{p.title}</a>
-                  <span className="muted">{p.posted ? `, posted ${fmtDate(p.posted)}` : ""}{p.closes ? (p.closes < today ? `, closed ${fmtDate(p.closes)}` : `, closes ${fmtDate(p.closes)}`) : ""}</span></li>
-              ))}
+              {h.current.postings.map((p, i) => {
+                const l = lives[i];
+                const about = l.startIsPosted ? "" : "about ";
+                return (
+                  <li key={p.url + p.title} className={l.state === "removed" ? "gone" : undefined}><a href={p.url} target="_blank" rel="noreferrer">{p.title}</a>
+                    <span className="muted">{p.posted ? `, posted ${fmtDate(p.posted)}` : ""}{p.closes ? (p.closes < today ? `, closed ${fmtDate(p.closes)}` : `, closes ${fmtDate(p.closes)}`) : ""}
+                      {l.removed ? `, came down ${fmtDate(l.removed)}${l.days !== null ? `, after ${about}${spanOf(l.days)}` : ""}` : l.days !== null ? `, up ${about}${spanOf(l.days)}` : ""}</span></li>
+                );
+              })}
             </ul>
+            {lives.some((l) => l.days !== null) && (
+              <p className="small muted">Days count from the posting&apos;s own date or, when it has none, from the day the daily check first saw it (worded &quot;about&quot;). A posting counts as down on the first daily check that missed it, so that date is good to about a day.</p>
+            )}
           </details>
         )}
+        {/* Only where the watcher can't look, so a student's "I see it posted" is the one way this page learns of it. */}
+        {meta.spotted && watch[c.id]?.kind === "manual" && h.hasProgram && !now && <Spotted key={c.id} id={c.id} name={c.name} />}
       </div>
 
       {h.hasProgram && <InternFacts company={c} />}
+
+      <H1bRecord company={c} />
 
       <div className="block-gi"><GettingIn company={c} /></div>
 
