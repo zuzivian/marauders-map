@@ -49,7 +49,7 @@
       }
     ],
     "current": {
-      "checked": "2026-10-11",
+      "checked": "2026-10-18",
       "summary": "Open since Aug 5, 2026: one US talent-pool posting 'MBA Internships' covering AI/ML EPM, AppleCare, Services, Marketing, Ops, Supply Chain and more; no stated deadline.",
       "postings": [
         {
@@ -127,7 +127,7 @@
       }
     ],
     "current": {
-      "checked": "2026-10-11",
+      "checked": "2026-10-18",
       "summary": "Seven US MBA intern postings live, posted Aug 3-20, 2026, none with a stated deadline; Pathways says applicants to multiple Amazon MBA intern roles are interviewed for only one.",
       "postings": [
         {
@@ -236,8 +236,8 @@
       }
     ],
     "current": {
-      "checked": "2026-10-11",
-      "summary": "As of 2026-10-05, 17 US MBA intern postings are live, posted 2026-08-17 to 2026-10-05: 'Summer 2027: MBA Corporate Strategy & Development Intern', 'Summer 2027: MBA Product Marketing Intern, Payments' and 'Summer 2027: MBA Product Marketing Intern, FinTech Lending' and 14 more. No stated deadline.",
+      "checked": "2026-10-18",
+      "summary": "As of 2026-10-18, 18 US MBA intern postings are live, posted 2026-08-17 to 2026-10-15: 'Summer 2027: MBA Corporate Strategy & Development Intern', 'Summer 2027: MBA Product Marketing Intern, Payments' and 'Summer 2027: MBA Product Marketing Intern, FinTech Lending' and 15 more. No stated deadline.",
       "postings": [
         {
           "title": "Summer 2027: MBA Corporate Strategy & Development Intern",
@@ -375,6 +375,15 @@
           "sources": [
             "intuit-101575696896"
           ]
+        },
+        {
+          "title": "Summer 2027: MBA Marketing Intern, Out-Market Investment Diagnostic (NTTF)",
+          "posted": "2026-10-15",
+          "closes": null,
+          "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-mba-marketing-intern-out-market-investment-diagnostic-nttf/27595/101999313376",
+          "sources": [
+            "intuit-101999313376"
+          ]
         }
       ]
     }
@@ -435,7 +444,7 @@
       }
     ],
     "current": {
-      "checked": "2026-10-11",
+      "checked": "2026-10-18",
       "summary": "As of 2026-10-06, 3 US MBA intern postings are live, posted 2026-09-30 to 2026-10-06: '2027 MBA Intern – Product Manager', '2027 MBA Intern – Product Marketing Manager' and '2027 MBA Intern - Corporate Strategy'. No stated deadline.",
       "postings": [
         {
@@ -524,7 +533,7 @@
       }
     ],
     "current": {
-      "checked": "2026-10-11",
+      "checked": "2026-10-18",
       "summary": "As of 2026-10-10, 2 US MBA intern postings are live, posted 2026-09-21: 'Finance Manager: MBA Internship Opportunities' and 'Treasury Finance Manager: MBA Internship Opportunities'. No stated deadline. 1 earlier posting has been taken down.",
       "postings": [
         {
@@ -692,12 +701,33 @@
           "google-mba-intern-summer-2026-cdx",
           "google-business-internships-page"
         ]
+      },
+      {
+        "cycle": "2026",
+        "from": "2026-10-12",
+        "to": "2026-10-12",
+        "evidence": "strong",
+        "scope": "MBA Intern, Summer 2027",
+        "note": "Posted date from the careers site's API; first found by the posting watcher on 2026-10-18.",
+        "sources": [
+          "google-121103710599160518"
+        ]
       }
     ],
     "current": {
-      "checked": "2026-10-11",
-      "summary": "As of 2026-10-04 no US MBA intern posting for summer 2027 is live on Google Careers. The only MBA intern postings are three EMEA ones (London/Dublin, open Oct 5 to Nov 13, 2026), limited to students at EMEA MBA programs. Google says MBA applications open in Sept–Oct. Last year's US posting was confirmed open on Oct 14, 2025 and closed Nov 7, 2025, so check daily.",
-      "postings": []
+      "checked": "2026-10-18",
+      "summary": "As of 2026-10-18, 1 US MBA intern posting is live, posted 2026-10-12: 'MBA Intern, Summer 2027'. No stated deadline.",
+      "postings": [
+        {
+          "title": "MBA Intern, Summer 2027",
+          "posted": "2026-10-12",
+          "closes": null,
+          "url": "https://www.google.com/about/careers/applications/jobs/results/121103710599160518-mba-intern-summer-2027",
+          "sources": [
+            "google-121103710599160518"
+          ]
+        }
+      ]
     }
   },
   "nvidia": {
@@ -749,12 +779,53 @@
           "nvidia-eightfold-procurement-2026",
           "linkedin-jobid-calibration"
         ]
+      },
+      {
+        "cycle": "2026",
+        "from": "2026-10-13",
+        "to": "2026-10-13",
+        "evidence": "strong",
+        "scope": "3 postings: Product Management MBA Intern, Data Center GPU - Summer 2027; Product Management MBA Intern, Laptop - Summer 2027; Product Marketing Management MBA Intern - Summer 2027",
+        "note": "Posted date from the careers site's API; first found by the posting watcher on 2026-10-18.",
+        "sources": [
+          "nvidia-JR2025670",
+          "nvidia-JR2025905",
+          "nvidia-JR2025672"
+        ]
       }
     ],
     "current": {
-      "checked": "2026-10-11",
-      "summary": "As of 2026-10-04 no NVIDIA MBA intern posting is live. One early summer-2027 role (Product Management MBA Intern, Data Center GPU) was created Sep 11, 2026 and gone by about Sep 16 (its posting said applications accepted 'at least until September 19'). Last cycle the team-specific MBA roles began in late October and kept coming through spring.",
-      "postings": []
+      "checked": "2026-10-18",
+      "summary": "As of 2026-10-18, 3 US MBA intern postings are live, posted 2026-10-13 to 2026-10-16: 'Product Management MBA Intern, Data Center GPU - Summer 2027', 'Product Management MBA Intern, Laptop - Summer 2027' and 'Product Marketing Management MBA Intern - Summer 2027'. No stated deadline.",
+      "postings": [
+        {
+          "title": "Product Management MBA Intern, Data Center GPU - Summer 2027",
+          "posted": "2026-10-13",
+          "closes": null,
+          "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Management-MBA-Intern--Data-Center-GPU---Summer-2027_JR2025670-1",
+          "sources": [
+            "nvidia-JR2025670"
+          ]
+        },
+        {
+          "title": "Product Management MBA Intern, Laptop - Summer 2027",
+          "posted": "2026-10-15",
+          "closes": null,
+          "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Management-MBA-Intern--Laptop---Summer-2027_JR2025905",
+          "sources": [
+            "nvidia-JR2025905"
+          ]
+        },
+        {
+          "title": "Product Marketing Management MBA Intern - Summer 2027",
+          "posted": "2026-10-16",
+          "closes": null,
+          "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Marketing-Management-MBA-Intern---Summer-2027_JR2025672",
+          "sources": [
+            "nvidia-JR2025672"
+          ]
+        }
+      ]
     }
   },
   "meta": {
@@ -842,12 +913,33 @@
           "builtinnyc-airbnb-aa-2026",
           "jobright-airbnb-aa-2026"
         ]
+      },
+      {
+        "cycle": "2026",
+        "from": "2026-10-15",
+        "to": "2026-10-15",
+        "evidence": "strong",
+        "scope": "Strategic Finance & Analytics Intern (MBA)",
+        "note": "Posted date from the careers site's API; first found by the posting watcher on 2026-10-18.",
+        "sources": [
+          "airbnb-8285171"
+        ]
       }
     ],
     "current": {
-      "checked": "2026-10-11",
-      "summary": "As of 2026-10-04 Airbnb has no intern postings at all; its Greenhouse board lists 152 jobs and none are intern or MBA roles. MBA roles have gone up in Dec–Feb in past cycles.",
-      "postings": []
+      "checked": "2026-10-18",
+      "summary": "As of 2026-10-18, 1 US MBA intern posting is live, posted 2026-10-15: 'Strategic Finance & Analytics Intern (MBA)'. No stated deadline.",
+      "postings": [
+        {
+          "title": "Strategic Finance & Analytics Intern (MBA)",
+          "posted": "2026-10-15",
+          "closes": null,
+          "url": "https://careers.airbnb.com/positions/8285171?gh_jid=8285171",
+          "sources": [
+            "airbnb-8285171"
+          ]
+        }
+      ]
     }
   },
   "uber": {
@@ -905,7 +997,7 @@
     "pattern": "No structured MBA hiring",
     "windows": [],
     "current": {
-      "checked": "2026-10-11",
+      "checked": "2026-10-18",
       "summary": "We found no OpenAI MBA internship. As of 2026-10-04 its Ashby board has 828 jobs and none are intern postings. Its one business-side internship, 'Go to Market Strategy Internship / Co-op, Emerging Talent (Summer 2026)', went up around Apr 3, 2026, with no MBA or degree requirement stated.",
       "postings": []
     },
@@ -973,7 +1065,7 @@
       }
     ],
     "current": {
-      "checked": "2026-10-11",
+      "checked": "2026-10-18",
       "summary": "As of 2026-10-09, 1 US MBA intern posting is live, posted 2026-10-09: 'FLEX- Rising Leaders II (Intern) United States'. Stated deadline 2026-11-07.",
       "postings": [
         {
@@ -1051,7 +1143,7 @@
       }
     ],
     "current": {
-      "checked": "2026-10-11",
+      "checked": "2026-10-18",
       "summary": "No Databricks summer-2027 MBA intern posting as of 2026-10-04: its Greenhouse board lists 885 jobs, and the only product internship is the CS-track 'Product Management Intern (Summer 2027)', which asks for a bachelor's or master's in computer science. The last three cycles' MBA roles went up between mid-January and March.",
       "postings": [],
       "sources": [
@@ -1106,7 +1198,7 @@
       }
     ],
     "current": {
-      "checked": "2026-10-11",
+      "checked": "2026-10-18",
       "summary": "As of 2026-10-04 no MBA internship is posted on Dell's careers site. Dell's summer 2027 undergrad and graduate intern roles went live Sep 9–15, 2026, plus a Corporate Strategy Undergraduate Intern on Oct 2, mostly ending Oct 31. The only graduate-level one is a supply chain role.",
       "postings": []
     }
@@ -1159,7 +1251,7 @@
       }
     ],
     "current": {
-      "checked": "2026-10-11",
+      "checked": "2026-10-18",
       "summary": "Four MBA-targeted US internships are live as of 2026-10-04 (FLDP, Corporate Strategy, Software Strategy & M&A, AI-First Transformation); none states a deadline. The Software Strategy posting asks for MBAs 'graduating in May 2027', so first-years should confirm eligibility.",
       "postings": [
         {
@@ -1250,7 +1342,7 @@
       }
     ],
     "current": {
-      "checked": "2026-10-11",
+      "checked": "2026-10-18",
       "summary": "As of 2026-10-04, no Summer 2027 MBA intern postings are live. PayPal's job board shows no intern titles. Last cycle's first MBA postings appeared Sep 10–11, and one came down within 4 days, so check often.",
       "postings": []
     }
@@ -1296,7 +1388,7 @@
       }
     ],
     "current": {
-      "checked": "2026-10-11",
+      "checked": "2026-10-18",
       "summary": "As of 2026-10-04 no Summer 2027 MBA roles are live. The only Summer 2027 US internship on ServiceNow's SmartRecruiters board is Finance Intern - Undergrad (Santa Clara and West Palm Beach, released 2026-09-29). By this date last cycle the MBA PM, Corp Dev, Strategy and Finance roles were all up, so this cycle is running later.",
       "postings": []
     }
@@ -1347,7 +1439,7 @@
       }
     ],
     "current": {
-      "checked": "2026-10-04",
+      "checked": "2026-10-18",
       "summary": "No Spotify summer-2027 MBA posting as of 2026-10-04: its Lever board has 82 postings and the only internship is 'RecSys 2026 — Intern'. The students page says 2027 internship information is coming soon. The last three cycles posted between late January and early March and closed two to three weeks later, with no late applications accepted.",
       "postings": [],
       "sources": [
@@ -1361,7 +1453,7 @@
     "pattern": "No structured MBA hiring",
     "windows": [],
     "current": {
-      "checked": "2026-10-11",
+      "checked": "2026-10-18",
       "summary": "We found no Stripe MBA internship as of 2026-10-04. Its Greenhouse board lists 717 jobs; the internships are software engineering (including a high-school program), data analyst, PhD data science and technical operations roles. Its business-side internship of recent years, Finance & Strategy (Summer 2025, and Summer 2026 alongside Treasury Finance), is for bachelor's students. The last MBA internships we found were for 2021 and 2022.",
       "postings": [],
       "sources": [
@@ -1441,8 +1533,8 @@
       }
     ],
     "current": {
-      "checked": "2026-10-11",
-      "summary": "As of 2026-10-07, 22 US MBA intern postings are live: 'Special Project Strategist Intern (TikTok Shop - Operations) - 2027 Start (MBA)', 'Integrated Marketing & Promotion Manager Intern (TikTok Shop - Operations) - 2027 Summer (MBA)' and 'Category Manager Intern (TikTok Shop - Operations-Health & Elevated Home) - 2027 Summer (MBA)' and 19 more. No stated deadline. 1 earlier posting has been taken down.",
+      "checked": "2026-10-18",
+      "summary": "As of 2026-10-18, 21 US MBA intern postings are live: 'Special Project Strategist Intern (TikTok Shop - Operations) - 2027 Start (MBA)', 'Integrated Marketing & Promotion Manager Intern (TikTok Shop - Operations) - 2027 Summer (MBA)' and 'Category Manager Intern (TikTok Shop - Operations-Health & Elevated Home) - 2027 Summer (MBA)' and 18 more. No stated deadline. 2 earlier postings have been taken down.",
       "postings": [
         {
           "title": "Special Project Strategist Intern (TikTok Shop - Operations) - 2027 Start (MBA)",
@@ -1658,7 +1750,7 @@
       }
     ],
     "current": {
-      "checked": "2026-10-11",
+      "checked": "2026-10-18",
       "summary": "As of 2026-10-04, no US MBA intern postings are live on Visa's careers boards or LinkedIn. Visa held a virtual 'MBA Careers Overview' on Sep 22, 2026. Based on the last three cycles, expect postings in November with a roughly 2-week window.",
       "postings": []
     }
@@ -1712,7 +1804,7 @@
       }
     ],
     "current": {
-      "checked": "2026-10-11",
+      "checked": "2026-10-18",
       "summary": "As of 2026-10-04, three US MBA intern roles for Summer 2027 are live, first published Sep 1-15, 2026. Review is rolling with no stated deadline. Last cycle more MBA roles appeared in Nov-Dec and some closed within weeks, so apply early and watch for more.",
       "postings": [
         {
@@ -1782,7 +1874,7 @@
       }
     ],
     "current": {
-      "checked": "2026-10-11",
+      "checked": "2026-10-18",
       "summary": "As of 2026-10-04 there are no MBA postings. The Workday Early Career board has 3 roles: Sales Development Intern (Atlanta, posted 2026-09-10), Technical Support Delivery Intern (Costa Rica) and a new-grad SDR role. In the last two cycles MBA roles appeared mid-Nov to mid-Dec, so none are expected yet.",
       "postings": []
     }
