@@ -1,82 +1,774 @@
 {
-  "fy": null,
-  "quarter": null,
-  "from": null,
-  "through": null,
-  "checked": null,
-  "source": null,
+  "fy": 2026,
+  "quarter": 3,
+  "from": "2025-10-01",
+  "through": "2026-06-30",
+  "checked": "2026-10-19",
+  "source": "dol-lca-fy2026-q3",
   "companies": {
     "apple": {
-      "match": "^APPLE INC\\b"
+      "match": "^APPLE INC\\b",
+      "employers": [
+        "APPLE INC."
+      ],
+      "all": 4828,
+      "roles": {
+        "pmm": {
+          "n": 0,
+          "wage": null
+        },
+        "program": {
+          "n": 52,
+          "wage": {
+            "median": 170000,
+            "low": 149000,
+            "high": 187000
+          }
+        },
+        "pm": {
+          "n": 8,
+          "wage": {
+            "median": 179000,
+            "low": 134000,
+            "high": 186000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "amazon": {
-      "match": "^AMAZON(\\.COM| WEB SERVICES| DEVELOPMENT CENTER| DATA SERVICES| ADVERTISING| CAPITAL SERVICES| PAYMENTS| ROBOTICS| LOGISTICS| TECHNOLOGIES| MEDIA GROUP| FRESH| PRIME AIR)\\b"
+      "match": "^AMAZON(\\.COM| WEB SERVICES| DEVELOPMENT CENTER| DATA SERVICES| ADVERTISING| CAPITAL SERVICES| PAYMENTS| ROBOTICS| LOGISTICS| TECHNOLOGIES| MEDIA GROUP| FRESH| PRIME AIR)\\b",
+      "employers": [
+        "AMAZON ADVERTISING LLC",
+        "AMAZON CAPITAL SERVICES, INC.",
+        "AMAZON DATA SERVICES, INC",
+        "AMAZON DATA SERVICES, INC.",
+        "AMAZON DATA SERVICES, INC.`",
+        "AMAZON DEVELOPMENT CENTER U.S., INC.",
+        "AMAZON PAYMENTS, INC.",
+        "AMAZON WEB SERVICES",
+        "AMAZON WEB SERVICES PUERTO RICO LLC",
+        "AMAZON WEB SERVICES, INC.",
+        "AMAZON.COM SERVICES LLC"
+      ],
+      "all": 19901,
+      "roles": {
+        "pmm": {
+          "n": 25,
+          "wage": {
+            "median": 143000,
+            "low": 111000,
+            "high": 173000
+          }
+        },
+        "program": {
+          "n": 948,
+          "wage": {
+            "median": 148000,
+            "low": 124000,
+            "high": 166000
+          }
+        },
+        "pm": {
+          "n": 627,
+          "wage": {
+            "median": 160000,
+            "low": 143000,
+            "high": 186000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "intuit": {
-      "match": "^INTUIT INC\\b"
+      "match": "^INTUIT INC\\b",
+      "employers": [
+        "INTUIT INC."
+      ],
+      "all": 602,
+      "roles": {
+        "pmm": {
+          "n": 3,
+          "wage": null
+        },
+        "program": {
+          "n": 20,
+          "wage": {
+            "median": 172000,
+            "low": 163000,
+            "high": 196000
+          }
+        },
+        "pm": {
+          "n": 69,
+          "wage": {
+            "median": 225000,
+            "low": 185000,
+            "high": 237000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "adobe": {
-      "match": "^ADOBE (INC|SYSTEMS)\\b"
+      "match": "^ADOBE (INC|SYSTEMS)\\b",
+      "employers": [
+        "ADOBE INC."
+      ],
+      "all": 1028,
+      "roles": {
+        "pmm": {
+          "n": 13,
+          "wage": {
+            "median": 169000,
+            "low": 118000,
+            "high": 230000
+          }
+        },
+        "program": {
+          "n": 18,
+          "wage": {
+            "median": 176000,
+            "low": 149000,
+            "high": 207000
+          }
+        },
+        "pm": {
+          "n": 80,
+          "wage": {
+            "median": 185000,
+            "low": 162000,
+            "high": 215000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "microsoft": {
-      "match": "^MICROSOFT CORP"
+      "match": "^MICROSOFT CORP",
+      "employers": [
+        "MICROSOFT CORPORATION"
+      ],
+      "all": 5107,
+      "roles": {
+        "pmm": {
+          "n": 57,
+          "wage": {
+            "median": 156000,
+            "low": 141000,
+            "high": 180000
+          }
+        },
+        "program": {
+          "n": 219,
+          "wage": {
+            "median": 180000,
+            "low": 160000,
+            "high": 198000
+          }
+        },
+        "pm": {
+          "n": 265,
+          "wage": {
+            "median": 188000,
+            "low": 163000,
+            "high": 210000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "salesforce": {
-      "match": "^SALESFORCE(\\.COM)?,? INC\\b"
+      "match": "^SALESFORCE(\\.COM)?,? INC\\b",
+      "employers": [
+        "SALESFORCE, INC."
+      ],
+      "all": 1536,
+      "roles": {
+        "pmm": {
+          "n": 4,
+          "wage": null
+        },
+        "program": {
+          "n": 12,
+          "wage": {
+            "median": 174000,
+            "low": 160000,
+            "high": 230000
+          }
+        },
+        "pm": {
+          "n": 51,
+          "wage": {
+            "median": 222000,
+            "low": 177000,
+            "high": 278000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "google": {
-      "match": "^GOOGLE LLC\\b"
+      "match": "^GOOGLE LLC\\b",
+      "employers": [
+        "GOOGLE LLC"
+      ],
+      "all": 7336,
+      "roles": {
+        "pmm": {
+          "n": 1,
+          "wage": null
+        },
+        "program": {
+          "n": 316,
+          "wage": {
+            "median": 189000,
+            "low": 175000,
+            "high": 218000
+          }
+        },
+        "pm": {
+          "n": 190,
+          "wage": {
+            "median": 219000,
+            "low": 187000,
+            "high": 251000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "nvidia": {
-      "match": "^NVIDIA CORP"
+      "match": "^NVIDIA CORP",
+      "employers": [
+        "NVIDIA CORPORATION"
+      ],
+      "all": 2380,
+      "roles": {
+        "pmm": {
+          "n": 14,
+          "wage": {
+            "median": 192000,
+            "low": 139000,
+            "high": 217000
+          }
+        },
+        "program": {
+          "n": 58,
+          "wage": {
+            "median": 193000,
+            "low": 178000,
+            "high": 222000
+          }
+        },
+        "pm": {
+          "n": 35,
+          "wage": {
+            "median": 201000,
+            "low": 179000,
+            "high": 223000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "meta": {
-      "match": "^META PLATFORMS"
+      "match": "^META PLATFORMS",
+      "employers": [
+        "META PLATFORMS, INC"
+      ],
+      "all": 5150,
+      "roles": {
+        "pmm": {
+          "n": 14,
+          "wage": {
+            "median": 223000,
+            "low": 197000,
+            "high": 259000
+          }
+        },
+        "program": {
+          "n": 96,
+          "wage": {
+            "median": 217000,
+            "low": 198000,
+            "high": 251000
+          }
+        },
+        "pm": {
+          "n": 100,
+          "wage": {
+            "median": 225000,
+            "low": 199000,
+            "high": 259000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "airbnb": {
-      "match": "^AIRBNB,? INC\\b"
+      "match": "^AIRBNB,? INC\\b",
+      "employers": [
+        "AIRBNB, INC."
+      ],
+      "all": 160,
+      "roles": {
+        "pmm": {
+          "n": 0,
+          "wage": null
+        },
+        "program": {
+          "n": 2,
+          "wage": null
+        },
+        "pm": {
+          "n": 1,
+          "wage": null
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "uber": {
-      "match": "^UBER TECHNOLOGIES"
+      "match": "^UBER TECHNOLOGIES",
+      "employers": [
+        "UBER TECHNOLOGIES, INC."
+      ],
+      "all": 657,
+      "roles": {
+        "pmm": {
+          "n": 2,
+          "wage": null
+        },
+        "program": {
+          "n": 23,
+          "wage": {
+            "median": 154000,
+            "low": 136000,
+            "high": 207000
+          }
+        },
+        "pm": {
+          "n": 34,
+          "wage": {
+            "median": 211000,
+            "low": 190000,
+            "high": 224000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "openai": {
-      "match": "^OPENAI\\b"
+      "match": "^OPENAI\\b",
+      "employers": [
+        "OPENAI OPCO, LLC"
+      ],
+      "all": 210,
+      "roles": {
+        "pmm": {
+          "n": 1,
+          "wage": null
+        },
+        "program": {
+          "n": 5,
+          "wage": {
+            "median": 285000,
+            "low": 262000,
+            "high": 292000
+          }
+        },
+        "pm": {
+          "n": 3,
+          "wage": null
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "cisco": {
-      "match": "^CISCO SYSTEMS"
+      "match": "^CISCO SYSTEMS",
+      "employers": [
+        "CISCO SYSTEMS, INC."
+      ],
+      "all": 1183,
+      "roles": {
+        "pmm": {
+          "n": 1,
+          "wage": null
+        },
+        "program": {
+          "n": 15,
+          "wage": {
+            "median": 158000,
+            "low": 132000,
+            "high": 181000
+          }
+        },
+        "pm": {
+          "n": 73,
+          "wage": {
+            "median": 166000,
+            "low": 136000,
+            "high": 189000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "databricks": {
-      "match": "^DATABRICKS,? INC\\b"
+      "match": "^DATABRICKS,? INC\\b",
+      "employers": [
+        "DATABRICKS, INC."
+      ],
+      "all": 434,
+      "roles": {
+        "pmm": {
+          "n": 0,
+          "wage": null
+        },
+        "program": {
+          "n": 7,
+          "wage": {
+            "median": 179000,
+            "low": 159000,
+            "high": 211000
+          }
+        },
+        "pm": {
+          "n": 6,
+          "wage": {
+            "median": 171000,
+            "low": 137000,
+            "high": 185000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "dell": {
-      "match": "^DELL (USA|PRODUCTS|TECHNOLOGIES|MARKETING|INC|FINANCIAL)\\b"
+      "match": "^DELL (USA|PRODUCTS|TECHNOLOGIES|MARKETING|INC|FINANCIAL)\\b",
+      "employers": [
+        "DELL MARKETING L.P.",
+        "DELL PRODUCTS L.P.",
+        "DELL USA L.P."
+      ],
+      "all": 336,
+      "roles": {
+        "pmm": {
+          "n": 14,
+          "wage": {
+            "median": 173000,
+            "low": 143000,
+            "high": 204000
+          }
+        },
+        "program": {
+          "n": 22,
+          "wage": {
+            "median": 154000,
+            "low": 141000,
+            "high": 181000
+          }
+        },
+        "pm": {
+          "n": 30,
+          "wage": {
+            "median": 193000,
+            "low": 178000,
+            "high": 210000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "ibm": {
-      "match": "^(INTERNATIONAL BUSINESS MACHINES|IBM CORP)"
+      "match": "^(INTERNATIONAL BUSINESS MACHINES|IBM CORP)",
+      "employers": [
+        "IBM CORPORATION"
+      ],
+      "all": 734,
+      "roles": {
+        "pmm": {
+          "n": 3,
+          "wage": null
+        },
+        "program": {
+          "n": 9,
+          "wage": {
+            "median": 154000,
+            "low": 125000,
+            "high": 172000
+          }
+        },
+        "pm": {
+          "n": 20,
+          "wage": {
+            "median": 190000,
+            "low": 135000,
+            "high": 225000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "paypal": {
-      "match": "^PAYPAL,? INC\\b"
+      "match": "^PAYPAL,? INC\\b",
+      "employers": [
+        "PAYPAL, INC."
+      ],
+      "all": 720,
+      "roles": {
+        "pmm": {
+          "n": 0,
+          "wage": null
+        },
+        "program": {
+          "n": 5,
+          "wage": {
+            "median": 194000,
+            "low": 172000,
+            "high": 270000
+          }
+        },
+        "pm": {
+          "n": 86,
+          "wage": {
+            "median": 200000,
+            "low": 183000,
+            "high": 226000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "servicenow": {
-      "match": "^SERVICENOW,? INC\\b"
+      "match": "^SERVICENOW,? INC\\b",
+      "employers": [
+        "SERVICENOW, INC."
+      ],
+      "all": 544,
+      "roles": {
+        "pmm": {
+          "n": 0,
+          "wage": null
+        },
+        "program": {
+          "n": 7,
+          "wage": {
+            "median": 149000,
+            "low": 139000,
+            "high": 150000
+          }
+        },
+        "pm": {
+          "n": 50,
+          "wage": {
+            "median": 157000,
+            "low": 139000,
+            "high": 199000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "spotify": {
-      "match": "^SPOTIFY (USA|INC)\\b"
+      "match": "^SPOTIFY (USA|INC)\\b",
+      "employers": [
+        "SPOTIFY USA INC.",
+        "SPOTIFY USA, INC."
+      ],
+      "all": 72,
+      "roles": {
+        "pmm": {
+          "n": 0,
+          "wage": null
+        },
+        "program": {
+          "n": 0,
+          "wage": null
+        },
+        "pm": {
+          "n": 3,
+          "wage": null
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "stripe": {
-      "match": "^STRIPE,? INC\\b"
+      "match": "^STRIPE,? INC\\b",
+      "employers": [
+        "STRIPE, INC."
+      ],
+      "all": 40,
+      "roles": {
+        "pmm": {
+          "n": 0,
+          "wage": null
+        },
+        "program": {
+          "n": 0,
+          "wage": null
+        },
+        "pm": {
+          "n": 1,
+          "wage": null
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "tiktok": {
-      "match": "^(TIKTOK|BYTEDANCE)\\b"
+      "match": "^(TIKTOK|BYTEDANCE)\\b",
+      "employers": [
+        "BYTEDANCE INC.",
+        "TIKTOK INC.",
+        "TIKTOK U.S. DATA SECURITY INC.",
+        "TIKTOK USDS JOINT VENTURE LLC"
+      ],
+      "all": 1116,
+      "roles": {
+        "pmm": {
+          "n": 2,
+          "wage": null
+        },
+        "program": {
+          "n": 11,
+          "wage": {
+            "median": 185000,
+            "low": 133000,
+            "high": 260000
+          }
+        },
+        "pm": {
+          "n": 58,
+          "wage": {
+            "median": 297000,
+            "low": 234000,
+            "high": 349000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "visa": {
-      "match": "^VISA (U\\.S\\.A\\.|USA|TECHNOLOGY|INC)\\b"
+      "match": "^VISA (U\\.S\\.A\\.|USA|TECHNOLOGY|INC)\\b",
+      "employers": [
+        "VISA TECHNOLOGY & OPERATIONS LLC"
+      ],
+      "all": 304,
+      "roles": {
+        "pmm": {
+          "n": 0,
+          "wage": null
+        },
+        "program": {
+          "n": 2,
+          "wage": null
+        },
+        "pm": {
+          "n": 3,
+          "wage": null
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "waymo": {
-      "match": "^WAYMO\\b"
+      "match": "^WAYMO\\b",
+      "employers": [
+        "WAYMO LLC"
+      ],
+      "all": 277,
+      "roles": {
+        "pmm": {
+          "n": 0,
+          "wage": null
+        },
+        "program": {
+          "n": 11,
+          "wage": {
+            "median": 230000,
+            "low": 169000,
+            "high": 270000
+          }
+        },
+        "pm": {
+          "n": 7,
+          "wage": {
+            "median": 240000,
+            "low": 230000,
+            "high": 245000
+          }
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     },
     "workday": {
-      "match": "^WORKDAY,? INC\\b"
+      "match": "^WORKDAY,? INC\\b",
+      "employers": [
+        "WORKDAY, INC."
+      ],
+      "all": 253,
+      "roles": {
+        "pmm": {
+          "n": 0,
+          "wage": null
+        },
+        "program": {
+          "n": 0,
+          "wage": null
+        },
+        "pm": {
+          "n": 2,
+          "wage": null
+        }
+      },
+      "sources": [
+        "dol-lca-fy2026-q3"
+      ]
     }
   }
 }

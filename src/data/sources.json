@@ -5471,5 +5471,14 @@
     "accessed": "2026-10-04",
     "kind": "secondary",
     "quote": null
+  },
+  "dol-lca-fy2026-q3": {
+    "url": "https://www.dol.gov/media/LCA_Disclosure_Data_FY2026_Q3.xlsx",
+    "title": "LCA Programs (H-1B, H-1B1, E-3) Disclosure Data, FY 2026 Q3",
+    "publisher": "US Department of Labor, Office of Foreign Labor Certification",
+    "published": null,
+    "accessed": "2026-10-19",
+    "kind": "primary",
+    "quote": null
   }
 }
