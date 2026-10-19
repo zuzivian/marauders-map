@@ -481,6 +481,10 @@ details.more > h4:first-of-type { margin-top: 8px; }
 .contribute .gi-consent { display: flex; gap: 8px; align-items: flex-start; }
 .contribute .gi-consent input { margin-top: 3px; accent-color: var(--cardinal); }
 @media (max-width: 720px) { .gi-row { grid-template-columns: 1fr; } }
+.spotted { margin-top: 10px; }
+.spotted > p { margin: 0; }
+.spotted form { gap: 12px; margin-top: 10px; }
+.spotted .linkish { min-height: var(--tap); }
 
 /* ---- share ---- */
 .copylink a { font-size: var(--t-xs); word-break: break-all; }
