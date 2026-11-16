@@ -234,7 +234,8 @@
     "published": "2026-10-15",
     "accessed": "2026-10-18",
     "kind": "primary",
-    "quote": null
+    "quote": null,
+    "gone": "2026-11-16"
   },
   "airbnb-live-work-anywhere-2022": {
     "url": "https://news.airbnb.com/airbnbs-design-to-live-and-work-anywhere",
@@ -2799,6 +2800,15 @@
     "kind": "primary",
     "quote": "we employed approximately 223,000 people on a full-time basis"
   },
+  "microsoft-1970393556962236": {
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393556962236",
+    "title": "Marketing MBA Internship Opportunities, United States (200048816)",
+    "publisher": "Microsoft Careers",
+    "published": "2026-11-13",
+    "accessed": "2026-11-16",
+    "kind": "primary",
+    "quote": null
+  },
   "microsoft-buyout-cnbc-2026-04": {
     "url": "https://www.cnbc.com/2026/04/23/microsoft-plans-first-voluntary-retirement-program-for-us-employees.html",
     "title": "Microsoft plans first voluntary retirement program for US employees",
@@ -2869,7 +2879,8 @@
     "published": "2026-09-21",
     "accessed": "2026-10-04",
     "kind": "primary",
-    "quote": null
+    "quote": null,
+    "gone": "2026-11-16"
   },
   "ms-200055972-pay": {
     "url": "https://apply.careers.microsoft.com/careers/job/1970393556999301",
@@ -2887,7 +2898,8 @@
     "published": "2026-09-21",
     "accessed": "2026-10-04",
     "kind": "primary",
-    "quote": null
+    "quote": null,
+    "gone": "2026-11-16"
   },
   "ms-200058904": {
     "url": "https://apply.careers.microsoft.com/careers/job/1970393557019360",
@@ -3699,6 +3711,24 @@
     "publisher": "SEC EDGAR",
     "published": "2026-07-23",
     "accessed": "2026-10-04",
+    "kind": "primary",
+    "quote": null
+  },
+  "servicenow-744000161584449": {
+    "url": "https://jobs.smartrecruiters.com/ServiceNow/744000161584449-sr-inbound-product-manager-intern-mba-summer-2027",
+    "title": "Sr Inbound Product Manager Intern (MBA Summer 2027) (744000161584449)",
+    "publisher": "ServiceNow (SmartRecruiters)",
+    "published": "2026-11-13",
+    "accessed": "2026-11-16",
+    "kind": "primary",
+    "quote": null
+  },
+  "servicenow-744000161590090": {
+    "url": "https://jobs.smartrecruiters.com/ServiceNow/744000161590090-sr-outbound-product-manager-intern-mba-summer-2027",
+    "title": "Sr Outbound Product Manager Intern (MBA Summer 2027) (744000161590090)",
+    "publisher": "ServiceNow (SmartRecruiters)",
+    "published": "2026-11-13",
+    "accessed": "2026-11-16",
     "kind": "primary",
     "quote": null
   },
